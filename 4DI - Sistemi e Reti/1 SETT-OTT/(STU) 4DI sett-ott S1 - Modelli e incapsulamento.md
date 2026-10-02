@@ -1,4 +1,5 @@
 # 🧭 Modelli e incapsulamento
+Markdown .MD
 
 **4DI · Settembre-Ottobre · S1 · Teoria**
 
@@ -50,15 +51,15 @@ No. È una rete di reti, formata da molte reti collegate fra loro.
 
 Il modello **ISO/OSI** divide la comunicazione in sette livelli. Il modello **TCP/IP** spesso ne usa quattro, raggruppando diversamente alcune funzioni. Non esiste una corrispondenza perfetta uno-a-uno.
 
-| ISO/OSI | Compito in parole semplici | TCP/IP a quattro livelli |
-|---:|---|---|
-| 7 Applicazione | Servizi usati dai programmi | Applicazione |
-| 6 Presentazione | Formato, codifica e protezione dei dati | Applicazione |
-| 5 Sessione | Gestione concettuale della conversazione | Applicazione |
-| 4 Trasporto | Consegna ai programmi tramite porte | Trasporto |
-| 3 Rete | Indirizzi e comunicazione fra reti | Internet |
-| 2 Collegamento dati | Consegna sul collegamento locale | Accesso alla rete |
-| 1 Fisico | Segnali e mezzo di trasmissione | Accesso alla rete |
+|             ISO/OSI | Compito in parole semplici               | TCP/IP a quattro livelli |
+| ------------------: | ---------------------------------------- | ------------------------ |
+|      7 Applicazione | Servizi usati dai programmi              | Applicazione             |
+|     6 Presentazione | Formato, codifica e protezione dei dati  | Applicazione             |
+|          5 Sessione | Gestione concettuale della conversazione | Applicazione             |
+|         4 Trasporto | Consegna ai programmi tramite porte      | Trasporto                |
+|              3 Rete | Indirizzi e comunicazione fra reti       | Internet                 |
+| 2 Collegamento dati | Consegna sul collegamento locale         | Accesso alla rete        |
+|            1 Fisico | Segnali e mezzo di trasmissione          | Accesso alla rete        |
 
 Sono mappe utili per spiegare funzioni. Non sono sette pezzi hardware impilati dentro ogni computer.
 
