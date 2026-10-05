@@ -5,30 +5,47 @@
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 ```mermaid
+---
+config:
+  layout: tidy-tree
+---
 mindmap
   root((🧮 Indirizzi e gerarchia delle memorie))
-    🧭 Non basta avere spazio: bisogna raggiungerlo
-    🚌 Tre funzioni per comunicare
-      ✅ Dati, indirizzi e controllo
+    🧭 Indirizzi e livelli di memoria
+      Latenza
+      Capacità
+    🚌 Bus
+      Bus indirizzi
+      Bus dati
+      Bus di controllo
     🔢 Contare gli indirizzi
-      ✅ Ogni bit raddoppia gli indirizzi
-      ✅ Esempio svolto: memoria indirizzata a byte
-      🔍 Byte, parole e unità
-      🤓 «32 bit» non basta a descrivere un PC
-    🏔️ La gerarchia delle memorie
-      ✅ Nessuna memoria fa tutto
-      🔍 Capacità, latenza e banda non sono sinonimi
-      🔍 RAM, ROM e memoria di massa
-    🧩 Metti alla prova il modello
+      Configurazioni
+      Potenze di due
+      Locazione
+      Byte
+      Parola
+      KiB MiB GiB
+      Memoria a 32 bit
+    🏔️ Gerarchia delle memorie
+      Registri
+      Cache
+      RAM
+      Memoria di massa
+      Volatilità
+      Banda
+      ROM
+      Memoria flash
 ```
 
-## 🧭 Non basta avere spazio: bisogna raggiungerlo
+## 🧭 Indirizzi e livelli di memoria
 
 Nel [ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) bastava scrivere «cella 40». Una macchina vera, però, deve scrivere quell'indirizzo con un numero limitato di bit e spostare il contenuto lungo collegamenti reali. Quanti posti riesce a distinguere? Quanto contengono? Quanto bisogna aspettare?
 
 La crescita dei computer non ha cancellato queste domande. Memorie più grandi permettono programmi e dati più grandi, ma **capacità e velocità non crescono per forza insieme**. Costruire un sistema significa decidere come usare risorse limitate, non cercare un unico componente perfetto.
 
-## 🚌 Tre funzioni per comunicare
+Un esempio storico lo rende evidente. Nei primi calcolatori, come l'EDSAC (1949), molti bit erano conservati in tubi pieni di mercurio, dove un impulso viaggiava come un'onda sonora: per leggere un bit bisognava **aspettare che l'onda passasse davanti** al punto giusto. La capacità c'era, ma l'attesa era lunga. Poi vennero i nuclei di ferrite e, infine, le memorie a semiconduttore. Il compromesso fra spazio, attesa e costo non è mai sparito.
+
+## 🚌 Bus
 
 ### ✅ Dati, indirizzi e controllo
 
@@ -66,7 +83,7 @@ Non per forza. È una separazione per funzioni: un PC moderno può usare collega
 
 ## 🔢 Contare gli indirizzi
 
-### ✅ Ogni bit raddoppia gli indirizzi
+### ✅ Bit e indirizzi
 
 Un bit ha due configurazioni: 0 e 1. Due bit ne hanno quattro, tre bit otto. Ogni bit in più **raddoppia** le possibilità, perché davanti a ogni sequenza precedente possiamo mettere 0 oppure 1.
 
@@ -163,7 +180,7 @@ Il numero di indirizzi resta uguale, la capacità raddoppia.
 Il bus dati dice quanto si trasferisce in un colpo; il bus indirizzi quante posizioni si distinguono.
 </details>
 
-### 🤓 «32 bit» non basta a descrivere un PC
+### 🤓 Memoria a 32 bit
 
 > In un modello a byte, $2^{32}$ indirizzi corrispondono a 4 GiB. Ma in una macchina reale entrano in gioco indirizzi fisici e virtuali, zone riservate ai dispositivi, limiti del processore e del sistema operativo. Non tutti gli indirizzi corrispondono a RAM installata. 💾 È per questo che, anni fa, molti PC con sistemi a 32 bit «vedevano» meno RAM di quella montata.
 >
@@ -184,9 +201,9 @@ Perché non tutti gli indirizzi corrispondono a RAM: entrano in gioco zone riser
 Quando le sue ipotesi sono scritte chiaramente.
 </details>
 
-## 🏔️ La gerarchia delle memorie
+## 🏔️ Gerarchia delle memorie
 
-### ✅ Nessuna memoria fa tutto
+### ✅ Livelli e compromessi
 
 La memoria ideale sarebbe enorme, velocissima, economica e capace di tenere i dati anche senza corrente. Le tecnologie reali obbligano a compromessi. Per questo un computer usa più livelli.
 
@@ -234,7 +251,7 @@ Registri, cache e RAM sono volatili; SSD e HDD non lo sono.
 No. È una proprietà separata, da indicare a parte.
 </details>
 
-### 🔍 Capacità, latenza e banda non sono sinonimi
+### 🔍 Capacità, latenza, banda
 
 - **Capacità:** quanta informazione posso conservare (byte, GiB).
 - **Latenza:** quanto aspetto per avere la risposta a un accesso (nanosecondi).
@@ -242,6 +259,8 @@ No. È una proprietà separata, da indicare a parte.
 - **Costo per bit e consumo:** quante risorse servono per costruire e usare la memoria.
 
 Un grande archivio può contenere moltissimi documenti ma richiedere tempo per trovare il primo. Un canale può trasferire tanti byte al secondo senza eliminare l'attesa iniziale. Dire solo «questa memoria è migliore» nasconde la vera domanda: **migliore per quale lavoro?**
+
+Per lo stesso motivo, **più RAM non rende più veloce il processore**. Una RAM più grande permette di tenere pronti più programmi e dati, ma non cambia la velocità con cui la CPU calcola.
 
 <details>
 <summary>🃏 Che cos'è la capacità di una memoria?</summary>
@@ -266,6 +285,11 @@ No. Un canale può trasferire tanti byte al secondo e far comunque aspettare pri
 <details>
 <summary>🃏 Che domanda nasconde «questa memoria è migliore»?</summary>
 Migliore per quale lavoro?
+</details>
+
+<details>
+<summary>🃏 Più RAM rende più veloce il processore?</summary>
+No. Più RAM permette di tenere pronti più programmi e dati, ma non cambia la velocità con cui la CPU calcola.
 </details>
 
 ### 🔍 RAM, ROM e memoria di massa

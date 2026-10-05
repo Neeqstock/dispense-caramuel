@@ -5,20 +5,28 @@
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 ```mermaid
+---
+config:
+  layout: tidy-tree
+---
 mindmap
   root((🎯 Verifica e recupero))
-    🧭 Capire una macchina è saperla spiegare
+    🧭 Verifica del bimestre
+      Verifica
+      Recupero
     🧱 Che cosa portare alla verifica
-      ✅ I punti di appoggio
-      🔍 Una risposta precisa, argomento per argomento
-      🔍 Dall'errore alla nuova prova
-      🤓 Una domanda che resta aperta
-    🧩 Metti alla prova il modello
-      🛠️ Brevi esercizi di recupero
-      📋 Una restituzione utile
+      Von Neumann
+      CPU
+      Ciclo macchina
+      Indirizzi
+      Memorie
+      Cache
+      Clock
+    🔭 Verso novembre
+      Pipeline
 ```
 
-## 🧭 Capire una macchina è saperla spiegare
+## 🧭 Verifica del bimestre
 
 Sapere un nome è un inizio. Aver capito significa usarlo per spiegare: dove si trova un'istruzione, perché cambia un registro, che cosa rappresenta un numero, perché il processore a volte aspetta. La verifica chiude questo primo percorso e prepara una domanda per il prossimo: **come si può usare meglio il tempo di esecuzione?**
 
@@ -26,7 +34,7 @@ Il risultato utile non è solo un voto. È anche capire se un errore nasce da un
 
 ## 🧱 Che cosa portare alla verifica
 
-### ✅ I punti di appoggio
+### ✅ Punti essenziali
 
 - Il modello di **Von Neumann** collega CPU, memoria e input/output e tiene istruzioni e dati nella stessa memoria.
 - La **CPU** comprende unità di controllo, ALU e registri: coordinare, calcolare e conservare sono compiti diversi.
@@ -75,7 +83,7 @@ No. Dà il ritmo ai circuiti; la frequenza da sola non misura il lavoro completa
 Gli approfondimenti facoltativi, compresa la formula AMAT, e poi pipeline, hazard, CISC/RISC e procedure di avvio.
 </details>
 
-### 🔍 Una risposta precisa, argomento per argomento
+### 🔍 Segni di comprensione
 
 | Argomento | Segno di una comprensione completa |
 |---|---|
@@ -111,7 +119,7 @@ Esiti motivati usando blocchi, capacità e regole dichiarate.
 Perché il risultato dipende dal modello: per esempio il PC che aumenta di uno vale solo se ogni istruzione occupa una cella.
 </details>
 
-### 🔍 Dall'errore alla nuova prova
+### 🔍 Recupero degli errori
 
 - Conversione sbagliata? Riscrivi il passaggio con le unità.
 - Due registri confusi? Usa due carte diverse e segui un accesso alla memoria.
@@ -134,7 +142,7 @@ Usando due carte diverse e seguendo un accesso alla memoria.
 Una spiegazione o un esercizio nuovo, non la copia della correzione.
 </details>
 
-### 🤓 Una domanda che resta aperta
+### 🤓 Verso la pipeline
 
 > Una macchina può lavorare su più istruzioni nello stesso momento? Dopo aver diviso il ciclo in fasi, la domanda viene spontanea. Nel prossimo bimestre studieremo pipeline e prestazioni, con i loro limiti. Intanto prova a immaginare: che cosa si potrebbe sovrapporre? Che cosa potrebbe ostacolarlo? Non serve conoscere la risposta tecnica.
 
@@ -160,7 +168,7 @@ Dopo la correzione della verifica, compila una riga per un errore importante.
 |---|---|---|---|
 | … | … | … | … |
 
-** Uscita:** «Ora so spiegare ... usando come esempio ...».
+**🚪 Uscita:** «Ora so spiegare ... usando come esempio ...».
 
 **🏠 Facoltativo:** completa la correzione scelta e porta una domanda alla lezione successiva.
 

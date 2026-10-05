@@ -10,7 +10,7 @@ Come si passa da una macchina costruita per un solo compito a una macchina che c
 
 | Settimana | Argomento | In parole semplici |
 |---|---|---|
-| **S1** | [🖥️ Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) | Come si passa da macchine con un solo lavoro a una CPU fatta di parti che conservano, calcolano e coordinano. |
+| **S1** | [🖥️ Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) | Come si passa da macchine con un solo lavoro a una CPU fatta di parti che conservano, calcolano e coordinano; dal relè al microprocessore e ai livelli di astrazione. |
 | **S2** | [🏛️ La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) | Una macchina, tanti programmi: istruzioni e dati stanno nella stessa memoria. |
 | **S3** | [🗃️ Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) | I piccoli «posti di lavoro» della CPU: chi tiene l'indirizzo, chi il dato, chi l'istruzione. |
 | **S4** | [🔄 Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) | Prelevare, interpretare, eseguire: seguiamo un programma passo dopo passo. |

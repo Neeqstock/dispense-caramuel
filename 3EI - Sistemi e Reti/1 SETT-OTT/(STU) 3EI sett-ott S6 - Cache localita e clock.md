@@ -5,29 +5,42 @@
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 ```mermaid
+---
+config:
+  layout: tidy-tree
+---
 mindmap
   root((⚡ Cache, località e clock))
-    🧭 Il problema delle attese
-    🎯 Tenere vicino ciò che serve
-      ✅ Hit e miss
-      ✅ Due tipi di località
-      ✅ I blocchi portano con sé i vicini
-      🔍 Una simulazione con tutte le regole in vista
-      🔍 SRAM e DRAM: entrambe hanno bisogno di corrente
-    ⏱️ Il tempo nel processore
-      ✅ Clock: un ritmo, non un conteggio dei risultati
-      🔍 Dalla frequenza al periodo
-      🤓 Poche attese lunghe possono pesare molto
-    🧩 Metti alla prova il modello
+    🧭 Attese della CPU
+      Latenza
+      Gerarchia delle memorie
+    🎯 Cache
+      Hit
+      Miss
+      Località temporale
+      Località spaziale
+      Linea di cache
+      FIFO
+      SRAM
+      DRAM
+      Refresh
+      L1 L2 L3
+    ⏱️ Clock
+      Frequenza
+      Periodo
+      Tempo medio di accesso
+      Pipeline
 ```
 
-## 🧭 Il problema delle attese
+## 🧭 Attese della CPU
 
 Nel Novecento non è cresciuta solo la velocità di calcolo: è cresciuta anche la quantità di informazioni che chiediamo alle macchine di trattare. Un processore veloce non elimina il tempo che serve per raggiungere quelle informazioni. Dalla [gerarchia delle memorie](%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md) nasce una domanda: possiamo evitare di fare ogni volta la strada più lenta?
 
 Quando studi tieni sul tavolo alcune pagine: non porti tutta la biblioteca vicino alla penna. 📚 Funziona perché non usi tutti i libri con la stessa probabilità. Anche molti programmi hanno regolarità: è questo il motivo della cache, non una capacità magica della CPU di prevedere il futuro.
 
-## 🎯 Tenere vicino ciò che serve
+L'idea non è recente. Nel 1965 Maurice Wilkes, lo stesso dell'EDSAC, descrisse una piccola memoria veloce che fa da «assistente» a una memoria grande e lenta, chiamandola *slave memory*. Pochi anni dopo comparve nei calcolatori commerciali: uno dei primi con una cache fu l'IBM System/360 Model 85, alla fine degli anni Sessanta.
+
+## 🎯 Cache
 
 ### ✅ Hit e miss
 
@@ -45,6 +58,8 @@ miss: recupera dal livello successivo e aggiorna la cache
 ```
 
 Un miss **non è un errore del programma**: è un evento previsto. La cache è piccola, quindi non può contenere tutto e a volte deve buttare fuori contenuti vecchi. Nei processori comuni tutto questo è gestito dall'hardware: non scegliamo noi ogni trasferimento.
+
+La cache **non è una parte della RAM** e non è un'altra memoria in più su cui il programmatore sceglie dove scrivere: è una **copia** di alcuni contenuti, tenuta più vicina alla CPU.
 
 <details>
 <summary>🃏 Che cos'è la cache?</summary>
@@ -66,7 +81,12 @@ No. È un evento previsto: la cache è piccola e non può contenere tutto.
 Nei processori comuni l'hardware: non si sceglie a mano ogni trasferimento.
 </details>
 
-### ✅ Due tipi di località
+<details>
+<summary>🃏 La cache è una parte della RAM?</summary>
+No. È una copia di alcuni contenuti, tenuta più vicina alla CPU.
+</details>
+
+### ✅ Località temporale e spaziale
 
 **Località temporale:** un contenuto usato da poco può servire di nuovo presto. Per esempio, un programma ripete le istruzioni di un ciclo, o torna più volte sullo stesso valore.
 
@@ -94,7 +114,7 @@ No. Accessi sparsi su tanti indirizzi lontani la sfruttano poco.
 No. Il contenuto potrebbe essere stato sostituito nel frattempo.
 </details>
 
-### ✅ I blocchi portano con sé i vicini
+### ✅ Blocchi e linee di cache
 
 La cache è organizzata in **linee**, che contengono blocchi di posizioni consecutive. Portare nella cache, insieme al valore richiesto, anche i suoi vicini sfrutta la località spaziale. Attenzione a non confondere la dimensione di una linea con la capacità totale della cache.
 
@@ -120,7 +140,7 @@ No. La linea è un singolo spazio; la capacità è lo spazio totale della cache.
 Se un accesso precedente ha portato in cache il blocco che lo contiene.
 </details>
 
-### 🔍 Una simulazione con tutte le regole in vista
+### 🔍 Simulazione di una cache
 
 La nostra cache di carta:
 
@@ -166,7 +186,7 @@ No. Conta solo l'ordine in cui i blocchi sono stati caricati.
 No. Il blocco può essere stato sostituito, come succede all'ultimo accesso dell'esempio.
 </details>
 
-### 🔍 SRAM e DRAM: entrambe hanno bisogno di corrente
+### 🔍 SRAM e DRAM
 
 La **SRAM** conserva ogni bit con un circuito stabile finché è alimentata. Non ha bisogno di «rinfrescare» le celle come la DRAM, ma occupa più spazio per bit: per questo si usa nelle cache. ⚠️ «Static» non significa non volatile.
 
@@ -199,9 +219,9 @@ Un rinfresco periodico delle celle, perché la carica si disperde. Mantiene l'in
 Livelli di cache: L1 di solito è la più piccola e veloce, i livelli successivi sono più capienti. Numero e condivisione dipendono dal processore.
 </details>
 
-## ⏱️ Il tempo nel processore
+## ⏱️ Clock
 
-### ✅ Clock: un ritmo, non un conteggio dei risultati
+### ✅ Clock e frequenza
 
 Il **clock** è un segnale periodico che dà il tempo ai circuiti sincroni. La frequenza conta i cicli al secondo: 2 GHz significa due miliardi di cicli al secondo, **non per forza due miliardi di istruzioni completate**.
 
@@ -229,7 +249,7 @@ No. Un'operazione può richiedere più passi e le attese della memoria consumano
 Guardando il lavoro svolto e il tempo impiegato, non solo i GHz.
 </details>
 
-### 🔍 Dalla frequenza al periodo
+### 🔍 Frequenza e periodo
 
 Se la frequenza è $f$, la durata di un ciclo (periodo) è:
 
@@ -263,7 +283,7 @@ No, mancano altre informazioni. Due CPU con la stessa frequenza non eseguono per
 No. La cache riduce alcune attese, più RAM permette di tenere attivi più dati.
 </details>
 
-### 🤓 Poche attese lunghe possono pesare molto
+### 🤓 Tempo medio di accesso
 
 > In un modello a due livelli, se ogni accesso paga il tempo di consultazione della cache e solo i miss pagano una penalità **aggiuntiva**, il tempo medio di accesso è:
 >

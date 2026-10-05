@@ -5,33 +5,44 @@
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 ```mermaid
+---
+config:
+  layout: tidy-tree
+---
 mindmap
   root((🗃️ Registri e percorsi dei dati))
-    🧭 Serve qualcuno che tenga il filo
-    🗃️ I registri e i loro ruoli
-      ✅ Un registro conserva bit, il ruolo dà loro significato
-      ✅ Come si legge la notazione
+    🧭 Registri della CPU
+      Registro
+      Registri generali
+    🗃️ Registri
+      PC
+      IR
+      MAR
+      MDR
+      Registro di stato
+      Notazione
     📥 Leggere e scrivere in memoria
-      ✅ Esempio svolto: leggere il valore 23
-      🔍 Anche un'istruzione è un contenuto
-      🔍 Scrivere è diverso da leggere
-    🚩 I flag
-      🔍 I flag non sono una copia del risultato
-      🤓 Quando il registro è troppo piccolo
-    🧩 Metti alla prova il modello
+      Lettura
+      Scrittura
+      Prelievo di un'istruzione
+    🚩 Flag
+      Flag Z
+      Carry
+      Sign
+      Overflow
 ```
 
-## 🧭 Serve qualcuno che tenga il filo
+## 🧭 Registri della CPU
 
 Nel [modello di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) la CPU esegue istruzioni conservate in memoria. Ma mentre aspetta una lettura, dove tiene l'indirizzo? E quando l'istruzione arriva, dove la tiene mentre prepara i dati?
 
 Servono piccoli posti di lavoro interni. È lo stesso problema di quando segui una ricetta: ti servono un segnalibro, la riga che stai leggendo e gli ingredienti su cui lavori. Nella CPU questi ruoli sono affidati ai **registri**.
 
-## 🗃️ I registri e i loro ruoli
+## 🗃️ Registri
 
-### ✅ Un registro conserva bit, il ruolo dà loro significato
+### ✅ Registri e ruoli
 
-Un **registro** è una piccola memoria dentro il processore, con capacità limitata. I **registri generali**, qui R1, R2 e R3, conservano operandi e risultati temporanei. Nel nostro modello altri registri hanno compiti specifici.
+Un **registro** è una piccola memoria dentro il processore, con capacità limitata. Conserva bit: ciascun registro, però, ha un **ruolo**, ed è il ruolo a dare significato a quei bit. I **registri generali**, qui R1, R2 e R3, conservano operandi e risultati temporanei. Nel nostro modello altri registri hanno compiti specifici.
 
 | Nome | Domanda a cui risponde | Contenuto nel modello |
 |---|---|---|
@@ -44,6 +55,8 @@ Un **registro** è una piccola memoria dentro il processore, con capacità limit
 PC e MAR possono contenere lo stesso numero in un certo momento, ma **non hanno lo stesso ruolo**. Il PC segue la sequenza delle istruzioni; il MAR serve per ogni accesso, anche ai dati. L'MDR può contenere un'istruzione: per la memoria è solo un contenuto trasferito.
 
 Questi nomi descrivono la nostra macchina didattica. Non tutte le CPU in commercio hanno un registro fisico con ciascuno di questi nomi.
+
+⚠️ **PC non è il computer!** Qui PC significa *Program Counter*, il contatore del programma. Nel linguaggio comune PC è anche il *Personal Computer*. La sigla è la stessa, la cosa no: in informatica capita spesso, e conviene chiedersi sempre «PC di quale tipo?». 😄
 
 <details>
 <summary>🃏 Che cos'è un registro?</summary>
@@ -90,7 +103,12 @@ No. Il PC segue la sequenza delle istruzioni; il MAR serve per ogni accesso alla
 No. Sono i nomi della nostra macchina didattica, non di ogni CPU in commercio.
 </details>
 
-### ✅ Come si legge la notazione
+<details>
+<summary>🃏 Che cosa significa PC in questa dispensa, e che cosa significa nel linguaggio comune?</summary>
+In questa dispensa Program Counter, il registro con l'indirizzo della prossima istruzione. Nel linguaggio comune è il Personal Computer: stessa sigla, cose diverse.
+</details>
+
+### ✅ Notazione
 
 - `R1 <- 7` significa «copia 7 in R1». La freccia non è un'uguaglianza e non svuota la sorgente.
 - `MEM[40]` indica **il contenuto** della cella di indirizzo 40.
@@ -160,7 +178,7 @@ Sì. Una lettura normale non cancella il contenuto della cella.
 No. Riceve il contenuto della cella: 40 dice dove cercare, non che cosa c'è.
 </details>
 
-### 🔍 Anche un'istruzione è un contenuto
+### 🔍 Prelievo di un'istruzione
 
 Supponiamo PC = 10 e MEM[10] = `LOAD R1, [40]`. Per prelevarla copiamo il PC nel MAR, chiediamo una lettura e riceviamo l'istruzione nel MDR. Poi la copiamo nell'IR. Ora la CU può interpretarla.
 
@@ -182,7 +200,7 @@ Il PC viene copiato nel MAR, si chiede una lettura, l'istruzione arriva nell'MDR
 L'IR conserva l'istruzione, mentre l'MDR riceve il dato richiesto: così la CPU non perde il comando mentre va a prendere il dato.
 </details>
 
-### 🔍 Scrivere è diverso da leggere
+### 🔍 Scrittura in memoria
 
 Vogliamo copiare in memoria il valore di R3 = 12, nella cella 50. Si prepara `MAR <- 50` e `MDR <- R3`, poi la CU attiva `WRITE`. Alla fine MEM[50] contiene 12: il vecchio contenuto di quella cella è **sostituito**. R3 resta 12.
 
@@ -203,9 +221,9 @@ Viene sostituito dal nuovo valore. Il registro sorgente invece conserva il suo v
 Perché con un indirizzo sbagliato si modifica un'altra cella, anche se il valore è giusto.
 </details>
 
-## 🚩 I flag
+## 🚩 Flag
 
-### 🔍 I flag non sono una copia del risultato
+### 🔍 Flag e risultati
 
 Dopo la sottrazione $7-7$ il risultato è 0 e il flag **Z** (zero) può valere 1 per segnalarlo. Un'istruzione successiva può usare questa informazione per scegliere che strada prendere.
 
@@ -233,7 +251,7 @@ No. Quali istruzioni aggiornano quali flag dipende dall'architettura.
 No. Aumenta la memoria principale, non la memoria interna del processore.
 </details>
 
-### 🤓 Quando il registro è troppo piccolo
+### 🤓 Overflow e riporto
 
 > Un registro da 4 bit ha 16 configurazioni. Come interi senza segno rappresentano i numeri da 0 a 15. La somma $15+1$ richiederebbe cinque bit: `1111 + 0001 = 10000`. Se ne teniamo solo quattro resta `0000`, con un riporto.
 >

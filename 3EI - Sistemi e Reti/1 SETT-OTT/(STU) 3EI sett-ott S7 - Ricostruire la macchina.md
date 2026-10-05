@@ -5,22 +5,32 @@
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 ```mermaid
+---
+config:
+  layout: tidy-tree
+---
 mindmap
   root((🧠 Ricostruire la macchina))
-    🧭 Da una somma a un sistema
+    🧭 Riepilogo del bimestre
+      Programma memorizzato
     🗺️ Il modello completo
-      ✅ La mappa da saper raccontare
-      ✅ Tre domande per non perdere il filo
-    🔧 Spiegare bene
-      🔍 Tesi, meccanismo, esempio
-      🔍 Quattro esercizi di collegamento
-      🤓 A caccia di controesempi
-    🧩 Metti alla prova il modello
-      📝 Prova di allenamento
-      ✍️ Correggere un errore senza cancellarlo
+      Von Neumann
+      CPU
+      Registri
+      Ciclo macchina
+      Bus
+      Indirizzi
+      Gerarchia delle memorie
+      Cache
+      Clock
+    🔧 Risposte tecniche
+      Tesi
+      Meccanismo
+      Esempio
+      Controesempio
 ```
 
-## 🧭 Da una somma a un sistema
+## 🧭 Riepilogo del bimestre
 
 All'inizio ci siamo chiesti: come fa una macchina a svolgere compiti diversi senza essere ricostruita ogni volta? Ora sappiamo che non basta rispondere «con un programma». Bisogna conservare le istruzioni, raggiungerle, interpretarle, spostare i dati e tenere i risultati.
 
@@ -28,7 +38,7 @@ La storia del computer si può rileggere come una catena di problemi collegati: 
 
 ## 🗺️ Il modello completo
 
-### ✅ La mappa da saper raccontare
+### ✅ Mappa del modello
 
 ```text
 PROGRAMMA: istruzioni codificate, conservate in memoria
@@ -105,7 +115,7 @@ Sulla località temporale e sulla località spaziale.
 No. Significa accedere al livello successivo, e non è un guasto.
 </details>
 
-### ✅ Tre domande per non perdere il filo
+### ✅ Tre domande di controllo
 
 Quando segui un'istruzione chiediti: **dove siamo?**, **che cosa abbiamo letto?**, **che cosa cambia davvero?** Dire il nome di un registro senza il suo ruolo non basta. Dire che una memoria è «grande» non dice quanto è veloce o se tiene i dati senza corrente.
 
@@ -124,7 +134,7 @@ No. Bisogna dire anche il suo ruolo in quel momento.
 No. Capacità, velocità e persistenza sono proprietà diverse.
 </details>
 
-## 🔧 Spiegare bene
+## 🔧 Risposte tecniche
 
 ### 🔍 Tesi, meccanismo, esempio
 
@@ -167,7 +177,7 @@ Nell'esercizio B usiamo le regole di S4: una cella per ogni istruzione e PC che 
 No. Mostra i ruoli: per esempio la CU non è una scheda da cercare vicino al processore.
 </details>
 
-### 🤓 A caccia di controesempi
+### 🤓 Controesempi
 
 > Nella scienza una regola diventa più precisa quando cerchiamo dove smette di funzionare. Scegli una frase: «più GHz significa sempre meno tempo» oppure «un dato usato prima sarà in cache». Costruisci una situazione che mostri quale condizione manca.
 >
@@ -187,7 +197,7 @@ L'attesa e lo spazio limitato.
 
 ### 📝 Prova di allenamento
 
-Tempo indicativo: 30 minuti, prima da solo. Non sono richiesti AMAT, pipeline, CISC/RISC o procedure di avvio.
+Tempo indicativo: 30 minuti, prima da solo. Non sono richiesti AMAT, pipeline, CISC/RISC o procedure di avvio. Gli esercizi mescolano di proposito argomenti diversi: per esercitarti meglio, non rispondere nell'ordine in cui li hai studiati, ma parti da quello in cui ti senti meno sicuro e torna poi ai primi.
 
 1. **Sistema.** Disegna il modello di Von Neumann. Spiega perché memorizzare le istruzioni permette di cambiare compito senza ricostruire l'hardware.
 2. **Registri.** Distingui PC, IR, MAR e MDR. Perché l'MDR può cambiare durante una `LOAD` senza sostituire l'istruzione nell'IR?

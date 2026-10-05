@@ -5,31 +5,47 @@
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 ```mermaid
+---
+config:
+  layout: tidy-tree
+---
 mindmap
   root((🔄 Il ciclo macchina))
-    🧭 Dalle istruzioni alle azioni
-    🔄 Il ciclo in tre fasi
-      ✅ Tre fasi, una storia continua
-    ▶️ Un programma dall'inizio alla fine
-      ✅ Le regole della nostra macchina
-      ✅ Esempio svolto: caricare, sommare, conservare
+    🧭 Programma in esecuzione
+      Programma memorizzato
+      Istruzione
+    🔄 Fetch, decode, execute
+      Fetch
+      Decode
+      Execute
+      Write-back
+    ▶️ Traccia di un programma
+      LOAD
+      ADD
+      STORE
+      HALT
+      Tabella di traccia
     🔬 Dentro il ciclo
-      🔍 Il fetch passo per passo
-      🔍 I bus mentre lavorano
-      🔍 Secondo esempio: indirizzo calcolato
-      🤓 I salti fanno ripetere il programma
-    🧩 Metti alla prova il modello
+      Opcode
+      Bus indirizzi
+      Bus dati
+      Bus di controllo
+      Indirizzo calcolato
+      Salto
+      Salto condizionato
 ```
 
-## 🧭 Dalle istruzioni alle azioni
+## 🧭 Programma in esecuzione
 
 Un programma in memoria, da solo, non fa nulla. Dopo aver distinto [registri e percorsi](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md), dobbiamo capire chi fa avanzare il lavoro. La forza del programma memorizzato sta anche qui: ripetendo sempre lo stesso procedimento generale, la stessa macchina realizza comportamenti diversissimi.
 
 Una ricetta non è il piatto. Per passare dall'una all'altro bisogna sapere quale istruzione leggere, come interpretarla e che cosa modificare. La CPU fa tutto questo senza «capire» le istruzioni come le capirebbe una persona.
 
+Questo procedimento non è una scoperta recente: era già descritto nel rapporto sull'EDVAC del 1945. Oggi i processori lo nascondono dietro molte astuzie per andare più veloci (le vedremo a novembre), ma il modello resta valido per capire che cosa succede.
+
 ## 🔄 Il ciclo in tre fasi
 
-### ✅ Tre fasi, una storia continua
+### ✅ Fetch, decode, execute
 
 ```text
 FETCH                 DECODE                  EXECUTE
@@ -69,7 +85,7 @@ La scrittura del risultato, spesso descritta come passo a sé dell'esecuzione.
 No. Per esempio una STORE scrive in memoria, non in un registro.
 </details>
 
-## ▶️ Un programma dall'inizio alla fine
+## ▶️ Traccia di un programma
 
 ### ✅ Le regole della nostra macchina
 
@@ -101,7 +117,7 @@ Solo R3, dove scrive la somma di R1 e R2.
 Termina la simulazione.
 </details>
 
-### ✅ Esempio svolto: caricare, sommare, conservare
+### ✅ Esempio svolto: LOAD, ADD, STORE
 
 **Situazione iniziale:** PC = 10, R1 = 0, R2 = 5, R3 = 0.
 
@@ -153,7 +169,7 @@ Si scrive lo stato iniziale e si aggiorna una tabella di PC, registri e memoria 
 
 ## 🔬 Dentro il ciclo
 
-### 🔍 Il fetch passo per passo
+### 🔍 Il fetch in dettaglio
 
 | Passo | Trasferimento o comando | Stato |
 |---|---|---|
@@ -187,7 +203,7 @@ Due: prima per prelevare l'istruzione, poi per leggere il dato richiesto.
 Perché il dato arriva nell'MDR: l'IR conserva il comando finché l'istruzione non è finita.
 </details>
 
-### 🔍 I bus mentre lavorano
+### 🔍 I tre bus in azione
 
 | Collegamento | Nel fetch | Nella scrittura di un dato |
 |---|---|---|
@@ -222,7 +238,7 @@ No. Genera segnali che scelgono percorsi e abilitano operazioni; i calcoli li fa
 No. Usa collegamenti interni al processore.
 </details>
 
-### 🔍 Secondo esempio: indirizzo calcolato
+### 🔍 Indirizzo calcolato
 
 `LOAD R1, [R2+4]` richiede prima di ricavare l'indirizzo. Se R2 = 36, l'ALU calcola $36+4=40$. Se MEM[40] = 7, in R1 arriva **7**: non 40 e non 36.
 
@@ -245,7 +261,7 @@ A trovare il dato: la somma produce l'indirizzo, non il valore finale.
 No. Dietro un gesto ci sono moltissime istruzioni e trasferimenti.
 </details>
 
-### 🤓 I salti fanno ripetere il programma
+### 🤓 Salti e cicli
 
 > Un **salto** cambia il PC con una destinazione diversa dalla cella successiva. Un **salto condizionato** lo fa solo se una condizione è vera, per esempio se un flag ha un certo valore. Così un programma può scegliere fra strade diverse o ripetere operazioni: è da qui che nascono `if` e cicli.
 >
