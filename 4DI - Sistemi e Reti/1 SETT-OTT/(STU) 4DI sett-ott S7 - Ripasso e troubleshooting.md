@@ -46,7 +46,7 @@ Con un tempo massimo di circa tre millisecondi, la connessione riesce solo se il
 
 Il mistero era risolto. Nessuna magia: un valore a zero, e la fisica.
 
-🧠 ==Un sintomo strano ha sempre una causa precisa. Si trova controllando un passaggio alla volta, partendo da ciò che è cambiato.==
+🧠 <u>Un sintomo strano ha sempre una causa precisa. Si trova controllando un passaggio alla volta, partendo da ciò che è cambiato.</u>
 
 È esattamente quello che faremo oggi, con indirizzi e maschere.
 
@@ -135,7 +135,7 @@ Quando un calcolo o una configurazione non torna, **non indovinare**. Controlla 
 
 Il sesto controllo è l'unico sul gateway, e basta questo: **deve stare nella stessa rete dell'host**. Che cosa faccia lo scopriremo a novembre.
 
-🧠 ==Scrivi i passaggi. Così capisci in quale nasce l'errore.==
+🧠 <u>Scrivi i passaggi. Così capisci in quale nasce l'errore.</u>
 
 <details>
 <summary>🃏 <b>Che cosa controlli per primo se maschera e prefisso sembrano discordare?</b></summary>

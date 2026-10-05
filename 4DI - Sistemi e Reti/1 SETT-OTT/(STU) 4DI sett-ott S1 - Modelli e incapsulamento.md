@@ -34,7 +34,7 @@ Le macchine hanno lo stesso problema. Per parlarsi devono mettersi d'accordo su 
 
 29 ottobre 1969, le 22:30. Un laboratorio dell'università UCLA, in California. Uno studente, Charley Kline, prova a collegarsi a un computer dello Stanford Research Institute. All'altro capo c'è Bill Duvall. Kline vuole scrivere `LOGIN`. Digita due lettere. Il computer di Stanford si blocca. Il primo messaggio della rete che diventerà Internet è `LO`: quasi un «Hello».
 
-Circa un'ora dopo Duvall sistema la macchina, Kline riprova e questa volta entra. Quel giorno è nata una domanda che useremo tutto l'anno: ==chi fa che cosa, quando un messaggio parte?==
+Circa un'ora dopo Duvall sistema la macchina, Kline riprova e questa volta entra. Quel giorno è nata una domanda che useremo tutto l'anno: <u>chi fa che cosa, quando un messaggio parte?</u>
 
 > 😄 Nei laboratori di rete si scherza su un «livello 8»: l'utente. Non esiste negli standard. Ma ogni tecnico lo ha incontrato.
 
@@ -44,7 +44,7 @@ Circa un'ora dopo Duvall sistema la macchina, Kline riprova e questa volta entra
 
 Una **rete** collega dispositivi che scambiano informazioni. Per capirsi usano **protocolli**.
 
-==Un protocollo è un accordo su come formare, inviare e interpretare un messaggio.==
+<u>Un protocollo è un accordo su come formare, inviare e interpretare un messaggio.</u>
 
 Internet è una **rete di reti**: tante reti diverse che parlano gli stessi protocolli.
 
@@ -77,9 +77,9 @@ Dividere il lavoro rende tutto più semplice. Ogni livello ha un compito.
 
 *Le due mappe non coincidono riga per riga: TCP/IP raggruppa alcune funzioni.*
 
-⚠️ ==I livelli sono funzioni, non pezzi di hardware.== Non esistono sette scatole impilate dentro il computer.
+⚠️ <u>I livelli sono funzioni, non pezzi di hardware.</u> Non esistono sette scatole impilate dentro il computer.
 
-⚠️ ==I protocolli veri di Internet sono quelli della famiglia TCP/IP.== ISO/OSI è soprattutto una mappa per ragionare: i protocolli progettati per OSI esistono sulla carta, ma non sono quelli che usiamo. Perché è andata così lo racconta la storia in fondo alla dispensa.
+⚠️ <u>I protocolli veri di Internet sono quelli della famiglia TCP/IP.</u> ISO/OSI è soprattutto una mappa per ragionare: i protocolli progettati per OSI esistono sulla carta, ma non sono quelli che usiamo. Perché è andata così lo racconta la storia in fondo alla dispensa.
 
 <details>
 <summary>🃏 <b>Quanti livelli ha ISO/OSI?</b></summary>
@@ -158,7 +158,7 @@ Ogni livello lavora con due parti:
 - il **payload** (*carico*): quello che deve consegnare, cioè ciò che gli passa il livello sopra;
 - l'**header** (*intestazione*): una piccola etichetta, scritta **davanti** al payload, con le informazioni che servono **a quel livello**.
 
-==L'header è l'etichetta del livello. Il payload è il contenuto.==
+<u>L'header è l'etichetta del livello. Il payload è il contenuto.</u>
 
 Pensa a un pacco postale. Dentro c'è il regalo (payload). Fuori c'è l'etichetta con mittente e destinatario (header). Il corriere legge l'etichetta, non apre il regalo.
 
@@ -193,7 +193,7 @@ No: ogni livello usa solo il proprio header.
 
 Un livello riceve il payload dal livello sopra, ci scrive davanti il proprio header e passa tutto al livello sotto. Questo blocco, **header + payload**, è la **PDU** del livello (*Protocol Data Unit*, «unità di dati del protocollo»).
 
-==La PDU è il «pacco» di un livello: il suo header più ciò che trasporta.==
+<u>La PDU è il «pacco» di un livello: il suo header più ciò che trasporta.</u>
 
 Poiché ogni livello ha un header diverso, ogni PDU ha **un nome diverso**:
 
@@ -213,7 +213,7 @@ dati → segmento → pacchetto → frame → segnali
 
 🧪 **Un esempio.** Il browser invia `GET /index.html`. Quei dati diventano un **segmento** quando il trasporto aggiunge il suo header. Il segmento diventa un **pacchetto** quando IP aggiunge il suo. Il pacchetto diventa un **frame** quando Ethernet aggiunge il suo. Il contenuto è sempre la richiesta GET: cambia solo la busta che la contiene.
 
-⚠️ ==Pacchetto, segmento e frame non sono sinonimi.== Ognuno è il «pacco» di un livello preciso.
+⚠️ <u>Pacchetto, segmento e frame non sono sinonimi.</u> Ognuno è il «pacco» di un livello preciso.
 
 <details>
 <summary>🃏 <b>Che cos'è una PDU?</b></summary>
@@ -302,7 +302,7 @@ Perché ogni livello ha un compito diverso, come indicare il programma o la rete
 
 Una scheda di rete può svolgere più funzioni. Un protocollo può coinvolgere software e hardware. Se cambi il mezzo, per esempio da cavo a Wi-Fi, cambiano le regole del collegamento, ma non il significato del messaggio.
 
-Il modello ci aiuta a fare una domanda precisa: ==quale funzione manca?==
+Il modello ci aiuta a fare una domanda precisa: <u>quale funzione manca?</u>
 
 🧪 **Un esempio: «la pagina non si apre».** Invece di «non funziona niente», chiediti dal basso, un livello alla volta, quale funzione manca:
 

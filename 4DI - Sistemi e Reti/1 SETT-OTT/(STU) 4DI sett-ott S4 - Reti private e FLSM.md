@@ -47,7 +47,7 @@ Lo standard **RFC 1918** riserva tre intervalli IPv4 all'uso **privato**:
 | `172.16.0.0` - `172.31.255.255` | `/12` | `172.20.5.10` |
 | `192.168.0.0` - `192.168.255.255` | `/16` | `192.168.1.20` |
 
-==Un indirizzo privato vale solo dentro la propria rete. I router di Internet non lo instradano.==
+<u>Un indirizzo privato vale solo dentro la propria rete. I router di Internet non lo instradano.</u>
 
 Per questo chiunque può usarli. La tua rete di casa e quella del vicino possono entrambe avere un PC con `192.168.1.20`. Non si confondono, finché le due reti non si collegano.
 
@@ -83,7 +83,7 @@ PC (192.168.1.20)  →  [router NAT]  →  Internet
 
 Di solito il router annota anche le **porte**, così molti dispositivi possono condividere **un solo** indirizzo pubblico. Questa variante si chiama **PAT** (o NAPT). Non la configuriamo: ci basta seguire il percorso.
 
-🧠 ==Il NAT non crea indirizzi: li fa condividere. E non è un firewall.==
+🧠 <u>Il NAT non crea indirizzi: li fa condividere. E non è un firewall.</u>
 
 | | NAT | Firewall |
 |---|---|---|
@@ -142,7 +142,7 @@ I blocchi partono ogni 64 indirizzi: `.0`, `.64`, `.128`, `.192`.
 
 Il **gateway** (se c'è) è un indirizzo host della sottorete: scegli una convenzione (per esempio il primo host) e dichiarala. Per ora non serve altro: il gateway sarà protagonista a novembre.
 
-🧠 ==Per avere il doppio delle sottoreti, si aggiunge un bit.==
+🧠 <u>Per avere il doppio delle sottoreti, si aggiunge un bit.</u>
 
 <details>
 <summary>🃏 <b>Che cosa significa FLSM?</b></summary>

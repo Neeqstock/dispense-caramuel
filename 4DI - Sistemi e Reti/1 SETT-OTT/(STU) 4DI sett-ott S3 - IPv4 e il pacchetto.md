@@ -44,7 +44,7 @@ Nove inviati, quattro tornati: è il *best effort* in versione piumata. Una rete
 
 **IP** (*Internet Protocol*) dà a ogni interfaccia un indirizzo e porta **pacchetti** da una rete all'altra.
 
-==IP è best effort: prova a consegnare, ma non garantisce niente.==
+<u>IP è best effort: prova a consegnare, ma non garantisce niente.</u>
 
 Che cosa non garantisce:
 
@@ -127,7 +127,7 @@ Un'interfaccia di rete, non un computer intero.
 
 Un indirizzo ha due parti: la **rete** (**NetID**) e l'**host** (**HostID**). Ma dove finisce una e inizia l'altra? Lo dice il **prefisso**.
 
-==Un indirizzo da solo non dice dove passa il confine. Serve il prefisso.==
+<u>Un indirizzo da solo non dice dove passa il confine. Serve il prefisso.</u>
 
 Nell'indirizzo `192.168.1.25/24`:
 
@@ -213,7 +213,7 @@ Prima del 1993 il prefisso non si scriveva: **lo decideva il primo ottetto**. Og
 
 Il difetto è chiaro: un'organizzazione con 300 computer non entra in una C (256) e riceve una B (65 536). Quasi tutto lo spazio resta inutilizzato. Con **CIDR** (S5) il prefisso si scrive esplicitamente e può avere qualsiasi lunghezza.
 
-🧠 ==Oggi il confine si legge dal prefisso, non dalla classe.==
+🧠 <u>Oggi il confine si legge dal prefisso, non dalla classe.</u>
 
 ⚠️ `192.168.1.25/24` è una C... ma `192.168.1.25/27` no: dipende dal prefisso.
 

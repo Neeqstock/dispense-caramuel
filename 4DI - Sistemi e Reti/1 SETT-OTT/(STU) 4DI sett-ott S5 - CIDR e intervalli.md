@@ -45,7 +45,7 @@ CIDR non ha fatto nulla di spettacolare. Ha solo cambiato dove si scrive il conf
 
 Con CIDR un indirizzo si scrive così: `192.168.40.0/26`. Il numero dopo la barra dice **quanti bit iniziali sono di rete**. I restanti sono bit host.
 
-==In una rete `/p`, i primi $p$ bit sono di rete. Gli altri $32 - p$ sono di host.==
+<u>In una rete `/p`, i primi $p$ bit sono di rete. Gli altri $32 - p$ sono di host.</u>
 
 Il prefisso e la **maschera** dicono la stessa cosa:
 
@@ -65,7 +65,7 @@ Il prefisso e la **maschera** dicono la stessa cosa:
 
 Se restano $h$ bit host, il blocco contiene $2^h$ indirizzi. Gli host assegnabili sono, nel caso ordinario, $2^h - 2$: l'indirizzo di rete e il broadcast hanno ruoli propri.
 
-🧠 ==Indirizzi nel blocco: $2^h$. Host ordinari: $2^h - 2$.==
+🧠 <u>Indirizzi nel blocco: $2^h$. Host ordinari: $2^h - 2$.</u>
 
 <details>
 <summary>🃏 <b>Che cosa indica il prefisso /p?</b></summary>
@@ -100,7 +100,7 @@ salto = 256 − (valore dell'ottetto della maschera)
 
 🧪 **/27:** la maschera finisce con 224, quindi il salto è $256 - 224 = 32$. I blocchi iniziano a `.0`, `.32`, `.64`, `.96`, `.128`, `.160`, `.192`, `.224`.
 
-🧠 ==Il salto è la dimensione del blocco. Le reti iniziano sui multipli del salto.==
+🧠 <u>Il salto è la dimensione del blocco. Le reti iniziano sui multipli del salto.</u>
 
 | Prefisso | Ottetto della maschera | Salto |
 |---:|---:|---:|

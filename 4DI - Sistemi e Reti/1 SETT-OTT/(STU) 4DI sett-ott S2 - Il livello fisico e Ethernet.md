@@ -44,7 +44,7 @@ Metcalfe fa una scelta intelligente: invece di tenere la tecnologia per Xerox, c
 
 Un computer lavora con **bit**. Un cavo trasporta **segnali**. Il livello fisico fa da traduttore.
 
-==Il livello fisico trasforma i bit in segnali e i segnali in bit.==
+<u>Il livello fisico trasforma i bit in segnali e i segnali in bit.</u>
 
 | Mezzo | Che cosa trasporta il segnale | Esempio |
 |---|---|---|
@@ -93,7 +93,7 @@ Nella S1 abbiamo visto che il livello 2 usa il **frame**. In Ethernet il frame h
 
 Un **indirizzo MAC** ha 48 bit ed è legato alla scheda di rete. Di solito si scrive in esadecimale, per esempio `00:1A:2B:3C:4D:5E`.
 
-🧠 ==Il frame trasporta il pacchetto. Non lo sostituisce.== Il frame è la PDU del livello 2; il pacchetto IP è la PDU del livello 3, ed è dentro il campo dati.
+🧠 <u>Il frame trasporta il pacchetto. Non lo sostituisce.</u> Il frame è la PDU del livello 2; il pacchetto IP è la PDU del livello 3, ed è dentro il campo dati.
 
 ⚠️ **MAC e IP non sono due nomi della stessa cosa.**
 
@@ -194,7 +194,7 @@ Tre parole che spesso si scambiano. Non sono sinonimi.
 
 🧪 **Un conto ideale.** Un file da 1 MB (decimale) contiene circa 8 megabit. A 100 Mbit/s servono almeno 0,08 secondi (80 ms). A 1 Gbit/s almeno 8 ms. È un minimo teorico: intestazioni, controlli e attese aggiungono tempo.
 
-🧠 ==Per scaricare un file grande conta il throughput. Per una chiamata o un gioco conta la latenza.==
+🧠 <u>Per scaricare un file grande conta il throughput. Per una chiamata o un gioco conta la latenza.</u>
 
 <details>
 <summary>🃏 <b>Che cos'è la banda nominale?</b></summary>

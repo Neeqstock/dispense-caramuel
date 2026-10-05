@@ -62,7 +62,7 @@ Il primo passo è **dimensionare**: dato il numero di host, trovare il prefisso 
 
 ⚠️ **Il gateway occupa un host.** Se un reparto ha 62 host e un gateway, servono **63** indirizzi host: una `/26` (62 host ordinari) non basta, ci vuole una `/25`. Dichiara sempre se hai contato il gateway.
 
-🧠 ==Prima si dimensiona ogni richiesta. Poi si assegna.==
+🧠 <u>Prima si dimensiona ogni richiesta. Poi si assegna.</u>
 
 <details>
 <summary>🃏 <b>Qual è il prefisso di una rete con 6 bit host?</b></summary>
