@@ -1,34 +1,45 @@
+⬅️ [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) ➡️
+
 # 🏠 Reti private e FLSM
 
 **4DI · Settembre-Ottobre · S4 · Teoria**
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
+⏱️ **Tempo di studio: circa 35 minuti.** ✅ essenziale: 22 min. 🔍 per il voto alto: 13 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
+
+> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard (rispondi a voce, poi apri)
+
+## 🗺️ Mappa
 
 ```mermaid
 mindmap
   root((🏠 Reti private e FLSM))
-    🧭 Indirizzi privati e suddivisione delle reti
-    🧮 Indirizzi privati, NAT e FLSM
-      ✅ Gli indirizzi privati si possono riutilizzare
-      ✅ NAT traduce gli indirizzi
-      ✅ FLSM divide la rete in blocchi uguali
-      🔍 FLSM è semplice ma può sprecare spazio
-      🤓 Gli intervalli IPv4 hanno usi diversi
-    🧩 Esercizi su reti private e FLSM
-    📚 Fonti e risorse
+    Indirizzi privati
+      ✅ Intervalli RFC 1918
+      ✅ NAT
+    FLSM
+      ✅ Sottoreti uguali
+      🔍 Spreco di FLSM
+      🤓 Loopback e altri intervalli
+    Esercizi
 ```
 
-## 🧭 Indirizzi privati e suddivisione delle reti
+## 📜 Quando i numeri sono finiti
 
-Gli indirizzi IPv4 sono una risorsa finita. Una rete deve decidere quali indirizzi usare e come dividerli, evitando ambiguità. Gli indirizzi privati possono essere riutilizzati in reti separate; FLSM divide una rete in sottoreti uguali.
+3 febbraio 2011. In una sala per conferenze stampa, i responsabili dell'ente che distribuisce gli indirizzi IP nel mondo, lo **IANA**, annunciano un fatto storico. Distribuiscono gli **ultimi** grandi blocchi liberi: cinque, uno a ciascuna delle cinque organizzazioni regionali. Da quel giorno, lo IANA non ha più indirizzi IPv4 da dare.
 
-Queste due idee rispondono a problemi diversi. Gli indirizzi privati permettono di creare indirizzi per le reti interne senza consumare un indirizzo pubblico per ogni dispositivo. FLSM, invece, prende una rete già assegnata e la divide in blocchi di uguale dimensione. Una tecnica riguarda il riuso degli indirizzi; l'altra riguarda la progettazione delle sottoreti.
+Non è una sorpresa. Gli ingegneri lo avevano capito già nel 1992: con 32 bit e tutto lo spreco delle classi di S3, gli indirizzi non sarebbero bastati. Servivano **trucchi**. Ne arrivano due.
 
-## 🧮 Indirizzi privati, NAT e FLSM
+Il primo è **CIDR** (1993), che vedremo in S5: smettere di sprecare. Il secondo è il **NAT**: riutilizzare. Se non ci sono abbastanza numeri per tutti, ogni casa e ogni azienda usa **numeri privati**, gli stessi che usa il vicino, e passa dal mondo esterno con un solo indirizzo pubblico. Nel 1994 un documento ufficiale (RFC 1631) lo descrive con grande onestà: è una **«soluzione a breve termine»**. Nel 1996 viene definito lo spazio privato (RFC 1918).
 
-### ✅ Gli indirizzi privati si possono riutilizzare
+Doveva durare pochi anni, in attesa di una soluzione definitiva. Oggi è dentro quasi ogni router di casa. Il provvisorio, in informatica, ha una strana abitudine: **resta**.
 
-Gli intervalli privati definiti da RFC 1918 possono essere usati nelle reti interne:
+Anche in Europa arriva il momento. Il **RIPE NCC**, l'organizzazione che assegna gli indirizzi per l'Europa, esaurisce le sue scorte il 14 settembre 2012. È stata la seconda al mondo.
+
+## 🏠 Indirizzi privati
+
+### ✅ Gli indirizzi privati si riutilizzano
+
+Lo standard **RFC 1918** riserva tre intervalli IPv4 all'uso **privato**:
 
 | Intervallo | Prefisso | Esempio |
 |---|---:|---|
@@ -36,64 +47,87 @@ Gli intervalli privati definiti da RFC 1918 possono essere usati nelle reti inte
 | `172.16.0.0` - `172.31.255.255` | `/12` | `172.20.5.10` |
 | `192.168.0.0` - `192.168.255.255` | `/16` | `192.168.1.20` |
 
-Due reti separate possono usare lo stesso indirizzo privato. Se poi vengono collegate, la sovrapposizione deve essere gestita con attenzione.
+==Un indirizzo privato vale solo dentro la propria rete. I router di Internet non lo instradano.==
 
-Questi intervalli sono riservati all'uso privato: i router di Internet non li trattano come normali destinazioni globali. Ogni organizzazione può riutilizzarli al proprio interno. Per esempio, due scuole senza collegamenti fra loro possono entrambe assegnare `192.168.1.20` a un PC. Se le reti vengono unite, però, lo stesso numero potrebbe indicare due dispositivi diversi: occorre rinumerare una rete o introdurre una soluzione di traduzione.
+Per questo chiunque può usarli. La tua rete di casa e quella del vicino possono entrambe avere un PC con `192.168.1.20`. Non si confondono, finché le due reti non si collegano.
+
+⚠️ Se due reti private con gli stessi numeri vengono unite, lo stesso indirizzo indica due dispositivi diversi. Bisogna rinumerare una rete o usare una traduzione.
 
 <details>
-<summary>🃏 Quali sono i tre intervalli privati RFC 1918?</summary>
+<summary>🃏 <b>Quali sono i tre intervalli privati di RFC 1918?</b></summary>
 10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16.
 </details>
 <details>
-<summary>🃏 Due reti isolate possono riutilizzare lo stesso indirizzo privato?</summary>
-Sì. Se vengono collegate, la sovrapposizione richiede un piano.
+<summary>🃏 <b>Due reti isolate possono usare lo stesso indirizzo privato?</b></summary>
+Sì. Se vengono collegate, la sovrapposizione va gestita.
 </details>
 <details>
-<summary>🃏 Un indirizzo pubblico è automaticamente accessibile e sicuro?</summary>
-No. Accessibilità e sicurezza dipendono anche da routing, regole e configurazioni.
+<summary>🃏 <b>Un indirizzo privato viaggia in Internet?</b></summary>
+No: i router di Internet non lo instradano.
 </details>
 
-### ✅ NAT traduce gli indirizzi
+✏️ **Riconosci (2 min).** Quali di questi sono privati? `172.20.5.10` · `172.32.0.1` · `192.169.1.1` · `10.200.1.1`. *(Attenzione ai limiti di `172.16.0.0/12`.)*
+
+### ✅ Il NAT traduce gli indirizzi
+
+Un PC con indirizzo privato vuole aprire una pagina in Internet. Ma nessuno risponderebbe a un indirizzo privato. Entra in gioco il **NAT** (*Network Address Translation*), di solito nel router di casa.
+
+```text
+PC (192.168.1.20)  →  [router NAT]  →  Internet
+ sorgente: 192.168.1.20      sorgente: 203.0.113.5 (indirizzo pubblico)
+                                 ← la risposta torna a 203.0.113.5
+ il router ricorda chi aveva chiesto → consegna al PC giusto
+```
+
+*Il router sostituisce l'indirizzo privato con il proprio pubblico e annota la richiesta. Quando arriva la risposta, la consulta e la consegna al PC giusto.*
+
+Di solito il router annota anche le **porte**, così molti dispositivi possono condividere **un solo** indirizzo pubblico. Questa variante si chiama **PAT** (o NAPT). Non la configuriamo: ci basta seguire il percorso.
+
+🧠 ==Il NAT non crea indirizzi: li fa condividere. E non è un firewall.==
+
+| | NAT | Firewall |
+|---|---|---|
+| Che cosa fa | **traduce** gli indirizzi | **decide** quali comunicazioni consentire |
+
+*Un router può fare entrambe le cose, ma restano compiti diversi.*
+
+🔍 **Il prezzo del NAT.** Una connessione che parte dall'interno funziona bene. Una che parte **dall'esterno** non trova il PC: il router non sa a chi consegnarla. Per questo ospitare un servizio da casa è più difficile di quanto sembri.
+
+> 😄 «Non c'è posto come 127.0.0.1»: l'indirizzo di casa del computer, che vedremo più avanti. Anche i tecnici hanno la loro nostalgia.
 
 <details>
-<summary>🃏 Perché due reti private separate possono usare lo stesso indirizzo?</summary>
-Gli indirizzi privati si possono riutilizzare in reti separate; se le reti si uniscono, l'indirizzo sovrapposto deve essere gestito.
-</details>
-Il **NAT** (*Network Address Translation*) modifica gli indirizzi quando il traffico attraversa un confine. In una rete domestica, più dispositivi possono usare indirizzi privati e condividere un indirizzo pubblico. Il router tiene spesso traccia anche delle porte per associare correttamente le risposte.
-
-Considera un computer di casa che apre una pagina web. Prima del router, il pacchetto ha come sorgente l'indirizzo privato del computer e come destinazione il server. Il router sostituisce la sorgente privata con il proprio indirizzo pubblico e registra l'associazione. Quando arriva la risposta, consulta quella registrazione e la consegna al computer che aveva iniziato lo scambio.
-
-Spesso il router traduce anche le **porte** dei protocolli di trasporto, così più dispositivi possono condividere lo stesso indirizzo pubblico e le risposte possono essere associate alla comunicazione corretta. Questa forma è spesso chiamata PAT o NAPT. Non è necessario configurare nulla in questa lezione: basta seguire il cambio di indirizzo e il percorso di ritorno.
-
-Il NAT non crea nuovi indirizzi pubblici: fa condividere quelli disponibili. Non è un sinonimo di firewall: il NAT traduce le informazioni di indirizzamento, mentre un firewall decide quali comunicazioni consentire o bloccare. Uno stesso router può svolgere entrambe le funzioni, ma i compiti restano distinti.
-
-<details>
-<summary>🃏 Che cosa fa il NAT?</summary>
-Traduce informazioni di indirizzamento quando il traffico attraversa un confine.
+<summary>🃏 <b>Che cosa fa il NAT?</b></summary>
+Traduce gli indirizzi quando il traffico attraversa il confine fra rete privata e Internet.
 </details>
 <details>
-<summary>🃏 NAT e firewall sono la stessa cosa?</summary>
-No. NAT traduce indirizzi; un firewall applica regole per consentire o bloccare traffico.
+<summary>🃏 <b>Come fa il router a consegnare la risposta al PC giusto?</b></summary>
+Consulta la registrazione fatta quando il PC ha inviato la richiesta.
 </details>
+<details>
+<summary>🃏 <b>Che cos'è il PAT?</b></summary>
+Un NAT che traduce anche le porte, così molti dispositivi condividono un indirizzo pubblico.
+</details>
+<details>
+<summary>🃏 <b>NAT e firewall sono la stessa cosa?</b></summary>
+No: il NAT traduce indirizzi, il firewall applica regole di accesso.
+</details>
+
+✏️ **Trova l'errore (2 min).** «Ho il NAT, quindi sono protetto da ogni attacco.» Che cosa confonde questa frase? *(Indizio: tradurre non è decidere.)*
+
+## ✂️ FLSM
 
 ### ✅ FLSM divide la rete in blocchi uguali
 
-<details>
-<summary>🃏 Come fa il router a consegnare la risposta dopo una traduzione NAT?</summary>
-Consulta l'associazione registrata quando il dispositivo interno ha iniziato lo scambio e inoltra la risposta al dispositivo corretto.
-</details>
-<details>
-<summary>🃏 Che cosa aggiunge PAT alla traduzione degli indirizzi?</summary>
-Può tradurre anche le porte, così più dispositivi condividono un indirizzo pubblico e le risposte sono associate agli scambi corretti.
-</details>
-**FLSM** (*Fixed Length Subnet Masking*) crea sottoreti con lo stesso prefisso. Dividiamo `192.168.10.0/24` in quattro parti uguali:
+Abbiamo una rete e vogliamo dividerla in **sottoreti**. **FLSM** (*Fixed Length Subnet Masking*) la taglia in parti **uguali**, con lo stesso prefisso.
 
-1. Quattro sottoreti richiedono due bit, perché $2^2=4$.
-2. Si prendono quei bit dalla parte host: il prefisso passa da `/24` a `/26`, cioè la maschera diventa `255.255.255.192`.
-3. Restano 6 bit host: ogni blocco contiene $2^6=64$ indirizzi.
-4. In una sottorete ordinaria, rete e broadcast non si assegnano agli host: ne restano 62.
+🧪 Dividiamo `192.168.10.0/24` in **quattro** sottoreti uguali. Quattro passaggi:
 
-Ogni blocco contiene 64 indirizzi, quindi i blocchi partono da `.0`, `.64`, `.128` e `.192`. Nel primo, `.0` identifica la rete, `.63` è il broadcast e gli host ordinari vanno da `.1` a `.62`. La stessa regola produce gli altri intervalli della tabella.
+1. **Quanti bit?** 4 sottoreti servono 2 bit, perché $2^2 = 4$.
+2. **Nuovo prefisso.** I 2 bit si prendono dalla parte host: `/24` + 2 = `/26`. La maschera è `255.255.255.192`.
+3. **Bit host rimasti.** $32 - 26 = 6$ bit, quindi ogni blocco ha $2^6 = 64$ indirizzi.
+4. **Host ordinari.** In una sottorete ordinaria l'indirizzo di rete e il broadcast non si assegnano agli host: $64 - 2 = 62$.
+
+I blocchi partono ogni 64 indirizzi: `.0`, `.64`, `.128`, `.192`.
 
 | Rete | Host ordinari | Broadcast |
 |---|---|---|
@@ -102,85 +136,95 @@ Ogni blocco contiene 64 indirizzi, quindi i blocchi partono da `.0`, `.64`, `.12
 | `192.168.10.128/26` | `.129` - `.190` | `.191` |
 | `192.168.10.192/26` | `.193` - `.254` | `.255` |
 
-Il gateway, se presente, usa uno degli indirizzi host della propria sottorete. La convenzione scelta va dichiarata.
+*Il primo indirizzo del blocco è la rete, l'ultimo è il broadcast. Gli host stanno in mezzo.*
 
-Un controllo finale evita molti errori: gli indirizzi di rete devono essere allineati al passo del blocco; il broadcast è l'ultimo indirizzo di ogni blocco; l'intervallo degli host sta fra i due. In questa divisione, `192.168.10.64/26` è valido, mentre `.65/26` non è un nuovo indirizzo di rete: è un indirizzo host del blocco che inizia da `.64`.
+⚠️ **`.65/26` non è una rete.** È un host del blocco che inizia a `.64`. Le reti iniziano solo su multipli di 64.
 
-<details>
-<summary>🃏 Che cosa significa FLSM?</summary>
-Fixed Length Subnet Masking: sottoreti create con la stessa lunghezza di prefisso.
-</details>
-<details>
-<summary>🃏 Quanti bit servono per creare quattro sottoreti uguali?</summary>
-Due bit, perché 2 elevato alla 2 fa 4.
-</details>
-<details>
-<summary>🃏 Quanti indirizzi ha un blocco /26?</summary>
-64 indirizzi: restano 6 bit host e 2 elevato alla 6 fa 64.
-</details>
-<details>
-<summary>🃏 Quanti host ordinari offre un blocco /26?</summary>
-62, perché nel caso ordinario si escludono l'indirizzo di rete e il broadcast.
-</details>
+Il **gateway** (se c'è) è un indirizzo host della sottorete: scegli una convenzione (per esempio il primo host) e dichiarala. Per ora non serve altro: il gateway sarà protagonista a novembre.
 
-### 🔍 FLSM è semplice ma può sprecare spazio
+🧠 ==Per avere il doppio delle sottoreti, si aggiunge un bit.==
 
 <details>
-<summary>🃏 Quale maschera corrisponde a /26?</summary>
+<summary>🃏 <b>Che cosa significa FLSM?</b></summary>
+Fixed Length Subnet Masking: sottoreti con lo stesso prefisso, quindi della stessa dimensione.
+</details>
+<details>
+<summary>🃏 <b>Quanti bit servono per 4 sottoreti uguali?</b></summary>
+Due, perché 2² fa 4.
+</details>
+<details>
+<summary>🃏 <b>Quanti indirizzi ha un blocco /26?</b></summary>
+64, perché restano 6 bit host e 2⁶ fa 64.
+</details>
+<details>
+<summary>🃏 <b>Quanti host ordinari offre una /26?</b></summary>
+62: si tolgono l'indirizzo di rete e il broadcast.
+</details>
+<details>
+<summary>🃏 <b>Quale maschera corrisponde a /26?</b></summary>
 255.255.255.192.
 </details>
 <details>
-<summary>🃏 Qual è il passo fra le reti /26 nell'ultimo ottetto?</summary>
-64: per esempio, le reti iniziano da .0, .64, .128 e .192.
-</details>
-<details>
-<summary>🃏 In 192.168.10.64/26, .65 è un indirizzo di rete?</summary>
-No. È un indirizzo host del blocco che inizia da .64.
-</details>
-FLSM è facile da calcolare e mantenere, ma tutti i gruppi ricevono blocchi uguali. Se quattro reparti hanno bisogno rispettivamente di 50, 25, 12 e 6 host, assegnare a ciascuno un blocco da 62 lascia molti indirizzi inutilizzati nei reparti piccoli. Se i bisogni sono simili, invece, l'uniformità può essere pratica. In S6 vedremo VLSM, che permette sottoreti di dimensioni diverse; qui basta capire il compromesso.
-
-<details>
-<summary>🃏 Perché FLSM può sprecare indirizzi?</summary>
-Perché assegna sottoreti uguali anche a gruppi con bisogni molto diversi.
-</details>
-<details>
-<summary>🃏 Quale tecnica permette sottoreti di dimensioni diverse?</summary>
-VLSM, studiato nella settimana 6.
+<summary>🃏 <b>In 192.168.10.64/26, .65 è un indirizzo di rete?</b></summary>
+No: è un host del blocco che inizia a .64.
 </details>
 
-### 🤓 Gli intervalli IPv4 hanno usi diversi
+✏️ **Prevedi, poi calcola (3 min).** Quanti bit servono per **sei** sottoreti? Quante sottoreti ottieni davvero? Poi completa la tabella per `192.168.20.0/24` divisa in quattro parti.
+
+### 🔍 FLSM è semplice ma può sprecare
+
+FLSM dà a tutti **lo stesso spazio**. Va bene se i gruppi sono simili. Ma se quattro reparti hanno bisogno di 50, 25, 12 e 6 host, assegnare a ciascuno un blocco da 62 lascia **molti indirizzi inutilizzati** nei reparti piccoli.
+
+| Reparto | Host necessari | Blocco FLSM (/26) | Indirizzi inutilizzati |
+|---|---:|---:|---:|
+| A | 50 | 62 | 12 |
+| B | 25 | 62 | 37 |
+| C | 12 | 62 | 50 |
+| D | 6 | 62 | 56 |
+
+*Per un reparto da 6 host, il blocco da 62 è un salone per una cena a due.*
+
+La soluzione è dare **blocchi di dimensioni diverse**: **VLSM**, che vedremo in S6. Per ora basta capire il compromesso: FLSM è facile da calcolare, ma può essere uno spreco.
 
 <details>
-<summary>🃏 Perché quattro reparti con bisogni molto diversi possono sprecare spazio usando FLSM?</summary>
-FLSM assegna blocchi uguali; i reparti piccoli ricevono molti indirizzi che non usano.
+<summary>🃏 <b>Perché FLSM può sprecare indirizzi?</b></summary>
+Perché dà blocchi uguali a gruppi con bisogni diversi.
 </details>
-> Oltre agli indirizzi privati, IPv4 contiene intervalli con usi particolari, come loopback e multicast. Per esempio, `127.0.0.1` indica il dispositivo locale: i programmi possono usarlo per comunicare con servizi sullo stesso computer, senza spedire il traffico a un altro dispositivo della rete.
+<details>
+<summary>🃏 <b>Quale tecnica permette sottoreti di dimensioni diverse?</b></summary>
+VLSM, che vedremo in S6.
+</details>
+
+✏️ **Spiega in una frase (2 min).** Quando FLSM è una buona scelta e quando no?
+
+### 🤓 Gli intervalli speciali di IPv4
+
+> Oltre agli indirizzi privati, IPv4 ha altri intervalli con usi particolari. Per esempio `127.0.0.1` è il **loopback**: indica «questo stesso computer». I programmi lo usano per parlare con servizi sulla stessa macchina, senza mandare nulla in rete.
 >
-> Il registro IANA elenca gli intervalli e i loro usi. «Privato» non significa «unico tipo di indirizzo speciale»: per interpretare un indirizzo bisogna considerare il blocco e il contesto. Non occorre memorizzare tutti gli intervalli per questa verifica.
+> Esistono anche intervalli per il **multicast** (un messaggio a un gruppo di destinatari). L'elenco ufficiale è il registro dello IANA. Non serve memorizzarlo: serve ricordare che **un numero da solo non basta**, conta anche l'intervallo.
 
 <details>
-<summary>🃏 Perché un indirizzo IPv4 non si interpreta sempre guardando solo il numero?</summary>
-Perché intervallo e contesto possono indicare un uso speciale.
+<summary>🃏 <b>Che cosa indica 127.0.0.1?</b></summary>
+Il computer stesso (loopback): il traffico non esce in rete.
 </details>
 
-## 🧩 Esercizi su reti private e FLSM
+## ✏️ Esercizi
 
-<details>
-<summary>🃏 Che cosa indica 127.0.0.1?</summary>
-Il dispositivo locale: il traffico è rivolto allo stesso computer e non a un altro dispositivo della rete.
-</details>
-1. Ricopia i tre intervalli RFC 1918 senza guardare la tabella.
-2. Dividi `192.168.20.0/24` in quattro sottoreti uguali e trova gli indirizzi di rete.
-3. Per ogni sottorete, indica quanti indirizzi sono nel blocco e quanti host ordinari sono disponibili.
-4. Spiega perché NAT non sostituisce le regole di un firewall.
+1. **Ricopia.** Scrivi i tre intervalli privati senza guardare la tabella.
+2. **Completa.** Dividi `192.168.20.0/24` in quattro sottoreti uguali. Per ognuna: rete, prefisso, host ordinari, broadcast.
+3. **Trova l'errore.** «192.168.20.100/26 è l'indirizzo di rete della seconda sottorete.» Perché no?
+4. **Spiega.** Perché il NAT non sostituisce un firewall?
+5. **Collega (S3).** In `192.168.20.0/26`, quale parte è NetID e quale HostID?
 
-**Uscita:** completa «FLSM crea ..., mentre NAT ...».
+**Uscita:** completa «FLSM crea ..., mentre il NAT ...».
 
 ## 📚 Fonti e risorse
 
-- [RFC 1918 - Private Address Space](https://www.rfc-editor.org/rfc/rfc1918): intervalli privati IPv4.
-- [RFC 3022 - Traditional IP Network Address Translator](https://www.rfc-editor.org/rfc/rfc3022): descrizione del NAT.
+- [RFC 1918 - Address Allocation for Private Internets](https://www.rfc-editor.org/rfc/rfc1918): gli intervalli privati (febbraio 1996). Per consultazione.
+- [RFC 1631 - The IP Network Address Translator](https://www.rfc-editor.org/rfc/rfc1631): il NAT presentato nel 1994 come «soluzione a breve termine». Si legge l'inizio.
+- [Wikipedia - IPv4 address exhaustion](https://en.wikipedia.org/wiki/IPv4_address_exhaustion): la cronologia dell'esaurimento, con le date dello IANA (2011) e del RIPE NCC (2012).
+- [RIPE NCC - IPv4 Subnetting](https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-subnetting/): uno strumento per **controllare** i calcoli. Prima calcola a mano.
 
 ---
 
-[⬅️ S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) · [➡️ S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) · [🗺️ Indice](%28STU%29%204DI%20-%20SETT-OTT.md)
+⬅️ [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) ➡️

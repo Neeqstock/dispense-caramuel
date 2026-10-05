@@ -17,7 +17,7 @@ Come si passa da una macchina costruita per un solo compito a una macchina che c
 | **S5** | [🧮 Indirizzi e gerarchia delle memorie](%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md) | Quante celle si possono raggiungere con n bit, e perché nessuna memoria è insieme grande, veloce ed economica. |
 | **S6** | [⚡ Cache, località e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) | Tenere vicino ciò che servirà presto; il clock come ritmo, non come misura di tutto. |
 | **S7** | [🧠 Ricostruire la macchina](%28STU%29%203EI%20sett-ott%20S7%20-%20Ricostruire%20la%20macchina.md) | Ripasso: colleghiamo i pezzi e facciamo una prova di allenamento. |
-| **S8** | [🎯 Verifica e recupero](%28STU%29%203EI%20sett-ott%20S8%20-%20Verifica%20e%20recupero.md) | Verifica di teoria, lettura degli errori e recupero. |
+| **S8** | 🎯 Verifica e recupero (in preparazione) | Verifica di teoria, lettura degli errori e recupero. |
 
 Il calendario reale può spostarsi un po': conta l'ordine degli argomenti, non la data esatta.
 

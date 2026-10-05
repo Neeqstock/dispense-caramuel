@@ -240,4 +240,4 @@ Per ripassare, torna alle dispense del bimestre:
 
 ---
 
-[⬅️ S6 - Cache, località e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) · [🗺️ Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S8 - Verifica e recupero ➡️](%28STU%29%203EI%20sett-ott%20S8%20-%20Verifica%20e%20recupero.md)
+[⬅️ S6 - Cache, località e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) · [🗺️ Indice](%28STU%29%203EI%20-%20SETT-OTT.md)

@@ -17,7 +17,7 @@ Dentro un computer non ci sono numeri, lettere o colori. Ci sono **interruttori*
 | **S5** | [🔣 Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) | Scritture più corte per gli stessi bit: dai colori del web agli indirizzi di rete. |
 | **S6** | [🔁 Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) | Passare da una base all'altra senza fare conti: basta raggruppare. |
 | **S7** | [🧠 Ripasso attivo](%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md) | Ricordare davvero: allenamento a coppie e controllo degli errori. |
-| **S8** | [🎯 Verifica e recupero](%28STU%29%201CI%20sett-ott%20S8%20-%20Verifica%20e%20recupero.md) | Verifica di teoria, lettura degli errori e recupero. |
+| **S8** | 🎯 Verifica e recupero (in preparazione) | Verifica di teoria, lettura degli errori e recupero. |
 
 Il calendario reale può spostarsi un po': conta l'ordine degli argomenti, non la data esatta.
 
