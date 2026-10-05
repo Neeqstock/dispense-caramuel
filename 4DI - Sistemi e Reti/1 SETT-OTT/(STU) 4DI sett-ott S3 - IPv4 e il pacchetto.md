@@ -10,6 +10,8 @@
 
 ## 🗺️ Mappa
 
+![](immagini/icon_mappa.svg)
+
 ```mermaid
 mindmap
   root((🌐 IPv4 e il pacchetto))
@@ -28,6 +30,8 @@ mindmap
 
 ## 📜 Un indirizzo per ogni cosa, anche per un piccione
 
+![](immagini/icon_storia.svg)
+
 Nel 1981 i progettisti di Internet scrivono la specifica del protocollo IP: è l'**RFC 791**. Nella specifica fissano la lunghezza degli indirizzi: **32 bit**, cioè circa quattro miliardi e trecento milioni di combinazioni. Nel 1981 è un'enormità. Quasi nessuno ha un computer, e di certo nessuno immagina un telefono in ogni tasca. Le reti sono ancora un esperimento.
 
 Trent'anni dopo, nel 2011, la scorta mondiale di indirizzi liberi è finita. Ne parleremo in S4.
@@ -39,6 +43,8 @@ Il 1° aprile 1990 David Waitzman prende questa idea alla lettera e pubblica l'*
 Nove inviati, quattro tornati: è il *best effort* in versione piumata. Una rete non deve essere perfetta per funzionare: deve solo sapere che cosa promette e che cosa no.
 
 ## 📦 Il protocollo IP
+
+![](immagini/icon_protocolli.svg)
 
 ### ✅ IP inoltra pacchetti senza garanzie
 
@@ -78,6 +84,8 @@ Dentro il campo dati di un frame (in S2 abbiamo visto il frame Ethernet).
 ✏️ **Prevedi (1 min).** Un pacchetto si perde per strada. Chi se ne accorge: IP o un livello superiore? Scrivi la tua idea, poi controlla.
 
 ## 🔢 L'indirizzo IPv4
+
+![](immagini/icon_protocolli.svg)
 
 ### ✅ Un indirizzo IPv4 ha 32 bit
 
@@ -232,6 +240,8 @@ No: oggi si usa il prefisso esplicito.
 
 ## 📨 Il pacchetto
 
+![](immagini/icon_protocolli.svg)
+
 ### 🔍 L'header IPv4
 
 Un pacchetto IPv4 ha un'**intestazione** (*header*) e i **dati** del livello superiore. Ricorda le buste di S1: l'header è l'etichetta della busta IP.
@@ -287,6 +297,8 @@ No: limita il numero di inoltri. A ogni router diminuisce di uno.
 
 ## ✏️ Esercizi
 
+![](immagini/icon_esercizi.svg)
+
 1. **Converti.** Scrivi in binario `192.168.1.25` e dimostra che i punti non sono bit.
 2. **Trova l'errore.** «192.168.300.1 è un indirizzo IPv4 valido.» Perché no?
 3. **Spiega in una frase.** Perché l'indirizzo da solo non dice dove finisce la rete?
@@ -295,6 +307,8 @@ No: limita il numero di inoltri. A ogni router diminuisce di uno.
 **Uscita:** completa «IPv4 identifica ..., ma per trovare la rete mi serve anche ...».
 
 ## 📚 Fonti e risorse
+
+![](immagini/icon_fonti.svg)
 
 - [RFC 791 - Internet Protocol](https://www.rfc-editor.org/rfc/rfc791): la specifica del 1981. Per consultazione.
 - [RFC 1149 - IP su piccioni viaggiatori](https://www.rfc-editor.org/rfc/rfc1149): lo scherzo del 1° aprile 1990, in inglese. Si legge in due minuti.

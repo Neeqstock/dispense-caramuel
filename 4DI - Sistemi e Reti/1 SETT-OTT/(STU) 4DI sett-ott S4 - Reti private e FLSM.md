@@ -10,6 +10,8 @@
 
 ## 🗺️ Mappa
 
+![](immagini/icon_mappa.svg)
+
 ```mermaid
 mindmap
   root((🏠 Reti private e FLSM))
@@ -25,6 +27,8 @@ mindmap
 
 ## 📜 Quando i numeri sono finiti
 
+![](immagini/icon_storia.svg)
+
 3 febbraio 2011. In una sala per conferenze stampa, i responsabili dell'ente che distribuisce gli indirizzi IP nel mondo, lo **IANA**, annunciano un fatto storico. Distribuiscono gli **ultimi** grandi blocchi liberi: cinque, uno a ciascuna delle cinque organizzazioni regionali. Da quel giorno, lo IANA non ha più indirizzi IPv4 da dare.
 
 Non è una sorpresa. Gli ingegneri lo avevano capito già nel 1992: con 32 bit e tutto lo spreco delle classi di S3, gli indirizzi non sarebbero bastati. Servivano **trucchi**. Ne arrivano due.
@@ -36,6 +40,8 @@ Doveva durare pochi anni, in attesa di una soluzione definitiva. Oggi è dentro 
 Anche in Europa arriva il momento. Il **RIPE NCC**, l'organizzazione che assegna gli indirizzi per l'Europa, esaurisce le sue scorte il 14 settembre 2012. È stata la seconda al mondo.
 
 ## 🏠 Indirizzi privati
+
+![](immagini/icon_protocolli.svg)
 
 ### ✅ Gli indirizzi privati si riutilizzano
 
@@ -115,6 +121,8 @@ No: il NAT traduce indirizzi, il firewall applica regole di accesso.
 ✏️ **Trova l'errore (2 min).** «Ho il NAT, quindi sono protetto da ogni attacco.» Che cosa confonde questa frase? *(Indizio: tradurre non è decidere.)*
 
 ## ✂️ FLSM
+
+![](immagini/icon_protocolli.svg)
 
 ### ✅ FLSM divide la rete in blocchi uguali
 
@@ -210,6 +218,8 @@ Il computer stesso (loopback): il traffico non esce in rete.
 
 ## ✏️ Esercizi
 
+![](immagini/icon_esercizi.svg)
+
 1. **Ricopia.** Scrivi i tre intervalli privati senza guardare la tabella.
 2. **Completa.** Dividi `192.168.20.0/24` in quattro sottoreti uguali. Per ognuna: rete, prefisso, host ordinari, broadcast.
 3. **Trova l'errore.** «192.168.20.100/26 è l'indirizzo di rete della seconda sottorete.» Perché no?
@@ -219,6 +229,8 @@ Il computer stesso (loopback): il traffico non esce in rete.
 **Uscita:** completa «FLSM crea ..., mentre il NAT ...».
 
 ## 📚 Fonti e risorse
+
+![](immagini/icon_fonti.svg)
 
 - [RFC 1918 - Address Allocation for Private Internets](https://www.rfc-editor.org/rfc/rfc1918): gli intervalli privati (febbraio 1996). Per consultazione.
 - [RFC 1631 - The IP Network Address Translator](https://www.rfc-editor.org/rfc/rfc1631): il NAT presentato nel 1994 come «soluzione a breve termine». Si legge l'inizio.
