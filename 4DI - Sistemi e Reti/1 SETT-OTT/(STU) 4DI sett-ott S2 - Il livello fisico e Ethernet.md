@@ -53,11 +53,11 @@ Un computer lavora con **bit**. Un cavo trasporta **segnali**. Il livello fisico
 
 <u>Il livello fisico trasforma i bit in segnali e i segnali in bit.</u>
 
-| Mezzo | Che cosa trasporta il segnale | Esempio |
-|---|---|---|
-| Doppino in rame | variazioni elettriche | cavo Ethernet da PC a switch |
-| Fibra ottica | impulsi di luce | collegamenti fra edifici, dorsali |
-| Onde radio | onde elettromagnetiche | Wi-Fi |
+| Mezzo           | Che cosa trasporta il segnale | Esempio                           |
+| --------------- | ----------------------------- | --------------------------------- |
+| Doppino in rame | variazioni elettriche         | cavo Ethernet da PC a switch      |
+| Fibra ottica    | impulsi di luce               | collegamenti fra edifici, dorsali |
+| Onde radio      | onde elettromagnetiche        | Wi-Fi                             |
 
 *Il rame va bene per distanze brevi (nei cavi Ethernet in rame il limite standard è circa 100 metri). La fibra arriva molto più lontano. La radio non ha cavi, ma è più disturbabile.*
 
@@ -115,11 +115,11 @@ frame = [ MAC dest | MAC sorg | EtherType | [ pacchetto IP ] | CRC ]
 
 ⚠️ Mi raccomando numero 2: **MAC e IP non sono due nomi della stessa cosa.**
 
-| | MAC | IP |
-|---|---|---|
-| Livello | 2 (collegamento) | 3 (rete) |
-| Serve per | consegnare **sul tratto locale** | raggiungere **un'altra rete** |
-| Quando cambia | a ogni tratto | resta lo stesso da sorgente a destinazione |
+|               | MAC                              | IP                                         |
+| ------------- | -------------------------------- | ------------------------------------------ |
+| Livello       | 2 (collegamento)                 | 3 (rete)                                   |
+| Serve per     | consegnare **sul tratto locale** | raggiungere **un'altra rete**              |
+| Quando cambia | a ogni tratto                    | resta lo stesso da sorgente a destinazione |
 
 *Quest'ultima riga vale in un inoltro normale, senza traduzione di indirizzi (la rivedremo con il NAT).*
 
