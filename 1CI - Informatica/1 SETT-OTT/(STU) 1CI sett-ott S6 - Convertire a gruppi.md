@@ -74,12 +74,10 @@ Gli zeri aggiunti **non sono barare**: `00101101` e `101101` sono lo stesso nume
 <summary>🃏 <b>Come si converte un numero da binario a esadecimale?</b></summary>
 Si raggruppano i bit a quattro da destra, si completa con zeri a sinistra e si traduce ogni gruppo in una cifra.
 </details>
-
 <details>
 <summary>🃏 <b>Da che parte si comincia a raggruppare?</b></summary>
 Da destra, dove c'è il bit meno significativo.
 </details>
-
 <details>
 <summary>🃏 <b>Perché si possono aggiungere zeri a sinistra?</b></summary>
 Perché non cambiano il valore, proprio come 025 e 25.
@@ -104,7 +102,6 @@ F0  ->  F = 1111    0 = 0000   ->  11110000
 <summary>🃏 <b>Come si converte un numero da esadecimale a binario?</b></summary>
 Si sostituisce ogni cifra con il suo nibble di quattro bit, senza saltare gli zeri.
 </details>
-
 <details>
 <summary>🃏 <b>Perché si scrive 0011 e non 11 per la cifra 3?</b></summary>
 Perché ogni cifra esadecimale corrisponde sempre a quattro bit: gli zeri tengono ogni nibble al suo posto.
@@ -139,7 +136,6 @@ Stesso metodo, ma con gruppi da **3 bit** (perché 8 = 2³).
 <summary>🃏 <b>Quanti bit si raggruppano per passare da binario a ottale?</b></summary>
 Tre, da destra.
 </details>
-
 <details>
 <summary>🃏 <b>Quanti bit diventa ogni cifra ottale quando si converte in binario?</b></summary>
 Tre bit.

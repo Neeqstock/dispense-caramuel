@@ -64,22 +64,18 @@ Spesso dividiamo ancora l'esecuzione in accesso ai dati e scrittura del risultat
 <summary>🃏 Che cosa succede nel fetch?</summary>
 La CPU prende dalla memoria l'istruzione da eseguire.
 </details>
-
 <details>
 <summary>🃏 Che cosa succede nella decode?</summary>
 La CU riconosce l'operazione richiesta e i suoi operandi.
 </details>
-
 <details>
 <summary>🃏 Che cosa succede nell'execute?</summary>
 La CPU svolge il lavoro: un calcolo, un accesso alla memoria o un cambio di percorso nel programma.
 </details>
-
 <details>
 <summary>🃏 Che cos'è il write-back?</summary>
 La scrittura del risultato, spesso descritta come passo a sé dell'esecuzione.
 </details>
-
 <details>
 <summary>🃏 Tutte le istruzioni leggono dati dalla RAM e scrivono un registro?</summary>
 No. Per esempio una STORE scrive in memoria, non in un registro.
@@ -101,17 +97,14 @@ Per tutta la traccia valgono queste regole:
 <summary>🃏 Di quanto aumenta il PC dopo il prelievo, nel nostro modello?</summary>
 Di uno, perché ogni istruzione occupa una cella astratta e le istruzioni sono in celle consecutive. Vale solo per questo modello.
 </details>
-
 <details>
 <summary>🃏 Che cosa fanno LOAD e STORE?</summary>
 LOAD copia un valore dalla memoria a un registro; STORE copia un registro in memoria. Nessuna delle due cancella la sorgente.
 </details>
-
 <details>
 <summary>🃏 Che cosa modifica ADD R3, R1, R2?</summary>
 Solo R3, dove scrive la somma di R1 e R2.
 </details>
-
 <details>
 <summary>🃏 Che cosa fa HALT?</summary>
 Termina la simulazione.
@@ -151,17 +144,14 @@ Termina la simulazione.
 <summary>🃏 Dopo una LOAD da 40, il PC salta a 40?</summary>
 No. 40 è l'indirizzo di un dato; il PC indica la prossima istruzione del programma, cioè la cella successiva.
 </details>
-
 <details>
 <summary>🃏 Nell'esempio svolto, che cosa cambia dopo la STORE?</summary>
 La cella 41 riceve 12; R3 resta 12 e il PC passa a 13.
 </details>
-
 <details>
 <summary>🃏 Dopo HALT si esegue la cella successiva?</summary>
 No. Il PC risulta avanzato come da regola, ma la simulazione si ferma.
 </details>
-
 <details>
 <summary>🃏 Come si segue un programma su carta senza perdersi?</summary>
 Si scrive lo stato iniziale e si aggiorna una tabella di PC, registri e memoria dopo ogni istruzione.
@@ -187,17 +177,14 @@ Nella stessa istruzione abbiamo quindi letto la memoria **due volte**, con scopi
 <summary>🃏 Quali sono i passi del fetch?</summary>
 MAR riceve il PC; richiesta READ e attesa; MDR riceve l'istruzione; IR riceve l'MDR; il PC avanza.
 </details>
-
 <details>
 <summary>🃏 Che cos'è l'opcode?</summary>
 La parte dell'istruzione che indica l'operazione, per esempio LOAD.
 </details>
-
 <details>
 <summary>🃏 Quante volte una LOAD accede alla memoria?</summary>
 Due: prima per prelevare l'istruzione, poi per leggere il dato richiesto.
 </details>
-
 <details>
 <summary>🃏 Perché l'IR non viene sovrascritto dal dato della LOAD?</summary>
 Perché il dato arriva nell'MDR: l'IR conserva il comando finché l'istruzione non è finita.
@@ -217,22 +204,18 @@ La CU genera segnali che scelgono percorsi e abilitano operazioni. Non porta i n
 <summary>🃏 In quale direzione va il bus indirizzi?</summary>
 Dalla CPU alla memoria, sia nel fetch sia nella scrittura di un dato.
 </details>
-
 <details>
 <summary>🃏 In quale direzione va il bus dati?</summary>
 Dipende: nel fetch dalla memoria alla CPU, nella scrittura dalla CPU alla memoria.
 </details>
-
 <details>
 <summary>🃏 Che cosa passa sul bus di controllo?</summary>
 Il comando di lettura o scrittura e i segnali di completamento.
 </details>
-
 <details>
 <summary>🃏 La CU trasporta i numeri o fa i calcoli?</summary>
 No. Genera segnali che scelgono percorsi e abilitano operazioni; i calcoli li fa l'ALU.
 </details>
-
 <details>
 <summary>🃏 Copiare un valore fra due registri richiede la RAM?</summary>
 No. Usa collegamenti interni al processore.
@@ -250,12 +233,10 @@ Il lavoro è: prelievo, interpretazione, calcolo dell'indirizzo, lettura del dat
 <summary>🃏 Che cosa significa LOAD R1, [R2+4]?</summary>
 Prima si calcola l'indirizzo sommando 4 al contenuto di R2, poi si copia in R1 il contenuto della cella trovata.
 </details>
-
 <details>
 <summary>🃏 In un indirizzo calcolato, a che cosa serve l'ALU?</summary>
 A trovare il dato: la somma produce l'indirizzo, non il valore finale.
 </details>
-
 <details>
 <summary>🃏 Un clic su un'icona corrisponde a una sola istruzione?</summary>
 No. Dietro un gesto ci sono moltissime istruzioni e trasferimenti.
@@ -271,17 +252,14 @@ No. Dietro un gesto ci sono moltissime istruzioni e trasferimenti.
 <summary>🃏 Che cosa fa un salto?</summary>
 Cambia il PC con una destinazione diversa dalla cella successiva.
 </details>
-
 <details>
 <summary>🃏 Che cosa fa un salto condizionato?</summary>
 Cambia il PC solo se una condizione è vera, per esempio se un flag ha un certo valore. Da qui nascono if e cicli.
 </details>
-
 <details>
 <summary>🃏 Nelle CPU reali il PC aumenta sempre di uno?</summary>
 No. Le istruzioni possono occupare più byte, con lunghezza fissa o variabile.
 </details>
-
 <details>
 <summary>🃏 Un passo del ciclo corrisponde a un ciclo di clock?</summary>
 Non necessariamente: il nostro elenco di passi è un modello, non una misura dei tempi.

@@ -32,7 +32,7 @@ mindmap
 
 ## 📜 Due segnali bastano
 
-Boston, 1775. Gli inglesi stanno per arrivare, ma nessuno sa da dove. Si accorda un segnale dal campanile: **una lanterna** se arrivano via terra, **due** se arrivano via mare. Un messaggio semplicissimo: **una scelta fra due**.
+Boston, aprile 1775. Le colonie americane sono in rivolta contro il dominio britannico e la guerra d'indipendenza sta per cominciare. I patrioti vogliono avvisare chi si trova fuori città dell'arrivo delle truppe inglesi: dal campanile della Old North Church si concorda di mostrare **una lanterna** se arrivano via terra, **due lanterne** se arrivano via mare. Il segnale comunica una scelta fra due possibilità, proprio come un bit.
 
 Ecco l'idea più importante del corso: con **scelte fra due** si possono dire molte cose, se le si mettono in fila. Il computer è fatto così. Dentro non ci sono numeri, lettere o colori: ci sono **interruttori**. 💡
 
@@ -59,16 +59,17 @@ Nel computer i bit vivono nei **transistor**: minuscoli interruttori elettronici
 <summary>🃏 <b>Che cos'è un bit?</b></summary>
 La più piccola unità di informazione: una scelta fra due stati, 0 o 1.
 </details>
-
 <details>
 <summary>🃏 <b>Che cos'è un transistor, in modo semplice?</b></summary>
 Un minuscolo interruttore elettronico: passa corrente (1) o non passa (0).
 </details>
 
+![[image-1-21.webp|229x191]]*Dei transistor. Questi sono giganti, quelli che abbiamo nei computer si vedono solo al microscopio elettronico.*
+
 ### 🤓 Chi ha inventato il bit
 
 > **1679-1703, Leibniz.** Il filosofo e matematico tedesco Gottfried Leibniz studia i numeri con solo 0 e 1 e li pubblica nel 1703. Per lui 1 era la Creazione e 0 il Nulla.
-> **1937, Shannon.** Un ventunenne, Claude Shannon, nella tesi al MIT mostra che i relè (interruttori accesi o spenti) possono eseguire la logica di George Boole.
+> **1937, Shannon.** Un ventunenne, Claude Shannon, nella sua tesi al MIT (un'università americana prestigiosissima) mostra che i relè (interruttori accesi o spenti) possono eseguire la logica di George Boole.
 > **1947, Tukey.** John Tukey, dei Bell Labs, conia la parola *bit*, dalla fusione di *binary digit*.
 > **1948, Shannon** la usa come unità di misura dell'informazione.
 
@@ -76,17 +77,18 @@ Un minuscolo interruttore elettronico: passa corrente (1) o non passa (0).
 <summary>🃏 <b>Chi ha coniato la parola bit?</b></summary>
 John Tukey, nel 1947. Shannon la rese l'unità dell'informazione nel 1948.
 </details>
-
 <details>
 <summary>🃏 <b>Che cosa mostrò Shannon nella sua tesi del 1937?</b></summary>
 Che i relè, interruttori accesi o spenti, possono eseguire la logica di Boole.
 </details>
 
+![[image-1-22.webp|176x176]]*Un relé (o "relay", in inglese): un'interruttore elettromagnetico.*
+
 ## ✖️ Quante combinazioni
 
-### ✅ Ogni bit raddoppia
-
-Con **1 bit** hai 2 possibilità. Con **2 bit** ne hai 4. Con **3 bit**, 8. Ogni bit in più **raddoppia** le possibilità.
+### ✅ Ogni bit raddoppia, i byte sono 8 bit
+Se usiamo i bit per rappresentare i numeri.
+Con **1 bit** hai 2 possibilità (zero, uno). Con **2 bit** ne hai 4 (zero, uno, due, tre). Con **3 bit**, 8. Ogni bit in più **raddoppiano** le possibilità di rappresentazione.
 
 | Bit | Calcolo | Combinazioni | Esempi |
 |---:|---:|---:|---|
@@ -96,7 +98,7 @@ Con **1 bit** hai 2 possibilità. Con **2 bit** ne hai 4. Con **3 bit**, 8. Ogni
 | 4 | 2⁴ | 16 | da `0000` a `1111` |
 | 8 | 2⁸ | 256 | da `00000000` a `11111111` |
 
-🧠 ==Con N bit puoi scrivere 2^N combinazioni diverse.==
+🧠 Con N bit puoi scrivere 2^N combinazioni diverse.
 
 ⚠️ **2^N non è 2·N.** Con 3 bit le combinazioni sono 2·2·2 = **8**, non 2·3 = 6.
 
@@ -110,17 +112,14 @@ Un gruppo di **8 bit** si chiama **byte**. Un byte ha 256 combinazioni: se le us
 <summary>🃏 <b>Quante combinazioni si ottengono con N bit?</b></summary>
 2^N.
 </details>
-
 <details>
 <summary>🃏 <b>Che cos'è un byte?</b></summary>
 Un gruppo di 8 bit: 256 combinazioni, per esempio i numeri da 0 a 255.
 </details>
-
 <details>
 <summary>🃏 <b>Perché con un byte i numeri vanno da 0 a 255 e non da 1 a 256?</b></summary>
 Perché si conta anche lo zero: sono 256 valori in tutto.
 </details>
-
 <details>
 <summary>🃏 <b>Con 3 bit le combinazioni sono 6?</b></summary>
 No: sono 2·2·2 = 8. Ogni bit raddoppia, non aggiunge 2.
@@ -162,12 +161,10 @@ Questa scala ricorre sempre. Ricordala a memoria: ti farà risparmiare molti con
 <summary>🃏 <b>Quanto fa 2^8?</b></summary>
 256.
 </details>
-
 <details>
 <summary>🃏 <b>Quanto fa 2^10?</b></summary>
 1024.
 </details>
-
 <details>
 <summary>🃏 <b>Come si passa da una potenza di 2 alla successiva?</b></summary>
 Raddoppiando il numero.
@@ -192,7 +189,6 @@ Per quantità grandi si usano i **multipli**. Di solito, per la capacità dei di
 <summary>🃏 <b>Quanti byte sono 1 GB (nella scala decimale)?</b></summary>
 Un miliardo: 10⁹ byte.
 </details>
-
 <details>
 <summary>🃏 <b>Che cos'è un TB?</b></summary>
 Un terabyte: 10¹² byte, cioè mille GB.
@@ -217,7 +213,6 @@ Le memorie elettroniche crescono per **potenze di 2**, e 2¹⁰ = 1024 è vicino
 <summary>🃏 <b>Qual è la differenza fra kB e KiB?</b></summary>
 Un kB sono 1000 byte; un KiB sono 1024 byte (2¹⁰).
 </details>
-
 <details>
 <summary>🃏 <b>Perché un disco da 500 GB sembra più piccolo nel computer?</b></summary>
 Perché il produttore conta in GB (10⁹ byte) e il sistema può mostrare GiB (2³⁰ byte): cambiano le unità, non lo spazio.
@@ -225,7 +220,9 @@ Perché il produttore conta in GB (10⁹ byte) e il sistema può mostrare GiB (2
 
 ### 🤓 Quanto costa un bit
 
-> Conservare e spostare bit richiede energia: i **data center**, enormi edifici pieni di computer, consumano molta elettricità e hanno bisogno di raffreddamento. Anche la foto che «sta nel cloud» sta in un edificio reale, che costa energia e acqua. Ridurre sprechi (cancellare file inutili, comprimere, evitare copie) è un piccolo gesto che ha una logica, ma non risolve da solo: contano soprattutto come sono progettati e alimentati i servizi.
+> Conservare e spostare bit richiede energia: i **data center**, enormi edifici pieni di computer, consumano molta elettricità e hanno bisogno di raffreddamento. Anche una foto che «sta nel cloud» sta in un edificio reale, che costa energia e acqua. Ridurre sprechi (cancellare file inutili, comprimere, evitare copie) è un piccolo gesto che ha una logica, ma non risolve da solo: contano soprattutto come sono progettati e alimentati i servizi.
+
+![[image-1-23.webp|281x158]]*Un datacenter*
 
 ## ✏️ Metti alla prova
 

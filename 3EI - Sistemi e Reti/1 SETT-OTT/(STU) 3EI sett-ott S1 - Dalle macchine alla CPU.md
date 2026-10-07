@@ -67,22 +67,18 @@ Il programma stabilisce come trattare i dati, ma senza hardware non esegue nessu
 <summary>🃏 Che cosa guarda Sistemi e Reti, oltre al programma?</summary>
 La macchina che esegue il programma e l'infrastruttura che fa comunicare le macchine. Informatica e Sistemi e Reti sono due prospettive che si incontrano, non una divisione fra chi pensa e chi monta pezzi.
 </details>
-
 <details>
 <summary>🃏 Che cos'è l'hardware?</summary>
 L'insieme dei componenti fisici del sistema.
 </details>
-
 <details>
 <summary>🃏 Che cos'è il software?</summary>
 L'insieme dei programmi e delle loro istruzioni.
 </details>
-
 <details>
 <summary>🃏 Che cos'è un dato?</summary>
 Un'informazione rappresentata in una forma che il sistema può elaborare.
 </details>
-
 <details>
 <summary>🃏 Un programma può lavorare senza hardware?</summary>
 No. Il programma stabilisce come trattare i dati, ma il lavoro lo esegue l'hardware.
@@ -133,32 +129,26 @@ La **CPU**, o processore, è l'insieme di tutto questo più i collegamenti che l
 <summary>🃏 A che cosa servono i registri?</summary>
 A tenere pronti i valori: sono piccole memorie interne al processore.
 </details>
-
 <details>
 <summary>🃏 Che cosa fa l'ALU?</summary>
 È l'unità aritmetico-logica: trasforma i valori con operazioni aritmetiche e logiche.
 </details>
-
 <details>
 <summary>🃏 Che cosa fa la CU?</summary>
 È l'unità di controllo: interpreta le istruzioni e genera i segnali che attivano le operazioni nell'ordine giusto.
 </details>
-
 <details>
 <summary>🃏 La CPU è solo l'ALU?</summary>
 No. La CPU comprende registri, ALU, CU e i collegamenti fra loro: conservare e coordinare sono indispensabili quanto calcolare.
 </details>
-
 <details>
 <summary>🃏 Quali tre lavori deve fare una macchina per sommare 7 e 5?</summary>
 Tenere i numeri (registri), calcolare (ALU), coordinare l'ordine delle azioni (CU).
 </details>
-
 <details>
 <summary>🃏 I registri servono a conservare i file?</summary>
 No. Tengono pochi valori in uso adesso, vicinissimi a chi calcola, e sono velocissimi da usare.
 </details>
-
 <details>
 <summary>🃏 L'ALU decide che cosa calcolare?</summary>
 No. Esegue l'operazione che le viene indicata sui due numeri che riceve.
@@ -196,17 +186,14 @@ Anche spostare un dato da un registro all'altro, senza nessun calcolo, è lavoro
 <summary>🃏 Con quale domanda si dividono i circuiti della CPU in due gruppi?</summary>
 Questo circuito tocca i dati oppure comanda chi li tocca? Nel primo caso è parte operativa, nel secondo parte di controllo.
 </details>
-
 <details>
 <summary>🃏 Che cos'è la parte operativa?</summary>
 L'insieme dei circuiti che conservano, trasferiscono e trasformano i dati: ALU, registri e percorsi dei dati.
 </details>
-
 <details>
 <summary>🃏 Che cos'è la parte di controllo?</summary>
 L'insieme dei circuiti che coordinano trasferimenti e operazioni.
 </details>
-
 <details>
 <summary>🃏 Spostare un dato senza fare calcoli è lavoro della parte operativa?</summary>
 Sì. Anche un trasferimento è lavoro della parte operativa.
@@ -244,27 +231,22 @@ La CU non ha «capito il problema»: i suoi circuiti reagiscono a un'istruzione 
 <summary>🃏 Perché in ADD R3, R1, R2 la destinazione si scrive per prima?</summary>
 È la convenzione di questa notazione. Altre notazioni usano l'ordine opposto, quindi bisogna sempre controllare la regola.
 </details>
-
 <details>
 <summary>🃏 Come si legge ADD R3, R1, R2?</summary>
 Somma il contenuto di R1 e quello di R2 e scrivi il risultato in R3.
 </details>
-
 <details>
 <summary>🃏 Chi fa che cosa durante ADD R3, R1, R2?</summary>
 La CU seleziona i registri e l'operazione somma; l'ALU calcola; la CU abilita la scrittura del risultato in R3.
 </details>
-
 <details>
 <summary>🃏 Dopo la somma, R1 e R2 cambiano?</summary>
 No. Conservano i loro valori: cambia solo il registro destinazione R3.
 </details>
-
 <details>
 <summary>🃏 Per sottrarre invece che sommare bisogna cambiare l'ALU?</summary>
 No. Si cambia l'istruzione: la CU chiede all'ALU un'altra operazione. La macchina è la stessa, cambia l'istruzione.
 </details>
-
 <details>
 <summary>🃏 La CU «capisce» il problema?</summary>
 No. I circuiti reagiscono a un'istruzione codificata; anche l'ALU non sceglie da sola l'operazione, esegue quella selezionata.
@@ -286,17 +268,14 @@ Quindi, davanti a un risultato sbagliato, la domanda utile non è «il computer 
 <summary>🃏 In quali tre punti la metafora della squadra non funziona?</summary>
 Le persone capiscono richieste vaghe e i circuiti no; il cuoco può improvvisare e la CU no; una persona si accorge di un errore e la macchina no.
 </details>
-
 <details>
 <summary>🃏 La CU è un piccolo omino dentro il processore?</summary>
 No. È un circuito: con la stessa istruzione e lo stesso stato produce sempre gli stessi segnali.
 </details>
-
 <details>
 <summary>🃏 Un risultato sbagliato significa che l'ALU è guasta?</summary>
 Non per forza: possono essere sbagliati i dati o il programma. La domanda utile è dove si trova il passaggio sbagliato.
 </details>
-
 <details>
 <summary>🃏 Si vedono ALU e registri sulla scheda madre?</summary>
 No. Sono parti interne del processore; sulla scheda si vedono oggetti come CPU, moduli RAM e dissipatore.
@@ -322,12 +301,10 @@ Le tecnologie che seguono sono **modi diversi di costruire lo stesso interruttor
 <summary>🃏 Qual è l'idea comune a relè, valvole e transistor?</summary>
 Sono tutti interruttori comandati da un segnale elettrico: un segnale piccolo apre o chiude un percorso.
 </details>
-
 <details>
 <summary>🃏 Come si ottiene un AND e un OR con degli interruttori?</summary>
 AND: due interruttori in serie, passa corrente solo se entrambi sono chiusi. OR: due in parallelo, passa se almeno uno è chiuso.
 </details>
-
 <details>
 <summary>🃏 Che cosa mostrò Claude Shannon nel 1937?</summary>
 Che i circuiti a relè potevano eseguire l'algebra di Boole: è l'inizio della progettazione dei circuiti digitali.
@@ -353,17 +330,14 @@ Che i circuiti a relè potevano eseguire l'algebra di Boole: è l'inizio della p
 <summary>🃏 Come funziona un relè, e quale limite ha?</summary>
 Una bobina percorsa da corrente diventa elettromagnete e muove una lamella che chiude un contatto. Ha parti mobili: è lento e si consuma.
 </details>
-
 <details>
 <summary>🃏 Come funziona una valvola termoionica, e quale limite ha?</summary>
 Un filamento caldo emette elettroni nel vuoto; una griglia con una piccola tensione li lascia passare o li ferma. Il filamento scalda, consuma e si brucia.
 </details>
-
 <details>
 <summary>🃏 Come funziona un transistor, e quando fu dimostrato?</summary>
 Una piccola tensione su un terminale controlla la corrente fra gli altri due, dentro un semiconduttore, senza parti mobili. Fu dimostrato nel 1947 ai Bell Labs.
 </details>
-
 <details>
 <summary>🃏 ENIAC era un calcolatore a relè?</summary>
 No. ENIAC, del 1946, usava migliaia di valvole: 17.468.
@@ -381,12 +355,10 @@ Il senso non è «ogni novità cancella subito quella di prima»: le tecnologie 
 <summary>🃏 Che cos'è un circuito integrato, e chi lo inventò?</summary>
 Un chip in cui molti componenti e i loro collegamenti sono costruiti insieme su una fetta di silicio. Lo svilupparono indipendentemente Jack Kilby (1958) e Robert Noyce (1959).
 </details>
-
 <details>
 <summary>🃏 Che cos'è un microprocessore, e quale fu il primo?</summary>
 Un'intera CPU in un chip. Il primo venduto come componente fu l'Intel 4004, del 1971, con circa 2.300 transistor.
 </details>
-
 <details>
 <summary>🃏 Ogni nuova tecnologia ha cancellato subito quella precedente?</summary>
 No, le tecnologie convivono. L'integrazione ha reso i sistemi molto più compatti, ma più piccolo non significa senza consumo o senza limiti.
@@ -413,12 +385,10 @@ Era già un termine da ingegneri per i piccoli difetti (Edison, 1878). La storia
 <summary>🃏 Che cosa descrisse Gordon Moore nel 1965?</summary>
 Una tendenza: il numero di componenti integrabili in un chip cresceva a ritmo regolare. La previsione fu poi riformulata.
 </details>
-
 <details>
 <summary>🃏 La legge di Moore garantisce programmi due volte più veloci ogni due anni?</summary>
 No. Non è una legge della natura: più transistor possono diventare più cache, più core o nuove funzioni, e il vantaggio dipende da come vengono usati.
 </details>
-
 <details>
 <summary>🃏 Quale domanda conviene porsi al posto di «quanti transistor?»?</summary>
 Quale risorsa limita questo lavoro. Un calcolatore velocissimo può restare fermo ad aspettare i dati.
@@ -447,12 +417,10 @@ Perché serve? Perché nessuno può tenere a mente tutti i livelli insieme. Un p
 <summary>🃏 Che cos'è l'astrazione?</summary>
 Nascondere i dettagli che, a un certo livello, non servono. Ogni livello usa quello sotto senza conoscerne i dettagli e offre servizi a quello sopra.
 </details>
-
 <details>
 <summary>🃏 Quali sono i livelli, dall'alto al basso?</summary>
 Applicazione, programma, sistema operativo, istruzioni macchina, circuiti logici, transistor.
 </details>
-
 <details>
 <summary>🃏 Come si collegano `a + b` e `ADD R3, R1, R2`?</summary>
 Sono la stessa somma vista a livelli diversi: la riga del programma diventa un'istruzione macchina che la CPU esegue con registri e ALU.
@@ -468,7 +436,6 @@ Succede anche che un livello alto «dimentichi» un limite del livello basso. Qu
 <summary>🃏 Un problema si vede sempre al livello in cui ha origine?</summary>
 No. Un sintomo visibile in alto può nascere in un livello più basso, o in un altro livello: per questo bisogna chiedersi a quale livello cercare.
 </details>
-
 <details>
 <summary>🃏 Perché un numero può risultare sbagliato anche se la somma del programma è corretta?</summary>
 Perché nei registri i numeri occupano un numero limitato di bit: un livello alto può ignorare un limite del livello basso.

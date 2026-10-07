@@ -60,12 +60,10 @@ Si scrive con il pedice 16, oppure con un prefisso: $(2F)_{16}$ oppure `0x2F`.
 <summary>🃏 <b>Quante cifre ha il sistema esadecimale e quali sono?</b></summary>
 Sedici: da 0 a 9 e poi A, B, C, D, E, F.
 </details>
-
 <details>
 <summary>🃏 <b>Quanto valgono A e F?</b></summary>
 A vale 10, F vale 15.
 </details>
-
 <details>
 <summary>🃏 <b>In esadecimale, A è una lettera?</b></summary>
 No: è una cifra e vale dieci.
@@ -121,17 +119,14 @@ hex:       F  |   A       ->  FA
 <summary>🃏 <b>Che cos'è un nibble?</b></summary>
 Un gruppo di 4 bit.
 </details>
-
 <details>
 <summary>🃏 <b>Quanti bit rappresenta una cifra esadecimale?</b></summary>
 Esattamente 4 bit, un nibble.
 </details>
-
 <details>
 <summary>🃏 <b>Quante cifre esadecimali servono per un byte?</b></summary>
 Due, perché un byte sono due nibble.
 </details>
-
 <details>
 <summary>🃏 <b>Perché proprio la base 16, e non la 10, per abbreviare i bit?</b></summary>
 Perché 16 = 2⁴: una cifra corrisponde esattamente a 4 bit. La base 10 non coincide con gruppi di bit.
@@ -162,12 +157,10 @@ Oggi l'ottale si usa meno dell'esadecimale perché 3 bit si adattano meno bene a
 <summary>🃏 <b>Quante cifre ha il sistema ottale?</b></summary>
 Otto, da 0 a 7.
 </details>
-
 <details>
 <summary>🃏 <b>Quanti bit corrispondono a una cifra ottale?</b></summary>
 Tre, perché 8 = 2³.
 </details>
-
 <details>
 <summary>🃏 <b>Perché OCT 31 = DEC 25?</b></summary>
 Perché 31 in ottale vale 3·8 + 1 = 25.
@@ -204,7 +197,6 @@ Il colore sul web si scrive `#RRGGBB`: tre byte, ciascuno scritto con **due cifr
 <summary>🃏 <b>Che cosa significa #RRGGBB?</b></summary>
 Tre byte in esadecimale: la quantità di rosso, di verde e di blu.
 </details>
-
 <details>
 <summary>🃏 <b>Perché FF è il massimo?</b></summary>
 Perché è il byte con tutti gli 8 bit a 1, cioè 255.

@@ -64,12 +64,10 @@ Per non confondersi si scrive la **base come pedice**: `10` in base 10 vale diec
 <summary>🃏 <b>Che cos'è il peso di una cifra?</b></summary>
 Il valore della colonna in cui si trova: in base 2 sono le potenze di 2, da destra 1, 2, 4, 8…
 </details>
-
 <details>
 <summary>🃏 <b>Come cambiano i pesi in binario, andando verso sinistra?</b></summary>
 Raddoppiano a ogni posizione: 1, 2, 4, 8, 16, 32…
 </details>
-
 <details>
 <summary>🃏 <b>A che cosa serve il pedice della base?</b></summary>
 A capire in quale base è scritto un numero: (10)₂ vale due, (10)₁₀ vale dieci.
@@ -108,12 +106,10 @@ quindi (101101)2 = (45)10
 <summary>🃏 <b>Come si converte un numero da binario a decimale?</b></summary>
 Si scrivono i pesi 1, 2, 4, 8… da destra e si sommano quelli sotto un 1.
 </details>
-
 <details>
 <summary>🃏 <b>Da quale lato si comincia a scrivere i pesi?</b></summary>
 Da destra: lì c'è il peso 1.
 </details>
-
 <details>
 <summary>🃏 <b>Perché gli zeri sono importanti in un numero binario?</b></summary>
 Perché mantengono ogni cifra nella sua posizione e quindi con il suo peso.
@@ -132,7 +128,6 @@ Come in decimale: `025` e `25` valgono lo stesso, ma `250` vale dieci volte tant
 <summary>🃏 <b>Che cosa succede aggiungendo uno zero a destra di un numero binario?</b></summary>
 Il numero raddoppia, come in decimale uno zero a destra lo moltiplica per 10.
 </details>
-
 <details>
 <summary>🃏 <b>Gli zeri a sinistra cambiano il valore?</b></summary>
 No: 0011 e 11 valgono lo stesso.
@@ -171,12 +166,10 @@ risultato: 101101
 <summary>🃏 <b>Come si converte un numero da decimale a binario?</b></summary>
 Si divide per 2 più volte fino a quoziente 0, annotando i resti, che si leggono dal basso verso l'alto.
 </details>
-
 <details>
 <summary>🃏 <b>In che verso si leggono i resti?</b></summary>
 Dal basso verso l'alto: l'ultimo resto è il primo a sinistra.
 </details>
-
 <details>
 <summary>🃏 <b>Come si controlla una conversione?</b></summary>
 Si torna indietro con il metodo dei pesi e si vede se esce il numero di partenza.

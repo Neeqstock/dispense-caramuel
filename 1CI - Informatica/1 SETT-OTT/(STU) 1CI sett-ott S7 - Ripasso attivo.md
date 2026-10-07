@@ -59,12 +59,10 @@ Gli studi sull'apprendimento mostrano che **ricordare a intervalli** (poco, in p
 <summary>🃏 <b>Perché provare a ricordare è meglio di rileggere?</b></summary>
 Perché ti allena a tirare fuori l'informazione, come in una verifica; rileggere dà solo una falsa sensazione di sapere.
 </details>
-
 <details>
 <summary>🃏 <b>Quali sono i quattro passi del ripasso attivo?</b></summary>
 Chiudere, provare, controllare, correggere.
 </details>
-
 <details>
 <summary>🃏 <b>Meglio un'ora la notte prima o tre giri da 10 minuti in giorni diversi?</b></summary>
 Tre giri brevi in giorni diversi: il ricordo si consolida meglio.
@@ -133,7 +131,6 @@ Il computer tratta dati fatti di bit; i bit si raggruppano in byte; i numeri si 
 <summary>🃏 <b>Quali sono le quattro mosse di ogni conversione?</b></summary>
 Scrivere le basi, scegliere il metodo, rileggere verso e zeri, controllare con un secondo metodo.
 </details>
-
 <details>
 <summary>🃏 <b>Con quale metodo si controlla una conversione?</b></summary>
 Con un secondo metodo, per esempio tornando al decimale con i pesi.
@@ -156,7 +153,6 @@ Con un secondo metodo, per esempio tornando al decimale con i pesi.
 <summary>🃏 <b>Perché i resti si leggono dal basso verso l'alto?</b></summary>
 Perché il primo resto è il bit di peso 1 (a destra) e l'ultimo è il bit di sinistra.
 </details>
-
 <details>
 <summary>🃏 <b>Qual è l'errore più comune nei gruppi per l'esadecimale?</b></summary>
 Raggruppare da sinistra invece che da destra.

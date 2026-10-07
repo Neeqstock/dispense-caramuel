@@ -65,17 +65,14 @@ In una scrittura il contenuto va dalla CPU alla memoria. I segnali di controllo 
 <summary>🃏 Che cos'è un bus?</summary>
 Un insieme di collegamenti usati per comunicare secondo regole precise.
 </details>
-
 <details>
 <summary>🃏 Quali sono le tre funzioni del bus, e a quale domanda risponde ciascuna?</summary>
 Indirizzi: dove? Dati: quale contenuto? Controllo: quale operazione, e quando?
 </details>
-
 <details>
 <summary>🃏 In una scrittura, in che direzione va il contenuto?</summary>
 Dalla CPU alla memoria. La conferma di operazione completata torna invece verso chi l'ha richiesta.
 </details>
-
 <details>
 <summary>🃏 Sulla scheda madre ci sono tre fasci di fili, uno per funzione?</summary>
 Non per forza. È una separazione per funzioni: un PC moderno può usare collegamenti punto-punto, seriali o condivisi nel tempo.
@@ -104,17 +101,14 @@ $$N = 2^n\ \text{locazioni}$$
 <summary>🃏 Perché ogni bit in più raddoppia le configurazioni?</summary>
 Perché davanti a ogni sequenza precedente si può mettere 0 oppure 1.
 </details>
-
 <details>
 <summary>🃏 Con n bit di indirizzo, quante locazioni si distinguono?</summary>
 2 elevato alla n.
 </details>
-
 <details>
 <summary>🃏 Con 2 elevato alla n locazioni, qual è l'ultimo indirizzo?</summary>
 2 elevato alla n, meno 1, perché si parte da zero.
 </details>
-
 <details>
 <summary>🃏 Il numero di locazioni è già una capacità in byte?</summary>
 No. Bisogna sapere quanto contiene ogni locazione.
@@ -136,17 +130,14 @@ Gli indirizzi vanno da 0 a 4095. Attenzione: questo è lo spazio **rappresentabi
 <summary>🃏 Come si calcola la capacità di una memoria?</summary>
 Numero di locazioni per byte contenuti in ogni locazione.
 </details>
-
 <details>
 <summary>🃏 Che cosa significa «memoria indirizzata a byte»?</summary>
 Che ogni indirizzo identifica un byte, cioè 8 bit.
 </details>
-
 <details>
 <summary>🃏 Con 12 bit di indirizzo a byte, quanta memoria è rappresentabile?</summary>
 4096 locazioni da un byte: 4096 byte, cioè 4 KiB, con indirizzi da 0 a 4095.
 </details>
-
 <details>
 <summary>🃏 Lo spazio rappresentabile è la RAM montata nel computer?</summary>
 No. È quanto si può indirizzare nel modello, non quanta memoria è installata.
@@ -164,17 +155,14 @@ La larghezza del bus dati dice quanto si trasferisce in un colpo; quella degli i
 <summary>🃏 Quanti byte sono 1 KiB, 1 MiB e 1 GiB?</summary>
 1 KiB = 1024 byte; 1 MiB = 2 elevato alla 20 byte; 1 GiB = 2 elevato alla 30 byte.
 </details>
-
 <details>
 <summary>🃏 Che differenza c'è fra KiB e kB?</summary>
 KiB è una potenza di 2, 1024 byte; kB è una potenza di 10, 1000 byte. Sono convenzioni diverse da dichiarare.
 </details>
-
 <details>
 <summary>🃏 Se ogni locazione contiene una parola da 2 byte, che cosa cambia?</summary>
 Il numero di indirizzi resta uguale, la capacità raddoppia.
 </details>
-
 <details>
 <summary>🃏 Bus dati e bus indirizzi: che cosa dice la larghezza di ciascuno?</summary>
 Il bus dati dice quanto si trasferisce in un colpo; il bus indirizzi quante posizioni si distinguono.
@@ -190,12 +178,10 @@ Il bus dati dice quanto si trasferisce in un colpo; il bus indirizzi quante posi
 <summary>🃏 Quanta memoria indirizzano 32 bit in un modello a byte?</summary>
 4 GiB.
 </details>
-
 <details>
 <summary>🃏 Perché molti PC a 32 bit vedevano meno RAM di quella montata?</summary>
 Perché non tutti gli indirizzi corrispondono a RAM: entrano in gioco zone riservate ai dispositivi, indirizzi fisici e virtuali, limiti di processore e sistema operativo.
 </details>
-
 <details>
 <summary>🃏 Quando una formula è affidabile?</summary>
 Quando le sue ipotesi sono scritte chiaramente.
@@ -225,27 +211,22 @@ In generale, salendo verso i registri diminuiscono capacità e tempo di accesso,
 <summary>🃏 Perché un computer usa più tipi di memoria?</summary>
 Perché nessuna tecnologia è insieme enorme, velocissima, economica e capace di tenere i dati senza corrente: servono compromessi.
 </details>
-
 <details>
 <summary>🃏 Quali sono i livelli della gerarchia, dal più vicino alla CPU?</summary>
 Registri, cache, RAM, memoria di massa come SSD e HDD.
 </details>
-
 <details>
 <summary>🃏 Salendo verso i registri, come cambiano capacità, tempo di accesso e costo?</summary>
 Diminuiscono capacità e tempo di accesso, aumenta il costo per bit. È un modello orientativo.
 </details>
-
 <details>
 <summary>🃏 Che cosa significa «volatile»?</summary>
 Che la memoria ha bisogno di corrente per mantenere il contenuto.
 </details>
-
 <details>
 <summary>🃏 Quali memorie sono volatili e quali no?</summary>
 Registri, cache e RAM sono volatili; SSD e HDD non lo sono.
 </details>
-
 <details>
 <summary>🃏 La persistenza aumenta un po' alla volta scendendo nella gerarchia?</summary>
 No. È una proprietà separata, da indicare a parte.
@@ -266,27 +247,22 @@ Per lo stesso motivo, **più RAM non rende più veloce il processore**. Una RAM 
 <summary>🃏 Che cos'è la capacità di una memoria?</summary>
 Quanta informazione può conservare, in byte o GiB.
 </details>
-
 <details>
 <summary>🃏 Che cos'è la latenza?</summary>
 Quanto si aspetta per avere la risposta a un accesso, per esempio in nanosecondi.
 </details>
-
 <details>
 <summary>🃏 Che cos'è la banda?</summary>
 Quanta informazione si può trasferire ogni secondo, per esempio in GB/s.
 </details>
-
 <details>
 <summary>🃏 Una banda alta elimina l'attesa iniziale?</summary>
 No. Un canale può trasferire tanti byte al secondo e far comunque aspettare prima del primo.
 </details>
-
 <details>
 <summary>🃏 Che domanda nasconde «questa memoria è migliore»?</summary>
 Migliore per quale lavoro?
 </details>
-
 <details>
 <summary>🃏 Più RAM rende più veloce il processore?</summary>
 No. Più RAM permette di tenere pronti più programmi e dati, ma non cambia la velocità con cui la CPU calcola.
@@ -304,22 +280,18 @@ La **RAM** principale permette di accedere direttamente a ogni posizione, leggen
 <summary>🃏 Che cosa caratterizza la RAM principale?</summary>
 Permette di accedere direttamente a ogni posizione, leggendo e scrivendo durante il lavoro.
 </details>
-
 <details>
 <summary>🃏 Per eseguire un programma salvato su SSD, che cosa fa il sistema?</summary>
 Porta in RAM le parti necessarie.
 </details>
-
 <details>
 <summary>🃏 Che cosa significa ROM?</summary>
 Memoria di sola lettura: nelle forme tradizionali il contenuto non si modifica durante l'uso normale.
 </details>
-
 <details>
 <summary>🃏 Dove sta oggi molto firmware?</summary>
 In memoria flash: non volatile, ma riscrivibile con procedure apposite.
 </details>
-
 <details>
 <summary>🃏 16 GB di RAM e 512 GB di SSD fanno 528 GB di RAM?</summary>
 No. Descrivono risorse diverse e non vanno sommate.

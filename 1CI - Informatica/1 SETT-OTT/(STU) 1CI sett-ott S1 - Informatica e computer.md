@@ -63,7 +63,6 @@ computer + programma B  ->  gioco
 <summary>🃏 <b>Che cosa significa la parola informatica?</b></summary>
 Informazione + automatica: trattare informazioni in modo automatico con una macchina.
 </details>
-
 <details>
 <summary>🃏 <b>Usare un'app è lo stesso che studiare informatica?</b></summary>
 No. Usarla è come guidare; l'informatica studia come funziona il motore.
@@ -123,7 +122,6 @@ Scomporre, controllare, progettare.
 <summary>🃏 <b>Che cos'è l'hardware?</b></summary>
 La parte fisica del computer: quella che puoi toccare.
 </details>
-
 <details>
 <summary>🃏 <b>Che cos'è il software?</b></summary>
 L'insieme di programmi e dati: le istruzioni che l'hardware esegue.
@@ -147,7 +145,6 @@ Per questo gli algoritmi devono essere precisi. Li disegneremo con i diagrammi d
 <summary>🃏 <b>Che cos'è un algoritmo?</b></summary>
 Una sequenza precisa e ordinata di passi per risolvere un problema.
 </details>
-
 <details>
 <summary>🃏 <b>Che differenza c'è fra algoritmo e programma?</b></summary>
 L'algoritmo è il ragionamento; il programma è l'algoritmo scritto in un linguaggio che il computer esegue.
@@ -185,12 +182,10 @@ Quando un programma fa qualcosa di inatteso, i programmatori parlano di **bug**.
 <summary>🃏 <b>Quando un algoritmo è deterministico?</b></summary>
 Quando, con gli stessi dati di partenza, segue sempre gli stessi passi e dà lo stesso risultato.
 </details>
-
 <details>
 <summary>🃏 <b>Che cos'è un bug?</b></summary>
 Un comportamento inatteso di un programma. Prima di correggerlo bisogna saperlo riprodurre.
 </details>
-
 <details>
 <summary>🃏 <b>Perché il robot umano si ferma davanti a «vai di là»?</b></summary>
 Perché l'ordine è ambiguo: un algoritmo deve essere preciso.
@@ -222,7 +217,6 @@ Non è magia: è un modo diverso di **scrivere** lo stesso numero. Nelle prossim
 <summary>🃏 <b>Con quante cifre scrive i numeri il computer?</b></summary>
 Con due: 0 e 1 (binario).
 </details>
-
 <details>
 <summary>🃏 <b>13, 1101 e D sono numeri diversi?</b></summary>
 No. Sono tre modi di scrivere lo stesso numero.

@@ -69,47 +69,38 @@ INPUT porta informazioni nel sistema; OUTPUT le restituisce
 <summary>🃏 Che cosa conserva la memoria nel modello di Von Neumann?</summary>
 Istruzioni e dati, nella stessa memoria.
 </details>
-
 <details>
 <summary>🃏 Da quali parti è fatta la CPU, e che cosa fa ciascuna?</summary>
 CU coordina, ALU calcola, registri conservano i valori del lavoro in corso.
 </details>
-
 <details>
 <summary>🃏 Quali sono le fasi del ciclo macchina?</summary>
 Fetch, decode, execute, poi si passa all'istruzione successiva.
 </details>
-
 <details>
 <summary>🃏 PC, IR, MAR, MDR: un ruolo per ciascuno.</summary>
 PC: dove prendere la prossima istruzione. IR: istruzione corrente. MAR: indirizzo dell'accesso in corso. MDR: contenuto trasferito.
 </details>
-
 <details>
 <summary>🃏 Quali sono le tre funzioni dei collegamenti fra CPU e memoria?</summary>
 Indirizzi, dati e controllo.
 </details>
-
 <details>
 <summary>🃏 Che cosa succede alla sorgente dopo una copia?</summary>
 Resta intatta, salvo un'altra operazione che la modifichi.
 </details>
-
 <details>
 <summary>🃏 Come si calcola la capacità di una memoria con n bit di indirizzo?</summary>
 2 elevato alla n locazioni, per i byte contenuti in ogni locazione.
 </details>
-
 <details>
 <summary>🃏 Quali sono i livelli della gerarchia delle memorie?</summary>
 Registri, cache, RAM, memoria di massa. Differiscono per attese, capacità e costo; la persistenza è una proprietà a parte.
 </details>
-
 <details>
 <summary>🃏 Su quali regolarità si basa la cache?</summary>
 Sulla località temporale e sulla località spaziale.
 </details>
-
 <details>
 <summary>🃏 Un miss significa «vado sul disco»?</summary>
 No. Significa accedere al livello successivo, e non è un guasto.
@@ -123,12 +114,10 @@ Quando segui un'istruzione chiediti: **dove siamo?**, **che cosa abbiamo letto?*
 <summary>🃏 Quali tre domande aiutano a seguire un'istruzione?</summary>
 Dove siamo? Che cosa abbiamo letto? Che cosa cambia davvero?
 </details>
-
 <details>
 <summary>🃏 Basta dire il nome di un registro?</summary>
 No. Bisogna dire anche il suo ruolo in quel momento.
 </details>
-
 <details>
 <summary>🃏 «Questa memoria è grande» dice anche che è veloce?</summary>
 No. Capacità, velocità e persistenza sono proprietà diverse.
@@ -146,12 +135,10 @@ Anche una formula va raccontata. Con 9 bit di indirizzo a byte si distinguono $2
 <summary>🃏 Da quali tre parti è fatta una buona risposta tecnica?</summary>
 Una tesi, un meccanismo e un esempio.
 </details>
-
 <details>
 <summary>🃏 Perché «la cache è veloce» è una risposta debole?</summary>
 È una proprietà generica. Va detto il meccanismo, con una condizione controllabile: se il blocco è già in cache, si evita l'attesa del livello successivo.
 </details>
-
 <details>
 <summary>🃏 Anche una formula va «raccontata»?</summary>
 Sì: bisogna dire che cosa contano i simboli, con quali unità e sotto quali ipotesi.
@@ -187,7 +174,6 @@ No. Mostra i ruoli: per esempio la CU non è una scheda da cercare vicino al pro
 <summary>🃏 A che cosa serve cercare un controesempio?</summary>
 A capire dove una regola smette di funzionare, e quindi a renderla più precisa.
 </details>
-
 <details>
 <summary>🃏 Quali due idee bastano per trovare controesempi su GHz e cache?</summary>
 L'attesa e lo spazio limitato.

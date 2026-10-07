@@ -58,17 +58,14 @@ Questo piccolo passo è il cuore dell'informatica: i computer maneggiano miliard
 <summary>🃏 <b>Che cos'è un dato?</b></summary>
 Un fatto grezzo, senza contesto: per esempio 39.
 </details>
-
 <details>
 <summary>🃏 <b>Che cos'è un'informazione?</b></summary>
 Un dato con il suo contesto, cioè con un significato: per esempio «39 °C di febbre».
 </details>
-
 <details>
 <summary>🃏 <b>Che cos'è la conoscenza?</b></summary>
 L'informazione usata con l'esperienza per decidere o risolvere un problema.
 </details>
-
 <details>
 <summary>🃏 <b>Dato e informazione sono la stessa cosa?</b></summary>
 No. L'informazione è il dato più il contesto che gli dà significato.
@@ -125,17 +122,14 @@ Il computer funziona a **livelli**. Ognuno usa quello sotto di sé.
 <summary>🃏 <b>Che cos'è il software di base?</b></summary>
 Il sistema operativo: fa da ponte fra l'hardware e i programmi dell'utente.
 </details>
-
 <details>
 <summary>🃏 <b>Che cos'è il software applicativo?</b></summary>
 Un programma per un compito specifico dell'utente, come un browser o Word.
 </details>
-
 <details>
 <summary>🃏 <b>Il sistema operativo è hardware o software?</b></summary>
 Software: è un programma, anche se lavora vicino alla macchina.
 </details>
-
 <details>
 <summary>🃏 <b>Chi usa chi, nello schema a livelli?</b></summary>
 L'utente usa i programmi; i programmi usano il sistema operativo; il sistema operativo usa l'hardware.
@@ -177,12 +171,10 @@ flowchart LR
 <summary>🃏 <b>Quali sono le quattro funzioni di un computer?</b></summary>
 Ingresso, elaborazione, uscita, memorizzazione.
 </details>
-
 <details>
 <summary>🃏 <b>Quale componente fa l'elaborazione?</b></summary>
 La CPU, il processore.
 </details>
-
 <details>
 <summary>🃏 <b>A che cosa serve la memorizzazione?</b></summary>
 A conservare i dati nel tempo, anche quando il computer si spegne.
