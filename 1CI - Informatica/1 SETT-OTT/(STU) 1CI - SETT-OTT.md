@@ -21,6 +21,10 @@ Dentro un computer non ci sono numeri, lettere o colori. Ci sono **interruttori*
 
 Il calendario reale può spostarsi un po': conta l'ordine degli argomenti, non la data esatta.
 
+> [!tip] 📍 A che punto siamo
+> Siamo arrivati alla **dispensa S3 — Bit e byte**, attualmente **in corso**.
+> [[(STU) 1CI sett-ott S3 - Bit e byte|Apri la dispensa S3]]
+
 ## 🧰 Come sono fatte le dispense
 
 In cima a ogni dispensa trovi una **mappa mentale** con tutti gli argomenti: è l'indice. Ogni argomento ha tre livelli, segnati da un'emoji all'inizio del titolo:
