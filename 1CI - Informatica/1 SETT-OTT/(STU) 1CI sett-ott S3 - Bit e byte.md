@@ -64,7 +64,7 @@ La più piccola unità di informazione: una scelta fra due stati, 0 o 1.
 Un minuscolo interruttore elettronico: passa corrente (1) o non passa (0).
 </details>
 
-![[image-1-21.webp|229x191]]*Dei transistor. Questi sono giganti, quelli che abbiamo nei computer si vedono solo al microscopio elettronico.*
+![Dei transistor. Questi sono giganti, quelli che abbiamo nei computer si vedono solo al microscopio elettronico.|205x172](Allegati/transistor.webp)*Transistors. Questi sono giganti, quelli nei computer e negli smartphone si vedono solo al microscopio elettronico.*
 
 ### 🤓 Chi ha inventato il bit
 
@@ -82,7 +82,7 @@ John Tukey, nel 1947. Shannon la rese l'unità dell'informazione nel 1948.
 Che i relè, interruttori accesi o spenti, possono eseguire la logica di Boole.
 </details>
 
-![[image-1-22.webp|176x176]]*Un relé (o "relay", in inglese): un'interruttore elettromagnetico.*
+![Un relé (o "relay", in inglese): un interruttore elettromagnetico.|205x205](Allegati/relay-real.webp)*Un relé (o "relay", in inglese), ovvero un interruttore elettromagnetico.*
 
 ## ✖️ Quante combinazioni
 
@@ -222,7 +222,8 @@ Perché il produttore conta in GB (10⁹ byte) e il sistema può mostrare GiB (2
 
 > Conservare e spostare bit richiede energia: i **data center**, enormi edifici pieni di computer, consumano molta elettricità e hanno bisogno di raffreddamento. Anche una foto che «sta nel cloud» sta in un edificio reale, che costa energia e acqua. Ridurre sprechi (cancellare file inutili, comprimere, evitare copie) è un piccolo gesto che ha una logica, ma non risolve da solo: contano soprattutto come sono progettati e alimentati i servizi.
 
-![[image-1-23.webp|281x158]]*Un datacenter*
+![[image.webp|194x194]]
+*Un datacenter*
 
 ## ✏️ Metti alla prova
 
