@@ -1,3 +1,5 @@
+⬅️ [S4 - El ciclo de máquina](%28STU%29%20ESP%203EI%20sett-ott%20S4%20-%20El%20ciclo%20de%20m%C3%A1quina.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S6 - Caché, localidad y reloj](%28STU%29%20ESP%203EI%20sett-ott%20S6%20-%20Cach%C3%A9%2C%20localidad%20y%20reloj.md) ➡️
+
 # ESP 🧮 Direcciones y jerarquía de memoria
 
 **3EI · Septiembre-Octubre · S5 · Teoría**
@@ -267,3 +269,5 @@ En memoria flash: no volátil, pero reescribible mediante procedimientos especia
 ---
 
 [[(STU) ESP 3EI sett-ott S4 - El ciclo de máquina|⬅️ S4 - El ciclo de máquina]] · [[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S6 - Caché, localidad y reloj|S6 - Caché, localidad y reloj ➡️]]
+
+⬅️ [S4 - El ciclo de máquina](%28STU%29%20ESP%203EI%20sett-ott%20S4%20-%20El%20ciclo%20de%20m%C3%A1quina.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S6 - Caché, localidad y reloj](%28STU%29%20ESP%203EI%20sett-ott%20S6%20-%20Cach%C3%A9%2C%20localidad%20y%20reloj.md) ➡️

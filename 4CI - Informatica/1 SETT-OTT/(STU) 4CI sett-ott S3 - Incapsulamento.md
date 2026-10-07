@@ -1,3 +1,5 @@
+⬅️ [S2 - Costruttori e overloading](%28STU%29%204CI%20sett-ott%20S2%20-%20Costruttori%20e%20overloading.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S4 - Ereditarietà](%28STU%29%204CI%20sett-ott%20S4%20-%20Ereditariet%C3%A0.md) ➡️
+
 # 🔒 Incapsulamento
 
 **4CI · Settembre-Ottobre · S3 · Teoria**
@@ -613,4 +615,4 @@ Raccogliere e conservare solo i dati davvero necessari.
 
 ---
 
-[⬅️ S2 - Costruttori e overloading](%28STU%29%204CI%20sett-ott%20S2%20-%20Costruttori%20e%20overloading.md) · [🗺️ Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [➡️ S4 - Ereditarietà](%28STU%29%204CI%20sett-ott%20S4%20-%20Ereditariet%C3%A0.md)
+⬅️ [S2 - Costruttori e overloading](%28STU%29%204CI%20sett-ott%20S2%20-%20Costruttori%20e%20overloading.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S4 - Ereditarietà](%28STU%29%204CI%20sett-ott%20S4%20-%20Ereditariet%C3%A0.md) ➡️

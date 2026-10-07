@@ -1,3 +1,5 @@
+⬅️ [S2 - La máquina de Von Neumann](%28STU%29%20ESP%203EI%20sett-ott%20S2%20-%20La%20m%C3%A1quina%20de%20Von%20Neumann.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S4 - El ciclo de máquina](%28STU%29%20ESP%203EI%20sett-ott%20S4%20-%20El%20ciclo%20de%20m%C3%A1quina.md) ➡️
+
 # ESP 🗃️ Registros y recorridos de datos
 
 **3EI · Septiembre-Octubre · S3 · Teoría**
@@ -239,3 +241,5 @@ No. Carry se refiere a operaciones sin signo; overflow, a operaciones con signo.
 ---
 
 [[(STU) ESP 3EI sett-ott S2 - La máquina de Von Neumann|⬅️ S2 - La máquina de Von Neumann]] · [[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S4 - El ciclo de máquina|S4 - El ciclo de máquina ➡️]]
+
+⬅️ [S2 - La máquina de Von Neumann](%28STU%29%20ESP%203EI%20sett-ott%20S2%20-%20La%20m%C3%A1quina%20de%20Von%20Neumann.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S4 - El ciclo de máquina](%28STU%29%20ESP%203EI%20sett-ott%20S4%20-%20El%20ciclo%20de%20m%C3%A1quina.md) ➡️

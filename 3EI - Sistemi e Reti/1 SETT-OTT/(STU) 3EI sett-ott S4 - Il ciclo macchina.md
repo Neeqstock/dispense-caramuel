@@ -1,3 +1,5 @@
+⬅️ [S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S5 - Indirizzi e gerarchia delle memorie](%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md) ➡️
+
 # 🔄 Il ciclo macchina
 
 **3EI · Settembre-Ottobre · S4 · Teoria**
@@ -285,4 +287,4 @@ Non necessariamente: il nostro elenco di passi è un modello, non una misura dei
 
 ---
 
-[⬅️ S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) · [🗺️ Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S5 - Indirizzi e gerarchia delle memorie ➡️](%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md)
+⬅️ [S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S5 - Indirizzi e gerarchia delle memorie](%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md) ➡️

@@ -1,3 +1,5 @@
+⬅️ [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md)
+
 # 🧠 Ripasso attivo
 
 **1CI · Settembre-Ottobre · S7 · Teoria**
@@ -49,7 +51,7 @@ Rileggere dà una sensazione di familiarità: «questo lo so». Ma una verifica 
 
 📌 *Didascalia:* provare a ricordare allena la memoria più di rileggere.
 
-🧠 ==Per ricordare, prova a ricordare: non rileggere soltanto.==
+🧠 <u>Per ricordare, prova a ricordare: non rileggere soltanto.</u>
 
 Gli studi sull'apprendimento mostrano che **ricordare a intervalli** (poco, in più giorni) funziona meglio di studiare tanto tutto insieme. Per questo: tre giri brevi da 10 minuti sono meglio di un'ora di notte.
 
@@ -125,7 +127,7 @@ Il computer tratta dati fatti di bit; i bit si raggruppano in byte; i numeri si 
 | esadecimale → binario | ogni cifra → 4 bit | non saltare gli zeri |
 | binario ↔ ottale | gruppi da 3 | stesso metodo, gruppi più piccoli |
 
-🧠 ==Quando sbagli, chiediti: «quale regola ho violato?», non: «quanto fa?».==
+🧠 <u>Quando sbagli, chiediti: «quale regola ho violato?», non: «quanto fa?».</u>
 
 <details>
 <summary>🃏 <b>Quali sono le quattro mosse di ogni conversione?</b></summary>
@@ -208,4 +210,4 @@ Segni dove, e riprovi: l'errore ti dice quale regola riguardare.
 
 ---
 
-[⬅️ S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) · [🗺️ Indice](%28STU%29%201CI%20-%20SETT-OTT.md)
+⬅️ [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md)

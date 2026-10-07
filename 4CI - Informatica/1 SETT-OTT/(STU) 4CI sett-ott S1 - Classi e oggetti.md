@@ -1,3 +1,5 @@
+🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S2 - Costruttori e overloading](%28STU%29%204CI%20sett-ott%20S2%20-%20Costruttori%20e%20overloading.md) ➡️
+
 # 🧱 Classi e oggetti
 
 **4CI · Settembre-Ottobre · S1 · Teoria**
@@ -595,3 +597,5 @@ Perché è un oggetto incompleto e poco sensato, per esempio un animale senza no
 ---
 
 [🗺️ Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [➡️ S2 - Costruttori e overloading](%28STU%29%204CI%20sett-ott%20S2%20-%20Costruttori%20e%20overloading.md)
+
+🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S2 - Costruttori e overloading](%28STU%29%204CI%20sett-ott%20S2%20-%20Costruttori%20e%20overloading.md) ➡️

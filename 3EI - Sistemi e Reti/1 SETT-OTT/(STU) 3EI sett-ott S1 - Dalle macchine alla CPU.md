@@ -1,3 +1,5 @@
+🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) ➡️
+
 # 🖥️ Dalle macchine alla CPU
 
 **3EI · Settembre-Ottobre · S1 · Teoria**
@@ -470,3 +472,5 @@ Perché nei registri i numeri occupano un numero limitato di bit: un livello alt
 ---
 
 [🗺️ Indice del bimestre](%28STU%29%203EI%20-%20SETT-OTT.md) · [S2 - La macchina di Von Neumann ➡️](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md)
+
+🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) ➡️

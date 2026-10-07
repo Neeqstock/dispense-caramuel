@@ -1,3 +1,5 @@
+⬅️ [S3 - Incapsulamento](%28STU%29%204CI%20sett-ott%20S3%20-%20Incapsulamento.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S5 - Polimorfismo e casting](%28STU%29%204CI%20sett-ott%20S5%20-%20Polimorfismo%20e%20casting.md) ➡️
+
 # 🌳 Ereditarietà
 
 **4CI · Settembre-Ottobre · S4 · Teoria**
@@ -531,4 +533,4 @@ Il comportamento: la sottoclasse deve comportarsi come ci si aspetta dalla super
 
 ---
 
-[⬅️ S3 - Incapsulamento](%28STU%29%204CI%20sett-ott%20S3%20-%20Incapsulamento.md) · [🗺️ Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [➡️ S5 - Polimorfismo e casting](%28STU%29%204CI%20sett-ott%20S5%20-%20Polimorfismo%20e%20casting.md)
+⬅️ [S3 - Incapsulamento](%28STU%29%204CI%20sett-ott%20S3%20-%20Incapsulamento.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S5 - Polimorfismo e casting](%28STU%29%204CI%20sett-ott%20S5%20-%20Polimorfismo%20e%20casting.md) ➡️

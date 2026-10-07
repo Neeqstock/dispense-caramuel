@@ -1,3 +1,5 @@
+⬅️ [S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) ➡️
+
 # 🗃️ Registri e percorsi dei dati
 
 **3EI · Settembre-Ottobre · S3 · Teoria**
@@ -270,4 +272,4 @@ No. Il carry riguarda le operazioni senza segno, l'overflow quelle con segno.
 
 ---
 
-[⬅️ S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) · [🗺️ Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S4 - Il ciclo macchina ➡️](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md)
+⬅️ [S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) ➡️

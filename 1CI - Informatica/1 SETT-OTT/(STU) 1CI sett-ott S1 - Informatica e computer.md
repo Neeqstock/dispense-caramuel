@@ -1,3 +1,5 @@
+🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) ➡️
+
 # 🧭 Informatica e computer
 
 **1CI · Settembre-Ottobre · S1 · Teoria**
@@ -55,7 +57,7 @@ computer + programma B  ->  gioco
 
 **Informatica** = **informazione** + **automatica**: trattare informazioni con macchine, in modo automatico. In italiano la parola viene dal francese *informatique* (1962, Philippe Dreyfus).
 
-🧠 ==Informatica non vuol dire «usare il computer»: vuol dire capire come si fa fare un lavoro a una macchina.==
+🧠 <u>Informatica non vuol dire «usare il computer»: vuol dire capire come si fa fare un lavoro a una macchina.</u>
 
 È come la differenza fra guidare e sapere come funziona un motore. Puoi fare entrambe le cose. Qui impariamo il motore.
 
@@ -110,7 +112,7 @@ Scomporre, controllare, progettare.
 **Hardware** è la parte che puoi toccare: CPU, memoria, schermo, cavi.
 **Software** è la parte fatta di istruzioni: programmi e dati.
 
-🧠 ==Il computer è hardware + software. Senza software l'hardware è un fermacarte.==
+🧠 <u>Il computer è hardware + software. Senza software l'hardware è un fermacarte.</u>
 
 È come un forno e una ricetta. Il forno senza ricetta non cucina. La ricetta senza forno non scalda nulla. 🍕
 
@@ -137,7 +139,7 @@ Un **algoritmo** è una sequenza **precisa e ordinata** di passi per risolvere u
 
 Un **programma** è un algoritmo scritto in un linguaggio che il computer può eseguire.
 
-🧠 ==Il computer fa esattamente quello che gli dici, non quello che volevi dire.==
+🧠 <u>Il computer fa esattamente quello che gli dici, non quello che volevi dire.</u>
 
 Per questo gli algoritmi devono essere precisi. Li disegneremo con i diagrammi di flusso più avanti nell'anno.
 
@@ -209,7 +211,7 @@ Il computer scrive i numeri con **due sole cifre**. Guarda lo stesso numero scri
 
 Non è magia: è un modo diverso di **scrivere** lo stesso numero. Nelle prossime settimane impariamo il metodo.
 
-🧠 ==Il numero non cambia. Cambia come lo scriviamo.==
+🧠 <u>Il numero non cambia. Cambia come lo scriviamo.</u>
 
 😄 Vecchia battuta da nerd: *esistono 10 tipi di persone: quelle che capiscono il binario e quelle che no.* Se non l'hai capita, tra due settimane sì.
 
@@ -244,3 +246,5 @@ No. Sono tre modi di scrivere lo stesso numero.
 ---
 
 [🗺️ Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S2 - Dati e informazioni ➡️](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md)
+
+🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) ➡️

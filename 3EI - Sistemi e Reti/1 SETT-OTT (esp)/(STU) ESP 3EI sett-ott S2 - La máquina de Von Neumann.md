@@ -1,3 +1,5 @@
+⬅️ [S1 - De las máquinas a la CPU](%28STU%29%20ESP%203EI%20sett-ott%20S1%20-%20De%20las%20m%C3%A1quinas%20a%20la%20CPU.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S3 - Registros y recorridos de datos](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md) ➡️
+
 # ESP 🏛️ La máquina de Von Neumann
 
 **3EI · Septiembre-Octubre · S2 · Teoría**
@@ -44,7 +46,7 @@ mindmap
 
 Una hoja de cálculo, un videojuego y una aplicación de música funcionan en el mismo computador. No cambiamos los circuitos cada vez: cambiamos los programas. Pero ¿dónde están las instrucciones cuando el procesador debe ejecutarlas?
 
-En los primeros computadores, cambiar de tarea podía significar reconfigurar la máquina con interruptores, cables o paneles de control. El **ENIAC**, de 1946, se «programaba» así: había que volver a conectar cables y mover interruptores; preparar un cálculo nuevo podía tomar días. El trabajo lo realizaba un grupo de mujeres matemáticas, entre ellas Kay McNulty, Jean Jennings y Betty Snyder: fueron las primeras programadoras de un computador electrónico, y durante mucho tiempo su historia quedó olvidada. La idea de **guardar también el programa en la memoria** cambió la relación entre máquina y tarea: las instrucciones se convirtieron en información que podía cargarse y sustituirse. ==La máquina seguía siendo la misma; el programa le asignaba un trabajo diferente.== De días de cableado se pasó a minutos de carga. ⚡
+En los primeros computadores, cambiar de tarea podía significar reconfigurar la máquina con interruptores, cables o paneles de control. El **ENIAC**, de 1946, se «programaba» así: había que volver a conectar cables y mover interruptores; preparar un cálculo nuevo podía tomar días. El trabajo lo realizaba un grupo de mujeres matemáticas, entre ellas Kay McNulty, Jean Jennings y Betty Snyder: fueron las primeras programadoras de un computador electrónico, y durante mucho tiempo su historia quedó olvidada. La idea de **guardar también el programa en la memoria** cambió la relación entre máquina y tarea: las instrucciones se convirtieron en información que podía cargarse y sustituirse. <u>La máquina seguía siendo la misma; el programa le asignaba un trabajo diferente.</u> De días de cableado se pasó a minutos de carga. ⚡
 
 Este modelo está relacionado con el nombre de John von Neumann, pero no nació del trabajo aislado de una sola persona. En los años cuarenta, matemáticos, ingenieros y técnicos buscaban juntos una forma de construir computadores electrónicos programables. La guerra había vuelto urgentes algunos cálculos complejos, como las tablas de tiro y las simulaciones; las ideas desarrolladas entonces también serían útiles mucho después. El modelo nos ayuda a comprender el principio, pero no describe cada cable o componente de un computador moderno.
 
@@ -56,7 +58,7 @@ Retomemos los papeles de la [[(STU) ESP 3EI sett-ott S1 - De las máquinas a la 
 
 En el modelo de Von Neumann, **las instrucciones y los datos están en la misma memoria**. Un programa es una secuencia de instrucciones guardadas allí, igual que los valores con los que estas instrucciones trabajan. La CPU accede a la memoria, obtiene la instrucción que debe ejecutar, la interpreta y realiza la operación solicitada. Después pasa a la siguiente, salvo que el programa indique otra ruta.
 
-La diferencia con una máquina diseñada para una sola tarea es concreta: ==para cambiar el cálculo no hace falta reconstruir el procesador==. Se prepara otra secuencia de instrucciones y se carga en la memoria. Más adelante veremos cómo la CPU sigue la instrucción actual y la ejecuta; aquí nos interesa el principio que permite cambiar de programa.
+La diferencia con una máquina diseñada para una sola tarea es concreta: <u>para cambiar el cálculo no hace falta reconstruir el procesador</u>. Se prepara otra secuencia de instrucciones y se carga en la memoria. Más adelante veremos cómo la CPU sigue la instrucción actual y la ejecuta; aquí nos interesa el principio que permite cambiar de programa.
 
 <details><summary>🃏 ¿Qué significa «programa almacenado»?</summary>
 Que las instrucciones están guardadas en memoria, junto con los datos. La CPU las obtiene, interpreta y ejecuta una tras otra.
@@ -70,7 +72,7 @@ No. Su nombre está asociado a un modelo fundamental que surgió de investigacio
 
 ### ✅ Dirección y contenido
 
-Imagina la memoria como una fila de cajones numerados. La **dirección** es el número del cajón; el **contenido** es lo que hay dentro. ==El número del cajón no es el objeto que está en él.== Aunque ambos sean números, cumplen funciones diferentes.
+Imagina la memoria como una fila de cajones numerados. La **dirección** es el número del cajón; el **contenido** es lo que hay dentro. <u>El número del cajón no es el objeto que está en él.</u> Aunque ambos sean números, cumplen funciones diferentes.
 
 <details><summary>🃏 ¿Qué diferencia hay entre dirección y contenido?</summary>
 La dirección identifica una posición de memoria; el contenido es lo que se encuentra allí.
@@ -132,13 +134,13 @@ Usamos una memoria didáctica: cada celda contiene un valor entero o una instruc
 | 20 | 7 |
 | 21 | 99 |
 
-La CPU encuentra la primera instrucción en la dirección 10: `LOAD R1, [20]`. La interpreta como una orden y usa la dirección 20 para solicitar el dato. La celda 20 contiene 7, así que copia **7** en R1. ==El número 20 servía para encontrar la celda: no es el dato que se copia.==
+La CPU encuentra la primera instrucción en la dirección 10: `LOAD R1, [20]`. La interpreta como una orden y usa la dirección 20 para solicitar el dato. La celda 20 contiene 7, así que copia **7** en R1. <u>El número 20 servía para encontrar la celda: no es el dato que se copia.</u>
 
-R2 ya contiene 5. La CPU pasa a la instrucción de la dirección 11: `ADD R3, R1, R2`. La ALU suma el contenido de R1 y R2, es decir, 7 y 5, y escribe el resultado 12 en R3. La celda 21 contiene 99, pero ninguna instrucción la señala; por eso el programa no la utiliza. ==Estar en la memoria no basta para participar en el cálculo.==
+R2 ya contiene 5. La CPU pasa a la instrucción de la dirección 11: `ADD R3, R1, R2`. La ALU suma el contenido de R1 y R2, es decir, 7 y 5, y escribe el resultado 12 en R3. La celda 21 contiene 99, pero ninguna instrucción la señala; por eso el programa no la utiliza. <u>Estar en la memoria no basta para participar en el cálculo.</u>
 
 El ejemplo separa tres preguntas que se suelen confundir: **¿qué instrucción ejecutar?** (dirección 10 u 11); **¿qué dato leer?** (dirección 20); **¿qué resultado obtener?** (12 en R3). En computadores reales la representación usa bits y las instrucciones tienen formatos precisos; aquí elegimos 10, 11 y 20 solo para hacer visibles las funciones.
 
-Si en vez de sumar el programa pidiera restar, cambiaría la operación, pero ==no modificaríamos físicamente la ALU: elegiríamos con otra instrucción una función que la máquina ya puede realizar==.
+Si en vez de sumar el programa pidiera restar, cambiaría la operación, pero <u>no modificaríamos físicamente la ALU: elegiríamos con otra instrucción una función que la máquina ya puede realizar</u>.
 
 > ⏸️ **Fijación:** encuentra en la tabla una dirección, un dato y una instrucción. Explica cómo los distinguiste sin fijarte solo en su aspecto.
 
@@ -191,7 +193,7 @@ Sí. Cuando se obtiene de la memoria, es un contenido como cualquier otro.
 
 El **cuello de botella de Von Neumann** es una limitación que puede aparecer cuando la CPU y la memoria intercambian instrucciones y datos a través de una conexión con capacidad limitada. La CPU puede calcular muy rápido, pero necesita que le lleguen las instrucciones y los datos. Si la conexión no los transfiere lo bastante rápido, la CPU debe esperar o el trabajo avanza más lento de lo que permitiría su capacidad de cálculo.
 
-Volvamos a `LOAD R1, [20]`: primero la máquina obtiene la instrucción de la memoria y luego lee el dato de la dirección 20. Después aún debe obtener la instrucción `ADD`. En el modelo más sencillo, las transferencias usan un recurso compartido y no ocurren todas al mismo tiempo. Mientras la memoria o la conexión atiende una solicitud, la CPU puede no tener el siguiente elemento para trabajar. Si se acumulan solicitudes, se forma una cola: ==la limitación se debe a estos intercambios, no a una CPU «poco inteligente»==.
+Volvamos a `LOAD R1, [20]`: primero la máquina obtiene la instrucción de la memoria y luego lee el dato de la dirección 20. Después aún debe obtener la instrucción `ADD`. En el modelo más sencillo, las transferencias usan un recurso compartido y no ocurren todas al mismo tiempo. Mientras la memoria o la conexión atiende una solicitud, la CPU puede no tener el siguiente elemento para trabajar. Si se acumulan solicitudes, se forma una cola: <u>la limitación se debe a estos intercambios, no a una CPU «poco inteligente»</u>.
 
 Una cocina con una sola ventanilla sirve como comparación: hasta cocineros rapidísimos deben esperar si los ingredientes llegan de uno en uno por una ventanilla lenta. Pero una computadora no tiene realmente una ventanilla y las arquitecturas reales emplean soluciones distintas. Importa la capacidad efectiva de transferir información entre memoria y procesador; no basta comparar «GHz de CPU» con «GB/s de memoria», porque son magnitudes distintas. La caché mantiene cerca de la CPU algunos datos e instrucciones de uso frecuente y reduce ciertas esperas, pero no las elimina todas ni vuelve la memoria infinita o instantánea.
 
@@ -250,3 +252,5 @@ Que una máquina electrónica podía ejecutar un programa almacenado.
 ---
 
 [[(STU) ESP 3EI sett-ott S1 - De las máquinas a la CPU|⬅️ S1 - De las máquinas a la CPU]] · [[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S3 - Registros y recorridos de datos|S3 - Registros y recorridos de datos ➡️]]
+
+⬅️ [S1 - De las máquinas a la CPU](%28STU%29%20ESP%203EI%20sett-ott%20S1%20-%20De%20las%20m%C3%A1quinas%20a%20la%20CPU.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S3 - Registros y recorridos de datos](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md) ➡️

@@ -1,3 +1,5 @@
+⬅️ [S5 - Direcciones y jerarquía de memoria](%28STU%29%20ESP%203EI%20sett-ott%20S5%20-%20Direcciones%20y%20jerarqu%C3%ADa%20de%20memoria.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S7 - Reconstruir la máquina](%28STU%29%20ESP%203EI%20sett-ott%20S7%20-%20Reconstruir%20la%20m%C3%A1quina.md) ➡️
+
 # ESP ⚡ Caché, localidad y reloj
 
 **3EI · Septiembre-Octubre · S6 · Teoría**
@@ -272,3 +274,5 @@ Superponer las fases de distintas instrucciones, como en una cadena de montaje.
 ---
 
 [[(STU) ESP 3EI sett-ott S5 - Direcciones y jerarquía de memoria|⬅️ S5 - Direcciones y jerarquía de memoria]] · [[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S7 - Reconstruir la máquina|S7 - Reconstruir la máquina ➡️]]
+
+⬅️ [S5 - Direcciones y jerarquía de memoria](%28STU%29%20ESP%203EI%20sett-ott%20S5%20-%20Direcciones%20y%20jerarqu%C3%ADa%20de%20memoria.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S7 - Reconstruir la máquina](%28STU%29%20ESP%203EI%20sett-ott%20S7%20-%20Reconstruir%20la%20m%C3%A1quina.md) ➡️

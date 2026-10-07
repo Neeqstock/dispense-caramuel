@@ -1,3 +1,5 @@
+⬅️ [S3 - Registros y recorridos de datos](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S5 - Direcciones y jerarquía de memoria](%28STU%29%20ESP%203EI%20sett-ott%20S5%20-%20Direcciones%20y%20jerarqu%C3%ADa%20de%20memoria.md) ➡️
+
 # ESP 🔄 El ciclo de máquina
 
 **3EI · Septiembre-Octubre · S4 · Teoría**
@@ -251,3 +253,5 @@ No necesariamente: nuestro listado es un modelo, no una medida del tiempo.
 ---
 
 [[(STU) ESP 3EI sett-ott S3 - Registros y recorridos de datos|⬅️ S3 - Registros y recorridos de datos]] · [[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S5 - Direcciones y jerarquía de memoria|S5 - Direcciones y jerarquía de memoria ➡️]]
+
+⬅️ [S3 - Registros y recorridos de datos](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S5 - Direcciones y jerarquía de memoria](%28STU%29%20ESP%203EI%20sett-ott%20S5%20-%20Direcciones%20y%20jerarqu%C3%ADa%20de%20memoria.md) ➡️

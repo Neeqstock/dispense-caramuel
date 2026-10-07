@@ -1,3 +1,5 @@
+⬅️ [S1 - Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) ➡️
+
 # 🏛️ La macchina di Von Neumann
 
 **3EI · Settembre-Ottobre · S2 · Teoria**
@@ -44,7 +46,7 @@ mindmap
 
 Un foglio di calcolo, un videogioco e un'app per la musica funzionano sullo stesso computer. Non cambiamo i circuiti ogni volta: cambiamo i programmi. Ma dove stanno le istruzioni quando il processore deve eseguirle?
 
-Nei primi calcolatori cambiare compito poteva voler dire riconfigurare la macchina, con interruttori, cavi o pannelli di controllo. L'**ENIAC**, del 1946, si "programmava" così: bisognava ricollegare cavi e girare interruttori, e preparare un nuovo calcolo poteva richiedere giorni. Il lavoro era svolto da un gruppo di donne matematiche, fra cui Kay McNulty, Jean Jennings e Betty Snyder: furono le prime programmatrici di un calcolatore elettronico, e per molto tempo la loro storia è stata dimenticata. L'idea di **conservare anche il programma in memoria** cambiò il rapporto fra macchina e compito: le istruzioni diventarono informazioni che si potevano caricare e sostituire. ==La macchina restava la stessa; era il programma a darle un lavoro diverso.== Dai giorni di cavi si passava ai minuti di caricamento. ⚡
+Nei primi calcolatori cambiare compito poteva voler dire riconfigurare la macchina, con interruttori, cavi o pannelli di controllo. L'**ENIAC**, del 1946, si "programmava" così: bisognava ricollegare cavi e girare interruttori, e preparare un nuovo calcolo poteva richiedere giorni. Il lavoro era svolto da un gruppo di donne matematiche, fra cui Kay McNulty, Jean Jennings e Betty Snyder: furono le prime programmatrici di un calcolatore elettronico, e per molto tempo la loro storia è stata dimenticata. L'idea di **conservare anche il programma in memoria** cambiò il rapporto fra macchina e compito: le istruzioni diventarono informazioni che si potevano caricare e sostituire. <u>La macchina restava la stessa; era il programma a darle un lavoro diverso.</u> Dai giorni di cavi si passava ai minuti di caricamento. ⚡
 
 Questo modello è legato al nome di John von Neumann, ma non nacque dal lavoro isolato di una sola persona. Negli anni Quaranta matematici, ingegneri e tecnici cercavano insieme un modo per costruire calcolatori elettronici programmabili. La guerra aveva reso urgenti calcoli complessi, per esempio tabelle di tiro e simulazioni; allo stesso tempo, le idee sviluppate allora sarebbero diventate utili anche molto dopo la guerra. Il modello ci aiuta a capire il principio, non descrive ogni filo o componente di un computer moderno.
 
@@ -56,7 +58,7 @@ Riprendiamo i ruoli della [CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20ma
 
 Nel modello di Von Neumann **istruzioni e dati stanno nella stessa memoria**. Un programma è una sequenza di istruzioni conservate lì, proprio come i valori su cui quelle istruzioni lavorano. La CPU raggiunge la memoria, preleva l'istruzione da eseguire, la interpreta e compie l'operazione richiesta. Poi passa all'istruzione successiva, salvo che il programma le chieda di seguire un percorso diverso.
 
-La differenza rispetto a una macchina progettata per un solo compito è concreta: ==per cambiare calcolo non è necessario ricostruire il processore==. Si prepara un'altra sequenza di istruzioni e la si carica in memoria. In seguito vedremo più da vicino come la CPU tiene traccia dell'istruzione corrente e come la esegue; qui ci interessa il principio che rende possibile il cambiamento di programma.
+La differenza rispetto a una macchina progettata per un solo compito è concreta: <u>per cambiare calcolo non è necessario ricostruire il processore</u>. Si prepara un'altra sequenza di istruzioni e la si carica in memoria. In seguito vedremo più da vicino come la CPU tiene traccia dell'istruzione corrente e come la esegue; qui ci interessa il principio che rende possibile il cambiamento di programma.
 
 <details>
 <summary>🃏 <b>Che cosa significa «programma memorizzato»?</b></summary>
@@ -73,7 +75,7 @@ No. Il suo nome è legato a un modello fondamentale, nato da ricerche collettive
 
 ### ✅ Indirizzo e contenuto
 
-Immagina la memoria come una fila di cassetti numerati. L'**indirizzo** è il numero del cassetto; il **contenuto** è ciò che c'è dentro. ==Il numero del cassetto non è l'oggetto nel cassetto.== Anche se entrambi sono numeri, hanno ruoli diversi.
+Immagina la memoria come una fila di cassetti numerati. L'**indirizzo** è il numero del cassetto; il **contenuto** è ciò che c'è dentro. <u>Il numero del cassetto non è l'oggetto nel cassetto.</u> Anche se entrambi sono numeri, hanno ruoli diversi.
 
 <details>
 <summary>🃏 <b>Che differenza c'è fra indirizzo e contenuto?</b></summary>
@@ -145,13 +147,13 @@ Usiamo una memoria didattica: ogni cella contiene un intero valore oppure un'int
 | 20        | 7                   |
 | 21        | 99                  |
 
-Seguiamo la macchina senza saltare i passaggi. La CPU trova la prima istruzione all'indirizzo 10: `LOAD R1, [20]`. La legge come un comando, poi usa l'indirizzo 20 indicato dal comando per richiedere il dato. La cella 20 contiene 7, quindi copia **7** in R1. ==Il numero 20 serviva a trovare la cella: non è il dato copiato.==
+Seguiamo la macchina senza saltare i passaggi. La CPU trova la prima istruzione all'indirizzo 10: `LOAD R1, [20]`. La legge come un comando, poi usa l'indirizzo 20 indicato dal comando per richiedere il dato. La cella 20 contiene 7, quindi copia **7** in R1. <u>Il numero 20 serviva a trovare la cella: non è il dato copiato.</u>
 
-R2 contiene già 5. La CPU passa all'istruzione all'indirizzo 11: `ADD R3, R1, R2`. L'ALU somma i contenuti di R1 e R2, cioè 7 e 5, e il risultato 12 viene scritto in R3. La cella 21 contiene 99, ma nessuna istruzione la indica: per questo il programma non la usa. ==Essere presenti nella memoria non basta per essere coinvolti nel calcolo.==
+R2 contiene già 5. La CPU passa all'istruzione all'indirizzo 11: `ADD R3, R1, R2`. L'ALU somma i contenuti di R1 e R2, cioè 7 e 5, e il risultato 12 viene scritto in R3. La cella 21 contiene 99, ma nessuna istruzione la indica: per questo il programma non la usa. <u>Essere presenti nella memoria non basta per essere coinvolti nel calcolo.</u>
 
 L'esempio separa tre domande che è facile confondere: **quale istruzione eseguire?** (indirizzo 10 o 11); **quale dato leggere?** (indirizzo 20); **quale risultato ottenere?** (12 in R3). Nei computer reali la rappresentazione è fatta di bit e le istruzioni hanno formati precisi; gli indirizzi 10, 11 e 20 sono scelti qui solo per rendere visibili i ruoli.
 
-Se al posto della somma mettessimo una sottrazione, cambierebbe il lavoro svolto. ==Non modifichiamo fisicamente l'ALU: scegliamo, con un'altra istruzione, una funzione che la macchina sa già fare.==
+Se al posto della somma mettessimo una sottrazione, cambierebbe il lavoro svolto. <u>Non modifichiamo fisicamente l'ALU: scegliamo, con un'altra istruzione, una funzione che la macchina sa già fare.</u>
 
 > ⏸️ **Fissaggio:** nella tabella trova un indirizzo, un dato e un'istruzione. Spiega come li hai distinti senza guardare solo il loro aspetto.
 
@@ -212,7 +214,7 @@ Sì. Quando viene prelevata dalla memoria è un contenuto come un altro.
 
 Il **collo di bottiglia di Von Neumann** è il limite che può nascere quando la CPU e la memoria scambiano istruzioni e dati attraverso un collegamento con capacità limitata. La CPU può eseguire operazioni molto rapidamente, ma per lavorare ha bisogno che le istruzioni e i dati arrivino. Se il collegamento non riesce a trasferirli abbastanza in fretta, la CPU deve aspettare oppure il lavoro avanza più lentamente di quanto permetterebbe la sua velocità di calcolo.
 
-Riprendiamo l'esempio precedente. Per completare `LOAD R1, [20]`, la macchina deve prima prelevare l'istruzione dalla memoria e poi leggere il dato all'indirizzo 20. Dopo, deve ancora prelevare l'istruzione `ADD`. Nel modello più semplice, questi trasferimenti passano per una risorsa condivisa e non avvengono tutti nello stesso istante. Mentre la memoria o il collegamento serve una richiesta, la CPU può non avere ancora il prossimo elemento su cui lavorare. Se richieste simili si accumulano, si forma una coda: ==è questo rallentamento degli scambi, non una CPU «poco intelligente», a spiegare il collo di bottiglia==.
+Riprendiamo l'esempio precedente. Per completare `LOAD R1, [20]`, la macchina deve prima prelevare l'istruzione dalla memoria e poi leggere il dato all'indirizzo 20. Dopo, deve ancora prelevare l'istruzione `ADD`. Nel modello più semplice, questi trasferimenti passano per una risorsa condivisa e non avvengono tutti nello stesso istante. Mentre la memoria o il collegamento serve una richiesta, la CPU può non avere ancora il prossimo elemento su cui lavorare. Se richieste simili si accumulano, si forma una coda: <u>è questo rallentamento degli scambi, non una CPU «poco intelligente», a spiegare il collo di bottiglia</u>.
 
 La cucina con un solo sportello rende l'idea: anche cuochi rapidissimi devono aspettare se gli ingredienti arrivano uno alla volta attraverso uno sportello lento. La metafora ha un limite: un computer non ha davvero uno sportello, e le architetture reali usano soluzioni diverse. Conta la capacità effettiva di trasferire informazioni fra memoria e processore; non basta confrontare «GHz della CPU» e «GB/s della memoria», perché misurano grandezze diverse. La cache, che vedremo più avanti, conserva vicino alla CPU alcuni dati e istruzioni usati spesso e riduce certe attese. Non elimina ogni attesa e non rende la memoria infinita o istantanea.
 
@@ -282,4 +284,4 @@ Che un programma memorizzato poteva davvero essere eseguito da una macchina elet
 
 ---
 
-[⬅️ S1 - Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) · [🗺️ Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S3 - Registri e percorsi dei dati ➡️](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md)
+⬅️ [S1 - Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) ➡️

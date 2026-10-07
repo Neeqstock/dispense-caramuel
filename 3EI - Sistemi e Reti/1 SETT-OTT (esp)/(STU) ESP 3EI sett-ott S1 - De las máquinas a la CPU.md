@@ -1,3 +1,5 @@
+🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S2 - La máquina de Von Neumann](%28STU%29%20ESP%203EI%20sett-ott%20S2%20-%20La%20m%C3%A1quina%20de%20Von%20Neumann.md) ➡️
+
 # ESP 🖥️ De las máquinas a la CPU
 
 **3EI · Septiembre-Octubre · S1 · Teoría**
@@ -366,3 +368,5 @@ Porque los registros usan una cantidad limitada de bits y el programa puede pasa
 ---
 
 [[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S2 - La máquina de Von Neumann|S2 - La máquina de Von Neumann ➡️]]
+
+🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S2 - La máquina de Von Neumann](%28STU%29%20ESP%203EI%20sett-ott%20S2%20-%20La%20m%C3%A1quina%20de%20Von%20Neumann.md) ➡️

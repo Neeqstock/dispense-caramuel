@@ -1,3 +1,5 @@
+⬅️ [S1 - Informatica e computer](%28STU%29%201CI%20sett-ott%20S1%20-%20Informatica%20e%20computer.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) ➡️
+
 # 🧩 Dati e informazioni
 
 **1CI · Settembre-Ottobre · S2 · Teoria**
@@ -163,7 +165,7 @@ flowchart LR
 
 🧪 **Scatti una foto con il telefono.** Ingresso: la fotocamera. Elaborazione: il telefono migliora i colori. Uscita: la foto sullo schermo. Memorizzazione: il file nella galleria.
 
-🧠 ==Un computer non fa altro: riceve, elabora, mostra, conserva.==
+🧠 <u>Un computer non fa altro: riceve, elabora, mostra, conserva.</u>
 
 🔧 *In laboratorio vedrai dove vivono i file sul disco. Per ora basta sapere che un file è un **dato con un nome**.*
 
@@ -211,4 +213,4 @@ Tutte e due: mostra le immagini (uscita) e riceve il tocco (ingresso).
 
 ---
 
-[⬅️ S1 - Informatica e computer](%28STU%29%201CI%20sett-ott%20S1%20-%20Informatica%20e%20computer.md) · [🗺️ Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S3 - Bit e byte ➡️](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md)
+⬅️ [S1 - Informatica e computer](%28STU%29%201CI%20sett-ott%20S1%20-%20Informatica%20e%20computer.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) ➡️

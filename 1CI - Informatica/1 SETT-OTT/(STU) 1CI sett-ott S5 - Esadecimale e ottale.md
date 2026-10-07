@@ -1,3 +1,5 @@
+⬅️ [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) ➡️
+
 # 🔣 Esadecimale e ottale
 
 **1CI · Settembre-Ottobre · S5 · Teoria**
@@ -50,7 +52,7 @@ esadecimale:  0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
 
 📌 *Didascalia:* A vale dieci, F vale quindici.
 
-🧠 ==In esadecimale A, B, C, D, E, F sono **cifre** e valgono da 10 a 15.==
+🧠 <u>In esadecimale A, B, C, D, E, F sono **cifre** e valgono da 10 a 15.</u>
 
 ⚠️ **A non è una parola e non è una variabile.** In base 16 è un numero: dieci.
 
@@ -191,7 +193,7 @@ Il colore sul web si scrive `#RRGGBB`: tre byte, ciascuno scritto con **due cifr
 
 `FF` vale 255, il massimo di un byte. Più è alto il valore, più c'è quella luce. Mescolando le tre luci si ottengono tutti gli altri colori.
 
-🧠 ==`#RRGGBB` sono tre byte: quanto rosso, quanto verde, quanto blu.==
+🧠 <u>`#RRGGBB` sono tre byte: quanto rosso, quanto verde, quanto blu.</u>
 
 <details>
 <summary>🃏 <b>Che cosa significa #RRGGBB?</b></summary>
@@ -244,4 +246,4 @@ Sei, scritti come sei coppie esadecimali.
 
 ---
 
-[⬅️ S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) · [🗺️ Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S6 - Convertire a gruppi ➡️](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md)
+⬅️ [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) ➡️

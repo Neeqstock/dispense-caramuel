@@ -1,3 +1,5 @@
+⬅️ [S6 - Caché, localidad y reloj](%28STU%29%20ESP%203EI%20sett-ott%20S6%20-%20Cach%C3%A9%2C%20localidad%20y%20reloj.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md)
+
 # ESP 🧠 Reconstruir la máquina
 
 **3EI · Septiembre-Octubre · S7 · Repaso**
@@ -208,3 +210,5 @@ Para repasar, vuelve a los apuntes del bimestre:
 ---
 
 [[(STU) ESP 3EI sett-ott S6 - Caché, localidad y reloj|⬅️ S6 - Caché, localidad y reloj]] · [[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]]
+
+⬅️ [S6 - Caché, localidad y reloj](%28STU%29%20ESP%203EI%20sett-ott%20S6%20-%20Cach%C3%A9%2C%20localidad%20y%20reloj.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md)

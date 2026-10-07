@@ -1,3 +1,5 @@
+⬅️ [S5 - Indirizzi e gerarchia delle memorie](%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S7 - Ricostruire la macchina](%28STU%29%203EI%20sett-ott%20S7%20-%20Ricostruire%20la%20macchina.md) ➡️
+
 # ⚡ Cache, località e clock
 
 **3EI · Settembre-Ottobre · S6 · Teoria**
@@ -307,4 +309,4 @@ Sovrapporre le fasi di istruzioni diverse, come in una catena di montaggio. La s
 
 ---
 
-[⬅️ S5 - Indirizzi e gerarchia delle memorie](%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md) · [🗺️ Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S7 - Ricostruire la macchina ➡️](%28STU%29%203EI%20sett-ott%20S7%20-%20Ricostruire%20la%20macchina.md)
+⬅️ [S5 - Indirizzi e gerarchia delle memorie](%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S7 - Ricostruire la macchina](%28STU%29%203EI%20sett-ott%20S7%20-%20Ricostruire%20la%20macchina.md) ➡️

@@ -1,3 +1,5 @@
+⬅️ [S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) ➡️
+
 # 🔢 Binario e decimale
 
 **1CI · Settembre-Ottobre · S4 · Teoria**
@@ -36,6 +38,8 @@ Abbiamo dieci dita, quindi contiamo a **dieci**. Ma non è l'unico modo. I babil
 
 La grande invenzione, in India e poi nel mondo arabo, fu la **posizione**: la stessa cifra vale di più o di meno a seconda di dove sta. Con la posizione e lo zero bastano poche cifre per scrivere numeri enormi. Il binario usa la **stessa idea**, con meno cifre.
 
+![[image-1.webp|171x246]]*Una tavoletta babilonese*
+
 ## 📍 Il valore dipende dalla posizione
 
 ### ✅ I pesi
@@ -56,7 +60,7 @@ peso:        32   16    8    4    2    1
 
 📌 *Didascalia:* da destra a sinistra, ogni peso è il doppio del precedente.
 
-🧠 ==Cambia la base, non l'idea: il valore di una cifra dipende dalla sua posizione.==
+🧠 <u>Cambia la base, non l'idea: il valore di una cifra dipende dalla sua posizione.</u>
 
 Per non confondersi si scrive la **base come pedice**: `10` in base 10 vale dieci; `10` in base 2 vale due. Si scrive $(10)_{10}$ e $(10)_2$.
 
@@ -156,7 +160,7 @@ risultato: 101101
 
 📌 *Didascalia:* il primo resto è il bit di peso 1, l'ultimo è il primo a sinistra.
 
-🧠 ==Si dividono per 2 i quozienti, e i resti si leggono dal basso verso l'alto.==
+🧠 <u>Si dividono per 2 i quozienti, e i resti si leggono dal basso verso l'alto.</u>
 
 ⚠️ **Errore tipico:** leggere i resti dall'alto: il risultato viene **rovesciato**.
 
@@ -198,7 +202,7 @@ Si sottrae il peso più grande che sta nel numero e si ripete col resto: i pesi 
 
 ### 🤓 Contare fino a 31 con una mano
 
-> Ogni dito è un bit: **alzato = 1, abbassato = 0**. Con una mano (5 dita) hai 2⁵ = 32 combinazioni: puoi contare da **0 a 31**. Con due mani, 2¹⁰ = 1024 combinazioni: da 0 a 1023. 🖐️ Attenzione al 4 (`00100`): ti toccherà alzare solo il dito medio. 😄
+> Ogni dito è un bit: **alzato = 1, abbassato = 0**. Con una mano (5 dita) hai 2⁵ = 32 combinazioni: puoi contare da **0 a 31**. Con due mani, 2¹⁰ = 1024 combinazioni: da 0 a 1023. 🖐️ Attenzione al 4 (`00100`): ti toccherà alzare solo il dito medio. 😉
 
 <details>
 <summary>🃏 <b>Fino a quanto si può contare con le dita di una mano usando il binario?</b></summary>
@@ -226,4 +230,4 @@ Da 0 a 31: 5 bit danno 32 combinazioni.
 
 ---
 
-[⬅️ S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) · [🗺️ Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S5 - Esadecimale e ottale ➡️](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md)
+⬅️ [S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) ➡️

@@ -1,3 +1,5 @@
+⬅️ [S6 - Classi astratte e interfacce](%28STU%29%204CI%20sett-ott%20S6%20-%20Classi%20astratte%20e%20interfacce.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md)
+
 # 🧠 Ripasso OOP in flashcard
 
 **4CI · Settembre-Ottobre · S7 · Ripasso**
@@ -934,4 +936,4 @@ Perché a runtime il tipo T è stato cancellato e la JVM non sa quale costruttor
 
 ---
 
-[⬅️ S6 - Classi astratte e interfacce](%28STU%29%204CI%20sett-ott%20S6%20-%20Classi%20astratte%20e%20interfacce.md) · [🗺️ Indice](%28STU%29%204CI%20-%20SETT-OTT.md)
+⬅️ [S6 - Classi astratte e interfacce](%28STU%29%204CI%20sett-ott%20S6%20-%20Classi%20astratte%20e%20interfacce.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md)

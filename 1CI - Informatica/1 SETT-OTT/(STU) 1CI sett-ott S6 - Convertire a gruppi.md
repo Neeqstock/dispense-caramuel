@@ -1,3 +1,5 @@
+⬅️ [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S7 - Ripasso attivo](%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md) ➡️
+
 # 🔁 Convertire a gruppi
 
 **1CI · Settembre-Ottobre · S6 · Teoria**
@@ -42,7 +44,7 @@ flowchart LR
 
 📌 *Didascalia:* il binario è il «centro stazione»: per andare da esadecimale a ottale si passa da lì.
 
-🧠 ==Per passare fra binario, esadecimale e ottale non servono conti: servono **gruppi**.==
+🧠 <u>Per passare fra binario, esadecimale e ottale non servono conti: servono **gruppi**.</u>
 
 ## ➡️ Da binario a esadecimale
 
@@ -96,7 +98,7 @@ F0  ->  F = 1111    0 = 0000   ->  11110000
 
 ⚠️ **Non saltare gli zeri del nibble.** Scrivere `3A -> 111010` fa perdere la corrispondenza uno-a-uno: manca uno zero davanti al 3. Il valore può restare uguale, ma l'ordine dei nibble no.
 
-🧠 ==Ogni cifra esadecimale diventa **sempre** quattro bit.==
+🧠 <u>Ogni cifra esadecimale diventa **sempre** quattro bit.</u>
 
 <details>
 <summary>🃏 <b>Come si converte un numero da esadecimale a binario?</b></summary>
@@ -176,4 +178,4 @@ Con i pesi di 16, oppure passando dal binario e sommando i pesi di 2.
 
 ---
 
-[⬅️ S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) · [🗺️ Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S7 - Ripasso attivo ➡️](%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md)
+⬅️ [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S7 - Ripasso attivo](%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md) ➡️

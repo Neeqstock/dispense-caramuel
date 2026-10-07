@@ -1,3 +1,5 @@
+⬅️ [S5 - Polimorfismo e casting](%28STU%29%204CI%20sett-ott%20S5%20-%20Polimorfismo%20e%20casting.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S7 - Ripasso in flashcard](%28STU%29%204CI%20sett-ott%20S7%20-%20Ripasso%20in%20flashcard.md) ➡️
+
 # 🤝 Classi astratte e interfacce
 
 **4CI · Settembre-Ottobre · S6 · Teoria**
@@ -692,4 +694,4 @@ Per esempio la programmazione funzionale e, nei videogiochi, il data-oriented de
 
 ---
 
-[⬅️ S5 - Polimorfismo e casting](%28STU%29%204CI%20sett-ott%20S5%20-%20Polimorfismo%20e%20casting.md) · [🗺️ Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [➡️ S7 - Ripasso in flashcard](%28STU%29%204CI%20sett-ott%20S7%20-%20Ripasso%20in%20flashcard.md)
+⬅️ [S5 - Polimorfismo e casting](%28STU%29%204CI%20sett-ott%20S5%20-%20Polimorfismo%20e%20casting.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S7 - Ripasso in flashcard](%28STU%29%204CI%20sett-ott%20S7%20-%20Ripasso%20in%20flashcard.md) ➡️
