@@ -50,8 +50,6 @@ Le flashcard sono un buon modo di fissare le nozioni in mente.
 
 Lo strumento in assoluto più supportato dalla letteratura scientifica per imparare e trattenere le informazioni è il testing, cioè mettersi alla prova. Lo spiega il neuroscienziato Andrew Huberman in [questo video](https://www.youtube.com/watch?v=wQd-slndk2g) (in inglese).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wQd-slndk2g" title="The Best Way to Learn as Shown by Research | Dr. Andrew Huberman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Mettersi alla prova non serve solo a valutare cosa si sa già, ma è anche il meccanismo migliore per costruire e fissare la conoscenza, e rallentare l'oblio.
 
 Quello sforzo cognitivo che sentiamo quando studiamo è normale: l'affaticamento esiste e, se non ne possiamo più, ha decisamente senso fermarci, ma un po' di "attrito" serve per fissare le nozioni in mente. Le flashcard ci costringono un po' a immaginare, a usare la nostra immaginazione, a pensare, a metterci alla prova. Ma anche a essere creativi, che è ancora una cosa che una mente umana sa fare molto meglio di una macchina.
