@@ -48,7 +48,7 @@ En los primeros computadores, cambiar de tarea podía significar reconfigurar la
 
 Este modelo está relacionado con el nombre de John von Neumann, pero no nació del trabajo aislado de una sola persona. En los años cuarenta, matemáticos, ingenieros y técnicos buscaban juntos una forma de construir computadores electrónicos programables. La guerra había vuelto urgentes algunos cálculos complejos, como las tablas de tiro y las simulaciones; las ideas desarrolladas entonces también serían útiles mucho después. El modelo nos ayuda a comprender el principio, pero no describe cada cable o componente de un computador moderno.
 
-Retomemos los papeles de la [CPU](<(STU) ESP 3EI sett-ott S1 - De las máquinas a la CPU.md>) y coloquémoslos dentro de la máquina completa.
+Retomemos los papeles de la [[(STU) ESP 3EI sett-ott S1 - De las máquinas a la CPU|CPU]] y coloquémoslos dentro de la máquina completa.
 
 ## 💾 Programa y datos en memoria
 

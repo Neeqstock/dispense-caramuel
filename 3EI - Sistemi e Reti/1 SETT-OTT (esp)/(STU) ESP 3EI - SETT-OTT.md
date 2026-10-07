@@ -10,13 +10,13 @@
 
 | Semana | Tema | En pocas palabras |
 |---|---|---|
-| **S1** | [[(STU) ESP 3EI sett-ott S1 - De las máquinas a la CPU\|🖥️ De las máquinas a la CPU]] | De las máquinas de una sola tarea a una CPU con partes que guardan, calculan y coordinan; del relé al microprocesador y a los niveles de abstracción. |
-| **S2** | [[(STU) ESP 3EI sett-ott S2 - La máquina de Von Neumann\|🏛️ La máquina de Von Neumann]] | Una máquina, muchos programas: las instrucciones y los datos comparten la misma memoria. |
-| **S3** | [[(STU) ESP 3EI sett-ott S3 - Registros y recorridos de datos\|🗃️ Registros y recorridos de datos]] | Los pequeños «puestos de trabajo» de la CPU: quién guarda la dirección, el dato o la instrucción. |
-| **S4** | [[(STU) ESP 3EI sett-ott S4 - El ciclo de máquina\|🔄 El ciclo de máquina]] | Buscar, interpretar y ejecutar: seguimos un programa paso a paso. |
-| **S5** | [[(STU) ESP 3EI sett-ott S5 - Direcciones y jerarquía de memoria\|🧮 Direcciones y jerarquía de memoria]] | Cuántas celdas se pueden direccionar con n bits y por qué ninguna memoria es a la vez grande, rápida y barata. |
-| **S6** | [[(STU) ESP 3EI sett-ott S6 - Caché, localidad y reloj\|⚡ Caché, localidad y reloj]] | Mantener cerca lo que pronto se necesitará; el reloj marca el ritmo, pero no lo mide todo. |
-| **S7** | [[(STU) ESP 3EI sett-ott S7 - Reconstruir la máquina\|🧠 Reconstruir la máquina]] | Repaso: conectamos las piezas y hacemos un ejercicio de práctica. |
+| **S1** | [[(STU) ESP 3EI sett-ott S1 - De las máquinas a la CPU|🖥️ De las máquinas a la CPU]] | De las máquinas de una sola tarea a una CPU con partes que guardan, calculan y coordinan; del relé al microprocesador y a los niveles de abstracción. |
+| **S2** | [[(STU) ESP 3EI sett-ott S2 - La máquina de Von Neumann|🏛️ La máquina de Von Neumann]] | Una máquina, muchos programas: las instrucciones y los datos comparten la misma memoria. |
+| **S3** | [[(STU) ESP 3EI sett-ott S3 - Registros y recorridos de datos|🗃️ Registros y recorridos de datos]] | Los pequeños «puestos de trabajo» de la CPU: quién guarda la dirección, el dato o la instrucción. |
+| **S4** | [[(STU) ESP 3EI sett-ott S4 - El ciclo de máquina|🔄 El ciclo de máquina]] | Buscar, interpretar y ejecutar: seguimos un programa paso a paso. |
+| **S5** | [[(STU) ESP 3EI sett-ott S5 - Direcciones y jerarquía de memoria|🧮 Direcciones y jerarquía de memoria]] | Cuántas celdas se pueden direccionar con n bits y por qué ninguna memoria es a la vez grande, rápida y barata. |
+| **S6** | [[(STU) ESP 3EI sett-ott S6 - Caché, localidad y reloj|⚡ Caché, localidad y reloj]] | Mantener cerca lo que pronto se necesitará; el reloj marca el ritmo, pero no lo mide todo. |
+| **S7** | [[(STU) ESP 3EI sett-ott S7 - Reconstruir la máquina|🧠 Reconstruir la máquina]] | Repaso: conectamos las piezas y hacemos un ejercicio de práctica. |
 | **S8** | 🎯 Evaluación y recuperación (en preparación) | Evaluación de teoría, análisis de errores y recuperación. |
 
 El calendario real puede moverse un poco: importa el orden de los temas, no la fecha exacta.

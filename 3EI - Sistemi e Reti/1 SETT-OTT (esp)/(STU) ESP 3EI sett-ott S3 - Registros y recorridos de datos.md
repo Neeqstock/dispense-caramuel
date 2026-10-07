@@ -34,7 +34,7 @@ mindmap
 
 ## 🧭 Registros de la CPU
 
-En el [modelo de Von Neumann](<(STU) ESP 3EI sett-ott S2 - La máquina de Von Neumann.md>), la CPU ejecuta instrucciones guardadas en memoria. Pero mientras espera una lectura, ¿dónde guarda la dirección? Y cuando llega la instrucción, ¿dónde la mantiene mientras prepara los datos?
+En el [[(STU) ESP 3EI sett-ott S2 - La máquina de Von Neumann|modelo de Von Neumann]], la CPU ejecuta instrucciones guardadas en memoria. Pero mientras espera una lectura, ¿dónde guarda la dirección? Y cuando llega la instrucción, ¿dónde la mantiene mientras prepara los datos?
 
 Necesita pequeños puestos de trabajo internos. Es como seguir una receta: hacen falta un separador de páginas, la línea que se está leyendo y los ingredientes que se están usando. En la CPU, estas funciones corresponden a los **registros**.
 

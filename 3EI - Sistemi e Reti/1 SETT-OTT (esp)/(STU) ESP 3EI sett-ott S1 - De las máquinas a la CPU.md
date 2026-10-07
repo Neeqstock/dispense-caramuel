@@ -365,4 +365,4 @@ Porque los registros usan una cantidad limitada de bits y el programa puede pasa
 
 ---
 
-[[ (STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S2 - La máquina de Von Neumann|S2 - La máquina de Von Neumann ➡️]]
+[[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S2 - La máquina de Von Neumann|S2 - La máquina de Von Neumann ➡️]]

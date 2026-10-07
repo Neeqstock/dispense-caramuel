@@ -37,7 +37,7 @@ mindmap
 
 ## 🧭 Programa en ejecución
 
-Un programa en memoria, por sí solo, no hace nada. Después de distinguir [registros y recorridos de datos]( (STU) ESP 3EI sett-ott S3 - Registros y recorridos de datos.md ), debemos entender quién hace avanzar el trabajo. La fuerza del programa almacenado también está aquí: al repetir el mismo procedimiento general, la misma máquina produce comportamientos muy distintos.
+Un programa en memoria, por sí solo, no hace nada. Después de distinguir [[(STU) ESP 3EI sett-ott S3 - Registros y recorridos de datos|registros y recorridos de datos]], debemos entender quién hace avanzar el trabajo. La fuerza del programa almacenado también está aquí: al repetir el mismo procedimiento general, la misma máquina produce comportamientos muy distintos.
 
 Una receta no es el plato. Para pasar de una a otro hay que saber qué instrucción leer, cómo interpretarla y qué modificar. La CPU hace todo esto sin «entender» las instrucciones como lo haría una persona.
 

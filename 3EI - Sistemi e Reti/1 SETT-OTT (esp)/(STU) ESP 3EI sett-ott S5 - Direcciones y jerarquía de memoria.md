@@ -39,7 +39,7 @@ mindmap
 
 ## 🧭 Direcciones y niveles de memoria
 
-En el [ciclo de máquina](<(STU) ESP 3EI sett-ott S4 - El ciclo de máquina.md>) bastaba con escribir «celda 40». Una máquina real, en cambio, debe representar esa dirección con una cantidad limitada de bits y transportar el contenido por conexiones físicas. ¿Cuántas posiciones puede distinguir? ¿Cuánto cabe en ellas? ¿Cuánto hay que esperar?
+En el [[(STU) ESP 3EI sett-ott S4 - El ciclo de máquina|ciclo de máquina]] bastaba con escribir «celda 40». Una máquina real, en cambio, debe representar esa dirección con una cantidad limitada de bits y transportar el contenido por conexiones físicas. ¿Cuántas posiciones puede distinguir? ¿Cuánto cabe en ellas? ¿Cuánto hay que esperar?
 
 El crecimiento de los computadores no ha eliminado estas preguntas. Una memoria más grande permite programas y datos mayores, pero **la capacidad y la velocidad no necesariamente crecen juntas**. Construir un sistema significa decidir cómo usar recursos limitados, no buscar un único componente perfecto.
 
