@@ -67,34 +67,34 @@ ENTRADA introduce información en el sistema; SALIDA la devuelve
 - Con $n$ bits se distinguen $2^n$ direcciones. Para obtener la capacidad, se multiplica por los bytes de cada posición.
 - La **caché** guarda copias y aprovecha la localidad temporal y espacial. Un fallo requiere acceder al siguiente nivel: no es una avería ni significa «ir al disco».
 
-<details><summary>🃏 ¿Qué guarda la memoria en el modelo de Von Neumann?</summary>
+<details><summary>🃏 <b>¿Qué guarda la memoria en el modelo de Von Neumann?</b></summary>
 Instrucciones y datos en la misma memoria.
 </details>
-<details><summary>🃏 ¿Qué partes tiene la CPU y qué hace cada una?</summary>
+<details><summary>🃏 <b>¿Qué partes tiene la CPU y qué hace cada una?</b></summary>
 La CU coordina, la ALU calcula y los registros guardan los valores del trabajo en curso.
 </details>
-<details><summary>🃏 ¿Cuáles son las fases del ciclo de máquina?</summary>
+<details><summary>🃏 <b>¿Cuáles son las fases del ciclo de máquina?</b></summary>
 Fetch, decode y execute; luego se pasa a la siguiente instrucción.
 </details>
-<details><summary>🃏 PC, IR, MAR y MDR: indica la función de cada uno.</summary>
+<details><summary>🃏 <b>PC, IR, MAR y MDR: indica la función de cada uno.</b></summary>
 PC: dónde buscar la siguiente instrucción. IR: instrucción actual. MAR: dirección del acceso actual. MDR: contenido transferido.
 </details>
-<details><summary>🃏 ¿Cuáles son las tres funciones de las conexiones entre CPU y memoria?</summary>
+<details><summary>🃏 <b>¿Cuáles son las tres funciones de las conexiones entre CPU y memoria?</b></summary>
 Direcciones, datos y control.
 </details>
-<details><summary>🃏 ¿Qué ocurre con la fuente después de copiar un valor?</summary>
+<details><summary>🃏 <b>¿Qué ocurre con la fuente después de copiar un valor?</b></summary>
 Permanece intacta, salvo que otra operación la modifique.
 </details>
-<details><summary>🃏 ¿Cómo se calcula la capacidad de una memoria con n bits de dirección?</summary>
+<details><summary>🃏 <b>¿Cómo se calcula la capacidad de una memoria con n bits de dirección?</b></summary>
 2 elevado a n posiciones, multiplicado por los bytes que contiene cada posición.
 </details>
-<details><summary>🃏 ¿Cuáles son los niveles de la jerarquía de memoria?</summary>
+<details><summary>🃏 <b>¿Cuáles son los niveles de la jerarquía de memoria?</b></summary>
 Registros, caché, RAM y almacenamiento. Se diferencian por espera, capacidad y costo; la persistencia es otra propiedad.
 </details>
-<details><summary>🃏 ¿En qué regularidades se basa la caché?</summary>
+<details><summary>🃏 <b>¿En qué regularidades se basa la caché?</b></summary>
 En la localidad temporal y espacial.
 </details>
-<details><summary>🃏 ¿Un fallo significa «ir al disco»?</summary>
+<details><summary>🃏 <b>¿Un fallo significa «ir al disco»?</b></summary>
 No. Significa acceder al siguiente nivel y no es una avería.
 </details>
 
@@ -102,13 +102,13 @@ No. Significa acceder al siguiente nivel y no es una avería.
 
 Al seguir una instrucción, pregúntate: **¿dónde estamos?**, **¿qué hemos leído?**, **¿qué cambia realmente?** No basta con decir el nombre de un registro sin su función. Decir que una memoria es «grande» no indica su velocidad ni si conserva los datos sin electricidad.
 
-<details><summary>🃏 ¿Qué tres preguntas ayudan a seguir una instrucción?</summary>
+<details><summary>🃏 <b>¿Qué tres preguntas ayudan a seguir una instrucción?</b></summary>
 ¿Dónde estamos? ¿Qué hemos leído? ¿Qué cambia realmente?
 </details>
-<details><summary>🃏 ¿Basta con decir el nombre de un registro?</summary>
+<details><summary>🃏 <b>¿Basta con decir el nombre de un registro?</b></summary>
 No. También hay que indicar qué función cumple en ese momento.
 </details>
-<details><summary>🃏 ¿Decir «esta memoria es grande» indica que es rápida?</summary>
+<details><summary>🃏 <b>¿Decir «esta memoria es grande» indica que es rápida?</b></summary>
 No. Capacidad, velocidad y persistencia son propiedades diferentes.
 </details>
 
@@ -120,13 +120,13 @@ Una buena respuesta técnica tiene una **tesis**, un **mecanismo** y un **ejempl
 
 También hay que explicar una fórmula. Con 9 bits de dirección por byte se distinguen $2^9=512$ posiciones: la memoria contiene 512 bytes, no 512 bits, y la última dirección es 511. Si cada posición contuviera dos bytes, cambiaría la capacidad, no el número de direcciones.
 
-<details><summary>🃏 ¿Cuáles son las tres partes de una buena respuesta técnica?</summary>
+<details><summary>🃏 <b>¿Cuáles son las tres partes de una buena respuesta técnica?</b></summary>
 Una tesis, un mecanismo y un ejemplo.
 </details>
-<details><summary>🃏 ¿Por qué «la caché es rápida» es una respuesta débil?</summary>
+<details><summary>🃏 <b>¿Por qué «la caché es rápida» es una respuesta débil?</b></summary>
 Es una afirmación general. Hay que explicar el mecanismo y una condición que se pueda comprobar.
 </details>
-<details><summary>🃏 ¿También hay que «contar» una fórmula?</summary>
+<details><summary>🃏 <b>¿También hay que «contar» una fórmula?</b></summary>
 Sí: hay que explicar qué representan los símbolos, sus unidades y las hipótesis utilizadas.
 </details>
 
@@ -145,7 +145,7 @@ En el ejercicio B aplicamos las reglas de S4: una celda por instrucción y el PC
 
 > 🔧 **Conexión con el laboratorio:** reconocer una RAM o leer una ficha técnica resulta útil cuando sabes explicar qué problema resuelve ese componente. El esquema funcional no es una foto de la placa madre: la CU no es una tarjeta que debas buscar junto al procesador.
 
-<details><summary>🃏 ¿El esquema funcional es una fotografía de la placa madre?</summary>
+<details><summary>🃏 <b>¿El esquema funcional es una fotografía de la placa madre?</b></summary>
 No. Muestra funciones; por ejemplo, la CU no es una tarjeta que debamos buscar junto al procesador.
 </details>
 
@@ -155,10 +155,10 @@ No. Muestra funciones; por ejemplo, la CU no es una tarjeta que debamos buscar j
 >
 > No hace falta conocer un procesador concreto: bastan las ideas de espera y espacio limitado.
 
-<details><summary>🃏 ¿Para qué sirve buscar un contraejemplo?</summary>
+<details><summary>🃏 <b>¿Para qué sirve buscar un contraejemplo?</b></summary>
 Para entender dónde deja de funcionar una regla y así formularla con más precisión.
 </details>
-<details><summary>🃏 ¿Qué dos ideas bastan para encontrar contraejemplos sobre GHz y caché?</summary>
+<details><summary>🃏 <b>¿Qué dos ideas bastan para encontrar contraejemplos sobre GHz y caché?</b></summary>
 La espera y el espacio limitado.
 </details>
 

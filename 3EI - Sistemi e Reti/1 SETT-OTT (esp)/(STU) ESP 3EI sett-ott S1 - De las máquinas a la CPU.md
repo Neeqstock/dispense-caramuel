@@ -65,19 +65,19 @@ En Informática estudiamos, entre otras cosas, cómo describir un procedimiento 
 
 El programa determina cómo tratar los datos, pero sin hardware no se realiza ningún trabajo.
 
-<details><summary>🃏 ¿Qué estudia Sistemas y Redes además del programa?</summary>
+<details><summary>🃏 <b>¿Qué estudia Sistemas y Redes además del programa?</b></summary>
 La máquina que ejecuta el programa y la infraestructura que comunica las máquinas. Son dos perspectivas que se complementan.
 </details>
-<details><summary>🃏 ¿Qué es el hardware?</summary>
+<details><summary>🃏 <b>¿Qué es el hardware?</b></summary>
 El conjunto de componentes físicos del sistema.
 </details>
-<details><summary>🃏 ¿Qué es el software?</summary>
+<details><summary>🃏 <b>¿Qué es el software?</b></summary>
 El conjunto de programas y sus instrucciones.
 </details>
-<details><summary>🃏 ¿Qué es un dato?</summary>
+<details><summary>🃏 <b>¿Qué es un dato?</b></summary>
 Información representada de una forma que el sistema puede procesar.
 </details>
-<details><summary>🃏 ¿Puede trabajar un programa sin hardware?</summary>
+<details><summary>🃏 <b>¿Puede trabajar un programa sin hardware?</b></summary>
 No. El programa determina cómo tratar los datos, pero el trabajo lo ejecuta el hardware.
 </details>
 
@@ -87,7 +87,7 @@ Un sitio web lento puede tener varias causas: poca memoria disponible en el serv
 
 El síntoma por sí solo no indica la causa. Antes de proponer una solución, pregúntate: **¿dónde se pierde tiempo?** ¿Qué observación permitiría distinguir una hipótesis de otra?
 
-<details><summary>🃏 Un sitio va lento: ¿cuáles podrían ser las causas?</summary>
+<details><summary>🃏 <b>Un sitio va lento: ¿cuáles podrían ser las causas?</b></summary>
 Por ejemplo, un algoritmo ineficiente, poca memoria disponible o una conexión congestionada: son partes distintas del sistema.
 </details>
 
@@ -117,19 +117,19 @@ Para imaginarlos, piensa en una cocina: la **mesa de trabajo** con los ingredien
 
 La **CPU**, o procesador, es todo esto junto con las conexiones que permiten que sus componentes colaboren. **La CPU no es solo la ALU**: sin registros no hay dónde guardar los números y sin CU nadie coordina el orden de las acciones.
 
-<details><summary>🃏 ¿Para qué sirven los registros?</summary>
+<details><summary>🃏 <b>¿Para qué sirven los registros?</b></summary>
 Para mantener listos los valores: son pequeñas memorias internas del procesador.
 </details>
-<details><summary>🃏 ¿Qué hace la ALU?</summary>
+<details><summary>🃏 <b>¿Qué hace la ALU?</b></summary>
 Transforma valores mediante operaciones aritméticas y lógicas.
 </details>
-<details><summary>🃏 ¿Qué hace la CU?</summary>
+<details><summary>🃏 <b>¿Qué hace la CU?</b></summary>
 Interpreta las instrucciones y genera señales que activan las operaciones en el orden correcto.
 </details>
-<details><summary>🃏 ¿La CPU es solo la ALU?</summary>
+<details><summary>🃏 <b>¿La CPU es solo la ALU?</b></summary>
 No. Incluye registros, ALU, CU y las conexiones entre ellos.
 </details>
-<details><summary>🃏 ¿Qué tres trabajos requiere sumar 7 y 5?</summary>
+<details><summary>🃏 <b>¿Qué tres trabajos requiere sumar 7 y 5?</b></summary>
 Guardar los números (registros), calcular (ALU) y coordinar el orden (CU).
 </details>
 
@@ -159,13 +159,13 @@ Los circuitos de la CPU se pueden dividir en dos grupos según esta pregunta: **
 
 Mover un dato de un registro a otro, sin calcular nada, también es trabajo de la parte operativa. De todas formas hace falta el control para indicar *qué* registro copia *a cuál*.
 
-<details><summary>🃏 ¿Qué pregunta separa los circuitos de la CPU en dos grupos?</summary>
+<details><summary>🃏 <b>¿Qué pregunta separa los circuitos de la CPU en dos grupos?</b></summary>
 ¿Este circuito toca los datos o da órdenes a quienes los tocan? En el primer caso es parte operativa; en el segundo, de control.
 </details>
-<details><summary>🃏 ¿Qué es la parte operativa?</summary>
+<details><summary>🃏 <b>¿Qué es la parte operativa?</b></summary>
 Los circuitos que guardan, transfieren y transforman datos: ALU, registros y recorridos de datos.
 </details>
-<details><summary>🃏 ¿Qué es la parte de control?</summary>
+<details><summary>🃏 <b>¿Qué es la parte de control?</b></summary>
 Los circuitos que coordinan las transferencias y operaciones.
 </details>
 
@@ -197,13 +197,13 @@ La CU no «entendió el problema»: sus circuitos reaccionan a una instrucción 
 
 > ⏸️ **Detente y reconstruye:** tapa la tabla y cuenta qué información entra, quién la transforma y dónde queda el resultado.
 
-<details><summary>🃏 ¿Por qué el destino aparece primero en `ADD R3, R1, R2`?</summary>
+<details><summary>🃏 <b>¿Por qué el destino aparece primero en `ADD R3, R1, R2`?</b></summary>
 Es una convención de esta notación. Otras notaciones pueden usar el orden opuesto.
 </details>
-<details><summary>🃏 ¿Cómo se lee `ADD R3, R1, R2`?</summary>
+<details><summary>🃏 <b>¿Cómo se lee `ADD R3, R1, R2`?</b></summary>
 Suma el contenido de R1 y R2, y escribe el resultado en R3.
 </details>
-<details><summary>🃏 Después de la suma, ¿cambian R1 y R2?</summary>
+<details><summary>🃏 <b>Después de la suma, ¿cambian R1 y R2?</b></summary>
 No. Conservan sus valores; solo cambia el registro destino R3.
 </details>
 
@@ -219,10 +219,10 @@ Ante un resultado incorrecto, la pregunta útil no es «¿se equivocó la comput
 
 > 🔧 **Conexión con el laboratorio:** al observar una computadora, la CPU, el módulo RAM y el disipador son objetos distintos. La ALU y los registros no son componentes separados visibles en la placa: están dentro del procesador. El esquema funcional no es una fotografía del montaje.
 
-<details><summary>🃏 ¿En qué tres aspectos falla la comparación con un equipo de personas?</summary>
+<details><summary>🃏 <b>¿En qué tres aspectos falla la comparación con un equipo de personas?</b></summary>
 Las personas entienden pedidos vagos y los circuitos no; una persona puede improvisar y la CU no; una persona puede notar un error y la máquina no.
 </details>
-<details><summary>🃏 ¿Es la CU una personita dentro del procesador?</summary>
+<details><summary>🃏 <b>¿Es la CU una personita dentro del procesador?</b></summary>
 No. Es un circuito que produce señales determinadas por la instrucción y el estado.
 </details>
 
@@ -240,13 +240,13 @@ Un interruptor normal se acciona con un dedo. Este lo activa otro circuito: una 
 
 En 1937 Claude Shannon, entonces estudiante en el MIT, mostró en su tesis que los circuitos de relés podían ejecutar el álgebra de Boole. Fue una conexión fundamental entre interruptores y lógica.
 
-<details><summary>🃏 ¿Qué componente representa AND en el ejemplo de interruptores?</summary>
+<details><summary>🃏 <b>¿Qué componente representa AND en el ejemplo de interruptores?</b></summary>
 Dos interruptores en serie: la corriente pasa solo cuando ambos están cerrados.
 </details>
-<details><summary>🃏 ¿Qué componente representa OR?</summary>
+<details><summary>🃏 <b>¿Qué componente representa OR?</b></summary>
 Dos interruptores en paralelo: la corriente pasa cuando al menos uno está cerrado.
 </details>
-<details><summary>🃏 ¿Qué mostró Claude Shannon en 1937?</summary>
+<details><summary>🃏 <b>¿Qué mostró Claude Shannon en 1937?</b></summary>
 Que los circuitos de relés podían ejecutar el álgebra de Boole.
 </details>
 
@@ -258,13 +258,13 @@ Que los circuitos de relés podían ejecutar el álgebra de Boole.
 
 No se trata de una sustitución instantánea: durante años convivieron tecnologías diferentes. Cada cambio resolvía algunos problemas y creaba otros.
 
-<details><summary>🃏 ¿Cómo funciona un relé?</summary>
+<details><summary>🃏 <b>¿Cómo funciona un relé?</b></summary>
 Un electroimán mueve un contacto que abre o cierra un circuito.
 </details>
-<details><summary>🃏 ¿Qué límites tenían las válvulas?</summary>
+<details><summary>🃏 <b>¿Qué límites tenían las válvulas?</b></summary>
 Eran grandes, frágiles y consumían mucha energía, aunque eran más rápidas que los relés.
 </details>
-<details><summary>🃏 ¿Qué ventaja aportó el transistor?</summary>
+<details><summary>🃏 <b>¿Qué ventaja aportó el transistor?</b></summary>
 Controla la corriente sin piezas móviles y es pequeño, rápido y de bajo consumo.
 </details>
 
@@ -276,10 +276,10 @@ En 1971, el **Intel 4004** puso una CPU completa en un solo chip: fue el primer 
 
 La integración hizo los sistemas mucho más compactos. Un chip actual contiene miles de millones de transistores. ⚠️ **Más pequeño no significa que no consuma energía o que no tenga límites.**
 
-<details><summary>🃏 ¿Qué es un circuito integrado?</summary>
+<details><summary>🃏 <b>¿Qué es un circuito integrado?</b></summary>
 Un chip en el que muchos componentes y sus conexiones se fabrican juntos sobre silicio. Kilby y Noyce lo desarrollaron independientemente.
 </details>
-<details><summary>🃏 ¿Qué fue el Intel 4004?</summary>
+<details><summary>🃏 <b>¿Qué fue el Intel 4004?</b></summary>
 El primer microprocesador vendido como componente: una CPU completa en un chip, presentada en 1971.
 </details>
 
@@ -289,7 +289,7 @@ El primer microprocesador vendido como componente: una CPU completa en un chip, 
 >
 > El juego de palabras funcionaba porque *bug* («insecto») ya era desde hacía décadas una palabra usada por ingenieros para defectos pequeños: Edison la usó en una carta de 1878. Hoy los errores de los programas ya no tienen alas, pero el nombre perdura.
 
-<details><summary>🃏 ¿De dónde viene la palabra «bug»?</summary>
+<details><summary>🃏 <b>¿De dónde viene la palabra «bug»?</b></summary>
 Ya se usaba para defectos pequeños en ingeniería; la historia de la polilla en un relé del Harvard Mark II la hizo famosa.
 </details>
 
@@ -299,10 +299,10 @@ Ya se usaba para defectos pequeños en ingeniería; la historia de la polilla en
 >
 > La pregunta interesante es: **¿qué recurso limita este trabajo?** Un computador rapidísimo puede quedarse esperando los datos. Volveremos a esta idea al estudiar las memorias.
 
-<details><summary>🃏 ¿Qué describió Gordon Moore?</summary>
+<details><summary>🃏 <b>¿Qué describió Gordon Moore?</b></summary>
 Una tendencia de crecimiento del número de componentes que se podían integrar en un chip.
 </details>
-<details><summary>🃏 ¿La ley de Moore garantiza que los programas serán el doble de rápidos cada dos años?</summary>
+<details><summary>🃏 <b>¿La ley de Moore garantiza que los programas serán el doble de rápidos cada dos años?</b></summary>
 No. No es una ley natural; la ventaja depende de cómo se usen los transistores adicionales.
 </details>
 
@@ -325,13 +325,13 @@ La línea `suma = a + b;` se convierte, más abajo, en una instrucción como `AD
 
 La abstracción importa porque nadie puede tener todos los niveles presentes al mismo tiempo. En Sistemas y Redes subiremos y bajaremos entre ellos; también encontraremos niveles en las redes.
 
-<details><summary>🃏 ¿Qué es la abstracción?</summary>
+<details><summary>🃏 <b>¿Qué es la abstracción?</b></summary>
 Ocultar los detalles que no hacen falta en un nivel. Cada nivel utiliza el inferior y ofrece servicios al superior.
 </details>
-<details><summary>🃏 ¿Cuáles son los niveles, de arriba abajo?</summary>
+<details><summary>🃏 <b>¿Cuáles son los niveles, de arriba abajo?</b></summary>
 Aplicación, programa, sistema operativo, instrucciones de máquina, circuitos lógicos y transistores.
 </details>
-<details><summary>🃏 ¿Cómo se relacionan `a + b` y `ADD R3, R1, R2`?</summary>
+<details><summary>🃏 <b>¿Cómo se relacionan `a + b` y `ADD R3, R1, R2`?</b></summary>
 Son la misma suma vista en niveles distintos: el programa se traduce en una instrucción que ejecutan los registros y la ALU.
 </details>
 
@@ -341,10 +341,10 @@ Una falla o un resultado extraño puede originarse **en un nivel distinto de aqu
 
 También puede ocurrir que un nivel alto «olvide» un límite del nivel bajo. En un programa pensamos en números ilimitados, pero cada número ocupa una cantidad limitada de bits en los registros. Si el resultado es demasiado grande, puede aparecer un número incorrecto, incluso negativo. El programador no necesariamente calculó mal: pudo pasar por alto un límite de nivel inferior.
 
-<details><summary>🃏 ¿Un problema siempre se origina en el nivel donde se observa?</summary>
+<details><summary>🃏 <b>¿Un problema siempre se origina en el nivel donde se observa?</b></summary>
 No. Un síntoma visible en un nivel puede originarse en otro nivel.
 </details>
-<details><summary>🃏 ¿Por qué puede salir mal un número aunque la suma del programa sea correcta?</summary>
+<details><summary>🃏 <b>¿Por qué puede salir mal un número aunque la suma del programa sea correcta?</b></summary>
 Porque los registros usan una cantidad limitada de bits y el programa puede pasar por alto ese límite.
 </details>
 

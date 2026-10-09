@@ -38,7 +38,7 @@ Abbiamo dieci dita, quindi contiamo a **dieci**. Ma non è l'unico modo. I babil
 
 La grande invenzione, in India e poi nel mondo arabo, fu la **posizione**: la stessa cifra vale di più o di meno a seconda di dove sta. Con la posizione e lo zero bastano poche cifre per scrivere numeri enormi. Il binario usa la **stessa idea**, con meno cifre.
 
-![[image-1.webp|171x246]]*Una tavoletta babilonese*
+![[Scuola/Public/1CI - Informatica/1 SETT-OTT/Allegati/image-1.webp|171x246]]*Una tavoletta babilonese*
 
 ## 📍 Il valore dipende dalla posizione
 

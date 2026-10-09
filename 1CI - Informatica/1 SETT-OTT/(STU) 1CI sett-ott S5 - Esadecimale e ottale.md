@@ -24,13 +24,13 @@ mindmap
       4 bit
       Tabella dei 16 nibble
       Byte a due cifre
-    8️⃣ Ottale
+    🤓 Ottale facoltativo
       Base 8
       3 bit
       Permessi dei file
     🌍 Dove si trovano
       Colori RGB
-      Indirizzo MAC
+      🤓 Indirizzo MAC facoltativo
 ```
 
 ## 📜 Un byte è lungo
@@ -52,7 +52,7 @@ esadecimale:  0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
 
 📌 *Didascalia:* A vale dieci, F vale quindici.
 
-🧠 <u>In esadecimale A, B, C, D, E, F sono **cifre** e valgono da 10 a 15.</u>
+🧠 <u>In esadecimale A, B, C, D, E, F sono cifre e valgono da 10 a 15.</u>
 
 ⚠️ **A non è una parola e non è una variabile.** In base 16 è un numero: dieci.
 
@@ -138,44 +138,42 @@ Perché 16 = 2⁴: una cifra corrisponde esattamente a 4 bit. La base 10 non coi
 
 > Un byte in decimale va da 0 a 255: tre cifre, ma **non vedi** i bit. In esadecimale va da `00` a `FF`: sempre due cifre, e ogni cifra è un nibble. Riduce la lunghezza del testo di **quattro volte** rispetto al binario e riduce molti errori di lettura. Per questo si trova negli indirizzi di memoria, nei colori e negli identificatori.
 
-## 8️⃣ Ottale
+## 🤓 Ottale facoltativo
 
-### ✅ Base 8
+### 🤓 Base 8 e usi facoltativi
 
-Il sistema **ottale** usa **otto cifre**: da 0 a 7. Poiché $2^3 = 8$, **una cifra ottale = 3 bit**.
-
-```text
-bit:    000  001  010  011  100  101  110  111
-ottale:  0    1    2    3    4    5    6    7
-```
-
-🧪 Il 13 in ottale si scrive `15`: $1\cdot 8 + 5 = 13$. Non confondere `15` ottale con quindici decimale!
-
-Oggi l'ottale si usa meno dell'esadecimale perché 3 bit si adattano meno bene al byte (8 bit). Ma serve per capire che **la base è una scelta di scrittura**.
-
-😄 *Perché i programmatori confondono Halloween e Natale? Perché **OCT 31 = DEC 25**.* (31 in ottale vale $3\cdot 8 + 1 = 25$.)
-
-<details>
-<summary>🃏 <b>Quante cifre ha il sistema ottale?</b></summary>
-Otto, da 0 a 7.
-</details>
-<details>
-<summary>🃏 <b>Quanti bit corrispondono a una cifra ottale?</b></summary>
-Tre, perché 8 = 2³.
-</details>
-<details>
-<summary>🃏 <b>Perché OCT 31 = DEC 25?</b></summary>
-Perché 31 in ottale vale 3·8 + 1 = 25.
-</details>
-
-### 🔍 Ottale nei permessi dei file
-
-Nei sistemi Linux e macOS i permessi di un file si scrivono con **tre cifre ottali**, per esempio `755`. Ogni cifra descrive in 3 bit chi può leggere, scrivere o eseguire. È un'idea semplice: 3 interruttori, un'unica cifra.
-
-<details>
-<summary>🃏 <b>Dove si usa ancora l'ottale?</b></summary>
-Per esempio nei permessi dei file su Linux e macOS, scritti con tre cifre ottali come 755.
-</details>
+> Il sistema **ottale** usa **otto cifre**: da 0 a 7. Poiché $2^3 = 8$, **una cifra ottale = 3 bit**.
+>
+> ```text
+> bit:    000  001  010  011  100  101  110  111
+> ottale:  0    1    2    3    4    5    6    7
+> ```
+>
+> 🧪 Il 13 in ottale si scrive `15`: $1\cdot 8 + 5 = 13$. Non confondere `15` ottale con quindici decimale!
+>
+> Oggi l'ottale si usa meno dell'esadecimale perché 3 bit si adattano meno bene al byte (8 bit). Ma serve per capire che **la base è una scelta di scrittura**.
+>
+> 😄 *Perché i programmatori confondono Halloween e Natale? Perché **OCT 31 = DEC 25**.* (31 in ottale vale $3\cdot 8 + 1 = 25$.)
+>
+> <details>
+> <summary>🃏 <b>Quante cifre ha il sistema ottale?</b></summary>
+> Otto, da 0 a 7.
+> </details>
+> <details>
+> <summary>🃏 <b>Quanti bit corrispondono a una cifra ottale?</b></summary>
+> Tre, perché 8 = 2³.
+> </details>
+> <details>
+> <summary>🃏 <b>Perché OCT 31 = DEC 25?</b></summary>
+> Perché 31 in ottale vale 3·8 + 1 = 25.
+> </details>
+>
+> **Permessi dei file.** Nei sistemi Linux e macOS i permessi di un file si possono scrivere con **tre cifre ottali**, per esempio `755`. Ogni cifra descrive in 3 bit chi può leggere, scrivere o eseguire: tre interruttori riassunti da una cifra.
+>
+> <details>
+> <summary>🃏 <b>Dove si usa ancora l'ottale?</b></summary>
+> Per esempio nei permessi dei file su Linux e macOS, scritti con tre cifre ottali come 755.
+> </details>
 
 ## 🌍 Dove si trova l'esadecimale
 
@@ -204,20 +202,20 @@ Tre byte in esadecimale: la quantità di rosso, di verde e di blu.
 Perché è il byte con tutti gli 8 bit a 1, cioè 255.
 </details>
 
-### ✅ Indirizzo MAC
+### 🤓 Indirizzo MAC facoltativo
 
-L'**indirizzo MAC** identifica una **scheda di rete**. È composto da 6 byte, scritti in sei coppie esadecimali:
-
-```text
-A4:5E:60:1B:2C:90
-```
-
-Sei coppie, un byte per coppia: **6 byte = 48 bit**. Non serve ricordarlo a memoria: serve riconoscere le coppie e le cifre A-F.
-
-<details>
-<summary>🃏 <b>Quanti byte ha un indirizzo MAC?</b></summary>
-Sei, scritti come sei coppie esadecimali.
-</details>
+> Un **indirizzo MAC** identifica una **scheda di rete**. È composto da 6 byte, scritti in sei coppie esadecimali:
+>
+> ```text
+> A4:5E:60:1B:2C:90
+> ```
+>
+> Sei coppie, un byte per coppia: **6 byte = 48 bit**. Non serve ricordarlo a memoria: basta riconoscere le coppie e le cifre A-F.
+>
+> <details>
+> <summary>🃏 <b>Quanti byte ha un indirizzo MAC?</b></summary>
+> Sei, scritti come sei coppie esadecimali.
+> </details>
 
 ### 🤓 Un indirizzo che ti segue
 
@@ -230,16 +228,17 @@ Sei, scritti come sei coppie esadecimali.
 3. **Decimale.** Converti $(3C)_{16}$ in decimale con i pesi di 16.
 4. **Trova l'errore.** Un compagno dice: «`1A` in esadecimale vale 1 più A, cioè 11». Che cosa ha sbagliato?
 5. **Disegna.** Scrivi `D6` come due nibble, disegnando le due fila di quattro interruttori.
-6. **Ottale.** Quanto vale $(17)_8$ in decimale? Perché con solo cifre da 0 a 7 non può esistere `18` in ottale?
 
 🚪 **Uscita:** spiega in una frase perché una cifra esadecimale corrisponde a 4 bit.
 
 🏠 *Facoltativo:* guarda i colori del tuo sfondo preferito e prova a indovinare se prevale rosso, verde o blu.
 
+> 🤓 **Facoltativo — ottale:** quanto vale $(17)_8$ in decimale? Perché con solo cifre da 0 a 7 non può esistere `18` in ottale?
+
 ## 📚 Fonti e risorse
 
 - **Sistema numerico esadecimale**: [it.wikipedia.org](https://it.wikipedia.org/wiki/Sistema_numerico_esadecimale). Cifre e conversioni.
-- **Sistema numerico ottale**: [it.wikipedia.org](https://it.wikipedia.org/wiki/Sistema_numerico_ottale). Breve, per riconoscere le cifre.
+- **Sistema numerico ottale (facoltativo)**: [it.wikipedia.org](https://it.wikipedia.org/wiki/Sistema_numerico_ottale). Breve, per riconoscere le cifre.
 - **Selettore di colori HTML** (in inglese): [w3schools.com](https://www.w3schools.com/colors/colors_picker.asp). Muovi il selettore e guarda come cambia il codice `#RRGGBB`.
 - **Valori di colore in CSS** (in inglese): [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value). Per chi vuole vedere come il web usa davvero questi codici.
 - **Indirizzo MAC**: [it.wikipedia.org](https://it.wikipedia.org/wiki/Indirizzo_MAC). Struttura a sei byte e uso.

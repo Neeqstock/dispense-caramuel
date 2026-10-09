@@ -62,16 +62,16 @@ obtiene la orden  --> interpreta la orden --> realiza la operación
 
 A menudo separamos la ejecución en acceso a los datos y escritura del resultado (**write-back**). Es una forma de describir el proceso: no todas las instrucciones leen datos de la RAM ni todas escriben un registro. Por ejemplo, `STORE` escribe en la memoria.
 
-<details><summary>🃏 ¿Qué ocurre durante el fetch?</summary>
+<details><summary>🃏 <b>¿Qué ocurre durante el fetch?</b></summary>
 La CPU obtiene de la memoria la instrucción que debe ejecutar.
 </details>
-<details><summary>🃏 ¿Qué ocurre durante el decode?</summary>
+<details><summary>🃏 <b>¿Qué ocurre durante el decode?</b></summary>
 La CU reconoce la operación solicitada y sus operandos.
 </details>
-<details><summary>🃏 ¿Qué ocurre durante el execute?</summary>
+<details><summary>🃏 <b>¿Qué ocurre durante el execute?</b></summary>
 La CPU realiza el trabajo: cálculo, acceso a memoria o cambio de ruta en el programa.
 </details>
-<details><summary>🃏 ¿Qué es el write-back?</summary>
+<details><summary>🃏 <b>¿Qué es el write-back?</b></summary>
 La escritura del resultado, que a menudo se describe como un paso separado de la ejecución.
 </details>
 
@@ -87,16 +87,16 @@ Para todo el seguimiento se aplican estas reglas:
 - `ADD R3, R1, R2` escribe en R3 la suma de R1 y R2, sin modificar las fuentes.
 - `STORE [41], R3` copia R3 en MEM[41]; `HALT` termina la simulación.
 
-<details><summary>🃏 ¿Cuánto aumenta el PC después de obtener una instrucción en nuestro modelo?</summary>
+<details><summary>🃏 <b>¿Cuánto aumenta el PC después de obtener una instrucción en nuestro modelo?</b></summary>
 En uno, porque cada instrucción ocupa una celda abstracta y las instrucciones son consecutivas. Solo vale para este modelo.
 </details>
-<details><summary>🃏 ¿Qué hacen LOAD y STORE?</summary>
+<details><summary>🃏 <b>¿Qué hacen LOAD y STORE?</b></summary>
 LOAD copia un valor de la memoria a un registro; STORE copia un registro en la memoria. Ninguna borra la fuente.
 </details>
-<details><summary>🃏 ¿Qué modifica `ADD R3, R1, R2`?</summary>
+<details><summary>🃏 <b>¿Qué modifica `ADD R3, R1, R2`?</b></summary>
 Solo R3, donde escribe la suma de R1 y R2.
 </details>
-<details><summary>🃏 ¿Qué hace HALT?</summary>
+<details><summary>🃏 <b>¿Qué hace HALT?</b></summary>
 Termina la simulación.
 </details>
 
@@ -130,16 +130,16 @@ Termina la simulación.
 
 > ⏸️ **Fijación:** explica por qué el PC nunca pasa a 40 y por qué MEM[40] no queda en cero después de LOAD.
 
-<details><summary>🃏 Después de un LOAD desde 40, ¿el PC salta a 40?</summary>
+<details><summary>🃏 <b>Después de un LOAD desde 40, ¿el PC salta a 40?</b></summary>
 No. 40 es la dirección de un dato; el PC indica la siguiente instrucción del programa.
 </details>
-<details><summary>🃏 ¿Qué cambia después de STORE en el ejemplo?</summary>
+<details><summary>🃏 <b>¿Qué cambia después de STORE en el ejemplo?</b></summary>
 La celda 41 recibe 12; R3 sigue valiendo 12 y el PC pasa a 13.
 </details>
-<details><summary>🃏 ¿Se ejecuta la instrucción posterior a HALT?</summary>
+<details><summary>🃏 <b>¿Se ejecuta la instrucción posterior a HALT?</b></summary>
 No. El PC avanza según la regla, pero la simulación se detiene.
 </details>
-<details><summary>🃏 ¿Cómo seguimos un programa en papel sin perdernos?</summary>
+<details><summary>🃏 <b>¿Cómo seguimos un programa en papel sin perdernos?</b></summary>
 Anotamos el estado inicial y actualizamos una tabla de PC, registros y memoria después de cada instrucción.
 </details>
 
@@ -159,16 +159,16 @@ El *decode* reconoce el **opcode** `LOAD`, el registro destino R1 y la direcció
 
 En la misma instrucción hemos leído la memoria **dos veces**, con fines diferentes: primero la orden y luego el dato. Mientras tanto, el IR conserva la orden aunque se vuelva a utilizar el MDR.
 
-<details><summary>🃏 ¿Cuáles son los pasos del fetch?</summary>
+<details><summary>🃏 <b>¿Cuáles son los pasos del fetch?</b></summary>
 MAR recibe el PC; se solicita READ y se espera; MDR recibe la instrucción; IR recibe MDR; el PC avanza.
 </details>
-<details><summary>🃏 ¿Qué es el opcode?</summary>
+<details><summary>🃏 <b>¿Qué es el opcode?</b></summary>
 La parte de la instrucción que indica la operación, por ejemplo LOAD.
 </details>
-<details><summary>🃏 ¿Cuántas veces accede a la memoria una instrucción LOAD?</summary>
+<details><summary>🃏 <b>¿Cuántas veces accede a la memoria una instrucción LOAD?</b></summary>
 Dos: primero para obtener la instrucción y luego para leer el dato solicitado.
 </details>
-<details><summary>🃏 ¿Por qué el dato de LOAD no reemplaza la instrucción en IR?</summary>
+<details><summary>🃏 <b>¿Por qué el dato de LOAD no reemplaza la instrucción en IR?</b></summary>
 Porque el dato llega a MDR; IR conserva la orden hasta que termina la instrucción.
 </details>
 
@@ -182,16 +182,16 @@ Porque el dato llega a MDR; IR conserva la orden hasta que termina la instrucci�
 
 La CU genera señales que seleccionan recorridos y habilitan operaciones. No transporta los números «a mano» ni calcula en lugar de la ALU. Una transferencia entre registros usa conexiones internas y no accede a la RAM.
 
-<details><summary>🃏 ¿En qué dirección va el bus de direcciones?</summary>
+<details><summary>🃏 <b>¿En qué dirección va el bus de direcciones?</b></summary>
 De la CPU a la memoria, durante el fetch y al escribir un dato.
 </details>
-<details><summary>🃏 ¿En qué dirección va el bus de datos?</summary>
+<details><summary>🃏 <b>¿En qué dirección va el bus de datos?</b></summary>
 Depende: de memoria a CPU durante el fetch; de CPU a memoria al escribir.
 </details>
-<details><summary>🃏 ¿Qué circula por el bus de control?</summary>
+<details><summary>🃏 <b>¿Qué circula por el bus de control?</b></summary>
 La orden de lectura o escritura y las señales de finalización.
 </details>
-<details><summary>🃏 ¿La CU transporta los números o realiza los cálculos?</summary>
+<details><summary>🃏 <b>¿La CU transporta los números o realiza los cálculos?</b></summary>
 No. Genera señales que seleccionan recorridos y activan operaciones; la ALU calcula.
 </details>
 
@@ -203,13 +203,13 @@ El trabajo es: obtener la instrucción, interpretarla, calcular la dirección, l
 
 > 🔧 **Conexión con el laboratorio:** cuando ves que se inicia un programa en una computadora, no observas una sola instrucción. Detrás de un clic hay muchísimas instrucciones y transferencias. Para estudiarlas, usamos un seguimiento en papel.
 
-<details><summary>🃏 ¿Qué significa `LOAD R1, [R2+4]`?</summary>
+<details><summary>🃏 <b>¿Qué significa `LOAD R1, [R2+4]`?</b></summary>
 Primero suma 4 al contenido de R2 para calcular una dirección y luego copia a R1 el contenido de la celda encontrada.
 </details>
-<details><summary>🃏 En una dirección calculada, ¿para qué sirve la ALU?</summary>
+<details><summary>🃏 <b>En una dirección calculada, ¿para qué sirve la ALU?</b></summary>
 Para encontrar el dato: la suma obtiene la dirección, no el valor final.
 </details>
-<details><summary>🃏 ¿Un clic en un icono corresponde a una sola instrucción?</summary>
+<details><summary>🃏 <b>¿Un clic en un icono corresponde a una sola instrucción?</b></summary>
 No. Detrás de un gesto hay muchísimas instrucciones y transferencias.
 </details>
 
@@ -219,16 +219,16 @@ No. Detrás de un gesto hay muchísimas instrucciones y transferencias.
 >
 > En las CPU reales una instrucción puede ocupar varios bytes, de longitud fija o variable: el PC no siempre aumenta en uno. Además, «un paso» de nuestro modelo no equivale necesariamente a «un ciclo de reloj». Las optimizaciones y las tuberías (*pipeline*) se verán en noviembre-diciembre.
 
-<details><summary>🃏 ¿Qué hace un salto?</summary>
+<details><summary>🃏 <b>¿Qué hace un salto?</b></summary>
 Cambia el PC a una dirección diferente de la celda siguiente.
 </details>
-<details><summary>🃏 ¿Qué hace un salto condicional?</summary>
+<details><summary>🃏 <b>¿Qué hace un salto condicional?</b></summary>
 Cambia el PC solo si se cumple una condición. Así se pueden crear decisiones y ciclos.
 </details>
-<details><summary>🃏 ¿En las CPU reales el PC siempre aumenta en uno?</summary>
+<details><summary>🃏 <b>¿En las CPU reales el PC siempre aumenta en uno?</b></summary>
 No. Las instrucciones pueden ocupar varios bytes, de longitud fija o variable.
 </details>
-<details><summary>🃏 ¿Un paso del ciclo equivale a un ciclo de reloj?</summary>
+<details><summary>🃏 <b>¿Un paso del ciclo equivale a un ciclo de reloj?</b></summary>
 No necesariamente: nuestro listado es un modelo, no una medida del tiempo.
 </details>
 

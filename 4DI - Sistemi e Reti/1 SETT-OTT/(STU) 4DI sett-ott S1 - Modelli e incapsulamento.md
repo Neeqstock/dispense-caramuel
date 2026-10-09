@@ -10,7 +10,7 @@
 
 ## 🗺️ Mappa
 
-![](immagini/icon_mappa.svg)
+![](icon_mappa.svg)
 
 ```mermaid
 mindmap
@@ -30,7 +30,7 @@ mindmap
 
 ## 📜 Perché ci servono regole
 
-![](immagini/icon_storia.svg)
+![](icon_storia.svg)
 
 Gli esseri umani cooperano in milioni perché condividono culture, storie, regole: lingue, leggi, denaro. Nessuno ha mai «visto» una lingua. Eppure funziona.
 
@@ -44,7 +44,7 @@ Circa un'ora dopo Duvall sistema la macchina, Kline riprova e questa volta entra
 
 ## 📨 Protocolli e modelli
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 ### ✅ Un protocollo è una regola condivisa
 
@@ -157,7 +157,7 @@ Pagina non trovata.
 
 ## 📦 Incapsulamento e PDU
 
-![](immagini/icon_incapsulamento.svg)
+![](icon_incapsulamento.svg)
 
 ### ✅ Header e dati
 
@@ -253,7 +253,7 @@ dati
 
 *Ogni riga contiene la precedente. Le sigle davanti sono gli **header** (TCP, IP, ETH). Solo il frame ha una coda.*
 
-![Dati applicativi che scendono nei livelli e vengono incapsulati (UDP).](immagini/UDP_encapsulation.svg)
+![Dati applicativi che scendono nei livelli e vengono incapsulati (UDP).](UDP_encapsulation.svg)
 
 *Lo stesso viaggio in figura. Qui il trasporto è UDP. Autore: Cburnett (colori: Kbrose), licenza CC BY-SA 3.0, da [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:UDP_encapsulation.svg).*
 
@@ -364,7 +364,7 @@ OSI aiuta a ragionare per funzioni; TCP/IP descrive i protocolli di Internet.
 
 ## ✏️ Esercizi
 
-![](immagini/icon_esercizi.svg)
+![](icon_esercizi.svg)
 
 1. **Riordina.** Metti in ordine: frame, dati, pacchetto, segnali, segmento.
 2. **Spiega in una frase.** Che cosa aggiunge un livello quando incapsula?
@@ -374,7 +374,7 @@ OSI aiuta a ragionare per funzioni; TCP/IP descrive i protocolli di Internet.
 
 ## 📚 Fonti e risorse
 
-![](immagini/icon_fonti.svg)
+![](icon_fonti.svg)
 
 - [RFC 1122 - Requirements for Internet Hosts](https://www.rfc-editor.org/rfc/rfc1122): il riferimento ufficiale sui protocolli Internet. Per consultazione, non per studio.
 - [Wikipedia - Encapsulation (networking)](https://en.wikipedia.org/wiki/Encapsulation_(networking)): una pagina breve con schemi, per rivedere l'incapsulamento.

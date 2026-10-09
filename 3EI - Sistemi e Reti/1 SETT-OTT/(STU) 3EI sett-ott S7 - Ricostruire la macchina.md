@@ -68,43 +68,43 @@ INPUT porta informazioni nel sistema; OUTPUT le restituisce
 - La **cache** conserva copie e sfrutta la località temporale e spaziale. Un miss richiede un accesso al livello successivo: non è un guasto e non significa «vado sul disco».
 
 <details>
-<summary>🃏 Che cosa conserva la memoria nel modello di Von Neumann?</summary>
+<summary>🃏 <b>Che cosa conserva la memoria nel modello di Von Neumann?</b></summary>
 Istruzioni e dati, nella stessa memoria.
 </details>
 <details>
-<summary>🃏 Da quali parti è fatta la CPU, e che cosa fa ciascuna?</summary>
+<summary>🃏 <b>Da quali parti è fatta la CPU, e che cosa fa ciascuna?</b></summary>
 CU coordina, ALU calcola, registri conservano i valori del lavoro in corso.
 </details>
 <details>
-<summary>🃏 Quali sono le fasi del ciclo macchina?</summary>
+<summary>🃏 <b>Quali sono le fasi del ciclo macchina?</b></summary>
 Fetch, decode, execute, poi si passa all'istruzione successiva.
 </details>
 <details>
-<summary>🃏 PC, IR, MAR, MDR: un ruolo per ciascuno.</summary>
+<summary>🃏 <b>PC, IR, MAR, MDR: un ruolo per ciascuno.</b></summary>
 PC: dove prendere la prossima istruzione. IR: istruzione corrente. MAR: indirizzo dell'accesso in corso. MDR: contenuto trasferito.
 </details>
 <details>
-<summary>🃏 Quali sono le tre funzioni dei collegamenti fra CPU e memoria?</summary>
+<summary>🃏 <b>Quali sono le tre funzioni dei collegamenti fra CPU e memoria?</b></summary>
 Indirizzi, dati e controllo.
 </details>
 <details>
-<summary>🃏 Che cosa succede alla sorgente dopo una copia?</summary>
+<summary>🃏 <b>Che cosa succede alla sorgente dopo una copia?</b></summary>
 Resta intatta, salvo un'altra operazione che la modifichi.
 </details>
 <details>
-<summary>🃏 Come si calcola la capacità di una memoria con n bit di indirizzo?</summary>
+<summary>🃏 <b>Come si calcola la capacità di una memoria con n bit di indirizzo?</b></summary>
 2 elevato alla n locazioni, per i byte contenuti in ogni locazione.
 </details>
 <details>
-<summary>🃏 Quali sono i livelli della gerarchia delle memorie?</summary>
+<summary>🃏 <b>Quali sono i livelli della gerarchia delle memorie?</b></summary>
 Registri, cache, RAM, memoria di massa. Differiscono per attese, capacità e costo; la persistenza è una proprietà a parte.
 </details>
 <details>
-<summary>🃏 Su quali regolarità si basa la cache?</summary>
+<summary>🃏 <b>Su quali regolarità si basa la cache?</b></summary>
 Sulla località temporale e sulla località spaziale.
 </details>
 <details>
-<summary>🃏 Un miss significa «vado sul disco»?</summary>
+<summary>🃏 <b>Un miss significa «vado sul disco»?</b></summary>
 No. Significa accedere al livello successivo, e non è un guasto.
 </details>
 
@@ -113,15 +113,15 @@ No. Significa accedere al livello successivo, e non è un guasto.
 Quando segui un'istruzione chiediti: **dove siamo?**, **che cosa abbiamo letto?**, **che cosa cambia davvero?** Dire il nome di un registro senza il suo ruolo non basta. Dire che una memoria è «grande» non dice quanto è veloce o se tiene i dati senza corrente.
 
 <details>
-<summary>🃏 Quali tre domande aiutano a seguire un'istruzione?</summary>
+<summary>🃏 <b>Quali tre domande aiutano a seguire un'istruzione?</b></summary>
 Dove siamo? Che cosa abbiamo letto? Che cosa cambia davvero?
 </details>
 <details>
-<summary>🃏 Basta dire il nome di un registro?</summary>
+<summary>🃏 <b>Basta dire il nome di un registro?</b></summary>
 No. Bisogna dire anche il suo ruolo in quel momento.
 </details>
 <details>
-<summary>🃏 «Questa memoria è grande» dice anche che è veloce?</summary>
+<summary>🃏 <b>«Questa memoria è grande» dice anche che è veloce?</b></summary>
 No. Capacità, velocità e persistenza sono proprietà diverse.
 </details>
 
@@ -134,15 +134,15 @@ Una buona risposta tecnica ha una **tesi**, un **meccanismo** e un **esempio**. 
 Anche una formula va raccontata. Con 9 bit di indirizzo a byte si distinguono $2^9=512$ locazioni: la memoria contiene 512 byte, non 512 bit, e l'ultimo indirizzo è 511. Se ogni locazione contenesse due byte, cambierebbe la capacità, non il numero di indirizzi.
 
 <details>
-<summary>🃏 Da quali tre parti è fatta una buona risposta tecnica?</summary>
+<summary>🃏 <b>Da quali tre parti è fatta una buona risposta tecnica?</b></summary>
 Una tesi, un meccanismo e un esempio.
 </details>
 <details>
-<summary>🃏 Perché «la cache è veloce» è una risposta debole?</summary>
+<summary>🃏 <b>Perché «la cache è veloce» è una risposta debole?</b></summary>
 È una proprietà generica. Va detto il meccanismo, con una condizione controllabile: se il blocco è già in cache, si evita l'attesa del livello successivo.
 </details>
 <details>
-<summary>🃏 Anche una formula va «raccontata»?</summary>
+<summary>🃏 <b>Anche una formula va «raccontata»?</b></summary>
 Sì: bisogna dire che cosa contano i simboli, con quali unità e sotto quali ipotesi.
 </details>
 
@@ -162,7 +162,7 @@ Nell'esercizio B usiamo le regole di S4: una cella per ogni istruzione e PC che 
 > 🔧 **Collegamento con il laboratorio:** riconoscere una RAM o leggere una scheda tecnica diventa utile quando sai spiegare quale problema risolve quel componente. Ma lo schema funzionale non è una foto della scheda madre: la CU non è una scheda da cercare vicino al processore.
 
 <details>
-<summary>🃏 Lo schema funzionale è una fotografia della scheda madre?</summary>
+<summary>🃏 <b>Lo schema funzionale è una fotografia della scheda madre?</b></summary>
 No. Mostra i ruoli: per esempio la CU non è una scheda da cercare vicino al processore.
 </details>
 
@@ -173,11 +173,11 @@ No. Mostra i ruoli: per esempio la CU non è una scheda da cercare vicino al pro
 > Non serve conoscere una CPU particolare: bastano le idee di attesa e di spazio limitato.
 
 <details>
-<summary>🃏 A che cosa serve cercare un controesempio?</summary>
+<summary>🃏 <b>A che cosa serve cercare un controesempio?</b></summary>
 A capire dove una regola smette di funzionare, e quindi a renderla più precisa.
 </details>
 <details>
-<summary>🃏 Quali due idee bastano per trovare controesempi su GHz e cache?</summary>
+<summary>🃏 <b>Quali due idee bastano per trovare controesempi su GHz e cache?</b></summary>
 L'attesa e lo spazio limitato.
 </details>
 

@@ -10,7 +10,7 @@
 
 ## 🗺️ Mappa
 
-![](immagini/icon_mappa.svg)
+![](icon_mappa.svg)
 
 ```mermaid
 mindmap
@@ -27,7 +27,7 @@ mindmap
 
 ## 📜 La mappa dei numeri
 
-![](immagini/icon_storia.svg)
+![](icon_storia.svg)
 
 Negli anni Ottanta gli indirizzi sembrano infiniti. Chi li chiede li riceve a **blocchi interi**, da oltre sedici milioni di indirizzi ciascuno: i blocchi `/8`, quelli della classe A di S3. Pochi, grandi, a chi c'era all'inizio.
 
@@ -47,7 +47,7 @@ La lezione è semplice: **chiedere più del necessario è facile, ed è un lusso
 
 ## 🧮 Dimensionare
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 ### ✅ Dal numero di host al prefisso
 
@@ -91,7 +91,7 @@ Sì: occupa uno degli indirizzi host della sottorete.
 
 ## 🧮 Assegnare
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 ### ✅ Si assegnano prima i blocchi grandi
 
@@ -215,7 +215,7 @@ Per consentire crescita o riorganizzazione, se la riserva è motivata.
 
 ## ✏️ Esercizi
 
-![](immagini/icon_esercizi.svg)
+![](icon_esercizi.svg)
 
 1. **Dimensiona.** Per 40, 20 e 10 host, scrivi il prefisso minimo e la dimensione del blocco.
 2. **Progetta.** Distribuisci quelle tre richieste dentro `10.10.10.0/24`: per ognuna, rete, host ordinari e broadcast. Ordina prima.
@@ -227,7 +227,7 @@ Per consentire crescita o riorganizzazione, se la riserva è motivata.
 
 ## 📚 Fonti e risorse
 
-![](immagini/icon_fonti.svg)
+![](icon_fonti.svg)
 
 - [xkcd 195 - Map of the Internet](https://xkcd.com/195/): il fumetto-mappa dello spazio IPv4 nel 2006. Guarda chi aveva un `/8` intero.
 - [Wikipedia - List of assigned /8 IPv4 address blocks](https://en.wikipedia.org/wiki/List_of_assigned_/8_IPv4_address_blocks): chi aveva ricevuto quali blocchi, e chi li ha restituiti.

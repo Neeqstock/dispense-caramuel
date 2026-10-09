@@ -10,7 +10,7 @@
 
 ## 🗺️ Mappa
 
-![](immagini/icon_mappa.svg)
+![](icon_mappa.svg)
 
 ```mermaid
 mindmap
@@ -29,7 +29,7 @@ mindmap
 
 ## 📜 Un'isola, una stanza, un cavo
 
-![](immagini/icon_storia.svg)
+![](icon_storia.svg)
 
 Siamo nel 1968. Alle Hawaii l'università ha un problema da isola: gli utenti sono sparsi su isole diverse. Il professor Norman Abramson e il suo gruppo vogliono collegarli con apparecchi radio a basso costo. Nasce ALOHAnet: terminali collegati con **onde radio**. Ma c'è un guaio: tutti parlano sulla stessa frequenza. Se due trasmettono insieme, i messaggi si sovrappongono e vanno rifatti.
 
@@ -45,7 +45,7 @@ Metcalfe fa una scelta intelligente: invece di tenere la tecnologia per Xerox, c
 
 ## 🔌 Dal bit al segnale
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 ### ✅ Il livello fisico trasmette segnali
 
@@ -82,13 +82,13 @@ No. Trasmette segnali, senza interpretare il contenuto.
 
 ## 🔌 Ethernet e il frame
 
-![](immagini/icon_incapsulamento.svg)
+![](icon_incapsulamento.svg)
 
 ### ✅ Il frame Ethernet è la busta del tratto locale
 
 Nella S1 abbiamo visto che il livello 2 usa il **frame**. In Ethernet il frame ha questa forma:
 
-![Frame Ethernet II: MAC di destinazione, MAC sorgente, EtherType, dati e CRC.](immagini/Ethernet_Type_II_Frame_format.svg)
+![Frame Ethernet II: MAC di destinazione, MAC sorgente, EtherType, dati e CRC.](Ethernet_Type_II_Frame_format.svg)
 
 *Il frame Ethernet II. Tre campi di intestazione (14 byte), poi i dati (46-1500 byte), poi il controllo finale. Dominio pubblico, da [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ethernet_Type_II_Frame_format.svg).*
 
@@ -364,7 +364,7 @@ No: ha un collegamento dedicato e può trasmettere e ricevere insieme.
 
 ## ✏️ Esercizi
 
-![](immagini/icon_esercizi.svg)
+![](icon_esercizi.svg)
 
 1. **Riordina.** Metti in ordine: segnali, pacchetto IP, frame, dati.
 2. **Trova l'errore.** «Lo switch legge l'indirizzo IP e decide dove mandare il frame.» Che cosa non torna?
@@ -375,7 +375,7 @@ No: ha un collegamento dedicato e può trasmettere e ricevere insieme.
 
 ## 📚 Fonti e risorse
 
-![](immagini/icon_fonti.svg)
+![](icon_fonti.svg)
 
 - [Wikipedia - Ethernet](https://en.wikipedia.org/wiki/Ethernet): storia e versioni. Da leggere per curiosità la parte sulle origini a Xerox PARC.
 - [Wikipedia - ALOHAnet](https://en.wikipedia.org/wiki/ALOHAnet): la rete radio delle Hawaii che ha ispirato Ethernet.

@@ -10,7 +10,7 @@
 
 ## 🗺️ Mappa
 
-![](immagini/icon_mappa.svg)
+![](icon_mappa.svg)
 
 ```mermaid
 mindmap
@@ -27,7 +27,7 @@ mindmap
 
 ## 📜 Quando i numeri sono finiti
 
-![](immagini/icon_storia.svg)
+![](icon_storia.svg)
 
 3 febbraio 2011. In una sala per conferenze stampa, i responsabili dell'ente che distribuisce gli indirizzi IP nel mondo, lo **IANA**, annunciano un fatto storico. Distribuiscono gli **ultimi** grandi blocchi liberi: cinque, uno a ciascuna delle cinque organizzazioni regionali. Da quel giorno, lo IANA non ha più indirizzi IPv4 da dare.
 
@@ -41,7 +41,7 @@ Anche in Europa arriva il momento. Il **RIPE NCC**, l'organizzazione che assegna
 
 ## 🏠 Indirizzi privati
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 ### ✅ Gli indirizzi privati si riutilizzano
 
@@ -122,7 +122,7 @@ No: il NAT traduce indirizzi, il firewall applica regole di accesso.
 
 ## ✂️ FLSM
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 ### ✅ FLSM divide la rete in blocchi uguali
 
@@ -218,7 +218,7 @@ Il computer stesso (loopback): il traffico non esce in rete.
 
 ## ✏️ Esercizi
 
-![](immagini/icon_esercizi.svg)
+![](icon_esercizi.svg)
 
 1. **Ricopia.** Scrivi i tre intervalli privati senza guardare la tabella.
 2. **Completa.** Dividi `192.168.20.0/24` in quattro sottoreti uguali. Per ognuna: rete, prefisso, host ordinari, broadcast.
@@ -230,7 +230,7 @@ Il computer stesso (loopback): il traffico non esce in rete.
 
 ## 📚 Fonti e risorse
 
-![](immagini/icon_fonti.svg)
+![](icon_fonti.svg)
 
 - [RFC 1918 - Address Allocation for Private Internets](https://www.rfc-editor.org/rfc/rfc1918): gli intervalli privati (febbraio 1996). Per consultazione.
 - [RFC 1631 - The IP Network Address Translator](https://www.rfc-editor.org/rfc/rfc1631): il NAT presentato nel 1994 come «soluzione a breve termine». Si legge l'inizio.

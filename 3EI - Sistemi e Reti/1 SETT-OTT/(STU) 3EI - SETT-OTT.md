@@ -19,6 +19,8 @@ Come si passa da una macchina costruita per un solo compito a una macchina che c
 | **S7** | [🧠 Ricostruire la macchina](%28STU%29%203EI%20sett-ott%20S7%20-%20Ricostruire%20la%20macchina.md) | Ripasso: colleghiamo i pezzi e facciamo una prova di allenamento. |
 | **S8** | 🎯 Verifica e recupero (in preparazione) | Verifica di teoria, lettura degli errori e recupero. |
 
+📎 **Integrazione:** [Linguaggio assembly: le basi](%28STU%29%203EI%20-%20Linguaggio%20assembly%20base.md) completa le istruzioni usate negli esempi.
+
 Il calendario reale può spostarsi un po': conta l'ordine degli argomenti, non la data esatta.
 
 ## 🧰 Come sono fatte le dispense

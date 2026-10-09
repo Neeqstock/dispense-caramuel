@@ -10,7 +10,7 @@
 
 ## 🗺️ Mappa
 
-![](immagini/icon_mappa.svg)
+![](icon_mappa.svg)
 
 ```mermaid
 mindmap
@@ -28,7 +28,7 @@ mindmap
 
 ## 📜 Il caso delle 500 miglia
 
-![](immagini/icon_storia.svg)
+![](icon_storia.svg)
 
 Un caso vero, raccontato nel 2002 da un amministratore di sistema americano, Trey Harris. L'autore dice di averlo un po' modificato per renderlo più divertente. Ma l'essenza è questa.
 
@@ -56,7 +56,7 @@ Il mistero era risolto. Nessuna magia: un valore a zero, e la fisica.
 
 ## 🔁 Ripasso
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 Nessun argomento nuovo: oggi si **ricompone** quello che sai. Prova a rispondere senza guardare gli appunti (un po' di fatica fa bene: ricordare aiuta più di rileggere).
 
@@ -128,7 +128,7 @@ FLSM usa sottoreti della stessa dimensione; VLSM consente dimensioni diverse.
 
 ## 🔎 Cercare il passaggio che non torna
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 ### 🔍 Un percorso di controllo ordinato
 
@@ -221,7 +221,7 @@ Un caso in cui una regola, che sembrava generale, non vale.
 
 ## ✏️ Esercizi
 
-![](immagini/icon_esercizi.svg)
+![](icon_esercizi.svg)
 
 1. **Riordina.** Metti in ordine i sei controlli del percorso di troubleshooting.
 2. **Spiega in una frase.** Che cosa ha in comune il caso delle 500 miglia con un errore di subnetting?
@@ -232,7 +232,7 @@ Un caso in cui una regola, che sembrava generale, non vale.
 
 ## 📚 Fonti e risorse
 
-![](immagini/icon_fonti.svg)
+![](icon_fonti.svg)
 
 - [Trey Harris - The case of the 500-mile email](https://www.ibiblio.org/harris/500milemail.html): il racconto originale del 2002, in inglese, e vale la lettura. Dura circa cinque minuti.
 - [RFC 4632 - Classless Inter-domain Routing](https://www.rfc-editor.org/rfc/rfc4632): per ripassare prefissi e blocchi. Per consultazione.

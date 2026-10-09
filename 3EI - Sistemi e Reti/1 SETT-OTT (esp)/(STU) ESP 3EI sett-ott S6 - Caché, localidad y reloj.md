@@ -63,19 +63,19 @@ Un fallo **no es un error del programa**: es un evento previsto. La caché es pe
 
 La caché **no es parte de la RAM** ni es otra memoria donde el programador elige qué guardar: es una **copia** de ciertos contenidos, mantenida más cerca de la CPU.
 
-<details><summary>🃏 ¿Qué es la caché?</summary>
+<details><summary>🃏 <b>¿Qué es la caché?</b></summary>
 Una memoria que guarda copias de partes de la memoria principal cerca del procesador.
 </details>
-<details><summary>🃏 ¿Qué diferencia hay entre acierto y fallo?</summary>
+<details><summary>🃏 <b>¿Qué diferencia hay entre acierto y fallo?</b></summary>
 En un acierto, el contenido ya está en la caché consultada. En un fallo, falta y hay que buscarlo en el siguiente nivel, con una espera adicional.
 </details>
-<details><summary>🃏 ¿Un fallo es un error del programa?</summary>
+<details><summary>🃏 <b>¿Un fallo es un error del programa?</b></summary>
 No. Es un evento previsto: la caché es pequeña y no puede contenerlo todo.
 </details>
-<details><summary>🃏 ¿Quién decide qué entra en la caché?</summary>
+<details><summary>🃏 <b>¿Quién decide qué entra en la caché?</b></summary>
 En los procesadores comunes, el hardware. No se elige a mano cada transferencia.
 </details>
-<details><summary>🃏 ¿La caché es parte de la RAM?</summary>
+<details><summary>🃏 <b>¿La caché es parte de la RAM?</b></summary>
 No. Es una copia de algunos contenidos, guardada más cerca de la CPU.
 </details>
 
@@ -87,16 +87,16 @@ No. Es una copia de algunos contenidos, guardada más cerca de la CPU.
 
 Los programas no siempre presentan estas regularidades. Los accesos dispersos a direcciones lejanas aprovechan poco la caché. Además, repetir un acceso no garantiza un acierto: el contenido podría haber sido reemplazado mientras tanto.
 
-<details><summary>🃏 ¿Qué es la localidad temporal?</summary>
+<details><summary>🃏 <b>¿Qué es la localidad temporal?</b></summary>
 Un contenido utilizado hace poco podría volver a necesitarse pronto, como las instrucciones de un ciclo.
 </details>
-<details><summary>🃏 ¿Qué es la localidad espacial?</summary>
+<details><summary>🃏 <b>¿Qué es la localidad espacial?</b></summary>
 Después de una dirección podrían necesitarse otras cercanas, como los elementos consecutivos de una secuencia recorridos en orden.
 </details>
-<details><summary>🃏 ¿Todos los programas aprovechan bien la caché?</summary>
+<details><summary>🃏 <b>¿Todos los programas aprovechan bien la caché?</b></summary>
 No. Los accesos dispersos a muchas direcciones lejanas la aprovechan poco.
 </details>
-<details><summary>🃏 ¿Volver a leer un dato garantiza un acierto?</summary>
+<details><summary>🃏 <b>¿Volver a leer un dato garantiza un acierto?</b></summary>
 No. El contenido podría haber sido reemplazado mientras tanto.
 </details>
 
@@ -106,13 +106,13 @@ La caché se organiza en **líneas**, que contienen bloques de posiciones consec
 
 En una simulación con bloques de cuatro direcciones, una solicitud a la dirección 8 puede traer a la caché el bloque 8-11. Una solicitud posterior a 9 podría encontrar el dato aunque nunca se hubiera solicitado antes.
 
-<details><summary>🃏 ¿Qué es una línea de caché?</summary>
+<details><summary>🃏 <b>¿Qué es una línea de caché?</b></summary>
 Un espacio de la caché que contiene un bloque de posiciones consecutivas.
 </details>
-<details><summary>🃏 ¿Por qué se transfiere un bloque entero y no solo el valor solicitado?</summary>
+<details><summary>🃏 <b>¿Por qué se transfiere un bloque entero y no solo el valor solicitado?</b></summary>
 Para aprovechar la localidad espacial: los valores cercanos podrían necesitarse enseguida.
 </details>
-<details><summary>🃏 ¿El tamaño de una línea y la capacidad de caché son lo mismo?</summary>
+<details><summary>🃏 <b>¿El tamaño de una línea y la capacidad de caché son lo mismo?</b></summary>
 No. Una línea es un espacio individual; la capacidad es el espacio total.
 </details>
 
@@ -142,16 +142,16 @@ Secuencia de lecturas: **8, 9, 8, 12, 13, 16, 8**.
 
 Resultado: **3 aciertos y 4 fallos**. El último acceso demuestra que «ya se leyó» y «sigue presente» no significan lo mismo. Esta es una caché didáctica con reglas elegidas por nosotros; las cachés reales tienen otras organizaciones y políticas.
 
-<details><summary>🃏 ¿Por qué hay que declarar las reglas de una simulación de caché?</summary>
+<details><summary>🃏 <b>¿Por qué hay que declarar las reglas de una simulación de caché?</b></summary>
 Porque los aciertos y fallos dependen de la capacidad, el tamaño de los bloques, el estado inicial y la regla de reemplazo.
 </details>
-<details><summary>🃏 ¿Qué dice la regla FIFO?</summary>
+<details><summary>🃏 <b>¿Qué dice la regla FIFO?</b></summary>
 *First in, first out*: cuando la caché está llena, sale el bloque que lleva más tiempo cargado.
 </details>
-<details><summary>🃏 Con FIFO, ¿un acierto cambia el orden de los bloques?</summary>
+<details><summary>🃏 <b>Con FIFO, ¿un acierto cambia el orden de los bloques?</b></summary>
 No. Solo importa el orden en que se cargaron.
 </details>
-<details><summary>🃏 ¿«Ya se leyó una vez» significa «sigue en caché»?</summary>
+<details><summary>🃏 <b>¿«Ya se leyó una vez» significa «sigue en caché»?</b></summary>
 No. El bloque pudo ser reemplazado, como en el último acceso del ejemplo.
 </details>
 
@@ -163,19 +163,19 @@ La **DRAM** almacena el bit como carga eléctrica en un condensador diminuto. La
 
 Las cachés suelen dividirse en niveles **L1, L2 y L3**: L1 suele ser la más pequeña y rápida; los niveles siguientes tienen más capacidad. El número de niveles y cómo se comparten entre núcleos depende del procesador. No hay valores universales de tamaño o latencia que memorizar.
 
-<details><summary>🃏 ¿Cómo conserva los bits la SRAM y dónde se usa?</summary>
+<details><summary>🃏 <b>¿Cómo conserva los bits la SRAM y dónde se usa?</b></summary>
 Con un circuito estable mientras tenga alimentación, sin refresco. Ocupa más espacio por bit y se usa en las cachés.
 </details>
-<details><summary>🃏 ¿La SRAM es no volátil?</summary>
+<details><summary>🃏 <b>¿La SRAM es no volátil?</b></summary>
 No. «Estática» no significa no volátil: sin corriente pierde los datos.
 </details>
-<details><summary>🃏 ¿Cómo conserva los bits la DRAM y dónde se usa?</summary>
+<details><summary>🃏 <b>¿Cómo conserva los bits la DRAM y dónde se usa?</b></summary>
 Como carga eléctrica en condensadores diminutos; sus celdas pequeñas y densas sirven para la memoria principal.
 </details>
-<details><summary>🃏 ¿Qué es el refresco de la DRAM?</summary>
+<details><summary>🃏 <b>¿Qué es el refresco de la DRAM?</b></summary>
 Una actualización periódica de las celdas porque la carga se pierde. Mantiene la información física; no tiene que ver con actualizar programas.
 </details>
-<details><summary>🃏 ¿Qué son L1, L2 y L3?</summary>
+<details><summary>🃏 <b>¿Qué son L1, L2 y L3?</b></summary>
 Niveles de caché. L1 suele ser la más pequeña y rápida; los siguientes suelen tener más capacidad. El número y la organización dependen del procesador.
 </details>
 
@@ -189,16 +189,16 @@ Una operación puede requerir varios pasos y una espera de memoria puede consumi
 
 > ⏸️ **Fijación:** relaciona «instrucciones que se repiten» y «posiciones cercanas recorridas en orden» con los dos tipos de localidad. Después explica por qué un reloj más rápido no vuelve infinita la caché.
 
-<details><summary>🃏 ¿Qué es el reloj?</summary>
+<details><summary>🃏 <b>¿Qué es el reloj?</b></summary>
 Una señal periódica que marca el tiempo para los circuitos síncronos.
 </details>
-<details><summary>🃏 ¿Qué mide la frecuencia del reloj?</summary>
+<details><summary>🃏 <b>¿Qué mide la frecuencia del reloj?</b></summary>
 Ciclos por segundo, en hercios: 2 GHz son dos mil millones de ciclos por segundo.
 </details>
-<details><summary>🃏 ¿2 GHz significa dos mil millones de instrucciones por segundo?</summary>
+<details><summary>🃏 <b>¿2 GHz significa dos mil millones de instrucciones por segundo?</b></summary>
 No. Una operación puede requerir varios pasos y las esperas de memoria consumen tiempo.
 </details>
-<details><summary>🃏 ¿Cómo se comparan realmente dos sistemas?</summary>
+<details><summary>🃏 <b>¿Cómo se comparan realmente dos sistemas?</b></summary>
 Observando el trabajo realizado y el tiempo empleado, no solo los GHz.
 </details>
 
@@ -216,16 +216,16 @@ Este valor describe un ciclo de reloj. Para calcular cuánto tarda un programa e
 
 > 🔧 **Conexión con el laboratorio:** «caché de 12 MB» en la ficha de una CPU y «RAM de 16 GB» en la ficha de un computador no describen el mismo espacio de trabajo. La caché reduce algunas esperas; más RAM permite mantener más datos activos. Resuelven problemas diferentes.
 
-<details><summary>🃏 ¿Qué relación hay entre frecuencia y período?</summary>
+<details><summary>🃏 <b>¿Qué relación hay entre frecuencia y período?</b></summary>
 El período es el inverso de la frecuencia: T = 1 / f.
 </details>
-<details><summary>🃏 ¿Cuánto dura un ciclo a 2 GHz?</summary>
+<details><summary>🃏 <b>¿Cuánto dura un ciclo a 2 GHz?</b></summary>
 0,5 nanosegundos.
 </details>
-<details><summary>🃏 ¿Se puede calcular el tiempo de un programa a partir del período?</summary>
+<details><summary>🃏 <b>¿Se puede calcular el tiempo de un programa a partir del período?</b></summary>
 No, hacen falta otros datos. Dos CPU con la misma frecuencia no tienen por qué tardar lo mismo.
 </details>
-<details><summary>🃏 ¿Una caché de 12 MB y una RAM de 16 GB son el mismo recurso?</summary>
+<details><summary>🃏 <b>¿Una caché de 12 MB y una RAM de 16 GB son el mismo recurso?</b></summary>
 No. La caché reduce algunas esperas; más RAM permite mantener más datos activos.
 </details>
 
@@ -243,13 +243,13 @@ No. La caché reduce algunas esperas; más RAM permite mantener más datos activ
 >
 > Otra forma de aprovechar mejor el tiempo es superponer las fases de distintas instrucciones, como en una cadena de montaje 🏭: se llama **pipeline** y se estudiará en el próximo bimestre.
 
-<details><summary>🃏 ¿Qué mide el AMAT?</summary>
+<details><summary>🃏 <b>¿Qué mide el AMAT?</b></summary>
 El tiempo medio de acceso: tiempo de consulta de la caché más probabilidad de fallo por penalización adicional.
 </details>
-<details><summary>🃏 ¿Un AMAT de 4,5 ns significa que cada acceso tarda 4,5 ns?</summary>
+<details><summary>🃏 <b>¿Un AMAT de 4,5 ns significa que cada acceso tarda 4,5 ns?</b></summary>
 No. Es un promedio entre aciertos rápidos y fallos mucho más lentos.
 </details>
-<details><summary>🃏 ¿Qué es, en términos generales, un pipeline?</summary>
+<details><summary>🃏 <b>¿Qué es, en términos generales, un pipeline?</b></summary>
 Superponer las fases de distintas instrucciones, como en una cadena de montaje.
 </details>
 

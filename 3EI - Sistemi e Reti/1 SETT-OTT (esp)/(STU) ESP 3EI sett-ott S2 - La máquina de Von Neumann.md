@@ -60,13 +60,13 @@ En el modelo de Von Neumann, **las instrucciones y los datos están en la misma 
 
 La diferencia con una máquina diseñada para una sola tarea es concreta: <u>para cambiar el cálculo no hace falta reconstruir el procesador</u>. Se prepara otra secuencia de instrucciones y se carga en la memoria. Más adelante veremos cómo la CPU sigue la instrucción actual y la ejecuta; aquí nos interesa el principio que permite cambiar de programa.
 
-<details><summary>🃏 ¿Qué significa «programa almacenado»?</summary>
+<details><summary>🃏 <b>¿Qué significa «programa almacenado»?</b></summary>
 Que las instrucciones están guardadas en memoria, junto con los datos. La CPU las obtiene, interpreta y ejecuta una tras otra.
 </details>
-<details><summary>🃏 ¿Por qué fue un cambio importante?</summary>
+<details><summary>🃏 <b>¿Por qué fue un cambio importante?</b></summary>
 Porque basta cambiar las instrucciones en memoria para cambiar de tarea; ya no hay que rehacer a mano las conexiones y configuraciones.
 </details>
-<details><summary>🃏 ¿Von Neumann inventó todo por sí solo?</summary>
+<details><summary>🃏 <b>¿Von Neumann inventó todo por sí solo?</b></summary>
 No. Su nombre está asociado a un modelo fundamental que surgió de investigaciones colectivas en los años cuarenta.
 </details>
 
@@ -74,10 +74,10 @@ No. Su nombre está asociado a un modelo fundamental que surgió de investigacio
 
 Imagina la memoria como una fila de cajones numerados. La **dirección** es el número del cajón; el **contenido** es lo que hay dentro. <u>El número del cajón no es el objeto que está en él.</u> Aunque ambos sean números, cumplen funciones diferentes.
 
-<details><summary>🃏 ¿Qué diferencia hay entre dirección y contenido?</summary>
+<details><summary>🃏 <b>¿Qué diferencia hay entre dirección y contenido?</b></summary>
 La dirección identifica una posición de memoria; el contenido es lo que se encuentra allí.
 </details>
-<details><summary>🃏 Si ambos son números, ¿dirección y contenido son lo mismo?</summary>
+<details><summary>🃏 <b>Si ambos son números, ¿dirección y contenido son lo mismo?</b></summary>
 No. Uno indica dónde y el otro qué hay.
 </details>
 
@@ -110,16 +110,16 @@ No. Uno indica dónde y el otro qué hay.
 
 Las líneas muestran relaciones funcionales, no todos los cables de una computadora. ⚠️ La CU **está dentro de la CPU**: no es un segundo procesador externo que dirige una CPU formada solo por la ALU. Algunos dispositivos, como una tarjeta de red, sirven tanto para entrada como para salida.
 
-<details><summary>🃏 ¿Cuáles son los bloques del modelo de Von Neumann?</summary>
+<details><summary>🃏 <b>¿Cuáles son los bloques del modelo de Von Neumann?</b></summary>
 CPU, memoria principal, entrada, salida y las conexiones que transfieren información y señales entre ellos.
 </details>
-<details><summary>🃏 ¿Qué hace la memoria principal?</summary>
+<details><summary>🃏 <b>¿Qué hace la memoria principal?</b></summary>
 Mantiene disponibles las instrucciones y los datos en uso.
 </details>
-<details><summary>🃏 ¿Qué diferencia hay entre entrada y salida?</summary>
+<details><summary>🃏 <b>¿Qué diferencia hay entre entrada y salida?</b></summary>
 La entrada introduce información en el sistema y la salida la envía al exterior. Algunos dispositivos, como una tarjeta de red, hacen ambas cosas.
 </details>
-<details><summary>🃏 ¿Dónde está la CU en el esquema?</summary>
+<details><summary>🃏 <b>¿Dónde está la CU en el esquema?</b></summary>
 Dentro de la CPU, junto con la ALU y los registros.
 </details>
 
@@ -144,13 +144,13 @@ Si en vez de sumar el programa pidiera restar, cambiaría la operación, pero <u
 
 > ⏸️ **Fijación:** encuentra en la tabla una dirección, un dato y una instrucción. Explica cómo los distinguiste sin fijarte solo en su aspecto.
 
-<details><summary>🃏 ¿Qué hace `LOAD R1, [20]`?</summary>
+<details><summary>🃏 <b>¿Qué hace `LOAD R1, [20]`?</b></summary>
 Copia en R1 el contenido de la celda 20. Si contiene 7, R1 recibe 7, no 20.
 </details>
-<details><summary>🃏 ¿Se usa un valor solo porque esté en memoria?</summary>
+<details><summary>🃏 <b>¿Se usa un valor solo porque esté en memoria?</b></summary>
 No. Una instrucción debe solicitarlo; el 99 de la celda 21 queda sin usar.
 </details>
-<details><summary>🃏 Para restar en vez de sumar, ¿hay que modificar la ALU?</summary>
+<details><summary>🃏 <b>Para restar en vez de sumar, ¿hay que modificar la ALU?</b></summary>
 No. Basta otra instrucción que seleccione una función que la máquina ya sabe realizar.
 </details>
 
@@ -160,10 +160,10 @@ No. Basta otra instrucción que seleccione una función que la máquina ya sabe 
 
 No existe una etiqueta universal que diga a cualquier CPU «estos bits son una instrucción». En nuestro modelo, simplemente seguimos el programa en las posiciones indicadas.
 
-<details><summary>🃏 ¿La memoria contiene literalmente las palabras «LOAD» y «ADD»?</summary>
+<details><summary>🃏 <b>¿La memoria contiene literalmente las palabras «LOAD» y «ADD»?</b></summary>
 No. Son formas legibles de escribir instrucciones; la memoria guarda secuencias de bits.
 </details>
-<details><summary>🃏 ¿Cómo trata el procesador ciertos bits como una instrucción?</summary>
+<details><summary>🃏 <b>¿Cómo trata el procesador ciertos bits como una instrucción?</b></summary>
 Según el formato de la instrucción y el momento de ejecución. Otras secuencias representan números, caracteres o direcciones.
 </details>
 
@@ -179,13 +179,13 @@ Para leer la memoria no basta con decir «envíame algo». La CPU y la memoria d
 
 Cuando la CPU lee la celda 20, comunica la dirección **20**, señala mediante el control que quiere **leer** y la memoria devuelve el contenido **7** por el recorrido de datos. Son funciones diferentes, aunque los elementos viajen por el mismo sistema de conexiones. Estas funciones anticipan los buses de direcciones, control y datos. Una instrucción obtenida de memoria también viaja como contenido por el recorrido de datos: «bus de datos» no significa que las instrucciones tengan prohibido usarlo.
 
-<details><summary>🃏 ¿Qué tres datos hacen falta para leer la memoria?</summary>
+<details><summary>🃏 <b>¿Qué tres datos hacen falta para leer la memoria?</b></summary>
 Dónde (dirección), qué operación (lectura o escritura) y qué valor (el contenido devuelto).
 </details>
-<details><summary>🃏 ¿A qué buses corresponden las tres preguntas?</summary>
+<details><summary>🃏 <b>¿A qué buses corresponden las tres preguntas?</b></summary>
 Dirección: bus de direcciones; operación: bus de control; valor: bus de datos.
 </details>
-<details><summary>🃏 ¿Puede una instrucción viajar por el bus de datos?</summary>
+<details><summary>🃏 <b>¿Puede una instrucción viajar por el bus de datos?</b></summary>
 Sí. Cuando se obtiene de la memoria, es un contenido como cualquier otro.
 </details>
 
@@ -199,13 +199,13 @@ Una cocina con una sola ventanilla sirve como comparación: hasta cocineros rapi
 
 > 🔧 **Conexión con el laboratorio:** la RAM y el SSD pertenecen al sistema de memoria, pero no hacen el mismo trabajo. El modelo de hoy describe la memoria utilizada directamente durante la ejecución. Un archivo guardado en disco no está ya listo en los registros de la CPU.
 
-<details><summary>🃏 ¿Qué es el cuello de botella de Von Neumann?</summary>
+<details><summary>🃏 <b>¿Qué es el cuello de botella de Von Neumann?</b></summary>
 La CPU puede terminar un cálculo y tener que esperar el siguiente dato: instrucciones y datos compiten por el acceso a la memoria.
 </details>
-<details><summary>🃏 ¿Se pueden comparar directamente GHz de CPU y GB/s de memoria?</summary>
+<details><summary>🃏 <b>¿Se pueden comparar directamente GHz de CPU y GB/s de memoria?</b></summary>
 No. Miden magnitudes diferentes.
 </details>
-<details><summary>🃏 ¿La caché vuelve instantánea la memoria?</summary>
+<details><summary>🃏 <b>¿La caché vuelve instantánea la memoria?</b></summary>
 No. Reduce algunas esperas, pero la memoria no se vuelve infinita ni instantánea.
 </details>
 
@@ -217,19 +217,19 @@ No. Reduce algunas esperas, pero la memoria no se vuelve infinita ni instantáne
 >
 > El **Manchester Baby** ejecutó un programa almacenado en 1948. No era un computador moderno en miniatura, sino una máquina experimental construida para comprobar una idea: las instrucciones podían guardarse electrónicamente y luego ser ejecutadas. En 1949 empezó a funcionar en Cambridge el **EDSAC**, dirigido por Maurice Wilkes; fue uno de los primeros computadores de programa almacenado utilizados durante años para trabajo científico. Quién fue «el primero» depende de cómo se defina un computador; por eso los historiadores todavía lo debaten.
 
-<details><summary>🃏 ¿Cómo se programaba el ENIAC y quién lo hacía?</summary>
+<details><summary>🃏 <b>¿Cómo se programaba el ENIAC y quién lo hacía?</b></summary>
 Se reconectaban cables y se movían interruptores; preparar un cálculo nuevo podía tardar días. Lo hacía un grupo de mujeres matemáticas, entre ellas Kay McNulty, Jean Jennings y Betty Snyder.
 </details>
-<details><summary>🃏 ¿Qué fue el EDSAC?</summary>
+<details><summary>🃏 <b>¿Qué fue el EDSAC?</b></summary>
 Un computador de programa almacenado que empezó a funcionar en Cambridge en 1949, dirigido por Maurice Wilkes y utilizado para trabajo científico.
 </details>
-<details><summary>🃏 ¿Qué separa la arquitectura Harvard?</summary>
+<details><summary>🃏 <b>¿Qué separa la arquitectura Harvard?</b></summary>
 Las memorias o recorridos de instrucciones y datos. Puede permitir accesos simultáneos, con otras decisiones y limitaciones.
 </details>
-<details><summary>🃏 ¿Los computadores modernos son puramente Von Neumann o Harvard?</summary>
+<details><summary>🃏 <b>¿Los computadores modernos son puramente Von Neumann o Harvard?</b></summary>
 A menudo combinan ideas: memoria principal compartida y cachés separadas para instrucciones y datos.
 </details>
-<details><summary>🃏 ¿Qué demostró el Manchester Baby en 1948?</summary>
+<details><summary>🃏 <b>¿Qué demostró el Manchester Baby en 1948?</b></summary>
 Que una máquina electrónica podía ejecutar un programa almacenado.
 </details>
 

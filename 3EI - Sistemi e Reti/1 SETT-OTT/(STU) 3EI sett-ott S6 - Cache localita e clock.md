@@ -64,23 +64,23 @@ Un miss **non è un errore del programma**: è un evento previsto. La cache è p
 La cache **non è una parte della RAM** e non è un'altra memoria in più su cui il programmatore sceglie dove scrivere: è una **copia** di alcuni contenuti, tenuta più vicina alla CPU.
 
 <details>
-<summary>🃏 Che cos'è la cache?</summary>
+<summary>🃏 <b>Che cos'è la cache?</b></summary>
 Una memoria che conserva copie di pezzi della memoria principale vicino al processore.
 </details>
 <details>
-<summary>🃏 Che differenza c'è fra hit e miss?</summary>
+<summary>🃏 <b>Che differenza c'è fra hit e miss?</b></summary>
 Hit: il contenuto richiesto è già nel livello consultato. Miss: manca, e bisogna cercarlo al livello successivo, con un'attesa in più.
 </details>
 <details>
-<summary>🃏 Un miss è un errore del programma?</summary>
+<summary>🃏 <b>Un miss è un errore del programma?</b></summary>
 No. È un evento previsto: la cache è piccola e non può contenere tutto.
 </details>
 <details>
-<summary>🃏 Chi decide che cosa entra in cache?</summary>
+<summary>🃏 <b>Chi decide che cosa entra in cache?</b></summary>
 Nei processori comuni l'hardware: non si sceglie a mano ogni trasferimento.
 </details>
 <details>
-<summary>🃏 La cache è una parte della RAM?</summary>
+<summary>🃏 <b>La cache è una parte della RAM?</b></summary>
 No. È una copia di alcuni contenuti, tenuta più vicina alla CPU.
 </details>
 
@@ -93,19 +93,19 @@ No. È una copia di alcuni contenuti, tenuta più vicina alla CPU.
 I programmi non rispettano sempre queste regolarità. Accessi sparsi su tanti indirizzi lontani sfruttano poco la cache. E ripetere un accesso non garantisce un hit: il contenuto potrebbe essere stato sostituito nel frattempo.
 
 <details>
-<summary>🃏 Che cos'è la località temporale?</summary>
+<summary>🃏 <b>Che cos'è la località temporale?</b></summary>
 Un contenuto usato da poco può servire di nuovo presto, come le istruzioni di un ciclo.
 </details>
 <details>
-<summary>🃏 Che cos'è la località spaziale?</summary>
+<summary>🃏 <b>Che cos'è la località spaziale?</b></summary>
 Dopo un indirizzo possono servire quelli vicini, come gli elementi consecutivi di una sequenza visitati in ordine.
 </details>
 <details>
-<summary>🃏 Tutti i programmi sfruttano bene la cache?</summary>
+<summary>🃏 <b>Tutti i programmi sfruttano bene la cache?</b></summary>
 No. Accessi sparsi su tanti indirizzi lontani la sfruttano poco.
 </details>
 <details>
-<summary>🃏 Rileggere un dato garantisce un hit?</summary>
+<summary>🃏 <b>Rileggere un dato garantisce un hit?</b></summary>
 No. Il contenuto potrebbe essere stato sostituito nel frattempo.
 </details>
 
@@ -116,19 +116,19 @@ La cache è organizzata in **linee**, che contengono blocchi di posizioni consec
 In una simulazione con blocchi da quattro indirizzi, una richiesta all'indirizzo 8 può portare in cache tutto il blocco 8-11. Una richiesta successiva a 9 può trovare già il dato, anche se 9 non era mai stato chiesto.
 
 <details>
-<summary>🃏 Che cos'è una linea di cache?</summary>
+<summary>🃏 <b>Che cos'è una linea di cache?</b></summary>
 Uno spazio della cache che contiene un blocco di posizioni consecutive.
 </details>
 <details>
-<summary>🃏 Perché si trasferisce un blocco intero e non solo il valore richiesto?</summary>
+<summary>🃏 <b>Perché si trasferisce un blocco intero e non solo il valore richiesto?</b></summary>
 Per sfruttare la località spaziale: i vicini del valore richiesto potrebbero servire subito dopo.
 </details>
 <details>
-<summary>🃏 Dimensione della linea e capacità della cache sono la stessa cosa?</summary>
+<summary>🃏 <b>Dimensione della linea e capacità della cache sono la stessa cosa?</b></summary>
 No. La linea è un singolo spazio; la capacità è lo spazio totale della cache.
 </details>
 <details>
-<summary>🃏 Come si può avere un hit su un indirizzo mai richiesto?</summary>
+<summary>🃏 <b>Come si può avere un hit su un indirizzo mai richiesto?</b></summary>
 Se un accesso precedente ha portato in cache il blocco che lo contiene.
 </details>
 
@@ -159,19 +159,19 @@ Sequenza di letture: **8, 9, 8, 12, 13, 16, 8**.
 Risultato: **3 hit e 4 miss**. L'ultimo accesso mostra che «già letto una volta» e «ancora presente» non sono la stessa cosa. È una cache didattica con regole scelte da noi; le cache reali usano organizzazioni e politiche diverse.
 
 <details>
-<summary>🃏 Perché una simulazione della cache deve dichiarare le regole?</summary>
+<summary>🃏 <b>Perché una simulazione della cache deve dichiarare le regole?</b></summary>
 Perché hit e miss dipendono da capacità, dimensione dei blocchi, stato iniziale e regola di sostituzione.
 </details>
 <details>
-<summary>🃏 Che cosa dice la regola FIFO?</summary>
+<summary>🃏 <b>Che cosa dice la regola FIFO?</b></summary>
 First in, first out: quando la cache è piena si butta fuori il blocco caricato da più tempo.
 </details>
 <details>
-<summary>🃏 Con la regola FIFO, un hit cambia l'ordine dei blocchi?</summary>
+<summary>🃏 <b>Con la regola FIFO, un hit cambia l'ordine dei blocchi?</b></summary>
 No. Conta solo l'ordine in cui i blocchi sono stati caricati.
 </details>
 <details>
-<summary>🃏 «Già letto una volta» significa «ancora in cache»?</summary>
+<summary>🃏 <b>«Già letto una volta» significa «ancora in cache»?</b></summary>
 No. Il blocco può essere stato sostituito, come succede all'ultimo accesso dell'esempio.
 </details>
 
@@ -184,23 +184,23 @@ La **DRAM** memorizza il bit come carica elettrica in un minuscolo condensatore.
 Le cache sono spesso divise in livelli **L1, L2 e L3**: L1 è di solito la più piccola e veloce, i livelli successivi sono più capienti. Quanti livelli ci sono e come si dividono fra i core dipende dal processore. Non esistono valori universali di dimensione o latenza da imparare a memoria.
 
 <details>
-<summary>🃏 Come conserva i bit la SRAM, e dove si usa?</summary>
+<summary>🃏 <b>Come conserva i bit la SRAM, e dove si usa?</b></summary>
 Con un circuito stabile finché è alimentata, senza refresh; occupa più spazio per bit e si usa nelle cache.
 </details>
 <details>
-<summary>🃏 La SRAM è non volatile?</summary>
+<summary>🃏 <b>La SRAM è non volatile?</b></summary>
 No. Static non significa non volatile: senza corrente perde i dati.
 </details>
 <details>
-<summary>🃏 Come conserva i bit la DRAM, e dove si usa?</summary>
+<summary>🃏 <b>Come conserva i bit la DRAM, e dove si usa?</b></summary>
 Come carica elettrica in minuscoli condensatori; le celle sono piccole e fitte, per questo si usa nella memoria principale.
 </details>
 <details>
-<summary>🃏 Che cos'è il refresh della DRAM?</summary>
+<summary>🃏 <b>Che cos'è il refresh della DRAM?</b></summary>
 Un rinfresco periodico delle celle, perché la carica si disperde. Mantiene l'informazione fisica; non c'entra con l'aggiornamento dei programmi.
 </details>
 <details>
-<summary>🃏 Che cosa sono L1, L2 e L3?</summary>
+<summary>🃏 <b>Che cosa sono L1, L2 e L3?</b></summary>
 Livelli di cache: L1 di solito è la più piccola e veloce, i livelli successivi sono più capienti. Numero e condivisione dipendono dal processore.
 </details>
 
@@ -215,19 +215,19 @@ Un'operazione può richiedere più passi, e un'attesa della memoria può consuma
 > ⏸️ **Fissaggio:** abbina «istruzioni ripetute» e «posizioni vicine visitate in ordine» ai due tipi di località. Poi spiega perché un clock più veloce non rende la cache infinita.
 
 <details>
-<summary>🃏 Che cos'è il clock?</summary>
+<summary>🃏 <b>Che cos'è il clock?</b></summary>
 Un segnale periodico che dà il tempo ai circuiti sincroni.
 </details>
 <details>
-<summary>🃏 Che cosa misura la frequenza del clock?</summary>
+<summary>🃏 <b>Che cosa misura la frequenza del clock?</b></summary>
 I cicli al secondo, in hertz: 2 GHz sono due miliardi di cicli al secondo.
 </details>
 <details>
-<summary>🃏 2 GHz significa due miliardi di istruzioni completate al secondo?</summary>
+<summary>🃏 <b>2 GHz significa due miliardi di istruzioni completate al secondo?</b></summary>
 No. Un'operazione può richiedere più passi e le attese della memoria consumano tempo senza produrre risultati.
 </details>
 <details>
-<summary>🃏 Come si confrontano davvero due sistemi?</summary>
+<summary>🃏 <b>Come si confrontano davvero due sistemi?</b></summary>
 Guardando il lavoro svolto e il tempo impiegato, non solo i GHz.
 </details>
 
@@ -246,19 +246,19 @@ Questo valore descrive un ciclo di clock. Per ricavare il tempo di un intero pro
 > 🔧 **Collegamento con il laboratorio:** «cache 12 MB» nella scheda di una CPU e «RAM 16 GB» nella scheda del PC non sono due quantità dello stesso spazio di lavoro. La cache riduce alcune attese; più RAM permette di tenere attivi più dati. Risolvono problemi diversi.
 
 <details>
-<summary>🃏 Che relazione c'è fra frequenza e periodo?</summary>
+<summary>🃏 <b>Che relazione c'è fra frequenza e periodo?</b></summary>
 Il periodo è l'inverso della frequenza: T = 1 / f.
 </details>
 <details>
-<summary>🃏 Quanto dura un ciclo a 2 GHz?</summary>
+<summary>🃏 <b>Quanto dura un ciclo a 2 GHz?</b></summary>
 0,5 nanosecondi.
 </details>
 <details>
-<summary>🃏 Dal periodo si ricava il tempo di un programma?</summary>
+<summary>🃏 <b>Dal periodo si ricava il tempo di un programma?</b></summary>
 No, mancano altre informazioni. Due CPU con la stessa frequenza non eseguono per forza un programma nello stesso tempo.
 </details>
 <details>
-<summary>🃏 Cache da 12 MB e RAM da 16 GB sono lo stesso tipo di risorsa?</summary>
+<summary>🃏 <b>Cache da 12 MB e RAM da 16 GB sono lo stesso tipo di risorsa?</b></summary>
 No. La cache riduce alcune attese, più RAM permette di tenere attivi più dati.
 </details>
 
@@ -277,15 +277,15 @@ No. La cache riduce alcune attese, più RAM permette di tenere attivi più dati.
 > Un'altra idea per usare meglio il tempo è sovrapporre le fasi di istruzioni diverse, come in una catena di montaggio 🏭: si chiama **pipeline** e la studieremo nel prossimo bimestre.
 
 <details>
-<summary>🃏 Che cosa misura l'AMAT?</summary>
+<summary>🃏 <b>Che cosa misura l'AMAT?</b></summary>
 Il tempo medio di accesso alla memoria: tempo di consultazione della cache più probabilità di miss per penalità aggiuntiva.
 </details>
 <details>
-<summary>🃏 Un AMAT di 4,5 ns significa che ogni accesso dura 4,5 ns?</summary>
+<summary>🃏 <b>Un AMAT di 4,5 ns significa che ogni accesso dura 4,5 ns?</b></summary>
 No. È una media fra hit veloci e miss molto più lenti.
 </details>
 <details>
-<summary>🃏 Che cos'è, a grandi linee, una pipeline?</summary>
+<summary>🃏 <b>Che cos'è, a grandi linee, una pipeline?</b></summary>
 Sovrapporre le fasi di istruzioni diverse, come in una catena di montaggio. La studieremo nel prossimo bimestre.
 </details>
 

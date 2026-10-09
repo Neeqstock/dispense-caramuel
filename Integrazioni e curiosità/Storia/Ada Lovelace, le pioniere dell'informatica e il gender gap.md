@@ -21,7 +21,11 @@ Ada pote' quindi immaginare il programma non dal nulla, ma collegando matematica
 
 Ada non fu un'eccezione isolata. Nella storia dell'informatica hanno avuto ruoli decisivi, tra le altre, **le operatrici e programmatrici dell'ENIAC**, **Grace Hopper**, che contribui' allo sviluppo dei linguaggi e dei compilatori, e le matematiche del progetto spaziale statunitense, come **Katherine Johnson**, **Dorothy Vaughan** e **Mary Jackson**. Per molto tempo il lavoro di programmazione fu presentato anche come un'attivita' metodica di analisi e organizzazione, non come un mestiere esclusivamente maschile.
 
-Il divario di genere si e' ampliato soprattutto nella seconda meta' del Novecento, quando l'informatica e' stata progressivamente associata all'immagine del “tecnico naturalmente portato”, quando i computer domestici venivano pubblicizzati soprattutto ai ragazzi e quando stereotipi, minore accesso alle opportunita' e scarsa visibilita' dei modelli femminili hanno influenzato le scelte scolastiche e professionali. Non esiste una singola causa e non e' un problema di capacita': e' un problema di accesso, aspettative, ambiente di lavoro e riconoscimento.
+Il divario di genere si e' ampliato soprattutto nella seconda meta' del Novecento, quando l'informatica e' stata progressivamente associata all'immagine del “tecnico naturalmente portato”, quando i computer domestici venivano pubblicizzati soprattutto ai ragazzi e quando stereotipi, minore accesso alle opportunita' e scarsa visibilita' dei modelli femminili hanno influenzato le scelte scolastiche e professionali. 
+
+> Quando il Personal Computer è diventato mainstream, ed è entrato in tutte le case, molto spesso i papà mostravano il computer unicamente ai figli maschi
+
+Non esiste una singola causa e non e' un problema di capacita': e' un problema di accesso, aspettative, ambiente di lavoro e riconoscimento.
 
 In classe il punto non e' contrapporre ragazze e ragazzi, ma osservare come una cultura tecnica diventa piu' ricca quando **chiunque** puo' riconoscersi nei suoi esempi e partecipare. Una domanda utile e': quali ostacoli concreti possiamo rimuovere nel nostro laboratorio, per esempio distribuendo i ruoli, dando a tutti tempo sulle attrezzature e valutando i procedimenti invece degli stereotipi?
 

@@ -10,7 +10,7 @@
 
 ## 🗺️ Mappa
 
-![](immagini/icon_mappa.svg)
+![](icon_mappa.svg)
 
 ```mermaid
 mindmap
@@ -27,7 +27,7 @@ mindmap
 
 ## 📜 Il collasso che non è arrivato
 
-![](immagini/icon_storia.svg)
+![](icon_storia.svg)
 
 Primi anni Novanta. Internet cresce così in fretta che gli ingegneri sono preoccupati. I problemi sono due.
 
@@ -45,7 +45,7 @@ CIDR non ha fatto nulla di spettacolare. Ha solo cambiato dove si scrive il conf
 
 ## 🔢 Il prefisso
 
-![](immagini/icon_protocolli.svg)
+![](icon_protocolli.svg)
 
 ### ✅ CIDR scrive il prefisso accanto all'indirizzo
 
@@ -222,7 +222,7 @@ Che i blocchi siano contigui e allineati e che il prefisso non includa indirizzi
 
 ## ✏️ Esercizi
 
-![](immagini/icon_esercizi.svg)
+![](icon_esercizi.svg)
 
 1. **Completa.** Quanti bit host restano in una `/28`? Quanti indirizzi ha il blocco? Quanti host ordinari?
 2. **Trova la rete.** Per `192.168.7.160/27`: rete, host ordinari, broadcast.
@@ -234,7 +234,7 @@ Che i blocchi siano contigui e allineati e che il prefisso non includa indirizzi
 
 ## 📚 Fonti e risorse
 
-![](immagini/icon_fonti.svg)
+![](icon_fonti.svg)
 
 - [RFC 4632 - Classless Inter-domain Routing](https://www.rfc-editor.org/rfc/rfc4632): la versione aggiornata (2006) dello standard CIDR. Per consultazione.
 - [Wikipedia - Classless Inter-Domain Routing](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing): storia e motivazioni del 1993.

@@ -202,12 +202,12 @@ Un terabyte: 10¹² byte, cioè mille GB.
 
 Le memorie elettroniche crescono per **potenze di 2**, e 2¹⁰ = 1024 è vicino a 1000. Per anni «kilobyte» ha voluto dire a volte 1000 e a volte 1024 byte. Alla fine degli anni '90 gli standard hanno separato i due significati con nuovi nomi:
 
-| Scala decimale | Valore | Scala binaria | Valore |
-|---|---:|---|---:|
-| kB | 10³ | KiB | 2¹⁰ = 1024 |
-| MB | 10⁶ | MiB | 2²⁰ |
-| GB | 10⁹ | GiB | 2³⁰ |
-| TB | 10¹² | TiB | 2⁴⁰ |
+| Scala decimale | Valore | Scala binaria |     Valore |
+| -------------- | -----: | ------------- | ---------: |
+| kB             |    10³ | KiB           | 2¹⁰ = 1024 |
+| MB             |    10⁶ | MiB           |        2²⁰ |
+| GB             |    10⁹ | GiB           |        2³⁰ |
+| TB             |   10¹² | TiB           |        2⁴⁰ |
 
 🧪 Un disco venduto come **500 GB** ha 500 · 10⁹ byte, cioè circa **465 GiB**. Alcuni sistemi (per esempio Windows) scrivono «GB» ma calcolano in GiB: sembra che manchi spazio. Non è sparito nulla: **sono cambiate le unità**.
 

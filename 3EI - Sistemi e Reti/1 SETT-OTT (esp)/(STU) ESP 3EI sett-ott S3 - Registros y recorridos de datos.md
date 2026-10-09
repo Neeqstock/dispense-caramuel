@@ -60,31 +60,31 @@ Estos nombres describen nuestra máquina didáctica. No todas las CPU comerciale
 
 ⚠️ **PC no significa computador personal aquí.** En esta lección es *Program Counter*, el contador de programa. En el lenguaje cotidiano PC también significa *Personal Computer*. La sigla es la misma, pero no la cosa: en informática conviene preguntarse «¿PC de qué tipo?». 😄
 
-<details><summary>🃏 ¿Qué es un registro?</summary>
+<details><summary>🃏 <b>¿Qué es un registro?</b></summary>
 Una memoria pequeña y de capacidad limitada dentro del procesador.
 </details>
-<details><summary>🃏 ¿Para qué sirven registros generales como R1, R2 y R3?</summary>
+<details><summary>🃏 <b>¿Para qué sirven registros generales como R1, R2 y R3?</b></summary>
 Para guardar operandos y resultados temporales.
 </details>
-<details><summary>🃏 ¿Qué contiene el PC, Program Counter?</summary>
+<details><summary>🃏 <b>¿Qué contiene el PC, Program Counter?</b></summary>
 La dirección de la siguiente instrucción que se debe obtener.
 </details>
-<details><summary>🃏 ¿Qué contiene el IR, Instruction Register?</summary>
+<details><summary>🃏 <b>¿Qué contiene el IR, Instruction Register?</b></summary>
 La instrucción que está ejecutando la CPU.
 </details>
-<details><summary>🃏 ¿Qué contiene el MAR?</summary>
+<details><summary>🃏 <b>¿Qué contiene el MAR?</b></summary>
 La dirección de la celda del acceso actual, tanto para instrucciones como para datos.
 </details>
-<details><summary>🃏 ¿Qué contiene el MDR?</summary>
+<details><summary>🃏 <b>¿Qué contiene el MDR?</b></summary>
 El contenido que la CPU recibe de la memoria o envía a ella.
 </details>
-<details><summary>🃏 ¿Qué son los indicadores o *flags*?</summary>
+<details><summary>🃏 <b>¿Qué son los indicadores o *flags*?</b></summary>
 Información resumida sobre algunas propiedades de un resultado; no contienen el resultado completo.
 </details>
-<details><summary>🃏 Si PC y MAR tienen el mismo número, ¿cumplen la misma función?</summary>
+<details><summary>🃏 <b>Si PC y MAR tienen el mismo número, ¿cumplen la misma función?</b></summary>
 No. PC sigue la secuencia de instrucciones; MAR se usa en cada acceso a memoria, también para datos.
 </details>
-<details><summary>🃏 ¿Todas las CPU tienen registros llamados PC, IR, MAR y MDR?</summary>
+<details><summary>🃏 <b>¿Todas las CPU tienen registros llamados PC, IR, MAR y MDR?</b></summary>
 No. Son los nombres de nuestra máquina didáctica, no necesariamente los de una CPU comercial.
 </details>
 
@@ -96,13 +96,13 @@ No. Son los nombres de nuestra máquina didáctica, no necesariamente los de una
 
 En los ejemplos usamos celdas abstractas: cada celda contiene un dato entero o una instrucción completa. Más adelante estudiaremos bytes y capacidad, indicando las hipótesis necesarias.
 
-<details><summary>🃏 ¿Qué significa `R1 <- 7`?</summary>
+<details><summary>🃏 <b>¿Qué significa `R1 <- 7`?</b></summary>
 Copia 7 en R1. No es una igualdad y no vacía la fuente.
 </details>
-<details><summary>🃏 ¿Qué indica `MEM[40]`?</summary>
+<details><summary>🃏 <b>¿Qué indica `MEM[40]`?</b></summary>
 El contenido de la celda cuya dirección es 40, no el número 40.
 </details>
-<details><summary>🃏 ¿Qué puede contener una celda abstracta en nuestros ejemplos?</summary>
+<details><summary>🃏 <b>¿Qué puede contener una celda abstracta en nuestros ejemplos?</b></summary>
 Un dato entero o una instrucción completa.
 </details>
 
@@ -133,16 +133,16 @@ Una lectura normal **no borra** el valor de la memoria: al terminar, MEM[40] sig
 
 > ⏸️ **Fijación:** repite la secuencia con MEM[60] = 14 y el registro destino R2. En cada paso di en voz alta «dirección» o «contenido».
 
-<details><summary>🃏 ¿Cuáles son los pasos de una lectura de memoria?</summary>
+<details><summary>🃏 <b>¿Cuáles son los pasos de una lectura de memoria?</b></summary>
 MAR recibe la dirección; la CU solicita READ; se espera; MDR recibe el contenido; el valor se copia al registro destino.
 </details>
-<details><summary>🃏 ¿Por qué hay que esperar durante una lectura?</summary>
+<details><summary>🃏 <b>¿Por qué hay que esperar durante una lectura?</b></summary>
 Porque la memoria no responde instantáneamente.
 </details>
-<details><summary>🃏 Después de leer, ¿el valor sigue en la memoria?</summary>
+<details><summary>🃏 <b>Después de leer, ¿el valor sigue en la memoria?</b></summary>
 Sí. Una lectura normal no borra el contenido de la celda.
 </details>
-<details><summary>🃏 Al leer la celda 40, ¿el registro destino recibe 40?</summary>
+<details><summary>🃏 <b>Al leer la celda 40, ¿el registro destino recibe 40?</b></summary>
 No. Recibe el contenido de la celda; 40 indica dónde buscar.
 </details>
 
@@ -158,10 +158,10 @@ IR = LOAD R1,[40] <-- MDR <----+
 
 Cuando se ejecuta `LOAD`, el MAR recibe 40 y el MDR recibe 23. Mientras tanto, el IR conserva la instrucción. Así la CPU no pierde la orden mientras obtiene el dato. En la próxima lección completaremos la secuencia mostrando cómo avanza el PC.
 
-<details><summary>🃏 ¿Cómo llega una instrucción al IR?</summary>
+<details><summary>🃏 <b>¿Cómo llega una instrucción al IR?</b></summary>
 Se copia PC en MAR, se solicita una lectura, la instrucción llega a MDR y luego se copia en IR.
 </details>
-<details><summary>🃏 Durante un `LOAD`, ¿por qué IR y MDR contienen cosas distintas?</summary>
+<details><summary>🃏 <b>Durante un `LOAD`, ¿por qué IR y MDR contienen cosas distintas?</b></summary>
 IR conserva la instrucción y MDR recibe el dato solicitado. Así la CPU no pierde la orden.
 </details>
 
@@ -171,13 +171,13 @@ Queremos copiar el valor R3 = 12 a la celda 50. Preparamos `MAR <- 50` y `MDR <-
 
 Hay que preparar la dirección y el valor antes de escribir. Una dirección equivocada modifica otra celda, aunque el valor sea correcto.
 
-<details><summary>🃏 ¿Cuáles son los pasos de una escritura en memoria?</summary>
+<details><summary>🃏 <b>¿Cuáles son los pasos de una escritura en memoria?</b></summary>
 MAR recibe la dirección destino, MDR recibe el valor y luego la CU activa WRITE.
 </details>
-<details><summary>🃏 ¿Qué ocurre con el contenido anterior de la celda escrita?</summary>
+<details><summary>🃏 <b>¿Qué ocurre con el contenido anterior de la celda escrita?</b></summary>
 Se reemplaza por el valor nuevo. El registro fuente conserva su valor.
 </details>
-<details><summary>🃏 ¿Por qué se preparan la dirección y el valor antes de WRITE?</summary>
+<details><summary>🃏 <b>¿Por qué se preparan la dirección y el valor antes de WRITE?</b></summary>
 Porque una dirección incorrecta modifica otra celda aunque el valor sea correcto.
 </details>
 
@@ -191,16 +191,16 @@ Otros indicadores comunes: **carry** (acarreo en operaciones sin signo), **sign/
 
 > 🔧 **Conexión con el laboratorio:** añadir un módulo RAM aumenta la memoria principal, no el número de registros de la CPU. La capacidad indicada en un módulo no describe la memoria interna del procesador.
 
-<details><summary>🃏 ¿Para qué sirve el indicador Z?</summary>
+<details><summary>🃏 <b>¿Para qué sirve el indicador Z?</b></summary>
 Señala que el resultado es cero, por ejemplo después de 7 - 7.
 </details>
-<details><summary>🃏 ¿Qué indican carry, sign y overflow?</summary>
+<details><summary>🃏 <b>¿Qué indican carry, sign y overflow?</b></summary>
 Carry: acarreo en operaciones sin signo. Sign o negative: bit de signo. Overflow: resultado fuera del intervalo con signo.
 </details>
-<details><summary>🃏 ¿Todas las CPU actualizan los indicadores del mismo modo?</summary>
+<details><summary>🃏 <b>¿Todas las CPU actualizan los indicadores del mismo modo?</b></summary>
 No. Depende de la arquitectura y de la instrucción.
 </details>
-<details><summary>🃏 ¿Añadir RAM aumenta el número de registros de la CPU?</summary>
+<details><summary>🃏 <b>¿Añadir RAM aumenta el número de registros de la CPU?</b></summary>
 No. Aumenta la memoria principal, no la memoria interna del procesador.
 </details>
 
@@ -210,13 +210,13 @@ No. Aumenta la memoria principal, no la memoria interna del procesador.
 >
 > La máquina no se ha equivocado: se ha alcanzado el límite de la representación elegida. Si interpretamos los mismos bits como números con signo, cambian el intervalo y el significado de los indicadores. Por eso «carry» y «overflow» no son dos nombres para lo mismo. 🎮 Algunos fallos gráficos de videojuegos antiguos nacían de contadores que «volvían a empezar desde cero».
 
-<details><summary>🃏 ¿Qué valores sin signo representa un registro de 4 bits?</summary>
+<details><summary>🃏 <b>¿Qué valores sin signo representa un registro de 4 bits?</b></summary>
 De 0 a 15: 16 configuraciones.
 </details>
-<details><summary>🃏 ¿Qué ocurre al calcular 15 + 1 con 4 bits?</summary>
+<details><summary>🃏 <b>¿Qué ocurre al calcular 15 + 1 con 4 bits?</b></summary>
 Se necesitarían cinco bits, `10000`. Si se guardan solo cuatro, queda `0000` y hay acarreo.
 </details>
-<details><summary>🃏 ¿Carry y overflow son lo mismo?</summary>
+<details><summary>🃏 <b>¿Carry y overflow son lo mismo?</b></summary>
 No. Carry se refiere a operaciones sin signo; overflow, a operaciones con signo.
 </details>
 
