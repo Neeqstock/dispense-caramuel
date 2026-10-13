@@ -6,6 +6,8 @@
 
 > **Nota:** no, non costruiremo un gestionale. Costruiremo un programma che **suona davvero**.
 
+**Come leggere gli esempi:** i commenti evidenziano le decisioni e le differenze rispetto alla versione precedente. “Estensione” indica una funzionalità aggiunta; “refactoring” indica una struttura modificata mantenendo i comportamenti esistenti. I frammenti brevi illustrano parti di una classe, non sono sempre programmi autonomi. I commenti non cambiano l'esecuzione del codice.
+
 ```mermaid
 flowchart LR
     A[Idea musicale] --> B[Prima soluzione]
@@ -86,9 +88,11 @@ Una prima versione potrebbe essere questa:
 ```java
 class Improvvisatore {
     void suona(String stile) {
+        // Prima versione: il generatore casuale nasce qui e non si controlla nei test.
         Random random = new Random();
         int[] gradi;
 
+        // Ogni nuovo stile richiede di modificare questa catena di condizioni.
         if (stile.equals("maggiore")) {
             gradi = new int[] { 0, 2, 4, 5, 7, 9, 11, 12 };
         } else if (stile.equals("blues")) {
@@ -97,12 +101,14 @@ class Improvvisatore {
             throw new IllegalArgumentException("Stile sconosciuto");
         }
 
+        // Generazione e conversione in Staccato sono ancora mescolate.
         String melodia = "";
         for (int i = 0; i < 8; i++) {
             int nota = 60 + gradi[random.nextInt(gradi.length)];
             melodia = melodia + nota + "q ";
         }
 
+        // Il risultato viene suonato, ma non restituito come dato verificabile.
         new Player().play("T120 I[Piano] " + melodia);
     }
 }
@@ -154,6 +160,8 @@ javac -cp lib/jfugue-5.0.9.jar -d out src/*.java
 java  -cp "lib/jfugue-5.0.9.jar;out" Studio
 ```
 
+Il primo comando rende il JAR disponibile al compilatore e scrive le classi in `out`; il secondo rende disponibili al programma sia il JAR sia le classi compilate. Le dipendenze servono anche durante l'esecuzione.
+
 Su Linux e macOS il separatore del classpath è `:` invece di `;`.
 
 ### Far suonare il computer
@@ -163,6 +171,7 @@ import org.jfugue.player.Player;
 
 public class PrimoSuono {
     public static void main(String[] args) {
+        // Delega alla libreria la riproduzione: qui non generiamo eventi MIDI a mano.
         new Player().play("T120 I[Piano] 60q 62q 64q 65q 67q");
     }
 }
@@ -188,7 +197,197 @@ JFugue usa `javax.sound.midi`, già incluso in Java, quindi non servono altri co
 - Valutare la **manutenzione**. L'ultima versione di JFugue è del 2017: la libreria funziona, ma non riceve aggiornamenti da anni.
 - Non aggiungere una libreria enorme per un problema minuscolo.
 
-Nei progetti reali le dipendenze sono normalmente gestite da strumenti come **Maven** o **Gradle**, che scaricano automaticamente le librerie dichiarate e le loro dipendenze. JFugue, non essendo pubblicato su Maven Central, ci obbliga al metodo manuale: anche questo fa parte del mestiere.
+Nei progetti reali le dipendenze sono normalmente gestite da strumenti come **Maven** o **Gradle**, che scaricano automaticamente le librerie dichiarate e le loro dipendenze. Anche un JAR non disponibile su Maven Central può essere gestito da Maven, installandolo nel repository locale: vediamo entrambi i casi.
+
+### 🛠️ Maven: dichiarare le librerie invece di copiarle
+
+**Maven** è uno strumento per gestire il progetto e automatizzare compilazione, test e creazione dei pacchetti. Le dipendenze si dichiarano nel file **`pom.xml`**, il *Project Object Model*.
+
+Quando compila il progetto, Maven cerca le dipendenze nel proprio **repository locale**, normalmente nella cartella `.m2\repository` dell'utente. Se mancano, le scarica dai repository configurati; Maven Central è quello predefinito.
+
+Il vantaggio per il gruppo: si condivide il POM, anziché passarsi cartelle di JAR senza sapere quali versioni contengano.
+
+#### 1. Preparare un progetto Maven
+
+Occorrono un **JDK** e Maven installato, con il comando `mvn` disponibile nel terminale. Per verificare:
+
+```powershell
+# Controlla Maven e il JDK che utilizza; non compila il progetto.
+mvn --version
+```
+
+L'output indica anche il Java usato da Maven. Se il comando non viene riconosciuto, bisogna completare l'installazione o la configurazione del PATH: non è un errore della libreria.
+
+Per l'esempio usiamo **Java 17**. Una struttura minima è:
+
+```text
+demo-librerie
+├── pom.xml
+└── src
+    └── main
+        └── java
+            └── DemoJson.java
+```
+
+I test, quando presenti, vanno in `src\test\java`. Maven genera i risultati nella cartella `target`.
+
+#### 2. Dichiarare una libreria presente su Maven Central
+
+Come esempio semplice usiamo **Gson**, che trasforma oggetti Java in JSON. Non sostituisce JFugue: serve a mostrare il meccanismo di gestione di una dipendenza pubblicata su Central.
+
+Questo è un POM completo per la dimostrazione:
+
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Coordinate del nostro progetto, non della libreria. -->
+    <groupId>it.scuola</groupId>
+    <artifactId>demo-librerie</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!-- Compilazione per Java 17 e codifica dei sorgenti. -->
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Maven risolve questa versione di Gson: non serve copiarne il JAR in lib. -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.13.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Il plugin compila; non e' una libreria chiamata dal programma. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.1</version>
+            </plugin>
+            <!-- Avvia il main includendo le dipendenze nel classpath. -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.6.0</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
+
+Le tre coordinate identificano il componente:
+
+- **`groupId`**: gruppo o organizzazione;
+- **`artifactId`**: nome dell'artefatto;
+- **`version`**: versione richiesta.
+
+La versione di Gson è fissata per questo esempio, non indicata come “l'ultima per sempre”. Prima di usare una dipendenza si controllano documentazione, compatibilità e avvisi di sicurezza.
+
+Le **dipendenze** sono usate dal programma; i **plugin** eseguono attività di build, come compilare o avviare la dimostrazione. Sono ruoli diversi.
+
+#### 3. Usare la libreria e avviare il programma
+
+In `src\main\java\DemoJson.java`:
+
+```java
+import com.google.gson.Gson;
+import java.util.List;
+
+public class DemoJson {
+    public static void main(String[] args) {
+        // Dati della melodia: indipendenti dalla riproduzione audio.
+        List<Integer> melodia = List.of(60, 64, 67);
+        // Gson serializza i dati; non modifica e non suona le note.
+        System.out.println(new Gson().toJson(melodia));
+    }
+}
+```
+
+Nel terminale, dalla cartella che contiene il POM:
+
+```powershell
+# Risolve le dipendenze del POM e compila i sorgenti.
+mvn compile
+# Avvia il main; le virgolette mantengono unito l'argomento in PowerShell.
+mvn exec:java "-Dexec.mainClass=DemoJson"
+```
+
+Il primo comando risolve le dipendenze e compila; il secondo avvia il programma con le dipendenze nel classpath.
+
+Output:
+
+```text
+[60,64,67]
+```
+
+Scrivere l'`import` non scarica Gson: la dipendenza viene risolta grazie al POM.
+
+#### 4. Leggere le dipendenze e creare il pacchetto
+
+```powershell
+# Visualizza anche le dipendenze richieste da altre librerie.
+mvn dependency:tree
+# Esegue i test presenti e configurati nel progetto.
+mvn test
+# Produce il pacchetto dopo le fasi precedenti; non crea da solo un JAR con tutte le librerie.
+mvn package
+```
+
+- `dependency:tree` mostra anche le dipendenze transitive;
+- `test` esegue i test configurati, se presenti;
+- `package` esegue le fasi precedenti, inclusi i test, e produce il pacchetto.
+
+Un comando riuscito senza test non dimostra che il comportamento sia stato verificato. Inoltre il JAR standard prodotto da Maven **non include automaticamente tutte le librerie** e non è necessariamente avviabile con un doppio clic.
+
+### 🎹 Gestire con Maven anche il JAR di JFugue
+
+Se abbiamo già ottenuto il JAR di JFugue da una fonte verificata, possiamo registrarlo nel repository locale. Dalla cartella del progetto, con il file in `lib`:
+
+```powershell
+# Registra il file gia' scaricato, con coordinate locali: non lo pubblica su Central.
+mvn org.apache.maven.plugins:maven-install-plugin:3.1.4:install-file "-Dfile=lib\jfugue-5.0.9.jar" "-DgroupId=it.scuola.librerie.locali" "-DartifactId=jfugue" "-Dversion=5.0.9" "-Dpackaging=jar" "-DgeneratePom=true"
+```
+
+**Queste sono coordinate locali scelte per la classe**, non coordinate ufficiali pubblicate su Maven Central. Il comando non scarica JFugue: registra il file già presente.
+
+Poi aggiungiamo alle dipendenze del POM:
+
+```xml
+<!-- Aggiunta al POM: usa le stesse coordinate assegnate nell'installazione locale. -->
+<dependency>
+    <groupId>it.scuola.librerie.locali</groupId>
+    <artifactId>jfugue</artifactId>
+    <version>5.0.9</version>
+</dependency>
+```
+
+Le sorgenti dell'improvvisatore vanno in `src\main\java`. Se `Studio` non ha una dichiarazione di package, possiamo avviarlo così, usando i plugin del POM precedente:
+
+```powershell
+# Compila il progetto musicale con le dipendenze dichiarate nel POM.
+mvn compile
+# Rispetto a DemoJson cambia la classe principale, non il modo di risolvere le librerie.
+mvn exec:java "-Dexec.mainClass=Studio"
+```
+
+Se la classe appartiene a un package, si usa il nome completo, per esempio `it.scuola.musica.Studio`.
+
+**Limite del repository locale:** il compagno che riceve soltanto il POM non possiede automaticamente questo JAR. Deve installare lo stesso file con le stesse coordinate. Per un gruppo professionale si può usare un repository condiviso autorizzato, rispettando la licenza.
+
+Il POM generato dall'installazione locale non ricostruisce automaticamente eventuali dipendenze del JAR: anche quelle vanno conosciute e dichiarate quando necessarie.
+
+**Collegamento con Log4Shell:** `dependency:tree` aiuta a conoscere i componenti, ma non è uno scanner di vulnerabilità e non dimostra quali versioni siano realmente in esecuzione su un server.
+
+**Per l'ora di lezione:** mostrare POM, coordinate e un solo comando. La configurazione completa e l'installazione locale di JFugue sono approfondimenti da preparare prima o svolgere in laboratorio.
+
+Fonti: [Maven in cinque minuti](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) e [installare JAR di terze parti nel repository locale](https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html).
 
 ## 🧪 Il problema interessante: come si testa la musica?
 
@@ -197,7 +396,7 @@ Il dipartimento chiede di essere sicuro che il programma «non sbagli le note».
 Proviamo a scrivere una verifica automatica del codice iniziale. Ci accorgiamo subito che non sappiamo come fare: il metodo `suona` non **restituisce** niente. Produce aria che vibra.
 
 ```java
-// Che cosa dovremmo controllare?
+// Il metodo non restituisce note: questa chiamata da sola non verifica il risultato.
 improvvisatore.suona("blues");
 ```
 
@@ -304,6 +503,7 @@ import java.util.Random;
 public interface StileMelodico {
     String nome();
 
+    // Novita': restituiamo dati e riceviamo Random dall'esterno, senza suonare.
     List<Integer> generaNote(int tonica, int quanteNote, Random random);
 }
 ```
@@ -316,6 +516,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ScalaMaggiore implements StileMelodico {
+    // La scelta della scala, prima dentro gli if, appartiene ora a questo stile.
     private static final int[] GRADI = { 0, 2, 4, 5, 7, 9, 11, 12 };
 
     @Override
@@ -325,10 +526,12 @@ public class ScalaMaggiore implements StileMelodico {
 
     @Override
     public List<Integer> generaNote(int tonica, int quanteNote, Random random) {
+        // Al posto della stringa sonora produciamo una lista verificabile.
         List<Integer> note = new ArrayList<>();
         for (int i = 0; i < quanteNote; i++) {
             note.add(tonica + GRADI[random.nextInt(GRADI.length)]);
         }
+        // Nessuna chiamata a Player: la riproduzione avviene in un altro componente.
         return note;
     }
 }
@@ -340,6 +543,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ScalaBlues implements StileMelodico {
+    // Stesso contratto della maggiore; cambiano gli intervalli della scala.
     private static final int[] GRADI = { 0, 3, 5, 6, 7, 10, 12 };
 
     @Override
@@ -349,6 +553,7 @@ public class ScalaBlues implements StileMelodico {
 
     @Override
     public List<Integer> generaNote(int tonica, int quanteNote, Random random) {
+        // Il ciclo e' ancora duplicato: piu' avanti lo estrarremo con un refactoring.
         List<Integer> note = new ArrayList<>();
         for (int i = 0; i < quanteNote; i++) {
             note.add(tonica + GRADI[random.nextInt(GRADI.length)]);
@@ -365,13 +570,16 @@ import java.util.List;
 import java.util.Random;
 
 public class Improvvisatore {
+    // Dipendiamo dal contratto, non da ScalaBlues o ScalaMaggiore.
     private final StileMelodico stile;
 
     public Improvvisatore(StileMelodico stile) {
+        // Chi assembla il programma sceglie lo stile e ce lo fornisce.
         this.stile = stile;
     }
 
     public List<Integer> improvvisa(int tonica, int quanteNote, Random random) {
+        // Sostituisce gli if della prima versione con una delega polimorfica.
         return stile.generaNote(tonica, quanteNote, random);
     }
 }
@@ -384,8 +592,10 @@ import java.util.List;
 
 public class TraduttoreStaccato {
     public String traduci(List<Integer> note) {
+        // La conversione prima mescolata alla generazione ha ora una responsabilita' separata.
         StringBuilder melodia = new StringBuilder();
         for (int nota : note) {
+            // Conserviamo la durata q della prima versione.
             melodia.append(nota).append("q ");
         }
         return melodia.toString().trim();
@@ -397,6 +607,7 @@ L'uscita, cioè la destinazione della melodia:
 
 ```java
 public interface Uscita {
+    // Contratto della destinazione: chi lo usa non deve conoscere Player o i file MIDI.
     void riproduci(String staccato);
 }
 ```
@@ -406,10 +617,12 @@ import org.jfugue.pattern.Pattern;
 import org.jfugue.player.Player;
 
 public class UscitaAudio implements Uscita {
+    // Il dettaglio della libreria audio e' isolato in questa implementazione.
     private final Player player = new Player();
 
     @Override
     public void riproduci(String staccato) {
+        // Manteniamo tempo e strumento della prima versione; cambiano solo le note ricevute.
         player.play(new Pattern("T120 I[Piano] " + staccato));
     }
 }
@@ -424,6 +637,7 @@ import org.jfugue.midi.MidiFileManager;
 import org.jfugue.pattern.Pattern;
 
 public class UscitaMidiFile implements Uscita {
+    // Stesso contratto di UscitaAudio, ma destinazione diversa.
     private final File file;
 
     public UscitaMidiFile(File file) {
@@ -433,9 +647,11 @@ public class UscitaMidiFile implements Uscita {
     @Override
     public void riproduci(String staccato) {
         try {
+            // Salva la melodia invece di riprodurla dagli altoparlanti.
             MidiFileManager.savePatternToMidi(
                     new Pattern("T120 I[Piano] " + staccato), file);
         } catch (IOException e) {
+            // Conserviamo la causa e segnaliamo l'errore: non fingiamo che il salvataggio sia riuscito.
             throw new UncheckedIOException(e);
         }
     }
@@ -450,15 +666,19 @@ import java.util.Random;
 
 public class Studio {
     public static void main(String[] args) {
+        // La scelta dello stile si sposta nel punto di assemblaggio, fuori dal coordinatore.
         StileMelodico stile = new ScalaBlues();
         Improvvisatore improvvisatore = new Improvvisatore(stile);
 
+        // Tonica, quantita' e sorgente casuale non sono piu' fissate dentro suona().
         List<Integer> note = improvvisatore.improvvisa(60, 8, new Random());
         System.out.println("Note MIDI: " + note);
 
+        // Seconda fase: dati -> testo musicale, senza generare nuove note.
         String staccato = new TraduttoreStaccato().traduci(note);
         System.out.println("Staccato: " + staccato);
 
+        // Terza fase: possiamo scegliere un'altra Uscita senza cambiare la generazione.
         Uscita uscita = new UscitaAudio();
         uscita.riproduci(staccato);
     }
@@ -476,6 +696,7 @@ E il computer suona.
 
 ---
 
+# Principi SOLID
 **SOLID** è un acronimo che raccoglie cinque principi di progettazione orientata agli oggetti. Non sono leggi matematiche e non garantiscono un buon programma. Sono criteri con cui discutere la qualità di un progetto.
 
 ### S — Single Responsibility Principle
@@ -501,6 +722,7 @@ Aggiungiamo la pentatonica minore:
 
 ```java
 public class PentatonicaMinore implements StileMelodico {
+    // Estensione: nuova classe e nuovi intervalli; Improvvisatore rimane invariato.
     private static final int[] GRADI = { 0, 3, 5, 7, 10, 12 };
 
     @Override
@@ -543,6 +765,7 @@ Uno stile che restituisse `-5` oppure `300` compilerebbe senza errori, ma romper
 `Uscita` richiede un solo metodo:
 
 ```java
+// Frammento del contratto: richiede solo l'operazione comune alle destinazioni.
 void riproduci(String staccato);
 ```
 
@@ -555,12 +778,14 @@ Se avessimo costruito un'unica grande interfaccia `GestoreMusicale` con `riprodu
 `Improvvisatore` non contiene:
 
 ```java
+// Prima: il campo accetta soltanto un dettaglio concreto.
 private ScalaBlues stile;
 ```
 
 ma:
 
 ```java
+// Dopo: qualsiasi implementazione che rispetta StileMelodico.
 private StileMelodico stile;
 ```
 
@@ -615,6 +840,7 @@ class ArpeggioMinoreTest {
     void generaIlNumeroDiNoteRichiesto() {
         StileMelodico arpeggio = new ArpeggioMinore();
 
+        // Verifichiamo la quantita', non la particolare sequenza estratta.
         List<Integer> note = arpeggio.generaNote(60, 8, new Random());
 
         assertEquals(8, note.size());
@@ -623,8 +849,10 @@ class ArpeggioMinoreTest {
     @Test
     void usaSoloLeNoteDellAccordoMinore() {
         StileMelodico arpeggio = new ArpeggioMinore();
+        // Con tonica 60 questi sono i valori ammessi dall'accordo minore.
         Set<Integer> ammesse = Set.of(60, 63, 67, 72);
 
+        // Controlliamo tutte le note del campione; non e' una prova per ogni input possibile.
         for (int nota : arpeggio.generaNote(60, 200, new Random())) {
             assertTrue(ammesse.contains(nota), "nota fuori accordo: " + nota);
         }
@@ -647,6 +875,7 @@ ROSSO → VERDE → REFACTOR
 
 ```java
 public class ArpeggioMinore implements StileMelodico {
+    // Nuova funzionalita' guidata dal test; il ciclo e' per ora quello degli altri stili.
     private static final int[] GRADI = { 0, 3, 7, 12 };
 
     @Override
@@ -680,10 +909,12 @@ import java.util.Random;
 
 public abstract class StileBasatoSuScala implements StileMelodico {
 
+    // Le sottoclassi forniscono solo la parte che varia: gli intervalli.
     protected abstract int[] gradi();
 
     @Override
     public List<Integer> generaNote(int tonica, int quanteNote, Random random) {
+        // Refactoring: il ciclo copiato nei quattro stili viene mantenuto qui una sola volta.
         List<Integer> note = new ArrayList<>();
         int[] gradi = gradi();
         for (int i = 0; i < quanteNote; i++) {
@@ -697,6 +928,7 @@ public abstract class StileBasatoSuScala implements StileMelodico {
 Ora ogni stile diventa minuscolo:
 
 ```java
+// Dopo il refactoring ereditiamo la generazione; non la riscriviamo.
 public class ScalaBlues extends StileBasatoSuScala {
 
     @Override
@@ -706,6 +938,7 @@ public class ScalaBlues extends StileBasatoSuScala {
 
     @Override
     protected int[] gradi() {
+        // Gli intervalli restano identici: cambia la struttura, non la scala prodotta.
         return new int[] { 0, 3, 5, 6, 7, 10, 12 };
     }
 }
@@ -722,9 +955,11 @@ C'è un dettaglio progettuale che sembra piccolo ma è decisivo: `generaNote` ri
 ```java
 @Test
 void conLoStessoSemeProduceLaStessaMelodia() {
+    // Due generatori distinti iniziano dallo stesso seme; non riusiamo uno gia' avanzato.
     List<Integer> prima = new ScalaBlues().generaNote(60, 16, new Random(42));
     List<Integer> seconda = new ScalaBlues().generaNote(60, 16, new Random(42));
 
+    // Confrontiamo la sequenza, non solo il numero di note.
     assertEquals(prima, seconda);
 }
 ```
@@ -1043,3 +1278,195 @@ java  -cp "lib/jfugue-5.0.9.jar;out" Studio
 L'obiettivo dell'ora non è imparare completamente UML, SOLID, Strategy, XP e Agile. È vedere che sono strumenti collegati:
 
 > **servono a costruire software che non soltanto funziona, ma può essere compreso, verificato e modificato.**
+
+## 🃏 Flashcard di ripasso
+
+**Come usarle:** rispondi a voce prima di aprire la soluzione. Poi prova a spiegare la risposta con un esempio musicale. Non occorre farle tutte durante l'ora: sono anche materiale per il ripasso.
+
+### 📦 Librerie e Maven
+
+<details>
+<summary>🃏 Che differenza c'è fra libreria e API?</summary>
+La libreria contiene funzionalità riutilizzabili; l'API è il contratto attraverso cui le utilizziamo, senza conoscere ogni dettaglio interno.
+</details>
+
+<details>
+<summary>🃏 Che cos'è un JAR?</summary>
+Un archivio che può contenere classi Java compilate e risorse. È un contenitore, non una garanzia di affidabilità.
+</details>
+
+<details>
+<summary>🃏 Scrivere un import scarica una libreria?</summary>
+No. L'import permette di usare un nome nel sorgente; la libreria deve essere disponibile nel classpath, manualmente o tramite uno strumento come Maven.
+</details>
+
+<details>
+<summary>🃏 A che cosa serve Maven?</summary>
+A gestire il progetto, risolvere dipendenze e automatizzare attività come compilazione, test e creazione del pacchetto.
+</details>
+
+<details>
+<summary>🃏 Che cosa si dichiara nel pom.xml?</summary>
+Informazioni sul progetto, dipendenze, proprietà e configurazione della build, compresi i plugin.
+</details>
+
+<details>
+<summary>🃏 Quali coordinate identificano una dipendenza Maven?</summary>
+groupId, artifactId e version: gruppo, artefatto e versione richiesta.
+</details>
+
+<details>
+<summary>🃏 Che differenza c'è fra repository locale e Maven Central?</summary>
+Il repository locale conserva artefatti sul computer dell'utente; Maven Central è un repository remoto da cui Maven può scaricarli.
+</details>
+
+<details>
+<summary>🃏 Che cos'è una dipendenza transitiva?</summary>
+Una libreria richiesta da un'altra dipendenza. Può far parte del nostro programma anche se non l'abbiamo scelta direttamente.
+</details>
+
+<details>
+<summary>🃏 Come possiamo visualizzare l'albero delle dipendenze?</summary>
+Con mvn dependency:tree. Mostra le relazioni risolte da Maven, ma non sostituisce una verifica delle vulnerabilità o dei sistemi distribuiti.
+</details>
+
+<details>
+<summary>🃏 Un JAR assente da Central può essere usato con Maven?</summary>
+Sì. Possiamo installarlo nel repository locale e dichiararne le coordinate nel POM. Gli altri membri del gruppo devono avere accesso allo stesso artefatto.
+</details>
+
+<details>
+<summary>🃏 Che differenza c'è fra dipendenza e plugin?</summary>
+La dipendenza serve al programma; il plugin svolge attività della build, come compilazione o esecuzione.
+</details>
+
+<details>
+<summary>🃏 Maven package inserisce automaticamente tutte le librerie nel JAR?</summary>
+No. Il pacchetto standard non contiene automaticamente le dipendenze e non è necessariamente un JAR eseguibile.
+</details>
+
+### 🎼 Design, UML e SOLID
+
+<details>
+<summary>🃏 Perché separiamo la generazione delle note dalla riproduzione?</summary>
+Per verificare i dati senza dipendere dall'audio e per poter cambiare l'uscita: suono, testo o file MIDI.
+</details>
+
+<details>
+<summary>🃏 Perché UML è utile se abbiamo già il codice?</summary>
+Permette di comunicare e discutere struttura e relazioni senza leggere subito tutti i dettagli del programma.
+</details>
+
+<details>
+<summary>🃏 Che cosa chiede Single Responsibility?</summary>
+Responsabilità coerenti: un componente dovrebbe avere un solo motivo principale per cambiare. Non significa un solo metodo.
+</details>
+
+<details>
+<summary>🃏 Come appare Open/Closed nell'improvvisatore?</summary>
+Possiamo aggiungere uno stile che rispetta il contratto senza riscrivere il nucleo che lo utilizza. Il nuovo stile deve comunque essere creato e selezionato.
+</details>
+
+<details>
+<summary>🃏 Che cosa significa rispettare Liskov?</summary>
+Un'implementazione deve mantenere le promesse del tipo generale: firme compatibili non bastano. Per esempio deve rispettare le condizioni concordate sulle note MIDI.
+</details>
+
+<details>
+<summary>🃏 Che cosa suggerisce Interface Segregation?</summary>
+Contratti mirati, senza imporre operazioni inutili. Uno stile che genera note non deve essere obbligato anche a riprodurre audio.
+</details>
+
+<details>
+<summary>🃏 Dove vediamo Dependency Inversion?</summary>
+Quando l'improvvisatore dipende dal contratto StileMelodico e non direttamente da ogni stile concreto.
+</details>
+
+<details>
+<summary>🃏 Che differenza c'è fra principio SOLID e design pattern?</summary>
+Un principio orienta la valutazione del progetto; un pattern descrive una soluzione ricorrente con ruoli e compromessi.
+</details>
+
+<details>
+<summary>🃏 Qual è l'idea di Strategy?</summary>
+Rendere intercambiabili comportamenti che rispettano lo stesso contratto. Nel caso musicale cambiamo lo stile senza riscrivere l'improvvisatore.
+</details>
+
+<details>
+<summary>🃏 Più classi e più pattern significano sempre un progetto migliore?</summary>
+No. Le astrazioni hanno un costo e devono risolvere variazioni reali, non soltanto rendere il progetto più complicato.
+</details>
+
+### 🧪 Test, XP e Agile
+
+<details>
+<summary>🃏 Si può verificare automaticamente un programma musicale?</summary>
+Sì: note, intervalli, numero di elementi e altri comportamenti sono verificabili. Ascoltare il risultato non sostituisce questi controlli; verificare la qualità percepita richiede anche valutazioni diverse.
+</details>
+
+<details>
+<summary>🃏 Perché controllare il generatore casuale aiuta i test?</summary>
+Permette di rendere riproducibili le verifiche. La casualità del programma non obbliga i test a dare risultati imprevedibili.
+</details>
+
+<details>
+<summary>🃏 Che cosa significano rosso, verde e refactor?</summary>
+Test che fallisce, minimo codice che lo fa passare, miglioramento della struttura mantenendo il comportamento.
+</details>
+
+<details>
+<summary>🃏 Aggiungere uno stile nuovo è refactoring?</summary>
+È un incremento funzionale. Il refactoring migliora la struttura conservando il comportamento osservabile esistente.
+</details>
+
+<details>
+<summary>🃏 Che cosa fanno driver e navigator?</summary>
+Nel pair programming il driver scrive, il navigator osserva e ragiona sul passo successivo. I ruoli si alternano e entrambi partecipano.
+</details>
+
+<details>
+<summary>🃏 Che differenza c'è fra iterativo e incrementale?</summary>
+Iterativo significa riesaminare e migliorare per cicli; incrementale significa aggiungere parti utilizzabili del prodotto.
+</details>
+
+<details>
+<summary>🃏 Agile significa niente documentazione o pianificazione?</summary>
+No. Privilegia feedback, collaborazione e adattamento, senza eliminare il valore di documenti e piani.
+</details>
+
+<details>
+<summary>🃏 Che rapporto c'è fra XP e Agile?</summary>
+XP è una metodologia agile con pratiche tecniche come pair programming, TDD, refactoring e integrazione continua. Agile è un insieme più generale di valori e principi.
+</details>
+
+### 🌍 Casi di studio
+
+<details>
+<summary>🃏 Che differenza c'è fra Log4j e Log4Shell?</summary>
+Log4j è una libreria Java di logging; Log4Shell è una vulnerabilità del 2021 che riguardava determinati componenti e versioni di Log4j 2.
+</details>
+
+<details>
+<summary>🃏 Quale confine veniva oltrepassato in Log4Shell?</summary>
+Testo che doveva essere registrato come dato poteva attivare interpretazioni e ricerche esterne; in condizioni sfruttabili la catena poteva portare a esecuzione di codice.
+</details>
+
+<details>
+<summary>🃏 Perché non basta aggiornare la libreria sul computer dello sviluppatore?</summary>
+La correzione deve arrivare ai sistemi realmente distribuiti. Bisogna verificare versioni in esecuzione e indagare eventuali compromissioni pregresse.
+</details>
+
+<details>
+<summary>🃏 Che cosa insegna Ariane 5 sul riuso?</summary>
+Bisogna verificare le ipotesi del componente nel nuovo contesto. Condizioni diverse possono rendere inadatto codice che prima funzionava.
+</details>
+
+<details>
+<summary>🃏 Due copie dello stesso software eliminano ogni rischio?</summary>
+No. Un difetto comune può far fallire entrambe: la ridondanza non elimina automaticamente gli errori di progetto.
+</details>
+
+<details>
+<summary>🃏 Un progetto SOLID che supera i test funzionali è sicuramente sicuro?</summary>
+No. Qualità del design, correttezza funzionale e sicurezza sono proprietà distinte e richiedono verifiche appropriate.
+</details>

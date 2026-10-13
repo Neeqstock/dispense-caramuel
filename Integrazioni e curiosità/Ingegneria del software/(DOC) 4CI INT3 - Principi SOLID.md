@@ -49,22 +49,18 @@ I principi SOLID sono cinque "medicine" contro questi sintomi. Hanno tutti lo st
 <summary>🃏 Che cos'è il software rot?</summary>
 Il degrado del codice che, a forza di modifiche fatte in fretta, diventa difficile da capire e da cambiare.
 </details>
-
 <details>
 <summary>🃏 Che cosa significa che un codice è rigido?</summary>
 Che ogni piccola modifica obbliga a cambiare molte parti del programma.
 </details>
-
 <details>
 <summary>🃏 Che cosa significa che un codice è fragile?</summary>
 Che una modifica in un punto rompe qualcosa in un altro punto, spesso lontano e inatteso.
 </details>
-
 <details>
 <summary>🃏 Che cosa significa che un codice è immobile?</summary>
 Che non si riesce a riusare una sua parte altrove, perché è legata a troppe altre cose.
 </details>
-
 <details>
 <summary>🃏 Qual è lo scopo comune dei principi SOLID?</summary>
 Rendere le modifiche al codice più facili e meno rischiose.

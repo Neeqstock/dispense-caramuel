@@ -41,6 +41,7 @@ Nove inviati, quattro tornati: è il *best effort* in versione piumata. Una rete
 
 ## 📦 Il protocollo IP
 ### ✅ IP inoltra pacchetti senza garanzie
+#fatto
 
 **IP** (*Internet Protocol*) dà a ogni interfaccia un indirizzo e porta **pacchetti** da una rete all'altra.
 
@@ -81,6 +82,7 @@ Dentro il campo dati di un frame (in S2 abbiamo visto il frame Ethernet).
 
 ## 🔢 L'indirizzo IPv4
 ### ✅ Un indirizzo IPv4 ha 32 bit
+#fatto
 
 Un indirizzo IPv4 è una sequenza di **32 bit**, divisa in quattro **ottetti** da 8 bit. Per leggerla comodamente, ogni ottetto si scrive in decimale (da 0 a 255) e si separa con un punto: è la **notazione decimale puntata**.
 
@@ -125,6 +127,8 @@ Un'interfaccia di rete, non un computer intero.
 ✏️ **Converti (3 min).** Scrivi in binario i quattro ottetti di `192.168.1.25`, usando la tabella dei pesi. Poi riconverti `00011001` e controlla di ottenere 25.
 
 ### ✅ Il prefisso separa rete e host
+#fatto 
+
 Una **rete IP**, o **sottorete**, è un gruppo di interfacce che condivide lo stesso prefisso. In una rete locale, lo **switch** inoltra i frame fra i dispositivi collegati; il **router** porta i pacchetti da una rete IP a un'altra. Qui «rete» indica un singolo gruppo locale, non Internet intera.
 
 Un indirizzo ha due parti: la **rete** (**NetID**) e l'**host** (**HostID**). In parole semplici, un host è un dispositivo collegato alla rete; più precisamente, l'indirizzo IPv4 identifica una sua **interfaccia di rete**. L'HostID individua quell'interfaccia dentro la rete. Ma dove finisce una parte e inizia l'altra? Lo dice il **prefisso**.
@@ -184,6 +188,7 @@ Il NetID identifica la rete; l'HostID identifica l'interfaccia dentro la rete.
 
 
 ### 🔍 L'AND con la maschera trova la rete
+#fatto
 
 Per trovare la rete, si fa l'**AND** bit a bit fra indirizzo e maschera. L'AND dà 1 solo se **entrambi** i bit sono 1.
 
@@ -225,7 +230,10 @@ No: `255.255.255.0` è la maschera di `/24`; per `192.168.1.25/24`, `192.168.1.0
 ✏️ **Prevedi, poi calcola (3 min).** Prima scrivi a mente la rete di `10.7.3.200/24`. Poi fai l'AND in binario sull'ultimo ottetto per controllare.
 
 ### 🔍 Indirizzi privati e indirizzi speciali
+#fatto
+
 Alcuni indirizzi hanno un **uso riservato**; altri sono semplicemente comuni. <u>`192.168.1.1` è un indirizzo privato spesso scelto per il router, non un indirizzo speciale riservato proprio ai router.</u>
+(non è detto che dietro a 192.168.1.1 ci sia il router, anche se spesso è così)
 
 Gli indirizzi IPv4 privati si usano nelle reti locali e non vengono instradati direttamente su Internet. I tre intervalli sono:
 
@@ -234,8 +242,7 @@ Gli indirizzi IPv4 privati si usano nelle reti locali e non vengono instradati d
 | `10.0.0.0/8` | `10.2.3.4` |
 | `172.16.0.0/12` | `172.20.0.1` |
 | `192.168.0.0/16` | `192.168.1.1` |
-Se Dayron pinga 192.168.0.5 magari risponde Cruz
-Se Leonardo pinga 192.168.0.5 magari risponde Samuele
+Gli indirizzi locali sono VERI solo all'interno di quella sottorete!
 
 ⚠️ **Attenzione a `172.0.0.1`.** Non è privato: l'intervallo privato della famiglia `172` comincia da `172.16.0.0` e arriva a `172.31.255.255`. Un indirizzo che comincia per `172` non basta, quindi, per dire che è privato.
 
@@ -267,6 +274,7 @@ Indica il computer stesso e permette di provarne la rete locale.
 - [x] Siamo arrivati qua 8 Ottobre 2026
 
 ### 🔍 Le classi A, B e C sono storia
+#saltato
 
 Prima del 1993 il prefisso non si scriveva: **lo decideva il primo ottetto**. Ogni indirizzo apparteneva a una *classe*.
 
