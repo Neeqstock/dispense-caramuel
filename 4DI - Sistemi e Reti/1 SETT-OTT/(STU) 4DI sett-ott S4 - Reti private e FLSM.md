@@ -25,7 +25,6 @@ mindmap
 ```
 
 ## 📜 Quando i numeri sono finiti
-
 > **La storia di Nora.** La scuola affida a Nora la rete dei laboratori. Prima deve capire perché tanti dispositivi usano indirizzi privati e condividono un'uscita; poi dovrà dividere la rete della scuola in blocchi ordinati. Seguiamo il problema dalla scarsità degli indirizzi fino al progetto delle sottoreti.
 
 3 febbraio 2011. In una sala per conferenze stampa, i responsabili dell'**IANA** (*Internet Assigned Numbers Authority*), l'ente che coordina risorse Internet come gli indirizzi IP, annunciano un fatto storico. Distribuiscono gli **ultimi** grandi blocchi liberi: cinque, uno a ciascuna delle cinque organizzazioni regionali. Da quel giorno, l'IANA non ha più indirizzi IPv4 da assegnare.
@@ -38,19 +37,22 @@ Doveva durare pochi anni, in attesa di una soluzione definitiva. Oggi è dentro 
 
 Anche in Europa arriva il momento. Il **RIPE NCC**, l'organizzazione che assegna gli indirizzi per l'Europa, esaurisce le sue scorte il 14 settembre 2012. È stata la seconda al mondo.
 
+![[image-1.webp]]*Logo della IANA
+
+#ai riconvertire il logo
+
 ## 🏠 Indirizzi privati
 
 > **Nora, primo passo.** I computer dei laboratori hanno bisogno di numeri per comunicare dentro la scuola. Nora assegna loro indirizzi privati; la scuola vicina può usare gli stessi numeri nella propria rete senza che i due laboratori si confondano.
 
 ### ✅ Gli indirizzi privati si riutilizzano
-
 Lo standard **RFC 1918** riserva tre intervalli IPv4 all'uso **privato**:
 
-| Intervallo                        | Prefisso | Esempio        |
-| --------------------------------- | -------: | -------------- |
-| `10.0.0.0` - `10.255.255.255`     |     `/8` | `10.2.4.8`     |
-| `172.16.0.0` - `172.31.255.255`   |    `/12` | `172.20.5.10`  |
-| `192.168.0.0` - `192.168.255.255` |    `/16` | `192.168.1.20` |
+| Intervallo                        | Prefisso | Esempio        |     |
+| --------------------------------- | -------: | -------------- | --- |
+| `10.0.0.0` - `10.255.255.255`     |     `/8` | `10.2.4.8`     |     |
+| `172.16.0.0` - `172.31.255.255`   |    `/12` | `172.20.5.10`  |     |
+| `192.168.0.0` - `192.168.255.255` |    `/16` | `192.168.1.20` |     |
 
 <u>Un indirizzo privato vale solo dentro la propria rete. I router di Internet non lo instradano.</u>
 
@@ -74,6 +76,7 @@ No: i router di Internet non lo instradano.
 ✏️ **Riconosci (2 min).** Quali di questi sono privati? `172.20.5.10` · `172.32.0.1` · `192.169.1.1` · `10.200.1.1`. *(Attenzione ai limiti di `172.16.0.0/12`.)*
 
 ### ✅ Il NAT traduce gli indirizzi
+#fatto
 
 Un PC con indirizzo privato vuole aprire una pagina in Internet. Il server non può far arrivare una risposta a quell'indirizzo attraverso Internet. Entra in gioco il **NAT** (*Network Address Translation*), di solito nel router di casa: riscrive gli indirizzi nei pacchetti che attraversano il confine.
 
@@ -158,7 +161,6 @@ No: il NAT traduce indirizzi, il firewall applica regole di accesso.
 ✏️ **Segui la risposta (1 min).** Usando la tabella, descrivi cosa riscrive il router quando arriva un pacchetto TCP dal server `198.51.100.10:443` diretto a `203.0.113.5:62002`. Indica IP e porta prima e dopo la traduzione.
 
 ## ✂️ FLSM
-
 > **Nora, secondo passo.** Sistemata l'uscita verso Internet, Nora deve organizzare gli indirizzi interni: la rete `192.168.10.0/24` andrà divisa fra quattro laboratori. Per ora le chiedono blocchi uguali; più avanti vedrà come risparmiare spazio assegnando blocchi diversi.
 
 ### ✅ FLSM divide la rete in blocchi uguali
@@ -167,7 +169,6 @@ Nora ha una rete `192.168.10.0/24` e deve assegnare **un blocco a ciascuno di qu
 **FLSM** (*Fixed Length Subnet Masking*) divide la rete in blocchi **tutti della stessa grandezza**. Vediamo come trovare quei blocchi.
 
 #### Prima: che cosa ci dice `/24`?
-
 Un indirizzo IPv4 ha 32 bit. `/24` significa che i primi 24 identificano la rete; gli **8 bit che restano** possono distinguere gli indirizzi al suo interno.
 
 ```text
@@ -214,7 +215,6 @@ Il **gateway**, se c'è, usa un indirizzo assegnabile della sottorete; per esemp
 🧠 <u>Ogni bit preso alla parte host raddoppia il numero dei blocchi e dimezza la loro grandezza.</u>
 
 #### 🤓 Perché dividere la rete? E che cosa serve?
-
 Dividere una rete in sottoreti permette di **organizzare i dispositivi in gruppi** (per esempio, un laboratorio per sottorete). Così i broadcast restano nel proprio gruppo e si possono applicare regole diverse alle comunicazioni: per esempio, impedire ai computer degli studenti di raggiungere la rete della segreteria. Per ottenere davvero separazione e sicurezza servono anche una configurazione adeguata e regole di accesso: il solo indirizzo IP non basta.
 
 **Che cosa serve collegare?** Cavi e switch collegano i computer all'interno della rete locale. I gruppi possono essere collegati a switch distinti, oppure separati sullo stesso switch gestito tramite **VLAN**. Per comunicare tra sottoreti serve un router (o uno switch di livello 3), che riceve il traffico tramite il **gateway**. Non occorre necessariamente un router fisico per ogni sottorete.
@@ -298,8 +298,6 @@ Il computer stesso (loopback): il traffico non esce in rete.
 ## 📚 Fonti e risorse
 
 > **Ultima scena.** Nora annota gli standard e gli strumenti usati, così chi aggiornerà la rete potrà controllare le scelte invece di doverle indovinare.
-
-![](icon_fonti.svg)
 
 - [RFC 1918 - Address Allocation for Private Internets](https://www.rfc-editor.org/rfc/rfc1918): gli intervalli privati (febbraio 1996). Per consultazione.
 - [RFC 1631 - The IP Network Address Translator](https://www.rfc-editor.org/rfc/rfc1631): il NAT presentato nel 1994 come «soluzione a breve termine». Si legge l'inizio.

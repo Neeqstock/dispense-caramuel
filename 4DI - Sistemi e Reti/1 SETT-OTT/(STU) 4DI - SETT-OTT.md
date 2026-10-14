@@ -29,6 +29,10 @@ Lungo la strada incontreremo un primo messaggio che si ferma a «LO», un cavo c
 
 *Il calendario reale può spostarsi: conta la progressione, non la data.*
 
+## 🎮 Extra facoltativo
+
+[Giochiamo con le reti](%28STU%29%204DI%20sett-ott%20SX%20-%20Extra%20-%20Giochiamo%20e%20smancciamo%20con%20le%20reti.md) raccoglie comandi di sola osservazione, una sfida CIDR e wargame facoltativi da usare esclusivamente nei loro ambienti autorizzati. `tracert` è solo un assaggio: routing e TTL si affrontano più avanti.
+
 ## 🧰 Come usare le dispense
 
 Ogni dispensa ha in cima il **tempo di studio** e una **mappa**. Le sottosezioni hanno tre livelli:

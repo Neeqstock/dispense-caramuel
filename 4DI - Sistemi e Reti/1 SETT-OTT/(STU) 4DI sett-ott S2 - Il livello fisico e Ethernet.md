@@ -10,8 +10,6 @@
 
 ## 🗺️ Mappa
 
-![](icon_mappa.svg)
-
 ```mermaid
 mindmap
   root((📡 Il livello fisico e Ethernet))
@@ -29,8 +27,6 @@ mindmap
 
 ## 📜 Un'isola, una stanza, un cavo
 
-![](icon_storia.svg)
-
 Siamo nel 1968. Alle Hawaii l'università ha un problema da isola: gli utenti sono sparsi su isole diverse. Il professor Norman Abramson e il suo gruppo vogliono collegarli con apparecchi radio a basso costo. Nasce ALOHAnet: terminali collegati con **onde radio**. Ma c'è un guaio: tutti parlano sulla stessa frequenza. Se due trasmettono insieme, i messaggi si sovrappongono e vanno rifatti.
 
 1972-73. Xerox PARC, California. Bob Metcalfe e David Boggs devono collegare i primi computer personali (gli Alto) a una stampante laser. Metcalfe conosce ALOHAnet. Si chiede: e se invece delle onde radio usassimo un **cavo coassiale** condiviso? Stesso problema, stessa soluzione: ascoltare prima di parlare, e se ci si pesta i piedi, aspettare un tempo casuale. L'11 novembre 1973 la rete funziona, a circa 3 Mbit/s.
@@ -44,8 +40,6 @@ Metcalfe fa una scelta intelligente: invece di tenere la tecnologia per Xerox, c
 > 😄 Regola dei tecnici di rete: quando qualcosa non funziona, controlla il **livello 1**. Il cavo è collegato? Sì, succede più spesso di quanto si ammetta.
 
 ## 🔌 Dal bit al segnale
-
-![](icon_protocolli.svg)
 
 ### ✅ Il livello fisico trasmette segnali
 
@@ -81,8 +75,6 @@ No. Trasmette segnali, senza interpretare il contenuto.
 ✏️ **Abbina (2 min).** Copri la tabella. Per rame, fibra e Wi-Fi scrivi che cosa trasporta il segnale. Poi controlla.
 
 ## 🔌 Ethernet e il frame
-
-![](icon_incapsulamento.svg)
 
 ### ✅ Il frame Ethernet è la busta del tratto locale
 
@@ -364,8 +356,6 @@ No: ha un collegamento dedicato e può trasmettere e ricevere insieme.
 
 ## ✏️ Esercizi
 
-![](icon_esercizi.svg)
-
 1. **Riordina.** Metti in ordine: segnali, pacchetto IP, frame, dati.
 2. **Trova l'errore.** «Lo switch legge l'indirizzo IP e decide dove mandare il frame.» Che cosa non torna?
 3. **Spiega in una frase.** Perché il MAC cambia a ogni tratto e l'IP no?
@@ -374,8 +364,6 @@ No: ha un collegamento dedicato e può trasmettere e ricevere insieme.
 **Uscita:** completa «Il mezzo trasporta ..., mentre il frame organizza ...».
 
 ## 📚 Fonti e risorse
-
-![](icon_fonti.svg)
 
 - [Wikipedia - Ethernet](https://en.wikipedia.org/wiki/Ethernet): storia e versioni. Da leggere per curiosità la parte sulle origini a Xerox PARC.
 - [Wikipedia - ALOHAnet](https://en.wikipedia.org/wiki/ALOHAnet): la rete radio delle Hawaii che ha ispirato Ethernet.

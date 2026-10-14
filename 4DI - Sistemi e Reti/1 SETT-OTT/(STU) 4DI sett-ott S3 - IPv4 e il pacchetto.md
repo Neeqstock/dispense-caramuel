@@ -48,7 +48,6 @@ Nove inviati, quattro tornati: è il *best effort* in versione piumata. Una rete
 <u>IP è best effort: prova a consegnare, ma non garantisce niente.</u>
 
 Che cosa non garantisce:
-
 - la **consegna** (un pacchetto può perdersi);
 - l'**ordine** (possono arrivare mescolati);
 - l'assenza di **duplicati**.
@@ -237,11 +236,11 @@ Alcuni indirizzi hanno un **uso riservato**; altri sono semplicemente comuni. <u
 
 Gli indirizzi IPv4 privati si usano nelle reti locali e non vengono instradati direttamente su Internet. I tre intervalli sono:
 
-| Intervallo privato | Esempio |
-|---|---|
-| `10.0.0.0/8` | `10.2.3.4` |
-| `172.16.0.0/12` | `172.20.0.1` |
-| `192.168.0.0/16` | `192.168.1.1` |
+| Intervallo privato | Esempio       |
+| ------------------ | ------------- |
+| `10.0.0.0/8`       | `10.2.3.4`    |
+| `172.16.0.0/12`    | `172.20.0.1`  |
+| `192.168.0.0/16`   | `192.168.1.1` |
 Gli indirizzi locali sono VERI solo all'interno di quella sottorete!
 
 ⚠️ **Attenzione a `172.0.0.1`.** Non è privato: l'intervallo privato della famiglia `172` comincia da `172.16.0.0` e arriva a `172.31.255.255`. Un indirizzo che comincia per `172` non basta, quindi, per dire che è privato.
@@ -329,14 +328,14 @@ flowchart LR
 
 Non serve imparare tutti i campi. Questi sono i principali:
 
-| Campo | Che cosa dice |
-|---|---|
-| **Version** | il formato IP: vale 4 |
-| **Total Length** | la lunghezza di tutto il pacchetto |
-| **TTL** | limite di inoltri fra router |
-| **Protocol** | a quale protocollo superiore consegnare i dati (TCP, UDP...) |
-| **Header Checksum** | un controllo dell'**header** |
-| **Source / Destination Address** | indirizzo di partenza e di arrivo |
+| Campo                            | Che cosa dice                                                |
+| -------------------------------- | ------------------------------------------------------------ |
+| **Version**                      | il formato IP: vale 4                                        |
+| **Total Length**                 | la lunghezza di tutto il pacchetto                           |
+| **TTL**                          | limite di inoltri fra router                                 |
+| **Protocol**                     | a quale protocollo superiore consegnare i dati (TCP, UDP...) |
+| **Header Checksum**              | un controllo dell'**header**                                 |
+| **Source / Destination Address** | indirizzo di partenza e di arrivo                            |
 
 Il **Protocol** collega due livelli, come l'EtherType in S2: dice che cosa c'è nella busta successiva.
 
@@ -366,7 +365,6 @@ L'EtherType: entrambi dicono che cosa c'è nella busta successiva.
 ✏️ **Collega (3 min).** Disegna il viaggio di S1: dati, segmento, pacchetto, frame. In quale busta sta il campo `Destination Address` di IP? In quale il MAC di destinazione?
 
 ### 🤓 TTL: un limite di salti, non di secondi
-
 > 	*Time To Live* sembra un tempo. Non lo è: a ogni router il valore scende di uno, e quando arriva a zero il pacchetto viene scartato. Così un pacchetto che gira in tondo non vive per sempre. Il nome è storico.
 >
 > Che cosa succede dopo lo scarto lo vedremo più avanti.
@@ -377,7 +375,6 @@ No: limita il numero di inoltri. A ogni router diminuisce di uno.
 </details>
 
 ## ✏️ Esercizi
-
 1. **Converti.** Scrivi in binario `192.168.1.25` e dimostra che i punti non sono bit.
 2. **Trova l'errore.** «192.168.300.1 è un indirizzo IPv4 valido.» Perché no?
 3. **Spiega in una frase.** Perché l'indirizzo da solo non dice dove finisce la rete?

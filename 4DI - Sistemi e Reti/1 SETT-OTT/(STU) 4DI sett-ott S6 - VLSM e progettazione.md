@@ -10,8 +10,6 @@
 
 ## 🗺️ Mappa
 
-![](icon_mappa.svg)
-
 ```mermaid
 mindmap
   root((🧩 VLSM e progettazione))
@@ -26,38 +24,33 @@ mindmap
 ```
 
 ## 📜 La mappa dei numeri
+Negli anni Ottanta gli indirizzi sembrano infiniti. Le organizzazioni che ne fanno richiesta ricevono **blocchi interi** da oltre sedici milioni di indirizzi: i blocchi `/8`, che corrispondevano alla classe A studiata in S3. Poche organizzazioni ricevono blocchi enormi.
 
-![](icon_storia.svg)
+Nel 2006 Randall Munroe, autore del fumetto *xkcd*, disegna una mappa di tutto lo spazio IPv4. Usa una curva che tiene vicine sulla pagina alcune zone con indirizzi vicini. Ogni quadrato numerato rappresenta un blocco `/8`. Guarda quali organizzazioni compaiono in alto a sinistra.
 
-Negli anni Ottanta gli indirizzi sembrano infiniti. Chi li chiede li riceve a **blocchi interi**, da oltre sedici milioni di indirizzi ciascuno: i blocchi `/8`, quelli della classe A di S3. Pochi, grandi, a chi c'era all'inizio.
-
-Nel 2006 il disegnatore del fumetto *xkcd*, Randall Munroe, fa una mappa di tutto lo spazio IPv4. La disegna con una curva speciale che tiene vicini gli indirizzi vicini: ogni quadrato numerato è un blocco `/8`. Guarda chi compare in alto a sinistra.
-
-![Mappa di Internet di xkcd, 2006: ogni quadrato è un blocco /8 IPv4, con i nomi di chi lo ha ricevuto.](https://imgs.xkcd.com/comics/map_of_the_internet.jpg)
+![Mappa di Internet di xkcd, 2006: ogni quadrato è un blocco /8 IPv4, con i nomi di chi lo ha ricevuto.|726x1056](https://imgs.xkcd.com/comics/map_of_the_internet.jpg)
 
 *«Map of the Internet», xkcd n. 195, di Randall Munroe, licenza CC BY-NC 2.5. Immagine caricata dal sito [xkcd.com/195](https://xkcd.com/195/).*
 
-Nel disegno compaiono, ognuno con un intero `/8`, nomi come General Electric, IBM, Xerox, HP, DEC, Apple, MIT, Ford. Ognuno ha circa 16,7 milioni di indirizzi: un /8 intero.
+Nel disegno, organizzazioni come General Electric, IBM, Xerox, HP, DEC, Apple, MIT e Ford hanno ciascuna un `/8`, cioè circa 16,7 milioni di indirizzi.
 
-Poi gli indirizzi finiscono (S4). E qualcuno comincia a restituire il superfluo: la Stanford University, per esempio, ha riconsegnato il suo blocco `36.0.0.0/8` per aiutare a ritardare l'esaurimento.
+In seguito gli indirizzi IPv4 disponibili diminuiscono, come hai visto in S4. Alcune organizzazioni restituiscono i blocchi che non usano. Per esempio, la Stanford University restituisce `36.0.0.0/8`, contribuendo a rendere di nuovo disponibile quel grande blocco.
 
-La lezione è semplice: **chiedere più del necessario è facile, ed è un lusso che finisce**. VLSM è l'arte opposta: dare a ognuno **quello che serve**, né un indirizzo di più né di meno, e scrivere tutto in una tabella che un altro possa controllare.
+Questa storia mostra che **chiedere più indirizzi del necessario ha un costo**. VLSM aiuta a dimensionare le sottoreti in base alle necessità e a registrare le assegnazioni in una tabella verificabile.
 
 > 😄 Un nome per il lavoro che stai per fare: **Tetris degli indirizzi**. Pezzi di forme diverse, un campo di 256 caselle, e nessuna riga si cancella da sola.
 
 ## 🧮 Dimensionare
 
-![](icon_protocolli.svg)
-
 ### ✅ Dal numero di host al prefisso
 
-Con **FLSM** (S4) tutte le sottoreti sono uguali. Con **VLSM** (*Variable Length Subnet Masking*) ogni sottorete ha **la propria dimensione**, scelta in base al bisogno.
+Con **FLSM** (S4) tutte le sottoreti hanno la stessa dimensione. Con **VLSM** (*Variable Length Subnet Masking*), invece, ogni sottorete può avere una dimensione diversa, scelta in base al numero di host che deve contenere.
 
-Il primo passo è **dimensionare**: dato il numero di host, trovare il prefisso più lungo che basta.
+Per prima cosa **dimensiona** ogni richiesta: trova il blocco più piccolo che può contenere tutti gli host richiesti.
 
-1. Quanti host servono? (aggiungi il **gateway**, se ne usa uno della sottorete)
-2. Scegli il più piccolo $h$ con $2^h - 2 \ge$ host.
-3. Il prefisso è $32 - h$.
+1. **Conta** quanti host servono e aggiungi il gateway, se userà un indirizzo della sottorete.
+2. **Trova** il numero minimo $h$ di bit host per cui $2^h - 2$ è almeno pari al numero di host richiesti.
+3. **Calcola** il prefisso sottraendo $h$ da 32: prefisso $= 32 - h$.
 
 | Host richiesti | Bit host minimi | Prefisso | Indirizzi nel blocco | Host ordinari |
 |---:|---:|---:|---:|---:|
@@ -66,61 +59,61 @@ Il primo passo è **dimensionare**: dato il numero di host, trovare il prefisso 
 | 12 | 4 | `/28` | 16 | 14 |
 | 6 | 3 | `/29` | 8 | 6 |
 
-⚠️ **Il gateway occupa un host.** Se un reparto ha 62 host e un gateway, servono **63** indirizzi host: una `/26` (62 host ordinari) non basta, ci vuole una `/25`. Dichiara sempre se hai contato il gateway.
+⚠️ **Anche il gateway occupa un indirizzo host.** Se un reparto ha 62 dispositivi e il gateway usa un indirizzo della stessa sottorete, servono 63 indirizzi host. Una `/26` ne offre solo 62, quindi serve una `/25`. Quando calcoli la richiesta, dichiara sempre se hai contato il gateway.
 
-🧠 <u>Prima si dimensiona ogni richiesta. Poi si assegna.</u>
+🧠 <u>Prima dimensiona ogni sottorete; poi assegna i blocchi.</u>
 
 <details>
-<summary>🃏 <b>Qual è il prefisso di una rete con 6 bit host?</b></summary>
-/26, perché 32 meno 6 fa 26.
+<summary>🃏 <b>Quale prefisso corrisponde a 6 bit host?</b></summary>
+Il prefisso è `/26`, perché $32 - 6 = 26$.
 </details>
 <details>
 <summary>🃏 <b>Quale prefisso offre almeno 25 host ordinari?</b></summary>
-/27, che ne offre 30.
+Una `/27` offre 30 host ordinari.
 </details>
 <details>
 <summary>🃏 <b>Quanti host ordinari offre una /29?</b></summary>
 6.
 </details>
 <details>
-<summary>🃏 <b>Se un gateway usa un indirizzo host, va contato nelle richieste?</b></summary>
-Sì: occupa uno degli indirizzi host della sottorete.
+<summary>🃏 <b>Perché bisogna contare il gateway fra gli host richiesti?</b></summary>
+Perché, se usa un indirizzo della sottorete, il gateway occupa uno dei suoi indirizzi host.
 </details>
 
-✏️ **Prevedi (3 min).** Scrivi il prefisso minimo per 100 host, per 14 host e per 3 host. Poi controlla con la formula $2^h - 2$.
+✏️ **Prevedi (3 min).** Calcola il prefisso minimo per sottoreti da 100, 14 e 3 host. Poi verifica ogni scelta con la formula $2^h - 2$.
 
 ## 🧮 Assegnare
 
-![](icon_protocolli.svg)
-
 ### ✅ Si assegnano prima i blocchi grandi
 
-Ora il progetto. Quattro passaggi, sempre gli stessi:
+Per assegnare i blocchi, segui questi quattro passaggi:
 
-1. **Dimensiona** ogni richiesta (prefisso e dimensione del blocco).
+1. **Dimensiona** ogni richiesta: stabilisci il prefisso e il numero di indirizzi del blocco.
 2. **Ordina** le richieste dalla più grande alla più piccola.
-3. **Alloca** i blocchi uno dopo l'altro, partendo dall'inizio dello spazio, ognuno su un confine **allineato**.
-4. **Controlla** il risultato (vedi 🔍).
+3. **Alloca** i blocchi in sequenza, a partire dall'inizio dello spazio disponibile. Ogni blocco deve iniziare su un confine **allineato** alla propria dimensione.
+4. **Controlla** il piano con i quattro criteri della sezione 🔍.
 
-🧪 **La rete `192.168.60.0/24`**, con quattro gruppi: 50, 25, 12 e 6 host. I blocchi sono 64, 32, 16 e 8 indirizzi.
+🧪 **Esempio svolto: piano di una rete scolastica inventata.** Dividiamo `192.168.60.0/24` fra quattro gruppi. Le richieste sono di 50, 25, 12 e 6 indirizzi host complessivi: se il gruppo usa un gateway nella propria sottorete, il suo indirizzo è già compreso nella richiesta. Per ogni gruppo scegliamo il primo indirizzo host come gateway.
 
-| Gruppo | Rete | Host ordinari | Broadcast |
-|---|---|---|---|
-| 50 host | `192.168.60.0/26` | `.1` - `.62` | `.63` |
-| 25 host | `192.168.60.64/27` | `.65` - `.94` | `.95` |
-| 12 host | `192.168.60.96/28` | `.97` - `.110` | `.111` |
-| 6 host | `192.168.60.112/29` | `.113` - `.118` | `.119` |
+| Gruppo | Indirizzi richiesti | Bit host $h$ | Prefisso | Indirizzi nel blocco | Rete | Intervallo host | Gateway | Broadcast |
+|---|---:|---:|---:|---:|---|---|---|---|
+| Laboratorio | 50 | 6 | `/26` | 64 | `192.168.60.0` | `192.168.60.1` - `192.168.60.62` | `192.168.60.1` | `192.168.60.63` |
+| Aula | 25 | 5 | `/27` | 32 | `192.168.60.64` | `192.168.60.65` - `192.168.60.94` | `192.168.60.65` | `192.168.60.95` |
+| Docenti | 12 | 4 | `/28` | 16 | `192.168.60.96` | `192.168.60.97` - `192.168.60.110` | `192.168.60.97` | `192.168.60.111` |
+| Stampanti | 6 | 3 | `/29` | 8 | `192.168.60.112` | `192.168.60.113` - `192.168.60.118` | `192.168.60.113` | `192.168.60.119` |
 
-*Ogni blocco inizia dove finisce il precedente. Da `.120` a `.255` resta spazio libero.*
+**Come ricaviamo prefisso e dimensione?** Per il laboratorio servono almeno 50 indirizzi host. Con 5 bit host avremmo $2^5 - 2 = 30$ indirizzi utilizzabili, quindi non bastano. Con 6 bit host ne abbiamo $2^6 - 2 = 62$. Il prefisso è `/26`, perché $32 - 6 = 26$; il blocco contiene $2^6 = 64$ indirizzi. Gli altri gruppi si dimensionano allo stesso modo.
+
+Ogni blocco inizia subito dopo il precedente. Gli indirizzi da `.120` a `.255` restano liberi.
 
 ```text
 0        64      96   112 120                        255
 |--- 64 --|-- 32 --|-16-|-8-|........ spazio libero ........|
 ```
 
-*La striscia dei 256 indirizzi, con i quattro blocchi uno accanto all'altro.*
+*La striscia mostra i 256 indirizzi della `/24`: i quattro blocchi assegnati e lo spazio ancora libero.*
 
-**Perché si parte dal più grande?** Proviamo con uno spazio di soli 64 indirizzi e quattro richieste da 8, 32, 16 e 8 indirizzi.
+**Perché assegniamo prima il blocco più grande?** Consideriamo uno spazio di 64 indirizzi e quattro richieste da 8, 32, 16 e 8 indirizzi. Se assegniamo i blocchi nell'ordine di arrivo e non torniamo a riempire i buchi, il blocco da 16 potrebbe non trovare posto:
 
 ```text
 Nell'ordine in cui arrivano (8, 32, 16, 8), senza tornare indietro:
@@ -130,32 +123,32 @@ Dal più grande (32, 16, 8, 8):
 |-------- 32 --------|---- 16 ----|8|8|  → entrano tutti
 ```
 
-*Un blocco deve iniziare su un multiplo della sua dimensione. Se si comincia dal piccolo, si lasciano buchi: se poi non si torna a riempirli, il piano fallisce. Partire dal grande evita il problema.*
+Ogni blocco deve iniziare su un multiplo della propria dimensione. Per questo, se assegniamo prima blocchi piccoli e non riordiniamo il piano, possiamo lasciare buchi inutilizzabili per i blocchi grandi. Assegnare prima i blocchi grandi riduce questo rischio.
 
-⚠️ **Non basta che la somma torni.** Lo spazio totale può essere sufficiente, ma senza ordine e allineamento il piano può fallire.
+⚠️ **La somma degli indirizzi può bastare, ma il piano può comunque fallire.** Bisogna rispettare anche l'ordine e l'allineamento dei blocchi.
 
 <details>
 <summary>🃏 <b>Quali sono i quattro passaggi di un progetto VLSM?</b></summary>
 Dimensiona, ordina, alloca, controlla.
 </details>
 <details>
-<summary>🃏 <b>In che ordine si assegnano i blocchi?</b></summary>
-Dal più grande al più piccolo.
+<summary>🃏 <b>In quale ordine assegniamo i blocchi con questo metodo?</b></summary>
+Assegniamo prima il blocco più grande e poi procediamo in ordine decrescente.
 </details>
 <details>
-<summary>🃏 <b>Perché partire dal blocco più grande?</b></summary>
-Perché i blocchi piccoli, messi per primi, creano buchi che i blocchi grandi non riescono più a usare.
+<summary>🃏 <b>Perché questo metodo assegna prima i blocchi grandi?</b></summary>
+Per ridurre il rischio che l'allineamento lasci buchi troppo piccoli per i blocchi grandi rimasti.
 </details>
 <details>
-<summary>🃏 <b>Qual è la dimensione dei blocchi di 50, 25, 12 e 6 host?</b></summary>
-64, 32, 16 e 8 indirizzi.
+<summary>🃏 <b>Quanti indirizzi hanno i blocchi per 50, 25, 12 e 6 host?</b></summary>
+Hanno rispettivamente 64, 32, 16 e 8 indirizzi.
 </details>
 
-✏️ **Disegna (4 min).** Su una striscia da 0 a 255, disegna i quattro blocchi dell'esempio con le loro dimensioni. Poi segna con un colore lo spazio libero.
+✏️ **Disegna (4 min).** Disegna una striscia da 0 a 255. Rappresenta i quattro blocchi dell'esempio in scala e colora lo spazio rimasto libero.
 
 ### 🔍 Quattro controlli per un piano affidabile
 
-Quando hai finito, **controlla** il piano da quattro punti di vista:
+Quando hai assegnato i blocchi, **controlla** il piano con questi quattro criteri:
 
 | Controllo | Domanda |
 |---|---|
@@ -164,71 +157,64 @@ Quando hai finito, **controlla** il piano da quattro punti di vista:
 | **Non sovrapposizione** | gli intervalli sono separati? |
 | **Tracciabilità** | la tabella dice rete, prefisso, host, broadcast e gateway? |
 
-🧪 **Allineamento.** Una `/27` ha blocchi da 32: nell'ultimo ottetto può iniziare solo a 0, 32, 64, 96... `.70` può essere un host del blocco `.64`, ma **non** può essere l'inizio di una `/27`.
+🧪 **Controllo dell'allineamento.** Una `/27` contiene 32 indirizzi. Nell'ultimo ottetto, le reti `/27` possono quindi iniziare a 0, 32, 64, 96 e così via. L'indirizzo `.70` appartiene al blocco che inizia a `.64`, ma **non** può essere l'indirizzo di rete di una `/27`.
 
 <details>
 <summary>🃏 <b>Quali sono i quattro controlli di un piano VLSM?</b></summary>
 Capienza, allineamento, non sovrapposizione e tracciabilità.
 </details>
 <details>
-<summary>🃏 <b>.70 può essere l'inizio di una /27?</b></summary>
-No: il blocco da 32 che lo contiene inizia a .64.
+<summary>🃏 <b>Perché .70 non può essere l'indirizzo di rete di una /27?</b></summary>
+Perché il blocco da 32 indirizzi che contiene `.70` inizia a `.64`.
 </details>
 <details>
 <summary>🃏 <b>Qual è il broadcast della rete .64/27?</b></summary>
-.95, perché il blocco va da .64 a .95.
+È `.95`, l'ultimo indirizzo del blocco da `.64` a `.95`.
 </details>
 
-✏️ **Trova l'errore (3 min).** Un piano assegna `192.168.60.40/27` a un gruppo da 25 host. Quale controllo fallisce? Qual è l'inizio valido più vicino?
+✏️ **Trova l'errore (3 min).** Un piano indica `192.168.60.40/27` come rete per un gruppo da 25 host. Spiega perché l'indirizzo non è allineato e trova la rete `/27` che contiene `.40`.
 
 ### 🔍 La tabella è il progetto
 
-Un piano non è una pila di numeri: è un **documento** che un'altra persona deve poter verificare. Una buona tabella dice, per ogni sottorete:
+La tabella dell'esempio sopra è un **piano VLSM**: registra quale blocco spetta a ogni gruppo e quali indirizzi si possono usare. In una rete reale, chi configura i dispositivi può consultarla per assegnare gli indirizzi senza sovrapporre le sottoreti.
 
-- il **gruppo** servito;
-- **rete e prefisso**;
-- l'**intervallo degli host** ordinari;
-- il **broadcast**;
-- l'indirizzo del **gateway** e la convenzione usata.
+Per esempio, l'aula richiede 25 indirizzi host: 24 per i computer e uno per il gateway. 
+- Il piano le assegna la rete `192.168.60.64/27`, che offre 30 indirizzi host (32 - 2), da `192.168.60.65` a `192.168.60.94`. L'indirizzo `192.168.60.65` va al gateway. 
+- Restano 29 indirizzi per i computer, quindi il piano può soddisfare la richiesta e lasciare 5 indirizzi liberi. L'indirizzo `192.168.60.95` è il broadcast e non si assegna a un singolo dispositivo.
 
-Il gateway può essere il primo host, l'ultimo, o altro: conta che sia un host **valido** della sottorete e che la scelta sia dichiarata.
+Il piano è verificabile perché riporta richiesta, bit host, dimensione del blocco, rete e prefisso, intervallo host, gateway e broadcast. Se il gateway usa un altro indirizzo host, la tabella dichiara la convenzione scelta.
 
 <details>
-<summary>🃏 <b>Che cosa rende verificabile una tabella VLSM?</b></summary>
-Rete e prefisso, intervallo degli host, broadcast, gruppo servito e convenzione dichiarata per il gateway.
+<summary>🃏 <b>Quali dati rendono verificabile una tabella VLSM?</b></summary>
+La tabella indica gruppo, richiesta, bit host, dimensione del blocco, rete e prefisso, intervallo degli host, broadcast e gateway.
 </details>
 <details>
-<summary>🃏 <b>Il gateway deve essere sempre il primo host?</b></summary>
-No: può seguire un'altra convenzione, se è un host valido e la scelta è dichiarata.
+<summary>🃏 <b>Il gateway deve usare per forza il primo indirizzo host?</b></summary>
+No: può seguire un'altra convenzione, purché usi un indirizzo host valido e il piano dichiari la scelta.
 </details>
 
 ### 🤓 Lo spazio libero può essere una scelta
 
-> Non assegnare ogni indirizzo non è per forza uno spreco. Un piano che lascia **spazio di riserva** permette di aggiungere un reparto o far crescere una rete senza rifare tutto. Una riserva è utile se è **ragionata**; è inutile se è dimenticata.
+> Lasciare indirizzi liberi non è sempre uno spreco. Uno **spazio di riserva** ragionato permette di aggiungere un reparto o ampliare una sottorete senza riprogettare tutto. Se il piano non spiega a che cosa serve lo spazio libero, però, nessuno sa se sia una riserva o un'assegnazione dimenticata.
 >
-> Un piano corretto e facile da estendere batte un piano che usa ogni indirizzo ma è impossibile da modificare.
+> Un piano corretto e facile da estendere è più utile di un piano che assegna ogni indirizzo ma è difficile da modificare.
 
 <details>
-<summary>🃏 <b>Perché lasciare indirizzi non assegnati?</b></summary>
-Per consentire crescita o riorganizzazione, se la riserva è motivata.
+<summary>🃏 <b>Quando è utile lasciare indirizzi non assegnati?</b></summary>
+Quando una riserva motivata permette alla rete di crescere o riorganizzarsi.
 </details>
 
 ## ✏️ Esercizi
 
-![](icon_esercizi.svg)
+1. **Dimensiona.** Calcola il prefisso minimo e la dimensione del blocco per sottoreti da 40, 20 e 10 host.
+2. **Progetta.** Assegna le tre sottoreti dentro `10.10.10.0/24`, dalla più grande alla più piccola. Per ciascuna indica rete, host ordinari e broadcast.
+3. **Controlla.** Verifica il tuo piano usando i quattro controlli della sezione precedente.
+4. **Riordina.** Scrivi nell'ordine corretto questi passaggi: alloca, controlla, ordina, dimensiona.
+5. **Collega S5.** Trova il salto di ogni prefisso che hai scelto e verifica che le reti inizino su multipli di quel salto.
 
-1. **Dimensiona.** Per 40, 20 e 10 host, scrivi il prefisso minimo e la dimensione del blocco.
-2. **Progetta.** Distribuisci quelle tre richieste dentro `10.10.10.0/24`: per ognuna, rete, host ordinari e broadcast. Ordina prima.
-3. **Controlla.** Applica i quattro controlli al tuo piano.
-4. **Riordina.** Metti in ordine: alloca, controlla, ordina, dimensiona.
-5. **Collega (S5).** Qual è il salto di ogni prefisso che hai scelto? I tuoi blocchi iniziano sui suoi multipli?
-
-**Uscita:** «Prima di assegnare un blocco, controllo che ... perché ...».
+**Uscita:** completa la frase: «Prima di assegnare un blocco, controllo che ... perché ...».
 
 ## 📚 Fonti e risorse
-
-![](icon_fonti.svg)
-
 - [xkcd 195 - Map of the Internet](https://xkcd.com/195/): il fumetto-mappa dello spazio IPv4 nel 2006. Guarda chi aveva un `/8` intero.
 - [Wikipedia - List of assigned /8 IPv4 address blocks](https://en.wikipedia.org/wiki/List_of_assigned_/8_IPv4_address_blocks): chi aveva ricevuto quali blocchi, e chi li ha restituiti.
 - [RIPE NCC - IPv4 Subnetting](https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-subnetting/): uno strumento per **controllare** il tuo piano. Prima progetta a mano.

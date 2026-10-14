@@ -1,4 +1,4 @@
-# Verifica di allenamento 2 — capire e progettare con gli oggetti
+# Verifica di allenamento — capire e progettare con gli oggetti
 
 **4CI · Informatica · 55 minuti · 10 punti**
 

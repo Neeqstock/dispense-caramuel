@@ -10,8 +10,6 @@
 
 ## 🗺️ Mappa
 
-![](icon_mappa.svg)
-
 ```mermaid
 mindmap
   root((🧭 Modelli e incapsulamento))
@@ -30,8 +28,6 @@ mindmap
 
 ## 📜 Perché ci servono regole
 
-![](icon_storia.svg)
-
 Gli esseri umani cooperano in milioni perché condividono culture, storie, regole: lingue, leggi, denaro. Nessuno ha mai «visto» una lingua. Eppure funziona.
 
 Le macchine hanno lo stesso problema. Per parlarsi devono mettersi d'accordo su tutto.
@@ -42,9 +38,10 @@ Circa un'ora dopo Duvall sistema la macchina, Kline riprova e questa volta entra
 
 > 😄 Nei laboratori di rete si scherza su un «livello 8»: l'utente. Non esiste negli standard. Ma ogni tecnico lo ha incontrato.
 
-## 📨 Protocolli e modelli
+![C'é chi scherza su questo...](Allegati/image.png)
+_Qualcuno scherza anche, comprensibilmente, sul fatto che il vero modello ISO/OSI sia questo._ Fonte: https://xkcd.com/2105/
 
-![](icon_protocolli.svg)
+## 📨 Protocolli e modelli
 
 ### ✅ Un protocollo è una regola condivisa
 
@@ -156,8 +153,6 @@ Pagina non trovata.
 ✏️ **Collega (2 min).** Scrivi il livello TCP/IP di ciascuno: HTTP, UDP, IP, Wi-Fi. Poi controlla con la tabella.
 
 ## 📦 Incapsulamento e PDU
-
-![](icon_incapsulamento.svg)
 
 ### ✅ Header e dati
 
@@ -364,8 +359,6 @@ OSI aiuta a ragionare per funzioni; TCP/IP descrive i protocolli di Internet.
 
 ## ✏️ Esercizi
 
-![](icon_esercizi.svg)
-
 1. **Riordina.** Metti in ordine: frame, dati, pacchetto, segnali, segmento.
 2. **Spiega in una frase.** Che cosa aggiunge un livello quando incapsula?
 3. **Prevedi.** Se passi dal cavo al Wi-Fi, quale livello cambia di più?
@@ -373,8 +366,6 @@ OSI aiuta a ragionare per funzioni; TCP/IP descrive i protocolli di Internet.
 5. **Segui il messaggio.** La richiesta `GET /index.html` parte dal tuo browser: scrivi, livello per livello, quale header viene aggiunto e come si chiama la PDU.
 
 ## 📚 Fonti e risorse
-
-![](icon_fonti.svg)
 
 - [RFC 1122 - Requirements for Internet Hosts](https://www.rfc-editor.org/rfc/rfc1122): il riferimento ufficiale sui protocolli Internet. Per consultazione, non per studio.
 - [Wikipedia - Encapsulation (networking)](https://en.wikipedia.org/wiki/Encapsulation_(networking)): una pagina breve con schemi, per rivedere l'incapsulamento.

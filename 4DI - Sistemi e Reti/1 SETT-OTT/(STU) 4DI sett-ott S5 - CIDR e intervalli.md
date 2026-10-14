@@ -4,13 +4,11 @@
 
 **4DI · Settembre-Ottobre · S5 · Teoria**
 
-⏱️ **Tempo di studio: circa 35 minuti.** ✅ essenziale: 20 min. 🔍 per il voto alto: 15 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
+⏱️ **Tempo di studio: circa 30 minuti.** ✅ essenziale: 17 min. 🔍 per il voto alto: 13 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard (rispondi a voce, poi apri)
 
 ## 🗺️ Mappa
-
-![](icon_mappa.svg)
 
 ```mermaid
 mindmap
@@ -27,33 +25,23 @@ mindmap
 
 ## 📜 Il collasso che non è arrivato
 
-![](icon_storia.svg)
+Primi anni Novanta: le **classi** sprecano indirizzi e ogni rete assegnata aggiunge una riga alle tabelle dei router. Gli ingegneri temono che le tabelle crescano troppo.
 
-Primi anni Novanta. Internet cresce così in fretta che gli ingegneri sono preoccupati. I problemi sono due.
+Nel 1993 RFC 1518 e 1519 introducono **CIDR** (*Classless Inter-Domain Routing*): il confine della rete non dipende più dal primo ottetto, ma si scrive con un prefisso, per esempio `/26`. Così si possono assegnare blocchi di taglie diverse e aggregare più reti.
 
-Il primo lo conosci: le **classi** sprecano. Chi ha bisogno di 300 indirizzi riceve una classe B da 65 536. Ma le classi B sono solo circa 16 000 in tutto, e se ne stanno consumando una dopo l'altra. Finite quelle, non ci sono taglie intermedie.
+Nel 1995 Bob Metcalfe, inventore di Ethernet, prevede un «collasso catastrofico» di Internet entro l'anno successivo. Nel 1997, dopo che non accade, frulla e beve una copia della sua rubrica.
 
-Il secondo è più sottile. Ogni rete assegnata diventa **una riga** nelle tabelle dei router di Internet. Più reti, più righe, più memoria, più lentezza. Le tabelle crescono troppo in fretta.
-
-La soluzione arriva nel 1993, in due documenti (RFC 1518 e 1519): **CIDR**, *Classless Inter-Domain Routing*. L'idea è semplice, quasi banale: **smettere di decidere il confine in base al primo ottetto, e scriverlo accanto all'indirizzo**. Un numero dopo una barra: `/26`. Con un prefisso di qualsiasi lunghezza si ricevono blocchi di qualsiasi taglia.
-
-Eppure non tutti sono convinti. Nel 1995 Bob Metcalfe, l'inventore di Ethernet (lo ricordi da S2), scrive nella sua rubrica che Internet avrà un **«collasso catastrofico»** l'anno dopo. E promette: se sbaglio, mangio le mie parole.
-
-Il collasso non arriva. Nel 1997, davanti a una platea alla Conferenza internazionale sul World Wide Web, Metcalfe prende una copia stampata della sua rubrica, la mette in un **frullatore**, aggiunge del liquido e **la beve**.
-
-CIDR non ha fatto nulla di spettacolare. Ha solo cambiato dove si scrive il confine. Ma quel cambiamento ha aiutato Internet a crescere ancora per molti anni.
+CIDR non ha salvato Internet da solo, ma ha reso più efficiente l'assegnazione degli indirizzi e limitato la crescita delle tabelle.
+<img src="Allegati/image-2.webp" width="373" alt="Bob Metcalfe accanto a un frullatore durante una conferenza">
+*L'ha fatto davvero (pare)!*
 
 ## 🔢 Il prefisso
 
-![](icon_protocolli.svg)
-
 ### ✅ CIDR scrive il prefisso accanto all'indirizzo
 
-Con CIDR un indirizzo si scrive così: `192.168.40.0/26`. Il numero dopo la barra dice **quanti bit iniziali sono di rete**. I restanti sono bit host.
+In `192.168.40.0/26`, `/26` indica che i primi 26 bit sono di rete; i restanti $32 - 26 = 6$ sono bit host. Il prefisso e la **maschera** esprimono lo stesso confine.
 
-<u>In una rete `/p`, i primi $p$ bit sono di rete. Gli altri $32 - p$ sono di host.</u>
-
-Il prefisso e la **maschera** dicono la stessa cosa:
+Nella pratica il prefisso accompagna l'indirizzo quando si configura un'interfaccia o si progetta una rete: `192.168.40.110/27` permette di capire a quale sottorete appartiene l'indirizzo.
 
 | Prefisso | Maschera | Bit host | Indirizzi nel blocco | Host ordinari |
 |---:|---|---:|---:|---:|
@@ -65,46 +53,45 @@ Il prefisso e la **maschera** dicono la stessa cosa:
 | `/29` | `255.255.255.248` | 3 | 8 | 6 |
 | `/30` | `255.255.255.252` | 2 | 4 | 2 |
 
-*Più il prefisso è lungo, più la rete è piccola.*
+⚠️ **Più il prefisso è lungo, più il blocco è piccolo:** una `/30` contiene 4 indirizzi, una `/24` ne contiene 256. Con $h$ bit host, il blocco contiene $2^h$ indirizzi e, nel caso ordinario, $2^h - 2$ host assegnabili: rete e broadcast hanno ruoli speciali.
 
-⚠️ **Prefisso più grande = rete più piccola.** Una `/30` ha 4 indirizzi, una `/24` ne ha 256. Controlla sempre con la tabella.
+**Nella pratica**, l'indirizzo di rete identifica il blocco nel piano degli indirizzi e aiuta a verificare se due dispositivi appartengono alla stessa sottorete. Il broadcast indica tutti gli host della sottorete come destinatari.
 
-Se restano $h$ bit host, il blocco contiene $2^h$ indirizzi. Gli host assegnabili sono, nel caso ordinario, $2^h - 2$: l'indirizzo di rete e il broadcast hanno ruoli propri.
+🧪 **Esempio inventato: laboratorio scolastico `192.168.40.96/27`.** Il gateway è `192.168.40.97`; un PC è `192.168.40.110`.
 
-🧠 <u>Indirizzi nel blocco: $2^h$. Host ordinari: $2^h - 2$.</u>
+| Indirizzo | A che cosa serve nel caso |
+|---|---|
+| `192.168.40.96` | Identifica la sottorete nel piano degli indirizzi. Non si assegna al PC. |
+| `192.168.40.110` | Identifica il PC dentro quella sottorete. |
+| `192.168.40.127` | È il broadcast della sottorete: se un pacchetto lo usa come destinazione, è rivolto a tutti i suoi host. Non si assegna al PC. |
+
+Un uso reale del broadcast è cercare un servizio nella rete locale, senza contattare i dispositivi uno per uno. Per esempio, all'avvio un PC può chiedere i parametri di rete con **DHCP** (argomento successivo). Poiché non conosce ancora la propria sottorete, il primo messaggio usa il broadcast generale `255.255.255.255`, non per forza `192.168.40.127`. I router normalmente non inoltrano i broadcast locali alle altre reti.
+
+<u>Rete = identifica il blocco; broadcast = destinatario «tutti gli host»; gli indirizzi dei dispositivi stanno fra i due.</u>
 
 <details>
 <summary>🃏 <b>Che cosa indica il prefisso /p?</b></summary>
 Quanti bit iniziali dell'indirizzo sono di rete.
 </details>
 <details>
-<summary>🃏 <b>Quanti bit host restano in una /27?</b></summary>
-Cinque, perché 32 meno 27 fa 5.
-</details>
-<details>
 <summary>🃏 <b>Quanti indirizzi contiene una /27, e quanti host ordinari?</b></summary>
 32 indirizzi, 30 host ordinari.
 </details>
 <details>
-<summary>🃏 <b>Una /30 è più grande o più piccola di una /24?</b></summary>
-Più piccola: ha 4 indirizzi contro 256.
-</details>
-<details>
-<summary>🃏 <b>Perché gli host ordinari sono 2^h − 2?</b></summary>
-Perché l'indirizzo di rete e il broadcast non si assegnano agli host (nel caso ordinario).
+<summary>🃏 <b>In una rete scolastica, a che cosa servono rete e broadcast?</b></summary>
+La rete identifica il blocco; il broadcast indica tutti i suoi host come destinatari.
 </details>
 
-✏️ **Completa (3 min).** Copri la tabella e riscrivi la riga di `/27` e quella di `/29`: maschera, bit host, indirizzi, host ordinari. Poi controlla.
+✏️ **Completa (3 min).** Ricostruisci le righe `/27` e `/29` della tabella senza guardare.
 
 ### ✅ Dal prefisso al salto
-
-Per le maschere che cambiano nell'ultimo ottetto, c'è un metodo rapido:
+Per trovare il blocco di un indirizzo e calcolare rete e broadcast, per le maschere `/25`-`/30` si usa il salto:
 
 ```text
 salto = 256 − (valore dell'ottetto della maschera)
 ```
 
-🧪 **/27:** la maschera finisce con 224, quindi il salto è $256 - 224 = 32$. I blocchi iniziano a `.0`, `.32`, `.64`, `.96`, `.128`, `.160`, `.192`, `.224`.
+🧪 **Esempio `/27`:** maschera finale 224, quindi salto $256 - 224 = 32$. I blocchi iniziano a `.0`, `.32`, `.64`, `.96` e così via.
 
 🧠 <u>Il salto è la dimensione del blocco. Le reti iniziano sui multipli del salto.</u>
 
@@ -119,66 +106,45 @@ salto = 256 − (valore dell'ottetto della maschera)
 <summary>🃏 <b>Come si calcola il salto?</b></summary>
 256 meno il valore dell'ottetto della maschera.
 </details>
-<details>
-<summary>🃏 <b>Qual è il salto di una /27?</b></summary>
-32, perché 256 meno 224 fa 32.
-</details>
-<details>
-<summary>🃏 <b>Da dove iniziano i blocchi /27 nell'ultimo ottetto?</b></summary>
-Da 0, 32, 64, 96, 128, 160, 192 e 224.
-</details>
-
 ✏️ **Prevedi (2 min).** Senza guardare la tabella: qual è il salto di una `/28`? E di una `/25`?
 
 ### 🔍 Ogni indirizzo cade in un blocco allineato
+Per trovare la rete, si prende il **multiplo del salto più vicino che non supera l'indirizzo**.
 
-Come si trova la rete di un indirizzo? Si cerca il **multiplo del salto** più vicino, ma non maggiore.
+🧪 **Esempio svolto: trovare la rete di `192.168.40.110/27`.**
 
-🧪 **`192.168.40.110/27`.** Il salto è 32. I multipli di 32 sono 0, 32, 64, **96**, 128... Il 110 sta fra 96 e 127.
+1. **Salto:** 32.
+2. **Blocco:** 110 è fra 96 e 127, quindi la rete inizia a 96.
+3. **Estremi:** rete `.96`; broadcast `.96 + 32 - 1 = .127`; gli host stanno fra i due.
 
 | Informazione | Valore |
 |---|---|
-| Rete | `192.168.40.96/27` |
+| Indirizzo dato | `192.168.40.110/27` |
+| Rete, primo indirizzo del blocco | `192.168.40.96/27` |
 | Host ordinari | `192.168.40.97` - `192.168.40.126` |
-| Broadcast | `192.168.40.127` |
+| Broadcast, ultimo indirizzo del blocco | `192.168.40.127` |
 
-*La rete è il primo indirizzo del blocco; il broadcast è l'ultimo ($96 + 32 - 1 = 127$).*
+`192.168.40.110` è un host ordinario, non la rete. ⚠️ `.0` non significa sempre rete né `.255` broadcast: con `/26`, `192.168.40.64` è una rete e `192.168.40.127` un broadcast; con `/24`, `192.168.40.127` è un host.
 
-`.110` è un host del blocco. Non è la rete.
-
-⚠️ **`.0` non è sempre una rete, e `.255` non è sempre un broadcast.** Dipende dal prefisso. Per esempio `.64/26` è una rete, mentre `.127` può essere il broadcast di una `/26` ma un host in una `/24`.
-
-<details>
-<summary>🃏 <b>Come trovi la rete di un indirizzo con il metodo del salto?</b></summary>
-Prendi il multiplo del salto più vicino all'indirizzo, ma non maggiore.
-</details>
 <details>
 <summary>🃏 <b>Qual è la rete di 192.168.40.110/27?</b></summary>
 192.168.40.96/27.
 </details>
 <details>
-<summary>🃏 <b>Qual è il broadcast di 192.168.40.96/27?</b></summary>
-192.168.40.127.
-</details>
-<details>
-<summary>🃏 <b>.110 è il Network ID di una /27?</b></summary>
-No: è un host del blocco che inizia a .96.
+<summary>🃏 <b>192.168.40.110 è il Network ID di una /27?</b></summary>
+No: è un host della sottorete `192.168.40.96/27`.
 </details>
 
-✏️ **Linea dei numeri (3 min).** Disegna una linea da 0 a 255 e segna i blocchi di una `/27`. Dove cade `.110`? Dove inizia e dove finisce il suo blocco?
+✏️ **Linea dei numeri (3 min).** Disegna i blocchi `/27` da 0 a 255 e segna dove cadono `.110`, rete e broadcast.
 
 ### 🔍 Due metodi che si controllano a vicenda
-
-Un risultato è più solido se ci arrivi **in due modi**.
+Controlla il risultato con il salto e con l'AND in binario.
 
 🧪 **`172.16.5.70/26`.**
 
-**Metodo del salto.** Il salto è $256 - 192 = 64$. Blocchi: 0, 64, 128, 192. Il 70 sta fra 64 e 127.
-- rete: `172.16.5.64/26`
-- host ordinari: `172.16.5.65` - `172.16.5.126`
-- broadcast: `172.16.5.127`
+**Salto:** $256 - 192 = 64$. Nell'ultimo ottetto i blocchi sono 0-63, 64-127, 128-191 e 192-255: 70 cade nel secondo.
 
-**Metodo binario (AND).** L'ultimo ottetto: $70 = 01000110$, la maschera ha $192 = 11000000$.
+**AND binario:** $70 = 01000110$; la maschera $192 = 11000000$.
 
 ```text
 70   = 01000110
@@ -186,30 +152,20 @@ Un risultato è più solido se ci arrivi **in due modi**.
 AND  = 01000000  → 64
 ```
 
-*L'AND dà 64: la rete è `.64`. I due metodi coincidono.*
+Rete: `172.16.5.64/26`; host ordinari: `172.16.5.65`-`172.16.5.126`; broadcast: `172.16.5.127`. Entrambi i metodi danno 64 nell'ultimo ottetto.
 
-Se i due metodi danno risultati diversi, **c'è un errore**, ed è una buona notizia: sai che devi controllare.
+Se i metodi non coincidono, ricontrolla i passaggi.
 
-<details>
-<summary>🃏 <b>Quali due metodi usiamo per trovare la rete?</b></summary>
-Il salto (multipli del blocco) e l'AND in binario fra indirizzo e maschera.
-</details>
 <details>
 <summary>🃏 <b>Qual è la rete di 172.16.5.70/26?</b></summary>
 172.16.5.64/26.
 </details>
-<details>
-<summary>🃏 <b>Che cosa fai se i due metodi danno risultati diversi?</b></summary>
-Ricontrollo i passaggi: c'è un errore da trovare.
-</details>
 
-✏️ **Controlla (4 min).** Trova la rete di `10.4.9.45/28` con il metodo del salto, poi verificala con l'AND. Scrivi anche i due indirizzi che delimitano gli host.
+✏️ **Controlla (4 min).** Trova rete e intervallo host di `10.4.9.45/28` con il salto e verifica la rete con l'AND.
 
 ### 🤓 Più reti, un solo prefisso
 
-> Quattro blocchi `/26` consecutivi e allineati riempiono esattamente una `/24`. Allora l'intero gruppo si può descrivere con **un solo prefisso più corto**: è l'**aggregazione** (o *summarization*). Funziona solo se i blocchi sono contigui e allineati, e se il prefisso comune non include indirizzi estranei.
->
-> È anche il motivo per cui CIDR ha aiutato le tabelle dei router: invece di mille righe, ne basta una. In questa lezione vediamo solo l'idea. Come i router usano i prefissi lo studieremo più avanti.
+> Quattro blocchi `/26` contigui e allineati riempiono una `/24`: descriverli con un unico prefisso più corto si chiama **aggregazione** (*summarization*). Si può fare solo se il prefisso comune non include indirizzi estranei. Così CIDR può ridurre le righe nelle tabelle dei router; il routing si studia più avanti.
 
 <details>
 <summary>🃏 <b>Quale prefisso descrive quattro /26 consecutive e allineate?</b></summary>
@@ -221,9 +177,6 @@ Che i blocchi siano contigui e allineati e che il prefisso non includa indirizzi
 </details>
 
 ## ✏️ Esercizi
-
-![](icon_esercizi.svg)
-
 1. **Completa.** Quanti bit host restano in una `/28`? Quanti indirizzi ha il blocco? Quanti host ordinari?
 2. **Trova la rete.** Per `192.168.7.160/27`: rete, host ordinari, broadcast.
 3. **Trova l'errore.** «`192.168.40.100/27` è l'indirizzo di rete.» Dove sbaglia?
@@ -233,8 +186,6 @@ Che i blocchi siano contigui e allineati e che il prefisso non includa indirizzi
 **Uscita:** «In una rete `/p` restano ... bit host, quindi il blocco contiene ... indirizzi».
 
 ## 📚 Fonti e risorse
-
-![](icon_fonti.svg)
 
 - [RFC 4632 - Classless Inter-domain Routing](https://www.rfc-editor.org/rfc/rfc4632): la versione aggiornata (2006) dello standard CIDR. Per consultazione.
 - [Wikipedia - Classless Inter-Domain Routing](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing): storia e motivazioni del 1993.
