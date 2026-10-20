@@ -1,4 +1,4 @@
-⬅️ [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S7 - Ripasso e troubleshooting](%28STU%29%204DI%20sett-ott%20S7%20-%20Ripasso%20e%20troubleshooting.md) ➡️
+⬅️ [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) · 🏠 [Indice](../README.md) · [S7 - Ripasso e troubleshooting](%28STU%29%204DI%20sett-ott%20S7%20-%20Ripasso%20e%20troubleshooting.md) ➡️
 
 # 🧩 VLSM e progettazione
 
@@ -221,4 +221,4 @@ Quando una riserva motivata permette alla rete di crescere o riorganizzarsi.
 
 ---
 
-⬅️ [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S7 - Ripasso e troubleshooting](%28STU%29%204DI%20sett-ott%20S7%20-%20Ripasso%20e%20troubleshooting.md) ➡️
+⬅️ [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) · 🏠 [Indice](../README.md) · [S7 - Ripasso e troubleshooting](%28STU%29%204DI%20sett-ott%20S7%20-%20Ripasso%20e%20troubleshooting.md) ➡️

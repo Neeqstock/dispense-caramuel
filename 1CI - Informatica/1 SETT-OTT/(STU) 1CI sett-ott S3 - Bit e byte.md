@@ -1,4 +1,4 @@
-⬅️ [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) ➡️
+⬅️ [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) · 🏠 [Indice](../README.md) · [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) ➡️
 
 # 🔘 Bit e byte
 
@@ -223,7 +223,6 @@ Perché il produttore conta in GB (10⁹ byte) e il sistema può mostrare GiB (2
 </details>
 
 ### 🤓 Quanto costa un bit
-
 > Conservare e spostare bit richiede energia: i **data center**, enormi edifici pieni di computer, consumano molta elettricità e hanno bisogno di raffreddamento. Anche una foto che «sta nel cloud» sta in un edificio reale, che costa energia e acqua. Ridurre sprechi (cancellare file inutili, comprimere, evitare copie) è un piccolo gesto che ha una logica, ma non risolve da solo: contano soprattutto come sono progettati e alimentati i servizi.
 
 <img src="Allegati/image.webp" width="256" alt="Un datacenter.">
@@ -251,4 +250,4 @@ Perché il produttore conta in GB (10⁹ byte) e il sistema può mostrare GiB (2
 
 ---
 
-⬅️ [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) ➡️
+⬅️ [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) · 🏠 [Indice](../README.md) · [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) ➡️

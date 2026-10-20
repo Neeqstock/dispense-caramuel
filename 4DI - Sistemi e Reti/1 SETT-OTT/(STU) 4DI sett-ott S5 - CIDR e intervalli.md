@@ -1,4 +1,4 @@
-⬅️ [S4 - Reti private e FLSM](%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S6 - VLSM e progettazione](%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) ➡️
+⬅️ [S4 - Reti private e FLSM](%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) · 🏠 [Indice](../README.md) · [S6 - VLSM e progettazione](%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) ➡️
 
 # 🔢 CIDR e intervalli
 
@@ -32,6 +32,7 @@ Nel 1993 RFC 1518 e 1519 introducono **CIDR** (*Classless Inter-Domain Routing*)
 Nel 1995 Bob Metcalfe, inventore di Ethernet, prevede un «collasso catastrofico» di Internet entro l'anno successivo. Nel 1997, dopo che non accade, frulla e beve una copia della sua rubrica.
 
 CIDR non ha salvato Internet da solo, ma ha reso più efficiente l'assegnazione degli indirizzi e limitato la crescita delle tabelle.
+
 <img src="Allegati/image-2.webp" width="373" alt="Bob Metcalfe accanto a un frullatore durante una conferenza">
 *L'ha fatto davvero (pare)!*
 
@@ -194,4 +195,4 @@ Che i blocchi siano contigui e allineati e che il prefisso non includa indirizzi
 
 ---
 
-⬅️ [S4 - Reti private e FLSM](%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S6 - VLSM e progettazione](%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) ➡️
+⬅️ [S4 - Reti private e FLSM](%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) · 🏠 [Indice](../README.md) · [S6 - VLSM e progettazione](%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) ➡️

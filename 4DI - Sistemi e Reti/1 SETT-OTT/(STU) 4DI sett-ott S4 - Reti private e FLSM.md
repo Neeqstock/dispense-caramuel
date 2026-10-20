@@ -1,4 +1,4 @@
-⬅️ [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) ➡️
+⬅️ [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) · 🏠 [Indice](../README.md) · [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) ➡️
 
 # 🏠 Reti private e FLSM
 
@@ -306,4 +306,4 @@ Il computer stesso (loopback): il traffico non esce in rete.
 
 ---
 
-⬅️ [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) ➡️
+⬅️ [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) · 🏠 [Indice](../README.md) · [S5 - CIDR e intervalli](%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) ➡️

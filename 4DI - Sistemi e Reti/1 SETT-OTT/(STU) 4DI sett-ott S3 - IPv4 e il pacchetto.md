@@ -1,4 +1,4 @@
-⬅️ [S2 - Il livello fisico e Ethernet](%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S4 - Reti private e FLSM](%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) ➡️
+⬅️ [S2 - Il livello fisico e Ethernet](%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) · 🏠 [Indice](../README.md) · [S4 - Reti private e FLSM](%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) ➡️
 
 # 🌐 IPv4 e il pacchetto
 
@@ -390,4 +390,4 @@ No: limita il numero di inoltri. A ogni router diminuisce di uno.
 
 ---
 
-⬅️ [S2 - Il livello fisico e Ethernet](%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S4 - Reti private e FLSM](%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) ➡️
+⬅️ [S2 - Il livello fisico e Ethernet](%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) · 🏠 [Indice](../README.md) · [S4 - Reti private e FLSM](%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) ➡️

@@ -1,4 +1,4 @@
-⬅️ [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S6 - Cache localita e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) ➡️
+⬅️ [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) · 🏠 [Indice](../README.md) · [S6 - Cache localita e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) ➡️
 
 # 🧮 Indirizzi e gerarchia delle memorie
 
@@ -87,11 +87,11 @@ Non per forza. È una separazione per funzioni: un PC moderno può usare collega
 Un bit ha due configurazioni: 0 e 1. Due bit ne hanno quattro, tre bit otto. Ogni bit in più **raddoppia** le possibilità, perché davanti a ogni sequenza precedente possiamo mettere 0 oppure 1.
 
 | Bit dell'indirizzo | Configurazioni | Indirizzi, partendo da zero |
-|---|---|---|
-| 1 | 2 | 0-1 |
-| 2 | 4 | 0-3 |
-| 3 | 8 | 0-7 |
-| 4 | 16 | 0-15 |
+| ------------------ | -------------- | --------------------------- |
+| 1                  | 2              | 0-1                         |
+| 2                  | 4              | 0-3                         |
+| 3                  | 8              | 0-7                         |
+| 4                  | 16             | 0-15                        |
 
 Con $n$ bit di indirizzo distinguiamo:
 
@@ -319,4 +319,4 @@ No. Descrivono risorse diverse e non vanno sommate.
 
 ---
 
-⬅️ [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S6 - Cache localita e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) ➡️
+⬅️ [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) · 🏠 [Indice](../README.md) · [S6 - Cache localita e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) ➡️

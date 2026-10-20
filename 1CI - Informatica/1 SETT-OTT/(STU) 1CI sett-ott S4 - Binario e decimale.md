@@ -1,4 +1,4 @@
-⬅️ [S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) ➡️
+⬅️ [S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) · 🏠 [Indice](../README.md) · [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) ➡️
 
 # 🔢 Binario e decimale
 
@@ -33,7 +33,6 @@ mindmap
 ```
 
 ## 📜 Perché contiamo in base 10
-
 Abbiamo dieci dita, quindi contiamo a **dieci**. Ma non è l'unico modo. I babilonesi, quattromila anni fa, contavano a **sessanta**: per questo un'ora ha 60 minuti. I Maya contavano a **venti**. I computer contano a **due**, perché i loro interruttori hanno due stati.
 
 La grande invenzione, in India e poi nel mondo arabo, fu la **posizione**: la stessa cifra vale di più o di meno a seconda di dove sta. Con la posizione e lo zero bastano poche cifre per scrivere numeri enormi. Il binario usa la **stessa idea**, con meno cifre.
@@ -230,4 +229,4 @@ Da 0 a 31: 5 bit danno 32 combinazioni.
 
 ---
 
-⬅️ [S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) ➡️
+⬅️ [S3 - Bit e byte](%28STU%29%201CI%20sett-ott%20S3%20-%20Bit%20e%20byte.md) · 🏠 [Indice](../README.md) · [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) ➡️

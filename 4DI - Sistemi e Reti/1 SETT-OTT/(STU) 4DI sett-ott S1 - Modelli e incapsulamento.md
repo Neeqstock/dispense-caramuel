@@ -1,4 +1,4 @@
-🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S2 - Il livello fisico e Ethernet](%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) ➡️
+🏠 [Indice](../README.md) · [S2 - Il livello fisico e Ethernet](%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) ➡️
 
 # 🧭 Modelli e incapsulamento
 
@@ -375,4 +375,4 @@ OSI aiuta a ragionare per funzioni; TCP/IP descrive i protocolli di Internet.
 
 ---
 
-🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S2 - Il livello fisico e Ethernet](%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) ➡️
+🏠 [Indice](../README.md) · [S2 - Il livello fisico e Ethernet](%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) ➡️

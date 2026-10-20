@@ -1,4 +1,4 @@
-# Verifica di allenamento — capire e progettare con gli oggetti
+# Simulazione di verifica — capire e progettare con gli oggetti
 
 **4CI · Informatica · 55 minuti · 10 punti**
 
@@ -55,7 +55,7 @@ I tempi sono indicativi: puoi distribuirli come preferisci e lasciare qualche mi
 
 **T4 ✅ (0,5)** Un programma gestisce diversi tipi di notifica attraverso la stessa operazione `invia()`. Qual è un vantaggio del polimorfismo?
 
-- [ ] **A.** Il programma può usare un contratto comune senza dover conoscere ogni volta la classe concreta.
+- [ ] **A.** Il programma può usare un contratto (interfaccia) comune senza dover conoscere ogni volta la classe concreta.
 - [ ] **B.** Tutti gli oggetti diventano istanze della stessa classe.
 - [ ] **C.** Gli oggetti non hanno più attributi.
 - [ ] **D.** Le classi concrete non devono definire il proprio comportamento.
@@ -169,6 +169,7 @@ abstract class Strumento {
 }
 
 class Flauto extends Strumento {
+    @Override
     public String suona() {
         return "Fiu";
     }

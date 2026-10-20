@@ -1,4 +1,4 @@
-⬅️ [S1 - Classi e oggetti](%28STU%29%204CI%20sett-ott%20S1%20-%20Classi%20e%20oggetti.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S3 - Incapsulamento](%28STU%29%204CI%20sett-ott%20S3%20-%20Incapsulamento.md) ➡️
+⬅️ [S1 - Classi e oggetti](%28STU%29%204CI%20sett-ott%20S1%20-%20Classi%20e%20oggetti.md) · 🏠 [Indice](../README.md) · [S3 - Incapsulamento](%28STU%29%204CI%20sett-ott%20S3%20-%20Incapsulamento.md) ➡️
 
 # 🏗️ Costruttori e overloading
 
@@ -549,4 +549,4 @@ Un oggetto aiutante che riceve i pezzi uno alla volta, con metodi dai nomi chiar
 
 ---
 
-⬅️ [S1 - Classi e oggetti](%28STU%29%204CI%20sett-ott%20S1%20-%20Classi%20e%20oggetti.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S3 - Incapsulamento](%28STU%29%204CI%20sett-ott%20S3%20-%20Incapsulamento.md) ➡️
+⬅️ [S1 - Classi e oggetti](%28STU%29%204CI%20sett-ott%20S1%20-%20Classi%20e%20oggetti.md) · 🏠 [Indice](../README.md) · [S3 - Incapsulamento](%28STU%29%204CI%20sett-ott%20S3%20-%20Incapsulamento.md) ➡️

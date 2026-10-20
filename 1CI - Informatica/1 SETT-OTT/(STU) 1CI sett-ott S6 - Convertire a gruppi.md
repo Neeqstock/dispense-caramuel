@@ -1,4 +1,4 @@
-⬅️ [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S7 - Ripasso attivo](%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md) ➡️
+⬅️ [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) · 🏠 [Indice](../README.md) · [S7 - Ripasso attivo](%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md) ➡️
 
 # 🔁 Convertire a gruppi
 
@@ -178,4 +178,4 @@ Con i pesi di 16, oppure passando dal binario e sommando i pesi di 2.
 
 ---
 
-⬅️ [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S7 - Ripasso attivo](%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md) ➡️
+⬅️ [S5 - Esadecimale e ottale](%28STU%29%201CI%20sett-ott%20S5%20-%20Esadecimale%20e%20ottale.md) · 🏠 [Indice](../README.md) · [S7 - Ripasso attivo](%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md) ➡️

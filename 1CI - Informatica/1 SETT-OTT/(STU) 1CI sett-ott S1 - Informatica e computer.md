@@ -1,4 +1,4 @@
-🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) ➡️
+🏠 [Indice](../README.md) · [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) ➡️
 
 # 🧭 Informatica e computer
 
@@ -245,6 +245,6 @@ No. Sono tre modi di scrivere lo stesso numero.
 
 ---
 
-[🗺️ Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S2 - Dati e informazioni ➡️](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md)
+[🗺️ Indice](../README.md) · [S2 - Dati e informazioni ➡️](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md)
 
-🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) ➡️
+🏠 [Indice](../README.md) · [S2 - Dati e informazioni](%28STU%29%201CI%20sett-ott%20S2%20-%20Dati%20e%20informazioni.md) ➡️

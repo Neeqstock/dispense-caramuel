@@ -1,4 +1,4 @@
-🏠 [Indice SETT-OTT](%28STU%29%204DI%20-%20SETT-OTT.md)
+🏠 [Indice SETT-OTT](../README.md)
 
 # 🎮 Giochiamo con le reti
 
@@ -144,4 +144,4 @@ La pagina del livello fornisce le credenziali iniziali e le istruzioni. La conne
 
 ---
 
-🏠 [Indice SETT-OTT](%28STU%29%204DI%20-%20SETT-OTT.md)
+🏠 [Indice SETT-OTT](../README.md)

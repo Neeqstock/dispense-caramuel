@@ -1,4 +1,4 @@
-⬅️ [S1 - Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) ➡️
+⬅️ [S1 - Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) · 🏠 [Indice](../README.md) · [S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) ➡️
 
 # 🏛️ La macchina di Von Neumann
 
@@ -284,4 +284,4 @@ Che un programma memorizzato poteva davvero essere eseguito da una macchina elet
 
 ---
 
-⬅️ [S1 - Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) ➡️
+⬅️ [S1 - Dalle macchine alla CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) · 🏠 [Indice](../README.md) · [S3 - Registri e percorsi dei dati](%28STU%29%203EI%20sett-ott%20S3%20-%20Registri%20e%20percorsi%20dei%20dati.md) ➡️

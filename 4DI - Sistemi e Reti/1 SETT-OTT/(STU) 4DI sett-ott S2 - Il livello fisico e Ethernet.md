@@ -1,4 +1,4 @@
-⬅️ [S1 - Modelli e incapsulamento](%28STU%29%204DI%20sett-ott%20S1%20-%20Modelli%20e%20incapsulamento.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) ➡️
+⬅️ [S1 - Modelli e incapsulamento](%28STU%29%204DI%20sett-ott%20S1%20-%20Modelli%20e%20incapsulamento.md) · 🏠 [Indice](../README.md) · [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) ➡️
 
 # 📡 Il livello fisico e Ethernet
 
@@ -372,4 +372,4 @@ No: ha un collegamento dedicato e può trasmettere e ricevere insieme.
 
 ---
 
-⬅️ [S1 - Modelli e incapsulamento](%28STU%29%204DI%20sett-ott%20S1%20-%20Modelli%20e%20incapsulamento.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md) · [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) ➡️
+⬅️ [S1 - Modelli e incapsulamento](%28STU%29%204DI%20sett-ott%20S1%20-%20Modelli%20e%20incapsulamento.md) · 🏠 [Indice](../README.md) · [S3 - IPv4 e il pacchetto](%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) ➡️

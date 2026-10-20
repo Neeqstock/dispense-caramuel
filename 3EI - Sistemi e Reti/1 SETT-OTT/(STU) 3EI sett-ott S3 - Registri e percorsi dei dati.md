@@ -1,4 +1,4 @@
-⬅️ [S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) ➡️
+⬅️ [S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) · 🏠 [Indice](../README.md) · [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) ➡️
 
 # 🗃️ Registri e percorsi dei dati
 
@@ -43,16 +43,17 @@ Servono piccoli posti di lavoro interni. È lo stesso problema di quando segui u
 ## 🗃️ Registri
 
 ### ✅ Registri e ruoli
+#fatto
 
 Un **registro** è una piccola memoria dentro il processore, con capacità limitata. Conserva bit: ciascun registro, però, ha un **ruolo**, ed è il ruolo a dare significato a quei bit. I **registri generali**, qui R1, R2 e R3, conservano operandi e risultati temporanei. Nel nostro modello altri registri hanno compiti specifici.
 
-| Nome | Domanda a cui risponde | Contenuto nel modello |
-|---|---|---|
-| **PC**, Program Counter | Dove prenderò la prossima istruzione? | Un indirizzo di istruzione |
-| **IR**, Instruction Register | Quale istruzione sto eseguendo? | L'istruzione prelevata |
-| **MAR**, Memory Address Register | Quale cella interessa l'accesso in corso? | Un indirizzo di memoria |
-| **MDR**, Memory Data Register | Quale contenuto sto ricevendo o inviando? | Il valore letto o da scrivere |
-| **Flag**, nel registro di stato | Che proprietà ha avuto un risultato? | Informazioni sintetiche, non l'intero risultato |
+| Nome                             | Domanda a cui risponde                    | Contenuto nel modello                           |
+| -------------------------------- | ----------------------------------------- | ----------------------------------------------- |
+| **PC**, Program Counter          | Dove prenderò la prossima istruzione?     | Un indirizzo di istruzione                      |
+| **IR**, Instruction Register     | Quale istruzione sto eseguendo?           | L'istruzione prelevata                          |
+| **MAR**, Memory Address Register | Quale cella interessa l'accesso in corso? | Un indirizzo di memoria                         |
+| **MDR**, Memory Data Register    | Quale contenuto sto ricevendo o inviando? | Il valore letto o da scrivere                   |
+| **Flag**, nel registro di stato  | Che proprietà ha avuto un risultato?      | Informazioni sintetiche, non l'intero risultato |
 
 PC e MAR possono contenere lo stesso numero in un certo momento, ma **non hanno lo stesso ruolo**. Il PC segue la sequenza delle istruzioni; il MAR serve per ogni accesso, anche ai dati. L'MDR può contenere un'istruzione: per la memoria è solo un contenuto trasferito.
 
@@ -102,7 +103,7 @@ In questa dispensa Program Counter, il registro con l'indirizzo della prossima i
 </details>
 
 ### ✅ Notazione
-
+#fatto #rivedere
 - `R1 <- 7` significa «copia 7 in R1». La freccia non è un'uguaglianza e non svuota la sorgente.
 - `MEM[40]` indica **il contenuto** della cella di indirizzo 40.
 - `MAR <- 40` e `MDR <- MEM[40]` fanno lavori diversi.
@@ -127,6 +128,7 @@ Un intero dato oppure un'intera istruzione.
 ## 📥 Leggere e scrivere in memoria
 
 ### ✅ Esempio svolto: leggere il valore 23
+**Tutte le volte che dobbiamo andare a leggere e scrivere dalla memoria, dobbiamo utilizzare MAR e MDR.**
 La cella 40 contiene 23 e vogliamo copiarlo in R1. Per ora ignoriamo il prelievo dell'istruzione che ordina questa operazione.
 
 | Passo | Azione | Perché serve |
@@ -168,7 +170,8 @@ No. Riceve il contenuto della cella: 40 dice dove cercare, non che cosa c'è.
 </details>
 
 ### 🔍 Prelievo di un'istruzione
-
+#fatto #rivedere
+**Anche il prelievo di un'istruzione dalla memoria passa per MAR e MDR.**
 Supponiamo PC = 10 e MEM[10] = `LOAD R1, [40]`. Per prelevarla copiamo il PC nel MAR, chiediamo una lettura e riceviamo l'istruzione nel MDR. Poi la copiamo nell'IR. Ora la CU può interpretarla.
 
 ```text
@@ -189,7 +192,7 @@ L'IR conserva l'istruzione, mentre l'MDR riceve il dato richiesto: così la CPU 
 </details>
 
 ### 🔍 Scrittura in memoria
-
+#fatto
 Vogliamo copiare in memoria il valore di R3 = 12, nella cella 50. Si prepara `MAR <- 50` e `MDR <- R3`, poi la CU attiva `WRITE`. Alla fine MEM[50] contiene 12: il vecchio contenuto di quella cella è **sostituito**. R3 resta 12.
 
 Indirizzo e valore vanno preparati prima della scrittura. Un indirizzo sbagliato modifica un'altra cella, anche se il valore è giusto.
@@ -210,6 +213,7 @@ Perché con un indirizzo sbagliato si modifica un'altra cella, anche se il valor
 ## 🚩 Flag
 
 ### 🔍 Flag e risultati
+#fatto #ripassare
 
 Dopo la sottrazione $7-7$ il risultato è 0 e il flag **Z** (zero) può valere 1 per segnalarlo. Un'istruzione successiva può usare questa informazione per scegliere che strada prendere.
 
@@ -235,6 +239,7 @@ No. Aumenta la memoria principale, non la memoria interna del processore.
 </details>
 
 ### 🤓 Overflow e riporto
+#fatto #ripassare
 
 > Un registro da 4 bit ha 16 configurazioni. Come interi senza segno rappresentano i numeri da 0 a 15. La somma $15+1$ richiederebbe cinque bit: `1111 + 0001 = 10000`. Se ne teniamo solo quattro resta `0000`, con un riporto.
 >
@@ -273,4 +278,4 @@ No. Il carry riguarda le operazioni senza segno, l'overflow quelle con segno.
 
 ---
 
-⬅️ [S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) · 🏠 [Indice](%28STU%29%203EI%20-%20SETT-OTT.md) · [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) ➡️
+⬅️ [S2 - La macchina di Von Neumann](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md) · 🏠 [Indice](../README.md) · [S4 - Il ciclo macchina](%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) ➡️

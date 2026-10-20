@@ -1,4 +1,4 @@
-⬅️ [S4 - Ereditarietà](%28STU%29%204CI%20sett-ott%20S4%20-%20Ereditariet%C3%A0.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S6 - Classi astratte e interfacce](%28STU%29%204CI%20sett-ott%20S6%20-%20Classi%20astratte%20e%20interfacce.md) ➡️
+⬅️ [S4 - Ereditarietà](%28STU%29%204CI%20sett-ott%20S4%20-%20Ereditariet%C3%A0.md) · 🏠 [Indice](../README.md) · [S6 - Classi astratte e interfacce](%28STU%29%204CI%20sett-ott%20S6%20-%20Classi%20astratte%20e%20interfacce.md) ➡️
 
 # 🎭 Polimorfismo e casting
 
@@ -693,4 +693,4 @@ L'upcasting no. Il downcasting genera l'istruzione checkcast, che controlla il t
 
 ---
 
-⬅️ [S4 - Ereditarietà](%28STU%29%204CI%20sett-ott%20S4%20-%20Ereditariet%C3%A0.md) · 🏠 [Indice](%28STU%29%204CI%20-%20SETT-OTT.md) · [S6 - Classi astratte e interfacce](%28STU%29%204CI%20sett-ott%20S6%20-%20Classi%20astratte%20e%20interfacce.md) ➡️
+⬅️ [S4 - Ereditarietà](%28STU%29%204CI%20sett-ott%20S4%20-%20Ereditariet%C3%A0.md) · 🏠 [Indice](../README.md) · [S6 - Classi astratte e interfacce](%28STU%29%204CI%20sett-ott%20S6%20-%20Classi%20astratte%20e%20interfacce.md) ➡️

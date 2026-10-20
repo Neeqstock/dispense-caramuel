@@ -1,4 +1,4 @@
-⬅️ [S6 - VLSM e progettazione](%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md)
+⬅️ [S6 - VLSM e progettazione](%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) · 🏠 [Indice](../README.md)
 
 # 🧠 Ripasso e troubleshooting
 
@@ -228,4 +228,4 @@ Un caso in cui una regola, che sembrava generale, non vale.
 
 ---
 
-⬅️ [S6 - VLSM e progettazione](%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) · 🏠 [Indice](%28STU%29%204DI%20-%20SETT-OTT.md)
+⬅️ [S6 - VLSM e progettazione](%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) · 🏠 [Indice](../README.md)

@@ -1,4 +1,4 @@
-⬅️ [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) ➡️
+⬅️ [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) · 🏠 [Indice](../README.md) · [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) ➡️
 
 # 🔣 Esadecimale e ottale
 
@@ -245,4 +245,4 @@ Perché è il byte con tutti gli 8 bit a 1, cioè 255.
 
 ---
 
-⬅️ [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md) · [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) ➡️
+⬅️ [S4 - Binario e decimale](%28STU%29%201CI%20sett-ott%20S4%20-%20Binario%20e%20decimale.md) · 🏠 [Indice](../README.md) · [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) ➡️

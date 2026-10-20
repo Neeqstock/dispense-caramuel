@@ -1,4 +1,4 @@
-⬅️ [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md)
+⬅️ [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) · 🏠 [Indice](../README.md)
 
 # 🧠 Ripasso attivo
 
@@ -210,4 +210,4 @@ Segni dove, e riprovi: l'errore ti dice quale regola riguardare.
 
 ---
 
-⬅️ [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) · 🏠 [Indice](%28STU%29%201CI%20-%20SETT-OTT.md)
+⬅️ [S6 - Convertire a gruppi](%28STU%29%201CI%20sett-ott%20S6%20-%20Convertire%20a%20gruppi.md) · 🏠 [Indice](../README.md)
