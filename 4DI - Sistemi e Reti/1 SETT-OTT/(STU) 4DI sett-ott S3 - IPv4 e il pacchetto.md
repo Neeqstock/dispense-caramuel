@@ -41,7 +41,7 @@ Nove inviati, quattro tornati: è il *best effort* in versione piumata. Una rete
 
 ## 📦 Il protocollo IP
 ### ✅ IP inoltra pacchetti senza garanzie
-#fatto
+#fatto👍 
 
 **IP** (*Internet Protocol*) dà a ogni interfaccia un indirizzo e porta **pacchetti** da una rete all'altra.
 
@@ -81,7 +81,7 @@ Dentro il campo dati di un frame (in S2 abbiamo visto il frame Ethernet).
 
 ## 🔢 L'indirizzo IPv4
 ### ✅ Un indirizzo IPv4 ha 32 bit
-#fatto
+#fatto👍 
 
 Un indirizzo IPv4 è una sequenza di **32 bit**, divisa in quattro **ottetti** da 8 bit. Per leggerla comodamente, ogni ottetto si scrive in decimale (da 0 a 255) e si separa con un punto: è la **notazione decimale puntata**.
 
@@ -126,7 +126,7 @@ Un'interfaccia di rete, non un computer intero.
 ✏️ **Converti (3 min).** Scrivi in binario i quattro ottetti di `192.168.1.25`, usando la tabella dei pesi. Poi riconverti `00011001` e controlla di ottenere 25.
 
 ### ✅ Il prefisso separa rete e host
-#fatto 
+#fatto👍 
 
 Una **rete IP**, o **sottorete**, è un gruppo di interfacce che condivide lo stesso prefisso. In una rete locale, lo **switch** inoltra i frame fra i dispositivi collegati; il **router** porta i pacchetti da una rete IP a un'altra. Qui «rete» indica un singolo gruppo locale, non Internet intera.
 
@@ -187,7 +187,7 @@ Il NetID identifica la rete; l'HostID identifica l'interfaccia dentro la rete.
 
 
 ### 🔍 L'AND con la maschera trova la rete
-#fatto
+#fatto👍 
 
 Per trovare la rete, si fa l'**AND** bit a bit fra indirizzo e maschera. L'AND dà 1 solo se **entrambi** i bit sono 1.
 
@@ -229,7 +229,7 @@ No: `255.255.255.0` è la maschera di `/24`; per `192.168.1.25/24`, `192.168.1.0
 ✏️ **Prevedi, poi calcola (3 min).** Prima scrivi a mente la rete di `10.7.3.200/24`. Poi fai l'AND in binario sull'ultimo ottetto per controllare.
 
 ### 🔍 Indirizzi privati e indirizzi speciali
-#fatto
+#fatto👍 
 
 Alcuni indirizzi hanno un **uso riservato**; altri sono semplicemente comuni. <u>`192.168.1.1` è un indirizzo privato spesso scelto per il router, non un indirizzo speciale riservato proprio ai router.</u>
 (non è detto che dietro a 192.168.1.1 ci sia il router, anche se spesso è così)

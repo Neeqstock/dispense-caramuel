@@ -95,12 +95,12 @@ Per assegnare i blocchi, segui questi quattro passaggi:
 
 🧪 **Esempio svolto: piano di una rete scolastica inventata.** Dividiamo `192.168.60.0/24` fra quattro gruppi. Le richieste sono di 50, 25, 12 e 6 indirizzi host complessivi: se il gruppo usa un gateway nella propria sottorete, il suo indirizzo è già compreso nella richiesta. Per ogni gruppo scegliamo il primo indirizzo host come gateway.
 
-| Gruppo | Indirizzi richiesti | Bit host $h$ | Prefisso | Indirizzi nel blocco | Rete | Intervallo host | Gateway | Broadcast |
-|---|---:|---:|---:|---:|---|---|---|---|
-| Laboratorio | 50 | 6 | `/26` | 64 | `192.168.60.0` | `192.168.60.1` - `192.168.60.62` | `192.168.60.1` | `192.168.60.63` |
-| Aula | 25 | 5 | `/27` | 32 | `192.168.60.64` | `192.168.60.65` - `192.168.60.94` | `192.168.60.65` | `192.168.60.95` |
-| Docenti | 12 | 4 | `/28` | 16 | `192.168.60.96` | `192.168.60.97` - `192.168.60.110` | `192.168.60.97` | `192.168.60.111` |
-| Stampanti | 6 | 3 | `/29` | 8 | `192.168.60.112` | `192.168.60.113` - `192.168.60.118` | `192.168.60.113` | `192.168.60.119` |
+| Gruppo      | Indirizzi richiesti | Bit host $h$ | Prefisso | Indirizzi nel blocco | Rete             | Intervallo host                     | Gateway          | Broadcast        |
+| ----------- | ------------------: | -----------: | -------: | -------------------: | ---------------- | ----------------------------------- | ---------------- | ---------------- |
+| Laboratorio |                  50 |            6 |    `/26` |                   64 | `192.168.60.0`   | `192.168.60.1` - `192.168.60.62`    | `192.168.60.1`   | `192.168.60.63`  |
+| Aula        |                  25 |            5 |    `/27` |                   32 | `192.168.60.64`  | `192.168.60.65` - `192.168.60.94`   | `192.168.60.65`  | `192.168.60.95`  |
+| Docenti     |                  12 |            4 |    `/28` |                   16 | `192.168.60.96`  | `192.168.60.97` - `192.168.60.110`  | `192.168.60.97`  | `192.168.60.111` |
+| Stampanti   |                   6 |            3 |    `/29` |                    8 | `192.168.60.112` | `192.168.60.113` - `192.168.60.118` | `192.168.60.113` | `192.168.60.119` |
 
 **Come ricaviamo prefisso e dimensione?** Per il laboratorio servono almeno 50 indirizzi host. Con 5 bit host avremmo $2^5 - 2 = 30$ indirizzi utilizzabili, quindi non bastano. Con 6 bit host ne abbiamo $2^6 - 2 = 62$. Il prefisso è `/26`, perché $32 - 6 = 26$; il blocco contiene $2^6 = 64$ indirizzi. Gli altri gruppi si dimensionano allo stesso modo.
 
@@ -184,6 +184,8 @@ Per esempio, l'aula richiede 25 indirizzi host: 24 per i computer e uno per il g
 
 Il piano è verificabile perché riporta richiesta, bit host, dimensione del blocco, rete e prefisso, intervallo host, gateway e broadcast. Se il gateway usa un altro indirizzo host, la tabella dichiara la convenzione scelta.
 
+- [ ] #ai cosa vuol dire l'ultima frase
+
 <details>
 <summary>🃏 <b>Quali dati rendono verificabile una tabella VLSM?</b></summary>
 La tabella indica gruppo, richiesta, bit host, dimensione del blocco, rete e prefisso, intervallo degli host, broadcast e gateway.
@@ -198,6 +200,8 @@ No: può seguire un'altra convenzione, purché usi un indirizzo host valido e il
 > Lasciare indirizzi liberi non è sempre uno spreco. Uno **spazio di riserva** ragionato permette di aggiungere un reparto o ampliare una sottorete senza riprogettare tutto. Se il piano non spiega a che cosa serve lo spazio libero, però, nessuno sa se sia una riserva o un'assegnazione dimenticata.
 >
 > Un piano corretto e facile da estendere è più utile di un piano che assegna ogni indirizzo ma è difficile da modificare.
+> 
+> Come "thumb rule" (regola a spanne) dicono di prevedere almeno un 20% - 30% di spazi liberi per un'azienda che è destinata a crescere.
 
 <details>
 <summary>🃏 <b>Quando è utile lasciare indirizzi non assegnati?</b></summary>
@@ -218,6 +222,8 @@ Quando una riserva motivata permette alla rete di crescere o riorganizzarsi.
 - [xkcd 195 - Map of the Internet](https://xkcd.com/195/): il fumetto-mappa dello spazio IPv4 nel 2006. Guarda chi aveva un `/8` intero.
 - [Wikipedia - List of assigned /8 IPv4 address blocks](https://en.wikipedia.org/wiki/List_of_assigned_/8_IPv4_address_blocks): chi aveva ricevuto quali blocchi, e chi li ha restituiti.
 - [RIPE NCC - IPv4 Subnetting](https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-subnetting/): uno strumento per **controllare** il tuo piano. Prima progetta a mano.
+
+[[Esempio subnetting da IANA a utente finale]]
 
 ---
 

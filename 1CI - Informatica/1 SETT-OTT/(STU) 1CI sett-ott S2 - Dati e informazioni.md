@@ -23,11 +23,15 @@ mindmap
       Software di base
       Software applicativo
       Utente
+      Astrazione
     🔄 Come lavora un computer
       Ingresso
       Elaborazione
       Uscita
       Memorizzazione
+    🤝 Protocollo
+      Regole condivise
+      Telefonata
 ```
 
 ## 📊 Dato, informazione, conoscenza
@@ -37,6 +41,7 @@ Immagina di trovare un foglietto con scritto soltanto **39**. Che cos'è? Un'et�
 Questo piccolo passo è il cuore dell'informatica: i computer maneggiano miliardi di numeri, ma a noi servono quando **significano qualcosa**.
 
 ### ✅ Tre gradini
+#fatto👍 
 
 ```text
   CONOSCENZA   «Ho la febbre: resto a casa e riposo»
@@ -74,6 +79,7 @@ No. L'informazione è il dato più il contesto che gli dà significato.
 </details>
 
 ### 🔍 Lo stesso dato, tanti contesti
+#fatto👍 
 
 Il dato `120` può diventare informazioni molto diverse:
 
@@ -93,8 +99,12 @@ Il dato resta lo stesso, ma l'informazione cambia completamente.
 ## 🖥️ Hardware e software
 
 ### ✅ Che cosa vede l'utente e che cosa c'è sotto
+#fatto👍 
 
 Il computer funziona a **livelli**. Ognuno usa quello sotto di sé.
+L'utente usa il software applicativo.
+Il software applicativo deve "parlare" con il sistema operativo.
+Il sistema operativo "parla" con l'hardware. È lui che sa interpretare veramente tutti i segnali che arrivano dallla CPU, dalla RAM, dalle porte USB, che sa controllare lo schermo, etc.
 
 ```text
 ┌────────────────────────────────────────────┐
@@ -137,9 +147,17 @@ Software: è un programma, anche se lavora vicino alla macchina.
 L'utente usa i programmi; i programmi usano il sistema operativo; il sistema operativo usa l'hardware.
 </details>
 
-### 🤓 Astrazione
+### 🔍 Astrazione: il dettaglio nascosto
+#fatto👍 
 
-> Quando premi `Ctrl+S` non pensi ai transistor del disco. Ogni livello **nasconde i dettagli** di quello sotto: si chiama **astrazione**. I dettagli esistono ancora, ma coperti da uno strato più comodo. È la grande idea che permette di costruire cose complicate: nessuno le tiene in testa tutte insieme.
+Ogni livello **nasconde i dettagli** di quello sotto: si chiama **astrazione**. Quando accendi il Wi-Fi premi un pulsante e basta: non pensi alle onde radio che portano il segnale.
+
+🧠 <u>L'astrazione non cancella i dettagli: esistono ancora, coperti da uno strato più comodo.</u>
+
+<details>
+<summary>🃏 <b>Che cos'è l'astrazione?</b></summary>
+Nascondere i dettagli di un livello sotto, perché chi usa il sistema non deve pensarci.
+</details>
 
 ## 🔄 Come lavora un computer
 
@@ -191,6 +209,26 @@ Per classificare, chiediti: **«In questo momento, dove vanno i dati: dentro o f
 <details>
 <summary>🃏 <b>Lo schermo touch è ingresso o uscita?</b></summary>
 Tutte e due: mostra le immagini (uscita) e riceve il tocco (ingresso).
+</details>
+
+## 🤝 Protocollo: le regole per capirsi
+
+### ✅ Un accordo su come parlarsi
+#fatto👍 
+
+Un **protocollo** è un insieme di regole condivise che due dispositivi seguono per scambiarsi dati. Non è un cavo e non è un messaggio: è l'accordo su come mandarlo e riceverlo.
+
+🧪 Al telefono c'è un accordo implicito: chi chiama aspetta che l'altro dica «Pronto?», poi si presenta. Se entrambi parlassero insieme, la conversazione non partirebbe.
+
+🧠 <u>Un protocollo è una regola condivisa, non un oggetto.</u>
+
+<details>
+<summary>🃏 <b>Che cos'è un protocollo?</b></summary>
+Un insieme di regole condivise che due dispositivi seguono per scambiarsi dati.
+</details>
+<details>
+<summary>🃏 <b>Un protocollo è un cavo?</b></summary>
+No: il cavo è un mezzo fisico, il protocollo è la regola che dice come usarlo.
 </details>
 
 ## ✏️ Metti alla prova

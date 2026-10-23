@@ -30,7 +30,7 @@ I tempi sono indicativi: puoi distribuirli come preferisci e lasciare qualche mi
 
 - [ ] **A.** La classe è una variabile che contiene tutti gli oggetti.
 - [ ] **B.** Gli oggetti di una classe hanno sempre lo stesso stato.
-- [ ] **C.** La classe descrive caratteristiche e comportamenti; ogni oggetto ha il proprio stato.
+- [x] **C.** La classe descrive caratteristiche e comportamenti; ogni oggetto ha il proprio stato. ✅ 2026-10-20
 - [ ] **D.** Un oggetto esiste solo mentre si scrive il programma.
 
 *Perché? (facoltativo)* ______________________________________________

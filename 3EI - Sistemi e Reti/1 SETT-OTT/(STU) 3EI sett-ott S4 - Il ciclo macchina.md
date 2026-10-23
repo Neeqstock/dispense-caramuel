@@ -310,6 +310,7 @@ Indirizzi: 41. Dati: 12. Controllo: WRITE.
 </details>
 
 ### 🔍 Indirizzo calcolato
+#no
 
 Questa sezione mostra un modo comune per trovare un dato: **indirizzo di partenza + spostamento**. Serve, per esempio, quando i valori di un elenco sono in celle consecutive: il programma tiene in un registro l'indirizzo di partenza e cambia lo spostamento per raggiungere un'altra cella.
 
@@ -340,18 +341,18 @@ No. Il clic avvia un programma composto da moltissime istruzioni; la traccia su 
 
 ### 🤓 Salti, cicli e clock
 
-> Finora la CPU ha eseguito tutte le istruzioni in ordine. Ma un programma deve anche poter scegliere: **se non ci sono biglietti disponibili, non venderne uno**. Per saltare le istruzioni della vendita serve cambiare il PC.
+> Finora la CPU ha eseguito tutte le istruzioni in ordine. Ma un programma deve anche poter scegliere: ad esempio un programma che dice **se non ci sono biglietti disponibili, non venderne uno**. Per saltare le istruzioni della vendita serve cambiare il PC.
 >
 > Un **salto condizionato**, o *branch*, cambia il PC solo se una condizione è vera. Usiamo `BEQ`, già presente nel [foglio di notazione assembly](%28STU%29%203EI%20-%20Linguaggio%20assembly%20base.md): significa «salta se i due registri contengono valori uguali».
 >
 > 🧪 **Esempio: vendere un biglietto, ma solo se ne rimangono.** MEM[40] contiene il numero di biglietti disponibili. All'inizio PC = 10 e R2 = 0; R2 rimane zero per tutto il programma.
 >
 > | Indirizzo | Etichetta | Istruzione | Che cosa fa |
-> |---:|---|---|---|
-> | 10 | | `LOAD R1, [40]` | Legge quanti biglietti rimangono. |
-> | 11 | | `BEQ R1, R2, fine` | Se R1 è zero come R2, salta a `fine`. |
-> | 12 | | `ADDI R1, R1, -1` | Toglie un biglietto dal conteggio in R1. |
-> | 13 | | `STORE [40], R1` | Aggiorna il conteggio in memoria. |
+> |---|---|---|---|
+> | 10 | `LOAD R1, [40]` | Legge quanti biglietti rimangono. |
+> | 11  | `BEQ R1, R2, fine` | Se R1 è zero come R2, salta a `fine`. |
+> | 12  | `ADDI R1, R1, -1` | Toglie un biglietto dal conteggio in R1. |
+> | 13  | `STORE [40], R1` | Aggiorna il conteggio in memoria. |
 > | 14 | `fine` | `HALT` | Ferma la simulazione. |
 >
 > Un'**etichetta** è un nome dato all'indirizzo di un'istruzione: qui `fine` significa **14** e non occupa una cella in più. `ADDI` somma un numero scritto nell'istruzione: aggiungere −1 significa sottrarre uno.

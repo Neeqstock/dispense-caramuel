@@ -47,6 +47,8 @@ La crescita dei computer non ha cancellato queste domande. Memorie più grandi p
 
 Un esempio storico lo rende evidente. Nei primi calcolatori, come l'EDSAC (1949), molti bit erano conservati in tubi pieni di mercurio, dove un impulso viaggiava come un'onda sonora: per leggere un bit bisognava **aspettare che l'onda passasse davanti** al punto giusto. La capacità c'era, ma l'attesa era lunga. Poi vennero i nuclei di ferrite e, infine, le memorie a semiconduttore. Il compromesso fra spazio, attesa e costo non è mai sparito.
 
+- [ ] #ai è interessantissimo, ma non si capisce il principio del mercurio e dell'onda sonora, puoi spiegare?
+
 ## 🚌 Bus
 
 ### ✅ Dati, indirizzi e controllo

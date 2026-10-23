@@ -4,15 +4,18 @@
 
 **4DI · Settembre-Ottobre · S5 · Teoria**
 
-⏱️ **Tempo di studio: circa 30 minuti.** ✅ essenziale: 17 min. 🔍 per il voto alto: 13 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
+⏱️ **Tempo di studio: circa 33 minuti.** ✅ essenziale: 19 min. 🔍 per il voto alto: 14 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard (rispondi a voce, poi apri)
+> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🌍 Internet · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard (rispondi a voce, poi apri)
 
 ## 🗺️ Mappa
 
 ```mermaid
 mindmap
   root((🔢 CIDR e intervalli))
+    CIDR su Internet
+      ✅ Assegnazione dei blocchi
+      🔍 Uso locale e globale
     Il prefisso
       ✅ Notazione CIDR
       ✅ Dimensione del blocco
@@ -36,6 +39,48 @@ CIDR non ha salvato Internet da solo, ma ha reso più efficiente l'assegnazione 
 <img src="Allegati/image-2.webp" width="373" alt="Bob Metcalfe accanto a un frullatore durante una conferenza">
 *L'ha fatto davvero (pare)!*
 
+## 🌍 Chi assegna e usa i blocchi CIDR
+
+### ✅ Dalla riserva globale alle reti
+
+Il PC del laboratorio usa `192.168.40.110/27` per capire a quale sottorete locale appartiene. Su Internet, gli operatori usano gli stessi prefissi per descrivere i blocchi pubblici raggiungibili attraverso le loro reti. <u>La notazione è la stessa; cambia la scala e la funzione.</u>
+
+In forma semplificata, la distribuzione dei blocchi pubblici segue questa catena:
+
+1. **IANA** (*Internet Assigned Numbers Authority*) coordina gli indirizzi IP a livello mondiale e assegna grandi blocchi ai registri regionali. Per esempio, una `/8` contiene circa 16,8 milioni di indirizzi IPv4.
+2. **RIR** (*Regional Internet Registry*) è un registro che gestisce una regione geografica. In Europa e in alcune aree vicine opera **RIPE NCC**; i RIR assegnano blocchi agli operatori Internet e ad altre organizzazioni.
+3. **ISP** (*Internet Service Provider*, il provider) può ottenere un blocco dal RIR o da un altro operatore e assegnarne una parte ai clienti. Un'azienda potrebbe ricevere una `/28` (16 indirizzi totali, 14 host ordinari in una sottorete IPv4 tradizionale) o una `/24` (256 indirizzi totali, 254 host ordinari). Un'utenza domestica, invece, spesso riceve solo uno o pochi indirizzi.
+
+```text
+IANA → RIR (per esempio RIPE NCC) → ISP → rete del cliente
+```
+
+I provider e gli altri operatori usano i prefissi per comunicare ai router di Internet quali reti sanno raggiungere. Quando i blocchi sono contigui e allineati, CIDR permette di aggregarli sotto un prefisso comune, riducendo le informazioni di routing da distribuire. <u>Quindi CIDR collega l'assegnazione degli indirizzi pubblici al modo in cui le reti si raggiungono su Internet.</u> Qui ne vediamo l'idea; il routing si studierà più avanti.
+
+### 🔍 Stessa notazione, lavori diversi
+
+Dire che CIDR riguarda Internet **non** significa che `/prefisso` si usi solo nei router mondiali: lo troviamo anche quando configuriamo una rete locale. La distinzione utile è questa:
+
+- **CIDR** descrive blocchi senza classi fisse e, su Internet, permette agli operatori di annunciare e aggregare prefissi.
+- **VLSM** è il metodo per dividere un blocco assegnato in sottoreti di dimensioni diverse, per esempio quelle dei reparti di un'azienda. Può essere usato con indirizzi privati o pubblici.
+
+Un'azienda può quindi ricevere dal provider un blocco pubblico e poi suddividerlo al proprio interno con VLSM. <u>CIDR e VLSM non sono sinonimi né alternative: operano a livelli diversi e possono convivere.</u>
+
+<details>
+<summary>🃏 <b>Chi assegna i blocchi pubblici lungo la catena?</b></summary>
+ IANA li assegna ai RIR, che li distribuiscono agli operatori; un ISP può assegnarne una parte ai propri clienti.
+</details>
+<details>
+<summary>🃏 <b>La notazione /prefisso si usa solo su Internet?</b></summary>
+ No: si usa anche nelle reti locali; su Internet serve anche a descrivere e aggregare i blocchi raggiungibili.
+</details>
+ <details>
+ <summary>🃏 <b>CIDR e VLSM sono sinonimi?</b></summary>
+ No: CIDR descrive prefissi senza classi e aiuta a instradare e aggregare reti; VLSM suddivide un blocco in sottoreti di dimensioni diverse.
+ </details>
+
+✏️ **Segui la catena (2 min).** Riscrivi `IANA → RIR → ISP → cliente` e indica in una frase che cosa fa ciascun soggetto. Poi spiega perché `192.168.40.110/27` usa la notazione CIDR pur descrivendo una rete locale.
+
 ## 🔢 Il prefisso
 
 ### ✅ CIDR scrive il prefisso accanto all'indirizzo
@@ -44,15 +89,15 @@ In `192.168.40.0/26`, `/26` indica che i primi 26 bit sono di rete; i restanti $
 
 Nella pratica il prefisso accompagna l'indirizzo quando si configura un'interfaccia o si progetta una rete: `192.168.40.110/27` permette di capire a quale sottorete appartiene l'indirizzo.
 
-| Prefisso | Maschera | Bit host | Indirizzi nel blocco | Host ordinari |
-|---:|---|---:|---:|---:|
-| `/24` | `255.255.255.0` | 8 | 256 | 254 |
-| `/25` | `255.255.255.128` | 7 | 128 | 126 |
-| `/26` | `255.255.255.192` | 6 | 64 | 62 |
-| `/27` | `255.255.255.224` | 5 | 32 | 30 |
-| `/28` | `255.255.255.240` | 4 | 16 | 14 |
-| `/29` | `255.255.255.248` | 3 | 8 | 6 |
-| `/30` | `255.255.255.252` | 2 | 4 | 2 |
+| Prefisso | Maschera          | Bit host | Indirizzi nel blocco | Host ordinari |     |
+| -------: | ----------------- | -------: | -------------------: | ------------: | --- |
+|    `/24` | `255.255.255.0`   |        8 |                  256 |           254 |     |
+|    `/25` | `255.255.255.128` |        7 |                  128 |           126 |     |
+|    `/26` | `255.255.255.192` |        6 |                   64 |            62 |     |
+|    `/27` | `255.255.255.224` |        5 |                   32 |            30 |     |
+|    `/28` | `255.255.255.240` |        4 |                   16 |            14 |     |
+|    `/29` | `255.255.255.248` |        3 |                    8 |             6 |     |
+|    `/30` | `255.255.255.252` |        2 |                    4 |             2 |     |
 
 ⚠️ **Più il prefisso è lungo, più il blocco è piccolo:** una `/30` contiene 4 indirizzi, una `/24` ne contiene 256. Con $h$ bit host, il blocco contiene $2^h$ indirizzi e, nel caso ordinario, $2^h - 2$ host assegnabili: rete e broadcast hanno ruoli speciali.
 
@@ -60,10 +105,10 @@ Nella pratica il prefisso accompagna l'indirizzo quando si configura un'interfac
 
 🧪 **Esempio inventato: laboratorio scolastico `192.168.40.96/27`.** Il gateway è `192.168.40.97`; un PC è `192.168.40.110`.
 
-| Indirizzo | A che cosa serve nel caso |
-|---|---|
-| `192.168.40.96` | Identifica la sottorete nel piano degli indirizzi. Non si assegna al PC. |
-| `192.168.40.110` | Identifica il PC dentro quella sottorete. |
+| Indirizzo        | A che cosa serve nel caso                                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `192.168.40.96`  | Identifica la sottorete nel piano degli indirizzi. Non si assegna al PC.                                                       |
+| `192.168.40.110` | Identifica il PC dentro quella sottorete.                                                                                      |
 | `192.168.40.127` | È il broadcast della sottorete: se un pacchetto lo usa come destinazione, è rivolto a tutti i suoi host. Non si assegna al PC. |
 
 Un uso reale del broadcast è cercare un servizio nella rete locale, senza contattare i dispositivi uno per uno. Per esempio, all'avvio un PC può chiedere i parametri di rete con **DHCP** (argomento successivo). Poiché non conosce ancora la propria sottorete, il primo messaggio usa il broadcast generale `255.255.255.255`, non per forza `192.168.40.127`. I router normalmente non inoltrano i broadcast locali alle altre reti.
@@ -97,11 +142,11 @@ salto = 256 − (valore dell'ottetto della maschera)
 🧠 <u>Il salto è la dimensione del blocco. Le reti iniziano sui multipli del salto.</u>
 
 | Prefisso | Ottetto della maschera | Salto |
-|---:|---:|---:|
-| `/25` | 128 | 128 |
-| `/26` | 192 | 64 |
-| `/27` | 224 | 32 |
-| `/28` | 240 | 16 |
+| -------: | ---------------------: | ----: |
+|    `/25` |                    128 |   128 |
+|    `/26` |                    192 |    64 |
+|    `/27` |                    224 |    32 |
+|    `/28` |                    240 |    16 |
 
 <details>
 <summary>🃏 <b>Come si calcola il salto?</b></summary>
@@ -166,8 +211,27 @@ Se i metodi non coincidono, ricontrolla i passaggi.
 
 ### 🤓 Più reti, un solo prefisso
 
-> Quattro blocchi `/26` contigui e allineati riempiono una `/24`: descriverli con un unico prefisso più corto si chiama **aggregazione** (*summarization*). Si può fare solo se il prefisso comune non include indirizzi estranei. Così CIDR può ridurre le righe nelle tabelle dei router; il routing si studia più avanti.
+> **Aggregazione** vuol dire ==sostituire molte reti con una sola, più grande, che le contiene tutte==. È come dire «Via Roma» invece di elencare ogni numero civico.
+>
+> 🧪 **Esempio.** Quattro reti `/26`:
+>
+> ```text
+> 192.168.0.0/26     indirizzi   0 - 63
+> 192.168.0.64/26    indirizzi  64 - 127
+> 192.168.0.128/26   indirizzi 128 - 191
+> 192.168.0.192/26   indirizzi 192 - 255
+> ```
+>
+> Insieme coprono tutti gli indirizzi da 0 a 255, senza buchi. Si possono scrivere come **una sola riga**: `192.168.0.0/24`. Il prefisso passa da 26 a 24: i 2 bit che distinguevano le quattro reti diventano parte degli host.
+>
+> ⚠️ **Non sempre si può.** `192.168.0.64/26` e `192.168.0.128/26` sono vicine (64-191), ma una `/25` parte da 0 o da 128, mai da 64: ==un'aggregazione deve coprire esattamente quegli indirizzi e nessun altro==.
+>
+> A che serve? Un router con una riga invece di quattro ha una tabella più piccola. Il routing si studia più avanti.
 
+<details>
+<summary>🃏 <b>Che cos'è l'aggregazione?</b></summary>
+Sostituire più reti contigue con un unico prefisso più corto che le contiene tutte, senza includere altri indirizzi.
+</details>
 <details>
 <summary>🃏 <b>Quale prefisso descrive quattro /26 consecutive e allineate?</b></summary>
 La /24 che le contiene tutte.
@@ -189,6 +253,7 @@ Che i blocchi siano contigui e allineati e che il prefisso non includa indirizzi
 ## 📚 Fonti e risorse
 
 - [RFC 4632 - Classless Inter-domain Routing](https://www.rfc-editor.org/rfc/rfc4632): la versione aggiornata (2006) dello standard CIDR. Per consultazione.
+- [IANA - IPv4 Address Space Registry](https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml): registro ufficiale dello spazio degli indirizzi IPv4.
 - [Wikipedia - Classless Inter-Domain Routing](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing): storia e motivazioni del 1993.
 - [Wikipedia - Robert Metcalfe](https://en.wikipedia.org/wiki/Robert_Metcalfe): la sezione «Predicted Internet collapse» racconta la storia del frullatore.
 - [RIPE NCC - IPv4 Subnetting](https://www.ripe.net/manage-ips-and-asns/ipv4/ipv4-subnetting/): uno strumento per **controllare** i risultati. Prima prova a mano.

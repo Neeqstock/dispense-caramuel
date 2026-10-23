@@ -37,11 +37,13 @@ Abbiamo dieci dita, quindi contiamo a **dieci**. Ma non è l'unico modo. I babil
 
 La grande invenzione, in India e poi nel mondo arabo, fu la **posizione**: la stessa cifra vale di più o di meno a seconda di dove sta. Con la posizione e lo zero bastano poche cifre per scrivere numeri enormi. Il binario usa la **stessa idea**, con meno cifre.
 
-![[Scuola/Public/1CI - Informatica/1 SETT-OTT/Allegati/image-1.webp|171x246]]*Una tavoletta babilonese*
+![[Scuola/Public/1CI - Informatica/1 SETT-OTT/Allegati/image-1.webp|171x246]]
+*Una tavoletta babilonese*
 
 ## 📍 Il valore dipende dalla posizione
 
 ### ✅ I pesi
+#fatto👍 
 
 In `345` il `3` non vale tre: vale tre **centinaia**.
 
@@ -79,6 +81,7 @@ A capire in quale base è scritto un numero: (10)₂ vale due, (10)₁₀ vale d
 ## ➡️ Da binario a decimale
 
 ### ✅ Metodo dei pesi
+#fatto👍 
 
 1. Scrivi i pesi **da destra verso sinistra**: 1, 2, 4, 8…
 2. Metti ogni cifra sotto il suo peso.
@@ -119,6 +122,7 @@ Perché mantengono ogni cifra nella sua posizione e quindi con il suo peso.
 </details>
 
 ### 🔍 Zeri a sinistra, zeri a destra
+#fatto👍 
 
 Come in decimale: `025` e `25` valgono lo stesso, ma `250` vale dieci volte tanto. In binario:
 
@@ -139,6 +143,7 @@ No: 0011 e 11 valgono lo stesso.
 ## ⬅️ Da decimale a binario
 
 ### ✅ Divisioni successive per 2
+#fatto👍 
 
 1. Dividi il numero per 2 e scrivi il **resto** (0 o 1).
 2. Dividi il **quoziente** per 2. Continua fino a quoziente 0.

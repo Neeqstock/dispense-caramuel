@@ -24,6 +24,7 @@ Negli esempi delle dispense S2-S4 usiamo un assembly didattico, molto semplifica
 | `BEQ R1, R2, uguali` | Se `R1` e `R2` sono uguali, continua dall'etichetta `uguali`. | `beq $t0, $t1, uguali`                                                                      |
 | `J inizio`           | Continua dall'etichetta `inizio`.                             | `j inizio`                                                                                  |
 | `HALT`               | Ferma la macchina didattica.                                  | Non è un'istruzione MIPS standard: i simulatori usano convenzioni specifiche per terminare. |
+BLE  R1, R2, miao      R1 <= R2
 
 📌 `lw` e `sw` trasferiscono una **parola** fra un registro e la memoria. Nell'esempio, `0($s0)` significa «indirizzo contenuto in `$s0`, più 0 byte»; `4($s0)` significa «quattro byte dopo». L'offset non è il contenuto della cella.
 

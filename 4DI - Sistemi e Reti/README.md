@@ -15,8 +15,8 @@ Lungo la strada incontreremo un primo messaggio che si ferma a «LO», un cavo c
 - [x] [S1 - Modelli e incapsulamento](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S1%20-%20Modelli%20e%20incapsulamento.md) — Chi fa che cosa quando un messaggio parte, e come i dati si chiudono in buste.
 - [x] [S2 - Il livello fisico e Ethernet](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S2%20-%20Il%20livello%20fisico%20e%20Ethernet.md) — Come i bit diventano segnali, e come un frame arriva sul tratto locale.
 - [x] [S3 - IPv4 e il pacchetto](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S3%20-%20IPv4%20e%20il%20pacchetto.md) — Come si chiama un'interfaccia e che cosa dice il suo indirizzo.
-- [/] [S4 - Reti private e FLSM](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) — Come si riutilizzano i numeri e come si taglia una rete in parti uguali.
-- [/] [S5 - CIDR e intervalli](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) — Come una barra e un numero dicono dove finisce una rete.
+- [x] [S4 - Reti private e FLSM](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S4%20-%20Reti%20private%20e%20FLSM.md) — Come si riutilizzano i numeri e come si taglia una rete in parti uguali. ✅ 2026-10-21
+- [x] [S5 - CIDR e intervalli](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) — Come una barra e un numero dicono dove finisce una rete. ✅ 2026-10-21
 - [ ] [S6 - VLSM e progettazione](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) — Come dare a ognuno lo spazio che gli serve, senza sovrapposizioni.
 - [ ] [S7 - Ripasso e troubleshooting](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S7%20-%20Ripasso%20e%20troubleshooting.md) — Come ricomporre quello che sai e trovare il passaggio che non torna.
 - **S8 - Verifica e recupero** — Come mostrare il metodo e usare gli errori per ripartire.

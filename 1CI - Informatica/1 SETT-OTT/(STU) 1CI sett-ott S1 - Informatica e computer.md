@@ -24,9 +24,11 @@ mindmap
     🖥️ Computer
       Hardware
       Software
+      Metafora
     📋 Algoritmo
       Istruzioni precise
       Programma
+      Variabile
       Determinismo
       Bug
     🔢 Assaggio di binario
@@ -54,6 +56,7 @@ computer + programma B  ->  gioco
 ## 🧠 Che cos'è l'informatica
 
 ### ✅ Informazione automatica
+#saltato
 
 **Informatica** = **informazione** + **automatica**: trattare informazioni con macchine, in modo automatico. In italiano la parola viene dal francese *informatique* (1962, Philippe Dreyfus).
 
@@ -71,6 +74,7 @@ No. Usarla è come guidare; l'informatica studia come funziona il motore.
 </details>
 
 ### ✅ Chi lavora con l'informatica
+#saltato
 
 | Ruolo | Che cosa fa | Esempio meno ovvio |
 |---|---|---|
@@ -89,6 +93,7 @@ No. Lavora anche in ospedali, biblioteche, teatri, redazioni e associazioni.
 </details>
 
 ### 🔍 Tre abilità che servono anche senza computer
+#salato
 
 1. **Scomporre** un problema confuso in passi piccoli.
 2. **Controllare** se un risultato è affidabile, invece di fidarsi dello schermo.
@@ -108,6 +113,7 @@ Scomporre, controllare, progettare.
 ## 🖥️ Hardware e software
 
 ### ✅ Due metà di una macchina
+#fatto👍 
 
 **Hardware** è la parte che puoi toccare: CPU, memoria, schermo, cavi.
 **Software** è la parte fatta di istruzioni: programmi e dati.
@@ -129,9 +135,22 @@ La parte fisica del computer: quella che puoi toccare.
 L'insieme di programmi e dati: le istruzioni che l'hardware esegue.
 </details>
 
+### ✅ Metafora: un'idea nota per una nuova
+#fatto👍 
+
+Una **metafora** spiega una cosa nuova con una cosa che già conosci. Lo schermo mostra una scrivania e delle cartelle: sono immagini di oggetti veri, scelte perché tu le riconosca subito.
+
+🧪 Il forno e la ricetta, di prima, sono una metafora: ti aiutano a immaginare hardware e software.
+
+<details>
+<summary>🃏 <b>Che cos'è una metafora in informatica?</b></summary>
+Un'immagine di un oggetto reale usata per spiegare o usare un concetto digitale.
+</details>
+
 ## 📋 Algoritmo
 
 ### ✅ Istruzioni precise
+#fatto👍 
 
 Un **algoritmo** è una sequenza **precisa e ordinata** di passi per risolvere un problema.
 
@@ -152,7 +171,28 @@ Una sequenza precisa e ordinata di passi per risolvere un problema.
 L'algoritmo è il ragionamento; il programma è l'algoritmo scritto in un linguaggio che il computer esegue.
 </details>
 
+### ✅ Variabile: una scatola con un nome
+#fatto👍 
+
+Una **variabile** è una scatola con un nome, dentro cui il programma conserva un valore. Se la scatola si chiama `età` e dentro c'è `25`, l'anno dopo scrivi `26`: la scatola resta la stessa, cambia il contenuto.
+
+🧠 <u>Una variabile ha un nome fisso e un contenuto che può cambiare.</u>
+
+⚠️ Una variabile non è un'equazione da risolvere: sei tu a darle il valore, non devi trovarlo.
+
+✏️ La variabile `punti` vale 3. Poi le aggiungi 2. Quanto vale ora `punti`?
+
+<details>
+<summary>🃏 <b>Che cos'è una variabile?</b></summary>
+Una scatola con un nome, in cui il programma conserva un valore che può cambiare.
+</details>
+<details>
+<summary>🃏 <b>Il valore di una variabile si trova risolvendo un'equazione?</b></summary>
+No: il valore lo assegni tu, non lo calcoli come in matematica.
+</details>
+
 ### 🎮 Il robot umano
+#saltato
 
 Un compagno fa il **robot**. Può eseguire solo quattro ordini: `avanza`, `gira a destra`, `gira a sinistra`, `raccogli`. Il resto della classe fa i **programmatori**.
 
@@ -168,6 +208,7 @@ Se l'ordine è ambiguo («vai di là») il robot **non si muove**. Dopo il primo
 🧠 Un buon algoritmo funziona **anche con un altro esecutore**.
 
 ### 🔍 Algoritmo deterministico e bug
+#fatto👍 
 
 Un algoritmo è **deterministico** se, con gli stessi dati di partenza, segue sempre gli stessi passi e dà lo stesso risultato.
 
@@ -200,6 +241,7 @@ Perché l'ordine è ambiguo: un algoritmo deve essere preciso.
 ## 🔢 Assaggio di binario
 
 ### ✅ Il 13 in tre modi
+#fatto👍 
 
 Il computer scrive i numeri con **due sole cifre**. Guarda lo stesso numero scritto in tre modi:
 

@@ -37,9 +37,8 @@ Doveva durare pochi anni, in attesa di una soluzione definitiva. Oggi è dentro 
 
 Anche in Europa arriva il momento. Il **RIPE NCC**, l'organizzazione che assegna gli indirizzi per l'Europa, esaurisce le sue scorte il 14 settembre 2012. È stata la seconda al mondo.
 
-![[image-1.webp]]*Logo della IANA
-
-#ai riconvertire il logo
+![Logo della IANA](Allegati/logo-iana-300.png)
+*Logo della IANA.*
 
 ## 🏠 Indirizzi privati
 
@@ -76,7 +75,7 @@ No: i router di Internet non lo instradano.
 ✏️ **Riconosci (2 min).** Quali di questi sono privati? `172.20.5.10` · `172.32.0.1` · `192.169.1.1` · `10.200.1.1`. *(Attenzione ai limiti di `172.16.0.0/12`.)*
 
 ### ✅ Il NAT traduce gli indirizzi
-#fatto
+#fatto👍
 
 Un PC con indirizzo privato vuole aprire una pagina in Internet. Il server non può far arrivare una risposta a quell'indirizzo attraverso Internet. Entra in gioco il **NAT** (*Network Address Translation*), di solito nel router di casa: riscrive gli indirizzi nei pacchetti che attraversano il confine.
 
@@ -198,11 +197,11 @@ I primi due bit dell'ultimo ottetto scelgono il blocco; le sei `x` scelgono uno 
 La maschera `/26` è `255.255.255.192`: nell'ultimo ottetto il prefisso lascia due bit per numerare le sottoreti e sei bit per gli indirizzi dentro ciascuna.
 
 | Sottorete | Primo indirizzo (rete) | Indirizzi assegnabili agli host | Ultimo indirizzo (broadcast) |
-|---|---|---|---|
-| 1 | `192.168.10.0/26` | `.1` – `.62` (62 indirizzi) | `.63` |
-| 2 | `192.168.10.64/26` | `.65` – `.126` (62 indirizzi) | `.127` |
-| 3 | `192.168.10.128/26` | `.129` – `.190` (62 indirizzi) | `.191` |
-| 4 | `192.168.10.192/26` | `.193` – `.254` (62 indirizzi) | `.255` |
+| --------- | ---------------------- | ------------------------------- | ---------------------------- |
+| 1         | `192.168.10.0/26`      | `.1` – `.62` (62 indirizzi)     | `.63`                        |
+| 2         | `192.168.10.64/26`     | `.65` – `.126` (62 indirizzi)   | `.127`                       |
+| 3         | `192.168.10.128/26`    | `.129` – `.190` (62 indirizzi)  | `.191`                       |
+| 4         | `192.168.10.192/26`    | `.193` – `.254` (62 indirizzi)  | `.255`                       |
 
 In ogni blocco, il primo indirizzo identifica la sottorete e l'ultimo è il broadcast; nel caso ordinario non si assegnano agli host. Perciò restano `64 - 2 = 62` indirizzi assegnabili.
 

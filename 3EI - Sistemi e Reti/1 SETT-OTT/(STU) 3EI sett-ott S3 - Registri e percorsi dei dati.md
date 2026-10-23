@@ -43,7 +43,7 @@ Servono piccoli posti di lavoro interni. È lo stesso problema di quando segui u
 ## 🗃️ Registri
 
 ### ✅ Registri e ruoli
-#fatto
+#fatto👍 
 
 Un **registro** è una piccola memoria dentro il processore, con capacità limitata. Conserva bit: ciascun registro, però, ha un **ruolo**, ed è il ruolo a dare significato a quei bit. I **registri generali**, qui R1, R2 e R3, conservano operandi e risultati temporanei. Nel nostro modello altri registri hanno compiti specifici.
 
@@ -103,7 +103,7 @@ In questa dispensa Program Counter, il registro con l'indirizzo della prossima i
 </details>
 
 ### ✅ Notazione
-#fatto #rivedere
+#fatto👍  #rivedere
 - `R1 <- 7` significa «copia 7 in R1». La freccia non è un'uguaglianza e non svuota la sorgente.
 - `MEM[40]` indica **il contenuto** della cella di indirizzo 40.
 - `MAR <- 40` e `MDR <- MEM[40]` fanno lavori diversi.
@@ -170,7 +170,7 @@ No. Riceve il contenuto della cella: 40 dice dove cercare, non che cosa c'è.
 </details>
 
 ### 🔍 Prelievo di un'istruzione
-#fatto #rivedere
+#fatto👍  #rivedere
 **Anche il prelievo di un'istruzione dalla memoria passa per MAR e MDR.**
 Supponiamo PC = 10 e MEM[10] = `LOAD R1, [40]`. Per prelevarla copiamo il PC nel MAR, chiediamo una lettura e riceviamo l'istruzione nel MDR. Poi la copiamo nell'IR. Ora la CU può interpretarla.
 
@@ -192,7 +192,7 @@ L'IR conserva l'istruzione, mentre l'MDR riceve il dato richiesto: così la CPU 
 </details>
 
 ### 🔍 Scrittura in memoria
-#fatto
+#fatto👍 
 Vogliamo copiare in memoria il valore di R3 = 12, nella cella 50. Si prepara `MAR <- 50` e `MDR <- R3`, poi la CU attiva `WRITE`. Alla fine MEM[50] contiene 12: il vecchio contenuto di quella cella è **sostituito**. R3 resta 12.
 
 Indirizzo e valore vanno preparati prima della scrittura. Un indirizzo sbagliato modifica un'altra cella, anche se il valore è giusto.
@@ -213,7 +213,7 @@ Perché con un indirizzo sbagliato si modifica un'altra cella, anche se il valor
 ## 🚩 Flag
 
 ### 🔍 Flag e risultati
-#fatto #ripassare
+#fatto👍  #rivedere 
 
 Dopo la sottrazione $7-7$ il risultato è 0 e il flag **Z** (zero) può valere 1 per segnalarlo. Un'istruzione successiva può usare questa informazione per scegliere che strada prendere.
 
@@ -239,7 +239,7 @@ No. Aumenta la memoria principale, non la memoria interna del processore.
 </details>
 
 ### 🤓 Overflow e riporto
-#fatto #ripassare
+#fatto👍  #rivedere 
 
 > Un registro da 4 bit ha 16 configurazioni. Come interi senza segno rappresentano i numeri da 0 a 15. La somma $15+1$ richiederebbe cinque bit: `1111 + 0001 = 10000`. Se ne teniamo solo quattro resta `0000`, con un riporto.
 >

@@ -179,7 +179,7 @@ No. Il blocco può essere stato sostituito, come succede all'ultimo accesso dell
 
 La **SRAM** conserva ogni bit con un circuito stabile finché è alimentata. Non ha bisogno di «rinfrescare» le celle come la DRAM, ma occupa più spazio per bit: per questo si usa nelle cache. ⚠️ «Static» non significa non volatile.
 
-La **DRAM** memorizza il bit come carica elettrica in un minuscolo condensatore. La carica si disperde, quindi serve un **refresh** periodico. Le celle sono molto piccole e fitte: per questo la DRAM si usa per la memoria principale. Il refresh mantiene l'informazione fisica: non ha niente a che vedere con l'aggiornamento di un programma.
+La **DRAM** memorizza il bit come carica elettrica in un minuscolo condensatore. La carica si disperde, quindi serve un **refresh** periodico. Le celle sono molto piccole e fitte: per questo la DRAM si usa per la memoria principale (RAM). Il refresh mantiene l'informazione fisica: non ha niente a che vedere con l'aggiornamento di un programma.
 
 Le cache sono spesso divise in livelli **L1, L2 e L3**: L1 è di solito la più piccola e veloce, i livelli successivi sono più capienti. Quanti livelli ci sono e come si dividono fra i core dipende dal processore. Non esistono valori universali di dimensione o latenza da imparare a memoria.
 

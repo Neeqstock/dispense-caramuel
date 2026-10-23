@@ -984,14 +984,6 @@ scatole[0] = 42;
 <summary>🃏 Il codice 22 compila? Che cosa succede quando lo esegui?</summary>
 Compila, perché gli array in Java sono covarianti: un String[] è anche un Object[]. Durante l'esecuzione però l'array sa di essere di String e lancia ArrayStoreException.
 </details>
-<details>
-<summary>🃏 E List<Object> lista = new ArrayList<String>(); compila?</summary>
-No. I generics sono invarianti: una lista di String non è una lista di Object. I progettisti hanno imparato dall'errore degli array e il controllo avviene in compilazione.
-</details>
-<details>
-<summary>🃏 Si può scrivere super.super.faiVerso() per saltare un livello della gerarchia?</summary>
-No, Java non lo permette. Ogni classe parla solo con la superclasse diretta, così non si aggira il comportamento del livello intermedio.
-</details>
 
 ### 🤓 Costruttori che fanno cose strane
 

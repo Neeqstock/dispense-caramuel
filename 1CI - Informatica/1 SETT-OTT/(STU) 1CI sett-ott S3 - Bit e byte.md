@@ -41,6 +41,7 @@ Ecco l'idea più importante del corso: con **scelte fra due** si possono dire mo
 ## 🔘 Il bit
 
 ### ✅ Un interruttore con due stati
+#fatto👍 
 
 Un **bit** (*binary digit*, cifra binaria) è la più piccola unità di informazione: ha **due stati**, che scriviamo `0` e `1`.
 
@@ -51,7 +52,7 @@ interruttore spento   interruttore acceso
 
 📌 *Didascalia:* un bit = una scelta fra due.
 
-Nel computer i bit vivono nei **transistor**: minuscoli interruttori elettronici. Semplificando, o lasciano passare corrente (1) o no (0).
+Nel computer i bit vivono nei **transistor**: minuscoli interruttori elettronici. Semplificando: o lasciano passare corrente (1) o no (0).
 
 🧠 <u>Un bit è una scelta fra due possibilità: 0 oppure 1.</u>
 
@@ -72,7 +73,7 @@ Un minuscolo interruttore elettronico: passa corrente (1) o non passa (0).
 ### 🤓 Chi ha inventato il bit
 
 > **1679-1703, Leibniz.** Il filosofo e matematico tedesco Gottfried Leibniz studia i numeri con solo 0 e 1 e li pubblica nel 1703. Per lui 1 era la Creazione e 0 il Nulla.
-> **1937, Shannon.** Un ventunenne, Claude Shannon, nella sua tesi al MIT (un'università americana prestigiosissima) mostra che i relè (interruttori accesi o spenti) possono eseguire la logica di George Boole.
+> **1937, Shannon.** Un ventunenne, Claude Shannon, nella sua tesi al MIT (un'università americana prestigiosissima) mostra che i relè (interruttori accesi o spenti) possono eseguire la logica di George Boole (la logica booleana, che lavora solo con 0 e 1).
 > **1947, Tukey.** John Tukey, dei Bell Labs, conia la parola *bit*, dalla fusione di *binary digit*.
 > **1948, Shannon** la usa come unità di misura dell'informazione.
 
@@ -91,6 +92,8 @@ Che i relè, interruttori accesi o spenti, possono eseguire la logica di Boole.
 ## ✖️ Quante combinazioni
 
 ### ✅ Ogni bit raddoppia, i byte sono 8 bit
+#fatto👍 
+
 Se usiamo i bit per rappresentare i numeri.
 Con **1 bit** hai 2 possibilità (zero, uno). Con **2 bit** ne hai 4 (zero, uno, due, tre). Con **3 bit**, 8. Ogni bit in più **raddoppiano** le possibilità di rappresentazione.
 
@@ -130,6 +133,7 @@ No: sono 2·2·2 = 8. Ogni bit raddoppia, non aggiunge 2.
 </details>
 
 ### 🔍 Quanti bit servono
+#fatto👍 
 
 Vuoi dare un codice diverso a **20 oggetti**. Con 4 bit hai 16 combinazioni: **non bastano**. Con 5 bit ne hai 32: bastano, anzi ne avanzano 12.
 
@@ -148,6 +152,7 @@ Si cerca il più piccolo N per cui 2^N è almeno uguale al numero di oggetti.
 ## 📏 Potenze di 2
 
 ### ✅ Da 2⁰ a 2¹⁰
+#fatto👍 
 
 Questa scala ricorre sempre. Ricordala a memoria: ti farà risparmiare molti conti.
 
@@ -177,6 +182,7 @@ Raddoppiando il numero.
 ## 📦 Multipli del byte
 
 ### ✅ kB, MB, GB, TB
+#fatto👍 
 
 Per quantità grandi si usano i **multipli**. Di solito, per la capacità dei dischi:
 
@@ -199,6 +205,7 @@ Un terabyte: 10¹² byte, cioè mille GB.
 </details>
 
 ### 🔍 kB o KiB
+#fatto👍 
 
 Le memorie elettroniche crescono per **potenze di 2**, e 2¹⁰ = 1024 è vicino a 1000. Per anni «kilobyte» ha voluto dire a volte 1000 e a volte 1024 byte. Alla fine degli anni '90 gli standard hanno separato i due significati con nuovi nomi:
 
