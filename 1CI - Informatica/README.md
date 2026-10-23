@@ -17,6 +17,11 @@ Dentro un computer non ci sono numeri, lettere o colori. Ci sono **interruttori*
 - [ ] [S7 - Ripasso attivo](1%20SETT-OTT/%28STU%29%201CI%20sett-ott%20S7%20-%20Ripasso%20attivo.md) — Ricordare davvero: allenamento a coppie e controllo degli errori.
 - **S8 - Verifica e recupero** — Verifica di teoria, lettura degli errori e recupero.
 
+### ✏️ Esercizi
+
+- [Eserciziario conversioni (svolte)](1%20SETT-OTT/%28STU%29%201CI%20sett-ott%20-%20Eserciziario%20conversioni%20%28svolte%29.md) — Conversioni risolte passo per passo, con il controllo finale e l'errore tipico da evitare.
+- [Eserciziario generale](1%20SETT-OTT/%28STU%29%201CI%20sett-ott%20-%20Eserciziario%20generale.md) — Esercizi per allenarsi, dal più semplice al più impegnativo. Le soluzioni sono nelle flashcard: prova prima, poi apri.
+
 ## Integrazioni e curiosità
 
 - [Terminologia base dell'informatica](Integrazioni%20e%20Curiosit%C3%A0/Approfondimenti%20didattici/Terminologia%20base%20dell%27informatica.md)
