@@ -47,7 +47,14 @@ La crescita dei computer non ha cancellato queste domande. Memorie più grandi p
 
 Un esempio storico lo rende evidente. Nei primi calcolatori, come l'EDSAC (1949), molti bit erano conservati in tubi pieni di mercurio, dove un impulso viaggiava come un'onda sonora: per leggere un bit bisognava **aspettare che l'onda passasse davanti** al punto giusto. La capacità c'era, ma l'attesa era lunga. Poi vennero i nuclei di ferrite e, infine, le memorie a semiconduttore. Il compromesso fra spazio, attesa e costo non è mai sparito.
 
-- [ ] #ai è interessantissimo, ma non si capisce il principio del mercurio e dell'onda sonora, puoi spiegare?
+**Il principio del mercurio.** Il tubo di mercurio funzionava come un anello. All'inizio del tubo, un cristallo trasformava un impulso elettrico in un'onda sonora ad alta frequenza, cioè un suono troppo acuto per l'orecchio. L'onda attraversava il mercurio, arrivava alla fine e lì un secondo cristallo la riconvertiva in impulso elettrico. Quell'impulso non si perdeva: rientrava nel tubo e ricominciava il giro. Il bit, quindi, **girava in continuazione**.
+
+Per leggere un bit bisognava **aspettare** che il suo impulso passasse davanti al lettore. Se il bit era appena passato, si doveva aspettare quasi un giro intero del tubo. È la latenza di cui parleremo: non dipende da quanti dati hai, ma da quanto tempo devi aspettare per trovarli.
+
+<details>
+<summary>🃏 <b>Perché leggere un bit nel tubo di mercurio era lento?</b></summary>
+Perché il bit girava nel tubo come su un anello: bisognava aspettare che passasse davanti al lettore, e a volte serviva quasi un giro intero.
+</details>
 
 ## 🚌 Bus
 
@@ -273,6 +280,7 @@ No. Più RAM permette di tenere pronti più programmi e dati, ma non cambia la v
 </details>
 
 ### 🔍 RAM, ROM e memoria di massa
+#saltato
 
 La **RAM** principale permette di accedere direttamente a ogni posizione, leggendo e scrivendo durante il lavoro. La **memoria di massa** conserva file e programmi anche a computer spento; per eseguirli, il sistema porta in RAM le parti necessarie.
 

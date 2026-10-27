@@ -182,9 +182,7 @@ Per esempio, l'aula richiede 25 indirizzi host: 24 per i computer e uno per il g
 - Il piano le assegna la rete `192.168.60.64/27`, che offre 30 indirizzi host (32 - 2), da `192.168.60.65` a `192.168.60.94`. L'indirizzo `192.168.60.65` va al gateway. 
 - Restano 29 indirizzi per i computer, quindi il piano può soddisfare la richiesta e lasciare 5 indirizzi liberi. L'indirizzo `192.168.60.95` è il broadcast e non si assegna a un singolo dispositivo.
 
-Il piano è verificabile perché riporta richiesta, bit host, dimensione del blocco, rete e prefisso, intervallo host, gateway e broadcast. Se il gateway usa un altro indirizzo host, la tabella dichiara la convenzione scelta.
-
-- [ ] #ai cosa vuol dire l'ultima frase
+Il piano è verificabile perché riporta richiesta, bit host, dimensione del blocco, rete e prefisso, intervallo host, gateway e broadcast. Se il gateway usa un altro indirizzo host, per esempio l'ultimo indirizzo utile del blocco, la tabella lo scrive nella colonna «Gateway». Così chi configura i dispositivi sa quale indirizzo usare, senza doverlo indovinare.
 
 <details>
 <summary>🃏 <b>Quali dati rendono verificabile una tabella VLSM?</b></summary>

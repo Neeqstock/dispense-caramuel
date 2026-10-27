@@ -19,6 +19,10 @@ In questo bimestre usiamo Java, che già conosci, per costruire passo dopo passo
 - [x] [S7 - Ripasso in flashcard](1%20SETT-OTT/%28STU%29%204CI%20sett-ott%20S7%20-%20Ripasso%20in%20flashcard.md) — Quiz, flashcard e collegamenti tra tutti gli argomenti.
 - **S8 - Verifica** — Mostrare che cosa hai capito: prevedere, correggere e progettare.
 
+## Integrazioni
+
+- [Python: scope, cioè dove vive una variabile](../Integrazioni%20e%20curiosit%C3%A0/Approfondimenti%20didattici/Python%20-%20scope%20e%20regola%20LEGB.md) — Dove Python cerca un nome (regola LEGB) e come cambiarlo da dentro una funzione.
+
 ## Allenamento
 
 - [Simulazione verifica](1%20SETT-OTT/%28STU%29%204CI%20sett-ott%20-%20Simulazione%20Verifica.md)
