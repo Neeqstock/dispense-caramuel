@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1128" height="1148" viewBox="0 0 1128 1148">
+<style>
+  .link { fill: none; stroke: #9a9a9a; stroke-width: 1.8; }
+  .root { fill: #4a90d9; stroke: #2f6fb0; stroke-width: 2; }
+  .root-t { fill: #ffffff; font-family: Segoe UI, Arial, sans-serif; font-weight: bold; }
+  .branch { fill: #fff3cd; stroke: #b58900; stroke-width: 1.5; }
+  .branch-t { fill: #3b2f00; font-family: Segoe UI, Arial, sans-serif; font-weight: bold; }
+  .leaf { fill: #f7f7f7; stroke: #9a9a9a; stroke-width: 1; }
+  .leaf-t { fill: #222222; font-family: Segoe UI, Arial, sans-serif; }
+</style>
+<path d="M312.8,574.0 C342.8,574.0 342.8,35.0 372.8,35.0" class="link"/>
+<path d="M647.7,35.0 C677.7,35.0 677.7,35.0 707.7,35.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,83.0 372.8,83.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,226.0 372.8,226.0" class="link"/>
+<path d="M647.7,226.0 C677.7,226.0 677.7,131.0 707.7,131.0" class="link"/>
+<path d="M647.7,226.0 C677.7,226.0 677.7,169.0 707.7,169.0" class="link"/>
+<path d="M647.7,226.0 C677.7,226.0 677.7,207.0 707.7,207.0" class="link"/>
+<path d="M647.7,226.0 C677.7,226.0 677.7,245.0 707.7,245.0" class="link"/>
+<path d="M647.7,226.0 C677.7,226.0 677.7,283.0 707.7,283.0" class="link"/>
+<path d="M647.7,226.0 C677.7,226.0 677.7,321.0 707.7,321.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,426.0 372.8,426.0" class="link"/>
+<path d="M647.7,426.0 C677.7,426.0 677.7,369.0 707.7,369.0" class="link"/>
+<path d="M647.7,426.0 C677.7,426.0 677.7,407.0 707.7,407.0" class="link"/>
+<path d="M647.7,426.0 C677.7,426.0 677.7,445.0 707.7,445.0" class="link"/>
+<path d="M647.7,426.0 C677.7,426.0 677.7,483.0 707.7,483.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,588.0 372.8,588.0" class="link"/>
+<path d="M647.7,588.0 C677.7,588.0 677.7,531.0 707.7,531.0" class="link"/>
+<path d="M647.7,588.0 C677.7,588.0 677.7,569.0 707.7,569.0" class="link"/>
+<path d="M647.7,588.0 C677.7,588.0 677.7,607.0 707.7,607.0" class="link"/>
+<path d="M647.7,588.0 C677.7,588.0 677.7,645.0 707.7,645.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,731.0 372.8,731.0" class="link"/>
+<path d="M647.7,731.0 C677.7,731.0 677.7,693.0 707.7,693.0" class="link"/>
+<path d="M647.7,731.0 C677.7,731.0 677.7,731.0 707.7,731.0" class="link"/>
+<path d="M647.7,731.0 C677.7,731.0 677.7,769.0 707.7,769.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,855.0 372.8,855.0" class="link"/>
+<path d="M647.7,855.0 C677.7,855.0 677.7,817.0 707.7,817.0" class="link"/>
+<path d="M647.7,855.0 C677.7,855.0 677.7,855.0 707.7,855.0" class="link"/>
+<path d="M647.7,855.0 C677.7,855.0 677.7,893.0 707.7,893.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,979.0 372.8,979.0" class="link"/>
+<path d="M647.7,979.0 C677.7,979.0 677.7,941.0 707.7,941.0" class="link"/>
+<path d="M647.7,979.0 C677.7,979.0 677.7,979.0 707.7,979.0" class="link"/>
+<path d="M647.7,979.0 C677.7,979.0 677.7,1017.0 707.7,1017.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,1065.0 372.8,1065.0" class="link"/>
+<path d="M312.8,574.0 C342.8,574.0 342.8,1113.0 372.8,1113.0" class="link"/>
+<rect x="20.0" y="550.0" width="292.8" height="48" rx="8" class="root"/><text x="32.0" y="581.0" class="root-t" font-size="20">🐍 Primi passi con Python</text>
+<rect x="372.8" y="18.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="40.6" class="branch-t" font-size="16">🌍 Perché tanti linguaggi</text>
+<rect x="707.7" y="20.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="39.9" class="leaf-t" font-size="14">✅ Ogni linguaggio è un compromesso</text>
+<rect x="372.8" y="66.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="88.6" class="branch-t" font-size="16">🧭 Natale 1989</text>
+<rect x="372.8" y="209.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="231.6" class="branch-t" font-size="16">⚖️ Java e Python a confronto</text>
+<rect x="707.7" y="116.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="135.9" class="leaf-t" font-size="14">✅ Stessi mattoni, altra grammatica</text>
+<rect x="707.7" y="154.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="173.9" class="leaf-t" font-size="14">🔍 Dove vince un linguaggio tipizzato e a oggetti</text>
+<rect x="707.7" y="192.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="211.9" class="leaf-t" font-size="14">🔍 Dove vince Python</text>
+<rect x="707.7" y="230.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="249.9" class="leaf-t" font-size="14">🔍 Python è compilato?</text>
+<rect x="707.7" y="268.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="287.9" class="leaf-t" font-size="14">🔍 Chiamate scoperte a runtime</text>
+<rect x="707.7" y="306.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="325.9" class="leaf-t" font-size="14">🤓 Type hints in Python</text>
+<rect x="372.8" y="409.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="431.6" class="branch-t" font-size="16">🖥️ REPL e script</text>
+<rect x="707.7" y="354.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="373.9" class="leaf-t" font-size="14">✅ Il REPL</text>
+<rect x="707.7" y="392.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="411.9" class="leaf-t" font-size="14">✅ Lo script</text>
+<rect x="707.7" y="430.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="449.9" class="leaf-t" font-size="14">🔍 Interprete, editor, IDE e terminale</text>
+<rect x="707.7" y="468.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="487.9" class="leaf-t" font-size="14">🤓 import this</text>
+<rect x="372.8" y="571.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="593.6" class="branch-t" font-size="16">🏷️ Variabili e tipi</text>
+<rect x="707.7" y="516.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="535.9" class="leaf-t" font-size="14">✅ Una variabile è una freccia</text>
+<rect x="707.7" y="554.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="573.9" class="leaf-t" font-size="14">✅ int, float, str, bool</text>
+<rect x="707.7" y="592.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="611.9" class="leaf-t" font-size="14">🔍 I tipi stanno nei valori</text>
+<rect x="707.7" y="630.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="649.9" class="leaf-t" font-size="14">🤓 Interi senza limite</text>
+<rect x="372.8" y="714.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="736.6" class="branch-t" font-size="16">⌨️ Input e output</text>
+<rect x="707.7" y="678.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="697.9" class="leaf-t" font-size="14">✅ print e input</text>
+<rect x="707.7" y="716.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="735.9" class="leaf-t" font-size="14">✅ input restituisce testo</text>
+<rect x="707.7" y="754.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="773.9" class="leaf-t" font-size="14">🔍 f-string</text>
+<rect x="372.8" y="838.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="860.6" class="branch-t" font-size="16">➕ Operatori</text>
+<rect x="707.7" y="802.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="821.9" class="leaf-t" font-size="14">✅ Aritmetici, di confronto, logici</text>
+<rect x="707.7" y="840.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="859.9" class="leaf-t" font-size="14">🔍 Divisione, resto, potenza</text>
+<rect x="707.7" y="878.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="897.9" class="leaf-t" font-size="14">🤓 Uguali e identici</text>
+<rect x="372.8" y="962.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="984.6" class="branch-t" font-size="16">🐞 Gli errori</text>
+<rect x="707.7" y="926.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="945.9" class="leaf-t" font-size="14">✅ Tre famiglie</text>
+<rect x="707.7" y="964.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="983.9" class="leaf-t" font-size="14">✅ Leggere un traceback</text>
+<rect x="707.7" y="1002.0" width="400.3" height="30" rx="8" class="leaf"/><text x="719.7" y="1021.9" class="leaf-t" font-size="14">🔍 Python non avverte prima</text>
+<rect x="372.8" y="1048.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="1070.6" class="branch-t" font-size="16">✏️ Esercizi</text>
+<rect x="372.8" y="1096.0" width="274.9" height="34" rx="8" class="branch"/><text x="384.8" y="1118.6" class="branch-t" font-size="16">📚 Fonti e risorse</text>
+</svg>

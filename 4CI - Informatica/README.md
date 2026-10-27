@@ -19,6 +19,17 @@ In questo bimestre usiamo Java, che già conosci, per costruire passo dopo passo
 - [x] [S7 - Ripasso in flashcard](1%20SETT-OTT/%28STU%29%204CI%20sett-ott%20S7%20-%20Ripasso%20in%20flashcard.md) — Quiz, flashcard e collegamenti tra tutti gli argomenti.
 - **S8 - Verifica** — Mostrare che cosa hai capito: prevedere, correggere e progettare.
 
+## Novembre-Dicembre
+
+### 🧭 Di che cosa parliamo
+
+Python è un linguaggio diverso da Java: si scrive con meno parentesi e meno dichiarazioni, e lo si può provare una riga alla volta. In questa prima settimana vediamo come far girare Python (REPL e script), come funzionano variabili e tipi, come leggere input e output, quali operatori usare e come leggere un errore.
+
+### 📅 Dispense Novembre-Dicembre
+
+- [ ] [S1 - Primi passi con Python](2%20NOV-DIC/%28STU%29%204CI%20nov-dic%20S1%20-%20Primi%20passi%20con%20Python.md) — Come eseguire Python, variabili e tipi, input e output, operatori ed errori.
+- [Esempi S1 - Progetto dummy l'eroe](2%20NOV-DIC/Esempi/Progetto%20dummy%20S1%20-%20eroe/README.md) — File Python da eseguire e leggere, con una trascrizione della REPL.
+
 ## Integrazioni
 
 - [Python: scope, cioè dove vive una variabile](../Integrazioni%20e%20curiosit%C3%A0/Approfondimenti%20didattici/Python%20-%20scope%20e%20regola%20LEGB.md) — Dove Python cerca un nome (regola LEGB) e come cambiarlo da dentro una funzione.

@@ -8,44 +8,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🛠️ strumento · 🔧 lo faremo in laboratorio · ✏️ da fare · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🐍 Primi passi con Python))
-    🌍 Perché tanti linguaggi
-      ✅ Ogni linguaggio è un compromesso
-    🧭 Natale 1989
-    ⚖️ Java e Python a confronto
-      ✅ Stessi mattoni altra grammatica
-      🔍 Dove vince un linguaggio tipizzato
-      🔍 Dove vince Python
-      🔍 Python è compilato?
-      🔍 Chiamate scoperte a runtime
-      🤓 Type hints in Python
-    🖥️ REPL e script
-      ✅ Il REPL
-      ✅ Lo script
-      🔍 Interprete editor IDE e terminale
-      🤓 import this
-    🏷️ Variabili e tipi
-      ✅ Una variabile è una freccia
-      ✅ int float str bool
-      🔍 I tipi stanno nei valori
-      🤓 Interi senza limite
-    ⌨️ Input e output
-      ✅ print e input
-      ✅ input restituisce testo
-      🔍 f-string
-    ➕ Operatori
-      ✅ Aritmetici confronto logici
-      🔍 Divisione resto potenza
-      🤓 Uguali e identici
-    🐞 Gli errori
-      ✅ Tre famiglie
-      ✅ Leggere un traceback
-      🔍 Python non avverte prima
-    ✏️ Esercizi
-    📚 Fonti e risorse
-```
+![Mappa mentale della lezione](%28STU%29%204CI%20nov-dic%20S1%20-%20Mappa.svg)
 
 ## 🌍 Perché tanti linguaggi
 

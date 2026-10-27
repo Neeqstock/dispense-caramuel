@@ -21,6 +21,10 @@ Lungo la strada incontreremo un primo messaggio che si ferma a «LO», un cavo c
 - [ ] [S7 - Ripasso e troubleshooting](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S7%20-%20Ripasso%20e%20troubleshooting.md) — Come ricomporre quello che sai e trovare il passaggio che non torna.
 - **S8 - Verifica e recupero** — Come mostrare il metodo e usare gli errori per ripartire.
 
+### ✏️ Esercizi
+
+- [Eserciziario](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20-%20Eserciziario.md) — Otto dossier con casi reali di sicurezza informatica: un esercizio svolto per ogni argomento, gli altri da provare con la soluzione nascosta. Prima prova tu, poi apri la flashcard.
+
 ## Extra facoltativo
 
 - [Giochiamo con le reti](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20SX%20-%20Extra%20-%20Giochiamo%20e%20smancciamo%20con%20le%20reti.md) — Comandi di sola osservazione, una sfida CIDR e wargame facoltativi da usare esclusivamente nei loro ambienti autorizzati. `tracert` è solo un assaggio.
