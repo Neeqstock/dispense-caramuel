@@ -8,3 +8,6 @@ FACCIA_MAX = 6               # costante a livello di modulo
 def tira():
     """Cacca cacca pipi cacca pipi"""
     return random.randint(1, FACCIA_MAX)
+
+a = tira()
+print(a)

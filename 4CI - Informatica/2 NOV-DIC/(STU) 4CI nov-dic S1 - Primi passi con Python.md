@@ -8,9 +8,84 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🛠️ strumento · 🔧 lo faremo in laboratorio · ✏️ da fare · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-![Mappa mentale della lezione](%28STU%29%204CI%20nov-dic%20S1%20-%20Mappa.svg)
+<details open>
+<summary><b>🐍 Primi passi con Python</b></summary>
+
+<details open>
+<summary>🌍 <b>Perché tanti linguaggi</b></summary>
+
+- ✅ Ogni linguaggio è un compromesso
+
+</details>
+
+- 🧭 **Natale 1989**
+
+<details open>
+<summary>⚖️ <b>Java e Python a confronto</b></summary>
+
+- ✅ Stessi mattoni, altra grammatica
+- 🔍 Dove vince un linguaggio tipizzato e a oggetti
+- 🔍 Dove vince Python
+- 🔍 Python è compilato?
+- 🔍 Chiamate scoperte a runtime
+- 🤓 Type hints in Python
+
+</details>
+
+<details open>
+<summary>🖥️ <b>REPL e script</b></summary>
+
+- ✅ Il REPL
+- ✅ Lo script
+- 🔍 Interprete, editor, IDE e terminale
+- 🤓 import this
+
+</details>
+
+<details open>
+<summary>🏷️ <b>Variabili e tipi</b></summary>
+
+- ✅ Una variabile è una freccia
+- ✅ int, float, str, bool
+- 🔍 I tipi stanno nei valori
+- 🤓 Interi senza limite
+
+</details>
+
+<details open>
+<summary>⌨️ <b>Input e output</b></summary>
+
+- ✅ print e input
+- ✅ input restituisce testo
+- 🔍 f-string
+
+</details>
+
+<details open>
+<summary>➕ <b>Operatori</b></summary>
+
+- ✅ Aritmetici, di confronto, logici
+- 🔍 Divisione, resto, potenza
+- 🤓 Uguali e identici
+
+</details>
+
+<details open>
+<summary>🐞 <b>Gli errori</b></summary>
+
+- ✅ Tre famiglie
+- ✅ Leggere un traceback
+- 🔍 Python non avverte prima
+
+</details>
+
+- ✏️ **Esercizi**
+- 📚 **Fonti e risorse**
+
+</details>
 
 ## 🌍 Perché tanti linguaggi
+#fatto👍 
 
 Un computer capisce una cosa sola: sequenze di 0 e 1, cioè segnali accesi e spenti. Programmare in quel modo è come costruire una casa usando un solo tipo di mattone, e per di più piccolissimo. Per questo, da più di settant'anni, le persone costruiscono **scale**: ogni linguaggio è un gradino più vicino a come ragionano gli esseri umani.
 
@@ -34,6 +109,7 @@ Ad Amsterdam, un programmatore olandese di nome **Guido van Rossum** ha un probl
 Il nome provvisorio non è mai stato cambiato. Oggi Python si usa per automatizzare compiti, analizzare dati e addestrare modelli di intelligenza artificiale (a maggio lo incontreremo).
 
 ## ⚖️ Java e Python a confronto
+#fatto👍 
 
 Fino a ottobre hai usato Java. Il ragionamento che conosci (variabili, condizioni, cicli, riferimenti, oggetti) vale anche in Python. Cambiano le regole del gioco: chi controlla il codice, quando lo fa e quanta cerimonia serve.
 
@@ -45,17 +121,18 @@ Entrambe le cose, se si guarda bene: Python traduce il codice in bytecode e poi 
 </details>
 
 ### ✅ Stessi mattoni, altra grammatica
+#fatto👍 
 
-| Aspetto | Java | Python |
-| --- | --- | --- |
-| Tipo delle variabili | dichiarato: `int vita = 100;` | dedotto dal valore: `vita = 100` |
-| Controllo dei tipi | prima di partire, dal compilatore | mentre il programma gira |
-| Blocchi di codice | parentesi graffe `{ }` | indentazione |
-| Fine riga | `;` obbligatorio | niente |
-| Punto di partenza | una classe con `main` | un file, eseguito dall'alto in basso |
-| Stampa | `System.out.println(x);` | `print(x)` |
-| Commento | `// testo` | `# testo` |
-| Nasce nel | 1995, Sun Microsystems, con James Gosling | 1991, con Guido van Rossum |
+| Aspetto              | Java                                      | Python                               |
+| -------------------- | ----------------------------------------- | ------------------------------------ |
+| Tipo delle variabili | dichiarato: `int vita = 100;`             | dedotto dal valore: `vita = 100`     |
+| Controllo dei tipi   | prima di partire, dal compilatore         | mentre il programma gira             |
+| Blocchi di codice    | parentesi graffe `{ }`                    | indentazione                         |
+| Fine riga            | `;` obbligatorio                          | niente                               |
+| Punto di partenza    | una classe con `main`                     | un file, eseguito dall'alto in basso |
+| Stampa               | `System.out.println(x);`                  | `print(x)`                           |
+| Commento             | `// testo`                                | `# testo`                            |
+| Nasce nel            | 1995, Sun Microsystems, con James Gosling | 1991, con Guido van Rossum           |
 
 Lo stesso saluto nei due linguaggi:
 
@@ -137,6 +214,7 @@ Negli script, nell'automazione, nell'analisi dei dati, nei prototipi e nell'inte
 </details>
 
 ### 🤓 Type hints: Python con i tipi
+#fatto👍 
 
 Dal 2015 (Python 3.5) si possono scrivere **annotazioni di tipo**, chiamate *type hints*, descritte nella PEP 484:
 
@@ -145,6 +223,10 @@ def somma(a: int, b: int) -> int:
     return a + b
 
 print(somma("ciao", "mondo"))
+
+# Invece di
+def somma(a, b)
+	return a + b
 ```
 
 Il programma stampa `ciaomondo`. Python **non controlla** le annotazioni mentre esegue. Un controllore esterno, come mypy, le usa per segnalare l'errore prima di partire. È un po' come Java, ma a scelta tua.
@@ -232,15 +314,16 @@ Con `#`; Python ignora il resto della riga. In Java si scrive `//`.
 </details>
 
 ### 🔍 Interprete, editor, IDE e terminale
+#fatto👍 
 
 Quattro parole diverse, quattro oggetti diversi.
 
-| Parola | Che cos'è | Esempio |
-|---|---|---|
-| **Interprete** | Il programma che legge il tuo codice e lo esegue | `python` |
-| **Editor** | Il programma in cui scrivi il testo | blocco note, VS Code |
-| **IDE** | Un editor con molti strumenti in più (esecuzione, debugger, suggerimenti) | VS Code con estensioni, PyCharm |
-| **Terminale** | La finestra a comandi da cui avvii l'interprete | PowerShell, Terminale |
+| Parola         | Che cos'è                                                                 | Esempio                         |
+| -------------- | ------------------------------------------------------------------------- | ------------------------------- |
+| **Interprete** | Il programma che legge il tuo codice e lo esegue                          | `python`                        |
+| **Editor**     | Il programma in cui scrivi il testo                                       | blocco note, VS Code            |
+| **IDE**        | Un editor con molti strumenti in più (esecuzione, debugger, suggerimenti) | VS Code con estensioni, PyCharm |
+| **Terminale**  | La finestra a comandi da cui avvii l'interprete                           | PowerShell, Terminale           |
 
 In Java il compilatore controllava anche i tipi *prima* di far partire il programma. Python controlla la sintassi prima di partire, ma i tipi li scopre solo mentre esegue. Ne parliamo in fondo alla dispensa.
 
@@ -262,18 +345,19 @@ Un editor con strumenti in più per scrivere, eseguire e correggere il codice, c
 ## 🏷️ Variabili e tipi
 
 ### ✅ Una variabile è una freccia
+#fatto👍 
 
 In Java dichiaravi `int vita = 100;`. In Python scrivi solo `vita = 100`. Non dici il tipo: Python lo capisce dal valore.
 
-| Java | Python |
-|---|---|
-| `int vita = 100;` | `vita = 100` |
-| `String nome = "Aria";` | `nome = "Aria"` |
-| `double forza = 7.5;` | `forza = 7.5` |
-| `boolean vivo = true;` | `vivo = True` |
-| `System.out.println(x);` | `print(x)` |
-| `// commento` | `# commento` |
-| `;` a fine riga | niente |
+| Java                     | Python          |
+| ------------------------ | --------------- |
+| `int vita = 100;`        | `vita = 100`    |
+| `String nome = "Aria";`  | `nome = "Aria"` |
+| `double forza = 7.5;`    | `forza = 7.5`   |
+| `boolean vivo = true;`   | `vivo = True`   |
+| `System.out.println(x);` | `print(x)`      |
+| `// commento`            | `# commento`    |
+| `;` a fine riga          | niente          |
 
 ⚠️ Le parole `True` e `False` hanno la **maiuscola**. `true` dà un errore.
 
@@ -324,12 +408,12 @@ NameError: Python non conosce quel nome. Si scrive <code>True</code>, con la mai
 
 ### ✅ Quattro tipi per cominciare
 
-| Tipo | Che cos'è | Esempio |
-|---|---|---|
-| `int` | numero intero | `100` |
-| `float` | numero con la virgola (nel codice è un punto) | `7.5` |
-| `str` | testo, fra apici o virgolette | `"Aria"` |
-| `bool` | vero o falso | `True`, `False` |
+| Tipo    | Che cos'è                                     | Esempio         |
+| ------- | --------------------------------------------- | --------------- |
+| `int`   | numero intero                                 | `100`           |
+| `float` | numero con la virgola (nel codice è un punto) | `7.5`           |
+| `str`   | testo, fra apici o virgolette                 | `"Aria"`        |
+| `bool`  | vero o falso                                  | `True`, `False` |
 
 Il tipo di un valore si controlla con `type()`.
 
@@ -376,7 +460,7 @@ Al valore. La variabile è una freccia che può puntare a valori di tipi diversi
 </details>
 
 ### 🤓 Interi senza limite
-
+#fatto👍 
 In Java un `int` ha 32 bit e un `long` 64: se superi il limite, il numero «ricomincia da capo». In Python un `int` cresce quanto serve, finché c'è memoria.
 
 ```text
@@ -389,6 +473,7 @@ Il prezzo è che i calcoli con numeri enormi sono più lenti.
 ## ⌨️ Input e output
 
 ### ✅ `print` e `input`
+#fatto👍 
 
 `print()` scrive sullo schermo. `input()` aspetta che l'utente scriva qualcosa e lo restituisce. In Java usavi `System.out.println` e `Scanner`.
 
@@ -405,6 +490,7 @@ Mostra la domanda, aspetta che l'utente scriva e restituisce ciò che ha scritto
 </details>
 
 ### ✅ `input` restituisce sempre testo
+#fatto👍 
 
 <u>Qualunque cosa scriva l'utente, `input()` la restituisce come `str`.</u> Anche se scrive `7`.
 
@@ -541,11 +627,11 @@ Per confrontare valori usa quasi sempre `==`.
 
 Gli errori fanno parte del lavoro: non dicono se sei bravo o no, dicono che il programma ti sta parlando. Si dividono in tre famiglie.
 
-| Famiglia | Quando | Esempio | Come te ne accorgi |
-|---|---|---|---|
-| **Sintassi** | Prima di partire | `print(vita - danno` (parentesi mai chiusa) | Python non esegue niente |
-| **Esecuzione** | Mentre gira | sommare testo e numero; dividere per zero | Il programma si ferma a quella riga |
-| **Logica** | Mai: gira, ma sbaglia | `media = forza + bonus / 2` | Nessun messaggio: la risposta è sbagliata |
+| Famiglia       | Quando                | Esempio                                     | Come te ne accorgi                        |
+| -------------- | --------------------- | ------------------------------------------- | ----------------------------------------- |
+| **Sintassi**   | Prima di partire      | `print(vita - danno` (parentesi mai chiusa) | Python non esegue niente                  |
+| **Esecuzione** | Mentre gira           | sommare testo e numero; dividere per zero   | Il programma si ferma a quella riga       |
+| **Logica**     | Mai: gira, ma sbaglia | `media = forza + bonus / 2`                 | Nessun messaggio: la risposta è sbagliata |
 
 🧪 **Il più difficile è l'ultimo.** Voglio la media di 7 e 3, ma scrivo `forza + bonus / 2`. Per Python la divisione viene prima, quindi calcola `7 + 3 / 2`, cioè 8.5, non 5. Il programma è «corretto» per Python e sbagliato per te. Per trovarlo si **prevede il risultato a mano** e si confronta.
 
@@ -559,6 +645,7 @@ La logica: il programma gira, ma il risultato è sbagliato.
 </details>
 
 ### ✅ Leggere un traceback
+#arrivati_qua
 
 Quando un programma si ferma per un errore di esecuzione, Python stampa un **traceback**: il rapporto dell'incidente. <u>Si legge dal basso.</u>
 

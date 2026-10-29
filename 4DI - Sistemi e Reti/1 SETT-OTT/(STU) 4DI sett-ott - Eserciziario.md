@@ -8,7 +8,8 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 caso vero · 🕵️ come funziona l'attacco · 📖 teoria · ✏️ pratica scritta · 🟢 svolto: guarda come si fa · 🎯 da provare: soluzione nascosta · 🧠 da ricordare · ⚠️ errore comune · 📌 controllo · 🃏 soluzione
 
-In azienda nessuno ti dà un esercizietto. Ti dicono: «abbiamo un problema». In queste pagine sei il nuovo tecnico di una squadra di sicurezza informatica: stile *Mr. Robot*, ma dalla parte giusta, **con un permesso scritto**. Ogni dossier parte da un caso vero o verosimile, spiega come funziona l'attacco e ti chiede i conti che servono per capire la difesa.
+In azienda nessuno ti dà un esercizietto. Ti dicono: «abbiamo un problema, risolvicelo». In queste pagine sei il nuovo tecnico di una squadra di sicurezza informatica: stile *Mr. Robot*, ma 
+**con un permesso scritto**. Ogni dossier parte da un caso vero o verosimile, spiega come funziona l'attacco e ti chiede i conti che servono per capire la difesa.
 
 <u>Un attacco è quasi sempre una regola della rete usata contro chi l'ha scritta.</u> Lo switch «manda a tutti ciò che non conosce». IP «non controlla il mittente». Il NAT «traduce, non decide». Chi conosce le regole sa dove guardare.
 
@@ -22,16 +23,16 @@ In azienda nessuno ti dà un esercizietto. Ti dicono: «abbiamo un problema». I
 - **Valori.** Nomi, aziende piccole e numeri degli esercizi sono inventati. Gli indirizzi «pubblici» (`192.0.2.x`, `198.51.100.x`, `203.0.113.x`) sono riservati alla documentazione (RFC 5737): non appartengono a nessuno. Gli indirizzi che compaiono nei casi veri sono dichiarati come tali.
 - **Strumenti.** Puoi usare la tabella dei prefissi di S5 e la calcolatrice. Nei conti scrivi i passaggi.
 
-| Dossier | Tema | Settimana | Caso |
-| :---: | --- | :---: | --- |
-| 1 | La busta e il Wi-Fi del bar | S1 | Firesheep, 2010 |
-| 2 | Lo switch che impara | S2 | MAC casuali e switch sovraccarico |
-| 3 | Indirizzi e botnet | S3 | Mirai, 2016 |
-| 4 | Privati, NAT e telecamere esposte | S4 | Shodan |
-| 5 | FLSM: l'hotel a otto piani | S4 | DarkHotel, 2014 |
-| 6 | CIDR: di chi è questo IP | S5 | Honeypot e YouTube, 2008 |
-| 7 | VLSM: l'acquario | S6 | Il casinò e il termometro; Target, 2013 |
-| 8 | Livello finale | S7 | Capture The Flag |
+| Dossier | Tema                              | Settimana | Caso                                    |
+| :-----: | --------------------------------- | :-------: | --------------------------------------- |
+|    1    | La busta e il Wi-Fi del bar       |    S1     | Firesheep, 2010                         |
+|    2    | Lo switch che impara              |    S2     | MAC casuali e switch sovraccarico       |
+|    3    | Indirizzi e botnet                |    S3     | Mirai, 2016                             |
+|    4    | Privati, NAT e telecamere esposte |    S4     | Shodan                                  |
+|    5    | FLSM: l'hotel a otto piani        |    S4     | DarkHotel, 2014                         |
+|    6    | CIDR: di chi è questo IP          |    S5     | Honeypot e YouTube, 2008                |
+|    7    | VLSM: l'acquario                  |    S6     | Il casinò e il termometro; Target, 2013 |
+|    8    | Livello finale                    |    S7     | Capture The Flag                        |
 
 ---
 
@@ -64,7 +65,7 @@ Cookie: sessione=7f3a9c
 2. Se il sito usa HTTP semplice, dove sta il cookie e chi può leggerlo?
 3. Se il sito usa HTTPS, che cosa resta leggibile per l'ascoltatore e che cosa no?
 
-**Svolgimento.**
+**Svolgimento (soluzioni).**
 
 1. **ETH** è l'header del frame: livello Accesso alla rete. **IP** è l'header del pacchetto: livello Internet. **TCP** è l'header del segmento: livello Trasporto. **dati HTTP** è il messaggio: livello Applicazione.
 2. Il cookie sta nei **dati HTTP**, cioè nel livello Applicazione. Con HTTP semplice nessuno lo cifra: chiunque riceva i frame, cioè tutto il bar, può leggerlo.
@@ -95,11 +96,11 @@ Cookie: sessione=7f3a9c
 
 **Consegna.** Nico, assunto da una settimana, dice cinque frasi. Per ognuna scrivi **V** (vera) o **F** (falsa). Se è falsa, correggila in una frase.
 
-1. «Pacchetto e frame sono due nomi della stessa cosa.»
-2. «Il livello di rete è il router.»
-3. «Internet funziona con i protocolli del modello ISO/OSI.»
-4. «Con HTTPS, chi ascolta vede ancora l'indirizzo IP del sito.»
-5. «Ogni livello legge e modifica l'header degli altri livelli.»
+1. «Pacchetto e frame sono due nomi della stessa cosa.» F
+2. «Il livello di rete è il router.» F/V
+3. «Internet funziona con i protocolli del modello ISO/OSI.» F
+4. «Con HTTPS, chi ascolta vede ancora l'indirizzo IP del sito.» V
+5. «Ogni livello legge e modifica l'header degli altri livelli.» F
 
 <details>
 <summary>🃏 <b>1.3 — Soluzione</b></summary>
@@ -151,12 +152,12 @@ Per ogni frame scrivi che cosa **impara** lo switch e da quali porte **esce** il
 
 **Svolgimento.**
 
-| Frame | Entra da | Che cosa impara | Destinazione già in tabella? | Esce da |
-| --- | :---: | --- | --- | --- |
-| 1 · `AA → BB` | 1 | `AA` è alla porta 1 | no: `BB` è sconosciuto | 2, 3, 4 |
-| 2 · `BB → AA` | 2 | `BB` è alla porta 2 | sì: `AA` è alla porta 1 | solo 1 |
-| 3 · `CC → AA` | 3 | `CC` è alla porta 3 | sì: `AA` è alla porta 1 | solo 1 |
-| 4 · `AA → DD` | 1 | `AA` è già noto | no: `DD` è sconosciuto | 2, 3, 4 |
+| Frame         | Entra da | Che cosa impara     | Destinazione già in tabella? | Esce da |
+| ------------- | :------: | ------------------- | ---------------------------- | ------- |
+| 1 · `AA → BB` |    1     | `AA` è alla porta 1 | no: `BB` è sconosciuto       | 2, 3, 4 |
+| 2 · `BB → AA` |    2     | `BB` è alla porta 2 | sì: `AA` è alla porta 1      | solo 1  |
+| 3 · `CC → AA` |    3     | `CC` è alla porta 3 | sì: `AA` è alla porta 1      | solo 1  |
+| 4 · `AA → DD` |    1     | `AA` è già noto     | no: `DD` è sconosciuto       | 2, 3, 4 |
 
 **Tabella finale:** `AA` → 1, `BB` → 2, `CC` → 3. `DD` non c'è: lo switch lo impara solo quando `DD` scrive un frame.
 
@@ -169,6 +170,10 @@ Per ogni frame scrivi che cosa **impara** lo switch e da quali porte **esce** il
 **Consegna.** Modello semplificato: uno switch vero ha migliaia di voci, tempi di scadenza e difese. Qui lo switch ha spazio per **4 voci**. Quando la tabella è piena non impara MAC nuovi, e tratta come sconosciuto ogni MAC che non è in tabella.
 
 All'inizio la tabella contiene `AA` → porta 1 e `BB` → porta 2. Sulla porta 4 l'intruso invia due frame con MAC sorgente inventati, `F1` e `F2`. Poi Carla si collega alla porta 3 (`CC`) e scrive ad Ada.
+
+AA sta sulla porta 1
+BB sta sulla porta 2
+intruso invia frame con MAC F1 e F2
 
 1. Scrivi la tabella dopo i due frame dell'intruso. È piena?
 2. Carla invia `CC → AA`. Lo switch impara `CC`? Da quali porte esce il frame?

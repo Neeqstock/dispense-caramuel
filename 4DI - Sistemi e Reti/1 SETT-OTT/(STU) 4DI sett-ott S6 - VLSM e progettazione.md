@@ -53,11 +53,11 @@ Per prima cosa **dimensiona** ogni richiesta: trova il blocco più piccolo che p
 3. **Calcola** il prefisso sottraendo $h$ da 32: prefisso $= 32 - h$.
 
 | Host richiesti | Bit host minimi | Prefisso | Indirizzi nel blocco | Host ordinari |
-|---:|---:|---:|---:|---:|
-| 50 | 6 | `/26` | 64 | 62 |
-| 25 | 5 | `/27` | 32 | 30 |
-| 12 | 4 | `/28` | 16 | 14 |
-| 6 | 3 | `/29` | 8 | 6 |
+| -------------: | --------------: | -------: | -------------------: | ------------: |
+|             50 |               6 |    `/26` |                   64 |            62 |
+|             25 |               5 |    `/27` |                   32 |            30 |
+|             12 |               4 |    `/28` |                   16 |            14 |
+|              6 |               3 |    `/29` |                    8 |             6 |
 
 ⚠️ **Anche il gateway occupa un indirizzo host.** Se un reparto ha 62 dispositivi e il gateway usa un indirizzo della stessa sottorete, servono 63 indirizzi host. Una `/26` ne offre solo 62, quindi serve una `/25`. Quando calcoli la richiesta, dichiara sempre se hai contato il gateway.
 
@@ -107,7 +107,7 @@ Per assegnare i blocchi, segui questi quattro passaggi:
 Ogni blocco inizia subito dopo il precedente. Gli indirizzi da `.120` a `.255` restano liberi.
 
 ```text
-0        64      96   112 120                        255
+0        64        96  112  120                            255
 |--- 64 --|-- 32 --|-16-|-8-|........ spazio libero ........|
 ```
 
@@ -150,12 +150,12 @@ Hanno rispettivamente 64, 32, 16 e 8 indirizzi.
 
 Quando hai assegnato i blocchi, **controlla** il piano con questi quattro criteri:
 
-| Controllo | Domanda |
-|---|---|
-| **Capienza** | ogni sottorete ha abbastanza host ordinari? |
-| **Allineamento** | ogni rete inizia su un multiplo della propria dimensione? |
-| **Non sovrapposizione** | gli intervalli sono separati? |
-| **Tracciabilità** | la tabella dice rete, prefisso, host, broadcast e gateway? |
+| Controllo               | Domanda                                                    |
+| ----------------------- | ---------------------------------------------------------- |
+| **Capienza**            | ogni sottorete ha abbastanza host ordinari?                |
+| **Allineamento**        | ogni rete inizia su un multiplo della propria dimensione?  |
+| **Non sovrapposizione** | gli intervalli sono separati?                              |
+| **Tracciabilità**       | la tabella dice rete, prefisso, host, broadcast e gateway? |
 
 🧪 **Controllo dell'allineamento.** Una `/27` contiene 32 indirizzi. Nell'ultimo ottetto, le reti `/27` possono quindi iniziare a 0, 32, 64, 96 e così via. L'indirizzo `.70` appartiene al blocco che inizia a `.64`, ma **non** può essere l'indirizzo di rete di una `/27`.
 

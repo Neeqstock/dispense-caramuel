@@ -45,6 +45,7 @@ L'idea non è recente. Nel 1965 Maurice Wilkes, lo stesso dell'EDSAC, descrisse 
 ## 🎯 Cache
 
 ### ✅ Hit e miss
+#fatto👍 
 
 La **cache** conserva copie di pezzi della memoria principale vicino al processore. Se il contenuto richiesto è già nel livello consultato si ha un **hit**; se manca, un **miss**. Allora il sistema deve cercarlo al livello successivo, con un'attesa in più.
 
@@ -85,7 +86,8 @@ No. È una copia di alcuni contenuti, tenuta più vicina alla CPU.
 </details>
 
 ### ✅ Località temporale e spaziale
-
+#fatto👍 
+ 
 **Località temporale:** un contenuto usato da poco può servire di nuovo presto. Per esempio, un programma ripete le istruzioni di un ciclo, o torna più volte sullo stesso valore.
 
 **Località spaziale:** dopo un indirizzo possono servire quelli vicini. Se gli elementi di una sequenza sono in celle consecutive e li visitiamo in ordine, leggere un blocco che ne contiene diversi evita attese successive.
@@ -110,6 +112,7 @@ No. Il contenuto potrebbe essere stato sostituito nel frattempo.
 </details>
 
 ### ✅ Blocchi e linee di cache
+#fatto👍 
 
 La cache è organizzata in **linee**, che contengono blocchi di posizioni consecutive. Portare nella cache, insieme al valore richiesto, anche i suoi vicini sfrutta la località spaziale. Attenzione a non confondere la dimensione di una linea con la capacità totale della cache.
 
@@ -133,6 +136,7 @@ Se un accesso precedente ha portato in cache il blocco che lo contiene.
 </details>
 
 ### 🔍 Simulazione di una cache
+#saltata
 
 La nostra cache di carta:
 
@@ -176,6 +180,7 @@ No. Il blocco può essere stato sostituito, come succede all'ultimo accesso dell
 </details>
 
 ### 🔍 SRAM e DRAM
+#saltata
 
 La **SRAM** conserva ogni bit con un circuito stabile finché è alimentata. Non ha bisogno di «rinfrescare» le celle come la DRAM, ma occupa più spazio per bit: per questo si usa nelle cache. ⚠️ «Static» non significa non volatile.
 
@@ -209,6 +214,9 @@ Livelli di cache: L1 di solito è la più piccola e veloce, i livelli successivi
 ### ✅ Clock e frequenza
 
 Il **clock** è un segnale periodico che dà il tempo ai circuiti sincroni. La frequenza conta i cicli al secondo: 2 GHz significa due miliardi di cicli al secondo, **non per forza due miliardi di istruzioni completate**.
+
+1Kg = 1000g
+1Gg = 1000 000 000 g
 
 Un'operazione può richiedere più passi, e un'attesa della memoria può consumare tempo senza produrre nuovi risultati. Per confrontare due sistemi bisogna guardare il lavoro svolto e il tempo impiegato, non solo i GHz scritti sulla scatola.
 
