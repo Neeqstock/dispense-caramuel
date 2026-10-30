@@ -9,9 +9,9 @@
 
 <table>
   <tr>
-    <td rowspan="4" valign="middle"><kbd title="Una proposizione è vera o falsa">🟥 <b>Vero o falso</b></kbd></td>
+    <td rowspan="4" valign="middle"><code title="Una proposizione è vera o falsa"><b>VERO O FALSO</b></code></td>
     <td valign="top"><code>╭──</code></td>
-    <td valign="top"><kbd title="Chi ha costruito la logica del vero e falso">🟦 <b>Una decisione, due risposte</b></kbd></td>
+    <td valign="top"><code title="Chi ha costruito la logica del vero e falso"><b>⚪ UNA DECISIONE, DUE RISPOSTE</b></code></td>
     <td valign="top">
       <details>
         <summary>&nbsp;</summary>
@@ -30,7 +30,7 @@
   </tr>
   <tr>
     <td valign="top"><code>├──</code></td>
-    <td valign="top"><kbd title="Frase che si può votare vero o falso">🟩 <b>Proposizione</b></kbd></td>
+    <td valign="top"><code title="Frase che si può votare vero o falso"><b>⚪ PROPOSIZIONE</b></code></td>
     <td valign="top">
       <details>
         <summary>&nbsp;</summary>
@@ -49,7 +49,7 @@
   </tr>
   <tr>
     <td valign="top"><code>├──</code></td>
-    <td valign="top"><kbd title="Capovolge la risposta">🟧 <b>NOT</b></kbd></td>
+    <td valign="top"><code title="Capovolge la risposta"><b>⚪ NOT</b></code></td>
     <td valign="top">
       <details>
         <summary>&nbsp;</summary>
@@ -76,7 +76,7 @@
   </tr>
   <tr>
     <td valign="top"><code>╰──</code></td>
-    <td valign="top"><kbd title="Il vero e il falso nel computer">🟪 <b>Il bit come vero o falso</b></kbd></td>
+    <td valign="top"><code title="Il vero e il falso nel computer"><b>⚪ IL BIT COME VERO O FALSO</b></code></td>
     <td valign="top">
       <details>
         <summary>&nbsp;</summary>

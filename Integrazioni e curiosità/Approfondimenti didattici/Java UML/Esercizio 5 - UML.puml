@@ -1,0 +1,93 @@
+@startuml
+title Esercizio 5 - Zoo
+top to bottom direction
+
+abstract class Animale {
+  - nome: String
+  - specie: String
+  - eta: int
+  - peso: double
+  --
+  + Animale(nome: String, specie: String)
+  + Animale(nome: String, specie: String, eta: int, peso: double)
+  + getNome(): String
+  + setNome(nome: String): void
+  + getSpecie(): String
+  + setSpecie(specie: String): void
+  + getEta(): int
+  + setEta(eta: int): void
+  + getPeso(): double
+  + setPeso(peso: double): void
+  + saluta(): void
+  {abstract} + verso(): void
+}
+
+class Giraffa {
+  + Giraffa(nome: String)
+  + mangiaFoglie(): void
+  + verso(): void
+}
+
+class Leone {
+  + Leone(nome: String, specie: String)
+  + ruggisci(): void
+  + verso(): void
+}
+
+class Tigre {
+  + Tigre(nome: String, specie: String, eta: int, peso: double)
+  + verso(): void
+}
+
+class Elefante {
+  + Elefante(nome: String, specie: String, eta: int, peso: double)
+  + verso(): void
+}
+
+class Aquila {
+  + Aquila(nome: String, specie: String, eta: int, peso: double)
+  + verso(): void
+  + vola(): void
+  + comportamentoSpecifico(): void
+}
+
+interface Volante {
+  + vola(): void
+}
+
+class Drone {
+  + vola(): void
+}
+
+class Main {
+  {static} + main(args: String[]): void
+}
+
+Animale <|-- Giraffa
+Animale <|-- Leone
+Animale <|-- Tigre
+Animale <|-- Elefante
+Animale <|-- Aquila
+Volante <|.. Aquila
+Volante <|.. Drone
+
+Main ..> Animale : gestisce\nArrayList<Animale>
+Main ..> Volante : usa come tipo
+
+Animale -[hidden]down- Giraffa
+Animale -[hidden]down- Main
+Giraffa -[hidden]right- Leone
+Giraffa -[hidden]down- Tigre
+Leone -[hidden]down- Elefante
+Tigre -[hidden]right- Elefante
+Tigre -[hidden]down- Aquila
+Elefante -[hidden]down- Drone
+Aquila -[hidden]right- Drone
+Drone -[hidden]down- Main
+
+note right of Aquila
+  comportamentoSpecifico() è un segnaposto:
+  l'esercizio richiede un comportamento proprio,
+  ma non ne specifica il nome.
+end note
+@enduml
