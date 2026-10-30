@@ -7,43 +7,89 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🃏 flashcard: rispondi a voce, poi apri per controllare · 🚪 uscita · 🔧 in laboratorio
 
-<details open>
-<summary><b>🔀 Vero o falso</b></summary>
-
-<details open>
-<summary>📜 <b>Una decisione, due risposte</b></summary>
-
-- George Boole
-- Claude Shannon
-
-</details>
-
-<details open>
-<summary>🧾 <b>Proposizione</b></summary>
-
-- Vera o falsa
-- Non è una proposizione
-
-</details>
-
-<details open>
-<summary>🔄 <b>NOT</b></summary>
-
-- Tabella di NOT
-- Wi-Fi e modalità aereo
-- Negare «tutti»
-- Doppia negazione
-
-</details>
-
-<details open>
-<summary>🔗 <b>Il bit come vero o falso</b></summary>
-
-- Vero = 1, falso = 0
-
-</details>
-
-</details>
+<table>
+  <tr>
+    <td rowspan="4" valign="middle"><kbd title="Una proposizione è vera o falsa">🟥 <b>Vero o falso</b></kbd></td>
+    <td valign="top"><code>╭──</code></td>
+    <td valign="top"><kbd title="Chi ha costruito la logica del vero e falso">🟦 <b>Una decisione, due risposte</b></kbd></td>
+    <td valign="top">
+      <details>
+        <summary>&nbsp;</summary>
+        <table>
+          <tr>
+            <td valign="top"><code>├──</code></td>
+            <td valign="top"><code title="Scrive la logica come algebra, nel 1847"><b>🤓 George Boole</b></code></td>
+          </tr>
+          <tr>
+            <td valign="top"><code>╰──</code></td>
+            <td valign="top"><code title="Collega la logica ai relè, nel 1937"><b>🤓 Claude Shannon</b></code></td>
+          </tr>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"><code>├──</code></td>
+    <td valign="top"><kbd title="Frase che si può votare vero o falso">🟩 <b>Proposizione</b></kbd></td>
+    <td valign="top">
+      <details>
+        <summary>&nbsp;</summary>
+        <table>
+          <tr>
+            <td valign="top"><code>├──</code></td>
+            <td valign="top"><code title="Ha sempre un solo valore: vero oppure falso"><b>✅ Vera o falsa</b></code></td>
+          </tr>
+          <tr>
+            <td valign="top"><code>╰──</code></td>
+            <td valign="top"><code title="Ordini, domande e opinioni non si votano"><b>✅ Frasi che non sono proposizioni</b></code></td>
+          </tr>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"><code>├──</code></td>
+    <td valign="top"><kbd title="Capovolge la risposta">🟧 <b>NOT</b></kbd></td>
+    <td valign="top">
+      <details>
+        <summary>&nbsp;</summary>
+        <table>
+          <tr>
+            <td valign="top"><code>├──</code></td>
+            <td valign="top"><code title="Tutti i casi possibili, con il risultato"><b>✅ Tabella di NOT</b></code></td>
+          </tr>
+          <tr>
+            <td valign="top"><code>├──</code></td>
+            <td valign="top"><code title="Esempio reale di NOT"><b>✅ Wi-Fi e modalità aereo</b></code></td>
+          </tr>
+          <tr>
+            <td valign="top"><code>├──</code></td>
+            <td valign="top"><code title="Come si nega «tutti» e «nessuno»"><b>🔍 Negazione di «tutti» e «nessuno»</b></code></td>
+          </tr>
+          <tr>
+            <td valign="top"><code>╰──</code></td>
+            <td valign="top"><code title="Due NOT si annullano"><b>🔍 Doppia negazione</b></code></td>
+          </tr>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"><code>╰──</code></td>
+    <td valign="top"><kbd title="Il vero e il falso nel computer">🟪 <b>Il bit come vero o falso</b></kbd></td>
+    <td valign="top">
+      <details>
+        <summary>&nbsp;</summary>
+        <table>
+          <tr>
+            <td valign="top"><code>───</code></td>
+            <td valign="top"><code title="Il computer scrive il vero come 1 e il falso come 0"><b>✅ Vero = 1, falso = 0</b></code></td>
+          </tr>
+        </table>
+      </details>
+    </td>
+  </tr>
+</table>
 
 ## 📜 Ogni giorno decidi con due risposte
 
