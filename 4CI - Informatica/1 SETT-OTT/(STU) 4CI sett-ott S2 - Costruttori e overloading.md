@@ -6,24 +6,36 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🏗️ Costruttori e overloading))
-    🧭 Oggetti che nascono pronti
-    🏗️ Il costruttore
-      ✅ Il costruttore inizializza l'oggetto
-      ✅ this indica l'oggetto corrente
-      ✅ Il costruttore di default
-      🔍 Che cosa succede durante new
-    🔀 Overloading
-      ✅ Più costruttori con firme diverse
-      ✅ Overloading dei metodi
-      🔍 this richiama un altro costruttore
-      🔍 Il costruttore di copia
-      🤓 Quando i costruttori sono troppi
-    🧩 Esercizi su costruttori e overloading
-    📚 Fonti e risorse
-```
+<details open>
+<summary><b>🏗️ Costruttori e overloading</b></summary>
+
+- 🧭 **Oggetti che nascono pronti**
+
+<details open>
+<summary>🏗️ <b>Il costruttore</b></summary>
+
+- ✅ Il costruttore inizializza l'oggetto
+- ✅ this indica l'oggetto corrente
+- ✅ Il costruttore di default
+- 🔍 Che cosa succede durante new
+
+</details>
+
+<details open>
+<summary>🔀 <b>Overloading</b></summary>
+
+- ✅ Più costruttori con firme diverse
+- ✅ Overloading dei metodi
+- 🔍 this richiama un altro costruttore
+- 🔍 Il costruttore di copia
+- 🤓 Quando i costruttori sono troppi
+
+</details>
+
+- 🧩 **Esercizi su costruttori e overloading**
+- 📚 **Fonti e risorse**
+
+</details>
 
 ## 🧭 Oggetti che nascono pronti
 

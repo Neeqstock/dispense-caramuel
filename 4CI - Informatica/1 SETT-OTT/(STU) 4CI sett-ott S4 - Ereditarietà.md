@@ -6,25 +6,42 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🌳 Ereditarietà))
-    🧭 Scrivere una volta sola
-    🌳 Superclasse e sottoclasse
-      ✅ extends crea una sottoclasse
-      ✅ Il test è un
-      ✅ Object è la radice di tutte le classi
-      🔍 Una sola superclasse
-    🏗️ Costruire una sottoclasse
-      ✅ super chiama il costruttore della superclasse
-      🔍 Il super implicito e l'ordine di costruzione
-      🔍 Private e protected nella gerarchia
-    ⚖️ Usare bene l'ereditarietà
-      🔍 Ereditarietà o composizione
-      🤓 Quadrati, rettangoli e Liskov
-    🧩 Esercizi sull'ereditarietà
-    📚 Fonti e risorse
-```
+<details open>
+<summary><b>🌳 Ereditarietà</b></summary>
+
+- 🧭 **Scrivere una volta sola**
+
+<details open>
+<summary>🌳 <b>Superclasse e sottoclasse</b></summary>
+
+- ✅ extends crea una sottoclasse
+- ✅ Il test è un
+- ✅ Object è la radice di tutte le classi
+- 🔍 Una sola superclasse
+
+</details>
+
+<details open>
+<summary>🏗️ <b>Costruire una sottoclasse</b></summary>
+
+- ✅ super chiama il costruttore della superclasse
+- 🔍 Il super implicito e l'ordine di costruzione
+- 🔍 Private e protected nella gerarchia
+
+</details>
+
+<details open>
+<summary>⚖️ <b>Usare bene l'ereditarietà</b></summary>
+
+- 🔍 Ereditarietà o composizione
+- 🤓 Quadrati, rettangoli e Liskov
+
+</details>
+
+- 🧩 **Esercizi sull'ereditarietà**
+- 📚 **Fonti e risorse**
+
+</details>
 
 ## 🧭 Scrivere una volta sola
 

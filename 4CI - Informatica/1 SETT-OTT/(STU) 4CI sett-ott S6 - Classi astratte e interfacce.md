@@ -6,27 +6,44 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🤝 Classi astratte e interfacce))
-    🧭 Contratti invece di dettagli
-    🧩 Classi astratte
-      ✅ Una classe che non si può istanziare
-      ✅ I metodi astratti obbligano le sottoclassi
-      🔍 Costruttori e metodi concreti in una classe astratta
-    🤝 Interfacce
-      ✅ Un'interfaccia è un contratto
-      ✅ Implementare più interfacce
-      ✅ Variabili di tipo interfaccia
-      🔍 Costanti e metodi default
-      🤓 Le interfacce nella libreria Java
-    ⚖️ Scegliere lo strumento
-      ✅ Classe astratta o interfaccia
-      🔍 I quattro principi insieme
-      🤓 Le critiche alla programmazione a oggetti
-    🧩 Esercizi su classi astratte e interfacce
-    📚 Fonti e risorse
-```
+<details open>
+<summary><b>🤝 Classi astratte e interfacce</b></summary>
+
+- 🧭 **Contratti invece di dettagli**
+
+<details open>
+<summary>🧩 <b>Classi astratte</b></summary>
+
+- ✅ Una classe che non si può istanziare
+- ✅ I metodi astratti obbligano le sottoclassi
+- 🔍 Costruttori e metodi concreti in una classe astratta
+
+</details>
+
+<details open>
+<summary>🤝 <b>Interfacce</b></summary>
+
+- ✅ Un'interfaccia è un contratto
+- ✅ Implementare più interfacce
+- ✅ Variabili di tipo interfaccia
+- 🔍 Costanti e metodi default
+- 🤓 Le interfacce nella libreria Java
+
+</details>
+
+<details open>
+<summary>⚖️ <b>Scegliere lo strumento</b></summary>
+
+- ✅ Classe astratta o interfaccia
+- 🔍 I quattro principi insieme
+- 🤓 Le critiche alla programmazione a oggetti
+
+</details>
+
+- 🧩 **Esercizi su classi astratte e interfacce**
+- 📚 **Fonti e risorse**
+
+</details>
 
 ## 🧭 Contratti invece di dettagli
 
@@ -332,30 +349,35 @@ public class Anatra extends Animale implements Volante, Nuotatore {
 
 L'anatra **è un** animale, **sa** volare e **sa** nuotare. Così Java ottiene la flessibilità dell'ereditarietà multipla senza il problema del diamante: le interfacce classiche non hanno attributi né codice da ereditare in conflitto.
 
-```mermaid
-classDiagram
-    class Animale {
-        <<abstract>>
-        +faiVerso()
-    }
-    class Volante {
-        <<interface>>
-        +vola()
-    }
-    class Nuotatore {
-        <<interface>>
-        +nuota()
-    }
-    Animale <|-- Pollo
-    Animale <|-- Aquila
-    Animale <|-- Anatra
-    Volante <|.. Aquila
-    Volante <|.. Anatra
-    Nuotatore <|.. Anatra
-    Volante <|.. Drone
-```
+<table>
+<thead>
+<tr><th>Classe</th><th>Tipo</th><th>Metodi</th></tr>
+</thead>
+<tbody>
+<tr><td>Animale</td><td>astratta (<code>abstract</code>)</td><td>faiVerso()</td></tr>
+<tr><td>Volante</td><td>interfaccia</td><td>vola()</td></tr>
+<tr><td>Nuotatore</td><td>interfaccia</td><td>nuota()</td></tr>
+</tbody>
+</table>
 
-Le frecce continue indicano `extends`, quelle tratteggiate `implements`.
+Relazioni (la colonna «Da» è la classe che estende o implementa, «A» è la superclasse o l'interfaccia):
+
+<table>
+<thead>
+<tr><th>Da</th><th>A</th><th>Relazione</th></tr>
+</thead>
+<tbody>
+<tr><td>Pollo</td><td>Animale</td><td>estende (<code>extends</code>)</td></tr>
+<tr><td>Aquila</td><td>Animale</td><td>estende (<code>extends</code>)</td></tr>
+<tr><td>Anatra</td><td>Animale</td><td>estende (<code>extends</code>)</td></tr>
+<tr><td>Aquila</td><td>Volante</td><td>implementa (<code>implements</code>)</td></tr>
+<tr><td>Anatra</td><td>Volante</td><td>implementa (<code>implements</code>)</td></tr>
+<tr><td>Anatra</td><td>Nuotatore</td><td>implementa (<code>implements</code>)</td></tr>
+<tr><td>Drone</td><td>Volante</td><td>implementa (<code>implements</code>)</td></tr>
+</tbody>
+</table>
+
+Nella tabella delle relazioni, «estende» indica `extends`, «implementa» indica `implements`.
 
 > 🔧 **In laboratorio:** nel progetto `LaStalla` rendi astratta la classe `Animale`, crei l'interfaccia `Volante` e la fai implementare da `Aquila`.
 

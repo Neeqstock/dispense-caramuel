@@ -8,8 +8,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 caso vero · 🕵️ come funziona l'attacco · 📖 teoria · ✏️ pratica scritta · 🟢 svolto: guarda come si fa · 🎯 da provare: soluzione nascosta · 🧠 da ricordare · ⚠️ errore comune · 📌 controllo · 🃏 soluzione
 
-In azienda nessuno ti dà un esercizietto. Ti dicono: «abbiamo un problema, risolvicelo». In queste pagine sei il nuovo tecnico di una squadra di sicurezza informatica: stile *Mr. Robot*, ma 
-**con un permesso scritto**. Ogni dossier parte da un caso vero o verosimile, spiega come funziona l'attacco e ti chiede i conti che servono per capire la difesa.
+In azienda nessuno ti dà un esercizietto. Ti dicono: «abbiamo un problema, risolvicelo». In queste pagine sei il nuovo tecnico di una squadra di sicurezza informatica: stile *Mr. Robot*, ma **con un permesso scritto**. Ogni dossier parte da un caso vero o verosimile, spiega come funziona l'attacco e ti chiede i conti che servono per capire la difesa.
 
 <u>Un attacco è quasi sempre una regola della rete usata contro chi l'ha scritta.</u> Lo switch «manda a tutti ciò che non conosce». IP «non controlla il mittente». Il NAT «traduce, non decide». Chi conosce le regole sa dove guardare.
 

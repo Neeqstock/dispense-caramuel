@@ -6,49 +6,65 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🧱 Classi e oggetti))
-    🧭 Programmi che crescono
-      Programmazione procedurale
-      Programmazione a oggetti
-      Crisi del software
-      Simula 67
-      Alan Kay
-      Smalltalk
-      Java
-    🧱 Classi e oggetti
-      Classe
-      Oggetto
-      Istanza
-      Stato
-      Comportamento
-      Attributi e campi
-      Metodi
-      Responsabilità
-      Messaggi tra oggetti
-    🧠 Oggetti in memoria
-      new
-      Riferimenti
-      Alias
-      null
-      NullPointerException
-      Operatore ==
-      Puntatori
-      Garbage collector
-    ☕ Classe Java
-      Dichiarazione di classe
-      File della classe public
-      Notazione punto
-      Metodo main
-      Valori di default
-      Variabili locali
-      PascalCase e camelCase
-```
+<details open>
+<summary><b>🧱 Classi e oggetti</b></summary>
+
+<details open>
+<summary>🧭 <b>Programmi che crescono</b></summary>
+
+- Programmazione procedurale
+- Programmazione a oggetti
+- Crisi del software
+- Simula 67
+- Alan Kay
+- Smalltalk
+- Java
+
+</details>
+
+<details open>
+<summary>🧱 <b>Classi e oggetti</b></summary>
+
+- Classe
+- Oggetto
+- Istanza
+- Stato
+- Comportamento
+- Attributi e campi
+- Metodi
+- Responsabilità
+- Messaggi tra oggetti
+
+</details>
+
+<details open>
+<summary>🧠 <b>Oggetti in memoria</b></summary>
+
+- new
+- Riferimenti
+- Alias
+- null
+- NullPointerException
+- Operatore ==
+- Puntatori
+- Garbage collector
+
+</details>
+
+<details open>
+<summary>☕ <b>Classe Java</b></summary>
+
+- Dichiarazione di classe
+- File della classe public
+- Notazione punto
+- Metodo main
+- Valori di default
+- Variabili locali
+- PascalCase e camelCase
+
+</details>
+
+</details>
 
 ## 🧭 Programmi che crescono
 

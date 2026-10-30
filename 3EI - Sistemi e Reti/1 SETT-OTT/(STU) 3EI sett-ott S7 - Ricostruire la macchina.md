@@ -67,6 +67,8 @@ INPUT porta informazioni nel sistema; OUTPUT le restituisce
 - Con $n$ bit si distinguono $2^n$ indirizzi. Per la capacità si moltiplica per i byte di ogni locazione.
 - La **cache** conserva copie e sfrutta la località temporale e spaziale. Un miss richiede un accesso al livello successivo: non è un guasto e non significa «vado sul disco».
 
+CPU = ALU + CU + REGISTRI
+
 <details>
 <summary>🃏 <b>Che cosa conserva la memoria nel modello di Von Neumann?</b></summary>
 Istruzioni e dati, nella stessa memoria.

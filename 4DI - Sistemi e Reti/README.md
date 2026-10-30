@@ -4,6 +4,8 @@
 
 ### 🧭 Di che cosa parliamo
 
+**Che cos'è una rete**
+
 Gli esseri umani cooperano in milioni perché condividono accordi: lingue, leggi, denaro. Le macchine fanno lo stesso. Una rete è un insieme di accordi scritti così bene che i computer li rispettano senza discutere: chi fa che cosa, come ci si chiama, dove finisce un gruppo.
 
 In questo bimestre seguiamo il viaggio di un messaggio, dalla busta ai segnali, e impariamo a **disegnare lo spazio** in cui viaggia: reti, sottoreti, confini. Alla fine saprai non solo fare un calcolo, ma **controllarlo**.

@@ -7,30 +7,46 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🔢 Binario e decimale))
-    📜 Contare in basi diverse
-      Base 10
-      Base 60
-    📍 Notazione posizionale
-      Peso di una cifra
-      Pesi del binario
-      Pedice della base
-    ➡️ Da binario a decimale
-      Metodo dei pesi
-      Zeri
-    ⬅️ Da decimale a binario
-      Divisioni per 2
-      Resti dal basso
-      Controllo
-      Strategia dei pesi
-      Contare con le dita
-```
+<details open>
+<summary><b>🔢 Binario e decimale</b></summary>
+
+<details open>
+<summary>📜 <b>Contare in basi diverse</b></summary>
+
+- Base 10
+- Base 60
+
+</details>
+
+<details open>
+<summary>📍 <b>Notazione posizionale</b></summary>
+
+- Peso di una cifra
+- Pesi del binario
+- Pedice della base
+
+</details>
+
+<details open>
+<summary>➡️ <b>Da binario a decimale</b></summary>
+
+- Metodo dei pesi
+- Zeri
+
+</details>
+
+<details open>
+<summary>⬅️ <b>Da decimale a binario</b></summary>
+
+- Divisioni per 2
+- Resti dal basso
+- Controllo
+- Strategia dei pesi
+- Contare con le dita
+
+</details>
+
+</details>
 
 ## 📜 Perché contiamo in base 10
 Abbiamo dieci dita, quindi contiamo a **dieci**. Ma non è l'unico modo. I babilonesi, quattromila anni fa, contavano a **sessanta**: per questo un'ora ha 60 minuti. I Maya contavano a **venti**. I computer contano a **due**, perché i loro interruttori hanno due stati.

@@ -4,6 +4,8 @@
 
 ### 🧭 Di che cosa parliamo
 
+**Programmazione orientata agli oggetti**
+
 Un programma piccolo si scrive riga dopo riga. Un programma grande, come un registro elettronico, un videogioco o l'app di una banca, ha bisogno di un'organizzazione. La **programmazione orientata agli oggetti** divide il programma in oggetti: ognuno ha i suoi dati, sa fare alcune cose e collabora con gli altri.
 
 In questo bimestre usiamo Java, che già conosci, per costruire passo dopo passo i quattro principi della programmazione a oggetti: **incapsulamento, ereditarietà, polimorfismo e astrazione**. Da novembre ritroveremo le stesse idee in Python.

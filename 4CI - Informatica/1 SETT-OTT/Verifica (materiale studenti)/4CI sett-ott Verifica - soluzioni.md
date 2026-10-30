@@ -323,31 +323,33 @@ Un parco avventura gestisce le sue attività.
 
 **Soluzione di riferimento:**
 
-```mermaid
-classDiagram
-    class Attivita {
-        <<abstract>>
-        -nome: String
-        -prezzo: double
-        +descrivi() String
-    }
-    class Prenotabile {
-        <<interface>>
-        +prenota(cognome: String) String
-    }
-    class Percorso
-    class Zipline
-    class Parete
-    class Parco {
-        -attivita: Attivita[]
-    }
-    Attivita <|-- Percorso : estende
-    Attivita <|-- Zipline : estende
-    Attivita <|-- Parete : estende
-    Prenotabile <|.. Zipline : implementa
-    Prenotabile <|.. Parete : implementa
-    Parco --> Attivita : contiene un array
-```
+<table>
+<thead>
+<tr><th>Classe</th><th>Tipo</th><th>Membri</th></tr>
+</thead>
+<tbody>
+<tr><td>Attivita</td><td>astratta (<code>abstract</code>)</td><td>-nome: String; -prezzo: double; +descrivi() String</td></tr>
+<tr><td>Prenotabile</td><td>interfaccia (<code>interface</code>)</td><td>+prenota(cognome: String) String</td></tr>
+<tr><td>Percorso</td><td>classe</td><td>—</td></tr>
+<tr><td>Zipline</td><td>classe</td><td>—</td></tr>
+<tr><td>Parete</td><td>classe</td><td>—</td></tr>
+<tr><td>Parco</td><td>classe</td><td>-attivita: Attivita[]</td></tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr><th>Da</th><th>A</th><th>Relazione</th></tr>
+</thead>
+<tbody>
+<tr><td>Percorso</td><td>Attivita</td><td>estende</td></tr>
+<tr><td>Zipline</td><td>Attivita</td><td>estende</td></tr>
+<tr><td>Parete</td><td>Attivita</td><td>estende</td></tr>
+<tr><td>Zipline</td><td>Prenotabile</td><td>implementa</td></tr>
+<tr><td>Parete</td><td>Prenotabile</td><td>implementa</td></tr>
+<tr><td>Parco</td><td>Attivita</td><td>contiene un array</td></tr>
+</tbody>
+</table>
 
 - `Attivita` è **A** (astratta), e `Percorso`, `Zipline`, `Parete` sono **C** (concrete) che la estendono.
 - `Prenotabile` è **I** (interfaccia), implementata da `Zipline` e `Parete`, ma non da `Percorso`.

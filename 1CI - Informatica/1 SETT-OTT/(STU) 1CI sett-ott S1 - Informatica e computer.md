@@ -7,32 +7,49 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🎬 video · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🧭 Informatica e computer))
-    📜 Macchine che cambiano mestiere
-      Telaio di Jacquard
-      Ada Lovelace
-    🧠 Informatica
-      Informazione
-      Automatica
-      Mestieri
-    🖥️ Computer
-      Hardware
-      Software
-      Metafora
-    📋 Algoritmo
-      Istruzioni precise
-      Programma
-      Variabile
-      Determinismo
-      Bug
-    🔢 Assaggio di binario
-```
+<details open>
+<summary><b>🧭 Informatica e computer</b></summary>
+
+<details open>
+<summary>📜 <b>Macchine che cambiano mestiere</b></summary>
+
+- Telaio di Jacquard
+- Ada Lovelace
+
+</details>
+
+<details open>
+<summary>🧠 <b>Informatica</b></summary>
+
+- Informazione
+- Automatica
+- Mestieri
+
+</details>
+
+<details open>
+<summary>🖥️ <b>Computer</b></summary>
+
+- Hardware
+- Software
+- Metafora
+
+</details>
+
+<details open>
+<summary>📋 <b>Algoritmo</b></summary>
+
+- Istruzioni precise
+- Programma
+- Variabile
+- Determinismo
+- Bug
+
+</details>
+
+- 🔢 **Assaggio di binario**
+
+</details>
 
 ## 📜 Una macchina che cambia mestiere
 

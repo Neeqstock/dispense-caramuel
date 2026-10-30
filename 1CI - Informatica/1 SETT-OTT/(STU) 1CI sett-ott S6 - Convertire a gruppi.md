@@ -7,40 +7,66 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🔁 Convertire a gruppi))
-    🗺️ Il binario come centro
-      Percorsi fra le basi
-    ➡️ Da binario a esadecimale
-      Gruppi da 4
-      Da destra
-      Zeri a sinistra
-    ⬅️ Da esadecimale a binario
-      Espandere le cifre
-      Nibble completi
-    8️⃣ Binario e ottale
-      Gruppi da 3
-    ✅ Controllo
-      Via decimale
-      Esadecimale a decimale
-    🎩 Parole in esadecimale
-```
+<details open>
+<summary><b>🔁 Convertire a gruppi</b></summary>
+
+<details open>
+<summary>🗺️ <b>Il binario come centro</b></summary>
+
+- Percorsi fra le basi
+
+</details>
+
+<details open>
+<summary>➡️ <b>Da binario a esadecimale</b></summary>
+
+- Gruppi da 4
+- Da destra
+- Zeri a sinistra
+
+</details>
+
+<details open>
+<summary>⬅️ <b>Da esadecimale a binario</b></summary>
+
+- Espandere le cifre
+- Nibble completi
+
+</details>
+
+<details open>
+<summary>8️⃣ <b>Binario e ottale</b></summary>
+
+- Gruppi da 3
+
+</details>
+
+<details open>
+<summary>✅ <b>Controllo</b></summary>
+
+- Via decimale
+- Esadecimale a decimale
+
+</details>
+
+- 🎩 **Parole in esadecimale**
+
+</details>
 
 ## 🗺️ Il binario è il centro
 
 Nelle ultime tre settimane abbiamo incontrato quattro modi di scrivere un numero. Il 13 è `1101` in binario, `D` in esadecimale, `15` in ottale.
 
-```mermaid
-flowchart LR
-    D[Decimale] <-->|pesi, divisioni per 2| B[Binario]
-    B <-->|gruppi da 4| H[Esadecimale]
-    B <-->|gruppi da 3| O[Ottale]
-```
+<table>
+<thead>
+<tr><th>Da</th><th>A</th><th>Etichetta</th></tr>
+</thead>
+<tbody>
+<tr><td>Decimale</td><td>Binario</td><td>pesi, divisioni per 2 (in entrambi i sensi)</td></tr>
+<tr><td>Binario</td><td>Esadecimale</td><td>gruppi da 4 (in entrambi i sensi)</td></tr>
+<tr><td>Binario</td><td>Ottale</td><td>gruppi da 3 (in entrambi i sensi)</td></tr>
+</tbody>
+</table>
 
 📌 *Didascalia:* il binario è il «centro stazione»: per andare da esadecimale a ottale si passa da lì.
 

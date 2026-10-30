@@ -6,26 +6,38 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🔒 Incapsulamento))
-    🧭 Oggetti che si difendono
-    🔒 Stato protetto
-      ✅ Incapsulamento e information hiding
-      ✅ I modificatori di accesso
-      🔍 Visibilità di pacchetto e protected
-      🤓 Information hiding da Parnas a oggi
-    🚪 Getter e setter
-      ✅ Getter leggono, setter controllano
-      ✅ Le invarianti di una classe
-      🔍 Operazioni di dominio al posto dei setter
-      🔍 Rifiutare un valore non valido
-      🔍 Attributi che non cambiano
-      🔍 Riferimenti che scappano
-      🤓 Private non è privacy
-    🧩 Esercizi sull'incapsulamento
-    📚 Fonti e risorse
-```
+<details open>
+<summary><b>🔒 Incapsulamento</b></summary>
+
+- 🧭 **Oggetti che si difendono**
+
+<details open>
+<summary>🔒 <b>Stato protetto</b></summary>
+
+- ✅ Incapsulamento e information hiding
+- ✅ I modificatori di accesso
+- 🔍 Visibilità di pacchetto e protected
+- 🤓 Information hiding da Parnas a oggi
+
+</details>
+
+<details open>
+<summary>🚪 <b>Getter e setter</b></summary>
+
+- ✅ Getter leggono, setter controllano
+- ✅ Le invarianti di una classe
+- 🔍 Operazioni di dominio al posto dei setter
+- 🔍 Rifiutare un valore non valido
+- 🔍 Attributi che non cambiano
+- 🔍 Riferimenti che scappano
+- 🤓 Private non è privacy
+
+</details>
+
+- 🧩 **Esercizi sull'incapsulamento**
+- 📚 **Fonti e risorse**
+
+</details>
 
 ## 🧭 Oggetti che si difendono
 

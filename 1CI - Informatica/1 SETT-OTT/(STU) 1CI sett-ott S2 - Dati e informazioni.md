@@ -7,32 +7,48 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🧩 Dati e informazioni))
-    📊 Dalla materia grezza alla decisione
-      Dato
-      Informazione
-      Conoscenza
-    🖥️ Hardware e software
-      Hardware
-      Software di base
-      Software applicativo
-      Utente
-      Astrazione
-    🔄 Come lavora un computer
-      Ingresso
-      Elaborazione
-      Uscita
-      Memorizzazione
-    🤝 Protocollo
-      Regole condivise
-      Telefonata
-```
+<details open>
+<summary><b>🧩 Dati e informazioni</b></summary>
+
+<details open>
+<summary>📊 <b>Dalla materia grezza alla decisione</b></summary>
+
+- Dato
+- Informazione
+- Conoscenza
+
+</details>
+
+<details open>
+<summary>🖥️ <b>Hardware e software</b></summary>
+
+- Hardware
+- Software di base
+- Software applicativo
+- Utente
+- Astrazione
+
+</details>
+
+<details open>
+<summary>🔄 <b>Come lavora un computer</b></summary>
+
+- Ingresso
+- Elaborazione
+- Uscita
+- Memorizzazione
+
+</details>
+
+<details open>
+<summary>🤝 <b>Protocollo</b></summary>
+
+- Regole condivise
+- Telefonata
+
+</details>
+
+</details>
 
 ## 📊 Dato, informazione, conoscenza
 
@@ -165,12 +181,16 @@ Nascondere i dettagli di un livello sotto, perché chi usa il sistema non deve p
 
 Ogni lavoro del computer, dal clic al risultato, passa per **quattro funzioni**.
 
-```mermaid
-flowchart LR
-    I[📥 Ingresso] --> E[⚙️ Elaborazione]
-    E --> U[📤 Uscita]
-    E --> M[🗄️ Memorizzazione]
-```
+<table>
+<thead>
+<tr><th>Da</th><th>A</th><th>Etichetta</th></tr>
+</thead>
+<tbody>
+<tr><td>📥 Ingresso</td><td>⚙️ Elaborazione</td><td>—</td></tr>
+<tr><td>⚙️ Elaborazione</td><td>📤 Uscita</td><td>—</td></tr>
+<tr><td>⚙️ Elaborazione</td><td>🗄️ Memorizzazione</td><td>—</td></tr>
+</tbody>
+</table>
 
 📌 *Didascalia:* i dati entrano, vengono elaborati, escono o vengono conservati.
 

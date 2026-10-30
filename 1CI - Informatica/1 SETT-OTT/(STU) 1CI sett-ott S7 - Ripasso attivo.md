@@ -9,35 +9,51 @@
 
 Questa dispensa **non ha argomenti nuovi**. Serve a ricordare, in ordine, quello che hai già visto.
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🧠 Ripasso attivo))
-    🧠 Ripassare bene
-      Recupero
-      Giri brevi
-    🗺️ Mappa del bimestre
-      Dato e informazione
-      Hardware e software
-      Bit e byte
-      Potenze di 2
-      Multipli
-      Binario e decimale
-      Esadecimale e ottale
-      Conversioni a gruppi
-    🔧 Metodo per conversione
-      Basi
-      Procedimento
-      Verso
-      Controllo
-    🪲 Errori tipici
-      Resti dall'alto
-      Gruppi da sinistra
-      Zeri saltati
-```
+<details open>
+<summary><b>🧠 Ripasso attivo</b></summary>
+
+<details open>
+<summary>🧠 <b>Ripassare bene</b></summary>
+
+- Recupero
+- Giri brevi
+
+</details>
+
+<details open>
+<summary>🗺️ <b>Mappa del bimestre</b></summary>
+
+- Dato e informazione
+- Hardware e software
+- Bit e byte
+- Potenze di 2
+- Multipli
+- Binario e decimale
+- Esadecimale e ottale
+- Conversioni a gruppi
+
+</details>
+
+<details open>
+<summary>🔧 <b>Metodo per conversione</b></summary>
+
+- Basi
+- Procedimento
+- Verso
+- Controllo
+
+</details>
+
+<details open>
+<summary>🪲 <b>Errori tipici</b></summary>
+
+- Resti dall'alto
+- Gruppi da sinistra
+- Zeri saltati
+
+</details>
+
+</details>
 
 ## 🧠 Ripassare bene
 
@@ -95,13 +111,17 @@ Rispondi **senza guardare**. Se una domanda ti blocca, torna alla dispensa indic
 
 La catena logica dell'intero bimestre:
 
-```mermaid
-flowchart LR
-    A[Dato] --> B[Bit]
-    B --> C[Byte]
-    C --> D[Numero binario]
-    D --> E[Esadecimale e ottale]
-```
+<table>
+<thead>
+<tr><th>Da</th><th>A</th><th>Etichetta</th></tr>
+</thead>
+<tbody>
+<tr><td>Dato</td><td>Bit</td><td>—</td></tr>
+<tr><td>Bit</td><td>Byte</td><td>—</td></tr>
+<tr><td>Byte</td><td>Numero binario</td><td>—</td></tr>
+<tr><td>Numero binario</td><td>Esadecimale e ottale</td><td>—</td></tr>
+</tbody>
+</table>
 
 📌 *Didascalia:* tutto parte da una scelta fra due, e arriva a scritture comode per noi.
 
