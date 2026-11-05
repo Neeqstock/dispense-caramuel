@@ -1,82 +1,185 @@
-⬅️ [S3 - Registros y recorridos de datos](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S5 - Direcciones y jerarquía de memoria](%28STU%29%20ESP%203EI%20sett-ott%20S5%20-%20Direcciones%20y%20jerarqu%C3%ADa%20de%20memoria.md) ➡️
+⬅️ [S3 - Registros y recorridos de datos](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md) · 🏠 [Índice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S5 - Direcciones y jerarquía de memoria](%28STU%29%20ESP%203EI%20sett-ott%20S5%20-%20Direcciones%20y%20jerarqu%C3%ADa%20de%20memoria.md) ➡️
 
-# ESP 🔄 El ciclo de máquina
+# 🔄 El ciclo de máquina
 
 **3EI · Septiembre-Octubre · S4 · Teoría**
 
-> **Leyenda:** ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta
+⏱️ **Tiempo:** unos 25 minutos para lo esencial; otros 15 minutos para detalles y profundización.
 
-<img src="Allegati/esp-3ei-sett-ott-s4-el-ciclo-de-maquina-mappa-1.svg" alt="Mappa mentale: ESP 🔄 El ciclo de máquina" width="100%">
+> **Leyenda:** 🔄 tema · ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🧪 ejemplo · ✏️ actividad · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta · 🧭 contexto · ⚙️ práctica · ⏱️ tiempo
 
-## 🧭 Programa en ejecución
+<img src="Allegati/esp-3ei-sett-ott-s4-el-ciclo-de-maquina-mappa-1.svg" alt="Mapa mental: ESP 🔄 El ciclo de máquina" width="100%">
 
-Un programa en memoria, por sí solo, no hace nada. Después de distinguir [[(STU) ESP 3EI sett-ott S3 - Registros y recorridos de datos|registros y recorridos de datos]], debemos entender quién hace avanzar el trabajo. La fuerza del programa almacenado también está aquí: al repetir el mismo procedimiento general, la misma máquina produce comportamientos muy distintos.
+## ✅ El programa se convierte en acción
 
-Una receta no es el plato. Para pasar de una a otro hay que saber qué instrucción leer, cómo interpretarla y qué modificar. La CPU hace todo esto sin «entender» las instrucciones como lo haría una persona.
+Un **programa** es una secuencia de instrucciones guardada en memoria. La **CPU** las ejecuta una a una, repitiendo siempre el mismo recorrido: <u>busca una instrucción, la interpreta y la ejecuta</u>. Este recorrido se llama **ciclo de máquina**.
 
-Este procedimiento no es un descubrimiento reciente: ya estaba descrito en el informe sobre EDVAC de 1945. Hoy los procesadores lo ocultan tras muchos trucos para ir más rápido; los veremos en noviembre. El modelo sigue siendo útil para entender lo que ocurre.
+La CPU no «entiende» el programa como una persona: sigue las instrucciones. En el modelo de **programa almacenado** ([S2](%28STU%29%20ESP%203EI%20sett-ott%20S2%20-%20La%20m%C3%A1quina%20de%20Von%20Neumann.md)), la máquina sigue siendo la misma y lo que cambia es el programa en memoria.
 
-## 🔄 El ciclo en tres fases
+Para seguir el recorrido necesitamos dos registros que ya vimos en [S3](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md):
+
+| Registro | En palabras simples |
+|---|---|
+| **PC** (contador de programa) | Indica dónde está la siguiente instrucción que hay que buscar. |
+| **IR** (registro de instrucción) | Guarda la instrucción que la CPU está ejecutando. |
+
+🧭 **¿Para qué sirve este recorrido?** Ya aparece en 1945 en el *First Draft of a Report on the EDVAC*, un texto ligado al proyecto de un computador programable. La idea central sigue siendo útil: la máquina repite un procedimiento sencillo; lo que cambia son las instrucciones.
+
+⚙️ **En la práctica.** También los procesadores modernos ejecutan instrucciones, pero usan técnicas adicionales para trabajar más rápido. Aquí estudiamos el modelo básico; las técnicas avanzadas llegarán más adelante.
+
+## ✅ El ciclo en tres fases
 
 ### ✅ Fetch, decode, execute
 
+Para cada instrucción la CPU realiza tres acciones, siempre en este orden:
+
 ```text
-FETCH                 DECODE                  EXECUTE
-obtiene la orden  --> interpreta la orden --> realiza la operación
-       ^                                            |
-       +------------ siguiente instrucción --------+
+1. FETCH       toma de la memoria la instrucción indicada por el PC
+2. DECODE      reconoce la operación y los datos que necesita
+3. EXECUTE     realiza la operación
+               luego el ciclo vuelve a empezar con la siguiente instrucción
 ```
 
-- **Fetch:** la CPU obtiene la instrucción de la memoria.
-- **Decode:** la CU reconoce la operación y sus operandos.
-- **Execute:** la CPU realiza el trabajo: un cálculo, un acceso a memoria o un cambio de ruta en el programa.
+| Fase | En palabras simples | Ejemplo: `ADD R3, R1, R2` |
+|---|---|---|
+| **Fetch** (búsqueda) | La CPU toma de la memoria la instrucción indicada por el PC y la pone en el IR. | La CPU busca `ADD R3, R1, R2`. |
+| **Decode** (interpretación) | La **CU**, unidad de control, reconoce la operación y los **operandos**, es decir, los datos con los que trabaja. | Operación: suma. Operandos: R1 y R2. Destino: R3. |
+| **Execute** (ejecución) | La **ALU**, unidad aritmético-lógica, realiza el cálculo. | La ALU suma los valores de R1 y R2. |
 
-A menudo separamos la ejecución en acceso a los datos y escritura del resultado (**write-back**). Es una forma de describir el proceso: no todas las instrucciones leen datos de la RAM ni todas escriben un registro. Por ejemplo, `STORE` escribe en la memoria.
+El resultado se escribe después donde haga falta: esta escritura se llama **write-back**. El nombre indica el resultado final, no un paso idéntico para todas las instrucciones.
 
-<details><summary>🃏 <b>¿Qué ocurre durante el fetch?</b></summary>
-La CPU obtiene de la memoria la instrucción que debe ejecutar.
+| Instrucción | Qué hace | Dónde escribe |
+|---|---|---|
+| `LOAD R1, [40]` | Lee el valor de la celda 40. | En el registro R1. |
+| `ADD R3, R1, R2` | Suma los valores de R1 y R2. | En el registro R3. |
+| `STORE [41], R3` | Copia el valor de R3. | En la celda 41 de la memoria. |
+
+<u>El resultado puede acabar en un registro o en memoria.</u>
+
+<details>
+<summary>🃏 <b>¿Qué pasa en el fetch?</b></summary>
+
+La CPU toma de la memoria la instrucción que hay que ejecutar.
+
 </details>
-<details><summary>🃏 <b>¿Qué ocurre durante el decode?</b></summary>
-La CU reconoce la operación solicitada y sus operandos.
-</details>
-<details><summary>🃏 <b>¿Qué ocurre durante el execute?</b></summary>
-La CPU realiza el trabajo: cálculo, acceso a memoria o cambio de ruta en el programa.
-</details>
-<details><summary>🃏 <b>¿Qué es el write-back?</b></summary>
-La escritura del resultado, que a menudo se describe como un paso separado de la ejecución.
+
+<details>
+<summary>🃏 <b>¿Qué pasa en la decode?</b></summary>
+
+La CU reconoce la operación pedida y sus operandos.
+
 </details>
 
-## ▶️ Seguimiento de un programa
+<details>
+<summary>🃏 <b>¿Qué pasa en el execute?</b></summary>
 
-### ✅ Reglas de nuestra máquina
+La CPU realiza el trabajo: un cálculo, un acceso a la memoria o un cambio de camino en el programa.
 
-Para todo el seguimiento se aplican estas reglas:
-
-- Cada celda abstracta contiene una instrucción completa o un valor.
-- Las instrucciones están en celdas consecutivas. Después de obtener una instrucción hacemos `PC <- PC + 1` (**solo en este modelo**).
-- `LOAD R1, [40]` copia MEM[40] en R1, sin modificar MEM[40].
-- `ADD R3, R1, R2` escribe en R3 la suma de R1 y R2, sin modificar las fuentes.
-- `STORE [41], R3` copia R3 en MEM[41]; `HALT` termina la simulación.
-
-<details><summary>🃏 <b>¿Cuánto aumenta el PC después de obtener una instrucción en nuestro modelo?</b></summary>
-En uno, porque cada instrucción ocupa una celda abstracta y las instrucciones son consecutivas. Solo vale para este modelo.
 </details>
-<details><summary>🃏 <b>¿Qué hacen LOAD y STORE?</b></summary>
-LOAD copia un valor de la memoria a un registro; STORE copia un registro en la memoria. Ninguna borra la fuente.
+
+<details>
+<summary>🃏 <b>¿Qué son los operandos?</b></summary>
+
+Los datos con los que trabaja la instrucción. <i>En ADD R3, R1, R2 son R1 y R2.</i>
+
 </details>
-<details><summary>🃏 <b>¿Qué modifica `ADD R3, R1, R2`?</b></summary>
+
+<details>
+<summary>🃏 <b>¿Qué es el write-back?</b></summary>
+
+La escritura del resultado, que a veces se describe como un paso aparte de la ejecución.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Todas las instrucciones leen datos de la RAM y escriben en un registro?</b></summary>
+
+No. Por ejemplo, una STORE escribe en memoria, no en un registro.
+
+</details>
+
+## ✅ Traza de un programa
+
+### ✅ Las reglas de nuestra máquina
+
+Para seguir un programa paso a paso necesitamos una máquina pequeña, con reglas claras. La nuestra es un **modelo**: una versión simplificada, pensada para estudiar. En los computadores reales algunos detalles cambian, y lo diremos cada vez.
+
+Una **celda** es una posición numerada de la memoria: el número es la **dirección**, y lo que hay dentro es el **contenido**. Por eso dirección y contenido no son lo mismo.
+
+En el modelo usamos una **celda abstracta**, lo bastante grande para contener una instrucción completa o un valor entero. En cambio, en los computadores reales las instrucciones pueden ocupar varios bytes.
+
+```text
+dirección:  10                 11                12                 13      ...   40    41
+contenido:  LOAD R1, [40]      ADD R3, R1, R2    STORE [41], R3     HALT          7     0
+```
+
+En el dibujo, las instrucciones están en las direcciones **10–13**; el dato `7` está en la dirección **40**. <u>El PC sigue las instrucciones: no salta a la dirección del dato.</u>
+
+| Escritura | Se lee | Ejemplo |
+|---|---|---|
+| `MEM[40]` | el contenido de la celda de dirección 40 | si en la celda 40 hay 7, entonces MEM[40] = 7 |
+| `[40]` dentro de una instrucción | «la celda de dirección 40» | `LOAD R1, [40]` |
+| `A <- B` | copia B en A; B no cambia (ver [S3](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md)) | `PC <- PC + 1` |
+
+**Las cuatro instrucciones del modelo:**
+
+- `LOAD R1, [40]`: copia el contenido de la celda 40 en R1; la celda 40 no cambia.
+- `ADD R3, R1, R2`: suma R1 y R2 y escribe el resultado en R3; R1 y R2 no cambian.
+- `STORE [41], R3`: copia el contenido de R3 en la celda 41.
+- `HALT`: detiene el programa.
+
+En este modelo las instrucciones ocupan celdas consecutivas. Después del fetch el PC avanza de uno (`PC <- PC + 1`); en los computadores reales el avance depende de la longitud de la instrucción.
+
+<details>
+<summary>🃏 <b>¿Qué es una celda abstracta?</b></summary>
+
+Un cajón de memoria simplificado, lo bastante grande para contener una instrucción completa o un valor entero. <i>En la celda 10 hay LOAD R1, [40]; en la celda 40 hay 7.</i>
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Qué significa MEM[40]?</b></summary>
+
+El contenido de la celda de dirección 40.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Cuánto aumenta el PC después de la búsqueda, en nuestro modelo?</b></summary>
+
+En uno, porque cada instrucción ocupa una celda abstracta y las instrucciones están en celdas consecutivas. Solo vale para este modelo.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Qué hacen LOAD y STORE?</b></summary>
+
+LOAD copia un valor de la memoria a un registro; STORE copia un registro en la memoria. Ninguna de las dos borra el origen.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Qué modifica ADD R3, R1, R2?</b></summary>
+
 Solo R3, donde escribe la suma de R1 y R2.
+
 </details>
-<details><summary>🃏 <b>¿Qué hace HALT?</b></summary>
+
+<details>
+<summary>🃏 <b>¿Qué hace HALT?</b></summary>
+
 Termina la simulación.
+
 </details>
 
 ### ✅ Ejemplo resuelto: LOAD, ADD, STORE
 
-**Situación inicial:** PC = 10, R1 = 0, R2 = 5 y R3 = 0.
+✏️ **Antes de leer la traza:** después de la `LOAD`, ¿según tú el PC valdrá 11 o 40? ¿R1 valdrá 0 o 7? ¿Cambiará la celda 40?
+
+**Estado inicial:** PC = 10; R1 = 0; R2 = 5; R3 = 0.
 
 | Dirección | Contenido |
-|---|---|
+|---:|---|
 | 10 | `LOAD R1, [40]` |
 | 11 | `ADD R3, R1, R2` |
 | 12 | `STORE [41], R3` |
@@ -84,145 +187,314 @@ Termina la simulación.
 | 40 | 7 |
 | 41 | 0 |
 
-**1️⃣ LOAD.** El PC indica 10: el *fetch* lleva la instrucción de MEM[10] al IR y el PC avanza a 11. La CU reconoce que debe leer la celda 40: recibe 7 y lo guarda en R1.
+La tabla muestra el estado **después de cada instrucción**. El PC avanza durante el fetch; después la CPU completa la operación.
 
-**2️⃣ ADD.** El nuevo *fetch* usa 11, no 40: 40 era la dirección de un dato, no la siguiente instrucción. El PC avanza a 12. La ALU recibe 7 y 5, produce 12 y el resultado va a R3.
+| Instrucción buscada en | Qué hace | Estado después de la instrucción: PC, R1, R2, R3, MEM[40], MEM[41] |
+|---:|---|---|
+| 10 | Lee `MEM[40] = 7` y lo copia en R1. | **11, 7**, 5, 0, 7, 0 |
+| 11 | Suma R1 y R2: `7 + 5 = 12`; escribe 12 en R3. | **12**, 7, 5, **12**, 7, 0 |
+| 12 | Copia R3, es decir 12, en la celda 41. | **13**, 7, 5, 12, 7, **12** |
+| 13 | Detiene el programa. El PC había avanzado como siempre, pero la celda 14 no se ejecuta. | **14**, 7, 5, 12, 7, 12 |
 
-**3️⃣ STORE.** El *fetch* usa 12 y el PC avanza a 13. A la memoria llegan la dirección 41, el valor 12 y la orden WRITE. MEM[41] pasa a valer 12. R3 sigue valiendo 12.
+<u>La `LOAD` copia 7 de MEM[40] a R1: no lleva el PC a 40 y no borra la celda 40.</u>
 
-**🛑 HALT.** Se obtiene la instrucción de la celda 13 y el PC avanza a 14 según la regla; la instrucción detiene la simulación. La celda 14 no se ejecuta.
+✏️ **Control rápido:** indica en la tabla qué fila cambia la memoria y cuál cambia un registro. Luego explica en una frase por qué el PC pasa de 10 a 11.
 
-| Después de ejecutar | PC | R1 | R2 | R3 | MEM[40] | MEM[41] |
-|---|---:|---:|---:|---:|---:|---:|
-| LOAD | 11 | 7 | 5 | 0 | 7 | 0 |
-| ADD | 12 | 7 | 5 | 12 | 7 | 0 |
-| STORE | 13 | 7 | 5 | 12 | 7 | 12 |
-| HALT | 14 | 7 | 5 | 12 | 7 | 12 |
+<details>
+<summary>🃏 <b>¿Después de un LOAD desde 40, el PC salta a 40?</b></summary>
 
-> ⏸️ **Fijación:** explica por qué el PC nunca pasa a 40 y por qué MEM[40] no queda en cero después de LOAD.
+No. 40 es la dirección de un dato; el PC indica la siguiente instrucción del programa, es decir, la celda siguiente.
 
-<details><summary>🃏 <b>Después de un LOAD desde 40, ¿el PC salta a 40?</b></summary>
-No. 40 es la dirección de un dato; el PC indica la siguiente instrucción del programa.
 </details>
-<details><summary>🃏 <b>¿Qué cambia después de STORE en el ejemplo?</b></summary>
+
+<details>
+<summary>🃏 <b>En el ejemplo resuelto, ¿qué cambia después de la STORE?</b></summary>
+
 La celda 41 recibe 12; R3 sigue valiendo 12 y el PC pasa a 13.
-</details>
-<details><summary>🃏 <b>¿Se ejecuta la instrucción posterior a HALT?</b></summary>
-No. El PC avanza según la regla, pero la simulación se detiene.
-</details>
-<details><summary>🃏 <b>¿Cómo seguimos un programa en papel sin perdernos?</b></summary>
-Anotamos el estado inicial y actualizamos una tabla de PC, registros y memoria después de cada instrucción.
+
 </details>
 
-## 🔬 Dentro del ciclo
+<details>
+<summary>🃏 <b>¿Después de HALT se ejecuta la celda siguiente?</b></summary>
+
+No. El PC queda avanzado como dice la regla, pero la simulación se detiene.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Cómo se sigue un programa en papel sin perderse?</b></summary>
+
+Se escribe el estado inicial y se actualiza una tabla de PC, registros y memoria después de cada instrucción.
+
+</details>
+
+## 🔍 Dentro del ciclo
 
 ### 🔍 El fetch en detalle
 
-| Paso | Transferencia u orden | Estado |
-|---|---|---|
-| 1 | `MAR <- PC` | MAR = 10 |
-| 2 | Solicitud READ y espera | La memoria utiliza la dirección 10 |
-| 3 | `MDR <- MEM[MAR]` | MDR contiene `LOAD R1, [40]` |
-| 4 | `IR <- MDR` | IR conserva la instrucción |
-| 5 | `PC <- PC + 1` | PC = 11 en el modelo |
+Durante el fetch intervienen otros dos registros:
 
-El *decode* reconoce el **opcode** `LOAD`, el registro destino R1 y la dirección 40. Para completar la instrucción hace falta un segundo acceso: `MAR <- 40`, READ, espera, `MDR <- MEM[40]`, `R1 <- MDR`.
+| Registro | En palabras simples |
+|---|---|
+| **MAR** (registro de direcciones de memoria) | Guarda la dirección de la celda que se va a leer o escribir. |
+| **MDR** (registro de datos de memoria) | Guarda el contenido que pasa entre la memoria y la CPU. |
 
-En la misma instrucción hemos leído la memoria **dos veces**, con fines diferentes: primero la orden y luego el dato. Mientras tanto, el IR conserva la orden aunque se vuelva a utilizar el MDR.
+Para buscar `LOAD R1, [40]` en la celda 10:
 
-<details><summary>🃏 <b>¿Cuáles son los pasos del fetch?</b></summary>
-MAR recibe el PC; se solicita READ y se espera; MDR recibe la instrucción; IR recibe MDR; el PC avanza.
+| Paso | Qué pasa | Resultado |
+|---:|---|---|
+| 1 | El MAR recibe el valor del PC. | MAR = 10 |
+| 2 | La CU pide a la memoria que lea esa dirección (**READ**, «lee»). | La memoria busca la celda 10. |
+| 3 | La instrucción pasa de la memoria al MDR. | MDR = `LOAD R1, [40]` |
+| 4 | La instrucción pasa del MDR al IR. | El IR guarda la orden. |
+| 5 | El PC avanza a la celda siguiente. | PC = 11 |
+
+Después la CPU interpreta la orden. **Opcode** significa «código de la operación»: aquí es `LOAD`. Para ejecutar la LOAD hace falta un segundo acceso a la memoria: el MAR recibe 40, la CU pide READ, el valor 7 llega al MDR y se copia en R1.
+
+Así, la memoria se lee **dos veces**: la primera para tomar la instrucción, la segunda para tomar el dato. El IR guarda la orden mientras el MDR se reutiliza para el valor 7.
+
+<details>
+<summary>🃏 <b>¿Cuáles son los pasos del fetch?</b></summary>
+
+El MAR recibe el PC; la CU pide READ; la instrucción pasa al MDR y luego al IR; el PC avanza.
+
 </details>
-<details><summary>🃏 <b>¿Qué es el opcode?</b></summary>
+
+<details>
+<summary>🃏 <b>¿Qué es el opcode?</b></summary>
+
 La parte de la instrucción que indica la operación, por ejemplo LOAD.
+
 </details>
-<details><summary>🃏 <b>¿Cuántas veces accede a la memoria una instrucción LOAD?</b></summary>
-Dos: primero para obtener la instrucción y luego para leer el dato solicitado.
+
+<details>
+<summary>🃏 <b>¿Cuántas veces accede a la memoria una LOAD?</b></summary>
+
+Dos: primero para tomar la instrucción y después para leer el dato pedido.
+
 </details>
-<details><summary>🃏 <b>¿Por qué el dato de LOAD no reemplaza la instrucción en IR?</b></summary>
-Porque el dato llega a MDR; IR conserva la orden hasta que termina la instrucción.
+
+<details>
+<summary>🃏 <b>¿Por qué el dato de la LOAD no sobrescribe el IR?</b></summary>
+
+Porque el dato llega al MDR: el IR guarda la orden hasta que la instrucción termina.
+
 </details>
 
 ### 🔍 Los tres buses en acción
 
-| Conexión | Durante el fetch | Al escribir un dato |
+La CPU y la memoria deben intercambiar información. Un **bus** es un conjunto de conexiones usadas para este intercambio. En cada acceso hacen falta tres informaciones: **dónde** leer o escribir, **qué datos** transferir y **qué acción** realizar.
+
+```mermaid
+flowchart LR
+  CPU -->|"Bus de direcciones: ¿dónde?"| MEM[Memoria]
+  CPU <-->|"Bus de datos: ¿qué contenido?"| MEM
+  CPU <-->|"Bus de control: ¿qué acción?"| MEM
+```
+
+| Bus | Qué transporta | Dirección |
 |---|---|---|
-| **Direcciones: ¿dónde?** | CPU → memoria: posición de la instrucción | CPU → memoria: posición destino |
-| **Datos: ¿qué contenido?** | Memoria → CPU: instrucción | CPU → memoria: valor que se guarda |
-| **Control: ¿qué acción?** | Lectura y señal de finalización | Escritura y señal de finalización |
+| **Direcciones** | El número de la celda afectada | Siempre CPU → memoria: es la CPU quien pide, la memoria no elige sola |
+| **Datos** | El contenido leído o que hay que escribir | Depende: en lectura memoria → CPU, en escritura CPU → memoria |
+| **Control** | La petición **READ** («lee») o **WRITE** («escribe») y la señal de finalización | La petición va de la CPU a la memoria; la finalización vuelve a la CPU |
 
-La CU genera señales que seleccionan recorridos y habilitan operaciones. No transporta los números «a mano» ni calcula en lugar de la ALU. Una transferencia entre registros usa conexiones internas y no accede a la RAM.
+**Los mismos buses, en nuestro ejemplo resuelto:**
 
-<details><summary>🃏 <b>¿En qué dirección va el bus de direcciones?</b></summary>
-De la CPU a la memoria, durante el fetch y al escribir un dato.
+| Qué pasa | Bus de direcciones (¿dónde?) | Bus de control (¿qué acción?) | Bus de datos (¿qué contenido?) |
+|---|---|---|---|
+| Fetch de `LOAD R1, [40]` desde la celda 10 | 10 | READ | `LOAD R1, [40]`, de la memoria a la CPU |
+| Lectura del dato pedido por la LOAD | 40 | READ | 7, de la memoria a la CPU |
+| Escritura de la `STORE [41], R3` | 41 | WRITE | 12, de la CPU a la memoria |
+
+<u>Sin el bus de control, la memoria no sabría si debe leer o escribir.</u> Con dirección 41 y dato 12, READ y WRITE piden dos acciones distintas.
+
+**¿Y la CU?** No lleva los números «a mano» ni calcula en lugar de la ALU: genera las señales que eligen los caminos y habilitan las operaciones (por ejemplo READ o WRITE). Una transferencia entre dos registros usa conexiones internas del procesador, sin pasar por los buses hacia la RAM.
+
+<details>
+<summary>🃏 <b>¿En qué dirección va el bus de direcciones?</b></summary>
+
+De la CPU a la memoria, tanto en el fetch como en la escritura de un dato.
+
 </details>
-<details><summary>🃏 <b>¿En qué dirección va el bus de datos?</b></summary>
-Depende: de memoria a CPU durante el fetch; de CPU a memoria al escribir.
+
+<details>
+<summary>🃏 <b>¿En qué dirección va el bus de datos?</b></summary>
+
+Depende: en el fetch, de la memoria a la CPU; en la escritura, de la CPU a la memoria.
+
 </details>
-<details><summary>🃏 <b>¿Qué circula por el bus de control?</b></summary>
+
+<details>
+<summary>🃏 <b>¿Qué pasa por el bus de control?</b></summary>
+
 La orden de lectura o escritura y las señales de finalización.
+
 </details>
-<details><summary>🃏 <b>¿La CU transporta los números o realiza los cálculos?</b></summary>
-No. Genera señales que seleccionan recorridos y activan operaciones; la ALU calcula.
+
+<details>
+<summary>🃏 <b>¿La CU transporta los números o hace los cálculos?</b></summary>
+
+No. Genera señales que eligen caminos y habilitan operaciones; los cálculos los hace la ALU.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Copiar un valor entre dos registros necesita la RAM?</b></summary>
+
+No. Usa conexiones internas del procesador.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Por qué hace falta el bus de control?</b></summary>
+
+Para decir a la memoria qué acción realizar. <i>Dirección 41 y valor 12 no bastan: hacen falta WRITE (escribe) o READ (lee).</i>
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Qué pasa por los tres buses cuando la STORE escribe 12 en la celda 41?</b></summary>
+
+Direcciones: 41. Datos: 12. Control: WRITE.
+
 </details>
 
 ### 🔍 Dirección calculada
 
-`LOAD R1, [R2+4]` primero requiere calcular la dirección. Si R2 = 36, la ALU calcula $36+4=40$. Si MEM[40] = 7, R1 recibe **7**, no 40 ni 36.
+Esta sección muestra una forma habitual de encontrar un dato: **dirección de partida + desplazamiento**. Sirve, por ejemplo, cuando los valores de una lista están en celdas consecutivas: el programa guarda en un registro la dirección de partida y cambia el desplazamiento para llegar a otra celda.
 
-El trabajo es: obtener la instrucción, interpretarla, calcular la dirección, leer el dato y escribirlo en el registro. Aquí la suma de la ALU no produce el resultado final: sirve para **encontrar** el dato.
+`LOAD R1, [R2+4]` es una **notación didáctica inventada para este ejemplo**, no una instrucción escrita así en todos los procesadores. Significa: <u>suma 4 a la dirección contenida en R2, luego copia en R1 el contenido de la celda encontrada</u>. La dirección obtenida se llama **dirección efectiva**.
 
-> 🔧 **Conexión con el laboratorio:** cuando ves que se inicia un programa en una computadora, no observas una sola instrucción. Detrás de un clic hay muchísimas instrucciones y transferencias. Para estudiarlas, usamos un seguimiento en papel.
+🧪 **Ejemplo en nuestro modelo.** Si R2 = 36 y el desplazamiento es de 4 celdas, la ALU calcula `36 + 4 = 40`. Si MEM[40] contiene 7, en R1 llega **7**.
 
-<details><summary>🃏 <b>¿Qué significa `LOAD R1, [R2+4]`?</b></summary>
-Primero suma 4 al contenido de R2 para calcular una dirección y luego copia a R1 el contenido de la celda encontrada.
+| R2: dirección de partida | Desplazamiento | Dirección efectiva | Contenido leído y copiado en R1 |
+|---:|---:|---:|---:|
+| 36 | 4 celdas | 40 | 7 |
+
+La suma de la ALU encuentra **dónde** leer; la memoria entrega **qué** contenido leer.
+
+> **En las CPU reales** existen instrucciones que calculan la dirección usando un registro base y un desplazamiento. La forma exacta depende del procesador. Por ejemplo, en MIPS se escribe `lw $t0, 4($s0)`: `4` indica un desplazamiento en **bytes**, no cuatro celdas abstractas. Aquí basta entender la idea; la unidad de medida y la notación cambian entre el modelo y las arquitecturas reales.
+
+<details>
+<summary>🃏 <b>¿Qué significa LOAD R1, [R2+4]?</b></summary>
+
+Se suma el desplazamiento al valor de R2 para encontrar la dirección efectiva; después se copia en R1 el contenido de esa celda.
+
 </details>
-<details><summary>🃏 <b>En una dirección calculada, ¿para qué sirve la ALU?</b></summary>
-Para encontrar el dato: la suma obtiene la dirección, no el valor final.
-</details>
-<details><summary>🃏 <b>¿Un clic en un icono corresponde a una sola instrucción?</b></summary>
-No. Detrás de un gesto hay muchísimas instrucciones y transferencias.
+
+<details>
+<summary>🃏 <b>En una dirección calculada, ¿para qué sirve la ALU?</b></summary>
+
+Para calcular la dirección efectiva; el dato se lee después de la memoria.
+
 </details>
 
-### 🤓 Saltos y ciclos
+<details>
+<summary>🃏 <b>Cuando haces clic para iniciar un programa, ¿la CPU ejecuta una sola instrucción?</b></summary>
 
-> Un **salto** cambia el PC a una dirección distinta de la celda siguiente. Un **salto condicional** lo hace solo si se cumple una condición, por ejemplo, si un indicador tiene cierto valor. Así un programa puede elegir entre rutas o repetir operaciones: de aquí surgen las instrucciones `if` y los ciclos.
+No. El clic inicia un programa formado por muchísimas instrucciones; la traza en papel sigue una cada vez.
+
+</details>
+
+### 🤓 Saltos, ciclos y reloj
+
+> Hasta ahora la CPU ejecutó todas las instrucciones en orden. Pero un programa también debe poder elegir: por ejemplo, un programa que dice **si no quedan entradas disponibles, no vender ninguna**. Para saltar las instrucciones de la venta hay que cambiar el PC.
 >
-> En las CPU reales una instrucción puede ocupar varios bytes, de longitud fija o variable: el PC no siempre aumenta en uno. Además, «un paso» de nuestro modelo no equivale necesariamente a «un ciclo de reloj». Las optimizaciones y las tuberías (*pipeline*) se verán en noviembre-diciembre.
+> Un **salto condicional**, o *branch*, cambia el PC solo si una condición es verdadera. Usamos `BEQ`, ya presente en la [hoja de notación assembly](%28STU%29%20ESP%203EI%20-%20Lenguaje%20ensamblador%20b%C3%A1sico.md): significa «salta si los dos registros contienen valores iguales».
+>
+> 🧪 **Ejemplo: vender una entrada, pero solo si quedan.** MEM[40] contiene el número de entradas disponibles. Al principio PC = 10 y R2 = 0; R2 se queda en cero durante todo el programa.
+>
+> | Dirección | Etiqueta | Instrucción | Qué hace |
+> |---|---|---|---|
+> | 10 |  | `LOAD R1, [40]` | Lee cuántas entradas quedan. |
+> | 11  |  | `BEQ R1, R2, fin` | Si R1 es cero como R2, salta a `fin`. |
+> | 12  |  | `ADDI R1, R1, -1` | Quita una entrada del conteo en R1. |
+> | 13  |  | `STORE [40], R1` | Actualiza el conteo en memoria. |
+> | 14 | `fin` | `HALT` | Detiene la simulación. |
+>
+> Una **etiqueta** es un nombre dado a la dirección de una instrucción: aquí `fin` significa **14** y no ocupa una celda más. `ADDI` suma un número escrito en la instrucción: sumar −1 significa restar uno.
+>
+> **Si quedan 3 entradas**, R1 recibe 3. La comparación `3 = 0` es falsa: la CPU sigue desde 12, reduce el conteo a 2 y lo escribe en memoria. Las direcciones de las instrucciones ejecutadas son **10 → 11 → 12 → 13 → 14**.
+>
+> **Si quedan 0 entradas**, R1 recibe 0. La comparación `0 = 0` es verdadera: la CPU pasa directamente a 14. Las direcciones de las instrucciones ejecutadas son **10 → 11 → 14**; el conteo se queda en cero, no pasa a −1.
+>
+> <u>Durante el fetch de la BEQ el PC avanza de 11 a 12; durante el execute, si la condición es verdadera, la BEQ lo sustituye por 14.</u> El salto cambia **qué instrucción viene después**, no el valor de R1 o R2.
+>
+> Esto es un pequeño `if`: «si las entradas son cero, salta la venta». Un salto hacia atrás puede en cambio hacer repetir una parte del programa: es la idea detrás de los ciclos. En nuestro modelo el salto tiene efecto inmediato; los detalles de las CPU reales dependen de la arquitectura.
+>
+> ✏️ **Pruébalo tú:** empieza con MEM[40] = 1 y escribe las direcciones de las instrucciones ejecutadas y el conteo final.
+>
+> El **reloj** produce impulsos que ayudan a coordinar las operaciones. Un paso del modelo no equivale a un impulso: también la relación entre instrucciones e impulsos depende del procesador. Las técnicas más avanzadas, como el **pipeline** (superposición de partes de instrucciones), se verán más adelante.
 
-<details><summary>🃏 <b>¿Qué hace un salto?</b></summary>
-Cambia el PC a una dirección diferente de la celda siguiente.
+<details>
+<summary>🃏 <b>¿Qué hace un salto?</b></summary>
+
+Cambia el PC por un destino distinto de la celda siguiente.
+
 </details>
-<details><summary>🃏 <b>¿Qué hace un salto condicional?</b></summary>
-Cambia el PC solo si se cumple una condición. Así se pueden crear decisiones y ciclos.
-</details>
-<details><summary>🃏 <b>¿En las CPU reales el PC siempre aumenta en uno?</b></summary>
-No. Las instrucciones pueden ocupar varios bytes, de longitud fija o variable.
-</details>
-<details><summary>🃏 <b>¿Un paso del ciclo equivale a un ciclo de reloj?</b></summary>
-No necesariamente: nuestro listado es un modelo, no una medida del tiempo.
+
+<details>
+<summary>🃏 <b>¿Qué hace un salto condicional?</b></summary>
+
+Cambia el PC solo si una condición es verdadera; por ejemplo, BEQ salta si dos registros contienen el mismo valor.
+
 </details>
 
-## 🧩 Pon a prueba el modelo
+<details>
+<summary>🃏 <b>¿Cómo se comprueba con BEQ si R1 es cero?</b></summary>
 
-1. **Base.** ¿Qué diferencia hay entre fetch, decode y execute?
-2. **Procedimiento.** En el fetch, ordena: `IR <- MDR`, `MAR <- PC`, lectura de memoria y recepción en MDR. ¿Quién solicita READ?
-3. **Aplicación.** En el programa resuelto, cambia el valor inicial de R2 a 4 y MEM[40] a 9. Completa la tabla hasta STORE.
-4. **Conexión.** ¿Qué diferencia hay entre obtener la instrucción `LOAD R1,[40]` y leer el dato que esta solicita?
-5. **Detalle.** Para `LOAD R1,[R2+4]`, con R2 = 60 y MEM[64] = 17, ¿cuál es la dirección efectiva y el valor final de R1?
-6. **Intuición.** Si el resultado de la ALU no se escribe en ningún sitio, ¿basta con que se haya calculado para poder usarlo más tarde?
+Se compara R1 con un registro que contiene cero, como R2 en nuestro ejemplo.
 
-**🚪 Salida:** completa: «LOAD obtiene ..., mientras que su fetch obtiene ...».
+</details>
 
-**🏠 Opcional:** cuenta el programa a alguien sin decir «magia» ni «el computador entiende».
+<details>
+<summary>🃏 <b>¿Qué es la etiqueta fin?</b></summary>
 
-## 📚 Fuentes y recursos
+Es un nombre para la dirección de la instrucción HALT, aquí 14, no una instrucción adicional.
 
-- [Nand2Tetris - Project 5](https://www.nand2tetris.org/project05) (en inglés, para curiosos): un computador didáctico funcional; compara sus decisiones con nuestra simulación.
-- [Especificaciones oficiales de RISC-V](https://riscv.org/specifications/) (en inglés, muy técnico): para ver cómo cambian las instrucciones, registros y modos de direccionamiento entre arquitecturas.
+</details>
+
+<details>
+<summary>🃏 <b>¿BEQ necesita un flag de cero ya establecido?</b></summary>
+
+No. La BEQ de nuestro modelo compara directamente los dos registros indicados.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿En las CPU reales el PC aumenta siempre de uno?</b></summary>
+
+No. Las instrucciones pueden ocupar varios bytes, con longitud fija o variable.
+
+</details>
+
+<details>
+<summary>🃏 <b>¿Un paso del ciclo corresponde a un ciclo de reloj?</b></summary>
+
+No. El reloj produce impulsos de coordinación; los pasos descritos son un modelo del trabajo, no una medida de tiempos.
+
+</details>
+
+## ✏️ Pon a prueba el modelo
+
+1. **Base.** ¿Qué distingue el fetch, el decode y el execute?
+2. **Procedimiento.** En el fetch, pon en orden: `IR <- MDR`, `MAR <- PC`, petición READ, recepción en MDR, avance del PC. ¿Quién pide READ?
+3. **Aplicación.** En el programa resuelto cambia R2 inicial a 4 y MEM[40] a 9. Vuelve a completar la tabla hasta STORE.
+4. **Conexión.** ¿Qué diferencia hay entre buscar `LOAD R1,[40]` y leer el dato que pide?
+5. **Detalle.** En nuestro modelo, para `LOAD R1,[R2+4]`, con R2 = 60 y MEM[64] = 17, ¿cuáles son la dirección efectiva y el valor final de R1?
+6. **Intuición.** Si el resultado de la ALU no se escribe en ningún sitio, ¿basta con que el cálculo haya ocurrido para usarlo más tarde?
+
+**Salida:** completa «La LOAD hace llegar ..., mientras que su fetch hace llegar ...».
+
+**🤓 Opcional, para curiosos:** cuenta el programa a alguien sin usar las palabras «magia» o «el computador entiende».
 
 ---
 
-[[(STU) ESP 3EI sett-ott S3 - Registros y recorridos de datos|⬅️ S3 - Registros y recorridos de datos]] · [[(STU) ESP 3EI - SETT-OTT|🗺️ Índice]] · [[(STU) ESP 3EI sett-ott S5 - Direcciones y jerarquía de memoria|S5 - Direcciones y jerarquía de memoria ➡️]]
+## Fuentes y recursos
 
-⬅️ [S3 - Registros y recorridos de datos](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md) · 🏠 [Indice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S5 - Direcciones y jerarquía de memoria](%28STU%29%20ESP%203EI%20sett-ott%20S5%20-%20Direcciones%20y%20jerarqu%C3%ADa%20de%20memoria.md) ➡️
+- [Nand2Tetris - Project 5](https://www.nand2tetris.org/project05) (en inglés, para curiosos): un computador didáctico que funciona; compara sus decisiones con las de nuestra simulación.
+- [RISC-V - especificaciones oficiales](https://riscv.org/specifications/) (en inglés, muy técnico): para ver cómo cambian las instrucciones, los registros y el direccionamiento de una arquitectura a otra.
+
+---
+
+⬅️ [S3 - Registros y recorridos de datos](%28STU%29%20ESP%203EI%20sett-ott%20S3%20-%20Registros%20y%20recorridos%20de%20datos.md) · 🏠 [Índice](%28STU%29%20ESP%203EI%20-%20SETT-OTT.md) · [S5 - Direcciones y jerarquía de memoria](%28STU%29%20ESP%203EI%20sett-ott%20S5%20-%20Direcciones%20y%20jerarqu%C3%ADa%20de%20memoria.md) ➡️

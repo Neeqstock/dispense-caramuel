@@ -1,43 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-626 -239 1318 478" width="1318" height="478" role="img" aria-label="ESP 🧠 Reconstruir la máquina" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>ESP 🧠 Reconstruir la máquina</title>
-<rect x="-626" y="-239" width="1318" height="478" rx="14" fill="#ffffff"/>
-<path d="M429.4081133946986 -192.60000000000002 C456.4081133946986 -192.60000000000002 456.4081133946986 -192.60000000000002 483.4081133946986 -192.60000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 -129.80000000000004 463.4401133946986 -129.80000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 -89.00000000000004 463.4401133946986 -89.00000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 -48.20000000000005 463.4401133946986 -48.20000000000005" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 -7.400000000000054 463.4401133946986 -7.400000000000054" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 33.39999999999994 463.4401133946986 33.39999999999994" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 74.19999999999995 463.4401133946986 74.19999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 114.99999999999994 463.4401133946986 114.99999999999994" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 155.79999999999993 463.4401133946986 155.79999999999993" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M409.4401133946986 33.39999999999998 C436.4401133946986 33.39999999999998 436.4401133946986 196.59999999999994 463.4401133946986 196.59999999999994" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-417.7601133946986 0 C-444.7601133946986 0 -444.7601133946986 -61.199999999999996 -471.7601133946986 -61.199999999999996" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-417.7601133946986 0 C-444.7601133946986 0 -444.7601133946986 -20.4 -471.7601133946986 -20.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-417.7601133946986 0 C-444.7601133946986 0 -444.7601133946986 20.4 -471.7601133946986 20.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-417.7601133946986 0 C-444.7601133946986 0 -444.7601133946986 61.199999999999996 -471.7601133946986 61.199999999999996" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M96.4 -91.5 C149.62519910118644 -91.5 149.62519910118644 -192.60000000000002 202.88011339469858 -192.60000000000002" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M131.1 21.6 C166.99765581504812 21.6 166.99765581504812 33.39999999999998 202.88011339469858 33.39999999999998" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-132.9 0.0 C-167.88011339469858 0.0 -167.88011339469858 0 -202.88011339469858 0" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<circle cx="0" cy="0" r="132.9" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">ESP 🧠 Reconstruir la máquina</tspan></text>
-<rect x="202.88011339469858" y="-211.00000000000003" width="226.52800000000002" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="316.1441133946986" y="-192.6">🧭 Resumen del bimestre</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="491.4081133946986" y="-192.6">Programa almacenado</tspan></text>
-<rect x="202.88011339469858" y="14.999999999999979" width="206.56" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="306.16011339469856" y="33.4">🗺️ El modelo completo</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="-129.8">Von Neumann</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="-89.0">CPU</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="-48.2">Registros</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="-7.4">Ciclo de máquina</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="33.4">Buses</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="74.2">Direcciones</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="115.0">Jerarquía de memoria</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="155.8">Caché</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.4401133946986" y="196.6">Reloj</tspan></text>
-<rect x="-417.7601133946986" y="-18.4" width="214.88" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-310.3201133946986" y="0.0">🔧 Respuestas técnicas</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-479.7601133946986" y="-61.2">Tesis</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-479.7601133946986" y="-20.4">Mecanismo</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-479.7601133946986" y="20.4">Ejemplo</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-479.7601133946986" y="61.2">Contraejemplo</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-609 -239 1285 478" width="1285" height="478" role="img" aria-label="🧠 Reconstruir la máquina" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧠 Reconstruir la máquina</title>
+<rect x="-609" y="-239" width="1285" height="478" rx="14" fill="#ffffff"/>
+<path d="M412.69202653799397 -192.60000000000002 C439.69202653799397 -192.60000000000002 439.69202653799397 -192.60000000000002 466.69202653799397 -192.60000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 -129.80000000000004 446.72402653799395 -129.80000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 -89.00000000000004 446.72402653799395 -89.00000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 -48.20000000000005 446.72402653799395 -48.20000000000005" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 -7.400000000000054 446.72402653799395 -7.400000000000054" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 33.39999999999994 446.72402653799395 33.39999999999994" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 74.19999999999995 446.72402653799395 74.19999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 114.99999999999994 446.72402653799395 114.99999999999994" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 155.79999999999993 446.72402653799395 155.79999999999993" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M392.72402653799395 33.39999999999998 C419.72402653799395 33.39999999999998 419.72402653799395 196.59999999999994 446.72402653799395 196.59999999999994" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-401.04402653799394 0 C-428.04402653799394 0 -428.04402653799394 -61.199999999999996 -455.04402653799394 -61.199999999999996" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-401.04402653799394 0 C-428.04402653799394 0 -428.04402653799394 -20.4 -455.04402653799394 -20.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-401.04402653799394 0 C-428.04402653799394 0 -428.04402653799394 20.4 -455.04402653799394 20.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-401.04402653799394 0 C-428.04402653799394 0 -428.04402653799394 61.199999999999996 -455.04402653799394 61.199999999999996" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M80.7 -83.5 C133.44850540915365 -83.5 133.44850540915365 -192.60000000000002 186.16402653799395 -192.60000000000002" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M114.3 20.5 C150.2512169932447 20.5 150.2512169932447 33.39999999999998 186.16402653799395 33.39999999999998" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-116.2 0.0 C-151.16402653799395 0.0 -151.16402653799395 0 -186.16402653799395 0" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="116.2" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧠 Reconstruir la máquina</tspan></text>
+<rect x="186.16402653799395" y="-211.00000000000003" width="226.52800000000002" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="299.42802653799396" y="-192.6">🧭 Resumen del bimestre</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="474.69202653799397" y="-192.6">Programa almacenado</tspan></text>
+<rect x="186.16402653799395" y="14.999999999999979" width="206.56" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="289.444026537994" y="33.4">🗺️ El modelo completo</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="-129.8">Von Neumann</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="-89.0">CPU</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="-48.2">Registros</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="-7.4">Ciclo de máquina</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="33.4">Bus</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="74.2">Direcciones</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="115.0">Jerarquía de memoria</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="155.8">Caché</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="454.72402653799395" y="196.6">Reloj</tspan></text>
+<rect x="-401.04402653799394" y="-18.4" width="214.88" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-293.60402653799395" y="0.0">🔧 Respuestas técnicas</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-463.04402653799394" y="-61.2">Tesis</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-463.04402653799394" y="-20.4">Mecanismo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-463.04402653799394" y="20.4">Ejemplo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-463.04402653799394" y="61.2">Contraejemplo</tspan></text>
 </svg>

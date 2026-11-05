@@ -189,8 +189,6 @@ Livelli di cache: L1 di solito è la più piccola e veloce, i livelli successivi
 #fatto👍 
 Il **clock** è un segnale periodico che dà il tempo ai circuiti sincroni. La frequenza conta i cicli al secondo: 2 GHz significa due miliardi di cicli al secondo, **non per forza due miliardi di istruzioni completate**.
 
-1Kg = 1000g
-1Gg = 1000 000 000 g
 
 Un'operazione può richiedere più passi, e un'attesa della memoria può consumare tempo senza produrre nuovi risultati. Per confrontare due sistemi bisogna guardare il lavoro svolto e il tempo impiegato, non solo i GHz scritti sulla scatola.
 

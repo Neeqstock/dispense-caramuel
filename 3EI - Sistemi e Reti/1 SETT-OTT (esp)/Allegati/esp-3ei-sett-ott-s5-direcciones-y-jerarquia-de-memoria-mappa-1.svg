@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-657 -285 1309 570" width="1309" height="570" role="img" aria-label="ESP 🧮 Direcciones y jerarquía de memoria" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-666 -285 1318 570" width="1318" height="570" role="img" aria-label="ESP 🧮 Direcciones y jerarquía de memoria" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
 <title>ESP 🧮 Direcciones y jerarquía de memoria</title>
-<rect x="-657" y="-285" width="1309" height="570" rx="14" fill="#ffffff"/>
+<rect x="-666" y="-285" width="1318" height="570" rx="14" fill="#ffffff"/>
 <path d="M445.72200895738735 -222 C472.72200895738735 -222 472.72200895738735 -242.4 499.72200895738735 -242.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
 <path d="M445.72200895738735 -222 C472.72200895738735 -222 472.72200895738735 -201.6 499.72200895738735 -201.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M310.93800895738735 -102.00000000000001 C337.93800895738735 -102.00000000000001 337.93800895738735 -142.8 364.93800895738735 -142.8" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M310.93800895738735 -102.00000000000001 C337.93800895738735 -102.00000000000001 337.93800895738735 -102.00000000000001 364.93800895738735 -102.00000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M310.93800895738735 -102.00000000000001 C337.93800895738735 -102.00000000000001 337.93800895738735 -61.200000000000024 364.93800895738735 -61.200000000000024" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M294.2980089573873 -102.00000000000001 C321.2980089573873 -102.00000000000001 321.2980089573873 -142.8 348.2980089573873 -142.8" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M294.2980089573873 -102.00000000000001 C321.2980089573873 -102.00000000000001 321.2980089573873 -102.00000000000001 348.2980089573873 -102.00000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M294.2980089573873 -102.00000000000001 C321.2980089573873 -102.00000000000001 321.2980089573873 -61.200000000000024 348.2980089573873 -61.200000000000024" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
 <path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 -2.400000000000011 463.11400895738734 -2.400000000000011" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
 <path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 38.399999999999984 463.11400895738734 38.399999999999984" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
 <path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 79.19999999999999 463.11400895738734 79.19999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
@@ -31,11 +31,11 @@
 <text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="325.80200895738733" y="-232.4">🧭 Direcciones y niveles de</tspan><tspan x="325.80200895738733" y="-211.6">memoria</tspan></text>
 <text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="507.72200895738735" y="-242.4">Latencia</tspan></text>
 <text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="507.72200895738735" y="-201.6">Capacidad</tspan></text>
-<rect x="205.88200895738734" y="-120.4" width="105.05600000000001" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="258.41000895738733" y="-102.0">🚌 Buses</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="372.93800895738735" y="-142.8">Bus de direcciones</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="372.93800895738735" y="-102.0">Bus de datos</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="372.93800895738735" y="-61.2">Bus de control</tspan></text>
+<rect x="205.88200895738734" y="-120.4" width="88.416" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="250.09000895738734" y="-102.0">🚌 Bus</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="356.2980089573873" y="-142.8">Bus de direcciones</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="356.2980089573873" y="-102.0">Bus de datos</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="356.2980089573873" y="-61.2">Bus de control</tspan></text>
 <rect x="205.88200895738734" y="101.6" width="203.23200000000003" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
 <text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="307.49800895738736" y="120.0">🔢 Contar direcciones</tspan></text>
 <text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.11400895738734" y="-2.4">Configuraciones</tspan></text>
@@ -50,7 +50,7 @@
 <text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-142.8">Registros</tspan></text>
 <text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-102.0">Caché</tspan></text>
 <text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-61.2">RAM</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-20.4">Almacenamiento</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-20.4">Memoria de masa</tspan></text>
 <text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="20.4">Volatilidad</tspan></text>
 <text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="61.2">Ancho de banda</tspan></text>
 <text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="102.0">ROM</tspan></text>

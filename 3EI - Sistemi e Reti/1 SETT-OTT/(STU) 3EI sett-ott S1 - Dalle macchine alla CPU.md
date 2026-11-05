@@ -426,7 +426,7 @@ Perché nei registri i numeri occupano un numero limitato di bit: un livello alt
 - [Wikipedia - Vacuum tube](https://en.wikipedia.org/wiki/Vacuum_tube) (in inglese): come funziona una valvola, l'uso nei primi calcolatori e le cifre su ENIAC. Leggi le parti su «Description» e «Use in electronic computers».
 - [Wikipedia - Intel 4004](https://en.wikipedia.org/wiki/Intel_4004) (in inglese): la storia del primo microprocessore commerciale e delle persone che lo progettarono.
 - [Wikipedia - Software bug](https://en.wikipedia.org/wiki/Software_bug) (in inglese): la sezione «History» racconta la falena del Mark II e l'origine della parola.
-- [Storia dei bit](../Integrazioni%20e%20curiosit%C3%A0/Storia%20dei%20bit.md): dalla logica di Boole ai circuiti digitali, con Shannon e i relè. Lettura breve per curiosi.
+- [Storia dei bit](../../Integrazioni%20e%20curiosit%C3%A0/Storia/Storia%20dei%20bit.md): dalla logica di Boole ai circuiti digitali, con Shannon e i relè. Lettura breve per curiosi.
 - [Intel - Moore's Law](https://www.intel.com/content/www/us/en/newsroom/resources/moores-law.html) (in inglese): per scoprire che cosa diceva davvero la previsione di Moore.
 - [Wikimedia Commons - ENIAC](https://commons.wikimedia.org/wiki/ENIAC): fotografie della macchina. Se vuoi riusarne una, controlla licenza e attribuzione nella pagina del singolo file.
 - [NandGame](https://nandgame.com/): gioco online facoltativo; costruisci funzioni complesse partendo da porte logiche semplici.

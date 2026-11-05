@@ -323,10 +323,10 @@ No. Il clic avvia un programma composto da moltissime istruzioni; la traccia su 
 >
 > | Indirizzo | Etichetta | Istruzione | Che cosa fa |
 > |---|---|---|---|
-> | 10 | `LOAD R1, [40]` | Legge quanti biglietti rimangono. |
-> | 11  | `BEQ R1, R2, fine` | Se R1 è zero come R2, salta a `fine`. |
-> | 12  | `ADDI R1, R1, -1` | Toglie un biglietto dal conteggio in R1. |
-> | 13  | `STORE [40], R1` | Aggiorna il conteggio in memoria. |
+> | 10 |  | `LOAD R1, [40]` | Legge quanti biglietti rimangono. |
+> | 11  |  | `BEQ R1, R2, fine` | Se R1 è zero come R2, salta a `fine`. |
+> | 12  |  | `ADDI R1, R1, -1` | Toglie un biglietto dal conteggio in R1. |
+> | 13  |  | `STORE [40], R1` | Aggiorna il conteggio in memoria. |
 > | 14 | `fine` | `HALT` | Ferma la simulazione. |
 >
 > Un'**etichetta** è un nome dato all'indirizzo di un'istruzione: qui `fine` significa **14** e non occupa una cella in più. `ADDI` somma un numero scritto nell'istruzione: aggiungere −1 significa sottrarre uno.

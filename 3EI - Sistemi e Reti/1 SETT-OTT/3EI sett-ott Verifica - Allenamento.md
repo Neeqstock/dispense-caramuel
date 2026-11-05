@@ -66,7 +66,7 @@ Perché? (facoltativo) `______________________________`
 Perché? (facoltativo) `______________________________`
 
 <details>
-<summary>🔑 <b>Parte 1 — Soluzioni</b></summary>
+<summary>🃏 <b>Parte 1 — Soluzioni</b></summary>
 
 | ID | Risposta | Note per la correzione |
 |---|---|---|
@@ -76,6 +76,7 @@ Perché? (facoltativo) `______________________________`
 | 1.4 | C | Il testo non salvato era solo in RAM, volatile. A e D sono idee sbagliate sullo spegnimento; B confonde capacità e persistenza. |
 
 **Criteri:** 0,5 per ogni crocetta corretta. Motivazione sbagliata: 0 se manca o non c'entra, parziale se incompleta, 0,5 se mostra la distinzione giusta.
+
 </details>
 
 ## Parte 2 · Seguire un programma ✅ (3 punti)
@@ -108,7 +109,7 @@ Nella memoria della macchina ci sono queste istruzioni, una per cella. In fondo 
 | `STORE [91], R2` | `____` | `____` | `____` | `____` | `____` | `____` |
 
 <details>
-<summary>🔑 <b>2.1 — Soluzione</b></summary>
+<summary>🃏 <b>2.1 — Soluzione</b></summary>
 
 | Istruzione eseguita | PC | R1 | R2 | R3 | MEM[90] | MEM[91] |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -119,6 +120,7 @@ Nella memoria della macchina ci sono queste istruzioni, una per cella. In fondo 
 **Criteri:** 1 punto per riga, se tutti i valori sono giusti; 0,5 se un solo valore è sbagliato. Errore propagato: se la riga è coerente con valori sbagliati venuti dalla riga prima, punteggio pieno.
 
 **Errori frequenti:** PC non avanzato; PC = 90 dopo la `LOAD`; `ADD R2, R2, R2` letta come R2 + 0 o R2 = 1; MEM[90] azzerata dopo la lettura; `STORE` scambiata con `LOAD` (R2 modificato invece di MEM[91]).
+
 </details>
 
 ## Parte 3 · Indirizzi e capacità ✅ (2 punti)
@@ -146,13 +148,14 @@ Risposta: `______________________`
 Risposta: `______________________`
 
 <details>
-<summary>🔑 <b>Parte 3 — Soluzioni</b></summary>
+<summary>🃏 <b>Parte 3 — Soluzioni</b></summary>
 
 **3.1 — 5 bit**, perché 2⁵ = 32 (1, 2, 4, 8, 16, 32 raddoppiando). Criteri: 1 punto per 5; mezzo punto se l'idea è giusta ma il numero è sbagliato per un solo raddoppio (4 o 6). Errore frequente: 32 (il numero di locazioni, non i bit) o 31 (ultimo indirizzo).
 
 **3.2 — 64 byte**, cioè 32 locazioni × 2 byte. Criteri: 0,5 solo se il calcolo mostra la moltiplicazione; il numero senza unità non vale il punto.
 
 **3.3 — 64 locazioni e 128 byte**, perché un bit in più raddoppia le locazioni (2⁶) e ognuna resta da 2 byte. Criteri: 0,25 per le locazioni, 0,25 per i byte. Errore frequente: aggiungere 1 invece di raddoppiare.
+
 </details>
 
 ## Parte 4 · Programma e cache 🔍 (3 punti)
@@ -175,7 +178,7 @@ Risposta: `______________________`
 Risposta: `______________________________________________`
 
 <details>
-<summary>🔑 <b>4.1 — Soluzione</b></summary>
+<summary>🃏 <b>4.1 — Soluzione</b></summary>
 
 **a)**
 
@@ -188,6 +191,7 @@ Risposta: `______________________________________________`
 Criteri: 0,5 per riga, se tutti i valori sono giusti; 0,25 se un solo valore è sbagliato. Errore propagato: punteggio pieno se coerente con i valori dello studente. Punti delicati: R1 e R2 valgono entrambi 10 (la `LOAD` rilegge ciò che la `STORE` ha scritto); la somma è 20. L'ultima `STORE` sovrascrive MEM[90] (5 → 20); MEM[91] non cambia.
 
 **b)** Nel fetch il MAR vale **28** (copia del PC prima dell'avanzamento). Nell'execute il MAR vale **91** (indirizzo del dato) e l'MDR vale **10** (il contenuto di MEM[91]); l'IR contiene ancora **`LOAD R1, [91]`**, perché il dato passa dall'MDR e arriva in R1 senza sovrascrivere l'istruzione. Criteri: 0,25 per MAR = 28 nel fetch e MAR = 91 nell'execute; 0,25 per MDR = 10 e IR = `LOAD R1, [91]`. Errori frequenti: MAR = 10 (scambio fra indirizzo e contenuto), IR = 10 (il dato sovrascrive l'istruzione), MAR = 29 (PC già avanzato).
+
 </details>
 
 ### 4.2 🔍 (1,5 punti)
@@ -207,13 +211,14 @@ c) La cache ha **una sola linea** da **4 posizioni** (blocchi 0-3, 4-7, 8-11, 12
 Risposta: `______________________________________________`
 
 <details>
-<summary>🔑 <b>4.2 — Soluzione</b></summary>
+<summary>🃏 <b>4.2 — Soluzione</b></summary>
 
 **a)** 35 è MISS (blocco 32-39, cache vuota); 38 è HIT (stesso blocco, già caricato); 40 è MISS (blocco 40-47, mai caricato). Criteri: 0,5 se i tre esiti sono giusti con il blocco indicato; 0,25 se due su tre. Errore frequente: considerare 38 un MISS perché «mai letto prima», o 40 un HIT perché «vicino».
 
 **b)** 2 MISS nella prima passata. Gli indirizzi 100-103 stanno nel blocco 96-103 (un MISS, poi tre HIT); 104 e 105 nel blocco 104-111 (un MISS, poi un HIT). La seconda passata è più veloce per la località temporale (gli stessi dati sono riusati) e, nella prima, la spaziale ha già evitato quattro MISS. Criteri: 0,25 per 2 MISS con i blocchi giusti; 0,25 per località temporale. Errore frequente: 6 MISS (ogni lettura trattata come nuova) o 1 MISS (blocchi di 8 allineati a 100).
 
 **c)** Il primo fa **4 MISS** (uno per ogni blocco: leggendo 0-3 il blocco resta caricato, poi si passa a 4-7, ...). Il secondo fa **16 MISS**: a ogni lettura serve un blocco diverso da quello presente e, tornando a 1, 2, 3, il blocco 0-3 è già stato sostituito. Criteri: 0,25 per i due numeri (4 e 16); 0,25 per la spiegazione che lega MISS, località spaziale e sostituzione della linea. Errore frequente: dire che i due fanno lo stesso numero di MISS perché leggono gli stessi 16 indirizzi.
+
 </details>
 
 ## ⭐ Extra (+2 punti, facoltativo)
@@ -247,7 +252,7 @@ Stato iniziale: `MEM[40] = 4`; `MEM[42] = 0`.
 | 64 | `______________________` |
 
 <details>
-<summary>🔑 <b>⭐ — Soluzione</b></summary>
+<summary>🃏 <b>⭐ — Soluzione</b></summary>
 
 **⭐a.** No. R1 e R2 valgono entrambi 4, il `BEQ` salta a `fine`, la `STORE` viene saltata e MEM[42] resta 0.
 
@@ -268,6 +273,7 @@ Criteri ⭐a e ⭐b: 0,25 per «eseguita sì/no» e 0,25 per il valore di MEM[42
 Criteri (1 punto): 0,25 per le due `LOAD` (registro prima, indirizzo fra parentesi quadre, registri diversi); 0,25 per l'`ADD` con la destinazione per prima e i due registri già caricati; 0,25 per la `STORE` con l'indirizzo per primo e un registro che contiene la somma; 0,25 per l'ordine corretto e per l'`HALT` finale. Si accettano registri diversi o un ordine diverso delle due `LOAD`.
 
 Errori frequenti: `STORE R3, [72]` (argomenti scambiati); `ADD` prima delle `LOAD`; `LOAD R1, 70` senza parentesi (numero al posto del contenuto); dimenticare l'`HALT`.
+
 </details>
 
 ## Spazio per la discussione di gruppo
