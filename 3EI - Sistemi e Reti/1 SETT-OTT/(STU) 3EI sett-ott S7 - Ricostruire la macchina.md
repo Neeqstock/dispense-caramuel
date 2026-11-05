@@ -91,8 +91,8 @@ No. Significa accedere al livello successivo, e non è un guasto.
 Quando segui un'istruzione chiediti: **dove siamo?**, **che cosa abbiamo letto?**, **che cosa cambia davvero?** Dire il nome di un registro senza il suo ruolo non basta. Dire che una memoria è «grande» non dice quanto è veloce o se tiene i dati senza corrente.
 
 <details>
-<summary>🃏 <b>Quali tre domande aiutano a seguire un'istruzione?</b></summary>
-Dove siamo? Che cosa abbiamo letto? Che cosa cambia davvero?
+<summary>🃏 <b>Con quale domanda si dividono i circuiti della CPU in due gruppi?</b></summary>
+Questo circuito tocca i dati oppure comanda chi li tocca? Nel primo caso è parte operativa, nel secondo parte di controllo.
 </details>
 <details>
 <summary>🃏 <b>Basta dire il nome di un registro?</b></summary>
@@ -112,16 +112,16 @@ Una buona risposta tecnica ha una **tesi**, un **meccanismo** e un **esempio**. 
 Anche una formula va raccontata. Con 9 bit di indirizzo a byte si distinguono $2^9=512$ locazioni: la memoria contiene 512 byte, non 512 bit, e l'ultimo indirizzo è 511. Se ogni locazione contenesse due byte, cambierebbe la capacità, non il numero di indirizzi.
 
 <details>
-<summary>🃏 <b>Da quali tre parti è fatta una buona risposta tecnica?</b></summary>
-Una tesi, un meccanismo e un esempio.
+<summary>🃏 <b>Spostare un dato da un registro all'altro, senza calcoli, è lavoro della parte operativa o di controllo?</b></summary>
+Della parte operativa: il dato viene trasferito. Il controllo serve comunque, perché qualcuno deve dire quale registro copia quale.
 </details>
 <details>
-<summary>🃏 <b>Perché «la cache è veloce» è una risposta debole?</b></summary>
-È una proprietà generica. Va detto il meccanismo, con una condizione controllabile: se il blocco è già in cache, si evita l'attesa del livello successivo.
+<summary>🃏 <b>Come si può avere un hit su un indirizzo mai richiesto prima?</b></summary>
+Se un accesso precedente ha portato in cache il blocco che lo contiene.
 </details>
 <details>
-<summary>🃏 <b>Anche una formula va «raccontata»?</b></summary>
-Sì: bisogna dire che cosa contano i simboli, con quali unità e sotto quali ipotesi.
+<summary>🃏 <b>Quando una formula è affidabile?</b></summary>
+Quando le sue ipotesi sono scritte chiaramente.
 </details>
 
 ### 🔍 Quattro esercizi di collegamento
@@ -151,12 +151,12 @@ No. Mostra i ruoli: per esempio la CU non è una scheda da cercare vicino al pro
 > Non serve conoscere una CPU particolare: bastano le idee di attesa e di spazio limitato.
 
 <details>
-<summary>🃏 <b>A che cosa serve cercare un controesempio?</b></summary>
-A capire dove una regola smette di funzionare, e quindi a renderla più precisa.
+<summary>🃏 <b>Che cosa indica MEM[40]?</b></summary>
+Il contenuto della cella di indirizzo 40, non il numero 40.
 </details>
 <details>
-<summary>🃏 <b>Quali due idee bastano per trovare controesempi su GHz e cache?</b></summary>
-L'attesa e lo spazio limitato.
+<summary>🃏 <b>Che cosa significa R1 &lt;- 7?</b></summary>
+Copia 7 in R1. Non è un'uguaglianza e non svuota la sorgente.
 </details>
 
 ## 🃏 Mazzo di ripasso misto
@@ -274,28 +274,28 @@ No. I registri sono dentro la CPU e sono pochi; la RAM è un altro livello.
 No. Sono due scale diverse: un passo logico può richiedere uno o più cicli.
 </details>
 <details>
-<summary>🃏 <b>Che cosa dice la regola FIFO?</b></summary>
-Quando serve spazio, si sostituisce il blocco entrato per primo.
+<summary>🃏 <b>Che differenza c'è fra KiB e kB?</b></summary>
+KiB è una potenza di 2, 1024 byte; kB è una potenza di 10, 1000 byte. Sono convenzioni diverse da dichiarare.
 </details>
 <details>
 <summary>🃏 <b>Con 6 bit di indirizzo e 2 byte per locazione, quanti byte?</b></summary>
 64 locazioni × 2 byte = 128 byte. L'ultimo indirizzo resta 63.
 </details>
 <details>
-<summary>🃏 <b>Perché il programma memorizzato fu una svolta?</b></summary>
-Perché la stessa macchina cambia compito sostituendo le istruzioni in memoria, senza essere ricollegata.
+<summary>🃏 <b>Quali sono i blocchi del modello di Von Neumann?</b></summary>
+CPU, memoria principale, ingresso, uscita e i collegamenti che trasferiscono informazioni e segnali fra i blocchi.
 </details>
 <details>
-<summary>🃏 <b>16 GB di RAM e 512 GB di SSD fanno 528 GB di RAM?</b></summary>
-No. Sono memorie diverse e non si sommano come se fossero una sola.
+<summary>🃏 <b>Quanta memoria indirizzano 32 bit in un modello a byte?</b></summary>
+4 GiB.
 </details>
 <details>
-<summary>🃏 <b>Qual è la differenza fra SRAM e DRAM?</b></summary>
-La SRAM è più veloce e si usa per la cache; la DRAM, più economica e capiente, si usa per la RAM e ha bisogno di refresh.
+<summary>🃏 <b>Quanti byte sono 1 KiB, 1 MiB e 1 GiB?</b></summary>
+1 KiB = 1024 byte; 1 MiB = 2 elevato alla 20 byte; 1 GiB = 2 elevato alla 30 byte.
 </details>
 <details>
-<summary>🃏 <b>Che cos'è il refresh della DRAM?</b></summary>
-La riscrittura periodica dei bit, perché la carica che li conserva si disperde.
+<summary>🃏 <b>Se ogni locazione contiene una parola da 2 byte, che cosa cambia?</b></summary>
+Il numero di indirizzi resta uguale, la capacità raddoppia.
 </details>
 <details>
 <summary>🃏 <b>Qual è il periodo di un clock da 1 GHz?</b></summary>
@@ -306,20 +306,20 @@ Un nanosecondo: periodo = 1 ÷ frequenza.
 Il gruppo di posizioni consecutive che si copia insieme. Non è la capacità totale della cache.
 </details>
 <details>
-<summary>🃏 <b>Che cos'è l'astrazione?</b></summary>
-Mettere da parte i dettagli che non servono per ragionare a un livello alla volta, per esempio «cella» invece di circuiti.
+<summary>🃏 <b>Che cosa descrisse Gordon Moore nel 1965?</b></summary>
+Una tendenza: il numero di componenti integrabili in un chip cresceva a ritmo regolare. La previsione fu poi riformulata.
 </details>
 <details>
 <summary>🃏 <b>Come si ottiene un AND e un OR con degli interruttori?</b></summary>
 AND: interruttori in serie, passa corrente solo se sono tutti chiusi. OR: in parallelo, basta che uno sia chiuso.
 </details>
 <details>
-<summary>🃏 <b>Che cosa separa l'architettura Harvard da quella di Von Neumann?</b></summary>
-Harvard usa memorie separate per istruzioni e dati; Von Neumann una memoria unica.
+<summary>🃏 <b>Dove sta la CU nello schema?</b></summary>
+Dentro la CPU, insieme ad ALU e registri. Non è un secondo processore esterno.
 </details>
 <details>
-<summary>🃏 <b>Che cosa portano input e output?</b></summary>
-L'input porta informazioni nel sistema; l'output le restituisce all'esterno.
+<summary>🃏 <b>Che differenza c'è fra ingresso e uscita?</b></summary>
+L'ingresso porta informazioni nel sistema, come tastiera o sensore; l'uscita le porta verso l'esterno, come schermo o attuatore.
 </details>
 <details>
 <summary>🃏 <b>Che cosa contiene una cella nei nostri esempi?</b></summary>
@@ -330,8 +330,8 @@ Un'intera istruzione oppure un intero.
 No. Il PC dice dove prendere la prossima istruzione; il MAR indica l'indirizzo dell'accesso in corso.
 </details>
 <details>
-<summary>🃏 <b>Lo spazio di indirizzi è uguale alla RAM montata nel computer?</b></summary>
-No. Dice quante locazioni si possono distinguere, non quanta memoria è installata.
+<summary>🃏 <b>Perché molti PC a 32 bit vedevano meno RAM di quella montata?</b></summary>
+Perché non tutti gli indirizzi corrispondono a RAM: entrano in gioco zone riservate ai dispositivi, indirizzi fisici e virtuali, limiti di processore e sistema operativo.
 </details>
 
 ## 🧩 Metti alla prova il modello

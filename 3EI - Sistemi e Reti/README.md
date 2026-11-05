@@ -19,6 +19,10 @@ Come si passa da una macchina costruita per un solo compito a una macchina che c
 - [ ] [S7 - Ricostruire la macchina](1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20S7%20-%20Ricostruire%20la%20macchina.md) — Ripasso: colleghiamo i pezzi e facciamo una prova di allenamento.
 - **S8 - Verifica e recupero** — Verifica di teoria, lettura degli errori e recupero.
 
+### ✏️ Esercizi
+
+- [Eserciziario](1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20-%20Eserciziario.md) — Sei dossier e un collaudo finale: un esercizio svolto per ogni argomento, gli altri da provare con la soluzione nascosta. Prima prova tu, poi apri la flashcard.
+
 ## Integrazioni
 
 - [Linguaggio assembly: le basi](1%20SETT-OTT/%28STU%29%203EI%20-%20Linguaggio%20assembly%20base.md) — Completa le istruzioni usate negli esempi.
