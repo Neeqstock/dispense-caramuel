@@ -1,61 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-556 -266 1107 532" width="1107" height="532" role="img" aria-label="Liste e matrici" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>Liste e matrici</title>
-<rect x="-556" y="-266" width="1107" height="532" rx="14" fill="#ffffff"/>
-<path d="M222.10716698093427 -70.19999999999999 C249.10716698093427 -70.19999999999999 249.10716698093427 -223.4 276.10716698093427 -223.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M222.10716698093427 -70.19999999999999 C249.10716698093427 -70.19999999999999 249.10716698093427 -172.2 276.10716698093427 -172.2" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M222.10716698093427 -70.19999999999999 C249.10716698093427 -70.19999999999999 249.10716698093427 -121 276.10716698093427 -121" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M222.10716698093427 -70.19999999999999 C249.10716698093427 -70.19999999999999 249.10716698093427 -80.2 276.10716698093427 -80.2" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M222.10716698093427 -70.19999999999999 C249.10716698093427 -70.19999999999999 249.10716698093427 -39.40000000000001 276.10716698093427 -39.40000000000001" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M222.10716698093427 -70.19999999999999 C249.10716698093427 -70.19999999999999 249.10716698093427 1.3999999999999861 276.10716698093427 1.3999999999999861" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M222.10716698093427 -70.19999999999999 C249.10716698093427 -70.19999999999999 249.10716698093427 42.19999999999998 276.10716698093427 42.19999999999998" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M222.10716698093427 -70.19999999999999 C249.10716698093427 -70.19999999999999 249.10716698093427 82.99999999999999 276.10716698093427 82.99999999999999" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M296.98716698093426 182.60000000000002 C323.98716698093426 182.60000000000002 323.98716698093426 141.80000000000004 350.98716698093426 141.80000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M296.98716698093426 182.60000000000002 C323.98716698093426 182.60000000000002 323.98716698093426 182.60000000000005 350.98716698093426 182.60000000000005" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M296.98716698093426 182.60000000000002 C323.98716698093426 182.60000000000002 323.98716698093426 223.40000000000006 350.98716698093426 223.40000000000006" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-238.74716698093425 -83.19999999999999 C-265.74716698093425 -83.19999999999999 -265.74716698093425 -185.2 -292.74716698093425 -185.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-238.74716698093425 -83.19999999999999 C-265.74716698093425 -83.19999999999999 -265.74716698093425 -144.4 -292.74716698093425 -144.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-238.74716698093425 -83.19999999999999 C-265.74716698093425 -83.19999999999999 -265.74716698093425 -103.60000000000001 -292.74716698093425 -103.60000000000001" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-238.74716698093425 -83.19999999999999 C-265.74716698093425 -83.19999999999999 -265.74716698093425 -62.80000000000002 -292.74716698093425 -62.80000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-238.74716698093425 -83.19999999999999 C-265.74716698093425 -83.19999999999999 -265.74716698093425 -22.00000000000002 -292.74716698093425 -22.00000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-238.74716698093425 -83.19999999999999 C-265.74716698093425 -83.19999999999999 -265.74716698093425 18.799999999999976 -292.74716698093425 18.799999999999976" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-315.29116698093424 98.00000000000001 C-342.29116698093424 98.00000000000001 -342.29116698093424 77.60000000000002 -369.29116698093424 77.60000000000002" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-315.29116698093424 98.00000000000001 C-342.29116698093424 98.00000000000001 -342.29116698093424 118.40000000000002 -369.29116698093424 118.40000000000002" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-225.43516698093427 181.20000000000002 C-252.43516698093424 181.20000000000002 -252.43516698093424 181.20000000000002 -279.43516698093424 181.20000000000002" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M68.7 -33.0 C107.41714722609984 -33.0 107.41714722609984 -70.19999999999999 146.17116698093426 -70.19999999999999" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M47.6 59.5 C96.88650938881705 59.5 96.88650938881705 182.60000000000002 146.17116698093426 182.60000000000002" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-66.2 -37.7 C-106.18491987939151 -37.7 -106.18491987939151 -83.19999999999999 -146.17116698093426 -83.19999999999999" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-63.3 42.4 C-104.71940462152382 42.4 -104.71940462152382 98.00000000000001 -146.17116698093426 98.00000000000001" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-47.8 59.3 C-96.9980782504571 59.3 -96.9980782504571 181.20000000000002 -146.17116698093426 181.20000000000002" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<circle cx="0" cy="0" r="76.2" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Liste e matrici</tspan></text>
-<rect x="146.17116698093426" y="-88.6" width="75.936" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="184.13916698093425" y="-70.2">Liste</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="284.10716698093427" y="-223.4">✅ Indici positivi e negativi</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="284.10716698093427" y="-182.6">✅ append, insert, remove,</tspan><tspan x="284.10716698093427" y="-161.8">pop</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="284.10716698093427" y="-121.0">✅ in e len</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="284.10716698093427" y="-80.2">✅ for sugli elementi</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="284.10716698093427" y="-39.4">✅ sum, min, max, sorted</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="284.10716698093427" y="1.4">🔍 enumerate</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="284.10716698093427" y="42.2">🔍 Slicing</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="284.10716698093427" y="83.0">🔍 Testi come sequenze</tspan></text>
-<rect x="146.17116698093426" y="164.20000000000002" width="150.81599999999997" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="221.57916698093425" y="182.6">Copie e aliasing</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="358.98716698093426" y="141.8">🔍 Aliasing con b = a</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="358.98716698093426" y="182.6">🔍 Copia con copy</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="358.98716698093426" y="223.4">🔍 Tuple</tspan></text>
-<rect x="-238.74716698093425" y="-101.6" width="92.576" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-192.45916698093424" y="-83.2">Matrici</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-300.74716698093425" y="-185.2">✅ Lista di liste</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-300.74716698093425" y="-144.4">✅ Cicli annidati</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-300.74716698093425" y="-103.6">🔍 Movimento sulla mappa</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-300.74716698093425" y="-62.8">🤓 List comprehension</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-300.74716698093425" y="-22.0">🤓 Trappola di [[0]*3]*3</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-300.74716698093425" y="18.8">🤓 Indici da zero</tspan></text>
-<rect x="-315.29116698093424" y="79.60000000000002" width="169.11999999999998" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-230.73116698093423" y="98.0">Notebook Jupyter</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-377.29116698093424" y="77.6">✅ Celle eseguibili</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-377.29116698093424" y="118.4">🔍 Stato nascosto</tspan></text>
-<rect x="-225.43516698093427" y="162.8" width="79.26400000000001" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-185.80316698093426" y="181.2">Rogue</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-287.43516698093424" y="181.2">🤓 Roguelike</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-587 -290 1208 580" width="1208" height="580" role="img" aria-label="🎒 Liste e matrici" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🎒 Liste e matrici</title>
+<rect x="-587" y="-290" width="1208" height="580" rx="14" fill="#ffffff"/>
+<path d="M260.1233214774227 -16.400000000000006 C287.1233214774227 -16.400000000000006 287.1233214774227 -149.6 314.1233214774227 -149.6" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M260.1233214774227 -16.400000000000006 C287.1233214774227 -16.400000000000006 287.1233214774227 -88.00000000000001 314.1233214774227 -88.00000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M260.1233214774227 -16.400000000000006 C287.1233214774227 -16.400000000000006 287.1233214774227 -36.80000000000001 314.1233214774227 -36.80000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M260.1233214774227 -16.400000000000006 C287.1233214774227 -16.400000000000006 287.1233214774227 14.399999999999988 314.1233214774227 14.399999999999988" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M260.1233214774227 -16.400000000000006 C287.1233214774227 -16.400000000000006 287.1233214774227 75.99999999999999 314.1233214774227 75.99999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M260.1233214774227 -16.400000000000006 C287.1233214774227 -16.400000000000006 287.1233214774227 127.19999999999999 314.1233214774227 127.19999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M328.3473214774227 216.8 C355.3473214774227 216.8 355.3473214774227 186 382.3473214774227 186" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M328.3473214774227 216.8 C355.3473214774227 216.8 355.3473214774227 237.2 382.3473214774227 237.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-276.7633214774227 -33.400000000000006 C-303.7633214774227 -33.400000000000006 -303.7633214774227 -125.4 -330.7633214774227 -125.4" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-276.7633214774227 -33.400000000000006 C-303.7633214774227 -33.400000000000006 -303.7633214774227 -84.60000000000001 -330.7633214774227 -84.60000000000001" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-276.7633214774227 -33.400000000000006 C-303.7633214774227 -33.400000000000006 -303.7633214774227 -43.80000000000002 -330.7633214774227 -43.80000000000002" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-276.7633214774227 -33.400000000000006 C-303.7633214774227 -33.400000000000006 -303.7633214774227 7.399999999999981 -330.7633214774227 7.399999999999981" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-276.7633214774227 -33.400000000000006 C-303.7633214774227 -33.400000000000006 -303.7633214774227 58.59999999999998 -330.7633214774227 58.59999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M49.7 -73.1 C104.03107458995309 -73.1 104.03107458995309 -233.2 158.3953214774227 -233.2" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M87.9 -9.1 C123.16030542242923 -9.1 123.16030542242923 -16.400000000000006 158.3953214774227 -16.400000000000006" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M52.1 71.4 C105.27120986470997 71.4 105.27120986470997 216.8 158.3953214774227 216.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-86.5 -18.2 C-122.44431879868237 -18.2 -122.44431879868237 -33.400000000000006 -158.3953214774227 -33.400000000000006" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-70.2 53.8 C-114.2770989909645 53.8 -114.2770989909645 121.4 -158.3953214774227 121.4" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="88.4" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🎒 Liste e matrici</tspan></text>
+<rect x="158.3953214774227" y="-262" width="206.56" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="261.6753214774227" y="-243.6">📜 Una chiocciola in un</tspan><tspan x="261.6753214774227" y="-222.8">labirinto di lettere</tspan></text>
+<rect x="158.3953214774227" y="-34.800000000000004" width="101.728" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="209.2593214774227" y="-16.4">🎒 Liste</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="322.1233214774227" y="-160.0">✅ Una fila di caselle</tspan><tspan x="322.1233214774227" y="-139.2">numerate</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="322.1233214774227" y="-98.4">✅ Aggiungere, togliere,</tspan><tspan x="322.1233214774227" y="-77.6">cercare</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="322.1233214774227" y="-36.8">✅ Scorrere una lista</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="322.1233214774227" y="4.0">✅ Somme, massimi,</tspan><tspan x="322.1233214774227" y="24.8">ordinamenti</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="322.1233214774227" y="65.6">🔍 Slicing: tagliare una</tspan><tspan x="322.1233214774227" y="86.4">fetta</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="322.1233214774227" y="127.2">🔍 I testi sono sequenze</tspan></text>
+<rect x="158.3953214774227" y="198.4" width="169.95200000000003" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="243.37132147742273" y="216.8">🏹 Copie e frecce</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="390.3473214774227" y="186.0">🔍 b = a non copia la lista</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="390.3473214774227" y="226.8">🔍 Tuple: liste che non</tspan><tspan x="390.3473214774227" y="247.6">cambiano</tspan></text>
+<rect x="-276.7633214774227" y="-51.800000000000004" width="118.36800000000001" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-217.5793214774227" y="-33.4">🗺️ Matrici</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-338.7633214774227" y="-125.4">✅ Una lista di liste</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-338.7633214774227" y="-84.6">✅ Cicli annidati</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-338.7633214774227" y="-43.8">🔍 Muovere l'eroe</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-338.7633214774227" y="-3.0">🤓 Comprehension e una</tspan><tspan x="-338.7633214774227" y="17.8">matrice traditrice</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-338.7633214774227" y="58.6">🤓 Perché si parte da zero?</tspan></text>
+<rect x="-366.61932147742266" y="103" width="208.22399999999996" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-262.5073214774227" y="121.4">🛠️ Il notebook Jupyter</tspan></text>
 </svg>

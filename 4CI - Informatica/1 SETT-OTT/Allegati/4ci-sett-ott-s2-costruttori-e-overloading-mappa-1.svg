@@ -1,39 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-475 -321 1156 642" width="1156" height="642" role="img" aria-label="🏗️ Costruttori e overloading" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-640 -179 1321 357" width="1321" height="357" role="img" aria-label="🏗️ Costruttori e overloading" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
 <title>🏗️ Costruttori e overloading</title>
-<rect x="-475" y="-321" width="1156" height="642" rx="14" fill="#ffffff"/>
-<path d="M364.000818522637 -98.40000000000002 C391.000818522637 -98.40000000000002 391.000818522637 -180.4 418.000818522637 -180.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M364.000818522637 -98.40000000000002 C391.000818522637 -98.40000000000002 391.000818522637 -118.80000000000003 418.000818522637 -118.80000000000003" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M364.000818522637 -98.40000000000002 C391.000818522637 -98.40000000000002 391.000818522637 -67.60000000000002 418.000818522637 -67.60000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M364.000818522637 -98.40000000000002 C391.000818522637 -98.40000000000002 391.000818522637 -16.40000000000003 418.000818522637 -16.40000000000003" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M344.03281852263706 165.59999999999997 C371.03281852263706 165.59999999999997 371.03281852263706 63.199999999999974 398.03281852263706 63.199999999999974" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M344.03281852263706 165.59999999999997 C371.03281852263706 165.59999999999997 371.03281852263706 114.39999999999998 398.03281852263706 114.39999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M344.03281852263706 165.59999999999997 C371.03281852263706 165.59999999999997 371.03281852263706 165.59999999999997 398.03281852263706 165.59999999999997" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M344.03281852263706 165.59999999999997 C371.03281852263706 165.59999999999997 371.03281852263706 216.79999999999995 398.03281852263706 216.79999999999995" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M344.03281852263706 165.59999999999997 C371.03281852263706 165.59999999999997 371.03281852263706 267.99999999999994 398.03281852263706 267.99999999999994" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M74.9 -101.0 C135.28969523484542 -101.0 135.28969523484542 -264 195.71281852263706 -264" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M112.3 -56.5 C154.01436105512022 -56.5 154.01436105512022 -98.40000000000002 195.71281852263706 -98.40000000000002" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M96.0 81.2 C145.84051136278572 81.2 145.84051136278572 165.59999999999997 195.71281852263706 165.59999999999997" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-123.9 -21.1 C-159.81701673130402 -21.1 -159.81701673130402 -33.400000000000006 -195.71281852263706 -33.400000000000006" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-122.7 27.5 C-159.19549418532102 27.5 -159.19549418532102 43.79999999999999 -195.71281852263706 43.79999999999999" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="-640" y="-179" width="1321" height="357" rx="14" fill="#ffffff"/>
+<path d="M364.000818522637 43.8 C391.000818522637 43.8 391.000818522637 -38.2 418.000818522637 -38.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M364.000818522637 43.8 C391.000818522637 43.8 391.000818522637 23.400000000000002 418.000818522637 23.400000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M364.000818522637 43.8 C391.000818522637 43.8 391.000818522637 74.60000000000001 418.000818522637 74.60000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M364.000818522637 43.8 C391.000818522637 43.8 391.000818522637 125.8 418.000818522637 125.8" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-344.03281852263706 0 C-371.03281852263706 0 -371.03281852263706 -102.4 -398.03281852263706 -102.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-344.03281852263706 0 C-371.03281852263706 0 -371.03281852263706 -51.199999999999996 -398.03281852263706 -51.199999999999996" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-344.03281852263706 0 C-371.03281852263706 0 -371.03281852263706 3.552713678800501e-15 -398.03281852263706 3.552713678800501e-15" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-344.03281852263706 0 C-371.03281852263706 0 -371.03281852263706 51.2 -398.03281852263706 51.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-344.03281852263706 0 C-371.03281852263706 0 -371.03281852263706 102.39999999999999 -398.03281852263706 102.39999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M106.7 -66.4 C151.2222287763277 -66.4 151.2222287763277 -121.8 195.71281852263706 -121.8" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M122.7 27.5 C159.19549418532102 27.5 159.19549418532102 43.8 195.71281852263706 43.8" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-125.7 0.0 C-160.71281852263706 0.0 -160.71281852263706 0 -195.71281852263706 0" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
 <circle cx="0" cy="0" r="125.7" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
 <text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🏗️ Costruttori e overloading</tspan></text>
-<rect x="195.71281852263706" y="-292.8" width="211.55200000000002" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="301.4888185226371" y="-274.4">🧭 Oggetti che nascono</tspan><tspan x="301.4888185226371" y="-253.6">pronti</tspan></text>
-<rect x="195.71281852263706" y="-116.80000000000001" width="168.28799999999998" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="279.856818522637" y="-98.4">🏗️ Il costruttore</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="426.000818522637" y="-190.8">✅ Il costruttore inizializza</tspan><tspan x="426.000818522637" y="-170.0">l'oggetto</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="426.000818522637" y="-129.2">✅ this indica l'oggetto</tspan><tspan x="426.000818522637" y="-108.4">corrente</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="426.000818522637" y="-67.6">✅ Il costruttore di default</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="426.000818522637" y="-26.8">🔍 Che cosa succede durante</tspan><tspan x="426.000818522637" y="-6.0">new</tspan></text>
-<rect x="195.71281852263706" y="147.19999999999996" width="148.32" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="269.8728185226371" y="165.6">🔀 Overloading</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="406.03281852263706" y="52.8">✅ Più costruttori con</tspan><tspan x="406.03281852263706" y="73.6">firme diverse</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="406.03281852263706" y="114.4">✅ Overloading dei metodi</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="406.03281852263706" y="155.2">🔍 this richiama un altro</tspan><tspan x="406.03281852263706" y="176.0">costruttore</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="406.03281852263706" y="216.8">🔍 Il costruttore di copia</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="406.03281852263706" y="257.6">🤓 Quando i costruttori</tspan><tspan x="406.03281852263706" y="278.4">sono troppi</tspan></text>
-<rect x="-447.20081852263706" y="-62.2" width="251.48800000000003" height="57.6" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-321.45681852263704" y="-43.8">🧩 Esercizi su costruttori e</tspan><tspan x="-321.45681852263704" y="-23.0">overloading</tspan></text>
-<rect x="-370.6568185226371" y="25.39999999999999" width="174.944" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-283.1848185226371" y="43.8">📚 Fonti e risorse</tspan></text>
+<rect x="195.71281852263706" y="-150.6" width="211.55200000000002" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="301.4888185226371" y="-132.2">🧭 Oggetti che nascono</tspan><tspan x="301.4888185226371" y="-111.4">pronti</tspan></text>
+<rect x="195.71281852263706" y="25.4" width="168.28799999999998" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="279.856818522637" y="43.8">🏗️ Il costruttore</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="426.000818522637" y="-48.6">✅ Il costruttore inizializza</tspan><tspan x="426.000818522637" y="-27.8">l'oggetto</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="426.000818522637" y="13.0">✅ this indica l'oggetto</tspan><tspan x="426.000818522637" y="33.8">corrente</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="426.000818522637" y="74.6">✅ Il costruttore di default</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="426.000818522637" y="115.4">🔍 Che cosa succede durante</tspan><tspan x="426.000818522637" y="136.2">new</tspan></text>
+<rect x="-344.03281852263706" y="-18.4" width="148.32" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-269.8728185226371" y="0.0">🔀 Overloading</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-406.03281852263706" y="-112.8">✅ Più costruttori con</tspan><tspan x="-406.03281852263706" y="-92.0">firme diverse</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-406.03281852263706" y="-51.2">✅ Overloading dei metodi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-406.03281852263706" y="-10.4">🔍 this richiama un altro</tspan><tspan x="-406.03281852263706" y="10.4">costruttore</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-406.03281852263706" y="51.2">🔍 Il costruttore di copia</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-406.03281852263706" y="92.0">🤓 Quando i costruttori</tspan><tspan x="-406.03281852263706" y="112.8">sono troppi</tspan></text>
 </svg>

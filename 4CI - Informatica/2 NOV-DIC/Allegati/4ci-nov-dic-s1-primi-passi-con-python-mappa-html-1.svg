@@ -1,90 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-613 -458 1320 916" width="1320" height="916" role="img" aria-label="Primi passi con Python" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>Primi passi con Python</title>
-<rect x="-613" y="-458" width="1320" height="916" rx="14" fill="#ffffff"/>
-<path d="M425.3737175567717 -385 C452.3737175567717 -385 452.3737175567717 -405.4 479.3737175567717 -405.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M425.3737175567717 -385 C452.3737175567717 -385 452.3737175567717 -354.2 479.3737175567717 -354.2" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M340.50971755677165 -244.19999999999996 C367.50971755677165 -244.19999999999996 367.50971755677165 -284.99999999999994 394.50971755677165 -284.99999999999994" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M340.50971755677165 -244.19999999999996 C367.50971755677165 -244.19999999999996 367.50971755677165 -233.79999999999995 394.50971755677165 -233.79999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M340.50971755677165 -244.19999999999996 C367.50971755677165 -244.19999999999996 367.50971755677165 -192.99999999999997 394.50971755677165 -192.99999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M407.0697175567716 39.80000000000004 C434.0697175567716 39.80000000000004 434.0697175567716 -134.19999999999996 461.0697175567716 -134.19999999999996" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M407.0697175567716 39.80000000000004 C434.0697175567716 39.80000000000004 434.0697175567716 -82.99999999999997 461.0697175567716 -82.99999999999997" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M407.0697175567716 39.80000000000004 C434.0697175567716 39.80000000000004 434.0697175567716 -21.399999999999967 461.0697175567716 -21.399999999999967" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M407.0697175567716 39.80000000000004 C434.0697175567716 39.80000000000004 434.0697175567716 40.20000000000003 461.0697175567716 40.20000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M407.0697175567716 39.80000000000004 C434.0697175567716 39.80000000000004 434.0697175567716 91.40000000000003 461.0697175567716 91.40000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M407.0697175567716 39.80000000000004 C434.0697175567716 39.80000000000004 434.0697175567716 132.20000000000002 461.0697175567716 132.20000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M407.0697175567716 39.80000000000004 C434.0697175567716 39.80000000000004 434.0697175567716 173.00000000000003 461.0697175567716 173.00000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M407.0697175567716 39.80000000000004 C434.0697175567716 39.80000000000004 434.0697175567716 213.80000000000004 461.0697175567716 213.80000000000004" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M313.8857175567716 344.20000000000005 C340.8857175567716 344.20000000000005 340.8857175567716 272.6 367.8857175567716 272.6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M313.8857175567716 344.20000000000005 C340.8857175567716 344.20000000000005 340.8857175567716 313.40000000000003 367.8857175567716 313.40000000000003" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M313.8857175567716 344.20000000000005 C340.8857175567716 344.20000000000005 340.8857175567716 364.6000000000001 367.8857175567716 364.6000000000001" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M313.8857175567716 344.20000000000005 C340.8857175567716 344.20000000000005 340.8857175567716 415.80000000000007 367.8857175567716 415.80000000000007" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-317.2137175567716 -241.79999999999998 C-344.2137175567716 -241.79999999999998 -344.2137175567716 -303 -371.2137175567716 -303" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-317.2137175567716 -241.79999999999998 C-344.2137175567716 -241.79999999999998 -344.2137175567716 -262.2 -371.2137175567716 -262.2" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-317.2137175567716 -241.79999999999998 C-344.2137175567716 -241.79999999999998 -344.2137175567716 -221.39999999999995 -371.2137175567716 -221.39999999999995" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-317.2137175567716 -241.79999999999998 C-344.2137175567716 -241.79999999999998 -344.2137175567716 -180.59999999999994 -371.2137175567716 -180.59999999999994" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-315.5497175567716 -80.99999999999999 C-342.5497175567716 -80.99999999999999 -342.5497175567716 -121.79999999999998 -369.5497175567716 -121.79999999999998" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-315.5497175567716 -80.99999999999999 C-342.5497175567716 -80.99999999999999 -342.5497175567716 -80.99999999999999 -369.5497175567716 -80.99999999999999" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-315.5497175567716 -80.99999999999999 C-342.5497175567716 -80.99999999999999 -342.5497175567716 -40.199999999999996 -369.5497175567716 -40.199999999999996" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-282.26971755677164 80.20000000000002 C-309.26971755677164 80.20000000000002 -309.26971755677164 29.000000000000018 -336.26971755677164 29.000000000000018" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-282.26971755677164 80.20000000000002 C-309.26971755677164 80.20000000000002 -309.26971755677164 90.60000000000001 -336.26971755677164 90.60000000000001" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-282.26971755677164 80.20000000000002 C-309.26971755677164 80.20000000000002 -309.26971755677164 141.8 -336.26971755677164 141.8" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-257.3097175567716 251.8 C-284.3097175567716 251.8 -284.3097175567716 200.60000000000002 -311.3097175567716 200.60000000000002" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-257.3097175567716 251.8 C-284.3097175567716 251.8 -284.3097175567716 241.4 -311.3097175567716 241.4" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-257.3097175567716 251.8 C-284.3097175567716 251.8 -284.3097175567716 292.6 -311.3097175567716 292.6" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M42.2 -94.0 C107.65173413692281 -94.0 107.65173413692281 -385 173.05371755677163 -385" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M59.6 -84.1 C116.31930006654797 -84.1 116.31930006654797 -244.19999999999996 173.05371755677163 -244.19999999999996" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M100.4 23.1 C136.7427755257732 23.1 136.7427755257732 39.80000000000004 173.05371755677163 39.80000000000004" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M46.3 92.1 C109.67235993697645 92.1 109.67235993697645 344.20000000000005 173.05371755677163 344.20000000000005" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-60.0 -83.8 C-116.51517244092126 -83.8 -116.51517244092126 -241.79999999999998 -173.05371755677163 -241.79999999999998" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-93.3 -43.7 C-133.19463165384215 -43.7 -133.19463165384215 -80.99999999999999 -173.05371755677163 -80.99999999999999" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-93.5 43.3 C-133.27727339735674 43.3 -133.27727339735674 80.20000000000002 -173.05371755677163 80.20000000000002" fill="none" stroke="#ec4899" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-58.4 84.9 C-115.7115774231895 84.9 -115.7115774231895 251.8 -173.05371755677163 251.8" fill="none" stroke="#64748b" stroke-width="3.5" stroke-linecap="round"/>
-<circle cx="0" cy="0" r="103.1" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Primi passi con Python</tspan></text>
-<rect x="173.05371755677163" y="-403.4" width="252.32000000000005" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="299.21371755677166" y="-385.0">Linguaggi di programmazione</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="487.3737175567717" y="-415.8">✅ Compromesso tra</tspan><tspan x="487.3737175567717" y="-395.0">macchina e persone</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="487.3737175567717" y="-354.2">🤓 Fortran, COBOL e C</tspan></text>
-<rect x="173.05371755677163" y="-262.59999999999997" width="167.456" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="256.78171755677164" y="-244.2">Nascita di Python</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="402.50971755677165" y="-295.4">✅ Guido van Rossum e</tspan><tspan x="402.50971755677165" y="-274.6">l'interprete</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="402.50971755677165" y="-233.8">🤓 Linguaggio ABC</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="402.50971755677165" y="-193.0">🤓 Origine del nome Python</tspan></text>
-<rect x="173.05371755677163" y="21.40000000000004" width="234.016" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="290.0617175567716" y="39.8">Java e Python a confronto</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.0697175567716" y="-134.2">✅ Sintassi a confronto</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.0697175567716" y="-93.4">🔍 Python compilato o</tspan><tspan x="469.0697175567716" y="-72.6">interpretato</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.0697175567716" y="-31.8">🔍 Tipo dichiarato nei</tspan><tspan x="469.0697175567716" y="-11.0">progetti grandi</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.0697175567716" y="29.8">🔍 Chiamate scoperte a</tspan><tspan x="469.0697175567716" y="50.6">runtime</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.0697175567716" y="91.4">🔍 Script, dati e prototipi</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.0697175567716" y="132.2">🔍 Velocità a confronto</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.0697175567716" y="173.0">🤓 Librerie scritte in C</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.0697175567716" y="213.8">🤓 Type hints</tspan></text>
-<rect x="173.05371755677163" y="325.80000000000007" width="140.832" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="243.46971755677163" y="344.2">REPL e script</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.8857175567716" y="272.6">✅ REPL</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.8857175567716" y="313.4">✅ Script e file .py</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.8857175567716" y="354.2">🔍 Interprete, editor, IDE e</tspan><tspan x="375.8857175567716" y="375.0">terminale</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.8857175567716" y="415.8">🤓 import this</tspan></text>
-<rect x="-317.2137175567716" y="-260.2" width="144.15999999999997" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-245.13371755677161" y="-241.8">Variabili e tipi</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-379.2137175567716" y="-303.0">✅ Variabile come freccia</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-379.2137175567716" y="-262.2">✅ Quattro tipi base</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-379.2137175567716" y="-221.4">🔍 Tipo nel valore</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-379.2137175567716" y="-180.6">🤓 Interi senza limite</tspan></text>
-<rect x="-315.5497175567716" y="-99.39999999999998" width="142.49599999999998" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-244.30171755677162" y="-81.0">Input e output</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-377.5497175567716" y="-121.8">✅ print e input</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-377.5497175567716" y="-81.0">✅ Testo da input</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-377.5497175567716" y="-40.2">🔍 f-string</tspan></text>
-<rect x="-282.26971755677164" y="61.80000000000002" width="109.216" height="36.8" rx="18" fill="#fce5f1" stroke="#ec4899" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6a2045" font-weight="600"><tspan x="-227.66171755677163" y="80.2">Operatori</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-344.26971755677164" y="18.6">✅ Aritmetici, di confronto</tspan><tspan x="-344.26971755677164" y="39.4">e logici</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-344.26971755677164" y="80.2">🔍 Divisione, resto e</tspan><tspan x="-344.26971755677164" y="101.0">potenza</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-344.26971755677164" y="141.8">🤓 Uguali e identici</tspan></text>
-<rect x="-257.3097175567716" y="233.4" width="84.256" height="36.8" rx="18" fill="#e9ecef" stroke="#64748b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#2d343f" font-weight="600"><tspan x="-215.18171755677162" y="251.8">Errori</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-319.3097175567716" y="200.6">✅ Tre famiglie di errori</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-319.3097175567716" y="241.4">✅ Lettura del traceback</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-319.3097175567716" y="282.2">🔍 Errori scoperti a</tspan><tspan x="-319.3097175567716" y="303.0">runtime</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-667 -445 1338 890" width="1338" height="890" role="img" aria-label="🐍 Primi passi con Python" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🐍 Primi passi con Python</title>
+<rect x="-667" y="-445" width="1338" height="890" rx="14" fill="#ffffff"/>
+<path d="M365.3047579870892 -176.8 C392.3047579870892 -176.8 392.3047579870892 -258.8 419.3047579870892 -258.8" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M365.3047579870892 -176.8 C392.3047579870892 -176.8 392.3047579870892 -197.20000000000002 419.3047579870892 -197.20000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M365.3047579870892 -176.8 C392.3047579870892 -176.8 392.3047579870892 -146.00000000000003 419.3047579870892 -146.00000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M365.3047579870892 -176.8 C392.3047579870892 -176.8 392.3047579870892 -94.80000000000004 419.3047579870892 -94.80000000000004" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M351.99275798708925 66.79999999999998 C378.99275798708925 66.79999999999998 378.99275798708925 -15.200000000000028 405.99275798708925 -15.200000000000028" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M351.99275798708925 66.79999999999998 C378.99275798708925 66.79999999999998 378.99275798708925 46.39999999999998 405.99275798708925 46.39999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M351.99275798708925 66.79999999999998 C378.99275798708925 66.79999999999998 378.99275798708925 107.99999999999997 405.99275798708925 107.99999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M351.99275798708925 66.79999999999998 C378.99275798708925 66.79999999999998 378.99275798708925 159.2 405.99275798708925 159.2" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M355.3207579870892 310.4 C382.3207579870892 310.4 382.3207579870892 228.4 409.3207579870892 228.4" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M355.3207579870892 310.4 C382.3207579870892 310.4 382.3207579870892 290 409.3207579870892 290" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M355.3207579870892 310.4 C382.3207579870892 310.4 382.3207579870892 351.6 409.3207579870892 351.6" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M355.3207579870892 310.4 C382.3207579870892 310.4 382.3207579870892 402.8 409.3207579870892 402.8" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-353.65675798708924 -161.2 C-380.65675798708924 -161.2 -380.65675798708924 -222.79999999999998 -407.65675798708924 -222.79999999999998" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-353.65675798708924 -161.2 C-380.65675798708924 -161.2 -380.65675798708924 -171.59999999999997 -407.65675798708924 -171.59999999999997" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-353.65675798708924 -161.2 C-380.65675798708924 -161.2 -380.65675798708924 -109.99999999999999 -407.65675798708924 -109.99999999999999" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-320.37675798708926 10.400000000000006 C-347.37675798708926 10.400000000000006 -347.37675798708926 -30.399999999999988 -374.37675798708926 -30.399999999999988" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-320.37675798708926 10.400000000000006 C-347.37675798708926 10.400000000000006 -347.37675798708926 20.80000000000001 -374.37675798708926 20.80000000000001" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-320.37675798708926 10.400000000000006 C-347.37675798708926 10.400000000000006 -347.37675798708926 61.60000000000001 -374.37675798708926 61.60000000000001" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-318.7127579870892 171.6 C-345.7127579870892 171.6 -345.7127579870892 120.4 -372.7127579870892 120.4" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-318.7127579870892 171.6 C-345.7127579870892 171.6 -345.7127579870892 161.20000000000002 -372.7127579870892 161.20000000000002" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-318.7127579870892 171.6 C-345.7127579870892 171.6 -345.7127579870892 212.40000000000003 -372.7127579870892 212.40000000000003" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M48.6 -104.6 C116.99875564135704 -104.6 116.99875564135704 -398.80000000000007 185.36875798708923 -398.80000000000007" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M56.2 -100.7 C120.80547714537099 -100.7 120.80547714537099 -332.00000000000006 185.36875798708923 -332.00000000000006" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M83.5 -79.6 C134.42676367426583 -79.6 134.42676367426583 -176.8 185.36875798708923 -176.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M108.5 39.1 C146.95260801871655 39.1 146.95260801871655 66.79999999999998 185.36875798708923 66.79999999999998" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M59.2 99.1 C122.26047124280706 99.1 122.26047124280706 310.4 185.36875798708923 310.4" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-87.1 -75.7 C-136.21219327616558 -75.7 -136.21219327616558 -161.2 -185.36875798708923 -161.2" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-115.2 6.5 C-150.27818513818818 6.5 -150.27818513818818 10.400000000000006 -185.36875798708923 10.400000000000006" fill="none" stroke="#ec4899" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-84.7 78.4 C-135.01520384659543 78.4 -135.01520384659543 171.6 -185.36875798708923 171.6" fill="none" stroke="#64748b" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="115.4" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🐍 Primi passi con Python</tspan></text>
+<rect x="185.36875798708923" y="-417.20000000000005" width="226.52800000000002" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="298.63275798708924" y="-398.8">🌍 Perché tanti linguaggi</tspan></text>
+<rect x="185.36875798708923" y="-350.40000000000003" width="148.32" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="259.5287579870892" y="-332.0">🧭 Natale 1989</tspan></text>
+<rect x="185.36875798708923" y="-205.60000000000002" width="179.93599999999998" height="57.6" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="275.3367579870892" y="-187.2">⚖️ Java e Python a</tspan><tspan x="275.3367579870892" y="-166.4">confronto</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="427.3047579870892" y="-269.2">✅ Stessi mattoni, altra</tspan><tspan x="427.3047579870892" y="-248.4">grammatica</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="427.3047579870892" y="-207.6">🔍 Dove vince un linguaggio</tspan><tspan x="427.3047579870892" y="-186.8">tipizzato e a oggetti</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="427.3047579870892" y="-146.0">🔍 Dove vince Python</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="427.3047579870892" y="-105.2">🤓 Type hints: Python con i</tspan><tspan x="427.3047579870892" y="-84.4">tipi</tspan></text>
+<rect x="185.36875798708923" y="48.399999999999984" width="166.624" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="268.68075798708924" y="66.8">🖥️ REPL e script</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="413.99275798708925" y="-25.6">✅ Il REPL: provare una riga</tspan><tspan x="413.99275798708925" y="-4.8">alla volta</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="413.99275798708925" y="36.0">✅ Lo script: conservare il</tspan><tspan x="413.99275798708925" y="56.8">programma</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="413.99275798708925" y="97.6">🔍 Interprete, editor, IDE e</tspan><tspan x="413.99275798708925" y="118.4">terminale</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="413.99275798708925" y="159.2">🤓 import this</tspan></text>
+<rect x="185.36875798708923" y="292" width="169.952" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="270.3447579870892" y="310.4">🏷️ Variabili e tipi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.3207579870892" y="218.0">✅ Una variabile è una</tspan><tspan x="417.3207579870892" y="238.8">freccia</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.3207579870892" y="279.6">✅ Quattro tipi per</tspan><tspan x="417.3207579870892" y="300.4">cominciare</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.3207579870892" y="341.2">🔍 I tipi stanno nei valori,</tspan><tspan x="417.3207579870892" y="362.0">non nelle variabili</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.3207579870892" y="402.8">🤓 Interi senza limite</tspan></text>
+<rect x="-353.65675798708924" y="-179.6" width="168.288" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-269.51275798708923" y="-161.2">⌨️ Input e output</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-415.65675798708924" y="-222.8">✅ print e input</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-415.65675798708924" y="-182.0">✅ input restituisce sempre</tspan><tspan x="-415.65675798708924" y="-161.2">testo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-415.65675798708924" y="-120.4">🔍 f-string: testo con</tspan><tspan x="-415.65675798708924" y="-99.6">valori dentro</tspan></text>
+<rect x="-320.37675798708926" y="-7.999999999999993" width="135.008" height="36.8" rx="18" fill="#fce5f1" stroke="#ec4899" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6a2045" font-weight="600"><tspan x="-252.87275798708924" y="10.4">➕ Operatori</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-382.37675798708926" y="-40.8">✅ Aritmetici, confronto e</tspan><tspan x="-382.37675798708926" y="-20.0">logici</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-382.37675798708926" y="20.8">🔍 Divisione, resto, potenza</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-382.37675798708926" y="61.6">🤓 Uguali e identici</tspan></text>
+<rect x="-318.7127579870892" y="153.2" width="133.344" height="36.8" rx="18" fill="#e9ecef" stroke="#64748b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#2d343f" font-weight="600"><tspan x="-252.04075798708922" y="171.6">🐞 Gli errori</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-380.7127579870892" y="120.4">✅ Tre famiglie di errori</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-380.7127579870892" y="161.2">✅ Leggere un traceback</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-380.7127579870892" y="202.0">🔍 Python non ti avverte</tspan><tspan x="-380.7127579870892" y="222.8">prima</tspan></text>
 </svg>

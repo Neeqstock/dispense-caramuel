@@ -1,56 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-617 -234 1232 468" width="1232" height="468" role="img" aria-label="Il boot" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>Il boot</title>
-<rect x="-617" y="-234" width="1232" height="468" rx="14" fill="#ffffff"/>
-<path d="M283.152 -150.8 C310.152 -150.8 310.152 -191.6 337.152 -191.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M283.152 -150.8 C310.152 -150.8 310.152 -150.79999999999998 337.152 -150.79999999999998" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M283.152 -150.8 C310.152 -150.8 310.152 -109.99999999999999 337.152 -109.99999999999999" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M244.88 0 C271.88 0 271.88 -51.199999999999996 298.88 -51.199999999999996" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M244.88 0 C271.88 0 271.88 -10.399999999999997 298.88 -10.399999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M244.88 0 C271.88 0 271.88 40.8 298.88 40.8" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M316.432 150.8 C343.432 150.8 343.432 110 370.432 110" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M316.432 150.8 C343.432 150.8 343.432 150.79999999999998 370.432 150.79999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M316.432 150.8 C343.432 150.8 343.432 191.6 370.432 191.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-299.79200000000003 -140.8 C-326.79200000000003 -140.8 -326.79200000000003 -161.2 -353.79200000000003 -161.2" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-299.79200000000003 -140.8 C-326.79200000000003 -140.8 -326.79200000000003 -120.4 -353.79200000000003 -120.4" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-279.824 -10.400000000000006 C-306.824 -10.400000000000006 -306.824 -61.6 -333.824 -61.6" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-279.824 -10.400000000000006 C-306.824 -10.400000000000006 -306.824 -10.400000000000002 -333.824 -10.400000000000002" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-279.824 -10.400000000000006 C-306.824 -10.400000000000006 -306.824 40.8 -333.824 40.8" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-308.112 130.39999999999998 C-335.112 130.39999999999998 -335.112 99.6 -362.112 99.6" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-308.112 130.39999999999998 C-335.112 130.39999999999998 -335.112 150.79999999999998 -362.112 150.79999999999998" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M42.5 -47.8 C88.25570428694823 -47.8 88.25570428694823 -150.8 134 -150.8" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M64.0 0.0 C99 0.0 99 0 134 0" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M42.5 47.8 C88.25570428694823 47.8 88.25570428694823 150.8 134 150.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-44.1 -46.4 C-89.06074229573532 -46.4 -89.06074229573532 -140.8 -134 -140.8" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-63.8 -5.0 C-98.90405542042716 -5.0 -98.90405542042716 -10.400000000000006 -134 -10.400000000000006" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-45.9 44.6 C-89.93338019238308 44.6 -89.93338019238308 130.39999999999998 -134 130.39999999999998" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-653 -219 1317 438" width="1317" height="438" role="img" aria-label="🔌 Il boot" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🔌 Il boot</title>
+<rect x="-653" y="-219" width="1317" height="438" rx="14" fill="#ffffff"/>
+<path d="M358.86400000000003 33.39999999999999 C385.86400000000003 33.39999999999999 385.86400000000003 -109.80000000000003 412.86400000000003 -109.80000000000003" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M358.86400000000003 33.39999999999999 C385.86400000000003 33.39999999999999 385.86400000000003 -58.60000000000004 412.86400000000003 -58.60000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M358.86400000000003 33.39999999999999 C385.86400000000003 33.39999999999999 385.86400000000003 -7.400000000000032 412.86400000000003 -7.400000000000032" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M358.86400000000003 33.39999999999999 C385.86400000000003 33.39999999999999 385.86400000000003 33.39999999999996 412.86400000000003 33.39999999999996" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M358.86400000000003 33.39999999999999 C385.86400000000003 33.39999999999999 385.86400000000003 84.59999999999997 412.86400000000003 84.59999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M358.86400000000003 33.39999999999999 C385.86400000000003 33.39999999999999 385.86400000000003 135.79999999999995 412.86400000000003 135.79999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M358.86400000000003 33.39999999999999 C385.86400000000003 33.39999999999999 385.86400000000003 176.59999999999997 412.86400000000003 176.59999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-347.216 -49.8 C-374.216 -49.8 -374.216 -100.99999999999999 -401.216 -100.99999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-347.216 -49.8 C-374.216 -49.8 -374.216 -49.8 -401.216 -49.8" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-347.216 -49.8 C-374.216 -49.8 -374.216 1.4000000000000075 -401.216 1.4000000000000075" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-347.216 80.6 C-374.216 80.6 -374.216 60.199999999999996 -401.216 60.199999999999996" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-347.216 80.6 C-374.216 80.6 -374.216 101 -401.216 101" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M39.2 -50.6 C86.6237870943476 -50.6 86.6237870943476 -172.60000000000002 134 -172.60000000000002" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M62.1 15.5 C98.05000449624447 15.5 98.05000449624447 33.39999999999999 134 33.39999999999999" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-60.0 -22.3 C-96.99552065041269 -22.3 -96.99552065041269 -49.8 -134 -49.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-54.8 33.0 C-94.42170068872167 33.0 -94.42170068872167 80.6 -134 80.6" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
 <circle cx="0" cy="0" r="64.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Il boot</tspan></text>
-<rect x="134" y="-169.20000000000002" width="149.152" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="208.576" y="-150.8">Catena di avvio</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="345.152" y="-191.6">✅ Staffetta del boot</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="345.152" y="-150.8">✅ Primo programma fisso</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="345.152" y="-110.0">🔍 Perché a stadi</tspan></text>
-<rect x="134" y="-18.4" width="110.88" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="189.44" y="0.0">Firmware</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="306.88" y="-51.2">✅ Firmware</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="306.88" y="-10.4">✅ BIOS e UEFI</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="306.88" y="30.4">🔍 Test dell'hardware</tspan><tspan x="306.88" y="51.2">(POST)</tspan></text>
-<rect x="134" y="132.4" width="182.43200000000002" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="225.216" y="150.8">Bootloader e kernel</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="378.432" y="110.0">✅ Bootloader</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="378.432" y="150.8">✅ Caricamento del kernel</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="378.432" y="191.6">🔍 Scelta fra più sistemi</tspan></text>
-<rect x="-299.79200000000003" y="-159.20000000000002" width="165.792" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-216.89600000000002" y="-140.8">Servizi e accesso</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-361.79200000000003" y="-161.2">✅ Servizi</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-361.79200000000003" y="-120.4">✅ Accesso utente</tspan></text>
-<rect x="-279.824" y="-28.800000000000004" width="145.824" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-206.912" y="-10.4">Avvio e riavvio</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-341.824" y="-61.6">✅ Avvio a freddo e riavvio</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-341.824" y="-20.8">🔍 RAM e disco dopo lo</tspan><tspan x="-341.824" y="-0.0">spegnimento</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-341.824" y="40.8">🤓 Avvio rapido di Windows</tspan></text>
-<rect x="-308.112" y="111.99999999999997" width="174.11200000000002" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-221.056" y="130.4">Storia e sicurezza</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-370.112" y="99.6">🤓 Origine della parola boot</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-370.112" y="140.4">🤓 Avvio protetto (Secure</tspan><tspan x="-370.112" y="161.2">Boot)</tspan></text>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🔌 Il boot</tspan></text>
+<rect x="134" y="-191.00000000000003" width="163.296" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="215.648" y="-172.6">📜 Chi avvia chi?</tspan></text>
+<rect x="134" y="14.999999999999993" width="224.86400000000003" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="246.43200000000002" y="33.4">🪜 La staffetta del boot</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="420.86400000000003" y="-109.8">✅ Cinque passaggi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="420.86400000000003" y="-69.0">✅ Firmware: il primo</tspan><tspan x="420.86400000000003" y="-48.2">programma</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="420.86400000000003" y="-7.4">🔍 Il test dell'hardware</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="420.86400000000003" y="33.4">✅ Bootloader e kernel</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="420.86400000000003" y="74.2">🔍 Più sistemi sullo stesso</tspan><tspan x="420.86400000000003" y="95.0">computer</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="420.86400000000003" y="135.8">✅ Servizi e accesso</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="420.86400000000003" y="176.6">🔍 Perché a stadi</tspan></text>
+<rect x="-347.216" y="-78.6" width="213.21600000000004" height="57.6" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-240.608" y="-60.2">🔄 Spegnere, riavviare,</tspan><tspan x="-240.608" y="-39.4">avviare</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-409.216" y="-101.0">✅ Avvio a freddo e riavvio</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-409.216" y="-60.2">🔍 Che cosa si perde e che</tspan><tspan x="-409.216" y="-39.4">cosa no</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-409.216" y="1.4">🤓 Avvio rapido di Windows</tspan></text>
+<rect x="-347.216" y="62.199999999999996" width="213.216" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-240.608" y="80.6">📜 Origine e protezione</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-409.216" y="60.2">🤓 Perché si chiama boot</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-409.216" y="101.0">🤓 Avvio protetto</tspan></text>
 </svg>

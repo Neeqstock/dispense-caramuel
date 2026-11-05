@@ -1,60 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-593 -265 1260 530" width="1260" height="530" role="img" aria-label="Dal relè alle porte" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>Dal relè alle porte</title>
-<rect x="-593" y="-265" width="1260" height="530" rx="14" fill="#ffffff"/>
-<path d="M224.035274311001 -160.79999999999998 C251.035274311001 -160.79999999999998 251.035274311001 -211.99999999999997 278.035274311001 -211.99999999999997" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M224.035274311001 -160.79999999999998 C251.035274311001 -160.79999999999998 251.035274311001 -150.39999999999998 278.035274311001 -150.39999999999998" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M224.035274311001 -160.79999999999998 C251.035274311001 -160.79999999999998 251.035274311001 -99.19999999999999 278.035274311001 -99.19999999999999" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M387.107274311001 0.4000000000000199 C414.107274311001 0.4000000000000199 414.107274311001 -40.399999999999984 441.107274311001 -40.399999999999984" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M387.107274311001 0.4000000000000199 C414.107274311001 0.4000000000000199 414.107274311001 0.40000000000001457 441.107274311001 0.40000000000001457" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M387.107274311001 0.4000000000000199 C414.107274311001 0.4000000000000199 414.107274311001 41.20000000000001 441.107274311001 41.20000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M315.55527431100097 161.20000000000002 C342.55527431100097 161.20000000000002 342.55527431100097 100.00000000000003 369.55527431100097 100.00000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M315.55527431100097 161.20000000000002 C342.55527431100097 161.20000000000002 342.55527431100097 140.8 369.55527431100097 140.8" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M315.55527431100097 161.20000000000002 C342.55527431100097 161.20000000000002 342.55527431100097 181.60000000000002 369.55527431100097 181.60000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M315.55527431100097 161.20000000000002 C342.55527431100097 161.20000000000002 342.55527431100097 222.4 369.55527431100097 222.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-265.635274311001 -140.8 C-292.635274311001 -140.8 -292.635274311001 -181.6 -319.635274311001 -181.6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-265.635274311001 -140.8 C-292.635274311001 -140.8 -292.635274311001 -140.79999999999998 -319.635274311001 -140.79999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-265.635274311001 -140.8 C-292.635274311001 -140.8 -292.635274311001 -99.99999999999999 -319.635274311001 -99.99999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-323.875274311001 -10.399999999999991 C-350.875274311001 -10.399999999999991 -350.875274311001 -41.199999999999996 -377.875274311001 -41.199999999999996" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-323.875274311001 -10.399999999999991 C-350.875274311001 -10.399999999999991 -350.875274311001 10.000000000000004 -377.875274311001 10.000000000000004" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-240.675274311001 130.4 C-267.675274311001 130.4 -267.675274311001 79.20000000000002 -294.675274311001 79.20000000000002" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-240.675274311001 130.4 C-267.675274311001 130.4 -267.675274311001 130.4 -294.675274311001 130.4" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-240.675274311001 130.4 C-267.675274311001 130.4 -267.675274311001 181.60000000000002 -294.675274311001 181.60000000000002" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M60.3 -61.9 C108.33865041383072 -61.9 108.33865041383072 -160.79999999999998 156.419274311001 -160.79999999999998" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M86.4 0.2 C121.41913302864029 0.2 121.41913302864029 0.4000000000000199 156.419274311001 0.4000000000000199" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M60.2 62.0 C108.30016766058436 62.0 108.30016766058436 161.20000000000002 156.419274311001 161.20000000000002" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-64.2 -57.8 C-110.32479475204576 -57.8 -110.32479475204576 -140.8 -156.419274311001 -140.8" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-86.2 -5.7 C-121.32408245813838 -5.7 -121.32408245813838 -10.399999999999991 -156.419274311001 -10.399999999999991" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-66.4 55.3 C-111.39891861284511 55.3 -111.39891861284511 130.4 -156.419274311001 130.4" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
-<circle cx="0" cy="0" r="86.4" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Dal relè alle porte</tspan></text>
-<rect x="156.419274311001" y="-179.2" width="67.616" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="190.227274311001" y="-160.8">Relè</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="286.035274311001" y="-222.4">✅ Interruttore comandato</tspan><tspan x="286.035274311001" y="-201.6">da un interruttore</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="286.035274311001" y="-160.8">✅ Contatto aperto o chiuso</tspan><tspan x="286.035274311001" y="-140.0">a riposo</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="286.035274311001" y="-99.2">🔍 Relè e porta logica</tspan></text>
-<rect x="156.419274311001" y="-17.99999999999998" width="230.688" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="271.763274311001" y="0.4">Decisioni con interruttori</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="449.107274311001" y="-40.4">✅ Serie e AND</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="449.107274311001" y="0.4">✅ Parallelo e OR</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="449.107274311001" y="41.2">✅ Capovolgere con NOT</tspan></text>
-<rect x="156.419274311001" y="142.8" width="159.136" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="235.987274311001" y="161.2">Tabelle di verità</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="377.55527431100097" y="100.0">✅ 0 e 1 come falso e vero</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="377.55527431100097" y="140.8">✅ Tabelle di NOT, AND e OR</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="377.55527431100097" y="181.6">✅ Righe in ordine</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="377.55527431100097" y="222.4">🔍 Tabella a tre ingressi</tspan></text>
-<rect x="-265.635274311001" y="-159.20000000000002" width="109.21600000000001" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-211.027274311001" y="-140.8">Notazione</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-327.635274311001" y="-181.6">✅ Nomi e simboli</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-327.635274311001" y="-140.8">✅ Porta come scatola</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-327.635274311001" y="-100.0">🔍 Precedenza</tspan></text>
-<rect x="-323.875274311001" y="-28.79999999999999" width="167.456" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-240.147274311001" y="-10.4">Circuiti composti</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-385.875274311001" y="-41.2">✅ Da frase a circuito</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-385.875274311001" y="-0.4">🔍 Porte collegate in</tspan><tspan x="-385.875274311001" y="20.4">sequenza</tspan></text>
-<rect x="-240.675274311001" y="112" width="84.256" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-198.547274311001" y="130.4">Storia</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-302.675274311001" y="79.2">🤓 Boole</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-302.675274311001" y="120.0">🤓 Shannon e i computer a</tspan><tspan x="-302.675274311001" y="140.8">relè</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-302.675274311001" y="181.6">🤓 Paradosso del mentitore</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-729 -271 1353 542" width="1353" height="542" role="img" aria-label="💡 Dal relè alle porte" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>💡 Dal relè alle porte</title>
+<rect x="-729" y="-271" width="1353" height="542" rx="14" fill="#ffffff"/>
+<path d="M275.4102789421921 -76.20000000000002 C302.4102789421921 -76.20000000000002 302.4102789421921 -107.00000000000001 329.4102789421921 -107.00000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M275.4102789421921 -76.20000000000002 C302.4102789421921 -76.20000000000002 302.4102789421921 -35.000000000000014 329.4102789421921 -35.000000000000014" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M350.2902789421921 74.99999999999999 C377.2902789421921 74.99999999999999 377.2902789421921 34.19999999999998 404.2902789421921 34.19999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M350.2902789421921 74.99999999999999 C377.2902789421921 74.99999999999999 377.2902789421921 74.99999999999999 404.2902789421921 74.99999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M350.2902789421921 74.99999999999999 C377.2902789421921 74.99999999999999 377.2902789421921 115.79999999999998 404.2902789421921 115.79999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M353.6182789421921 195 C380.6182789421921 195 380.6182789421921 174.6 407.6182789421921 174.6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M353.6182789421921 195 C380.6182789421921 195 380.6182789421921 215.4 407.6182789421921 215.4" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-411.8582789421922 -187.20000000000002 C-438.8582789421922 -187.20000000000002 -438.8582789421922 -218 -465.8582789421922 -218" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-411.8582789421922 -187.20000000000002 C-438.8582789421922 -187.20000000000002 -438.8582789421922 -156.4 -465.8582789421922 -156.4" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-361.9382789421921 -46.00000000000002 C-388.9382789421921 -46.00000000000002 -388.9382789421921 -76.80000000000003 -415.9382789421921 -76.80000000000003" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-361.9382789421921 -46.00000000000002 C-388.9382789421921 -46.00000000000002 -388.9382789421921 -15.20000000000002 -415.9382789421921 -15.20000000000002" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-313.68227894219206 207.99999999999994 C-340.68227894219206 207.99999999999994 -340.68227894219206 187.59999999999997 -367.68227894219206 187.59999999999997" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-313.68227894219206 207.99999999999994 C-340.68227894219206 207.99999999999994 -340.68227894219206 228.39999999999995 -367.68227894219206 228.39999999999995" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M63.4 -75.6 C116.0670324030441 -75.6 116.0670324030441 -201 168.6902789421921 -201" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M89.9 -40.6 C129.31511936376788 -40.6 129.31511936376788 -76.20000000000002 168.6902789421921 -76.20000000000002" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M90.2 40.1 C129.43466433531697 40.1 129.43466433531697 74.99999999999999 168.6902789421921 74.99999999999999" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M64.6 74.6 C116.62891549303924 74.6 116.62891549303924 195 168.6902789421921 195" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-66.1 -73.3 C-117.37804071009097 -73.3 -117.37804071009097 -187.20000000000002 -168.6902789421921 -187.20000000000002" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-95.2 -26.0 C-131.9520060918323 -26.0 -131.9520060918323 -46.00000000000002 -168.6902789421921 -46.00000000000002" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-93.3 32.1 C-131.0090950693791 32.1 -131.0090950693791 57.999999999999964 -168.6902789421921 57.999999999999964" fill="none" stroke="#ec4899" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-79.3 58.7 C-124.01429381734357 58.7 -124.01429381734357 124.79999999999995 -168.6902789421921 124.79999999999995" fill="none" stroke="#64748b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-62.2 76.7 C-115.42743280804626 76.7 -115.42743280804626 207.99999999999994 -168.6902789421921 207.99999999999994" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="98.7" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">💡 Dal relè alle porte</tspan></text>
+<rect x="168.6902789421921" y="-229.8" width="181.6" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="259.4902789421921" y="-211.4">📜 Sotto il chip, un</tspan><tspan x="259.4902789421921" y="-190.6">interruttore</tspan></text>
+<rect x="168.6902789421921" y="-94.60000000000002" width="106.72" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="222.0502789421921" y="-76.2">🔌 Il relè</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="337.4102789421921" y="-127.8">✅ Un interruttore</tspan><tspan x="337.4102789421921" y="-107.0">comandato da un altro</tspan><tspan x="337.4102789421921" y="-86.2">interruttore</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="337.4102789421921" y="-45.4">🔍 Relè e porta non sono la</tspan><tspan x="337.4102789421921" y="-24.6">stessa cosa</tspan></text>
+<rect x="168.6902789421921" y="46.19999999999999" width="181.6" height="57.6" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="259.4902789421921" y="64.6">🔀 Decisioni con gli</tspan><tspan x="259.4902789421921" y="85.4">interruttori</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="412.2902789421921" y="34.2">✅ In serie: AND</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="412.2902789421921" y="75.0">✅ In parallelo: OR</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="412.2902789421921" y="115.8">✅ Capovolgere: NOT</tspan></text>
+<rect x="168.6902789421921" y="176.6" width="184.928" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="261.1542789421921" y="195.0">📋 Tabelle di verità</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="415.6182789421921" y="174.6">✅ Falso è 0 e vero è 1</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="415.6182789421921" y="215.4">🔍 Tre ingressi</tspan></text>
+<rect x="-411.8582789421922" y="-216.00000000000003" width="243.1680000000001" height="57.6" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-290.27427894219215" y="-197.6">🧩 Notazione: nomi, simboli</tspan><tspan x="-290.27427894219215" y="-176.8">e scatole</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-473.8582789421922" y="-228.4">✅ Tre modi di scrivere la</tspan><tspan x="-473.8582789421922" y="-207.6">stessa cosa</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-473.8582789421922" y="-166.8">🔍 Precedenza: chi si calcola</tspan><tspan x="-473.8582789421922" y="-146.0">per primo</tspan></text>
+<rect x="-361.9382789421921" y="-64.40000000000002" width="193.248" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-265.3142789421921" y="-46.0">🏗️ Circuiti composti</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-423.9382789421921" y="-87.2">✅ Da una frase a un</tspan><tspan x="-423.9382789421921" y="-66.4">circuito</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-423.9382789421921" y="-25.6">🔍 Porte collegate in</tspan><tspan x="-423.9382789421921" y="-4.8">sequenza</tspan></text>
+<rect x="-303.69827894219213" y="39.599999999999966" width="135.008" height="36.8" rx="18" fill="#fce5f1" stroke="#ec4899" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6a2045" font-weight="600"><tspan x="-236.1942789421921" y="58.0">🎮 Nandgame</tspan></text>
+<rect x="-421.84227894219214" y="106.39999999999995" width="253.15200000000002" height="36.8" rx="18" fill="#e9ecef" stroke="#64748b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#2d343f" font-weight="600"><tspan x="-295.2662789421921" y="124.8">💭 Un paradosso per pensare</tspan></text>
+<rect x="-313.68227894219206" y="189.59999999999994" width="144.992" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="-241.18627894219208" y="208.0">🤓 Per curiosi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-375.68227894219206" y="187.6">🤓 Boole e i circuiti</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-375.68227894219206" y="228.4">🤓 I computer a relè</tspan></text>
 </svg>

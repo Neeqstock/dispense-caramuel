@@ -77,6 +77,7 @@ Di norma no: chiede al sistema operativo, che è l'unico a comandare l'hardware.
 ✏️ **Disegna (2 min).** Disegna i quattro livelli della tabella per il tuo telefono. Scrivi il nome del suo sistema operativo e di due programmi che usi.
 
 ### 🔍 Nascondere i dettagli
+#fatto👍 
 
 Un programma che salva una foto non sa se il disco è di una marca o di un'altra. Chiede al SO «salva questa foto» e il SO si occupa del resto. Nascondere i dettagli complicati dietro un'operazione semplice si chiama **astrazione**. Succede anche quando guidi: premi l'acceleratore senza conoscere il motore.
 

@@ -1,54 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-599 -253 1197 506" width="1197" height="506" role="img" aria-label="NAND" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>NAND</title>
-<rect x="-599" y="-253" width="1197" height="506" rx="14" fill="#ffffff"/>
-<path d="M258.192 -169.8 C285.192 -169.8 285.192 -210.6 312.192 -210.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M258.192 -169.8 C285.192 -169.8 285.192 -169.79999999999998 312.192 -169.79999999999998" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M258.192 -169.8 C285.192 -169.8 285.192 -128.99999999999997 312.192 -128.99999999999997" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M323.08799999999997 -49.8 C350.08799999999997 -49.8 350.08799999999997 -70.19999999999999 377.08799999999997 -70.19999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M323.08799999999997 -49.8 C350.08799999999997 -49.8 350.08799999999997 -29.4 377.08799999999997 -29.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M264.84799999999996 49.8 C291.84799999999996 49.8 291.84799999999996 29.4 318.84799999999996 29.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M264.84799999999996 49.8 C291.84799999999996 49.8 291.84799999999996 70.2 318.84799999999996 70.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M294.8 169.8 C321.8 169.8 321.8 129 348.8 129" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M294.8 169.8 C321.8 169.8 321.8 169.79999999999998 348.8 169.79999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M294.8 169.8 C321.8 169.8 321.8 210.6 348.8 210.6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-243.216 -80.6 C-270.216 -80.6 -270.216 -100.99999999999999 -297.216 -100.99999999999999" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-243.216 -80.6 C-270.216 -80.6 -270.216 -60.199999999999996 -297.216 -60.199999999999996" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-304.784 49.8 C-331.784 49.8 -331.784 -1.3999999999999968 -358.784 -1.3999999999999968" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-304.784 49.8 C-331.784 49.8 -331.784 49.8 -358.784 49.8" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-304.784 49.8 C-331.784 49.8 -331.784 101 -358.784 101" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M39.6 -50.2 C86.82382021732998 -50.2 86.82382021732998 -169.8 134 -169.8" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M60.0 -22.3 C96.99552065041269 -22.3 96.99552065041269 -49.8 134 -49.8" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M60.0 22.3 C96.99552065041269 22.3 96.99552065041269 49.8 134 49.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M39.6 50.2 C86.82382021732998 50.2 86.82382021732998 169.8 134 169.8" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-54.8 -33.0 C-94.42170068872167 -33.0 -94.42170068872167 -80.6 -134 -80.6" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-60.0 22.3 C-96.99552065041269 22.3 -96.99552065041269 49.8 -134 49.8" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-573 -237 1269 475" width="1269" height="475" role="img" aria-label="🧱 NAND" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧱 NAND</title>
+<rect x="-573" y="-237" width="1269" height="475" rx="14" fill="#ffffff"/>
+<path d="M305.616 -117.80000000000003 C332.616 -117.80000000000003 332.616 -117.80000000000003 359.616 -117.80000000000003" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M378.832 2.599999999999966 C405.832 2.599999999999966 405.832 -38.20000000000003 432.832 -38.20000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M378.832 2.599999999999966 C405.832 2.599999999999966 405.832 12.999999999999973 432.832 12.999999999999973" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M378.832 2.599999999999966 C405.832 2.599999999999966 405.832 53.79999999999997 432.832 53.79999999999997" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M345.552 153.79999999999995 C372.552 153.79999999999995 372.552 122.99999999999996 399.552 122.99999999999996" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M345.552 153.79999999999995 C372.552 153.79999999999995 372.552 184.59999999999997 399.552 184.59999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-278.99199999999996 66.8 C-305.99199999999996 66.8 -305.99199999999996 25.999999999999993 -332.99199999999996 25.999999999999993" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-278.99199999999996 66.8 C-305.99199999999996 66.8 -305.99199999999996 66.8 -332.99199999999996 66.8" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-278.99199999999996 66.8 C-305.99199999999996 66.8 -305.99199999999996 107.6 -332.99199999999996 107.6" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M36.8 -52.4 C85.37839938250374 -52.4 85.37839938250374 -191 134 -191" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M48.1 -42.3 C91.03350341732158 -42.3 91.03350341732158 -117.80000000000003 134 -117.80000000000003" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M64.0 1.2 C98.99397808699828 1.2 98.99397808699828 2.599999999999966 134 2.599999999999966" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M42.0 48.3 C88.02101211951417 48.3 88.02101211951417 153.79999999999995 134 153.79999999999995" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-50.6 -39.1 C-92.3161333260662 -39.1 -92.3161333260662 -103.6 -134 -103.6" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-61.7 -16.9 C-97.85751444271258 -16.9 -97.85751444271258 -36.800000000000004 -134 -36.800000000000004" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-57.3 28.6 C-95.6387474442419 28.6 -95.6387474442419 66.8 -134 66.8" fill="none" stroke="#ec4899" stroke-width="3.5" stroke-linecap="round"/>
 <circle cx="0" cy="0" r="64.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">NAND</tspan></text>
-<rect x="134" y="-188.20000000000002" width="124.19199999999998" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="196.096" y="-169.8">Porta NAND</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="320.192" y="-210.6">✅ AND capovolto</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="320.192" y="-169.8">✅ Tabella di NAND</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="320.192" y="-129.0">✅ Simbolo con il pallino</tspan></text>
-<rect x="134" y="-68.19999999999999" width="189.08799999999997" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="228.54399999999998" y="-49.8">NOT e AND con NAND</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="385.08799999999997" y="-70.2">✅ NOT con una NAND</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="385.08799999999997" y="-29.4">✅ AND con due NAND</tspan></text>
-<rect x="134" y="31.4" width="130.84799999999998" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="199.42399999999998" y="49.8">OR con NAND</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="326.84799999999996" y="29.4">🔍 OR con tre NAND</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="326.84799999999996" y="70.2">🔍 Non entrambi falsi</tspan></text>
-<rect x="134" y="151.4" width="160.8" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="214.4" y="169.8">Porta universale</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="356.8" y="129.0">✅ Un solo tipo di porta</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="356.8" y="169.8">🔍 Quante NAND servono</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="356.8" y="210.6">🔍 Errore tipico di lettura</tspan></text>
-<rect x="-243.216" y="-99" width="109.21600000000001" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-188.608" y="-80.6">Nandgame</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-305.216" y="-101.0">✅ Costruire dal basso</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-305.216" y="-60.2">✅ Prevedere e controllare</tspan></text>
-<rect x="-304.784" y="31.4" width="170.784" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-219.392" y="49.8">Storia e curiosità</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-366.784" y="-1.4">🤓 Sheffer</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-366.784" y="39.4">🤓 NOR come porta</tspan><tspan x="-366.784" y="60.2">universale</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-366.784" y="101.0">🤓 Il computer dell'Apollo</tspan></text>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧱 NAND</tspan></text>
+<rect x="134" y="-209.4" width="161.632" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="214.816" y="-191.0">📜 Un solo pezzo</tspan></text>
+<rect x="134" y="-136.20000000000002" width="171.61599999999999" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="219.808" y="-117.8">🔄 La porta NAND</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="367.616" y="-128.2">✅ L'AND con il risultato</tspan><tspan x="367.616" y="-107.4">capovolto</tspan></text>
+<rect x="134" y="-15.800000000000033" width="244.83200000000002" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="256.416" y="2.6">🧰 Costruire con sole NAND</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="440.832" y="-48.6">✅ NOT: basta unire gli</tspan><tspan x="440.832" y="-27.8">ingressi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="440.832" y="13.0">✅ AND: NAND, poi NOT</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="440.832" y="53.8">🔍 OR: il circuito meno ovvio</tspan></text>
+<rect x="134" y="135.39999999999995" width="211.552" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="239.776" y="153.8">🌐 Una porta per tutte</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="407.552" y="112.6">✅ Un solo tipo di porta</tspan><tspan x="407.552" y="133.4">basta</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="407.552" y="174.2">🔍 Un errore tipico: NAND</tspan><tspan x="407.552" y="195.0">non è «NOT A AND NOT B»</tspan></text>
+<rect x="-269.00800000000004" y="-122" width="135.008" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-201.50400000000002" y="-103.6">🎮 Nandgame</tspan></text>
+<rect x="-295.632" y="-55.2" width="161.632" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-214.816" y="-36.8">💭 Un pezzo solo</tspan></text>
+<rect x="-278.99199999999996" y="48.4" width="144.992" height="36.8" rx="18" fill="#fce5f1" stroke="#ec4899" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6a2045" font-weight="600"><tspan x="-206.49599999999998" y="66.8">🤓 Per curiosi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-340.99199999999996" y="26.0">🤓 Sheffer e la NAND</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-340.99199999999996" y="66.8">🤓 La NOR, la sorella</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-340.99199999999996" y="107.6">🤓 Il computer dell'Apollo</tspan></text>
 </svg>

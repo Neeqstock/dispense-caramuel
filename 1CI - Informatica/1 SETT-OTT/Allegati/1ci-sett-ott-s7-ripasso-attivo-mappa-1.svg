@@ -1,52 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-598 -235 1225 470" width="1225" height="470" role="img" aria-label="🧠 Ripasso attivo" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-113 -113 752 226" width="752" height="226" role="img" aria-label="🧠 Ripasso attivo" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
 <title>🧠 Ripasso attivo</title>
-<rect x="-598" y="-235" width="1225" height="470" rx="14" fill="#ffffff"/>
-<path d="M328.514346781431 -172.2 C355.514346781431 -172.2 355.514346781431 -192.6 382.514346781431 -192.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M328.514346781431 -172.2 C355.514346781431 -172.2 355.514346781431 -151.79999999999998 382.514346781431 -151.79999999999998" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M363.458346781431 49.80000000000001 C390.458346781431 49.80000000000001 390.458346781431 -93 417.458346781431 -93" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M363.458346781431 49.80000000000001 C390.458346781431 49.80000000000001 390.458346781431 -52.20000000000001 417.458346781431 -52.20000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M363.458346781431 49.80000000000001 C390.458346781431 49.80000000000001 390.458346781431 -11.400000000000011 417.458346781431 -11.400000000000011" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M363.458346781431 49.80000000000001 C390.458346781431 49.80000000000001 390.458346781431 29.399999999999984 417.458346781431 29.399999999999984" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M363.458346781431 49.80000000000001 C390.458346781431 49.80000000000001 390.458346781431 70.19999999999999 417.458346781431 70.19999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M363.458346781431 49.80000000000001 C390.458346781431 49.80000000000001 390.458346781431 110.99999999999999 417.458346781431 110.99999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M363.458346781431 49.80000000000001 C390.458346781431 49.80000000000001 390.458346781431 151.79999999999998 417.458346781431 151.79999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M363.458346781431 49.80000000000001 C390.458346781431 49.80000000000001 390.458346781431 192.6 417.458346781431 192.6" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-395.074346781431 -70.20000000000002 C-422.074346781431 -70.20000000000002 -422.074346781431 -131.4 -449.074346781431 -131.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-395.074346781431 -70.20000000000002 C-422.074346781431 -70.20000000000002 -422.074346781431 -90.60000000000001 -449.074346781431 -90.60000000000001" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-395.074346781431 -70.20000000000002 C-422.074346781431 -70.20000000000002 -422.074346781431 -49.80000000000002 -449.074346781431 -49.80000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-395.074346781431 -70.20000000000002 C-422.074346781431 -70.20000000000002 -422.074346781431 -9.00000000000002 -449.074346781431 -9.00000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-310.210346781431 90.59999999999998 C-337.210346781431 90.59999999999998 -337.210346781431 49.799999999999976 -364.210346781431 49.799999999999976" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-310.210346781431 90.59999999999998 C-337.210346781431 90.59999999999998 -337.210346781431 90.59999999999998 -364.210346781431 90.59999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-310.210346781431 90.59999999999998 C-337.210346781431 90.59999999999998 -337.210346781431 131.39999999999998 -364.210346781431 131.39999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M57.1 -63.3 C106.15238085208546 -63.3 106.15238085208546 -172.2 155.23434678143101 -172.2" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M81.2 26.0 C118.19730170600724 26.0 118.19730170600724 49.80000000000001 155.23434678143101 49.80000000000001" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-77.7 -35.1 C-116.44837158375822 -35.1 -116.44837158375822 -70.20000000000002 -155.23434678143101 -70.20000000000002" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-73.6 43.0 C-114.42417550069018 43.0 -114.42417550069018 90.59999999999998 -155.23434678143101 90.59999999999998" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="-113" y="-113" width="752" height="226" rx="14" fill="#ffffff"/>
+<path d="M336.834346781431 0 C363.834346781431 0 363.834346781431 -20.4 390.834346781431 -20.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M336.834346781431 0 C363.834346781431 0 363.834346781431 20.4 390.834346781431 20.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M85.2 0.0 C120.23434678143101 0.0 120.23434678143101 0 155.23434678143101 0" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
 <circle cx="0" cy="0" r="85.2" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
 <text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧠 Ripasso attivo</tspan></text>
-<rect x="155.23434678143101" y="-190.6" width="173.28" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="241.87434678143103" y="-172.2">🧠 Ripassare bene</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="390.514346781431" y="-192.6">Recupero</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="390.514346781431" y="-151.8">Giri brevi</tspan></text>
-<rect x="155.23434678143101" y="31.400000000000013" width="208.22399999999996" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="259.346346781431" y="49.8">🗺️ Mappa del bimestre</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="425.458346781431" y="-93.0">Dato e informazione</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="425.458346781431" y="-52.2">Hardware e software</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="425.458346781431" y="-11.4">Bit e byte</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="425.458346781431" y="29.4">Potenze di 2</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="425.458346781431" y="70.2">Multipli</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="425.458346781431" y="111.0">Binario e decimale</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="425.458346781431" y="151.8">Esadecimale e ottale</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="425.458346781431" y="192.6">Conversioni a gruppi</tspan></text>
-<rect x="-395.074346781431" y="-88.60000000000002" width="239.84" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-275.154346781431" y="-70.2">🔧 Metodo per conversione</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-457.074346781431" y="-131.4">Basi</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-457.074346781431" y="-90.6">Procedimento</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-457.074346781431" y="-49.8">Verso</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-457.074346781431" y="-9.0">Controllo</tspan></text>
-<rect x="-310.210346781431" y="72.19999999999999" width="154.976" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-232.72234678143099" y="90.6">🪲 Errori tipici</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-372.210346781431" y="49.8">Resti dall'alto</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-372.210346781431" y="90.6">Gruppi da sinistra</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-372.210346781431" y="131.4">Zeri saltati</tspan></text>
+<rect x="155.23434678143101" y="-28.8" width="181.6" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="246.034346781431" y="-10.4">🔧 Metodo per ogni</tspan><tspan x="246.034346781431" y="10.4">conversione</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="398.834346781431" y="-20.4">✅ Quattro mosse, sempre</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="398.834346781431" y="20.4">🔍 Errori tipici</tspan></text>
 </svg>

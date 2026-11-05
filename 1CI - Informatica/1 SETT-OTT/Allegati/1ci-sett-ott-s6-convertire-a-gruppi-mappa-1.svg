@@ -1,42 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-580 -166 1236 333" width="1236" height="333" role="img" aria-label="🔁 Convertire a gruppi" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-660 -146 1384 293" width="1384" height="293" role="img" aria-label="🔁 Convertire a gruppi" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
 <title>🔁 Convertire a gruppi</title>
-<rect x="-580" y="-166" width="1236" height="333" rx="14" fill="#ffffff"/>
-<path d="M399.97858418010026 -119.99999999999997 C426.97858418010026 -119.99999999999997 426.97858418010026 -119.99999999999997 453.97858418010026 -119.99999999999997" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M418.28258418010034 -16.399999999999977 C445.28258418010034 -16.399999999999977 445.28258418010034 -57.19999999999998 472.28258418010034 -57.19999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M418.28258418010034 -16.399999999999977 C445.28258418010034 -16.399999999999977 445.28258418010034 -16.399999999999984 472.28258418010034 -16.399999999999984" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M418.28258418010034 -16.399999999999977 C445.28258418010034 -16.399999999999977 445.28258418010034 24.400000000000013 472.28258418010034 24.400000000000013" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M418.28258418010034 103.60000000000002 C445.28258418010034 103.60000000000002 445.28258418010034 83.20000000000003 472.28258418010034 83.20000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M418.28258418010034 103.60000000000002 C445.28258418010034 103.60000000000002 445.28258418010034 124.00000000000003 472.28258418010034 124.00000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-361.70658418010026 -83.19999999999999 C-388.70658418010026 -83.19999999999999 -388.70658418010026 -83.19999999999999 -415.70658418010026 -83.19999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-305.1305841801003 0 C-332.1305841801003 0 -332.1305841801003 -20.4 -359.1305841801003 -20.4" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-305.1305841801003 0 C-332.1305841801003 0 -332.1305841801003 20.4 -359.1305841801003 20.4" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M85.1 -58.9 C129.2627378104281 -58.9 129.2627378104281 -119.99999999999997 173.4505841801003 -119.99999999999997" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M103.0 -9.7 C138.22091165393624 -9.7 138.22091165393624 -16.399999999999977 173.4505841801003 -16.399999999999977" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M88.8 53.0 C131.13240219598097 53.0 131.13240219598097 103.60000000000002 173.4505841801003 103.60000000000002" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-93.3 -44.7 C-133.36273746278147 -44.7 -133.36273746278147 -83.19999999999999 -173.4505841801003 -83.19999999999999" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-103.5 0.0 C-138.4505841801003 0.0 -138.4505841801003 0 -173.4505841801003 0" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-93.3 44.7 C-133.36273746278147 44.7 -133.36273746278147 83.19999999999999 -173.4505841801003 83.19999999999999" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="-660" y="-146" width="1384" height="293" rx="14" fill="#ffffff"/>
+<path d="M418.28258418010034 -26.800000000000008 C445.28258418010034 -26.800000000000008 445.28258418010034 -26.800000000000008 472.28258418010034 -26.800000000000008" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M418.28258418010034 73.19999999999999 C445.28258418010034 73.19999999999999 445.28258418010034 52.79999999999998 472.28258418010034 52.79999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M418.28258418010034 73.19999999999999 C445.28258418010034 73.19999999999999 445.28258418010034 104 472.28258418010034 104" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-361.70658418010026 0 C-388.70658418010026 0 -388.70658418010026 -51.199999999999996 -415.70658418010026 -51.199999999999996" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-361.70658418010026 0 C-388.70658418010026 0 -388.70658418010026 3.552713678800501e-15 -415.70658418010026 3.552713678800501e-15" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-361.70658418010026 0 C-388.70658418010026 0 -388.70658418010026 51.2 -415.70658418010026 51.2" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M89.6 -51.7 C131.5365571997776 -51.7 131.5365571997776 -100 173.4505841801003 -100" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M102.2 -15.8 C137.84398936380757 -15.8 137.84398936380757 -26.800000000000008 173.4505841801003 -26.800000000000008" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M95.3 40.2 C134.3806095162311 40.2 134.3806095162311 73.19999999999999 173.4505841801003 73.19999999999999" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-103.5 0.0 C-138.4505841801003 0.0 -138.4505841801003 0 -173.4505841801003 0" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
 <circle cx="0" cy="0" r="103.5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
 <text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🔁 Convertire a gruppi</tspan></text>
-<rect x="173.4505841801003" y="-138.39999999999998" width="226.528" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="286.71458418010025" y="-120.0">🗺️ Il binario come centro</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="461.97858418010026" y="-120.0">Percorsi fra le basi</tspan></text>
-<rect x="173.4505841801003" y="-34.799999999999976" width="244.83200000000002" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="295.8665841801003" y="-16.4">➡️ Da binario a esadecimale</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="480.28258418010034" y="-57.2">Gruppi da 4</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="480.28258418010034" y="-16.4">Da destra</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="480.28258418010034" y="24.4">Zeri a sinistra</tspan></text>
-<rect x="173.4505841801003" y="85.20000000000002" width="244.83200000000002" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="295.8665841801003" y="103.6">⬅️ Da esadecimale a binario</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="480.28258418010034" y="83.2">Espandere le cifre</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="480.28258418010034" y="124.0">Nibble completi</tspan></text>
-<rect x="-361.70658418010026" y="-101.6" width="188.25599999999997" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-267.5785841801003" y="-83.2">8️⃣ Binario e ottale</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-423.70658418010026" y="-83.2">Gruppi da 3</tspan></text>
-<rect x="-305.1305841801003" y="-18.4" width="131.68" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-239.2905841801003" y="0.0">✅ Controllo</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-367.1305841801003" y="-20.4">Via decimale</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-367.1305841801003" y="20.4">Esadecimale a decimale</tspan></text>
-<rect x="-396.6505841801003" y="64.79999999999998" width="223.20000000000002" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-285.05058418010026" y="83.2">🎩 Parole in esadecimale</tspan></text>
+<rect x="173.4505841801003" y="-118.4" width="211.552" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="279.2265841801003" y="-100.0">🗺️ Il binario è il centro</tspan></text>
+<rect x="173.4505841801003" y="-45.2" width="244.83200000000002" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="295.8665841801003" y="-26.8">➡️ Da binario a esadecimale</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="480.28258418010034" y="-37.2">✅ Raggruppa a quattro, da</tspan><tspan x="480.28258418010034" y="-16.4">destra</tspan></text>
+<rect x="173.4505841801003" y="54.79999999999999" width="244.83200000000002" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="295.8665841801003" y="73.2">⬅️ Da esadecimale a binario</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="480.28258418010034" y="42.4">✅ Espandi ogni cifra in 4</tspan><tspan x="480.28258418010034" y="63.2">bit</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="480.28258418010034" y="104.0">🔍 Controllo incrociato</tspan></text>
+<rect x="-361.70658418010026" y="-18.4" width="188.25599999999997" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-267.5785841801003" y="0.0">8️⃣ Binario e ottale</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-423.70658418010026" y="-51.2">✅ Gruppi da tre</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-423.70658418010026" y="-10.4">🔍 Da esadecimale a</tspan><tspan x="-423.70658418010026" y="10.4">decimale passando dai pesi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-423.70658418010026" y="51.2">🤓 Parole in esadecimale</tspan></text>
 </svg>

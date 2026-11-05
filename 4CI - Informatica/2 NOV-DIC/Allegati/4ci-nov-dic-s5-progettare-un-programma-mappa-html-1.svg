@@ -1,51 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-681 -295 1424 590" width="1424" height="590" role="img" aria-label="Progettare un programma" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>Progettare un programma</title>
-<rect x="-681" y="-295" width="1424" height="590" rx="14" fill="#ffffff"/>
-<path d="M329.13115351515955 -232.39999999999998 C356.13115351515955 -232.39999999999998 356.13115351515955 -252.79999999999998 383.13115351515955 -252.79999999999998" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M329.13115351515955 -232.39999999999998 C356.13115351515955 -232.39999999999998 356.13115351515955 -211.99999999999997 383.13115351515955 -211.99999999999997" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M427.30715351515954 -61.19999999999999 C454.30715351515954 -61.19999999999999 454.30715351515954 -153.2 481.30715351515954 -153.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M427.30715351515954 -61.19999999999999 C454.30715351515954 -61.19999999999999 454.30715351515954 -112.39999999999999 481.30715351515954 -112.39999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M427.30715351515954 -61.19999999999999 C454.30715351515954 -61.19999999999999 454.30715351515954 -61.2 481.30715351515954 -61.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M427.30715351515954 -61.19999999999999 C454.30715351515954 -61.19999999999999 454.30715351515954 -9.999999999999998 481.30715351515954 -9.999999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M427.30715351515954 -61.19999999999999 C454.30715351515954 -61.19999999999999 454.30715351515954 30.799999999999997 481.30715351515954 30.799999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M255.91515351515955 171.20000000000002 C282.91515351515955 171.20000000000002 282.91515351515955 89.60000000000002 309.91515351515955 89.60000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M255.91515351515955 171.20000000000002 C282.91515351515955 171.20000000000002 282.91515351515955 130.4 309.91515351515955 130.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M255.91515351515955 171.20000000000002 C282.91515351515955 171.20000000000002 282.91515351515955 171.20000000000002 309.91515351515955 171.20000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M255.91515351515955 171.20000000000002 C282.91515351515955 171.20000000000002 282.91515351515955 212.00000000000003 309.91515351515955 212.00000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M255.91515351515955 171.20000000000002 C282.91515351515955 171.20000000000002 282.91515351515955 252.80000000000004 309.91515351515955 252.80000000000004" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-372.3951535151595 -33.39999999999999 C-399.3951535151595 -33.39999999999999 -399.3951535151595 -64.19999999999999 -426.3951535151595 -64.19999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-372.3951535151595 -33.39999999999999 C-399.3951535151595 -33.39999999999999 -399.3951535151595 -12.999999999999996 -426.3951535151595 -12.999999999999996" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-367.40315351515954 60.20000000000001 C-394.40315351515954 60.20000000000001 -394.40315351515954 60.20000000000001 -421.40315351515954 60.20000000000001" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M71.6 -90.0 C128.28444608067568 -90.0 128.28444608067568 -232.39999999999998 184.97115351515953 -232.39999999999998" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M109.2 -36.1 C147.06150427915628 -36.1 147.06150427915628 -61.19999999999999 184.97115351515953 -61.19999999999999" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M84.4 78.1 C134.67414371582564 78.1 134.67414371582564 171.20000000000002 184.97115351515953 171.20000000000002" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-113.1 -20.4 C-149.05630504662506 -20.4 -149.05630504662506 -33.39999999999999 -184.97115351515953 -33.39999999999999" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-109.3 35.6 C-147.148984424612 35.6 -147.148984424612 60.20000000000001 -184.97115351515953 60.20000000000001" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<circle cx="0" cy="0" r="115.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Progettare un programma</tspan></text>
-<rect x="184.97115351515953" y="-250.79999999999998" width="144.16" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="257.0511535151595" y="-232.4">Scomposizione</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="391.13115351515955" y="-252.8">✅ Verbi e nomi</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="391.13115351515955" y="-212.0">✅ Una funzione, un compito</tspan></text>
-<rect x="184.97115351515953" y="-79.6" width="242.336" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="306.13915351515953" y="-61.2">Struttura di un programma</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="489.30715351515954" y="-153.2">✅ Costanti, funzioni e main</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="489.30715351515954" y="-112.4">✅ Ciclo principale e menu</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="489.30715351515954" y="-71.6">🔍 Calcolo separato da input</tspan><tspan x="489.30715351515954" y="-50.8">e output</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="489.30715351515954" y="-10.0">🔍 Moduli propri e __name__</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="489.30715351515954" y="30.8">🔍 Docstring e PEP 8</tspan></text>
-<rect x="184.97115351515953" y="152.8" width="70.944" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="220.44315351515954" y="171.2">Test</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="317.91515351515955" y="89.6">✅ Errori di logica</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="317.91515351515955" y="130.4">✅ assert</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="317.91515351515955" y="171.2">🔍 Casi limite</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="317.91515351515955" y="212.0">🔍 pytest</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="317.91515351515955" y="252.8">🔍 Rifattorizzazione</tspan></text>
-<rect x="-372.3951535151595" y="-51.79999999999999" width="187.42399999999998" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-278.6831535151595" y="-33.4">Storia del software</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-434.3951535151595" y="-64.2">🤓 Colossal Cave Adventure</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-434.3951535151595" y="-23.4">🤓 Crisi del software e</tspan><tspan x="-434.3951535151595" y="-2.6">Ariane 5</tspan></text>
-<rect x="-367.40315351515954" y="41.80000000000001" width="182.43200000000002" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-276.18715351515954" y="60.2">Limite dei dizionari</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-429.40315351515954" y="60.2">✅ Verso le classi</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-580 -329 1321 659" width="1321" height="659" role="img" aria-label="🏰 Progettare un programma" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🏰 Progettare un programma</title>
+<rect x="-580" y="-329" width="1321" height="659" rx="14" fill="#ffffff"/>
+<path d="M428.8251722891306 -189.39999999999998 C455.8251722891306 -189.39999999999998 455.8251722891306 -209.79999999999995 482.8251722891306 -209.79999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M428.8251722891306 -189.39999999999998 C455.8251722891306 -189.39999999999998 455.8251722891306 -158.59999999999997 482.8251722891306 -158.59999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M368.9211722891306 -38.19999999999996 C395.9211722891306 -38.19999999999996 395.9211722891306 -99.79999999999995 422.9211722891306 -99.79999999999995" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M368.9211722891306 -38.19999999999996 C395.9211722891306 -38.19999999999996 395.9211722891306 -48.599999999999966 422.9211722891306 -48.599999999999966" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M368.9211722891306 -38.19999999999996 C395.9211722891306 -38.19999999999996 395.9211722891306 13.000000000000039 422.9211722891306 13.000000000000039" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.85717228913063 184.60000000000005 C435.85717228913063 184.60000000000005 435.85717228913063 92.60000000000004 462.85717228913063 92.60000000000004" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.85717228913063 184.60000000000005 C435.85717228913063 184.60000000000005 435.85717228913063 154.20000000000005 462.85717228913063 154.20000000000005" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.85717228913063 184.60000000000005 C435.85717228913063 184.60000000000005 435.85717228913063 205.40000000000003 462.85717228913063 205.40000000000003" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.85717228913063 184.60000000000005 C435.85717228913063 184.60000000000005 435.85717228913063 246.20000000000002 462.85717228913063 246.20000000000002" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.85717228913063 184.60000000000005 C435.85717228913063 184.60000000000005 435.85717228913063 287 462.85717228913063 287" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-377.2411722891306 -33.4 C-404.2411722891306 -33.4 -404.2411722891306 -33.4 -431.2411722891306 -33.4" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M72.8 -104.4 C135.05645956933637 -104.4 135.05645956933637 -283 197.3051722891306 -283" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M91.8 -88.2 C144.57226220318876 -88.2 144.57226220318876 -189.39999999999998 197.3051722891306 -189.39999999999998" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M125.0 -24.2 C161.14470927152712 -24.2 161.14470927152712 -38.19999999999996 197.3051722891306 -38.19999999999996" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M93.0 87.0 C145.1334066774179 87.0 145.1334066774179 184.60000000000005 197.3051722891306 184.60000000000005" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-125.5 -21.2 C-161.41230156002584 -21.2 -161.41230156002584 -33.4 -197.3051722891306 -33.4" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-125.5 21.2 C-161.41230156002584 21.2 -161.41230156002584 33.4 -197.3051722891306 33.4" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="127.3" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🏰 Progettare un programma</tspan></text>
+<rect x="197.3051722891306" y="-301.4" width="251.48800000000003" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="323.04917228913064" y="-283.0">📜 Una caverna nel Kentucky</tspan></text>
+<rect x="197.3051722891306" y="-207.79999999999998" width="231.52" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="313.0651722891306" y="-189.4">🧩 Scomporre il problema</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="490.8251722891306" y="-220.2">✅ Dai verbi alle funzioni,</tspan><tspan x="490.8251722891306" y="-199.4">dai nomi ai dati</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="490.8251722891306" y="-158.6">✅ Una funzione, un compito</tspan></text>
+<rect x="197.3051722891306" y="-66.99999999999996" width="171.61599999999999" height="57.6" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="283.1131722891306" y="-48.6">🏗️ La forma di un</tspan><tspan x="283.1131722891306" y="-27.8">programma</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="430.9211722891306" y="-99.8">✅ Costanti, funzioni, main</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="430.9211722891306" y="-59.0">✅ Il ciclo principale e il</tspan><tspan x="430.9211722891306" y="-38.2">menu</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="430.9211722891306" y="2.6">🔍 Funzioni che calcolano e</tspan><tspan x="430.9211722891306" y="23.4">funzioni che parlano</tspan></text>
+<rect x="197.3051722891306" y="166.20000000000005" width="211.55200000000002" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="303.0811722891306" y="184.6">✔️ Sapere che funziona</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.85717228913063" y="82.2">✅ «Non dà errori» non vuol</tspan><tspan x="470.85717228913063" y="103.0">dire «funziona»</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.85717228913063" y="143.8">✅ assert: scrivere che cosa</tspan><tspan x="470.85717228913063" y="164.6">ti aspetti</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.85717228913063" y="205.4">🔍 I casi limite</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.85717228913063" y="246.2">🔍 Moduli propri e __name__</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.85717228913063" y="287.0">🔍 Docstring e nomi chiari</tspan></text>
+<rect x="-377.2411722891306" y="-51.8" width="179.93599999999998" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-287.27317228913057" y="-33.4">🛠️ assert e pytest</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-439.2411722891306" y="-33.4">🤓 37 secondi</tspan></text>
+<rect x="-415.5131722891306" y="15" width="218.208" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-306.4091722891306" y="33.4">🚪 Il limite dei dizionari</tspan></text>
 </svg>

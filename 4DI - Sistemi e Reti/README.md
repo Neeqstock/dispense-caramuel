@@ -26,6 +26,10 @@ Lungo la strada incontreremo un primo messaggio che si ferma a «LO», un cavo c
 
 - [Eserciziario](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20-%20Eserciziario.md) — Otto dossier con casi reali di sicurezza informatica: un esercizio svolto per ogni argomento, gli altri da provare con la soluzione nascosta. Prima prova tu, poi apri la flashcard.
 
+### 📝 Verifica di allenamento
+
+- [Allenamento verifica — il tecnico di rete](1%20SETT-OTT/Verifica/4DI%20sett-ott%20Verifica%20-%20allenamento.md) — Cinque richieste con la stessa struttura della verifica vera, 35 minuti e 10 punti. Non conta per il voto: ogni soluzione è nascosta sotto il suo esercizio, aprila solo dopo aver provato.
+
 ## Extra facoltativo
 
 - [Giochiamo con le reti](1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20SX%20-%20Extra%20-%20Giochiamo%20e%20smancciamo%20con%20le%20reti.md) — Comandi di sola osservazione, una sfida CIDR e wargame facoltativi da usare esclusivamente nei loro ambienti autorizzati. `tracert` è solo un assaggio.

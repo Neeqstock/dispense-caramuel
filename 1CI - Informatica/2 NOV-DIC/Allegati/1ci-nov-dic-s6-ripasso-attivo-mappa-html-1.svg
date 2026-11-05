@@ -1,49 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-687 -214 1299 428" width="1299" height="428" role="img" aria-label="Ripasso del bimestre" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>Ripasso del bimestre</title>
-<rect x="-687" y="-214" width="1299" height="428" rx="14" fill="#ffffff"/>
-<path d="M313.4037427678871 -90.6 C340.4037427678871 -90.6 340.4037427678871 -141.79999999999998 367.4037427678871 -141.79999999999998" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M313.4037427678871 -90.6 C340.4037427678871 -90.6 340.4037427678871 -80.2 367.4037427678871 -80.2" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M313.4037427678871 -90.6 C340.4037427678871 -90.6 340.4037427678871 -29 367.4037427678871 -29" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M348.3477427678871 91 C375.3477427678871 91 375.3477427678871 29.800000000000004 402.3477427678871 29.800000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M348.3477427678871 91 C375.3477427678871 91 375.3477427678871 70.60000000000001 402.3477427678871 70.60000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M348.3477427678871 91 C375.3477427678871 91 375.3477427678871 111.4 402.3477427678871 111.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M348.3477427678871 91 C375.3477427678871 91 375.3477427678871 152.20000000000002 402.3477427678871 152.20000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-310.07574276788705 -130.4 C-337.07574276788705 -130.4 -337.07574276788705 -161.2 -364.07574276788705 -161.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-310.07574276788705 -130.4 C-337.07574276788705 -130.4 -337.07574276788705 -99.60000000000001 -364.07574276788705 -99.60000000000001" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-358.33174276788714 -10.000000000000014 C-385.33174276788714 -10.000000000000014 -385.33174276788714 -30.400000000000013 -412.33174276788714 -30.400000000000013" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-358.33174276788714 -10.000000000000014 C-385.33174276788714 -10.000000000000014 -385.33174276788714 10.399999999999986 -412.33174276788714 10.399999999999986" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-386.61974276788715 120.39999999999998 C-413.61974276788715 120.39999999999998 -413.61974276788715 79.59999999999998 -440.61974276788715 79.59999999999998" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-386.61974276788715 120.39999999999998 C-413.61974276788715 120.39999999999998 -413.61974276788715 130.79999999999998 -440.61974276788715 130.79999999999998" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-386.61974276788715 120.39999999999998 C-413.61974276788715 120.39999999999998 -413.61974276788715 171.6 -440.61974276788715 171.6" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M84.2 -46.0 C125.0491513239583 -46.0 125.0491513239583 -90.6 165.91574276788708 -90.6" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M84.1 46.1 C125.00643776256038 46.1 125.00643776256038 91 165.91574276788708 91" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-75.4 -59.3 C-120.66387020020134 -59.3 -120.66387020020134 -130.4 -165.91574276788708 -130.4" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-95.7 -5.8 C-130.8288720433079 -5.8 -130.8288720433079 -10.000000000000014 -165.91574276788708 -10.000000000000014" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-77.6 56.3 C-121.77271131303942 56.3 -121.77271131303942 120.39999999999998 -165.91574276788708 120.39999999999998" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<circle cx="0" cy="0" r="95.9" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Ripasso del bimestre</tspan></text>
-<rect x="165.91574276788708" y="-109" width="147.488" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="239.65974276788708" y="-90.6">Ripassare bene</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.4037427678871" y="-152.2">✅ Chiudere il quaderno e</tspan><tspan x="375.4037427678871" y="-131.4">ricordare</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.4037427678871" y="-90.6">✅ Autovalutazione a</tspan><tspan x="375.4037427678871" y="-69.8">semaforo</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.4037427678871" y="-29.0">🔍 Ripasso distribuito</tspan></text>
-<rect x="165.91574276788708" y="72.6" width="182.432" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="257.1317427678871" y="91.0">Mappa del bimestre</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="410.3477427678871" y="29.8">✅ Sistema operativo</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="410.3477427678871" y="70.6">✅ Boot</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="410.3477427678871" y="111.4">✅ Relè e porte</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="410.3477427678871" y="152.2">✅ NAND e somma</tspan></text>
-<rect x="-310.07574276788705" y="-148.8" width="144.16" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-237.99574276788707" y="-130.4">Trova l'errore</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-372.07574276788705" y="-171.6">✅ Errori in tabelle e</tspan><tspan x="-372.07574276788705" y="-150.8">sequenze</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-372.07574276788705" y="-110.0">🔍 Problemi che uniscono più</tspan><tspan x="-372.07574276788705" y="-89.2">argomenti</tspan></text>
-<rect x="-358.33174276788714" y="-28.400000000000013" width="192.41600000000003" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-262.1237427678871" y="-10.0">Allenamento a coppie</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-420.33174276788714" y="-30.4">✅ Duello di flashcard</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-420.33174276788714" y="10.4">🔍 Costruisci tu l'esercizio</tspan></text>
-<rect x="-386.61974276788715" y="101.99999999999997" width="220.70400000000004" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-276.2677427678871" y="120.4">Assaggio di Flowgorithm</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-448.61974276788715" y="69.2">🤓 Forme di un diagramma</tspan><tspan x="-448.61974276788715" y="90.0">di flusso</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-448.61974276788715" y="130.8">🤓 Decisioni in fila e AND</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-448.61974276788715" y="171.6">🤓 Flowgorithm</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-624 -123 1310 247" width="1310" height="247" role="img" aria-label="🧠 Ripasso attivo" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧠 Ripasso attivo</title>
+<rect x="-624" y="-123" width="1310" height="247" rx="14" fill="#ffffff"/>
+<path d="M378.43434678143103 -70.60000000000001 C405.43434678143103 -70.60000000000001 405.43434678143103 -70.60000000000001 432.43434678143103 -70.60000000000001" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M325.18634678143104 39.79999999999999 C352.18634678143104 39.79999999999999 352.18634678143104 8.99999999999999 379.18634678143104 8.99999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M325.18634678143104 39.79999999999999 C352.18634678143104 39.79999999999999 352.18634678143104 70.6 379.18634678143104 70.6" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-321.858346781431 0 C-348.858346781431 0 -348.858346781431 0 -375.858346781431 0" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M77.6 -35.3 C116.41075332797507 -35.3 116.41075332797507 -70.60000000000001 155.23434678143101 -70.60000000000001" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M82.6 21.2 C118.89912468310538 21.2 118.89912468310538 39.79999999999999 155.23434678143101 39.79999999999999" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-85.2 0.0 C-120.23434678143101 0.0 -120.23434678143101 0 -155.23434678143101 0" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="85.2" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧠 Ripasso attivo</tspan></text>
+<rect x="155.23434678143101" y="-89" width="223.2" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="266.834346781431" y="-70.6">🗺️ La scala del bimestre</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="440.43434678143103" y="-81.0">✅ Che cosa devi saper dire</tspan><tspan x="440.43434678143103" y="-60.2">a voce</tspan></text>
+<rect x="155.23434678143101" y="21.39999999999999" width="169.95200000000003" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="240.21034678143104" y="39.8">🔎 Trova l'errore</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="387.18634678143104" y="-1.4">✅ Errori in tabelle e</tspan><tspan x="387.18634678143104" y="19.4">sequenze</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="387.18634678143104" y="60.2">🔍 Problemi che uniscono più</tspan><tspan x="387.18634678143104" y="81.0">argomenti</tspan></text>
+<rect x="-321.858346781431" y="-28.8" width="166.624" height="57.6" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-238.546346781431" y="-10.4">🛠️ Un assaggio di</tspan><tspan x="-238.546346781431" y="10.4">Flowgorithm</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-383.858346781431" y="0.0">🤓 Disegnare una decisione</tspan></text>
 </svg>

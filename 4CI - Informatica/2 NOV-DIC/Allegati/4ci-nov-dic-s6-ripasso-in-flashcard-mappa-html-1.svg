@@ -1,58 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-622 -224 1297 448" width="1297" height="448" role="img" aria-label="Ripasso Python" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>Ripasso Python</title>
-<rect x="-622" y="-224" width="1297" height="448" rx="14" fill="#ffffff"/>
-<path d="M361.0971965781471 -140.40000000000003 C388.0971965781471 -140.40000000000003 388.0971965781471 -181.20000000000002 415.0971965781471 -181.20000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M361.0971965781471 -140.40000000000003 C388.0971965781471 -140.40000000000003 388.0971965781471 -140.4 415.0971965781471 -140.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M361.0971965781471 -140.40000000000003 C388.0971965781471 -140.40000000000003 388.0971965781471 -99.60000000000001 415.0971965781471 -99.60000000000001" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M367.75319657814714 -1.4210854715202004e-14 C394.75319657814714 -1.4210854715202004e-14 394.75319657814714 -40.80000000000002 421.75319657814714 -40.80000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M367.75319657814714 -1.4210854715202004e-14 C394.75319657814714 -1.4210854715202004e-14 394.75319657814714 -1.9539925233402755e-14 421.75319657814714 -1.9539925233402755e-14" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M367.75319657814714 -1.4210854715202004e-14 C394.75319657814714 -1.4210854715202004e-14 394.75319657814714 40.799999999999976 421.75319657814714 40.799999999999976" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M296.2011965781471 140.39999999999998 C323.2011965781471 140.39999999999998 323.2011965781471 99.6 350.2011965781471 99.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M296.2011965781471 140.39999999999998 C323.2011965781471 140.39999999999998 323.2011965781471 140.39999999999998 350.2011965781471 140.39999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M296.2011965781471 140.39999999999998 C323.2011965781471 140.39999999999998 323.2011965781471 181.2 350.2011965781471 181.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-247.94519657814712 -161.2 C-274.94519657814715 -161.2 -274.94519657814715 -181.6 -301.94519657814715 -181.6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-247.94519657814712 -161.2 C-274.94519657814715 -161.2 -274.94519657814715 -140.79999999999998 -301.94519657814715 -140.79999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-342.7931965781471 -61.60000000000001 C-369.7931965781471 -61.60000000000001 -369.7931965781471 -82 -396.7931965781471 -82" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-342.7931965781471 -61.60000000000001 C-369.7931965781471 -61.60000000000001 -369.7931965781471 -41.20000000000001 -396.7931965781471 -41.20000000000001" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-307.84919657814714 99.6 C-334.84919657814714 99.6 -334.84919657814714 17.599999999999987 -361.84919657814714 17.599999999999987" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-307.84919657814714 99.6 C-334.84919657814714 99.6 -334.84919657814714 68.79999999999998 -361.84919657814714 68.79999999999998" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-307.84919657814714 99.6 C-334.84919657814714 99.6 -334.84919657814714 120 -361.84919657814714 120" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-307.84919657814714 99.6 C-334.84919657814714 99.6 -334.84919657814714 171.2 -361.84919657814714 171.2" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M54.2 -52.4 C99.80609108528157 -52.4 99.80609108528157 -140.40000000000003 145.38519657814712 -140.40000000000003" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M75.4 -0.0 C110.38519657814712 -0.0 110.38519657814712 -1.4210854715202004e-14 145.38519657814712 -1.4210854715202004e-14" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M54.2 52.4 C99.80609108528157 52.4 99.80609108528157 140.39999999999998 145.38519657814712 140.39999999999998" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-50.5 -56.0 C-97.93688159023617 -56.0 -97.93688159023617 -161.2 -145.38519657814712 -161.2" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-69.4 -29.4 C-107.3984571833872 -29.4 -107.3984571833872 -61.60000000000001 -145.38519657814712 -61.60000000000001" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-62.2 42.6 C-103.78801673453631 42.6 -103.78801673453631 99.6 -145.38519657814712 99.6" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
-<circle cx="0" cy="0" r="75.4" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Ripasso Python</tspan></text>
-<rect x="145.38519657814712" y="-158.80000000000004" width="215.712" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="253.24119657814708" y="-140.4">Ambiente, tipi ed errori</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="423.0971965781471" y="-181.2">✅ REPL, script e tipi</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="423.0971965781471" y="-140.4">✅ Input, output e operatori</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="423.0971965781471" y="-99.6">✅ Errori e traceback</tspan></text>
-<rect x="145.38519657814712" y="-18.400000000000013" width="222.368" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="256.5691965781471" y="-0.0">Decisioni, cicli e funzioni</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="429.75319657814714" y="-40.8">✅ Blocchi, decisioni e cicli</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="429.75319657814714" y="-0.0">✅ Funzioni e moduli</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="429.75319657814714" y="40.8">🔍 Ambito e import</tspan></text>
-<rect x="145.38519657814712" y="121.99999999999997" width="150.81599999999997" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="220.7931965781471" y="140.4">Liste e matrici</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="358.2011965781471" y="99.6">✅ Liste</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="358.2011965781471" y="140.4">✅ Matrici</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="358.2011965781471" y="181.2">🔍 Slicing, copie e tuple</tspan></text>
-<rect x="-247.94519657814712" y="-179.6" width="102.56" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-196.66519657814712" y="-161.2">Dizionari</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-309.94519657814715" y="-181.6">✅ Chiavi e valori</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-309.94519657814715" y="-140.8">🔍 Scelte e frecce</tspan></text>
-<rect x="-342.7931965781471" y="-80" width="197.408" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-244.0891965781471" y="-61.6">Progettare e provare</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-404.7931965781471" y="-82.0">✅ Struttura e test</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-404.7931965781471" y="-41.2">🔍 Buone abitudini</tspan></text>
-<rect x="-307.84919657814714" y="81.19999999999999" width="162.464" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-226.61719657814712" y="99.6">Verso la verifica</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-369.84919657814714" y="17.6">✅ Trappole da verifica</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-369.84919657814714" y="58.4">✅ Quiz a difficoltà</tspan><tspan x="-369.84919657814714" y="79.2">crescente</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-369.84919657814714" y="120.0">✅ Che cosa devo saper fare</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-369.84919657814714" y="160.8">🔍 Documentazione e</tspan><tspan x="-369.84919657814714" y="181.6">ricerca</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-725 -284 1460 568" width="1460" height="568" role="img" aria-label="🧠 Ripasso Python in flashcard" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧠 Ripasso Python in flashcard</title>
+<rect x="-725" y="-284" width="1460" height="568" rx="14" fill="#ffffff"/>
+<path d="M421.08811339469855 -106.99999999999997 C448.08811339469855 -106.99999999999997 448.08811339469855 -168.19999999999996 475.08811339469855 -168.19999999999996" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M421.08811339469855 -106.99999999999997 C448.08811339469855 -106.99999999999997 448.08811339469855 -127.39999999999995 475.08811339469855 -127.39999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M421.08811339469855 -106.99999999999997 C448.08811339469855 -106.99999999999997 448.08811339469855 -86.59999999999995 475.08811339469855 -86.59999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M421.08811339469855 -106.99999999999997 C448.08811339469855 -106.99999999999997 448.08811339469855 -45.79999999999996 475.08811339469855 -45.79999999999996" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M414.43211339469855 53.800000000000026 C441.43211339469855 53.800000000000026 441.43211339469855 13.000000000000023 468.43211339469855 13.000000000000023" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M414.43211339469855 53.800000000000026 C441.43211339469855 53.800000000000026 441.43211339469855 53.80000000000002 468.43211339469855 53.80000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M414.43211339469855 53.800000000000026 C441.43211339469855 53.800000000000026 441.43211339469855 94.60000000000002 468.43211339469855 94.60000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M407.77611339469854 194.20000000000005 C434.77611339469854 194.20000000000005 434.77611339469854 153.40000000000003 461.77611339469854 153.40000000000003" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M407.77611339469854 194.20000000000005 C434.77611339469854 194.20000000000005 434.77611339469854 194.20000000000002 461.77611339469854 194.20000000000002" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M407.77611339469854 194.20000000000005 C434.77611339469854 194.20000000000005 434.77611339469854 235.00000000000003 461.77611339469854 235.00000000000003" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-359.5201133946985 -221 C-386.5201133946985 -221 -386.5201133946985 -241.4 -413.5201133946985 -241.4" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-359.5201133946985 -221 C-386.5201133946985 -221 -386.5201133946985 -200.6 -413.5201133946985 -200.6" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-454.3681133946985 -121.40000000000002 C-481.3681133946985 -121.40000000000002 -481.3681133946985 -141.8 -508.3681133946985 -141.8" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-454.3681133946985 -121.40000000000002 C-481.3681133946985 -121.40000000000002 -481.3681133946985 -101.00000000000001 -508.3681133946985 -101.00000000000001" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-416.0961133946986 -31.800000000000022 C-443.0961133946986 -31.800000000000022 -443.0961133946986 -31.800000000000022 -470.0961133946986 -31.800000000000022" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M87.7 -99.8 C145.28348816296133 -99.8 145.28348816296133 -230.99999999999997 202.88011339469853 -230.99999999999997" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M117.5 -62.0 C160.20766886184896 -62.0 160.20766886184896 -106.99999999999997 202.88011339469853 -106.99999999999997" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M128.4 34.1 C165.66044880584658 34.1 165.66044880584658 53.800000000000026 202.88011339469853 53.800000000000026" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M96.0 91.9 C149.4357858864127 91.9 149.4357858864127 194.20000000000005 202.88011339469853 194.20000000000005" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-89.9 -97.9 C-146.37094289953333 -97.9 -146.37094289953333 -221 -202.88011339469853 -221" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-114.0 -68.2 C-158.45256803996793 -68.2 -158.45256803996793 -121.40000000000002 -202.88011339469853 -121.40000000000002" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-131.3 -20.6 C-167.07869077390674 -20.6 -167.07869077390674 -31.800000000000022 -202.88011339469853 -31.800000000000022" fill="none" stroke="#ec4899" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-128.7 32.9 C-165.81494179919054 32.9 -165.81494179919054 51.79999999999997 -202.88011339469853 51.79999999999997" fill="none" stroke="#64748b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-109.5 75.3 C-156.1995371966449 75.3 -156.1995371966449 139.39999999999998 -202.88011339469853 139.39999999999998" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-88.5 99.1 C-145.71464968915993 99.1 -145.71464968915993 226.99999999999997 -202.88011339469853 226.99999999999997" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="132.9" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧠 Ripasso Python in flashcard</tspan></text>
+<rect x="202.88011339469853" y="-249.39999999999998" width="209.888" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="307.82411339469854" y="-231.0">🧭 Il diario del dungeon</tspan></text>
+<rect x="202.88011339469853" y="-135.79999999999998" width="218.20800000000003" height="57.6" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="311.9841133946985" y="-117.4">🐍 A - Ambiente, tipi ed</tspan><tspan x="311.9841133946985" y="-96.6">errori</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="483.08811339469855" y="-168.2">✅ REPL, script e tipi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="483.08811339469855" y="-127.4">✅ Input, output e operatori</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="483.08811339469855" y="-86.6">✅ Errori e traceback</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="483.08811339469855" y="-45.8">🔍 Python e Java</tspan></text>
+<rect x="202.88011339469853" y="25.000000000000025" width="211.55200000000002" height="57.6" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="308.65611339469854" y="43.4">🎲 B - Decisioni, cicli e</tspan><tspan x="308.65611339469854" y="64.2">funzioni</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="476.43211339469855" y="13.0">✅ Blocchi, decisioni e cicli</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="476.43211339469855" y="53.8">✅ Funzioni e moduli</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="476.43211339469855" y="94.6">🔍 Ambito e import</tspan></text>
+<rect x="202.88011339469853" y="175.80000000000004" width="204.89600000000002" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="305.32811339469856" y="194.2">🎒 C - Liste e matrici</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.77611339469854" y="153.4">✅ Liste</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.77611339469854" y="194.2">✅ Matrici</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="469.77611339469854" y="235.0">🔍 Slicing, copie e tuple</tspan></text>
+<rect x="-359.5201133946985" y="-239.4" width="156.64" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-281.2001133946985" y="-221.0">📇 D - Dizionari</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-421.5201133946985" y="-241.4">✅ Chiavi e valori</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-421.5201133946985" y="-200.6">🔍 Scelte e frecce</tspan></text>
+<rect x="-454.3681133946985" y="-139.8" width="251.48800000000003" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-328.6241133946985" y="-121.4">🏰 E - Progettare e provare</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-516.3681133946985" y="-141.8">✅ Struttura e test</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-516.3681133946985" y="-101.0">🔍 Buone abitudini</tspan></text>
+<rect x="-416.0961133946986" y="-50.20000000000002" width="213.21600000000004" height="36.8" rx="18" fill="#fce5f1" stroke="#ec4899" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6a2045" font-weight="600"><tspan x="-309.48811339469853" y="-31.8">⚠️ Trappole da verifica</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-478.0961133946986" y="-42.2">🤓 Domande per chi vuole di</tspan><tspan x="-478.0961133946986" y="-21.4">più</tspan></text>
+<rect x="-387.8081133946985" y="22.999999999999968" width="184.928" height="57.6" rx="18" fill="#e9ecef" stroke="#64748b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#2d343f" font-weight="600"><tspan x="-295.3441133946985" y="41.4">🧩 Quiz a difficoltà</tspan><tspan x="-295.3441133946985" y="62.2">crescente</tspan></text>
+<rect x="-452.70411339469854" y="110.59999999999998" width="249.824" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="-327.7921133946985" y="129.0">✅ Che cosa devo saper fare</tspan><tspan x="-327.7921133946985" y="149.8">per la verifica</tspan></text>
+<rect x="-397.7921133946985" y="198.19999999999996" width="194.912" height="57.6" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="-300.3361133946985" y="216.6">🛠️ Documentazione e</tspan><tspan x="-300.3361133946985" y="237.4">ricerca</tspan></text>
 </svg>

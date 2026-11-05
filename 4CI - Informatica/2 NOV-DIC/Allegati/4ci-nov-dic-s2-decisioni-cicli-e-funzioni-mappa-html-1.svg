@@ -1,69 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-598 -409 1193 818" width="1193" height="818" role="img" aria-label="Decisioni, cicli e funzioni" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
-<title>Decisioni, cicli e funzioni</title>
-<rect x="-598" y="-409" width="1193" height="818" rx="14" fill="#ffffff"/>
-<path d="M341.00155209307655 -346.4 C368.00155209307655 -346.4 368.00155209307655 -366.8 395.00155209307655 -366.8" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M341.00155209307655 -346.4 C368.00155209307655 -346.4 368.00155209307655 -326 395.00155209307655 -326" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M309.3855520930765 -263.20000000000005 C336.3855520930765 -263.20000000000005 336.3855520930765 -263.20000000000005 363.3855520930765 -263.20000000000005" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M282.76155209307655 -149.20000000000002 C309.76155209307655 -149.20000000000002 309.76155209307655 -200.4 336.76155209307655 -200.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M282.76155209307655 -149.20000000000002 C309.76155209307655 -149.20000000000002 309.76155209307655 -159.6 336.76155209307655 -159.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M282.76155209307655 -149.20000000000002 C309.76155209307655 -149.20000000000002 309.76155209307655 -108.39999999999999 336.76155209307655 -108.39999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M249.48155209307654 21.99999999999997 C276.4815520930765 21.99999999999997 276.4815520930765 -39.200000000000024 303.4815520930765 -39.200000000000024" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M249.48155209307654 21.99999999999997 C276.4815520930765 21.99999999999997 276.4815520930765 1.5999999999999748 303.4815520930765 1.5999999999999748" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M249.48155209307654 21.99999999999997 C276.4815520930765 21.99999999999997 276.4815520930765 42.39999999999997 303.4815520930765 42.39999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M249.48155209307654 21.99999999999997 C276.4815520930765 21.99999999999997 276.4815520930765 83.19999999999997 303.4815520930765 83.19999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M277.7695520930765 254.39999999999998 C304.7695520930765 254.39999999999998 304.7695520930765 141.99999999999997 331.7695520930765 141.99999999999997" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M277.7695520930765 254.39999999999998 C304.7695520930765 254.39999999999998 304.7695520930765 182.79999999999998 331.7695520930765 182.79999999999998" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M277.7695520930765 254.39999999999998 C304.7695520930765 254.39999999999998 304.7695520930765 223.6 331.7695520930765 223.6" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M277.7695520930765 254.39999999999998 C304.7695520930765 254.39999999999998 304.7695520930765 264.4 331.7695520930765 264.4" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M277.7695520930765 254.39999999999998 C304.7695520930765 254.39999999999998 304.7695520930765 305.2 331.7695520930765 305.2" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M277.7695520930765 254.39999999999998 C304.7695520930765 254.39999999999998 304.7695520930765 356.40000000000003 331.7695520930765 356.40000000000003" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-264.4575520930765 -39.79999999999998 C-291.4575520930765 -39.79999999999998 -291.4575520930765 -121.79999999999998 -318.4575520930765 -121.79999999999998" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-264.4575520930765 -39.79999999999998 C-291.4575520930765 -39.79999999999998 -291.4575520930765 -70.6 -318.4575520930765 -70.6" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-264.4575520930765 -39.79999999999998 C-291.4575520930765 -39.79999999999998 -291.4575520930765 -8.99999999999999 -318.4575520930765 -8.99999999999999" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-264.4575520930765 -39.79999999999998 C-291.4575520930765 -39.79999999999998 -291.4575520930765 42.20000000000001 -318.4575520930765 42.20000000000001" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-284.42555209307653 111.40000000000002 C-311.42555209307653 111.40000000000002 -311.42555209307653 111.40000000000002 -338.42555209307653 111.40000000000002" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M50.9 -97.8 C115.52983959323333 -97.8 115.52983959323333 -346.4 180.20155209307654 -346.4" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M62.3 -90.9 C121.2291029831446 -90.9 121.2291029831446 -263.20000000000005 180.20155209307654 -263.20000000000005" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M84.9 -70.3 C132.5422703681063 -70.3 132.5422703681063 -149.20000000000002 180.20155209307654 -149.20000000000002" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M109.4 13.4 C144.79545109890714 13.4 144.79545109890714 21.99999999999997 180.20155209307654 21.99999999999997" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M63.7 89.9 C121.95016276139951 89.9 121.95016276139951 254.39999999999998 180.20155209307654 254.39999999999998" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-107.6 -23.8 C-143.90487311145122 -23.8 -143.90487311145122 -39.79999999999998 -180.20155209307654 -39.79999999999998" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-93.7 57.9 C-136.96888553257804 57.9 -136.96888553257804 111.40000000000002 -180.20155209307654 111.40000000000002" fill="none" stroke="#ec4899" stroke-width="3.5" stroke-linecap="round"/>
-<circle cx="0" cy="0" r="110.2" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Decisioni, cicli e funzioni</tspan></text>
-<rect x="180.20155209307654" y="-375.2" width="160.8" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="260.6015520930765" y="-356.8">Programmazione</tspan><tspan x="260.6015520930765" y="-336.0">strutturata</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="403.00155209307655" y="-366.8">🤓 Böhm e Jacopini</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="403.00155209307655" y="-326.0">🤓 Dijkstra e il goto</tspan></text>
-<rect x="180.20155209307654" y="-281.6" width="129.184" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="244.79355209307653" y="-263.2">Indentazione</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="371.3855520930765" y="-263.2">✅ Confini del blocco</tspan></text>
-<rect x="180.20155209307654" y="-167.60000000000002" width="102.56" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="231.48155209307654" y="-149.2">Decisioni</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="344.76155209307655" y="-200.4">✅ if, elif, else</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="344.76155209307655" y="-159.6">✅ and, or, not</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="344.76155209307655" y="-118.8">🔍 Uguale contro</tspan><tspan x="344.76155209307655" y="-98.0">assegnazione</tspan></text>
-<rect x="180.20155209307654" y="3.599999999999973" width="69.28" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="214.84155209307653" y="22.0">Cicli</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="311.4815520930765" y="-39.2">✅ Ciclo while</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="311.4815520930765" y="1.6">✅ for e range</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="311.4815520930765" y="42.4">✅ Operatori += e -=</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="311.4815520930765" y="83.2">🔍 break e continue</tspan></text>
-<rect x="180.20155209307654" y="235.99999999999997" width="97.568" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="228.98555209307654" y="254.4">Funzioni</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="339.7695520930765" y="142.0">✅ Definizione con def</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="339.7695520930765" y="182.8">✅ print contro return</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="339.7695520930765" y="223.6">🔍 Valori predefiniti</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="339.7695520930765" y="264.4">🔍 Variabili locali e globali</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="339.7695520930765" y="305.2">🤓 Funzioni come oggetti</tspan></text>
-<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="339.7695520930765" y="346.0">🤓 Lista come valore</tspan><tspan x="339.7695520930765" y="366.8">predefinito</tspan></text>
-<rect x="-264.4575520930765" y="-58.19999999999998" width="84.256" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-222.32955209307653" y="-39.8">Moduli</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-326.4575520930765" y="-121.8">✅ import e dadi casuali</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-326.4575520930765" y="-81.0">🔍 import contro from</tspan><tspan x="-326.4575520930765" y="-60.2">import</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-326.4575520930765" y="-19.4">🔍 Codice eseguito</tspan><tspan x="-326.4575520930765" y="1.4">all'import</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-326.4575520930765" y="42.2">🔍 __name__ e __main__</tspan></text>
-<rect x="-284.42555209307653" y="93.00000000000003" width="104.22399999999999" height="36.8" rx="18" fill="#fce5f1" stroke="#ec4899" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6a2045" font-weight="600"><tspan x="-232.31355209307654" y="111.4">Debugger</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-346.42555209307653" y="101.0">✅ Breakpoint ed esecuzione</tspan><tspan x="-346.42555209307653" y="121.8">passo passo</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-610 -393 1357 785" width="1357" height="785" role="img" aria-label="🎲 Decisioni, cicli e funzioni" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🎲 Decisioni, cicli e funzioni</title>
+<rect x="-610" y="-393" width="1357" height="785" rx="14" fill="#ffffff"/>
+<path d="M442.35282521515603 -164.6 C469.35282521515603 -164.6 469.35282521515603 -164.6 496.35282521515603 -164.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M320.88082521515594 -75.00000000000001 C347.88082521515594 -75.00000000000001 347.88082521515594 -95.4 374.88082521515594 -95.4" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M320.88082521515594 -75.00000000000001 C347.88082521515594 -75.00000000000001 347.88082521515594 -54.600000000000016 374.88082521515594 -54.600000000000016" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M287.60082521515596 65.79999999999998 C314.60082521515596 65.79999999999998 314.60082521515596 14.599999999999984 341.60082521515596 14.599999999999984" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M287.60082521515596 65.79999999999998 C314.60082521515596 65.79999999999998 314.60082521515596 76.19999999999999 341.60082521515596 76.19999999999999" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M287.60082521515596 65.79999999999998 C314.60082521515596 65.79999999999998 314.60082521515596 127.39999999999999 341.60082521515596 127.39999999999999" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M315.888825215156 268.2 C342.888825215156 268.2 342.888825215156 196.6 369.888825215156 196.6" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M315.888825215156 268.2 C342.888825215156 268.2 342.888825215156 258.2 369.888825215156 258.2" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M315.888825215156 268.2 C342.888825215156 268.2 342.888825215156 309.4 369.888825215156 309.4" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M315.888825215156 268.2 C342.888825215156 268.2 342.888825215156 350.2 369.888825215156 350.2" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-302.57682521515596 -33.400000000000006 C-329.57682521515596 -33.400000000000006 -329.57682521515596 -146.20000000000002 -356.57682521515596 -146.20000000000002" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-302.57682521515596 -33.400000000000006 C-329.57682521515596 -33.400000000000006 -329.57682521515596 -84.60000000000004 -356.57682521515596 -84.60000000000004" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-302.57682521515596 -33.400000000000006 C-329.57682521515596 -33.400000000000006 -329.57682521515596 -23.000000000000032 -356.57682521515596 -23.000000000000032" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-302.57682521515596 -33.400000000000006 C-329.57682521515596 -33.400000000000006 -329.57682521515596 28.199999999999967 -356.57682521515596 28.199999999999967" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-302.57682521515596 -33.400000000000006 C-329.57682521515596 -33.400000000000006 -329.57682521515596 79.39999999999996 -356.57682521515596 79.39999999999996" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-335.85682521515594 152.60000000000002 C-362.85682521515594 152.60000000000002 -362.85682521515594 152.60000000000002 -389.85682521515594 152.60000000000002" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60.9 -106.3 C126.7367740441389 -106.3 126.7367740441389 -335.8 192.52882521515596 -335.8" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M75.1 -96.8 C133.81443284824948 -96.8 133.81443284824948 -248.2 192.52882521515596 -248.2" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M93.1 -79.6 C142.83054150768405 -79.6 142.83054150768405 -164.6 192.52882521515596 -164.6" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M114.2 -44.5 C153.35033353164323 -44.5 153.35033353164323 -75.00000000000001 192.52882521515596 -75.00000000000001" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M115.9 39.6 C154.23659637211563 39.6 154.23659637211563 65.79999999999998 192.52882521515596 65.79999999999998" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M71.5 99.5 C131.99116973960002 99.5 131.99116973960002 268.2 192.52882521515596 268.2" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-120.7 -20.9 C-156.62723405737017 -20.9 -156.62723405737017 -33.400000000000006 -192.52882521515596 -33.400000000000006" fill="none" stroke="#ec4899" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-96.0 76.1 C-144.2765029897996 76.1 -144.2765029897996 152.60000000000002 -192.52882521515596 152.60000000000002" fill="none" stroke="#64748b" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="122.5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🎲 Decisioni, cicli e funzioni</tspan></text>
+<rect x="192.52882521515596" y="-364.6" width="251.48800000000003" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="318.272825215156" y="-346.2">🧪 Il goblin attacca anche da</tspan><tspan x="318.272825215156" y="-325.4">morto</tspan></text>
+<rect x="192.52882521515596" y="-277" width="234.84800000000004" height="57.6" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="309.952825215156" y="-258.6">📜 Dal codice-spaghetti ai</tspan><tspan x="309.952825215156" y="-237.8">blocchi</tspan></text>
+<rect x="192.52882521515596" y="-183" width="249.8240000000001" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="317.440825215156" y="-164.6">📐 L'indentazione è il blocco</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="504.35282521515603" y="-175.0">✅ L'indentazione decide;</tspan><tspan x="504.35282521515603" y="-154.2">quattro spazi è lo standard</tspan></text>
+<rect x="192.52882521515596" y="-93.4" width="128.352" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="256.70482521515595" y="-75.0">🔀 Decisioni</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="382.88082521515594" y="-95.4">✅ if, elif, else</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="382.88082521515594" y="-54.6">🔍 = dentro un if</tspan></text>
+<rect x="192.52882521515596" y="47.399999999999984" width="95.07199999999999" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="240.06482521515596" y="65.8">🔁 Cicli</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="349.60082521515596" y="4.2">✅ while: il combattimento</tspan><tspan x="349.60082521515596" y="25.0">in sei righe</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="349.60082521515596" y="65.8">✅ for e range: ripeti un</tspan><tspan x="349.60082521515596" y="86.6">numero preciso di volte</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="349.60082521515596" y="127.4">🔍 break e continue</tspan></text>
+<rect x="192.52882521515596" y="249.79999999999998" width="123.35999999999999" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="254.20882521515597" y="268.2">📦 Funzioni</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="377.888825215156" y="186.2">✅ def: il metodo senza la</tspan><tspan x="377.888825215156" y="207.0">classe</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="377.888825215156" y="247.8">✅ print mostra, return</tspan><tspan x="377.888825215156" y="268.6">consegna</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="377.888825215156" y="309.4">🔍 Valori predefiniti</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="377.888825215156" y="350.2">🔍 Dove vive una variabile</tspan></text>
+<rect x="-302.57682521515596" y="-51.800000000000004" width="110.048" height="36.8" rx="18" fill="#fce5f1" stroke="#ec4899" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6a2045" font-weight="600"><tspan x="-247.55282521515596" y="-33.4">📚 Moduli</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-364.57682521515596" y="-156.6">✅ import: usare il lavoro</tspan><tspan x="-364.57682521515596" y="-135.8">degli altri</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-364.57682521515596" y="-95.0">🔍 import modulo o from</tspan><tspan x="-364.57682521515596" y="-74.2">modulo import nome</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-364.57682521515596" y="-33.4">🔍 Importare può far</tspan><tspan x="-364.57682521515596" y="-12.6">partire il gioco</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-364.57682521515596" y="28.2">🤓 Le funzioni sono oggetti</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-364.57682521515596" y="69.0">🤓 La trappola del valore</tspan><tspan x="-364.57682521515596" y="89.8">predefinito</tspan></text>
+<rect x="-335.85682521515594" y="134.20000000000002" width="143.32799999999997" height="36.8" rx="18" fill="#e9ecef" stroke="#64748b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#2d343f" font-weight="600"><tspan x="-264.19282521515595" y="152.6">🛠️ Il debugger</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-397.85682521515594" y="152.6">🤓 Un goto per Python</tspan></text>
 </svg>

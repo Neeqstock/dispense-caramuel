@@ -9,16 +9,14 @@
 <path d="M388.52737293526604 165.59999999999997 C415.52737293526604 165.59999999999997 415.52737293526604 134.79999999999998 442.52737293526604 134.79999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
 <path d="M388.52737293526604 165.59999999999997 C415.52737293526604 165.59999999999997 415.52737293526604 196.39999999999998 442.52737293526604 196.39999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
 <path d="M388.52737293526604 165.59999999999997 C415.52737293526604 165.59999999999997 415.52737293526604 257.99999999999994 442.52737293526604 257.99999999999994" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-433.4553729352661 -77.2 C-460.4553729352661 -77.2 -460.4553729352661 -169.6 -487.4553729352661 -169.6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-433.4553729352661 -77.2 C-460.4553729352661 -77.2 -460.4553729352661 -118.39999999999999 -487.4553729352661 -118.39999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-433.4553729352661 -77.2 C-460.4553729352661 -77.2 -460.4553729352661 -56.8 -487.4553729352661 -56.8" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M-433.4553729352661 -77.2 C-460.4553729352661 -77.2 -460.4553729352661 4.800000000000008 -487.4553729352661 4.800000000000008" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-433.4553729352661 0 C-460.4553729352661 0 -460.4553729352661 -92.39999999999999 -487.4553729352661 -92.39999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-433.4553729352661 0 C-460.4553729352661 0 -460.4553729352661 -41.2 -487.4553729352661 -41.2" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-433.4553729352661 0 C-460.4553729352661 0 -460.4553729352661 20.400000000000002 -487.4553729352661 20.400000000000002" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-433.4553729352661 0 C-460.4553729352661 0 -460.4553729352661 82 -487.4553729352661 82" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
 <path d="M69.3 -94.2 C128.14591856393403 -94.2 128.14591856393403 -254 186.95937293526606 -254" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
 <path d="M105.7 -50.0 C146.34745057794555 -50.0 146.34745057794555 -88.40000000000002 186.95937293526606 -88.40000000000002" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
 <path d="M87.6 77.6 C137.25602705898623 77.6 137.25602705898623 165.59999999999997 186.95937293526606 165.59999999999997" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-108.1 -44.6 C-147.5324845844625 -44.6 -147.5324845844625 -77.2 -186.95937293526606 -77.2" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-105.7 50.0 C-146.34745057794555 50.0 -146.34745057794555 88.39999999999999 -186.95937293526606 88.39999999999999" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M-87.6 77.6 C-137.2560270589862 77.6 -137.2560270589862 165.6 -186.95937293526606 165.6" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-117.0 0.0 C-151.95937293526606 0.0 -151.95937293526606 0 -186.95937293526606 0" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
 <circle cx="0" cy="0" r="117.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
 <text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🎭 Polimorfismo e casting</tspan></text>
 <rect x="186.95937293526606" y="-282.8" width="199.904" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
@@ -35,14 +33,10 @@
 <text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="450.52737293526604" y="124.4">✅ Il binding dinamico</tspan><tspan x="450.52737293526604" y="145.2">sceglie il metodo</tspan></text>
 <text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="450.52737293526604" y="186.0">✅ Polimorfismo statico e</tspan><tspan x="450.52737293526604" y="206.8">dinamico</tspan></text>
 <text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="450.52737293526604" y="247.6">🔍 L'overloading guarda il</tspan><tspan x="450.52737293526604" y="268.4">tipo statico</tspan></text>
-<rect x="-433.4553729352661" y="-95.6" width="246.49600000000004" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-310.2073729352661" y="-77.2">🔄 Upcasting e downcasting</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.4553729352661" y="-169.6">✅ L'upcasting è automatico</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.4553729352661" y="-128.8">✅ Il downcasting va scritto</tspan><tspan x="-495.4553729352661" y="-108.0">e può fallire</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.4553729352661" y="-67.2">🔍 instanceof prima del</tspan><tspan x="-495.4553729352661" y="-46.4">cast</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.4553729352661" y="-5.6">🤓 Come la JVM trova il</tspan><tspan x="-495.4553729352661" y="15.2">metodo giusto</tspan></text>
-<rect x="-436.78337293526613" y="59.599999999999994" width="249.82400000000007" height="57.6" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-311.8713729352661" y="78.0">🧩 Esercizi su polimorfismo</tspan><tspan x="-311.8713729352661" y="98.8">e casting</tspan></text>
-<rect x="-361.903372935266" y="147.2" width="174.944" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
-<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-274.43137293526604" y="165.6">📚 Fonti e risorse</tspan></text>
+<rect x="-433.4553729352661" y="-18.4" width="246.49600000000004" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-310.2073729352661" y="0.0">🔄 Upcasting e downcasting</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.4553729352661" y="-92.4">✅ L'upcasting è automatico</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.4553729352661" y="-51.6">✅ Il downcasting va scritto</tspan><tspan x="-495.4553729352661" y="-30.8">e può fallire</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.4553729352661" y="10.0">🔍 instanceof prima del</tspan><tspan x="-495.4553729352661" y="30.8">cast</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.4553729352661" y="71.6">🤓 Come la JVM trova il</tspan><tspan x="-495.4553729352661" y="92.4">metodo giusto</tspan></text>
 </svg>
