@@ -6,36 +6,7 @@
 
 > **Leyenda:** ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((ESP 🔄 El ciclo de máquina))
-    🧭 Programa en ejecución
-      Programa almacenado
-      Instrucción
-    🔄 Fetch, decode, execute
-      Fetch
-      Decode
-      Execute
-      Write-back
-    ▶️ Seguimiento de un programa
-      LOAD
-      ADD
-      STORE
-      HALT
-      Tabla de seguimiento
-    🔬 Dentro del ciclo
-      Opcode
-      Bus de direcciones
-      Bus de datos
-      Bus de control
-      Dirección calculada
-      Salto
-      Salto condicional
-```
+<img src="Allegati/esp-3ei-sett-ott-s4-el-ciclo-de-maquina-mappa-1.svg" alt="Mappa mentale: ESP 🔄 El ciclo de máquina" width="100%">
 
 ## 🧭 Programa en ejecución
 

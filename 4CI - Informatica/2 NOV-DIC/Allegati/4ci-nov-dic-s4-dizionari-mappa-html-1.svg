@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-590 -215 1137 429" width="1137" height="429" role="img" aria-label="Dizionari" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>Dizionari</title>
+<rect x="-590" y="-215" width="1137" height="429" rx="14" fill="#ffffff"/>
+<path d="M244.88 -90.6 C271.88 -90.6 271.88 -172.2 298.88 -172.2" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M244.88 -90.6 C271.88 -90.6 271.88 -131.4 298.88 -131.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M244.88 -90.6 C271.88 -90.6 271.88 -90.60000000000001 298.88 -90.60000000000001" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M244.88 -90.6 C271.88 -90.6 271.88 -49.80000000000002 298.88 -49.80000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M244.88 -90.6 C271.88 -90.6 271.88 -9.00000000000002 298.88 -9.00000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M266.512 111 C293.512 111 293.512 49.800000000000004 320.512 49.800000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M266.512 111 C293.512 111 293.512 90.60000000000001 320.512 90.60000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M266.512 111 C293.512 111 293.512 131.4 320.512 131.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M266.512 111 C293.512 111 293.512 172.20000000000002 320.512 172.20000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-283.152 -83.2 C-310.152 -83.2 -310.152 -124 -337.152 -124" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-283.152 -83.2 C-310.152 -83.2 -310.152 -83.2 -337.152 -83.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-283.152 -83.2 C-310.152 -83.2 -310.152 -42.40000000000001 -337.152 -42.40000000000001" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-299.792 36.8 C-326.792 36.8 -326.792 16.4 -353.792 16.4" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-299.792 36.8 C-326.792 36.8 -326.792 57.199999999999996 -353.792 57.199999999999996" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-254.86399999999998 120 C-281.864 120 -281.864 120 -308.864 120" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M53.0 -35.8 C93.50938903834671 -35.8 93.50938903834671 -90.6 134 -90.6" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M49.3 40.8 C91.64327118728197 40.8 91.64327118728197 111 134 111" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-54.4 -33.8 C-94.18597731158039 -33.8 -94.18597731158039 -83.2 -134 -83.2" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-61.7 16.9 C-97.85751444271258 16.9 -97.85751444271258 36.8 -134 36.8" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-47.7 42.7 C-90.83841429901032 42.7 -90.83841429901032 120 -134 120" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="64.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Dizionari</tspan></text>
+<rect x="134" y="-109" width="110.88" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="189.44" y="-90.6">Dizionario</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="306.88" y="-172.2">✅ Chiave e valore</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="306.88" y="-131.4">✅ Modifica, aggiunta, del</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="306.88" y="-90.6">✅ KeyError, in e get</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="306.88" y="-49.8">✅ keys, values, items</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="306.88" y="-9.0">🔍 Contatore con get</tspan></text>
+<rect x="134" y="92.6" width="132.512" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="200.256" y="111.0">Dati annidati</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="328.512" y="49.8">✅ Lista di dizionari</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="328.512" y="90.6">🔍 Dizionario con liste</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="328.512" y="131.4">🔍 Aliasing nei dizionari</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="328.512" y="172.2">🔍 Lista o dizionario</tspan></text>
+<rect x="-283.152" y="-101.6" width="149.152" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-208.576" y="-83.2">Hash e dintorni</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-345.152" y="-124.0">🤓 Chiavi immutabili e hash</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-345.152" y="-83.2">🤓 Insiemi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-345.152" y="-42.4">🤓 JSON</tspan></text>
+<rect x="-299.792" y="18.4" width="165.79199999999997" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-216.896" y="36.8">Ispezione dei dati</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-361.792" y="16.4">✅ Python Tutor</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-361.792" y="57.2">🔍 pprint</tspan></text>
+<rect x="-254.86399999999998" y="101.6" width="120.86399999999999" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-194.432" y="120.0">Mundaneum</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-316.864" y="120.0">🤓 Schede con intestazione</tspan></text>
+</svg>

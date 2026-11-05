@@ -4,24 +4,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🤝 Interfacce Java per collaborare))
-    🧭 Una presa e mille elettrodomestici
-    📜 L'interfaccia come contratto
-      ✅ Chi usa e chi implementa
-      ✅ Programmare verso l'interfaccia
-      🔍 Il contratto non è solo la firma
-    🛠️ Lavorare in parallelo
-      ✅ Prima l'interfaccia, poi il codice
-      🔍 Uno stub per non aspettare
-      🔍 Cambiare un'interfaccia costa caro
-    🌍 Interfacce nel mondo reale
-      ✅ Interfacce che usi già
-      🔍 JDBC, un contratto fra aziende diverse
-      🤓 Le API si possono copiare
-    🧩 Metti alla prova il modello
-```
+<img src="Allegati/4ci-int1-interfacce-java-per-collaborare-mappa-1.svg" alt="Mappa mentale: 🤝 Interfacce Java per collaborare" width="100%">
 
 ## 🧭 Una presa e mille elettrodomestici
 

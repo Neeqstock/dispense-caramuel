@@ -4,24 +4,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🧱 Principi SOLID))
-    🧭 Il codice che marcisce
-    🩺 I sintomi del cattivo design
-      ✅ Rigido, fragile, immobile
-      🔍 SOLID è un acronimo, non una legge
-    🔤 Le cinque lettere
-      ✅ S - Una classe, un solo motivo per cambiare
-      ✅ O - Aggiungere senza modificare
-      🔍 L - Il sottotipo mantiene le promesse
-      🔍 I - Interfacce piccole e mirate
-      🔍 D - Dipendere dalle astrazioni
-    ⚖️ Usare SOLID con giudizio
-      🔍 Troppa architettura fa male
-      🤓 Barbara Liskov e i tipi astratti
-    🧩 Metti alla prova il modello
-```
+<img src="Allegati/4ci-int3-principi-solid-mappa-1.svg" alt="Mappa mentale: 🧱 Principi SOLID" width="100%">
 
 ## 🧭 Il codice che marcisce
 

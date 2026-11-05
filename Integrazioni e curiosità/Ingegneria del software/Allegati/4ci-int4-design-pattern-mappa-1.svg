@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-678 -249 1391 498" width="1391" height="498" role="img" aria-label="🧩 Design Pattern" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧩 Design Pattern</title>
+<rect x="-678" y="-249" width="1391" height="498" rx="14" fill="#ffffff"/>
+<path d="M362.5007335620812 -57.599999999999994 C389.5007335620812 -57.599999999999994 389.5007335620812 -108.8 416.5007335620812 -108.8" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M362.5007335620812 -57.599999999999994 C389.5007335620812 -57.599999999999994 389.5007335620812 -57.6 416.5007335620812 -57.6" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M362.5007335620812 -57.599999999999994 C389.5007335620812 -57.599999999999994 389.5007335620812 -6.400000000000002 416.5007335620812 -6.400000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M397.4447335620813 134.8 C424.4447335620813 134.8 424.4447335620813 73.2 451.4447335620813 73.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M397.4447335620813 134.8 C424.4447335620813 134.8 424.4447335620813 134.8 451.4447335620813 134.8" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M397.4447335620813 134.8 C424.4447335620813 134.8 424.4447335620813 196.4 451.4447335620813 196.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-370.8207335620813 -43.800000000000004 C-397.8207335620813 -43.800000000000004 -397.8207335620813 -74.60000000000001 -424.8207335620813 -74.60000000000001" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-370.8207335620813 -43.800000000000004 C-397.8207335620813 -43.800000000000004 -397.8207335620813 -13.000000000000004 -424.8207335620813 -13.000000000000004" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M55.5 -67.8 C106.55935656897461 -67.8 106.55935656897461 -192.39999999999998 157.60473356208126 -192.39999999999998" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M82.3 -30.1 C119.94324434710994 -30.1 119.94324434710994 -57.599999999999994 157.60473356208126 -57.599999999999994" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M66.6 56.9 C112.08982534575043 56.9 112.08982534575043 134.8 157.60473356208126 134.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-84.4 -23.5 C-121.00528759802918 -23.5 -121.00528759802918 -43.800000000000004 -157.60473356208126 -43.800000000000004" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-79.9 35.8 C-118.77720492267741 35.8 -118.77720492267741 70.59999999999998 -157.60473356208126 70.59999999999998" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="87.6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧩 Design Pattern</tspan></text>
+<rect x="157.60473356208126" y="-221.2" width="233.184" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="274.19673356208125" y="-202.8">🧭 Un architetto, quattro</tspan><tspan x="274.19673356208125" y="-182.0">informatici e un wiki</tspan></text>
+<rect x="157.60473356208126" y="-86.39999999999999" width="204.896" height="57.6" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="260.05273356208124" y="-68.0">📖 Che cos'è un design</tspan><tspan x="260.05273356208124" y="-47.2">pattern</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="424.5007335620812" y="-119.2">✅ Una soluzione con un</tspan><tspan x="424.5007335620812" y="-98.4">nome</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="424.5007335620812" y="-57.6">✅ Le tre famiglie</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="424.5007335620812" y="-16.8">🔍 Gli ingredienti di un</tspan><tspan x="424.5007335620812" y="4.0">pattern</tspan></text>
+<rect x="157.60473356208126" y="116.4" width="239.84000000000006" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="277.5247335620813" y="134.8">🐄 Tre pattern nella stalla</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="459.4447335620813" y="62.8">✅ Strategy - cambiare</tspan><tspan x="459.4447335620813" y="83.6">algoritmo come un attrezzo</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="459.4447335620813" y="124.4">🔍 Observer - avvisare chi è</tspan><tspan x="459.4447335620813" y="145.2">interessato</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="459.4447335620813" y="186.0">🔍 Factory - un solo posto</tspan><tspan x="459.4447335620813" y="206.8">per creare oggetti</tspan></text>
+<rect x="-370.8207335620813" y="-62.2" width="213.21600000000004" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-264.21273356208127" y="-43.8">⚠️ Pattern con giudizio</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-432.8207335620813" y="-85.0">🔍 Anti-pattern e martello</tspan><tspan x="-432.8207335620813" y="-64.2">d'oro</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-432.8207335620813" y="-23.4">🤓 Singleton, il pattern più</tspan><tspan x="-432.8207335620813" y="-2.6">discusso</tspan></text>
+<rect x="-355.8447335620813" y="41.79999999999998" width="198.24000000000004" height="57.6" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-256.72473356208127" y="60.2">🧩 Metti alla prova il</tspan><tspan x="-256.72473356208127" y="81.0">modello</tspan></text>
+</svg>

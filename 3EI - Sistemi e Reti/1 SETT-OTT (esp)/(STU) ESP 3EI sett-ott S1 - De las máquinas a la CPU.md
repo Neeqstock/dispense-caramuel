@@ -6,46 +6,7 @@
 
 > **Leyenda:** ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((ESP 🖥️ De las máquinas a la CPU))
-    🧭 Máquina y programa
-      Máquina dedicada
-      Máquina programable
-      Instrucciones
-    🔭 Informática y Sistemas y Redes
-      Hardware
-      Software
-      Dato
-      Hipótesis sobre las causas
-    👥 Dentro de la CPU
-      CPU
-      Registros
-      ALU
-      CU
-      Parte operativa
-      Parte de control
-      Instrucción ADD
-    📜 Del relé al microprocesador
-      Interruptor controlado
-      Relé
-      Válvula
-      Transistor
-      Circuito integrado
-      Microprocesador
-      Ley de Moore
-    🏗️ Niveles de abstracción
-      Aplicación
-      Programa
-      Sistema operativo
-      Instrucciones de máquina
-      Circuitos lógicos
-      Transistores
-```
+<img src="Allegati/esp-3ei-sett-ott-s1-de-las-maquinas-a-la-cpu-mappa-1.svg" alt="Mappa mentale: ESP 🖥️ De las máquinas a la CPU" width="100%">
 
 ## 🧭 Máquina y programa
 

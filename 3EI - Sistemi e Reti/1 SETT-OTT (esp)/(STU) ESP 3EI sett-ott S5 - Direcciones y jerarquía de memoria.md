@@ -6,38 +6,7 @@
 
 > **Leyenda:** ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((ESP 🧮 Direcciones y jerarquía de memoria))
-    🧭 Direcciones y niveles de memoria
-      Latencia
-      Capacidad
-    🚌 Buses
-      Bus de direcciones
-      Bus de datos
-      Bus de control
-    🔢 Contar direcciones
-      Configuraciones
-      Potencias de dos
-      Posición
-      Byte
-      Palabra
-      KiB MiB GiB
-      Memoria de 32 bits
-    🏔️ Jerarquía de memoria
-      Registros
-      Caché
-      RAM
-      Almacenamiento
-      Volatilidad
-      Ancho de banda
-      ROM
-      Memoria flash
-```
+<img src="Allegati/esp-3ei-sett-ott-s5-direcciones-y-jerarquia-de-memoria-mappa-1.svg" alt="Mappa mentale: ESP 🧮 Direcciones y jerarquía de memoria" width="100%">
 
 ## 🧭 Direcciones y niveles de memoria
 

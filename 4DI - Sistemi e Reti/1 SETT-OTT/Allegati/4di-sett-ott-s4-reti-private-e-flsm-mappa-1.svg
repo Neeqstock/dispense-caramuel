@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-503 -135 1133 269" width="1133" height="269" role="img" aria-label="🏠 Reti private e FLSM" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🏠 Reti private e FLSM</title>
+<rect x="-503" y="-135" width="1133" height="269" rx="14" fill="#ffffff"/>
+<path d="M330.7705548201012 0 C357.7705548201012 0 357.7705548201012 -61.199999999999996 384.7705548201012 -61.199999999999996" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M330.7705548201012 0 C357.7705548201012 0 357.7705548201012 -20.4 384.7705548201012 -20.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M330.7705548201012 0 C357.7705548201012 0 357.7705548201012 20.4 384.7705548201012 20.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M330.7705548201012 0 C357.7705548201012 0 357.7705548201012 61.199999999999996 384.7705548201012 61.199999999999996" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-255.89055482010122 -33.400000000000006 C-282.8905548201012 -33.400000000000006 -282.8905548201012 -84.6 -309.8905548201012 -84.6" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-255.89055482010122 -33.400000000000006 C-282.8905548201012 -33.400000000000006 -282.8905548201012 -43.800000000000004 -309.8905548201012 -43.800000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-255.89055482010122 -33.400000000000006 C-282.8905548201012 -33.400000000000006 -282.8905548201012 7.399999999999995 -309.8905548201012 7.399999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M106.6 0.0 C141.6265548201012 0.0 141.6265548201012 0 176.6265548201012 0" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-104.8 -19.8 C-140.69817509223603 -19.8 -140.69817509223603 -33.400000000000006 -176.6265548201012 -33.400000000000006" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-97.0 44.3 C-136.8152385762383 44.3 -136.8152385762383 80.6 -176.6265548201012 80.6" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="106.6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🏠 Reti private e FLSM</tspan></text>
+<rect x="176.6265548201012" y="-18.4" width="154.144" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="253.6985548201012" y="0.0">Indirizzi privati</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="392.7705548201012" y="-61.2">✅ Intervalli RFC 1918</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="392.7705548201012" y="-20.4">✅ NAT</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="392.7705548201012" y="20.4">🤓 NAT statico e dinamico</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="392.7705548201012" y="61.2">✅ PAT e porte</tspan></text>
+<rect x="-255.89055482010122" y="-51.800000000000004" width="79.264" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="-216.2585548201012" y="-33.4">FLSM</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-317.8905548201012" y="-84.6">✅ Sottoreti uguali</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-317.8905548201012" y="-43.8">🔍 Spreco di FLSM</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-317.8905548201012" y="-3.0">🤓 Loopback e altri</tspan><tspan x="-317.8905548201012" y="17.8">intervalli</tspan></text>
+<rect x="-274.1945548201012" y="62.199999999999996" width="97.568" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-225.4105548201012" y="80.6">Esercizi</tspan></text>
+</svg>

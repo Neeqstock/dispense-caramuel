@@ -7,48 +7,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🧩 Dati e informazioni</b></summary>
-
-<details open>
-<summary>📊 <b>Dalla materia grezza alla decisione</b></summary>
-
-- Dato
-- Informazione
-- Conoscenza
-
-</details>
-
-<details open>
-<summary>🖥️ <b>Hardware e software</b></summary>
-
-- Hardware
-- Software di base
-- Software applicativo
-- Utente
-- Astrazione
-
-</details>
-
-<details open>
-<summary>🔄 <b>Come lavora un computer</b></summary>
-
-- Ingresso
-- Elaborazione
-- Uscita
-- Memorizzazione
-
-</details>
-
-<details open>
-<summary>🤝 <b>Protocollo</b></summary>
-
-- Regole condivise
-- Telefonata
-
-</details>
-
-</details>
+<img src="Allegati/1ci-sett-ott-s2-dati-e-informazioni-mappa-1.svg" alt="Mappa mentale: 🧩 Dati e informazioni" width="100%">
 
 ## 📊 Dato, informazione, conoscenza
 

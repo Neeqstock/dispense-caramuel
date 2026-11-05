@@ -9,22 +9,7 @@
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard (rispondi a voce, poi apri)
 
 ## 🗺️ Mappa
-```mermaid
-mindmap
-  root((🌐 IPv4 e il pacchetto))
-    Il protocollo IP
-      ✅ IP e best effort
-    L'indirizzo IPv4
-      ✅ 32 bit e ottetti
-      ✅ Rete, prefisso e host
-      🔍 AND con la maschera
-      🔍 Indirizzi privati e speciali
-      🔍 Classi A, B e C
-    Il pacchetto
-      ✅ Header IPv4 e dati
-      🤓 TTL
-    Esercizi
-```
+<img src="Allegati/4di-sett-ott-s3-ipv4-e-il-pacchetto-mappa-1.svg" alt="Mappa mentale: 🌐 IPv4 e il pacchetto" width="100%">
 
 ## 📜 Un indirizzo per ogni cosa, anche per un piccione
 Nel 1981 i progettisti di Internet scrivono la specifica del protocollo IP: è l'**RFC 791**. Nella specifica fissano la lunghezza degli indirizzi: **32 bit**, cioè circa quattro miliardi e trecento milioni di combinazioni. Nel 1981 è un'enormità. Quasi nessuno ha un computer, e di certo nessuno immagina un telefono in ogni tasca. Le reti sono ancora un esperimento.
@@ -37,7 +22,8 @@ Il 1° aprile 1990 David Waitzman prende questa idea alla lettera e pubblica l'*
 
 Nove inviati, quattro tornati: è il *best effort* in versione piumata. Una rete non deve essere perfetta per funzionare: deve solo sapere che cosa promette e che cosa no.
 
-![[Scuola/Public/4DI - Sistemi e Reti/1 SETT-OTT/Allegati/image.webp|361x290]]*La fauna mondiale di piccioni ringrazia per l'esistenza del TCP*
+![[Scuola/Public/4DI - Sistemi e Reti/1 SETT-OTT/Allegati/image.webp|361x290]]
+*La fauna mondiale di piccioni ringrazia per l'esistenza del TCP.*
 
 ## 📦 Il protocollo IP
 ### ✅ IP inoltra pacchetti senza garanzie
@@ -311,6 +297,7 @@ No: oggi si usa il prefisso esplicito, per esempio `/24`.
 ## 📨 Il pacchetto
 
 ### ✅ Header e dati sono le due parti del pacchetto IPv4
+#fatto👍 
 
 Un pacchetto IPv4 ha due parti: l'**intestazione** (*header*), con le informazioni per consegnare il pacchetto, e i **dati** del livello superiore, per esempio un segmento TCP. <u>È essenziale saper distinguere header e dati; non serve memorizzare tutti i campi dell'header.</u>
 
@@ -365,6 +352,7 @@ L'EtherType: entrambi dicono che cosa c'è nella busta successiva.
 ✏️ **Collega (3 min).** Disegna il viaggio di S1: dati, segmento, pacchetto, frame. In quale busta sta il campo `Destination Address` di IP? In quale il MAC di destinazione?
 
 ### 🤓 TTL: un limite di salti, non di secondi
+#fatto👍 
 > 	*Time To Live* sembra un tempo. Non lo è: a ogni router il valore scende di uno, e quando arriva a zero il pacchetto viene scartato. Così un pacchetto che gira in tondo non vive per sempre. Il nome è storico.
 >
 > Che cosa succede dopo lo scarto lo vedremo più avanti.

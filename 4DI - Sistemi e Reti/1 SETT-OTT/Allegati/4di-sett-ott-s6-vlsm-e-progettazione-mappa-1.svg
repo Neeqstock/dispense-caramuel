@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-309 -141 915 282" width="915" height="282" role="img" aria-label="🧩 VLSM e progettazione" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧩 VLSM e progettazione</title>
+<rect x="-309" y="-141" width="915" height="282" rx="14" fill="#ffffff"/>
+<path d="M318.8234393857315 -90.6 C345.8234393857315 -90.6 345.8234393857315 -90.6 372.8234393857315 -90.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M295.52743938573144 33.39999999999999 C322.52743938573144 33.39999999999999 322.52743938573144 -27.800000000000004 349.52743938573144 -27.800000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M295.52743938573144 33.39999999999999 C322.52743938573144 33.39999999999999 322.52743938573144 12.999999999999995 349.52743938573144 12.999999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M295.52743938573144 33.39999999999999 C322.52743938573144 33.39999999999999 322.52743938573144 53.79999999999999 349.52743938573144 53.79999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M295.52743938573144 33.39999999999999 C322.52743938573144 33.39999999999999 322.52743938573144 94.6 349.52743938573144 94.6" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M101.3 -50.1 C142.1177492093194 -50.1 142.1177492093194 -90.6 182.98343938573146 -90.6" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M111.1 20.3 C147.06524566593546 20.3 147.06524566593546 33.39999999999999 182.98343938573146 33.39999999999999" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-113.0 0.0 C-147.98343938573146 0.0 -147.98343938573146 0 -182.98343938573146 0" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="113.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧩 VLSM e progettazione</tspan></text>
+<rect x="182.98343938573146" y="-109" width="135.84" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="250.90343938573147" y="-90.6">Dimensionare</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="380.8234393857315" y="-90.6">✅ Dagli host al prefisso</tspan></text>
+<rect x="182.98343938573146" y="14.999999999999993" width="112.544" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="239.25543938573145" y="33.4">Assegnare</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="357.52743938573144" y="-27.8">✅ Blocchi grandi per primi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="357.52743938573144" y="13.0">🔍 Quattro controlli</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="357.52743938573144" y="53.8">🔍 Tabella di progetto</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="357.52743938573144" y="94.6">🤓 Spazio di riserva</tspan></text>
+<rect x="-280.55143938573144" y="-18.4" width="97.568" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-231.76743938573145" y="0.0">Esercizi</tspan></text>
+</svg>

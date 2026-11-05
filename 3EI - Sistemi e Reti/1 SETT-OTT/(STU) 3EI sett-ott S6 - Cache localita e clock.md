@@ -6,33 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((⚡ Cache, località e clock))
-    🧭 Attese della CPU
-      Latenza
-      Gerarchia delle memorie
-    🎯 Cache
-      Hit
-      Miss
-      Località temporale
-      Località spaziale
-      Linea di cache
-      FIFO
-      SRAM
-      DRAM
-      Refresh
-      L1 L2 L3
-    ⏱️ Clock
-      Frequenza
-      Periodo
-      Tempo medio di accesso
-      Pipeline
-```
+<img src="Allegati/3ei-sett-ott-s6-cache-localita-e-clock-mappa-1.svg" alt="Mappa mentale: ⚡ Cache, località e clock" width="100%">
 
 ## 🧭 Attese della CPU
 
@@ -136,7 +110,7 @@ Se un accesso precedente ha portato in cache il blocco che lo contiene.
 </details>
 
 ### 🔍 Simulazione di una cache
-#saltata
+#saltato 
 
 La nostra cache di carta:
 
@@ -180,7 +154,7 @@ No. Il blocco può essere stato sostituito, come succede all'ultimo accesso dell
 </details>
 
 ### 🔍 SRAM e DRAM
-#saltata
+#saltato
 
 La **SRAM** conserva ogni bit con un circuito stabile finché è alimentata. Non ha bisogno di «rinfrescare» le celle come la DRAM, ma occupa più spazio per bit: per questo si usa nelle cache. ⚠️ «Static» non significa non volatile.
 
@@ -212,7 +186,7 @@ Livelli di cache: L1 di solito è la più piccola e veloce, i livelli successivi
 ## ⏱️ Clock
 
 ### ✅ Clock e frequenza
-
+#fatto👍 
 Il **clock** è un segnale periodico che dà il tempo ai circuiti sincroni. La frequenza conta i cicli al secondo: 2 GHz significa due miliardi di cicli al secondo, **non per forza due miliardi di istruzioni completate**.
 
 1Kg = 1000g
@@ -240,7 +214,7 @@ Guardando il lavoro svolto e il tempo impiegato, non solo i GHz.
 </details>
 
 ### 🔍 Frequenza e periodo
-
+#fatto👍 
 Se la frequenza è $f$, la durata di un ciclo (periodo) è:
 
 $$T = \frac{1}{f}$$
@@ -271,7 +245,7 @@ No. La cache riduce alcune attese, più RAM permette di tenere attivi più dati.
 </details>
 
 ### 🤓 Tempo medio di accesso
-
+#saltato 
 > In un modello a due livelli, se ogni accesso paga il tempo di consultazione della cache e solo i miss pagano una penalità **aggiuntiva**, il tempo medio di accesso è:
 >
 > $$AMAT = t_{hit} + p_{miss}\times t_{penalità}$$

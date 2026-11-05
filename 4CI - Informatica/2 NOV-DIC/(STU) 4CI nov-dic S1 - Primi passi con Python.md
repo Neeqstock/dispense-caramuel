@@ -1,4 +1,4 @@
-🏠 [Indice](../README.md)
+🏠 [Indice](../README.md) · [S2 - Decisioni, cicli e funzioni](%28STU%29%204CI%20nov-dic%20S2%20-%20Decisioni%2C%20cicli%20e%20funzioni.md) ➡️
 
 # 🐍 Primi passi con Python
 
@@ -8,81 +8,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🛠️ strumento · 🔧 lo faremo in laboratorio · ✏️ da fare · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🐍 Primi passi con Python</b></summary>
-
-<details open>
-<summary>🌍 <b>Perché tanti linguaggi</b></summary>
-
-- ✅ Ogni linguaggio è un compromesso
-
-</details>
-
-- 🧭 **Natale 1989**
-
-<details open>
-<summary>⚖️ <b>Java e Python a confronto</b></summary>
-
-- ✅ Stessi mattoni, altra grammatica
-- 🔍 Dove vince un linguaggio tipizzato e a oggetti
-- 🔍 Dove vince Python
-- 🔍 Python è compilato?
-- 🔍 Chiamate scoperte a runtime
-- 🤓 Type hints in Python
-
-</details>
-
-<details open>
-<summary>🖥️ <b>REPL e script</b></summary>
-
-- ✅ Il REPL
-- ✅ Lo script
-- 🔍 Interprete, editor, IDE e terminale
-- 🤓 import this
-
-</details>
-
-<details open>
-<summary>🏷️ <b>Variabili e tipi</b></summary>
-
-- ✅ Una variabile è una freccia
-- ✅ int, float, str, bool
-- 🔍 I tipi stanno nei valori
-- 🤓 Interi senza limite
-
-</details>
-
-<details open>
-<summary>⌨️ <b>Input e output</b></summary>
-
-- ✅ print e input
-- ✅ input restituisce testo
-- 🔍 f-string
-
-</details>
-
-<details open>
-<summary>➕ <b>Operatori</b></summary>
-
-- ✅ Aritmetici, di confronto, logici
-- 🔍 Divisione, resto, potenza
-- 🤓 Uguali e identici
-
-</details>
-
-<details open>
-<summary>🐞 <b>Gli errori</b></summary>
-
-- ✅ Tre famiglie
-- ✅ Leggere un traceback
-- 🔍 Python non avverte prima
-
-</details>
-
-- ✏️ **Esercizi**
-- 📚 **Fonti e risorse**
-
-</details>
+<img src="Allegati/4ci-nov-dic-s1-primi-passi-con-python-mappa-html-1.svg" alt="Mappa mentale: Primi passi con Python" width="100%">
 
 ## 🌍 Perché tanti linguaggi
 #fatto👍 
@@ -554,11 +480,11 @@ Un testo che inizia con <code>f</code> e contiene valori fra graffe, come <code>
 
 ### ✅ Aritmetici, confronto e logici
 
-| Famiglia   | Python                      | In Java         |
-| ---------- | --------------------------- | --------------- |
-| Aritmetici | `+` `-` `*` `/`             | uguali          |
-| Confronto  | `==` `!=` `<` `<=` `>` `>=` | uguali          |
-| Logici     | `and` `or` `not`            | `&&` `\|\|` `!` |
+| Famiglia   | Python                        | In Java         |
+| ---------- | ----------------------------- | --------------- |
+| Aritmetici | `+` `-` `*` `/`               | uguali          |
+| Confronto  | `==` `!=` `<` `<=` `>` ` >= ` | uguali          |
+| Logici     | `and` `or` `not`              | `&&` `\|\|` `!` |
 
 I confronti e i logici danno un `bool`.
 
@@ -608,7 +534,7 @@ Dà il resto della divisione: <code>7 % 2</code> vale 1.
 
 ### 🤓 Uguali e identici
 
-`==` chiede: «hanno lo stesso valore?». `is` chiede: «sono proprio lo stesso oggetto, cioè le frecce puntano allo stesso posto?». Due liste con gli stessi elementi (le vedremo in S3) sono uguali ma non identiche.
+` == ` chiede: «hanno lo stesso valore?». `is` chiede: «sono proprio lo stesso oggetto, cioè le frecce puntano allo stesso posto?». Due liste con gli stessi elementi (le vedremo in S3) sono uguali ma non identiche.
 
 ```text
 >>> a = [1, 2]
@@ -619,7 +545,7 @@ True
 False
 ```
 
-Per confrontare valori usa quasi sempre `==`.
+Per confrontare valori usa quasi sempre ` == `.
 
 ## 🐞 Gli errori
 
@@ -753,4 +679,4 @@ Solo quando la riga viene eseguita: Python non controlla i tipi prima di partire
 
 ---
 
-🏠 [Indice](../README.md)
+🏠 [Indice](../README.md) · [S2 - Decisioni, cicli e funzioni](%28STU%29%204CI%20nov-dic%20S2%20-%20Decisioni%2C%20cicli%20e%20funzioni.md) ➡️

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-539 -120 1169 241" width="1169" height="241" role="img" aria-label="🔢 CIDR e intervalli" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🔢 CIDR e intervalli</title>
+<rect x="-539" y="-120" width="1169" height="241" rx="14" fill="#ffffff"/>
+<path d="M323.15136488000763 -49.8 C350.15136488000763 -49.8 350.15136488000763 -70.19999999999999 377.15136488000763 -70.19999999999999" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M323.15136488000763 -49.8 C350.15136488000763 -49.8 350.15136488000763 -29.4 377.15136488000763 -29.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M276.5593648800076 49.8 C303.5593648800076 49.8 303.5593648800076 29.4 330.5593648800076 29.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M276.5593648800076 49.8 C303.5593648800076 49.8 303.5593648800076 70.2 330.5593648800076 70.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-293.1993648800076 -33.39999999999999 C-320.1993648800076 -33.39999999999999 -320.1993648800076 -74.19999999999999 -347.1993648800076 -74.19999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-293.1993648800076 -33.39999999999999 C-320.1993648800076 -33.39999999999999 -320.1993648800076 -33.4 -347.1993648800076 -33.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-293.1993648800076 -33.39999999999999 C-320.1993648800076 -33.39999999999999 -320.1993648800076 7.4 -347.1993648800076 7.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M88.3 -27.1 C125.32120431192075 -27.1 125.32120431192075 -49.8 162.35136488000762 -49.8" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M88.3 27.1 C125.32120431192075 27.1 125.32120431192075 49.8 162.35136488000762 49.8" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-90.5 -18.6 C-126.40417037075957 -18.6 -126.40417037075957 -33.39999999999999 -162.35136488000762 -33.39999999999999" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-84.8 36.7 C-123.55892765538266 36.7 -123.55892765538266 70.20000000000002 -162.35136488000762 70.20000000000002" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="92.4" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🔢 CIDR e intervalli</tspan></text>
+<rect x="162.35136488000762" y="-68.19999999999999" width="160.8" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="242.75136488000763" y="-49.8">CIDR su Internet</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="385.15136488000763" y="-70.2">✅ Assegnazione dei blocchi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="385.15136488000763" y="-29.4">🔍 Uso locale e globale</tspan></text>
+<rect x="162.35136488000762" y="31.4" width="114.20799999999998" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="219.4553648800076" y="49.8">Il prefisso</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="338.5593648800076" y="29.4">✅ Notazione CIDR</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="338.5593648800076" y="70.2">✅ Dimensione del blocco</tspan></text>
+<rect x="-293.1993648800076" y="-51.79999999999999" width="130.84799999999998" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-227.7753648800076" y="-33.4">Gli intervalli</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-355.1993648800076" y="-74.2">🔍 Blocchi allineati</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-355.1993648800076" y="-33.4">🔍 Binario e salto</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-355.1993648800076" y="7.4">🤓 Aggregazione</tspan></text>
+<rect x="-259.9193648800076" y="51.80000000000002" width="97.568" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-211.13536488000761" y="70.2">Esercizi</tspan></text>
+</svg>

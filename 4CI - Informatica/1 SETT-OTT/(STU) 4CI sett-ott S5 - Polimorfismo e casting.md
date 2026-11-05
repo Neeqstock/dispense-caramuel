@@ -6,45 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🎭 Polimorfismo e casting</b></summary>
-
-- 🧭 **Un comando, tante risposte**
-
-<details open>
-<summary>🔁 <b>Overriding</b></summary>
-
-- ✅ Ridefinire un metodo ereditato
-- ✅ L'annotazione Override
-- 🔍 super richiama la versione della superclasse
-- 🔍 toString, il metodo che tutti ridefiniscono
-
-</details>
-
-<details open>
-<summary>🎭 <b>Tipo statico e tipo dinamico</b></summary>
-
-- ✅ Un riferimento Animale per un oggetto Pollo
-- ✅ Il binding dinamico sceglie il metodo
-- ✅ Polimorfismo statico e dinamico
-- 🔍 L'overloading guarda il tipo statico
-
-</details>
-
-<details open>
-<summary>🔄 <b>Upcasting e downcasting</b></summary>
-
-- ✅ L'upcasting è automatico
-- ✅ Il downcasting va scritto e può fallire
-- 🔍 instanceof prima del cast
-- 🤓 Come la JVM trova il metodo giusto
-
-</details>
-
-- 🧩 **Esercizi su polimorfismo e casting**
-- 📚 **Fonti e risorse**
-
-</details>
+<img src="Allegati/4ci-sett-ott-s5-polimorfismo-e-casting-mappa-1.svg" alt="Mappa mentale: 🎭 Polimorfismo e casting" width="100%">
 
 ## 🧭 Un comando, tante risposte
 

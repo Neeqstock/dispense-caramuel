@@ -10,18 +10,7 @@
 
 ## 🗺️ Mappa
 
-```mermaid
-mindmap
-  root((🧩 VLSM e progettazione))
-    Dimensionare
-      ✅ Dagli host al prefisso
-    Assegnare
-      ✅ Blocchi grandi per primi
-      🔍 Quattro controlli
-      🔍 Tabella di progetto
-      🤓 Spazio di riserva
-    Esercizi
-```
+<img src="Allegati/4di-sett-ott-s6-vlsm-e-progettazione-mappa-1.svg" alt="Mappa mentale: 🧩 VLSM e progettazione" width="100%">
 
 ## 📜 La mappa dei numeri
 Negli anni Ottanta gli indirizzi sembrano infiniti. Le organizzazioni che ne fanno richiesta ricevono **blocchi interi** da oltre sedici milioni di indirizzi: i blocchi `/8`, che corrispondevano alla classe A studiata in S3. Poche organizzazioni ricevono blocchi enormi.
@@ -43,7 +32,7 @@ Questa storia mostra che **chiedere più indirizzi del necessario ha un costo**.
 ## 🧮 Dimensionare
 
 ### ✅ Dal numero di host al prefisso
-
+#fatto👍 
 Con **FLSM** (S4) tutte le sottoreti hanno la stessa dimensione. Con **VLSM** (*Variable Length Subnet Masking*), invece, ogni sottorete può avere una dimensione diversa, scelta in base al numero di host che deve contenere.
 
 Per prima cosa **dimensiona** ogni richiesta: trova il blocco più piccolo che può contenere tutti gli host richiesti.
@@ -85,7 +74,7 @@ Perché, se usa un indirizzo della sottorete, il gateway occupa uno dei suoi ind
 ## 🧮 Assegnare
 
 ### ✅ Si assegnano prima i blocchi grandi
-
+#fatto👍 
 Per assegnare i blocchi, segui questi quattro passaggi:
 
 1. **Dimensiona** ogni richiesta: stabilisci il prefisso e il numero di indirizzi del blocco.
@@ -147,7 +136,7 @@ Hanno rispettivamente 64, 32, 16 e 8 indirizzi.
 ✏️ **Disegna (4 min).** Disegna una striscia da 0 a 255. Rappresenta i quattro blocchi dell'esempio in scala e colora lo spazio rimasto libero.
 
 ### 🔍 Quattro controlli per un piano affidabile
-
+#fatto👍 
 Quando hai assegnato i blocchi, **controlla** il piano con questi quattro criteri:
 
 | Controllo               | Domanda                                                    |
@@ -175,7 +164,7 @@ Perché il blocco da 32 indirizzi che contiene `.70` inizia a `.64`.
 ✏️ **Trova l'errore (3 min).** Un piano indica `192.168.60.40/27` come rete per un gruppo da 25 host. Spiega perché l'indirizzo non è allineato e trova la rete `/27` che contiene `.40`.
 
 ### 🔍 La tabella è il progetto
-
+#saltato 
 La tabella dell'esempio sopra è un **piano VLSM**: registra quale blocco spetta a ogni gruppo e quali indirizzi si possono usare. In una rete reale, chi configura i dispositivi può consultarla per assegnare gli indirizzi senza sovrapporre le sottoreti.
 
 Per esempio, l'aula richiede 25 indirizzi host: 24 per i computer e uno per il gateway. 
@@ -194,7 +183,7 @@ No: può seguire un'altra convenzione, purché usi un indirizzo host valido e il
 </details>
 
 ### 🤓 Lo spazio libero può essere una scelta
-
+#fatto👍 
 > Lasciare indirizzi liberi non è sempre uno spreco. Uno **spazio di riserva** ragionato permette di aggiungere un reparto o ampliare una sottorete senza riprogettare tutto. Se il piano non spiega a che cosa serve lo spazio libero, però, nessuno sa se sia una riserva o un'assegnazione dimenticata.
 >
 > Un piano corretto e facile da estendere è più utile di un piano che assegna ogni indirizzo ma è difficile da modificare.

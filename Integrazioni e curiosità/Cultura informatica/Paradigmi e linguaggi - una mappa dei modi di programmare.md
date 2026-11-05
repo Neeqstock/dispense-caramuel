@@ -6,26 +6,7 @@
 
 Ogni linguaggio è una lingua. Ogni **paradigma** è un modo di pensare il programma: prima di scegliere le parole, scegli come organizzare la storia. Python parla più di una lingua, e questa integrazione ti mostra quali.
 
-```mermaid
-mindmap
-  root((Paradigmi di programmazione))
-    ✅ Imperativo
-      ✅ Passi in ordine
-      ✅ Stato che cambia
-    ✅ A oggetti
-      ✅ Dati e comportamenti insieme
-      🔍 Classi ed ereditarietà
-    🔍 Funzionale
-      🔍 Funzioni senza stato da cambiare
-    🔍 Dichiarativo
-      🔍 Dire il risultato non i passi
-    🤓 Logico
-      🤓 Fatti e regole
-    🤓 Concorrente
-      🤓 Più cose insieme
-    🎮 Esoterico
-      🎮 Linguaggi per sorprendere
-```
+<img src="Allegati/paradigmi-e-linguaggi-una-mappa-dei-modi-di-programmare-mappa-1.svg" alt="Mappa mentale: Paradigmi di programmazione" width="100%">
 
 ## 🌍 Un paradigma non è un linguaggio
 

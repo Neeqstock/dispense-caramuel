@@ -7,51 +7,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🔘 Bit e byte</b></summary>
-
-<details open>
-<summary>📜 <b>Due segnali</b></summary>
-
-- Lanterne di Boston
-- Interruttore
-
-</details>
-
-<details open>
-<summary>🔘 <b>Bit</b></summary>
-
-- Due stati
-- Transistor
-
-</details>
-
-<details open>
-<summary>✖️ <b>Combinazioni</b></summary>
-
-- 2 elevato N
-- Byte
-- Quanti bit servono
-
-</details>
-
-<details open>
-<summary>📏 <b>Potenze di 2</b></summary>
-
-- Da 2^0 a 2^10
-
-</details>
-
-<details open>
-<summary>📦 <b>Multipli</b></summary>
-
-- kB MB GB TB
-- KiB MiB GiB
-- Capacità del disco
-
-</details>
-
-</details>
+<img src="Allegati/1ci-sett-ott-s3-bit-e-byte-mappa-1.svg" alt="Mappa mentale: 🔘 Bit e byte" width="100%">
 
 ## 📜 Due segnali bastano
 

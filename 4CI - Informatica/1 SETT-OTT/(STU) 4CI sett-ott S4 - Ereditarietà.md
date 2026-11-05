@@ -6,42 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🌳 Ereditarietà</b></summary>
-
-- 🧭 **Scrivere una volta sola**
-
-<details open>
-<summary>🌳 <b>Superclasse e sottoclasse</b></summary>
-
-- ✅ extends crea una sottoclasse
-- ✅ Il test è un
-- ✅ Object è la radice di tutte le classi
-- 🔍 Una sola superclasse
-
-</details>
-
-<details open>
-<summary>🏗️ <b>Costruire una sottoclasse</b></summary>
-
-- ✅ super chiama il costruttore della superclasse
-- 🔍 Il super implicito e l'ordine di costruzione
-- 🔍 Private e protected nella gerarchia
-
-</details>
-
-<details open>
-<summary>⚖️ <b>Usare bene l'ereditarietà</b></summary>
-
-- 🔍 Ereditarietà o composizione
-- 🤓 Quadrati, rettangoli e Liskov
-
-</details>
-
-- 🧩 **Esercizi sull'ereditarietà**
-- 📚 **Fonti e risorse**
-
-</details>
+<img src="Allegati/4ci-sett-ott-s4-ereditarieta-mappa-1.svg" alt="Mappa mentale: 🌳 Ereditarietà" width="100%">
 
 ## 🧭 Scrivere una volta sola
 

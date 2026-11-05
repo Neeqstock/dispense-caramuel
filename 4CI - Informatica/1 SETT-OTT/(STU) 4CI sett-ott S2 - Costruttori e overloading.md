@@ -6,36 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🏗️ Costruttori e overloading</b></summary>
-
-- 🧭 **Oggetti che nascono pronti**
-
-<details open>
-<summary>🏗️ <b>Il costruttore</b></summary>
-
-- ✅ Il costruttore inizializza l'oggetto
-- ✅ this indica l'oggetto corrente
-- ✅ Il costruttore di default
-- 🔍 Che cosa succede durante new
-
-</details>
-
-<details open>
-<summary>🔀 <b>Overloading</b></summary>
-
-- ✅ Più costruttori con firme diverse
-- ✅ Overloading dei metodi
-- 🔍 this richiama un altro costruttore
-- 🔍 Il costruttore di copia
-- 🤓 Quando i costruttori sono troppi
-
-</details>
-
-- 🧩 **Esercizi su costruttori e overloading**
-- 📚 **Fonti e risorse**
-
-</details>
+<img src="Allegati/4ci-sett-ott-s2-costruttori-e-overloading-mappa-1.svg" alt="Mappa mentale: 🏗️ Costruttori e overloading" width="100%">
 
 ## 🧭 Oggetti che nascono pronti
 

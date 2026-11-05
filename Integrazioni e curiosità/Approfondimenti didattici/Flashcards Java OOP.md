@@ -4,34 +4,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((☕ Java OOP in flashcard — dalle basi alle nerdate))
-    🧭 Da Oslo a Minecraft
-    🧱 Livello 1 — Le fondamenta
-      ✅ Classi, oggetti e riferimenti
-      ✅ Incapsulamento, getter e setter
-      ✅ Costruttori e overloading
-      ✅ Ereditarietà ed extends
-      ✅ Polimorfismo, upcasting e downcasting
-      ✅ Classi astratte e interfacce
-      ✅ Scenari reali — registro, videogioco, domotica
-    🔍 Livello 2 — I dettagli che fanno la differenza
-      🔍 Modificatori di accesso fino in fondo  
-      🔍 Costruttori a catena con this e super
-      🔍 Overriding, overloading e annotazione Override
-      🔍 Tipo statico, tipo dinamico e cast sicuri
-      🔍 Classe astratta contro interfaccia
-      🔍 Scenari reali — pagamenti, database, app e giochi
-    🤓 Livello 3 — Nerdate
-      🤓 Trappole del compilatore
-      🤓 Costruttori che fanno cose strane
-      🤓 Dentro la JVM
-      🤓 Java moderno — record, sealed, pattern matching
-      🤓 Principi e storia della OOP
-      🤓 Boss finale
-    📚 Fonti e risorse
-```
+<img src="Allegati/flashcards-java-oop-mappa-1.svg" alt="Mappa mentale: ☕ Java OOP in flashcard — dalle basi alle nerdate" width="100%">
 
 ## 🧭 Da Oslo a Minecraft
 

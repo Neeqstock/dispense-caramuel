@@ -10,19 +10,7 @@
 
 ## 🗺️ Mappa
 
-```mermaid
-mindmap
-  root((🧠 Ripasso e troubleshooting))
-    Ripasso
-      ✅ Livelli e buste
-      ✅ Prefissi e blocchi
-    Troubleshooting
-      🔍 Percorso di controllo
-      🔍 Errori e indizi
-      🔍 Casi con IP, maschera e gateway
-      🤓 Regole con condizioni
-    Esercizi
-```
+<img src="Allegati/4di-sett-ott-s7-ripasso-e-troubleshooting-mappa-1.svg" alt="Mappa mentale: 🧠 Ripasso e troubleshooting" width="100%">
 
 ## 📜 Il caso delle 500 miglia
 

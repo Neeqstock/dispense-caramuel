@@ -8,22 +8,7 @@
 
 ## 🗺️ Mappa
 
-```mermaid
-mindmap
-  root((Conway Game of Life))
-    Modello
-      ✅ Griglia e celle
-      ✅ Generazioni
-    Regole
-      ✅ B3 S23
-    Forme
-      ✅ Blocco
-      ✅ Blinker
-      🔍 Glider
-    Idee
-      🔍 Emergenza
-      🤓 Universalità
-```
+<img src="Allegati/conway-s-game-of-life-mappa-1.svg" alt="Mappa mentale: Conway Game of Life" width="100%">
 
 ## 📜 Un gioco senza giocatori
 

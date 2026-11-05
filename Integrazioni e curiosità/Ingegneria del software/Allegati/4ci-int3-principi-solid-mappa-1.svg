@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-702 -270 1386 539" width="1386" height="539" role="img" aria-label="🧱 Principi SOLID" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧱 Principi SOLID</title>
+<rect x="-702" y="-270" width="1386" height="539" rx="14" fill="#ffffff"/>
+<path d="M370.114346781431 -129.60000000000002 C397.114346781431 -129.60000000000002 397.114346781431 -160.4 424.114346781431 -160.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M370.114346781431 -129.60000000000002 C397.114346781431 -129.60000000000002 397.114346781431 -109.2 424.114346781431 -109.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M346.81834678143105 93.6 C373.81834678143105 93.6 373.81834678143105 -29.600000000000005 400.81834678143105 -29.600000000000005" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M346.81834678143105 93.6 C373.81834678143105 93.6 373.81834678143105 31.999999999999996 400.81834678143105 31.999999999999996" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M346.81834678143105 93.6 C373.81834678143105 93.6 373.81834678143105 93.6 400.81834678143105 93.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M346.81834678143105 93.6 C373.81834678143105 93.6 373.81834678143105 155.20000000000002 400.81834678143105 155.20000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M346.81834678143105 93.6 C373.81834678143105 93.6 373.81834678143105 216.8 400.81834678143105 216.8" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-401.7303467814311 -43.800000000000004 C-428.7303467814311 -43.800000000000004 -428.7303467814311 -74.60000000000001 -455.7303467814311 -74.60000000000001" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-401.7303467814311 -43.800000000000004 C-428.7303467814311 -43.800000000000004 -428.7303467814311 -13.000000000000004 -455.7303467814311 -13.000000000000004" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M48.7 -70.0 C101.95060731791551 -70.0 101.95060731791551 -223.2 155.23434678143101 -223.2" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M65.4 -54.6 C110.33190744987581 -54.6 110.33190744987581 -129.60000000000002 155.23434678143101 -129.60000000000002" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M73.0 44.0 C114.11336261924578 44.0 114.11336261924578 93.6 155.23434678143101 93.6" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-82.0 -23.1 C-118.63295663407268 -23.1 -118.63295663407268 -43.800000000000004 -155.23434678143101 -43.800000000000004" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-77.6 35.3 C-116.41075332797507 35.3 -116.41075332797507 70.59999999999998 -155.23434678143101 70.59999999999998" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="85.2" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧱 Principi SOLID</tspan></text>
+<rect x="155.23434678143101" y="-241.6" width="226.52800000000002" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="268.498346781431" y="-223.2">🧭 Il codice che marcisce</tspan></text>
+<rect x="155.23434678143101" y="-158.40000000000003" width="214.88" height="57.6" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="262.674346781431" y="-140.0">🩺 I sintomi del cattivo</tspan><tspan x="262.674346781431" y="-119.2">design</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="432.114346781431" y="-160.4">✅ Rigido, fragile, immobile</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="432.114346781431" y="-119.6">🔍 SOLID è un acronimo, non</tspan><tspan x="432.114346781431" y="-98.8">una legge</tspan></text>
+<rect x="155.23434678143101" y="75.19999999999999" width="191.584" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="251.02634678143102" y="93.6">🔤 Le cinque lettere</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="408.81834678143105" y="-40.0">✅ S - Una classe, un solo</tspan><tspan x="408.81834678143105" y="-19.2">motivo per cambiare</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="408.81834678143105" y="21.6">✅ O - Aggiungere senza</tspan><tspan x="408.81834678143105" y="42.4">modificare</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="408.81834678143105" y="83.2">🔍 L - Il sottotipo mantiene</tspan><tspan x="408.81834678143105" y="104.0">le promesse</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="408.81834678143105" y="144.8">🔍 I - Interfacce piccole e</tspan><tspan x="408.81834678143105" y="165.6">mirate</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="408.81834678143105" y="206.4">🔍 D - Dipendere dalle</tspan><tspan x="408.81834678143105" y="227.2">astrazioni</tspan></text>
+<rect x="-401.7303467814311" y="-62.2" width="246.49600000000004" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-278.48234678143103" y="-43.8">⚖️ Usare SOLID con giudizio</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-463.7303467814311" y="-85.0">🔍 Troppa architettura fa</tspan><tspan x="-463.7303467814311" y="-64.2">male</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-463.7303467814311" y="-23.4">🤓 Barbara Liskov e i tipi</tspan><tspan x="-463.7303467814311" y="-2.6">astratti</tspan></text>
+<rect x="-353.47434678143105" y="41.79999999999998" width="198.24000000000004" height="57.6" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-254.35434678143105" y="60.2">🧩 Metti alla prova il</tspan><tspan x="-254.35434678143105" y="81.0">modello</tspan></text>
+</svg>

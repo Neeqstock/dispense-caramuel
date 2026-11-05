@@ -6,33 +6,7 @@
 
 > **Leyenda:** ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((ESP 🗃️ Registros y recorridos de datos))
-    🧭 Registros de la CPU
-      Registro
-      Registros generales
-    🗃️ Registros
-      PC
-      IR
-      MAR
-      MDR
-      Registro de estado
-      Notación
-    📥 Leer y escribir en memoria
-      Lectura
-      Escritura
-      Obtener una instrucción
-    🚩 Indicadores
-      Flag Z
-      Carry
-      Sign
-      Overflow
-```
+<img src="Allegati/esp-3ei-sett-ott-s3-registros-y-recorridos-de-datos-mappa-1.svg" alt="Mappa mentale: ESP 🗃️ Registros y recorridos de datos" width="100%">
 
 ## 🧭 Registros de la CPU
 

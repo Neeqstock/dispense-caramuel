@@ -7,51 +7,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🔁 Convertire a gruppi</b></summary>
-
-<details open>
-<summary>🗺️ <b>Il binario come centro</b></summary>
-
-- Percorsi fra le basi
-
-</details>
-
-<details open>
-<summary>➡️ <b>Da binario a esadecimale</b></summary>
-
-- Gruppi da 4
-- Da destra
-- Zeri a sinistra
-
-</details>
-
-<details open>
-<summary>⬅️ <b>Da esadecimale a binario</b></summary>
-
-- Espandere le cifre
-- Nibble completi
-
-</details>
-
-<details open>
-<summary>8️⃣ <b>Binario e ottale</b></summary>
-
-- Gruppi da 3
-
-</details>
-
-<details open>
-<summary>✅ <b>Controllo</b></summary>
-
-- Via decimale
-- Esadecimale a decimale
-
-</details>
-
-- 🎩 **Parole in esadecimale**
-
-</details>
+<img src="Allegati/1ci-sett-ott-s6-convertire-a-gruppi-mappa-1.svg" alt="Mappa mentale: 🔁 Convertire a gruppi" width="100%">
 
 ## 🗺️ Il binario è il centro
 

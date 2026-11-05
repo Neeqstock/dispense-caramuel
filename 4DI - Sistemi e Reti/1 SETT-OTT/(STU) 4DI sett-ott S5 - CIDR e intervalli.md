@@ -10,21 +10,7 @@
 
 ## 🗺️ Mappa
 
-```mermaid
-mindmap
-  root((🔢 CIDR e intervalli))
-    CIDR su Internet
-      ✅ Assegnazione dei blocchi
-      🔍 Uso locale e globale
-    Il prefisso
-      ✅ Notazione CIDR
-      ✅ Dimensione del blocco
-    Gli intervalli
-      🔍 Blocchi allineati
-      🔍 Binario e salto
-      🤓 Aggregazione
-    Esercizi
-```
+<img src="Allegati/4di-sett-ott-s5-cidr-e-intervalli-mappa-1.svg" alt="Mappa mentale: 🔢 CIDR e intervalli" width="100%">
 
 ## 📜 Il collasso che non è arrivato
 
@@ -42,6 +28,7 @@ CIDR non ha salvato Internet da solo, ma ha reso più efficiente l'assegnazione 
 ## 🌍 Chi assegna e usa i blocchi CIDR
 
 ### ✅ Dalla riserva globale alle reti
+#fatto👍 
 
 Il PC del laboratorio usa `192.168.40.110/27` per capire a quale sottorete locale appartiene. Su Internet, gli operatori usano gli stessi prefissi per descrivere i blocchi pubblici raggiungibili attraverso le loro reti. <u>La notazione è la stessa; cambia la scala e la funzione.</u>
 
@@ -58,6 +45,7 @@ IANA → RIR (per esempio RIPE NCC) → ISP → rete del cliente
 I provider e gli altri operatori usano i prefissi per comunicare ai router di Internet quali reti sanno raggiungere. Quando i blocchi sono contigui e allineati, CIDR permette di aggregarli sotto un prefisso comune, riducendo le informazioni di routing da distribuire. <u>Quindi CIDR collega l'assegnazione degli indirizzi pubblici al modo in cui le reti si raggiungono su Internet.</u> Qui ne vediamo l'idea; il routing si studierà più avanti.
 
 ### 🔍 Stessa notazione, lavori diversi
+#fatto👍 
 
 Dire che CIDR riguarda Internet **non** significa che `/prefisso` si usi solo nei router mondiali: lo troviamo anche quando configuriamo una rete locale. La distinzione utile è questa:
 
@@ -84,6 +72,7 @@ Un'azienda può quindi ricevere dal provider un blocco pubblico e poi suddivider
 ## 🔢 Il prefisso
 
 ### ✅ CIDR scrive il prefisso accanto all'indirizzo
+#fatto👍 
 
 In `192.168.40.0/26`, `/26` indica che i primi 26 bit sono di rete; i restanti $32 - 26 = 6$ sono bit host. Il prefisso e la **maschera** esprimono lo stesso confine.
 
@@ -131,6 +120,7 @@ La rete identifica il blocco; il broadcast indica tutti i suoi host come destina
 ✏️ **Completa (3 min).** Ricostruisci le righe `/27` e `/29` della tabella senza guardare.
 
 ### ✅ Dal prefisso al salto
+#fatto👍 
 Per trovare il blocco di un indirizzo e calcolare rete e broadcast, per le maschere `/25`-`/30` si usa il salto:
 
 ```text
@@ -155,6 +145,7 @@ salto = 256 − (valore dell'ottetto della maschera)
 ✏️ **Prevedi (2 min).** Senza guardare la tabella: qual è il salto di una `/28`? E di una `/25`?
 
 ### 🔍 Ogni indirizzo cade in un blocco allineato
+#fatto👍 
 Per trovare la rete, si prende il **multiplo del salto più vicino che non supera l'indirizzo**.
 
 🧪 **Esempio svolto: trovare la rete di `192.168.40.110/27`.**
@@ -184,6 +175,7 @@ No: è un host della sottorete `192.168.40.96/27`.
 ✏️ **Linea dei numeri (3 min).** Disegna i blocchi `/27` da 0 a 255 e segna dove cadono `.110`, rete e broadcast.
 
 ### 🔍 Due metodi che si controllano a vicenda
+#fatto👍 
 Controlla il risultato con il salto e con l'AND in binario.
 
 🧪 **`172.16.5.70/26`.**
@@ -210,6 +202,7 @@ Se i metodi non coincidono, ricontrolla i passaggi.
 ✏️ **Controlla (4 min).** Trova rete e intervallo host di `10.4.9.45/28` con il salto e verifica la rete con l'AND.
 
 ### 🤓 Più reti, un solo prefisso
+#saltato 
 
 > **Aggregazione** vuol dire ==sostituire molte reti con una sola, più grande, che le contiene tutte==. È come dire «Via Roma» invece di elencare ogni numero civico.
 >

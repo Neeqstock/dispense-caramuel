@@ -1,3 +1,7 @@
+import math
+import mouse
+import mediapipe
+
 # Crea il nostro eroe da tastiera e stampa una scheda semplice.
 
 nome = input("Come si chiama l'eroe? ")

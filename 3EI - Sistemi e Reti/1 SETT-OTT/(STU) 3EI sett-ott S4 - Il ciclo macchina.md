@@ -8,36 +8,10 @@
 
 > **Legenda:** 🔄 argomento · ✅ essenziale · 🔍 dettaglio · 🤓 facoltativo · 🧪 esempio · ✏️ attività · 🃏 ripasso · 🧭 contesto · ⚙️ pratica · ⏱️ tempo
 
-```mermaid
-mindmap
-  root((Il ciclo macchina))
-    Programma
-      ✅ Istruzioni in memoria
-      ✅ PC
-      ✅ IR
-    Ciclo macchina
-      ✅ Fetch
-      ✅ Decode
-      ✅ Execute
-      ✅ Write back
-    Traccia
-      ✅ Cella astratta
-      ✅ Notazione
-      ✅ LOAD
-      ✅ ADD
-      ✅ STORE
-      ✅ HALT
-      ✅ Tabella di traccia
-    Dettagli
-      🔍 MAR e MDR
-      🔍 Opcode
-      🔍 Tre bus
-      🔍 Indirizzo calcolato
-    🤓 Salti e clock
-```
+<img src="Allegati/3ei-sett-ott-s4-il-ciclo-macchina-mappa-1.svg" alt="Mappa mentale: Il ciclo macchina" width="100%">
 
 ## ✅ Il programma diventa azione
-
+#fatto👍 
 Un **programma** è una sequenza di istruzioni conservata in memoria. La **CPU** le esegue una alla volta, ripetendo sempre lo stesso giro: <u>trova un'istruzione, la interpreta, la esegue</u>. Questo giro si chiama **ciclo macchina**.
 
 La CPU non «capisce» il programma come una persona: segue le istruzioni. Nel modello di **programma memorizzato** ([S2](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md)), la macchina resta la stessa e cambia il programma in memoria.
@@ -56,7 +30,7 @@ Per seguire il giro servono due registri già incontrati in [S3](%28STU%29%203EI
 ## ✅ Il ciclo in tre fasi
 
 ### ✅ Fetch, decode, execute
-
+#fatto👍 
 Per ogni istruzione la CPU compie tre azioni, sempre in quest'ordine:
 
 ```text
@@ -110,7 +84,7 @@ No. Per esempio una STORE scrive in memoria, non in un registro.
 ## ✅ Traccia di un programma
 
 ### ✅ Le regole della nostra macchina
-
+#fatto👍 
 Per seguire un programma passo per passo ci serve una macchina piccola, con regole chiare. La nostra è un **modello**: una versione semplificata, pensata per studiare. Nei computer veri alcuni dettagli cambiano, e lo diremo ogni volta.
 
 Una **cella** è una posizione numerata della memoria: il numero è l'**indirizzo**, ciò che vi trovi è il **contenuto**. Per questo indirizzo e contenuto non sono la stessa cosa.
@@ -165,7 +139,7 @@ Termina la simulazione.
 </details>
 
 ### ✅ Esempio svolto: LOAD, ADD, STORE
-
+#fatto👍 
 ✏️ **Prima di leggere la traccia:** dopo la `LOAD`, secondo te il PC sarà 11 o 40? R1 varrà 0 o 7? La cella 40 cambierà?
 
 **Stato iniziale:** PC = 10; R1 = 0; R2 = 5; R3 = 0.
@@ -212,7 +186,7 @@ Si scrive lo stato iniziale e si aggiorna una tabella di PC, registri e memoria 
 ## 🔍 Dentro il ciclo
 
 ### 🔍 Il fetch in dettaglio
-
+#fatto👍 
 Durante il fetch entrano in gioco altri due registri:
 
 | Registro | In parole semplici |
@@ -252,7 +226,7 @@ Perché il dato arriva nell'MDR: l'IR conserva il comando finché l'istruzione n
 </details>
 
 ### 🔍 I tre bus in azione
-
+#fatto👍 
 CPU e memoria devono scambiarsi informazioni. Un **bus** è un insieme di collegamenti usati per questo scambio. A ogni accesso servono tre informazioni: **dove** leggere o scrivere, **quali dati** trasferire e **quale azione** compiere.
 
 ```mermaid
@@ -310,7 +284,7 @@ Indirizzi: 41. Dati: 12. Controllo: WRITE.
 </details>
 
 ### 🔍 Indirizzo calcolato
-#no
+#saltato 
 
 Questa sezione mostra un modo comune per trovare un dato: **indirizzo di partenza + spostamento**. Serve, per esempio, quando i valori di un elenco sono in celle consecutive: il programma tiene in un registro l'indirizzo di partenza e cambia lo spostamento per raggiungere un'altra cella.
 
@@ -340,7 +314,7 @@ No. Il clic avvia un programma composto da moltissime istruzioni; la traccia su 
 </details>
 
 ### 🤓 Salti, cicli e clock
-
+#fatto👍 
 > Finora la CPU ha eseguito tutte le istruzioni in ordine. Ma un programma deve anche poter scegliere: ad esempio un programma che dice **se non ci sono biglietti disponibili, non venderne uno**. Per saltare le istruzioni della vendita serve cambiare il PC.
 >
 > Un **salto condizionato**, o *branch*, cambia il PC solo se una condizione è vera. Usiamo `BEQ`, già presente nel [foglio di notazione assembly](%28STU%29%203EI%20-%20Linguaggio%20assembly%20base.md): significa «salta se i due registri contengono valori uguali».

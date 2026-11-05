@@ -7,52 +7,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🔣 Esadecimale e ottale</b></summary>
-
-<details open>
-<summary>📜 <b>Perché abbreviare i bit</b></summary>
-
-- Byte lunghi
-
-</details>
-
-<details open>
-<summary>🔣 <b>Esadecimale</b></summary>
-
-- Base 16
-- Cifre da 0 a F
-- Valore decimale
-
-</details>
-
-<details open>
-<summary>🧩 <b>Nibble</b></summary>
-
-- 4 bit
-- Tabella dei 16 nibble
-- Byte a due cifre
-
-</details>
-
-<details open>
-<summary>🤓 <b>Ottale facoltativo</b></summary>
-
-- Base 8
-- 3 bit
-- Permessi dei file
-
-</details>
-
-<details open>
-<summary>🌍 <b>Dove si trovano</b></summary>
-
-- Colori RGB
-- 🤓 Indirizzo MAC facoltativo
-
-</details>
-
-</details>
+<img src="Allegati/1ci-sett-ott-s5-esadecimale-e-ottale-mappa-1.svg" alt="Mappa mentale: 🔣 Esadecimale e ottale" width="100%">
 
 ## 📜 Un byte è lungo
 

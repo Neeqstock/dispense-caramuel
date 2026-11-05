@@ -4,24 +4,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🚀 Extreme Programming))
-    🧭 Il progetto che non pagava gli stipendi
-    💡 L'idea estrema
-      ✅ Alzare al massimo le buone pratiche
-      ✅ I cinque valori
-    🛠️ Le pratiche di XP
-      ✅ User story e piccoli rilasci
-      ✅ Pair programming
-      🔍 Test prima del codice
-      🔍 Refactoring e integrazione continua
-      🔍 Proprietà collettiva e ritmo sostenibile
-    📊 XP alla prova dei fatti
-      🔍 Limiti e critiche
-      🤓 JUnit, nato in aereo
-    🧩 Metti alla prova il modello
-```
+<img src="Allegati/4ci-int5-extreme-programming-mappa-1.svg" alt="Mappa mentale: 🚀 Extreme Programming" width="100%">
 
 ## 🧭 Il progetto che non pagava gli stipendi
 

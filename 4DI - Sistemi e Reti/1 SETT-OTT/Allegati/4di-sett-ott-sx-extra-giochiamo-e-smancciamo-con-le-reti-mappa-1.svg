@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-580 -137 1174 274" width="1174" height="274" role="img" aria-label="🎮 Giochiamo con le reti" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🎮 Giochiamo con le reti</title>
+<rect x="-580" y="-137" width="1174" height="274" rx="14" fill="#ffffff"/>
+<path d="M276.5776623968432 -49.8 C303.5776623968432 -49.8 303.5776623968432 -90.6 330.5776623968432 -90.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M276.5776623968432 -49.8 C303.5776623968432 -49.8 303.5776623968432 -49.800000000000004 330.5776623968432 -49.800000000000004" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M276.5776623968432 -49.8 C303.5776623968432 -49.8 303.5776623968432 -9.000000000000005 330.5776623968432 -9.000000000000005" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M318.1776623968432 70.2 C345.1776623968432 70.2 345.1776623968432 49.800000000000004 372.1776623968432 49.800000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M318.1776623968432 70.2 C345.1776623968432 70.2 345.1776623968432 90.60000000000001 372.1776623968432 90.60000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-259.93766239684317 -33.39999999999999 C-286.93766239684317 -33.39999999999999 -286.93766239684317 -74.19999999999999 -313.93766239684317 -74.19999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-259.93766239684317 -33.39999999999999 C-286.93766239684317 -33.39999999999999 -286.93766239684317 -33.4 -313.93766239684317 -33.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-259.93766239684317 -33.39999999999999 C-286.93766239684317 -33.39999999999999 -286.93766239684317 7.4 -313.93766239684317 7.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-263.2656623968432 70.20000000000002 C-290.2656623968432 70.20000000000002 -290.2656623968432 70.20000000000002 -317.2656623968432 70.20000000000002" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M105.0 -29.2 C142.01552766216918 -29.2 142.01552766216918 -49.8 179.0096623968432 -49.8" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M101.5 39.8 C140.24735547674425 39.8 140.24735547674425 70.2 179.0096623968432 70.2" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-107.2 -20.0 C-143.0850009999875 -20.0 -143.0850009999875 -33.39999999999999 -179.0096623968432 -33.39999999999999" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-101.5 39.8 C-140.24735547674425 39.8 -140.24735547674425 70.20000000000002 -179.0096623968432 70.20000000000002" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="109.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🎮 Giochiamo con le reti</tspan></text>
+<rect x="179.0096623968432" y="-68.19999999999999" width="97.56800000000001" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="227.79366239684322" y="-49.8">Comandi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="338.5776623968432" y="-90.6">✅ Configurazione locale</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="338.5776623968432" y="-49.8">✅ IP pubblico</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="338.5776623968432" y="-9.0">🤓 Percorso dei pacchetti</tspan></text>
+<rect x="179.0096623968432" y="51.800000000000004" width="139.168" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="248.59366239684317" y="70.2">Consultazione</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="380.1776623968432" y="49.8">✅ WHOIS e RDAP</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="380.1776623968432" y="90.6">🤓 Geolocalizzazione IP</tspan></text>
+<rect x="-259.93766239684317" y="-51.79999999999999" width="80.928" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-219.47366239684317" y="-33.4">Giochi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-321.93766239684317" y="-74.2">✅ Subnetting</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-321.93766239684317" y="-33.4">🤓 Sicurezza web</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-321.93766239684317" y="7.4">🤓 Terminale</tspan></text>
+<rect x="-263.2656623968432" y="51.80000000000002" width="84.256" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-221.1376623968432" y="70.2">Regole</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-325.2656623968432" y="70.2">✅ Solo ambienti autorizzati</tspan></text>
+</svg>

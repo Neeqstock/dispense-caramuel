@@ -6,72 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🧠 Ripasso OOP in flashcard</b></summary>
-
-- 🧭 **Una giornata piena di oggetti**
-
-<details open>
-<summary>🧱 <b>A - Classi, oggetti e costruttori</b></summary>
-
-- ✅ Classe, oggetto e riferimento
-- ✅ Costruttori e this
-- 🔍 Overloading e costruttori a catena
-- 🤓 Il null e le scuse di Tony Hoare
-
-</details>
-
-<details open>
-<summary>🔒 <b>B - Incapsulamento</b></summary>
-
-- ✅ Attributi privati e metodi pubblici
-- ✅ Getter, setter e validazione
-- 🔍 Visibilità di pacchetto e protected
-- 🤓 Il Gandhi nucleare, una leggenda da smontare
-
-</details>
-
-<details open>
-<summary>🌳 <b>C - Ereditarietà e overriding</b></summary>
-
-- ✅ extends, superclasse e sottoclasse
-- ✅ super nel costruttore e nei metodi
-- ✅ Overriding e annotazione Override
-- 🔍 Una sola superclasse e il problema del mulo
-- 🔍 Overriding contro overloading
-
-</details>
-
-<details open>
-<summary>🎭 <b>D - Polimorfismo e astrazione</b></summary>
-
-- ✅ Tipo statico e tipo dinamico
-- ✅ Upcasting e downcasting
-- ✅ Classi astratte e interfacce
-- 🔍 Classe astratta o interfaccia
-
-<details open>
-<summary>🤓 <b>Trappole da verifica</b></summary>
-
-<details open>
-<summary>🧪 <b>E - Cose veramente difficili</b></summary>
-
-- 🤓 Dal sorgente alla JVM
-- 🤓 Stack, heap e garbage collector
-- 🤓 Come la JVM sceglie un metodo
-- 🤓 Stringhe, pool e uguaglianza
-- 🤓 Generics e type erasure
-
-</details>
-
-</details>
-
-</details>
-
-- 🧩 **Esercizi di ripasso**
-- 📚 **Fonti e risorse**
-
-</details>
+<img src="Allegati/4ci-sett-ott-s7-ripasso-in-flashcard-mappa-1.svg" alt="Mappa mentale: 🧠 Ripasso OOP in flashcard" width="100%">
 
 ## 🧭 Una giornata piena di oggetti
 

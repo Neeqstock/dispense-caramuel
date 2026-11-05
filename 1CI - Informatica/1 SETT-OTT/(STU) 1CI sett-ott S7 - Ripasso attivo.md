@@ -9,51 +9,7 @@
 
 Questa dispensa **non ha argomenti nuovi**. Serve a ricordare, in ordine, quello che hai già visto.
 
-<details open>
-<summary><b>🧠 Ripasso attivo</b></summary>
-
-<details open>
-<summary>🧠 <b>Ripassare bene</b></summary>
-
-- Recupero
-- Giri brevi
-
-</details>
-
-<details open>
-<summary>🗺️ <b>Mappa del bimestre</b></summary>
-
-- Dato e informazione
-- Hardware e software
-- Bit e byte
-- Potenze di 2
-- Multipli
-- Binario e decimale
-- Esadecimale e ottale
-- Conversioni a gruppi
-
-</details>
-
-<details open>
-<summary>🔧 <b>Metodo per conversione</b></summary>
-
-- Basi
-- Procedimento
-- Verso
-- Controllo
-
-</details>
-
-<details open>
-<summary>🪲 <b>Errori tipici</b></summary>
-
-- Resti dall'alto
-- Gruppi da sinistra
-- Zeri saltati
-
-</details>
-
-</details>
+<img src="Allegati/1ci-sett-ott-s7-ripasso-attivo-mappa-1.svg" alt="Mappa mentale: 🧠 Ripasso attivo" width="100%">
 
 ## 🧠 Ripassare bene
 

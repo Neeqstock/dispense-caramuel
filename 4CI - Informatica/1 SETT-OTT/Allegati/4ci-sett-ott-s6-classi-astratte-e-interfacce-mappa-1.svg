@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-758 -332 1455 663" width="1455" height="663" role="img" aria-label="🤝 Classi astratte e interfacce" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🤝 Classi astratte e interfacce</title>
+<rect x="-758" y="-332" width="1455" height="663" rx="14" fill="#ffffff"/>
+<path d="M384.3388772734065 -119.20000000000002 C411.3388772734065 -119.20000000000002 411.3388772734065 -191.20000000000002 438.3388772734065 -191.20000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M384.3388772734065 -119.20000000000002 C411.3388772734065 -119.20000000000002 411.3388772734065 -129.60000000000002 438.3388772734065 -129.60000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M384.3388772734065 -119.20000000000002 C411.3388772734065 -119.20000000000002 411.3388772734065 -57.60000000000004 438.3388772734065 -57.60000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M347.73087727340646 155.6 C374.73087727340646 155.6 374.73087727340646 32.39999999999999 401.73087727340646 32.39999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M347.73087727340646 155.6 C374.73087727340646 155.6 374.73087727340646 93.99999999999999 401.73087727340646 93.99999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M347.73087727340646 155.6 C374.73087727340646 155.6 374.73087727340646 155.6 401.73087727340646 155.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M347.73087727340646 155.6 C374.73087727340646 155.6 374.73087727340646 217.2 401.73087727340646 217.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M347.73087727340646 155.6 C374.73087727340646 155.6 374.73087727340646 278.79999999999995 401.73087727340646 278.79999999999995" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-440.9148772734065 -77.19999999999999 C-467.9148772734065 -77.19999999999999 -467.9148772734065 -128.39999999999998 -494.9148772734065 -128.39999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-440.9148772734065 -77.19999999999999 C-467.9148772734065 -77.19999999999999 -467.9148772734065 -77.19999999999999 -494.9148772734065 -77.19999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-440.9148772734065 -77.19999999999999 C-467.9148772734065 -77.19999999999999 -467.9148772734065 -25.999999999999996 -494.9148772734065 -25.999999999999996" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M81.6 -108.9 C143.84930288108754 -108.9 143.84930288108754 -274.8 206.0668772734065 -274.8" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M117.8 -68.1 C161.9239850612944 -68.1 161.9239850612944 -119.20000000000002 206.0668772734065 -119.20000000000002" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M108.6 82.0 C157.32712967813674 82.0 157.32712967813674 155.6 206.0668772734065 155.6" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-127.4 -47.7 C-166.74276038467698 -47.7 -166.74276038467698 -77.19999999999999 -206.0668772734065 -77.19999999999999" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-131.0 36.6 C-168.55533625419508 36.6 -168.55533625419508 57.60000000000001 -206.0668772734065 57.60000000000001" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-113.9 74.5 C-159.96726350456126 74.5 -159.96726350456126 134.8 -206.0668772734065 134.8" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="136.1" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🤝 Classi astratte e interfacce</tspan></text>
+<rect x="206.0668772734065" y="-303.6" width="204.89600000000004" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="308.5148772734065" y="-285.2">🧭 Contratti invece di</tspan><tspan x="308.5148772734065" y="-264.4">dettagli</tspan></text>
+<rect x="206.0668772734065" y="-137.60000000000002" width="178.27200000000002" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="295.2028772734065" y="-119.2">🧩 Classi astratte</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="446.3388772734065" y="-201.6">✅ Una classe che non si può</tspan><tspan x="446.3388772734065" y="-180.8">istanziare</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="446.3388772734065" y="-140.0">✅ I metodi astratti</tspan><tspan x="446.3388772734065" y="-119.2">obbligano le sottoclassi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="446.3388772734065" y="-78.4">🔍 Costruttori e metodi</tspan><tspan x="446.3388772734065" y="-57.6">concreti in una classe</tspan><tspan x="446.3388772734065" y="-36.8">astratta</tspan></text>
+<rect x="206.0668772734065" y="137.2" width="141.664" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="276.89887727340647" y="155.6">🤝 Interfacce</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="409.73087727340646" y="22.0">✅ Un'interfaccia è un</tspan><tspan x="409.73087727340646" y="42.8">contratto</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="409.73087727340646" y="83.6">✅ Implementare più</tspan><tspan x="409.73087727340646" y="104.4">interfacce</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="409.73087727340646" y="145.2">✅ Variabili di tipo</tspan><tspan x="409.73087727340646" y="166.0">interfaccia</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="409.73087727340646" y="206.8">🔍 Costanti e metodi</tspan><tspan x="409.73087727340646" y="227.6">default</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="409.73087727340646" y="268.4">🤓 Le interfacce nella</tspan><tspan x="409.73087727340646" y="289.2">libreria Java</tspan></text>
+<rect x="-440.9148772734065" y="-95.6" width="234.84799999999998" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-323.4908772734065" y="-77.2">⚖️ Scegliere lo strumento</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-502.9148772734065" y="-138.8">✅ Classe astratta o</tspan><tspan x="-502.9148772734065" y="-118.0">interfaccia</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-502.9148772734065" y="-77.2">🔍 I quattro principi insieme</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-502.9148772734065" y="-36.4">🤓 Le critiche alla</tspan><tspan x="-502.9148772734065" y="-15.6">programmazione a oggetti</tspan></text>
+<rect x="-406.80287727340647" y="28.800000000000008" width="200.736" height="57.6" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-306.43487727340647" y="47.2">🧩 Esercizi su classi</tspan><tspan x="-306.43487727340647" y="68.0">astratte e interfacce</tspan></text>
+<rect x="-381.0108772734065" y="116.4" width="174.944" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-293.5388772734065" y="134.8">📚 Fonti e risorse</tspan></text>
+</svg>

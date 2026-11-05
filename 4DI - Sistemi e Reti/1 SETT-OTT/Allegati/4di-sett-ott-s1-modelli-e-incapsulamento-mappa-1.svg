@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-318 -205 974 409" width="974" height="409" role="img" aria-label="🧭 Modelli e incapsulamento" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧭 Modelli e incapsulamento</title>
+<rect x="-318" y="-205" width="974" height="409" rx="14" fill="#ffffff"/>
+<path d="M303.40882521515596 -121.40000000000002 C330.40882521515596 -121.40000000000002 330.40882521515596 -162.20000000000002 357.40882521515596 -162.20000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M303.40882521515596 -121.40000000000002 C330.40882521515596 -121.40000000000002 330.40882521515596 -121.4 357.40882521515596 -121.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M303.40882521515596 -121.40000000000002 C330.40882521515596 -121.40000000000002 330.40882521515596 -80.60000000000001 357.40882521515596 -80.60000000000001" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M343.34482521515594 70.19999999999999 C370.34482521515594 70.19999999999999 370.34482521515594 -21.80000000000002 397.34482521515594 -21.80000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M343.34482521515594 70.19999999999999 C370.34482521515594 70.19999999999999 370.34482521515594 18.99999999999998 397.34482521515594 18.99999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M343.34482521515594 70.19999999999999 C370.34482521515594 70.19999999999999 370.34482521515594 70.19999999999997 397.34482521515594 70.19999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M343.34482521515594 70.19999999999999 C370.34482521515594 70.19999999999999 370.34482521515594 121.39999999999998 397.34482521515594 121.39999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M343.34482521515594 70.19999999999999 C370.34482521515594 70.19999999999999 370.34482521515594 162.19999999999996 397.34482521515594 162.19999999999996" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M103.6 -65.4 C148.08673866083214 -65.4 148.08673866083214 -121.40000000000002 192.52882521515596 -121.40000000000002" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M115.1 42.0 C153.8220863228008 42.0 153.8220863228008 70.19999999999999 192.52882521515596 70.19999999999999" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-122.5 0.0 C-157.52882521515596 0.0 -157.52882521515596 0 -192.52882521515596 0" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="122.5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧭 Modelli e incapsulamento</tspan></text>
+<rect x="192.52882521515596" y="-139.8" width="110.88" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="247.96882521515596" y="-121.4">Protocolli</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="365.40882521515596" y="-162.2">✅ Protocollo</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="365.40882521515596" y="-121.4">✅ ISO/OSI e TCP/IP</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="365.40882521515596" y="-80.6">✅ Protocolli di esempio</tspan></text>
+<rect x="192.52882521515596" y="51.79999999999999" width="150.81599999999997" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="267.936825215156" y="70.2">Incapsulamento</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="405.34482521515594" y="-21.8">✅ Header e dati</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="405.34482521515594" y="19.0">✅ PDU</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="405.34482521515594" y="59.8">✅ Incapsulamento e</tspan><tspan x="405.34482521515594" y="80.6">decapsulamento</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="405.34482521515594" y="121.4">🔍 Funzioni, non componenti</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="405.34482521515594" y="162.2">🤓 Storia dei due modelli</tspan></text>
+<rect x="-290.09682521515595" y="-18.4" width="97.568" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-241.31282521515595" y="0.0">Esercizi</tspan></text>
+</svg>

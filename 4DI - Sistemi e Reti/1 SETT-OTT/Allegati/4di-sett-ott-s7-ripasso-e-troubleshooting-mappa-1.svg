@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-321 -164 975 328" width="975" height="328" role="img" aria-label="🧠 Ripasso e troubleshooting" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧠 Ripasso e troubleshooting</title>
+<rect x="-321" y="-164" width="975" height="328" rx="14" fill="#ffffff"/>
+<path d="M288.28881852263703 -101.00000000000001 C315.28881852263703 -101.00000000000001 315.28881852263703 -121.4 342.28881852263703 -121.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M288.28881852263703 -101.00000000000001 C315.28881852263703 -101.00000000000001 315.28881852263703 -80.60000000000001 342.28881852263703 -80.60000000000001" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M351.52081852263706 49.79999999999998 C378.52081852263706 49.79999999999998 378.52081852263706 -21.80000000000002 405.52081852263706 -21.80000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M351.52081852263706 49.79999999999998 C378.52081852263706 49.79999999999998 378.52081852263706 18.99999999999998 405.52081852263706 18.99999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M351.52081852263706 49.79999999999998 C378.52081852263706 49.79999999999998 378.52081852263706 70.19999999999997 405.52081852263706 70.19999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M351.52081852263706 49.79999999999998 C378.52081852263706 49.79999999999998 378.52081852263706 121.39999999999998 405.52081852263706 121.39999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M111.7 -57.7 C153.71343289095694 -57.7 153.71343289095694 -101.00000000000001 195.71281852263706 -101.00000000000001" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M121.8 31.0 C158.77170266245054 31.0 158.77170266245054 49.79999999999998 195.71281852263706 49.79999999999998" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-125.7 0.0 C-160.71281852263706 0.0 -160.71281852263706 0 -195.71281852263706 0" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="125.7" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🧠 Ripasso e troubleshooting</tspan></text>
+<rect x="195.71281852263706" y="-119.4" width="92.576" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="242.00081852263705" y="-101.0">Ripasso</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="350.28881852263703" y="-121.4">✅ Livelli e buste</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="350.28881852263703" y="-80.6">✅ Prefissi e blocchi</tspan></text>
+<rect x="195.71281852263706" y="31.399999999999984" width="155.808" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="273.61681852263706" y="49.8">Troubleshooting</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="413.52081852263706" y="-21.8">🔍 Percorso di controllo</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="413.52081852263706" y="19.0">🔍 Errori e indizi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="413.52081852263706" y="59.8">🔍 Casi con IP, maschera e</tspan><tspan x="413.52081852263706" y="80.6">gateway</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="413.52081852263706" y="121.4">🤓 Regole con condizioni</tspan></text>
+<rect x="-293.28081852263705" y="-18.4" width="97.568" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-244.49681852263706" y="0.0">Esercizi</tspan></text>
+</svg>

@@ -6,41 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🏛️ La macchina di Von Neumann))
-    🧭 Programma memorizzato
-      ENIAC
-      EDVAC
-      Programma memorizzato
-    💾 Programma e dati in memoria
-      Memoria
-      Istruzione
-      Dato
-      Indirizzo
-      Contenuto
-    🧱 Blocchi del modello
-      CPU
-      Memoria principale
-      Ingresso
-      Uscita
-      Collegamenti
-      Bit
-    💬 CPU e memoria
-      Lettura
-      Bus indirizzi
-      Bus dati
-      Bus di controllo
-      Collo di bottiglia
-      Cache
-      Harvard
-      Manchester Baby
-      EDSAC
-```
+<img src="Allegati/3ei-sett-ott-s2-la-macchina-di-von-neumann-mappa-1.svg" alt="Mappa mentale: 🏛️ La macchina di Von Neumann" width="100%">
 
 ## 🧭 Programma memorizzato
 
@@ -55,7 +21,7 @@ Riprendiamo i ruoli della [CPU](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20ma
 ## 💾 Programma e dati in memoria
 
 ### ✅ Istruzioni e dati nella stessa memoria
-
+#fatto👍 
 Nel modello di Von Neumann **istruzioni e dati stanno nella stessa memoria**. Un programma è una sequenza di istruzioni conservate lì, proprio come i valori su cui quelle istruzioni lavorano. La CPU raggiunge la memoria, preleva l'istruzione da eseguire, la interpreta e compie l'operazione richiesta. Poi passa all'istruzione successiva, salvo che il programma le chieda di seguire un percorso diverso.
 
 La differenza rispetto a una macchina progettata per un solo compito è concreta: <u>per cambiare calcolo non è necessario ricostruire il processore</u>. Si prepara un'altra sequenza di istruzioni e la si carica in memoria. In seguito vedremo più da vicino come la CPU tiene traccia dell'istruzione corrente e come la esegue; qui ci interessa il principio che rende possibile il cambiamento di programma.
@@ -74,7 +40,7 @@ No. Il suo nome è legato a un modello fondamentale, nato da ricerche collettive
 </details>
 
 ### ✅ Indirizzo e contenuto
-
+#fatto👍 
 Immagina la memoria come una fila di cassetti numerati. L'**indirizzo** è il numero del cassetto; il **contenuto** è ciò che c'è dentro. <u>Il numero del cassetto non è l'oggetto nel cassetto.</u> Anche se entrambi sono numeri, hanno ruoli diversi.
 
 <details>
@@ -89,6 +55,7 @@ No. Possono essere entrambi numeri, ma hanno ruoli diversi: uno dice dove, l'alt
 ## 🧱 Blocchi del modello
 
 ### ✅ I cinque blocchi
+#fatto👍 
 
 | Blocco                 | Funzione                                           | Esempio                                    |
 | ---------------------- | -------------------------------------------------- | ------------------------------------------ |
@@ -137,7 +104,7 @@ No. Mostrano relazioni funzionali fra i blocchi, non tutti i cavi reali.
 </details>
 
 ### ✅ Esempio svolto: LOAD e ADD
-
+#fatto👍 
 Usiamo una memoria didattica: ogni cella contiene un intero valore oppure un'intera istruzione. (Non stiamo dicendo che un'istruzione vera occupi sempre una cella da un byte.)
 
 | Indirizzo | Contenuto leggibile |
@@ -171,7 +138,7 @@ No. Basta un'altra istruzione che scelga una funzione che la macchina sa già fa
 </details>
 
 ### 🔍 Istruzioni e dati come bit
-
+#fatto👍 
 `LOAD` e `ADD` sono modi leggibili di scrivere istruzioni. La memoria reale conserva sequenze di bit. Il **formato dell'istruzione** e il momento dell'esecuzione permettono al processore di trattarle come comandi. Altre sequenze diventano numeri, caratteri o indirizzi.
 
 Non esiste un'etichetta universale che dica a ogni CPU «questi bit sono un'istruzione». Nel nostro modello seguiamo semplicemente il programma dalle posizioni indicate.
@@ -188,7 +155,7 @@ Grazie al formato dell'istruzione e al momento dell'esecuzione. Altre sequenze d
 ## 💬 CPU e memoria
 
 ### 🔍 Anatomia di una lettura
-
+#fatto👍 
 Per leggere la memoria non basta dire «mandami qualcosa». La CPU e la memoria devono coordinarsi, un po' come due persone che preparano uno scambio: bisogna indicare quale posizione interessa e quale azione si vuole compiere. In una lettura, la memoria restituisce il contenuto di quella posizione. Nel modello didattico distinguiamo tre informazioni:
 
 - **Dove?** Un indirizzo, per esempio 20.
@@ -211,7 +178,7 @@ Sì. Quando viene prelevata dalla memoria è un contenuto come un altro.
 </details>
 
 ### 🔍 Il collo di bottiglia di Von Neumann
-
+#saltato 
 Il **collo di bottiglia di Von Neumann** è il limite che può nascere quando la CPU e la memoria scambiano istruzioni e dati attraverso un collegamento con capacità limitata. La CPU può eseguire operazioni molto rapidamente, ma per lavorare ha bisogno che le istruzioni e i dati arrivino. Se il collegamento non riesce a trasferirli abbastanza in fretta, la CPU deve aspettare oppure il lavoro avanza più lentamente di quanto permetterebbe la sua velocità di calcolo.
 
 Riprendiamo l'esempio precedente. Per completare `LOAD R1, [20]`, la macchina deve prima prelevare l'istruzione dalla memoria e poi leggere il dato all'indirizzo 20. Dopo, deve ancora prelevare l'istruzione `ADD`. Nel modello più semplice, questi trasferimenti passano per una risorsa condivisa e non avvengono tutti nello stesso istante. Mentre la memoria o il collegamento serve una richiesta, la CPU può non avere ancora il prossimo elemento su cui lavorare. Se richieste simili si accumulano, si forma una coda: <u>è questo rallentamento degli scambi, non una CPU «poco intelligente», a spiegare il collo di bottiglia</u>.
@@ -238,7 +205,7 @@ No. Il modello descrive la memoria usata durante l'esecuzione; un file salvato s
 </details>
 
 ### 🤓 Von Neumann, Harvard e le prime macchine
-
+#saltato 
 > Nell'architettura **Harvard**, istruzioni e dati hanno memorie o percorsi separati. Se i percorsi possono funzionare nello stesso momento, il processore può per esempio prelevare un'istruzione mentre accede a un dato: è un modo per ridurre la contesa descritta sopra. La separazione, però, richiede di progettare e gestire due percorsi; non significa «memoria dentro la CPU» contro «memoria fuori». Von Neumann e Harvard sono modelli utili per confrontare scelte di organizzazione, non etichette che raccontano da sole ogni dettaglio di un computer.
 >
 > Molti sistemi moderni mescolano le idee: per esempio, usano una memoria principale condivisa e cache separate per istruzioni e dati vicino al processore. Una cache separata può offrire percorsi distinti a quel livello, anche se più in basso le informazioni condividono altre risorse. Perciò, quando descriviamo una macchina, è utile domandarsi **a quale livello** ci riferiamo, invece di cercare una sola etichetta valida per tutto il computer.

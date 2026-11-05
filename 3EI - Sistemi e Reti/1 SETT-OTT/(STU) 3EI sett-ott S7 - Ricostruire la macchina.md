@@ -1,4 +1,4 @@
-⬅️ [S6 - Cache localita e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) · 🏠 [Indice](../README.md)
+f⬅️ [S6 - Cache localita e clock](%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md) · 🏠 [Indice](../README.md)
 
 # 🧠 Ricostruire la macchina
 
@@ -6,31 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🧠 Ricostruire la macchina))
-    🧭 Riepilogo del bimestre
-      Programma memorizzato
-    🗺️ Il modello completo
-      Von Neumann
-      CPU
-      Registri
-      Ciclo macchina
-      Bus
-      Indirizzi
-      Gerarchia delle memorie
-      Cache
-      Clock
-    🔧 Risposte tecniche
-      Tesi
-      Meccanismo
-      Esempio
-      Controesempio
-```
+<img src="Allegati/3ei-sett-ott-s7-ricostruire-la-macchina-mappa-1.svg" alt="Mappa mentale: 🧠 Ricostruire la macchina" width="100%">
 
 ## 🧭 Riepilogo del bimestre
 
@@ -181,6 +157,181 @@ A capire dove una regola smette di funzionare, e quindi a renderla più precisa.
 <details>
 <summary>🃏 <b>Quali due idee bastano per trovare controesempi su GHz e cache?</b></summary>
 L'attesa e lo spazio limitato.
+</details>
+
+## 🃏 Mazzo di ripasso misto
+
+### ✅ Tutto il bimestre, in ordine sparso
+
+Le flashcard qui sotto sono **mescolate di proposito**: vengono da tutte le settimane, non dall'ordine in cui le hai studiate. Rispondi a voce, poi apri per controllare. Metti da parte quelle che hai sbagliato e ripassale il giorno dopo.
+
+<details>
+<summary>🃏 <b>Con 7 bit di indirizzo, quante locazioni si distinguono e qual è l'ultimo indirizzo?</b></summary>
+2⁷ = 128 locazioni; l'ultimo indirizzo è 127, perché si parte da 0.
+</details>
+<details>
+<summary>🃏 <b>Che cosa fa la LOAD?</b></summary>
+Copia il contenuto di una cella in un registro. La cella non cambia.
+</details>
+<details>
+<summary>🃏 <b>Che cosa misura la frequenza del clock?</b></summary>
+Quanti cicli di clock, cioè battiti del segnale di ritmo, avvengono in un secondo.
+</details>
+<details>
+<summary>🃏 <b>Indirizzo e contenuto sono entrambi numeri: sono la stessa cosa?</b></summary>
+No. L'indirizzo dice dove sta la cella; il contenuto è ciò che c'è dentro.
+</details>
+<details>
+<summary>🃏 <b>Che cos'è un hit?</b></summary>
+Un accesso in cui il dato cercato è già in cache.
+</details>
+<details>
+<summary>🃏 <b>Dopo <code>ADD R3, R1, R2</code> cambiano R1 e R2?</b></summary>
+No. Cambia solo il registro destinazione, R3.
+</details>
+<details>
+<summary>🃏 <b>Che cosa significa «volatile»?</b></summary>
+Che la memoria perde il contenuto quando manca la corrente.
+</details>
+<details>
+<summary>🃏 <b>Che cosa fa la CU?</b></summary>
+Coordina: stabilisce quale operazione fare e quali collegamenti attivare. Non calcola e non conserva i dati.
+</details>
+<details>
+<summary>🃏 <b>Che cos'è la località spaziale?</b></summary>
+La tendenza ad accedere a indirizzi vicini a quelli appena usati.
+</details>
+<details>
+<summary>🃏 <b>Che cosa fa la STORE?</b></summary>
+Copia il contenuto di un registro in una cella. Il vecchio contenuto della cella viene sostituito.
+</details>
+<details>
+<summary>🃏 <b>Un miss è un guasto del programma?</b></summary>
+No. Significa che il dato non è in cache e va preso dal livello successivo.
+</details>
+<details>
+<summary>🃏 <b>Che cosa fa il MAR?</b></summary>
+Contiene l'indirizzo dell'accesso alla memoria in corso.
+</details>
+<details>
+<summary>🃏 <b>3 GHz significano tre miliardi di istruzioni al secondo?</b></summary>
+No: tre miliardi di cicli di clock al secondo. Quante istruzioni si completano dipende da quanti cicli ne servono.
+</details>
+<details>
+<summary>🃏 <b>Che cosa fa l'ALU?</b></summary>
+Esegue le operazioni aritmetiche e logiche. Non decide da sola quale operazione fare: lo stabilisce la CU.
+</details>
+<details>
+<summary>🃏 <b>Come si calcola la capacità di una memoria?</b></summary>
+Numero di locazioni (2ⁿ) per i byte di ogni locazione.
+</details>
+<details>
+<summary>🃏 <b>RAM e SSD fanno lo stesso lavoro?</b></summary>
+No. La RAM è veloce e volatile e tiene ciò che serve ora; l'SSD è più capiente e conserva i dati anche senza corrente.
+</details>
+<details>
+<summary>🃏 <b>Dopo una <code>LOAD R1, [40]</code> il PC salta alla cella 40?</b></summary>
+No. Il PC continua con l'istruzione successiva; 40 è l'indirizzo del dato, non dell'istruzione.
+</details>
+<details>
+<summary>🃏 <b>Rileggere un dato garantisce un hit?</b></summary>
+No. Nel frattempo il blocco potrebbe essere stato sostituito da un altro.
+</details>
+<details>
+<summary>🃏 <b>Qual è l'ordine della gerarchia, dalla più veloce alla più capiente?</b></summary>
+Registri, cache, RAM, memoria di massa.
+</details>
+<details>
+<summary>🃏 <b>Qual è la differenza fra bus indirizzi, bus dati e controllo?</b></summary>
+Indirizzi: dove. Dati: che cosa si trasferisce. Controllo: quale operazione (per esempio lettura o scrittura).
+</details>
+<details>
+<summary>🃏 <b>Che cos'è la località temporale?</b></summary>
+La tendenza a riusare presto un dato appena usato.
+</details>
+<details>
+<summary>🃏 <b>Con 10 bit di indirizzo a byte, quanti byte ha la memoria?</b></summary>
+2¹⁰ = 1024 byte, cioè 1 KiB.
+</details>
+<details>
+<summary>🃏 <b>Un valore resta in memoria dopo che la CPU lo ha letto?</b></summary>
+Sì. La lettura è una copia: l'originale non cambia.
+</details>
+<details>
+<summary>🃏 <b>Che cosa tiene il PC e quando cambia?</b></summary>
+L'indirizzo della prossima istruzione. Avanza di uno dopo il fetch.
+</details>
+<details>
+<summary>🃏 <b>Perché l'IR non viene sovrascritto dal dato di una LOAD?</b></summary>
+Il dato passa dall'MDR e arriva al registro destinazione; l'IR continua a tenere l'istruzione in corso.
+</details>
+<details>
+<summary>🃏 <b>Aggiungere RAM aumenta i registri della CPU?</b></summary>
+No. I registri sono dentro la CPU e sono pochi; la RAM è un altro livello.
+</details>
+<details>
+<summary>🃏 <b>Un passo del ciclo macchina equivale sempre a un ciclo di clock?</b></summary>
+No. Sono due scale diverse: un passo logico può richiedere uno o più cicli.
+</details>
+<details>
+<summary>🃏 <b>Che cosa dice la regola FIFO?</b></summary>
+Quando serve spazio, si sostituisce il blocco entrato per primo.
+</details>
+<details>
+<summary>🃏 <b>Con 6 bit di indirizzo e 2 byte per locazione, quanti byte?</b></summary>
+64 locazioni × 2 byte = 128 byte. L'ultimo indirizzo resta 63.
+</details>
+<details>
+<summary>🃏 <b>Perché il programma memorizzato fu una svolta?</b></summary>
+Perché la stessa macchina cambia compito sostituendo le istruzioni in memoria, senza essere ricollegata.
+</details>
+<details>
+<summary>🃏 <b>16 GB di RAM e 512 GB di SSD fanno 528 GB di RAM?</b></summary>
+No. Sono memorie diverse e non si sommano come se fossero una sola.
+</details>
+<details>
+<summary>🃏 <b>Qual è la differenza fra SRAM e DRAM?</b></summary>
+La SRAM è più veloce e si usa per la cache; la DRAM, più economica e capiente, si usa per la RAM e ha bisogno di refresh.
+</details>
+<details>
+<summary>🃏 <b>Che cos'è il refresh della DRAM?</b></summary>
+La riscrittura periodica dei bit, perché la carica che li conserva si disperde.
+</details>
+<details>
+<summary>🃏 <b>Qual è il periodo di un clock da 1 GHz?</b></summary>
+Un nanosecondo: periodo = 1 ÷ frequenza.
+</details>
+<details>
+<summary>🃏 <b>Che cos'è la linea (o blocco) di una cache?</b></summary>
+Il gruppo di posizioni consecutive che si copia insieme. Non è la capacità totale della cache.
+</details>
+<details>
+<summary>🃏 <b>Che cos'è l'astrazione?</b></summary>
+Mettere da parte i dettagli che non servono per ragionare a un livello alla volta, per esempio «cella» invece di circuiti.
+</details>
+<details>
+<summary>🃏 <b>Come si ottiene un AND e un OR con degli interruttori?</b></summary>
+AND: interruttori in serie, passa corrente solo se sono tutti chiusi. OR: in parallelo, basta che uno sia chiuso.
+</details>
+<details>
+<summary>🃏 <b>Che cosa separa l'architettura Harvard da quella di Von Neumann?</b></summary>
+Harvard usa memorie separate per istruzioni e dati; Von Neumann una memoria unica.
+</details>
+<details>
+<summary>🃏 <b>Che cosa portano input e output?</b></summary>
+L'input porta informazioni nel sistema; l'output le restituisce all'esterno.
+</details>
+<details>
+<summary>🃏 <b>Che cosa contiene una cella nei nostri esempi?</b></summary>
+Un'intera istruzione oppure un intero.
+</details>
+<details>
+<summary>🃏 <b>Il PC e il MAR possono contenere lo stesso numero: hanno lo stesso ruolo?</b></summary>
+No. Il PC dice dove prendere la prossima istruzione; il MAR indica l'indirizzo dell'accesso in corso.
+</details>
+<details>
+<summary>🃏 <b>Lo spazio di indirizzi è uguale alla RAM montata nel computer?</b></summary>
+No. Dice quante locazioni si possono distinguere, non quanta memoria è installata.
 </details>
 
 ## 🧩 Metti alla prova il modello

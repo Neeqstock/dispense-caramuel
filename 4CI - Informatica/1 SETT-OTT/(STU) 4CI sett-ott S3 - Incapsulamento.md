@@ -6,38 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🔒 Incapsulamento</b></summary>
-
-- 🧭 **Oggetti che si difendono**
-
-<details open>
-<summary>🔒 <b>Stato protetto</b></summary>
-
-- ✅ Incapsulamento e information hiding
-- ✅ I modificatori di accesso
-- 🔍 Visibilità di pacchetto e protected
-- 🤓 Information hiding da Parnas a oggi
-
-</details>
-
-<details open>
-<summary>🚪 <b>Getter e setter</b></summary>
-
-- ✅ Getter leggono, setter controllano
-- ✅ Le invarianti di una classe
-- 🔍 Operazioni di dominio al posto dei setter
-- 🔍 Rifiutare un valore non valido
-- 🔍 Attributi che non cambiano
-- 🔍 Riferimenti che scappano
-- 🤓 Private non è privacy
-
-</details>
-
-- 🧩 **Esercizi sull'incapsulamento**
-- 📚 **Fonti e risorse**
-
-</details>
+<img src="Allegati/4ci-sett-ott-s3-incapsulamento-mappa-1.svg" alt="Mappa mentale: 🔒 Incapsulamento" width="100%">
 
 ## 🧭 Oggetti che si difendono
 

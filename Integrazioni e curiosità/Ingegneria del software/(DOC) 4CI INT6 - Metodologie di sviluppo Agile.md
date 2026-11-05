@@ -4,26 +4,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🔁 Metodologie di sviluppo Agile))
-    🧭 Una crisi lunga trent'anni
-    🌊 Il modello a cascata
-      ✅ Fasi una dopo l'altra
-      🔍 Quando la cascata funziona e quando no
-    📜 Il Manifesto Agile
-      ✅ I quattro valori
-      ✅ Iterazioni brevi e feedback
-      🔍 Alcuni dei dodici principi
-    🏉 Scrum e Kanban
-      ✅ Scrum - ruoli, sprint ed eventi
-      🔍 Kanban - vedere il flusso
-      🔍 XP, Scrum e Kanban a confronto
-    ⚖️ Agile senza miti
-      🔍 Agile non vuol dire senza regole
-      🤓 Dalle fabbriche Toyota al software
-    🧩 Metti alla prova il modello
-```
+<img src="Allegati/4ci-int6-metodologie-di-sviluppo-agile-mappa-1.svg" alt="Mappa mentale: 🔁 Metodologie di sviluppo Agile" width="100%">
 
 ## 🧭 Una crisi lunga trent'anni
 

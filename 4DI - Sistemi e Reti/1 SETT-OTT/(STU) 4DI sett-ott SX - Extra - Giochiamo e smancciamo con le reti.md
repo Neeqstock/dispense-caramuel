@@ -10,23 +10,7 @@
 
 ## 🗺️ Mappa
 
-```mermaid
-mindmap
-  root((🎮 Giochiamo con le reti))
-    Comandi
-      ✅ Configurazione locale
-      ✅ IP pubblico
-      🤓 Percorso dei pacchetti
-    Consultazione
-      ✅ WHOIS e RDAP
-      🤓 Geolocalizzazione IP
-    Giochi
-      ✅ Subnetting
-      🤓 Sicurezza web
-      🤓 Terminale
-    Regole
-      ✅ Solo ambienti autorizzati
-```
+<img src="Allegati/4di-sett-ott-sx-extra-giochiamo-e-smancciamo-con-le-reti-mappa-1.svg" alt="Mappa mentale: 🎮 Giochiamo con le reti" width="100%">
 
 ## ⚙️ Guarda la tua rete
 

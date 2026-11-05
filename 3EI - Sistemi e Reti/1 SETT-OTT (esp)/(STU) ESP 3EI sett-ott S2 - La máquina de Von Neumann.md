@@ -6,41 +6,7 @@
 
 > **Leyenda:** ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((ESP 🏛️ La máquina de Von Neumann))
-    🧭 Programa almacenado
-      ENIAC
-      EDVAC
-      Programa almacenado
-    💾 Programa y datos en memoria
-      Memoria
-      Instrucción
-      Dato
-      Dirección
-      Contenido
-    🧱 Bloques del modelo
-      CPU
-      Memoria principal
-      Entrada
-      Salida
-      Conexiones
-      Bits
-    💬 CPU y memoria
-      Lectura
-      Bus de direcciones
-      Bus de datos
-      Bus de control
-      Cuello de botella
-      Caché
-      Harvard
-      Manchester Baby
-      EDSAC
-```
+<img src="Allegati/esp-3ei-sett-ott-s2-la-maquina-de-von-neumann-mappa-1.svg" alt="Mappa mentale: ESP 🏛️ La máquina de Von Neumann" width="100%">
 
 ## 🧭 Programa almacenado
 

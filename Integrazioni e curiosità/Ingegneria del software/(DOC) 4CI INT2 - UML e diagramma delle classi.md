@@ -4,27 +4,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((📐 UML e diagramma delle classi))
-    🧭 La guerra dei metodi
-    🗺️ Disegnare il software
-      ✅ UML è un linguaggio di disegni
-      🔍 Tanti diagrammi, pochi indispensabili
-    🧱 La classe in un rettangolo
-      ✅ Il rettangolo a tre piani
-      ✅ Dal codice al disegno e ritorno
-      🔍 Classi astratte e interfacce nel disegno
-    🔗 Le relazioni fra classi
-      ✅ Ereditarietà e realizzazione
-      🔍 Associazione, aggregazione e composizione
-      🔍 Dipendenza
-    🎬 Oltre le classi
-      🤓 Diagrammi di sequenza e casi d'uso
-      🤓 UML come schizzo o come progetto
-      🤓 Standard ufficiale e codice
-    🧩 Metti alla prova il modello
-```
+<img src="Allegati/4ci-int2-uml-e-diagramma-delle-classi-mappa-1.svg" alt="Mappa mentale: 📐 UML e diagramma delle classi" width="100%">
 
 ## 🧭 La guerra dei metodi
 

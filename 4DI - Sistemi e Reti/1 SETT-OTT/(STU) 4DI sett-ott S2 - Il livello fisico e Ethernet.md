@@ -10,20 +10,7 @@
 
 ## 🗺️ Mappa
 
-```mermaid
-mindmap
-  root((📡 Il livello fisico e Ethernet))
-    Livello fisico
-      ✅ Mezzi e segnali
-    Ethernet
-      ✅ Frame Ethernet
-      ✅ Switch
-      ✅ Livello 2 e tratti
-      🔍 Ethernet e Wi-Fi
-      🔍 Banda, throughput, latenza
-      🤓 CSMA/CD e full duplex
-    Esercizi
-```
+<img src="Allegati/4di-sett-ott-s2-il-livello-fisico-e-ethernet-mappa-1.svg" alt="Mappa mentale: 📡 Il livello fisico e Ethernet" width="100%">
 
 ## 📜 Un'isola, una stanza, un cavo
 
@@ -42,6 +29,7 @@ Metcalfe fa una scelta intelligente: invece di tenere la tecnologia per Xerox, c
 ## 🔌 Dal bit al segnale
 
 ### ✅ Il livello fisico trasmette segnali
+#fatto👍 
 
 Un computer lavora con **bit**. Un cavo trasporta **segnali**. Il livello fisico fa da traduttore.
 
@@ -77,6 +65,7 @@ No. Trasmette segnali, senza interpretare il contenuto.
 ## 🔌 Ethernet e il frame
 
 ### ✅ Il frame Ethernet è la busta del tratto locale
+#fatto👍 
 
 Nella S1 abbiamo visto che il livello 2 usa il **frame**. In Ethernet il frame ha questa forma:
 
@@ -152,6 +141,7 @@ Con la crittografia (per esempio HTTPS): il router vede l'IP di destinazione, no
 ✏️ **Prevedi (2 min).** Un PC invia un pacchetto a un server lontano. Quale MAC di destinazione mette nel primo frame: quello del server o quello del router? Perché?
 
 ### ✅ Lo switch consegna i frame sul tratto locale
+#fatto👍 
 
 Uno **switch** collega i dispositivi di una rete locale. Il problema che risolve è semplice.
 
@@ -202,6 +192,7 @@ Lo switch consegna frame nella rete locale usando i MAC; il router collega reti 
 ✏️ **Traccia (3 min).** Lo switch ha la tabella qui sopra. Arriva sulla porta 1 un frame da `AA` a `CC`. Su quale porta esce? E se la destinazione fosse `DD`, che non è in tabella?
 
 ### ✅ Il livello 2 lavora un tratto alla volta
+#fatto👍 
 
 Finora abbiamo visto un frame fra tre PC. Ma la rete vera è fatta di tante reti locali collegate da router. Questo è un esempio:
 
@@ -249,6 +240,7 @@ No: lo sposta soltanto. Il frame cambia solo quando passa da un router.
 ✏️ **Conta (2 min).** Nella figura, un PC della scuola scrive a un secondo PC della stessa aula. Quanti router attraversa? Quanti frame servono?
 
 ### 🔍 Ethernet e Wi-Fi sono standard diversi
+#saltato 
 
 **Ethernet** è la famiglia **802.3** dell'IEEE (vedi sopra), soprattutto cablata. **Wi-Fi** è la famiglia IEEE **802.11**, via radio. Hanno regole diverse per il tratto locale, ma **un frame Ethernet e uno Wi-Fi possono trasportare lo stesso pacchetto IP**.
 
@@ -270,6 +262,7 @@ Sì: cambia il tratto locale, ma usano lo stesso protocollo IP.
 </details>
 
 ### 🔍 Banda, throughput e latenza
+#fatto👍 
 
 Tre parole che spesso si scambiano. Non sono sinonimi.
 
@@ -320,6 +313,7 @@ La latenza: ogni azione deve arrivare subito. *Esempio: hai 1 Gbit/s ma 300 ms d
 ✏️ **Spiega in una frase (2 min).** Perché una connessione con banda altissima può comunque dare un gioco lento?
 
 ### 🤓 CSMA/CD e full duplex
+#saltato 
 
 > Nei primi Ethernet, tutti i computer condividevano lo stesso cavo. Come in una stanza affollata, si può parlare solo se gli altri tacciono. Il protocollo **CSMA/CD** (*Carrier Sense Multiple Access with Collision Detection*) è questo galateo:
 >

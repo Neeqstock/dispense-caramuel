@@ -10,21 +10,7 @@
 
 ## 🗺️ Mappa
 
-```mermaid
-mindmap
-  root((🧭 Modelli e incapsulamento))
-    Protocolli
-      ✅ Protocollo
-      ✅ ISO/OSI e TCP/IP
-      ✅ Protocolli di esempio
-    Incapsulamento
-      ✅ Header e dati
-      ✅ PDU
-      ✅ Incapsulamento e decapsulamento
-      🔍 Funzioni, non componenti
-      🤓 Storia dei due modelli
-    Esercizi
-```
+<img src="Allegati/4di-sett-ott-s1-modelli-e-incapsulamento-mappa-1.svg" alt="Mappa mentale: 🧭 Modelli e incapsulamento" width="100%">
 
 ## 📜 Perché ci servono regole
 
@@ -38,12 +24,13 @@ Circa un'ora dopo Duvall sistema la macchina, Kline riprova e questa volta entra
 
 > 😄 Nei laboratori di rete si scherza su un «livello 8»: l'utente. Non esiste negli standard. Ma ogni tecnico lo ha incontrato.
 
-![C'é chi scherza su questo...](Allegati/image.png)
+![C'é chi scherza su questo...|259x413](Allegati/image.png)
 _Qualcuno scherza anche, comprensibilmente, sul fatto che il vero modello ISO/OSI sia questo._ Fonte: https://xkcd.com/2105/
 
 ## 📨 Protocolli e modelli
 
 ### ✅ Un protocollo è una regola condivisa
+#fatto👍 
 
 Una **rete** collega dispositivi che scambiano informazioni. Per capirsi usano **protocolli**.
 
@@ -65,6 +52,7 @@ Una rete di reti che comunicano con protocolli condivisi.
 </details>
 
 ### ✅ Due mappe: ISO/OSI e TCP/IP
+#fatto👍 
 
 Dividere il lavoro rende tutto più semplice. Ogni livello ha un compito.
 
@@ -104,7 +92,7 @@ Il livello di trasporto.
 ✏️ **Prevedi (2 min).** Copri la colonna dei livelli. Per ogni compito scrivi il numero del livello ISO/OSI: **A)** «Consegna al programma giusto»; **B)** «Segnali sul mezzo»; **C)** «Indirizzi, tra reti diverse». Poi controlla con la tabella.
 
 ### ✅ Protocolli di esempio
-
+#fatto👍 
 I protocolli reali hanno nomi che conosci già. Eccoli, ognuno al suo livello TCP/IP. Non serve studiarli ora: li incontreremo uno alla volta.
 
 | Livello TCP/IP | Protocolli di esempio | A che cosa servono |
@@ -155,6 +143,7 @@ Pagina non trovata.
 ## 📦 Incapsulamento e PDU
 
 ### ✅ Header e dati
+#fatto👍 
 
 Ogni livello lavora con due parti:
 
@@ -193,6 +182,7 @@ No: ogni livello usa solo il proprio header.
 ✏️ **Spiega in una frase (2 min).** Che differenza c'è fra l'etichetta di un pacco e il suo contenuto? Dove lo ritrovi in una rete?
 
 ### ✅ Ogni livello ha la sua PDU
+#fatto👍 
 
 Un livello riceve il payload dal livello sopra, ci scrive davanti il proprio header e passa tutto al livello sotto. Questo blocco, **header + payload**, è la **PDU** del livello (*Protocol Data Unit*, «unità di dati del protocollo»).
 
@@ -236,6 +226,7 @@ Dati, segmento, pacchetto, frame, segnali.
 </details>
 
 ### ✅ Ogni livello aggiunge la sua busta
+#fatto👍 
 
 Quando i dati scendono verso il mezzo, ogni livello li chiude in una busta con le informazioni che gli servono. È l'**incapsulamento**.
 
@@ -302,6 +293,7 @@ Perché ogni livello ha un compito diverso, come indicare il programma o la rete
 ✏️ **Trova l'errore (2 min).** «Il router apre il messaggio e legge la mia email.» Che cosa non torna? *(Indizio: che cosa legge davvero un router?)*
 
 ### 🔍 I livelli sono funzioni, non componenti
+#fatto👍 
 
 Una scheda di rete può svolgere più funzioni. Un protocollo può coinvolgere software e hardware. Se cambi il mezzo, per esempio da cavo a Wi-Fi, cambiano le regole del collegamento, ma non il significato del messaggio.
 
@@ -331,6 +323,8 @@ No: cambiano le regole del tratto fisico e locale, non il messaggio.
 </details>
 
 ### 🤓 Due modelli, due storie
+#fatto👍 
+
 Perché esistono due modelli (ISO/OSI e TCP/IP), se poi i protocolli "reali" di internet sono quelli di TCP/IP? Un po' di storia dell'internet: una storia di "burocrazia vs cose che funzionano".
 Piccolo spoiler: abbiamo "rischiato" di avere dei protocolli ISO/OSI, ma ha vinto TCP/IP.
 

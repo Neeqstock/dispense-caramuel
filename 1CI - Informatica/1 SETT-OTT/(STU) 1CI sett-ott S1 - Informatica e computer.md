@@ -7,49 +7,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🎬 video · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🧭 Informatica e computer</b></summary>
-
-<details open>
-<summary>📜 <b>Macchine che cambiano mestiere</b></summary>
-
-- Telaio di Jacquard
-- Ada Lovelace
-
-</details>
-
-<details open>
-<summary>🧠 <b>Informatica</b></summary>
-
-- Informazione
-- Automatica
-- Mestieri
-
-</details>
-
-<details open>
-<summary>🖥️ <b>Computer</b></summary>
-
-- Hardware
-- Software
-- Metafora
-
-</details>
-
-<details open>
-<summary>📋 <b>Algoritmo</b></summary>
-
-- Istruzioni precise
-- Programma
-- Variabile
-- Determinismo
-- Bug
-
-</details>
-
-- 🔢 **Assaggio di binario**
-
-</details>
+<img src="Allegati/1ci-sett-ott-s1-informatica-e-computer-mappa-1.svg" alt="Mappa mentale: 🧭 Informatica e computer" width="100%">
 
 ## 📜 Una macchina che cambia mestiere
 

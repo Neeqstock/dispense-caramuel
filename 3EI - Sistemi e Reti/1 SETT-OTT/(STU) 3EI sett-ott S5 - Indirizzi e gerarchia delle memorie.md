@@ -6,38 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🧮 Indirizzi e gerarchia delle memorie))
-    🧭 Indirizzi e livelli di memoria
-      Latenza
-      Capacità
-    🚌 Bus
-      Bus indirizzi
-      Bus dati
-      Bus di controllo
-    🔢 Contare gli indirizzi
-      Configurazioni
-      Potenze di due
-      Locazione
-      Byte
-      Parola
-      KiB MiB GiB
-      Memoria a 32 bit
-    🏔️ Gerarchia delle memorie
-      Registri
-      Cache
-      RAM
-      Memoria di massa
-      Volatilità
-      Banda
-      ROM
-      Memoria flash
-```
+<img src="Allegati/3ei-sett-ott-s5-indirizzi-e-gerarchia-delle-memorie-mappa-1.svg" alt="Mappa mentale: 🧮 Indirizzi e gerarchia delle memorie" width="100%">
 
 ## 🧭 Indirizzi e livelli di memoria
 
@@ -59,6 +28,7 @@ Perché il bit girava nel tubo come su un anello: bisognava aspettare che passas
 ## 🚌 Bus
 
 ### ✅ Dati, indirizzi e controllo
+#fatto👍 
 
 Un **bus** è un insieme di collegamenti usati per comunicare secondo regole precise. Nel nostro modello separiamo tre funzioni:
 
@@ -92,6 +62,7 @@ Non per forza. È una separazione per funzioni: un PC moderno può usare collega
 ## 🔢 Contare gli indirizzi
 
 ### ✅ Bit e indirizzi
+#fatto👍 
 
 Un bit ha due configurazioni: 0 e 1. Due bit ne hanno quattro, tre bit otto. Ogni bit in più **raddoppia** le possibilità, perché davanti a ogni sequenza precedente possiamo mettere 0 oppure 1.
 
@@ -128,6 +99,7 @@ No. Bisogna sapere quanto contiene ogni locazione.
 ### ✅ Esempio svolto: memoria indirizzata a byte
 
 Qui ogni indirizzo identifica **un byte** (8 bit). Con 12 bit di indirizzo:
+#saltato 
 
 $$N = 2^{12} = 4096\ \text{locazioni}$$
 
@@ -155,6 +127,7 @@ No. È quanto si può indirizzare nel modello, non quanta memoria è installata.
 </details>
 
 ### 🔍 Byte, parole e unità
+#fatto👍 
 
 Un byte contiene 8 bit. Usiamo **KiB = 1024 byte**, **MiB = $2^{20}$ byte**, **GiB = $2^{30}$ byte**. I prefissi decimali kB, MB e GB indicano invece potenze di 1000. Non sono errori: sono convenzioni diverse, e vanno dichiarate.
 
@@ -180,6 +153,7 @@ Il bus dati dice quanto si trasferisce in un colpo; il bus indirizzi quante posi
 </details>
 
 ### 🤓 Memoria a 32 bit
+#fatto👍 
 
 > In un modello a byte, $2^{32}$ indirizzi corrispondono a 4 GiB. Ma in una macchina reale entrano in gioco indirizzi fisici e virtuali, zone riservate ai dispositivi, limiti del processore e del sistema operativo. Non tutti gli indirizzi corrispondono a RAM installata. 💾 È per questo che, anni fa, molti PC con sistemi a 32 bit «vedevano» meno RAM di quella montata.
 >
@@ -201,7 +175,7 @@ Quando le sue ipotesi sono scritte chiaramente.
 ## 🏔️ Gerarchia delle memorie
 
 ### ✅ Livelli e compromessi
-
+#fatto👍 
 La memoria ideale sarebbe enorme, velocissima, economica e capace di tenere i dati anche senza corrente. Le tecnologie reali obbligano a compromessi. Per questo un computer usa più livelli.
 
 ```text
@@ -244,6 +218,7 @@ No. È una proprietà separata, da indicare a parte.
 </details>
 
 ### 🔍 Capacità, latenza, banda
+#fatto👍 
 
 - **Capacità:** quanta informazione posso conservare (byte, GiB).
 - **Latenza:** quanto aspetto per avere la risposta a un accesso (nanosecondi).

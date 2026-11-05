@@ -6,31 +6,7 @@
 
 > **Leyenda:** ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((ESP 🧠 Reconstruir la máquina))
-    🧭 Resumen del bimestre
-      Programa almacenado
-    🗺️ El modelo completo
-      Von Neumann
-      CPU
-      Registros
-      Ciclo de máquina
-      Buses
-      Direcciones
-      Jerarquía de memoria
-      Caché
-      Reloj
-    🔧 Respuestas técnicas
-      Tesis
-      Mecanismo
-      Ejemplo
-      Contraejemplo
-```
+<img src="Allegati/esp-3ei-sett-ott-s7-reconstruir-la-maquina-mappa-1.svg" alt="Mappa mentale: ESP 🧠 Reconstruir la máquina" width="100%">
 
 ## 🧭 Resumen del bimestre
 

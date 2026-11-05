@@ -6,65 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🧱 Classi e oggetti</b></summary>
-
-<details open>
-<summary>🧭 <b>Programmi che crescono</b></summary>
-
-- Programmazione procedurale
-- Programmazione a oggetti
-- Crisi del software
-- Simula 67
-- Alan Kay
-- Smalltalk
-- Java
-
-</details>
-
-<details open>
-<summary>🧱 <b>Classi e oggetti</b></summary>
-
-- Classe
-- Oggetto
-- Istanza
-- Stato
-- Comportamento
-- Attributi e campi
-- Metodi
-- Responsabilità
-- Messaggi tra oggetti
-
-</details>
-
-<details open>
-<summary>🧠 <b>Oggetti in memoria</b></summary>
-
-- new
-- Riferimenti
-- Alias
-- null
-- NullPointerException
-- Operatore ==
-- Puntatori
-- Garbage collector
-
-</details>
-
-<details open>
-<summary>☕ <b>Classe Java</b></summary>
-
-- Dichiarazione di classe
-- File della classe public
-- Notazione punto
-- Metodo main
-- Valori di default
-- Variabili locali
-- PascalCase e camelCase
-
-</details>
-
-</details>
+<img src="Allegati/4ci-sett-ott-s1-classi-e-oggetti-mappa-1.svg" alt="Mappa mentale: 🧱 Classi e oggetti" width="100%">
 
 ## 🧭 Programmi che crescono
 

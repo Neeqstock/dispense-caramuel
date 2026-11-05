@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-686 -299 1437 598" width="1437" height="598" role="img" aria-label="📐 UML e diagramma delle classi" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>📐 UML e diagramma delle classi</title>
+<rect x="-686" y="-299" width="1437" height="598" rx="14" fill="#ffffff"/>
+<path d="M435.78235002548126 -148.6 C462.78235002548126 -148.6 462.78235002548126 -179.39999999999998 489.78235002548126 -179.39999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M435.78235002548126 -148.6 C462.78235002548126 -148.6 462.78235002548126 -117.8 489.78235002548126 -117.8" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M380.8703500254813 13 C407.8703500254813 13 407.8703500254813 -48.6 434.8703500254813 -48.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M380.8703500254813 13 C407.8703500254813 13 407.8703500254813 2.599999999999998 434.8703500254813 2.599999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M380.8703500254813 13 C407.8703500254813 13 407.8703500254813 64.2 434.8703500254813 64.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M437.4463500254813 195 C464.4463500254813 195 464.4463500254813 143.8 491.4463500254813 143.8" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M437.4463500254813 195 C464.4463500254813 195 464.4463500254813 205.4 491.4463500254813 205.4" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M437.4463500254813 195 C464.4463500254813 195 464.4463500254813 256.59999999999997 491.4463500254813 256.59999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-377.54235002548126 -43.79999999999998 C-404.54235002548126 -43.79999999999998 -404.54235002548126 -105.39999999999999 -431.54235002548126 -105.39999999999999" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-377.54235002548126 -43.79999999999998 C-404.54235002548126 -43.79999999999998 -404.54235002548126 -43.8 -431.54235002548126 -43.8" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-377.54235002548126 -43.79999999999998 C-404.54235002548126 -43.79999999999998 -404.54235002548126 17.800000000000008 -431.54235002548126 17.800000000000008" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M88.8 -107.2 C149.04517038197366 -107.2 149.04517038197366 -252.6 209.2543500254813 -252.6" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M113.5 -80.6 C161.39622205756464 -80.6 161.39622205756464 -148.6 209.2543500254813 -148.6" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M139.0 8.6 C174.1203726169042 8.6 174.1203726169042 13 209.2543500254813 13" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M101.9 94.9 C155.5653930950659 94.9 155.5653930950659 195 209.2543500254813 195" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-136.3 -28.5 C-172.77743282334933 -28.5 -172.77743282334933 -43.79999999999998 -209.2543500254813 -43.79999999999998" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-125.3 60.7 C-167.2853474519403 60.7 -167.2853474519403 101.40000000000002 -209.2543500254813 101.40000000000002" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="139.3" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">📐 UML e diagramma delle classi</tspan></text>
+<rect x="209.2543500254813" y="-271" width="218.208" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="318.3583500254813" y="-252.6">🧭 La guerra dei metodi</tspan></text>
+<rect x="209.2543500254813" y="-167" width="226.528" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="322.51835002548125" y="-148.6">🗺️ Disegnare il software</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="497.78235002548126" y="-189.8">✅ UML è un linguaggio di</tspan><tspan x="497.78235002548126" y="-169.0">disegni</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="497.78235002548126" y="-128.2">🔍 Tanti diagrammi, pochi</tspan><tspan x="497.78235002548126" y="-107.4">indispensabili</tspan></text>
+<rect x="209.2543500254813" y="-15.8" width="171.61599999999999" height="57.6" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="295.0623500254813" y="2.6">🧱 La classe in un</tspan><tspan x="295.0623500254813" y="23.4">rettangolo</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="442.8703500254813" y="-48.6">✅ Il rettangolo a tre piani</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="442.8703500254813" y="-7.8">✅ Dal codice al disegno e</tspan><tspan x="442.8703500254813" y="13.0">ritorno</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="442.8703500254813" y="53.8">🔍 Classi astratte e</tspan><tspan x="442.8703500254813" y="74.6">interfacce nel disegno</tspan></text>
+<rect x="209.2543500254813" y="176.6" width="228.192" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="323.3503500254813" y="195.0">🔗 Le relazioni fra classi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="499.4463500254813" y="133.4">✅ Ereditarietà e</tspan><tspan x="499.4463500254813" y="154.2">realizzazione</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="499.4463500254813" y="195.0">🔍 Associazione,</tspan><tspan x="499.4463500254813" y="215.8">aggregazione e composizione</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="499.4463500254813" y="256.6">🔍 Dipendenza</tspan></text>
+<rect x="-377.54235002548126" y="-62.19999999999998" width="168.28799999999998" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-293.39835002548125" y="-43.8">🎬 Oltre le classi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-439.54235002548126" y="-115.8">🤓 Diagrammi di sequenza e</tspan><tspan x="-439.54235002548126" y="-95.0">casi d'uso</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-439.54235002548126" y="-54.2">🤓 UML come schizzo o</tspan><tspan x="-439.54235002548126" y="-33.4">come progetto</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-439.54235002548126" y="7.4">🤓 Standard ufficiale e</tspan><tspan x="-439.54235002548126" y="28.2">codice</tspan></text>
+<rect x="-407.49435002548137" y="72.60000000000002" width="198.24000000000004" height="57.6" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-308.37435002548136" y="91.0">🧩 Metti alla prova il</tspan><tspan x="-308.37435002548136" y="111.8">modello</tspan></text>
+</svg>

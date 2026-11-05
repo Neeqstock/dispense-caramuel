@@ -6,33 +6,7 @@
 
 > **Leyenda:** ✅ hay que saber · 🔍 para entender a fondo · 🤓 opcional, para curiosos · 🃏 tarjeta: responde en voz alta y luego despliega la respuesta
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((ESP ⚡ Caché, localidad y reloj))
-    🧭 Esperas de la CPU
-      Latencia
-      Jerarquía de memoria
-    🎯 Caché
-      Acierto
-      Fallo
-      Localidad temporal
-      Localidad espacial
-      Línea de caché
-      FIFO
-      SRAM
-      DRAM
-      Refresh
-      L1 L2 L3
-    ⏱️ Reloj
-      Frecuencia
-      Período
-      Tiempo medio de acceso
-      Pipeline
-```
+<img src="Allegati/esp-3ei-sett-ott-s6-cache-localidad-y-reloj-mappa-1.svg" alt="Mappa mentale: ESP ⚡ Caché, localidad y reloj" width="100%">
 
 ## 🧭 Esperas de la CPU
 

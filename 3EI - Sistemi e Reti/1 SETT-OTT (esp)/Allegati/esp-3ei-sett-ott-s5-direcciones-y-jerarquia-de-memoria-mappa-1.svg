@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-657 -285 1309 570" width="1309" height="570" role="img" aria-label="ESP 🧮 Direcciones y jerarquía de memoria" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>ESP 🧮 Direcciones y jerarquía de memoria</title>
+<rect x="-657" y="-285" width="1309" height="570" rx="14" fill="#ffffff"/>
+<path d="M445.72200895738735 -222 C472.72200895738735 -222 472.72200895738735 -242.4 499.72200895738735 -242.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M445.72200895738735 -222 C472.72200895738735 -222 472.72200895738735 -201.6 499.72200895738735 -201.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M310.93800895738735 -102.00000000000001 C337.93800895738735 -102.00000000000001 337.93800895738735 -142.8 364.93800895738735 -142.8" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M310.93800895738735 -102.00000000000001 C337.93800895738735 -102.00000000000001 337.93800895738735 -102.00000000000001 364.93800895738735 -102.00000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M310.93800895738735 -102.00000000000001 C337.93800895738735 -102.00000000000001 337.93800895738735 -61.200000000000024 364.93800895738735 -61.200000000000024" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 -2.400000000000011 463.11400895738734 -2.400000000000011" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 38.399999999999984 463.11400895738734 38.399999999999984" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 79.19999999999999 463.11400895738734 79.19999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 119.99999999999999 463.11400895738734 119.99999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 160.79999999999998 463.11400895738734 160.79999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 201.6 463.11400895738734 201.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M409.11400895738734 120 C436.11400895738734 120 436.11400895738734 242.4 463.11400895738734 242.4" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-435.73800895738736 0 C-462.73800895738736 0 -462.73800895738736 -142.8 -489.73800895738736 -142.8" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-435.73800895738736 0 C-462.73800895738736 0 -462.73800895738736 -102.00000000000001 -489.73800895738736 -102.00000000000001" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-435.73800895738736 0 C-462.73800895738736 0 -462.73800895738736 -61.200000000000024 -489.73800895738736 -61.200000000000024" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-435.73800895738736 0 C-462.73800895738736 0 -462.73800895738736 -20.400000000000027 -489.73800895738736 -20.400000000000027" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-435.73800895738736 0 C-462.73800895738736 0 -462.73800895738736 20.39999999999997 -489.73800895738736 20.39999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-435.73800895738736 0 C-462.73800895738736 0 -462.73800895738736 61.19999999999997 -489.73800895738736 61.19999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-435.73800895738736 0 C-462.73800895738736 0 -462.73800895738736 101.99999999999997 -489.73800895738736 101.99999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-435.73800895738736 0 C-462.73800895738736 0 -462.73800895738736 142.79999999999998 -489.73800895738736 142.79999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M92.4 -99.6 C149.14009488671894 -99.6 149.14009488671894 -222 205.88200895738734 -222" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M121.8 -60.3 C163.82018031586603 -60.3 163.82018031586603 -102.00000000000001 205.88200895738734 -102.00000000000001" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M117.4 68.4 C161.63914750232053 68.4 161.63914750232053 120 205.88200895738734 120" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-135.9 0.0 C-170.88200895738734 0.0 -170.88200895738734 0 -205.88200895738734 0" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="135.9" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="-10.4">ESP 🧮 Direcciones y jerarquía</tspan><tspan x="0" y="10.4">de memoria</tspan></text>
+<rect x="205.88200895738734" y="-250.8" width="239.84" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="325.80200895738733" y="-232.4">🧭 Direcciones y niveles de</tspan><tspan x="325.80200895738733" y="-211.6">memoria</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="507.72200895738735" y="-242.4">Latencia</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="507.72200895738735" y="-201.6">Capacidad</tspan></text>
+<rect x="205.88200895738734" y="-120.4" width="105.05600000000001" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="258.41000895738733" y="-102.0">🚌 Buses</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="372.93800895738735" y="-142.8">Bus de direcciones</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="372.93800895738735" y="-102.0">Bus de datos</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="372.93800895738735" y="-61.2">Bus de control</tspan></text>
+<rect x="205.88200895738734" y="101.6" width="203.23200000000003" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="307.49800895738736" y="120.0">🔢 Contar direcciones</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.11400895738734" y="-2.4">Configuraciones</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.11400895738734" y="38.4">Potencias de dos</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.11400895738734" y="79.2">Posición</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.11400895738734" y="120.0">Byte</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.11400895738734" y="160.8">Palabra</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.11400895738734" y="201.6">KiB MiB GiB</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="471.11400895738734" y="242.4">Memoria de 32 bits</tspan></text>
+<rect x="-435.73800895738736" y="-18.4" width="229.85600000000005" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-320.81000895738737" y="0.0">🏔️ Jerarquía de memoria</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-142.8">Registros</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-102.0">Caché</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-61.2">RAM</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="-20.4">Almacenamiento</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="20.4">Volatilidad</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="61.2">Ancho de banda</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="102.0">ROM</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-497.73800895738736" y="142.8">Memoria flash</tspan></text>
+</svg>

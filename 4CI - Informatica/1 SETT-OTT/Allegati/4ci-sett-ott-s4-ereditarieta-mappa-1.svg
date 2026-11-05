@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-691 -270 1320 539" width="1320" height="539" role="img" aria-label="🌳 Ereditarietà" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🌳 Ereditarietà</title>
+<rect x="-691" y="-270" width="1320" height="539" rx="14" fill="#ffffff"/>
+<path d="M313.88503712345033 -78.4 C340.88503712345033 -78.4 340.88503712345033 -150 367.88503712345033 -150" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M313.88503712345033 -78.4 C340.88503712345033 -78.4 340.88503712345033 -98.80000000000001 367.88503712345033 -98.80000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M313.88503712345033 -78.4 C340.88503712345033 -78.4 340.88503712345033 -47.60000000000002 367.88503712345033 -47.60000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M313.88503712345033 -78.4 C340.88503712345033 -78.4 340.88503712345033 3.599999999999982 367.88503712345033 3.599999999999982" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M313.88503712345033 144.8 C340.88503712345033 144.8 340.88503712345033 83.2 367.88503712345033 83.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M313.88503712345033 144.8 C340.88503712345033 144.8 340.88503712345033 155.20000000000002 367.88503712345033 155.20000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M313.88503712345033 144.8 C340.88503712345033 144.8 340.88503712345033 216.8 367.88503712345033 216.8" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-400.41303712345035 -66.80000000000001 C-427.41303712345035 -66.80000000000001 -427.41303712345035 -97.60000000000001 -454.41303712345035 -97.60000000000001" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-400.41303712345035 -66.80000000000001 C-427.41303712345035 -66.80000000000001 -427.41303712345035 -36 -454.41303712345035 -36" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M43.8 -65.7 C96.36511480844189 -65.7 96.36511480844189 -223.20000000000002 148.92503712345032 -223.20000000000002" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M69.8 -36.8 C109.38184187747396 -36.8 109.38184187747396 -78.4 148.92503712345032 -78.4" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M56.6 55.0 C102.75582627199886 55.0 102.75582627199886 144.8 148.92503712345032 144.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-72.0 -32.3 C-110.46877875845959 -32.3 -110.46877875845959 -66.80000000000001 -148.92503712345032 -66.80000000000001" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-76.6 19.1 C-112.74867511469704 19.1 -112.74867511469704 37.19999999999998 -148.92503712345032 37.19999999999998" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-64.7 45.2 C-106.81671690149129 45.2 -106.81671690149129 103.99999999999997 -148.92503712345032 103.99999999999997" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="78.9" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🌳 Ereditarietà</tspan></text>
+<rect x="148.92503712345032" y="-241.60000000000002" width="234.848" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="266.34903712345033" y="-223.2">🧭 Scrivere una volta sola</tspan></text>
+<rect x="148.92503712345032" y="-107.2" width="164.96" height="57.6" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="231.4050371234503" y="-88.8">🌳 Superclasse e</tspan><tspan x="231.4050371234503" y="-68.0">sottoclasse</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.88503712345033" y="-160.4">✅ extends crea una</tspan><tspan x="375.88503712345033" y="-139.6">sottoclasse</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.88503712345033" y="-98.8">✅ Il test è un</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.88503712345033" y="-58.0">✅ Object è la radice di</tspan><tspan x="375.88503712345033" y="-37.2">tutte le classi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.88503712345033" y="3.6">🔍 Una sola superclasse</tspan></text>
+<rect x="148.92503712345032" y="116.00000000000001" width="164.96" height="57.6" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="231.4050371234503" y="134.4">🏗️ Costruire una</tspan><tspan x="231.4050371234503" y="155.2">sottoclasse</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.88503712345033" y="62.4">✅ super chiama il</tspan><tspan x="375.88503712345033" y="83.2">costruttore della</tspan><tspan x="375.88503712345033" y="104.0">superclasse</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.88503712345033" y="144.8">🔍 Il super implicito e</tspan><tspan x="375.88503712345033" y="165.6">l'ordine di costruzione</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="375.88503712345033" y="206.4">🔍 Private e protected nella</tspan><tspan x="375.88503712345033" y="227.2">gerarchia</tspan></text>
+<rect x="-400.41303712345035" y="-85.20000000000002" width="251.48800000000003" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-274.6690371234503" y="-66.8">⚖️ Usare bene l'ereditarietà</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-462.41303712345035" y="-108.0">🔍 Ereditarietà o</tspan><tspan x="-462.41303712345035" y="-87.2">composizione</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-462.41303712345035" y="-46.4">🤓 Quadrati, rettangoli e</tspan><tspan x="-462.41303712345035" y="-25.6">Liskov</tspan></text>
+<rect x="-402.07703712345034" y="18.799999999999983" width="253.15200000000002" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-275.5010371234503" y="37.2">🧩 Esercizi sull'ereditarietà</tspan></text>
+<rect x="-323.8690371234503" y="85.59999999999997" width="174.944" height="36.8" rx="18" fill="#def5f3" stroke="#14b8a6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#09534b" font-weight="600"><tspan x="-236.39703712345033" y="104.0">📚 Fonti e risorse</tspan></text>
+</svg>

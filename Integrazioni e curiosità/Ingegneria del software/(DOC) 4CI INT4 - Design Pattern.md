@@ -4,23 +4,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
-mindmap
-  root((🧩 Design Pattern))
-    🧭 Un architetto, quattro informatici e un wiki
-    📖 Che cos'è un design pattern
-      ✅ Una soluzione con un nome
-      ✅ Le tre famiglie
-      🔍 Gli ingredienti di un pattern
-    🐄 Tre pattern nella stalla
-      ✅ Strategy - cambiare algoritmo come un attrezzo
-      🔍 Observer - avvisare chi è interessato
-      🔍 Factory - un solo posto per creare oggetti
-    ⚠️ Pattern con giudizio
-      🔍 Anti-pattern e martello d'oro
-      🤓 Singleton, il pattern più discusso
-    🧩 Metti alla prova il modello
-```
+<img src="Allegati/4ci-int4-design-pattern-mappa-1.svg" alt="Mappa mentale: 🧩 Design Pattern" width="100%">
 
 ## 🧭 Un architetto, quattro informatici e un wiki
 

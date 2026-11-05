@@ -9,20 +9,7 @@
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard (rispondi a voce, poi apri)
 
 ## 🗺️ Mappa
-```mermaid
-mindmap
-  root((🏠 Reti private e FLSM))
-    Indirizzi privati
-      ✅ Intervalli RFC 1918
-      ✅ NAT
-      🤓 NAT statico e dinamico
-      ✅ PAT e porte
-    FLSM
-      ✅ Sottoreti uguali
-      🔍 Spreco di FLSM
-      🤓 Loopback e altri intervalli
-    Esercizi
-```
+<img src="Allegati/4di-sett-ott-s4-reti-private-e-flsm-mappa-1.svg" alt="Mappa mentale: 🏠 Reti private e FLSM" width="100%">
 
 ## 📜 Quando i numeri sono finiti
 > **La storia di Nora.** La scuola affida a Nora la rete dei laboratori. Prima deve capire perché tanti dispositivi usano indirizzi privati e condividono un'uscita; poi dovrà dividere la rete della scuola in blocchi ordinati. Seguiamo il problema dalla scarsità degli indirizzi fino al progetto delle sottoreti.
@@ -45,6 +32,7 @@ Anche in Europa arriva il momento. Il **RIPE NCC**, l'organizzazione che assegna
 > **Nora, primo passo.** I computer dei laboratori hanno bisogno di numeri per comunicare dentro la scuola. Nora assegna loro indirizzi privati; la scuola vicina può usare gli stessi numeri nella propria rete senza che i due laboratori si confondano.
 
 ### ✅ Gli indirizzi privati si riutilizzano
+#fatto👍 
 Lo standard **RFC 1918** riserva tre intervalli IPv4 all'uso **privato**:
 
 | Intervallo                        | Prefisso | Esempio        |     |
@@ -163,11 +151,13 @@ No: il NAT traduce indirizzi, il firewall applica regole di accesso.
 > **Nora, secondo passo.** Sistemata l'uscita verso Internet, Nora deve organizzare gli indirizzi interni: la rete `192.168.10.0/24` andrà divisa fra quattro laboratori. Per ora le chiedono blocchi uguali; più avanti vedrà come risparmiare spazio assegnando blocchi diversi.
 
 ### ✅ FLSM divide la rete in blocchi uguali
+#fatto👍 
 Nora ha una rete `192.168.10.0/24` e deve assegnare **un blocco a ciascuno di quattro laboratori**. Le sottoreti sono pezzi distinti della stessa rete: ogni laboratorio riceve un proprio intervallo di indirizzi.
 
 **FLSM** (*Fixed Length Subnet Masking*) divide la rete in blocchi **tutti della stessa grandezza**. Vediamo come trovare quei blocchi.
 
 #### Prima: che cosa ci dice `/24`?
+#fatto👍 
 Un indirizzo IPv4 ha 32 bit. `/24` significa che i primi 24 identificano la rete; gli **8 bit che restano** possono distinguere gli indirizzi al suo interno.
 
 ```text
@@ -178,7 +168,7 @@ parte rete | 8 bit disponibili nella rete
 Gli 8 bit possono formare `2⁸ = 256` combinazioni: da `192.168.10.0` a `192.168.10.255`.
 
 #### Dividiamo in quattro blocchi uguali
-
+#fatto👍 
 1. **Quanti bit ci servono per numerare quattro blocchi?** Due: con due bit si formano quattro combinazioni, `00`, `01`, `10`, `11`.
 2. **Da dove prendiamo quei bit?** Dagli 8 bit disponibili nella rete. Dopo averne usati 2 per distinguere i blocchi, ne restano 6 per gli indirizzi di ciascun blocco.
 3. **Qual è il nuovo prefisso?** I bit di rete sono diventati `24 + 2 = 26`: ogni blocco è una sottorete `/26`.
@@ -214,6 +204,7 @@ Il **gateway**, se c'è, usa un indirizzo assegnabile della sottorete; per esemp
 🧠 <u>Ogni bit preso alla parte host raddoppia il numero dei blocchi e dimezza la loro grandezza.</u>
 
 #### 🤓 Perché dividere la rete? E che cosa serve?
+#fatto👍 
 Dividere una rete in sottoreti permette di **organizzare i dispositivi in gruppi** (per esempio, un laboratorio per sottorete). Così i broadcast restano nel proprio gruppo e si possono applicare regole diverse alle comunicazioni: per esempio, impedire ai computer degli studenti di raggiungere la rete della segreteria. Per ottenere davvero separazione e sicurezza servono anche una configurazione adeguata e regole di accesso: il solo indirizzo IP non basta.
 
 **Che cosa serve collegare?** Cavi e switch collegano i computer all'interno della rete locale. I gruppi possono essere collegati a switch distinti, oppure separati sullo stesso switch gestito tramite **VLAN**. Per comunicare tra sottoreti serve un router (o uno switch di livello 3), che riceve il traffico tramite il **gateway**. Non occorre necessariamente un router fisico per ogni sottorete.
@@ -246,7 +237,7 @@ No: è un host del blocco che inizia a .64.
 ✏️ **Prevedi, poi calcola (3 min).** Con lo stesso ragionamento, quanti bit servono per **sei** sottoreti? Quante sottoreti ottieni davvero? Poi dividi `192.168.20.0/24` in quattro parti e trova per ciascuna rete, host assegnabili e broadcast.
 
 ### 🔍 FLSM è semplice ma può sprecare
-
+#fatto👍 
 FLSM dà a tutti **lo stesso spazio**. Va bene se i gruppi sono simili. Ma se quattro reparti hanno bisogno di 50, 25, 12 e 6 host, assegnare a ciascuno un blocco da 62 lascia **molti indirizzi inutilizzati** nei reparti piccoli.
 
 | Reparto | Host necessari | Blocco FLSM (/26) | Indirizzi inutilizzati |

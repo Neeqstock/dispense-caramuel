@@ -6,33 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🗃️ Registri e percorsi dei dati))
-    🧭 Registri della CPU
-      Registro
-      Registri generali
-    🗃️ Registri
-      PC
-      IR
-      MAR
-      MDR
-      Registro di stato
-      Notazione
-    📥 Leggere e scrivere in memoria
-      Lettura
-      Scrittura
-      Prelievo di un'istruzione
-    🚩 Flag
-      Flag Z
-      Carry
-      Sign
-      Overflow
-```
+<img src="Allegati/3ei-sett-ott-s3-registri-e-percorsi-dei-dati-mappa-1.svg" alt="Mappa mentale: 🗃️ Registri e percorsi dei dati" width="100%">
 
 ## 🧭 Registri della CPU
 

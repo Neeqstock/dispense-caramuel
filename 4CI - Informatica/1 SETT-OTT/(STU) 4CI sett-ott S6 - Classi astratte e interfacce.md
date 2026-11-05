@@ -6,44 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-<details open>
-<summary><b>🤝 Classi astratte e interfacce</b></summary>
-
-- 🧭 **Contratti invece di dettagli**
-
-<details open>
-<summary>🧩 <b>Classi astratte</b></summary>
-
-- ✅ Una classe che non si può istanziare
-- ✅ I metodi astratti obbligano le sottoclassi
-- 🔍 Costruttori e metodi concreti in una classe astratta
-
-</details>
-
-<details open>
-<summary>🤝 <b>Interfacce</b></summary>
-
-- ✅ Un'interfaccia è un contratto
-- ✅ Implementare più interfacce
-- ✅ Variabili di tipo interfaccia
-- 🔍 Costanti e metodi default
-- 🤓 Le interfacce nella libreria Java
-
-</details>
-
-<details open>
-<summary>⚖️ <b>Scegliere lo strumento</b></summary>
-
-- ✅ Classe astratta o interfaccia
-- 🔍 I quattro principi insieme
-- 🤓 Le critiche alla programmazione a oggetti
-
-</details>
-
-- 🧩 **Esercizi su classi astratte e interfacce**
-- 📚 **Fonti e risorse**
-
-</details>
+<img src="Allegati/4ci-sett-ott-s6-classi-astratte-e-interfacce-mappa-1.svg" alt="Mappa mentale: 🤝 Classi astratte e interfacce" width="100%">
 
 ## 🧭 Contratti invece di dettagli
 

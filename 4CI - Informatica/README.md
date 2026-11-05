@@ -25,12 +25,71 @@ In questo bimestre usiamo Java, che già conosci, per costruire passo dopo passo
 
 ### 🧭 Di che cosa parliamo
 
-Python è un linguaggio diverso da Java: si scrive con meno parentesi e meno dichiarazioni, e lo si può provare una riga alla volta. In questa prima settimana vediamo come far girare Python (REPL e script), come funzionano variabili e tipi, come leggere input e output, quali operatori usare e come leggere un errore.
+**Python: ambiente e sintassi**; **Decisioni, cicli e funzioni**; **Liste e matrici**; **Dizionari**; **Progettare un programma**
+
+Python è un linguaggio diverso da Java: si scrive con meno parentesi e meno dichiarazioni, e lo si può provare una riga alla volta. Il modo di ragionare che conosci resta lo stesso; cambia la grammatica. Settimana dopo settimana costruiamo un piccolo gioco da terminale, un **dungeon**: prima l'eroe, poi il combattimento, lo zaino e la mappa, la scheda dei mostri e infine il gioco intero, con i test che dicono quando funziona.
+
+<details open>
+<summary><b>🐍 Python: da Java a un piccolo gioco</b></summary>
+
+<details open>
+<summary>🖥️ <b>Ambiente e prime istruzioni</b></summary>
+
+- **REPL e script**: una finestra dove Python risponde subito a ogni riga, e un file che conserva il programma intero.
+- **Variabili e tipi**: nomi che puntano a valori; il tipo (numero, testo, vero/falso) sta nel valore, come un'etichetta sul pacco.
+- **Input e output**: chiedere qualcosa a chi usa il programma e mostrargli una risposta.
+- **Errori e traceback**: il rapporto che Python scrive quando qualcosa va storto; si legge dal basso, come un referto.
+
+</details>
+
+<details open>
+<summary>🎲 <b>Decisioni, cicli e funzioni</b></summary>
+
+- **Decisioni**: il programma sceglie una strada, come un navigatore al bivio.
+- **Cicli**: ripetere righe senza copiarle, come il turno di un gioco che ricomincia finché qualcuno vince.
+- **Funzioni e moduli**: dare un nome a un pezzo di programma e usare pezzi già pronti, come una ricetta che richiami quando serve.
+- **Debugger**: uno strumento che ferma il programma e lo fa avanzare una riga alla volta.
+
+</details>
+
+<details open>
+<summary>🎒 <b>Liste e matrici</b></summary>
+
+- **Liste**: una fila di caselle numerate, come la playlist del telefono.
+- **Copie e frecce**: quando due nomi indicano la stessa lista, cambiare l'una cambia l'altra.
+- **Matrici**: una tabella di righe e colonne, come la mappa di un videogioco o un foglio di calcolo.
+- **Notebook Jupyter**: un quaderno con celle di testo e di codice da eseguire.
+
+</details>
+
+<details open>
+<summary>📇 <b>Dizionari</b></summary>
+
+- **Chiave e valore**: trovare un dato dal suo nome, come un contatto nella rubrica del telefono.
+- **Dati annidati**: tabelle fatte di schede, come l'elenco dei personaggi di un gioco con le loro caratteristiche.
+
+</details>
+
+<details open>
+<summary>🏰 <b>Progettare un programma</b></summary>
+
+- **Scomporre un problema**: dividere un lavoro grande in pezzi piccoli, ognuno con un compito.
+- **Test**: poche righe che controllano in automatico se il programma dà i risultati giusti.
+
+</details>
+
+</details>
 
 ### 📅 Dispense Novembre-Dicembre
 
 - [ ] [S1 - Primi passi con Python](2%20NOV-DIC/%28STU%29%204CI%20nov-dic%20S1%20-%20Primi%20passi%20con%20Python.md) — Come eseguire Python, variabili e tipi, input e output, operatori ed errori.
 - [Esempi S1 - Progetto dummy l'eroe](2%20NOV-DIC/Esempi/Progetto%20dummy%20S1%20-%20eroe/README.md) — File Python da eseguire e leggere, con una trascrizione della REPL.
+- [ ] [S2 - Decisioni, cicli e funzioni](2%20NOV-DIC/%28STU%29%204CI%20nov-dic%20S2%20-%20Decisioni%2C%20cicli%20e%20funzioni.md) — Parti da ciò che sai in Java: diagnostica i bug del dungeon e scopri che cosa cambia con blocchi, funzioni e import in Python.
+- [ ] [S3 - Liste e matrici](2%20NOV-DIC/%28STU%29%204CI%20nov-dic%20S3%20-%20Liste%20e%20matrici.md) — Come tenere tante cose in fila (lo zaino) o in tabella (la mappa) con un solo nome.
+- [ ] [S4 - Dizionari](2%20NOV-DIC/%28STU%29%204CI%20nov-dic%20S4%20-%20Dizionari.md) — Come trovare un dato dal suo nome invece che dalla sua posizione.
+- [ ] [S5 - Progettare un programma](2%20NOV-DIC/%28STU%29%204CI%20nov-dic%20S5%20-%20Progettare%20un%20programma.md) — Come dividere un programma in pezzi e controllare con i test che funzioni.
+- [ ] [S6 - Ripasso in flashcard](2%20NOV-DIC/%28STU%29%204CI%20nov-dic%20S6%20-%20Ripasso%20in%20flashcard.md) — Flashcard, trappole e quiz su tutto il bimestre, con la lista di ciò che serve per la verifica.
+- [ ] **S7 - Verifica** — Mostrare che cosa hai capito: prevedere, correggere e scrivere programmi Python.
 
 ## Integrazioni
 

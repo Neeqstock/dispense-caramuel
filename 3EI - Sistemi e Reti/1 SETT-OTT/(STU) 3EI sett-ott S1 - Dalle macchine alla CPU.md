@@ -6,46 +6,7 @@
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
-```mermaid
----
-config:
-  layout: tidy-tree
----
-mindmap
-  root((🖥️ Dalle macchine alla CPU))
-    🧭 Macchina e programma
-      Macchina dedicata
-      Macchina programmabile
-      Istruzioni
-    🔭 Informatica e Sistemi e Reti
-      Hardware
-      Software
-      Dato
-      Ipotesi sulle cause
-    👥 Dentro la CPU
-      CPU
-      Registri
-      ALU
-      CU
-      Parte operativa
-      Parte di controllo
-      Istruzione ADD
-    📜 Dal relè al microprocessore
-      Interruttore comandato
-      Relè
-      Valvola
-      Transistor
-      Circuito integrato
-      Microprocessore
-      Legge di Moore
-    🏗️ Livelli di astrazione
-      Applicazione
-      Programma
-      Sistema operativo
-      Istruzioni macchina
-      Circuiti logici
-      Transistor
-```
+<img src="Allegati/3ei-sett-ott-s1-dalle-macchine-alla-cpu-mappa-1.svg" alt="Mappa mentale: 🖥️ Dalle macchine alla CPU" width="100%">
 
 ## 🧭 Macchina e programma
 
@@ -56,7 +17,7 @@ Per secoli costruire una macchina ha significato darle **un lavoro**: misurare i
 ## 🔭 Informatica e Sistemi e Reti
 
 ### ✅ Hardware, software e dati
-
+#saltato 
 In Informatica studiamo, fra le altre cose, come descrivere un procedimento e scriverlo in un linguaggio di programmazione. In Sistemi e Reti guardiamo anche **la macchina che lo esegue e l'infrastruttura che fa comunicare le macchine**. Non è una divisione fra chi pensa e chi monta pezzi: entrambe le prospettive richiedono ragionamento e si incontrano di continuo.
 
 - **Hardware:** i componenti fisici.
@@ -87,7 +48,7 @@ No. Il programma stabilisce come trattare i dati, ma il lavoro lo esegue l'hardw
 </details>
 
 ### ✅ Sintomo e causa
-
+#saltato 
 Un sito lento può avere diverse cause. Alcuni esempi:
 - Poca memoria disponibile al server
 - Un collegamento congestionato
@@ -104,7 +65,7 @@ Per esempio un algoritmo inefficiente, poca memoria disponibile o un collegament
 ## 👥 Dentro la CPU
 
 ### ✅ Registri, ALU e CU
-
+#fatto👍 
 Prendiamo il compito «somma 7 e 5 e conserva il risultato». Una persona lo risolve con carta e penna e non si accorge nemmeno dei passaggi. Una macchina invece deve fare **tre lavori distinti**:
 
 1. **Tenere** i numeri da qualche parte, pronti all'uso.
@@ -157,7 +118,7 @@ No. Esegue l'operazione che le viene indicata sui due numeri che riceve.
 </details>
 
 ### ✅ Parte operativa e parte di controllo
-
+#fatto👍 
 Gli ingegneri dividono i circuiti della CPU in due gruppi, secondo una domanda semplice: **questo circuito *tocca* i dati oppure *comanda* chi li tocca?**
 
 ```text
@@ -202,7 +163,7 @@ Sì. Anche un trasferimento è lavoro della parte operativa.
 </details>
 
 ### ✅ Esempio svolto: `ADD R3, R1, R2`
-
+#fatto👍 
 `ADD R3, R1, R2` è una notazione didattica: non è un comando da digitare sul PC. È il modo in cui scriviamo **un'istruzione**, cioè un ordine che la CPU sa eseguire. Si legge così:
 
 - `ADD` è l'azione: sommare.
@@ -255,7 +216,7 @@ No. I circuiti reagiscono a un'istruzione codificata; anche l'ALU non sceglie da
 </details>
 
 ### 🔍 Limiti della metafora
-
+#fatto👍 
 Per capire la CPU abbiamo usato l'immagine di una squadra, o di una cucina con piano di lavoro, robot e ricetta. Aiuta, ma smette di funzionare in tre punti. Conoscerli evita di farsi un'idea sbagliata del processore.
 
 1. **Le persone capiscono richieste vaghe, i circuiti no.** A un aiuto-cuoco puoi dire «passami quel barattolo». Alla CPU no: ogni segnale deve indicare esattamente *quali* registri, *quale* operazione, *quale* destinazione. Non esiste un «più o meno».
@@ -286,7 +247,7 @@ No. Sono parti interne del processore; sulla scheda si vedono oggetti come CPU, 
 ## 📜 Dal relè al microprocessore
 
 ### ✅ Un interruttore comandato da un segnale
-
+#fatto👍 
 Per far calcolare una macchina serve rappresentare gli 0 e gli 1 e cambiarli in modo **sicuro e veloce**. La tecnica è sempre la stessa, dall'Ottocento a oggi: un **interruttore comandato da un segnale elettrico**.
 
 Un interruttore normale lo azioni con un dito. Questo lo aziona un altro circuito: un segnale piccolo apre o chiude un percorso per un segnale più grande. Se un circuito può comandarne un altro, i circuiti si possono **concatenare** e costruire con interruttori anche operazioni logiche:
@@ -313,6 +274,7 @@ Che i circuiti a relè potevano eseguire l'algebra di Boole: è l'inizio della p
 </details>
 
 ### 🔍 Relè, valvole e transistor
+#fatto👍  *(Saltata la valvola termoionica)*
 
 | Tecnologia | Come comanda la corrente | Limite principale |
 |---|---|---|
@@ -346,7 +308,7 @@ No. ENIAC, del 1946, usava migliaia di valvole: 17.468.
 </details>
 
 ### 🔍 Dal transistor al chip
-
+#fatto👍 
 Collegare a mano i transistor uno per uno, con i fili, diventa impossibile quando sono migliaia. Alla fine degli anni Cinquanta Jack Kilby (Texas Instruments, 1958) e Robert Noyce (Fairchild, 1959) arrivarono, indipendentemente, a una soluzione: costruire più componenti e i loro collegamenti **insieme, sulla stessa fetta di silicio**, con procedimenti fotografici. Nasce il **circuito integrato**, o chip.
 
 Nel 1971 l'**Intel 4004** mise un'intera CPU in un solo chip: è il primo microprocessore venduto come componente. Aveva circa 2.300 transistor, elaborava 4 bit alla volta e nacque per le calcolatrici di una ditta giapponese, la Busicom. Lo progettarono Federico Faggin (italiano, di Vicenza), Ted Hoff, Stanley Mazor e Masatoshi Shima; Faggin firmò il chip con le sue iniziali, F.F.
@@ -378,7 +340,7 @@ Era già un termine da ingegneri per i piccoli difetti (Edison, 1878). La storia
 </details>
 
 ### 🤓 La legge di Moore
-
+#fatto👍 
 > Nel 1965 Gordon Moore descrisse una tendenza: il numero di componenti che si potevano integrare in un chip cresceva a ritmo regolare. La previsione fu poi riformulata. Non è una legge della natura, e non garantisce che ogni programma finisca il lavoro in metà tempo ogni due anni. Più transistor possono diventare più cache, più core o nuove funzioni: il vantaggio dipende da come sistema e programma li usano.
 >
 > La domanda interessante diventa: **quale risorsa limita questo lavoro?** Un calcolatore velocissimo può restare fermo ad aspettare i dati. Ritroveremo questa idea parlando di memorie.
@@ -399,7 +361,7 @@ Quale risorsa limita questo lavoro. Un calcolatore velocissimo può restare ferm
 ## 🏗️ Livelli di astrazione
 
 ### ✅ Livelli e astrazione
-
+#saltato 
 Quando scrivi un messaggio non pensi ai transistor, e non serve. Un computer si può guardare a **livelli**. Ogni livello usa quello sotto di sé senza conoscerne i dettagli, e offre servizi a quello sopra. Questo si chiama **astrazione**: nascondere i dettagli che, a quel livello, non servono.
 
 | Livello | Che cosa vede | Esempio |
@@ -429,7 +391,7 @@ Sono la stessa somma vista a livelli diversi: la riga del programma diventa un'i
 </details>
 
 ### 🔍 Problemi e livelli
-
+#saltato 
 Un guasto, o un risultato strano, può avere origine **a un livello diverso da quello in cui lo vedi**. Un sito lento può dipendere dal programma, dal sistema operativo, dall'hardware o dalla rete. Per questo, nel sintomo, bisogna chiedersi *a quale livello* cercare.
 
 Succede anche che un livello alto «dimentichi» un limite del livello basso. Quando scrivi un numero in un programma pensi a numeri senza fine; ma nei registri ogni numero occupa un numero limitato di bit. Se il risultato è troppo grande può comparire un numero sbagliato, a volte persino negativo. Il programmatore non ha sbagliato la somma: ha ignorato un limite che stava più sotto. Lo vedremo da vicino nelle prossime settimane.

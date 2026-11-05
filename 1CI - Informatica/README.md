@@ -28,9 +28,9 @@ Dentro un computer non ci sono numeri, lettere o colori. Ci sono **interruttori*
 
 ### 🧭 Di che cosa parliamo
 
-**Logica: vero e falso**; **Sistema operativo**
+**Sistema operativo**; **Il boot**; **Logica: dall'interruttore alla somma**
 
-Il computer conosce solo due cose: acceso o spento, vero o falso. Ora usiamo questa scelta fra due in due direzioni. La prima è **come si ragiona** con il vero e il falso (logica). La seconda è **chi tiene in ordine la macchina** (sistema operativo), fino a come si accende. 🔀
+Dentro il computer c'è un regista: il sistema operativo, che tiene in ordine programmi, memoria e file. Prima scopriamo come lavora e come si sveglia quando accendi la macchina. Poi scendiamo le scale, sotto il regista, fino agli interruttori: come un interruttore può **decidere**, come bastano pochi mattoni per costruire tutto il resto e come un circuito riesce a **sommare**. 🎛️
 
 ### 🗺️ Il programma in una mappa
 
@@ -38,19 +38,7 @@ Il computer conosce solo due cose: acceso o spento, vero o falso. Ora usiamo que
 <summary><b>💻 Informatica · Novembre-Dicembre</b></summary>
 
 <details open>
-<summary><b>🔀 Logica: vero e falso</b></summary>
-
-- **Proposizione**: una frase che è vera o falsa, come «Roma è in Italia». Un ordine o una domanda non lo sono.
-- **NOT** (non): capovolge la risposta. Se «piove» è vero, «non piove» è falso.
-- **AND** (e): vero solo se sono vere **tutte e due** le condizioni.
-- **OR** (o): vero se ne basta **una**.
-- **Tabella di verità**: l'elenco di tutti i casi possibili, con il risultato per ciascuno.
-- **Più variabili**: più condizioni insieme. Le parentesi decidono l'ordine di calcolo.
-
-</details>
-
-<details open>
-<summary><b>🧠 Sistema operativo</b></summary>
+<summary><b>🎛️ Sistema operativo</b></summary>
 
 - **Software di base**: il programma che fa funzionare la macchina e gli altri programmi (per esempio Windows, Android, Linux).
 - **Processore**: decide quale programma usa la CPU e per quanto tempo.
@@ -71,6 +59,17 @@ Il computer conosce solo due cose: acceso o spento, vero o falso. Ora usiamo que
 </details>
 
 <details open>
+<summary><b>🔀 Logica: dall'interruttore alla somma</b></summary>
+
+- **Relè**: un interruttore comandato da un altro interruttore. Con pochi relè si fanno i primi circuiti che decidono.
+- **Porte NOT, AND, OR**: circuiti che capovolgono una risposta, o la danno vera solo se tutte e due le condizioni sono vere, o se ne basta una.
+- **NAND**: una porta che da sola basta a costruire tutte le altre.
+- **XOR**: vera quando i due ingressi sono diversi.
+- **Somma binaria**: con una XOR e una AND si costruisce un circuito che somma due bit.
+
+</details>
+
+<details open>
 <summary><b>🔧 In laboratorio</b></summary>
 
 - **Presentazioni**: slide efficaci con PowerPoint o Impress.
@@ -82,13 +81,13 @@ Il computer conosce solo due cose: acceso o spento, vero o falso. Ora usiamo que
 
 ### 📅 Dispense Novembre-Dicembre
 
-- [ ] [S1 - Vero o Falso](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20S1%20-%20Vero%20o%20falso.md) — Che cos'è una frase vera o falsa, e come si nega una risposta.
-- [ ] **S2 - E e O** — Quando una decisione dipende da due condizioni.
-- [ ] **S3 - Espressioni a Più Variabili** — Tante condizioni insieme, e l'ordine in cui si valutano.
-- [ ] **S4 - Il Sistema Operativo** — Chi decide quale programma usa il processore e dove finisce ogni file.
-- [ ] **S5 - Il Boot** — Che cosa succede fra il pulsante di accensione e lo schermo di accesso.
-- [ ] **S6 - Ripasso Attivo** — Logica e sistema operativo, con esercizi a coppie.
-- [ ] **S7 - Verifica e Recupero** — Verifica di teoria, lettura degli errori e recupero.
+- [ ] [S1 - Il sistema operativo](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20S1%20-%20Il%20sistema%20operativo.md) — Chi decide quale programma usa il processore e dove finisce ogni file.
+- [ ] [S2 - Il boot](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20S2%20-%20Il%20boot.md) — Che cosa succede fra il pulsante di accensione e lo schermo di accesso.
+- [ ] [S3 - Dal relè alle porte](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20S3%20-%20Dal%20rel%C3%A8%20alle%20porte.md) — Come un interruttore può decidere: NOT, AND e OR diventano circuiti.
+- [ ] [S4 - NAND](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20S4%20-%20NAND.md) — Un solo tipo di porta per costruire tutto il resto. Giochiamo con Nandgame.
+- [ ] [S5 - XOR e la somma](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20S5%20-%20XOR%20e%20la%20somma.md) — Come un circuito somma due numeri in binario.
+- [ ] [S6 - Ripasso attivo](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20S6%20-%20Ripasso%20attivo.md) — Sistema operativo e circuiti, con esercizi a coppie e un assaggio di Flowgorithm.
+- [ ] **S7 - Verifica e recupero** — Verifica di teoria, lettura degli errori e recupero.
 
 ## Integrazioni e curiosità
 
