@@ -2,25 +2,25 @@
 
 # 🛠️ Eserciziario · 3EI sett-ott
 
-**3EI · Settembre-Ottobre · Eserciziario con casi reali · Teoria e pratica scritta**
+**3EI · Settembre-Ottobre · Casi reali e situazioni verosimili · Teoria e pratica scritta**
 
-⏱️ **Tempo: un dossier dura 10-20 minuti.** ✅ essenziale: circa 75 minuti in tutto. 🔍 per il voto alto: circa 45 minuti. 🤓 si può saltare. Non è un compito a casa: scegli i dossier che ti servono, anche uno al giorno.
+⏱️ **Ogni dossier richiede circa 10–20 minuti.** Il percorso ✅ essenziale dura circa 75 minuti; gli approfondimenti 🔍 richiedono circa altri 45 minuti. Gli esercizi 🤓 sono facoltativi. Non è un compito da svolgere tutto in una volta: scegli i dossier che ti servono e affrontane anche uno al giorno.
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 caso vero o verosimile · 🛠️ restauro · 📖 teoria · ✏️ pratica scritta · 🟢 svolto: guarda come si fa · 🎯 da provare: soluzione nascosta · 🧠 da ricordare · ⚠️ errore comune · 📌 controllo · 🃏 soluzione
 
-Un museo dell'informatica riceve in dono una stanza piena di macchine spente: un computer degli anni Quaranta, una scheda di bordo, un vecchio PC. Nessuno sa più come funzionano. Voi siete i tecnici del **laboratorio di restauro** (il museo è inventato). Per rimetterle in moto non servono martelli: serve capire **che cosa conserva ogni pezzo, chi comanda chi e quanto si aspetta**.
+Un museo dell'informatica riceve in dono una stanza piena di macchine spente: un computer degli anni Quaranta, una scheda di bordo e un vecchio PC. Nessuno sa più come funzionano. Voi siete i tecnici del **laboratorio di restauro** (il museo è inventato). Per rimetterle in moto non servono martelli: bisogna capire **che cosa conserva ogni componente, chi coordina le operazioni e quanto tempo si perde ad aspettare**.
 
-Ogni dossier parte da una macchina vera o verosimile, da un guasto da trovare o da una scheda tecnica da leggere. Alla fine dovete «ricostruire la macchina».
+Ogni dossier parte da una macchina reale o da una situazione verosimile. Potreste dover individuare un guasto o leggere una scheda tecnica. Alla fine, ricostruirete il funzionamento della macchina.
 
 <u>Un computer non è un mistero: è una catena di piccole regole.</u> Conoscerle è il modo per sapere dove guardare quando qualcosa non va.
 
 ## Come si usa
 
-- 🟢 **Svolto.** Leggi i passaggi, poi copri la soluzione con la mano e rifai l'esercizio sul quaderno.
-- 🎯 **Da provare.** Prima prova tu, sul quaderno. Poi apri la flashcard 🃏 e confronta.
-- Ogni dossier ha almeno un esercizio svolto, uno di teoria 📖 e uno di pratica scritta ✏️.
-- **Le regole del gioco.** Le istruzioni sono quelle della nostra macchina: `LOAD`, `ADD`, `STORE`, `HALT`, con una istruzione per cella. Dopo il fetch il PC avanza di uno. Se ti serve ripassare la notazione, guarda il [foglio sul linguaggio assembly](%28STU%29%203EI%20-%20Linguaggio%20assembly%20base.md).
-- **Valori.** Nomi, celle e numeri degli esercizi sono inventati. I fatti dei casi 📜 sono veri e hanno la fonte in fondo.
+- 🟢 **Svolto.** Leggi i passaggi, poi copri la soluzione e rifai l'esercizio sul quaderno.
+- 🎯 **Da provare.** Prima svolgi l'esercizio sul quaderno. Poi apri la soluzione 🃏 e confrontala con la tua.
+- Ogni dossier contiene esercizi di teoria 📖 e di pratica scritta ✏️; alcuni includono anche un esempio svolto 🟢.
+- **Le regole del gioco.** La nostra macchina conosce le istruzioni `LOAD`, `ADD`, `STORE` e `HALT`: ogni istruzione occupa una cella. Dopo il fetch, il PC passa all'indirizzo successivo. Per ripassare la notazione, consulta il [foglio sul linguaggio assembly](%28STU%29%203EI%20-%20Linguaggio%20assembly%20base.md).
+- **Valori.** I nomi, gli indirizzi e i numeri degli esercizi sono inventati. Le informazioni storiche contrassegnate con 📜 sono accompagnate dalle fonti in fondo alla pagina.
 
 | Dossier | Tema | Settimana | Caso |
 | :-----: | ------------------------------- | :-------: | ------------------------------------ |
@@ -40,9 +40,9 @@ Ogni dossier parte da una macchina vera o verosimile, da un guasto da trovare o 
 
 ### 📜 Caso vero: da ENIAC a EDSAC
 
-Nel 1946 l'ENIAC, uno dei primi calcolatori elettronici, si «programma» con le mani: bisogna ricollegare cavi e girare interruttori. Per cambiare calcolo servono giorni. Il lavoro lo fa un gruppo di donne matematiche, fra cui Kay McNulty, Jean Jennings e Betty Snyder.
+Nel 1946 l'ENIAC, uno dei primi calcolatori elettronici, si programmava manualmente, ricollegando cavi e impostando interruttori. Cambiare calcolo poteva richiedere giorni. A programmarlo era un gruppo di matematiche, fra cui Kay McNulty, Jean Jennings e Betty Snyder.
 
-Il 6 maggio 1949 a Cambridge entra in funzione l'EDSAC. Ha **512 parole** di memoria, fatte di onde sonore che corrono dentro tubi di mercurio. Il suo trucco non sta nel metallo: sta nell'idea di tenere **anche il programma in memoria**. Per cambiare compito non si tocca più un cavo. Si cambiano i numeri che stanno nelle celle.
+Il 6 maggio 1949 entra in funzione a Cambridge l'EDSAC. La sua memoria contiene **512 parole** e usa linee di ritardo a mercurio. La novità non è il materiale, ma l'idea di conservare **anche il programma in memoria**. Per cambiare compito non occorre più ricollegare i cavi: basta sostituire le istruzioni memorizzate.
 
 🧠 <u>La macchina resta la stessa. Cambia ciò che sta in memoria.</u>
 
@@ -67,7 +67,7 @@ contenuto:  LOAD R1, [63]     STORE [64], R1     HALT    9     0
 3. La `LOAD` copia 9 in R1. La `STORE` copia R1 nella cella 64. Alla fine `MEM[64] = 9`. La cella 63 resta 9, perché una copia non svuota la sorgente.
 4. Cambiamo le **istruzioni scritte in memoria**. I collegamenti e i circuiti restano gli stessi.
 
-📌 **Controllo.** Istruzioni e dati stanno nella stessa memoria, in celle diverse. Nessuno li distingue guardando i numeri: li distingue il modo in cui il PC li usa.
+📌 **Controllo.** Istruzioni e dati stanno nella stessa memoria, ma in celle diverse. La memoria non li distingue da sola: è la CPU a interpretarli in base al modo in cui li usa.
 
 🧠 <u>L'indirizzo dice dove. Il contenuto dice che cosa c'è.</u>
 
@@ -108,7 +108,7 @@ D. «Nel modello di Von Neumann i dati e le istruzioni stanno nella stessa memor
 <details>
 <summary>🃏 <b>1.3 — Soluzione</b></summary>
 
-A. **Falso.** Basta cambiare ciò che sta in memoria: istruzioni e dati. I cavi restano dove sono.
+A. **Falso.** Basta sostituire le istruzioni in memoria. I cavi restano al loro posto.
 B. **Falso.** Un numero in una cella può essere un dato, o la parte di un'istruzione che indica un indirizzo. Dipende da come la macchina lo usa.
 C. **Vero.**
 D. **Vero.**
@@ -134,15 +134,15 @@ Tastiera → **ingresso**. RAM con il programma → **memoria principale**. Alto
 
 ### 📜 Caso vero: Shannon e i relè, 1937
 
-Nel 1937 un giovane ricercatore del MIT, Claude Shannon, scrive la sua tesi con un'idea che sembra un gioco. I circuiti fatti di **relè**, cioè interruttori comandati da un segnale elettrico, possono eseguire l'algebra di Boole. Due interruttori in serie lasciano passare la corrente solo se sono entrambi chiusi: è un **AND**. Due interruttori in parallelo la lasciano passare se ne basta uno: è un **OR**. Un interruttore che apre quando riceve corrente dà un **NOT**.
+Nel 1937 Claude Shannon, giovane ricercatore al MIT, scrive una tesi su un'idea sorprendente: i circuiti formati da **relè** — interruttori comandati da un segnale elettrico — possono rappresentare le operazioni dell'algebra di Boole. Due interruttori in serie lasciano passare la corrente solo se sono entrambi chiusi: è un **AND**. Due interruttori in parallelo la lasciano passare se ne basta uno: è un **OR**. Un interruttore che apre quando riceve corrente dà un **NOT**.
 
-Da quel momento i circuiti non si disegnano più a tentativi: si **progettano** con la logica. Relè, valvole e transistor saranno solo modi sempre più piccoli e veloci di costruire lo stesso interruttore.
+Da allora, i circuiti si possono **progettare** usando la logica, non solo per tentativi. Relè, valvole e transistor sono modi sempre più piccoli e veloci di costruire interruttori.
 
-🧠 <u>Ogni calcolo della CPU è fatto di interruttori che si comandano a vicenda.</u>
+🧠 <u>I circuiti della CPU combinano segnali elettrici per elaborare i dati.</u>
 
 ### 2.1 📖 Teoria · ✅ · 🟢 Svolto — La porta del laboratorio
 
-**Consegna.** La porta del laboratorio si apre in questi casi (scena inventata): se si presentano **il badge e il codice giusto**, oppure se c'è **la chiave di emergenza**. Scrivi la condizione con AND e OR e disegna gli interruttori.
+**Consegna.** La porta del laboratorio (scena inventata) si apre se vengono presentati **il badge e il codice giusto**, oppure se si usa **la chiave di emergenza**. Scrivi la condizione usando AND e OR, poi disegna gli interruttori.
 
 **Svolgimento.**
 
@@ -171,7 +171,7 @@ Da quel momento i circuiti non si disegnano più a tentativi: si **progettano** 
 
 ### 2.2 ✏️ Pratica · ✅ · 🎯 Da provare — Operativa o di controllo?
 
-**Consegna.** Per ognuno di questi elementi di una CPU scrivi se appartiene alla **parte operativa** o alla **parte di controllo**. La domanda guida: *questo circuito tocca i dati o comanda chi li tocca?*
+**Consegna.** Per ciascun elemento della CPU, indica se appartiene alla **parte operativa** o alla **parte di controllo**. Per decidere, chiediti: *questo elemento elabora o trasferisce dati, oppure controlla le operazioni?*
 
 1. Il registro R1, che contiene 7.
 2. L'ALU, che trasforma 7 e 5 in 12.
@@ -223,7 +223,7 @@ Da quel momento i circuiti non si disegnano più a tentativi: si **progettano** 
 
 ### 2.4 📖 Teoria · 🔍 · 🎯 Da provare — Il pannello del debugger
 
-**Consegna.** Un debugger è un programma che ti fa vedere i registri mentre un altro programma gira. Il restauratore guarda questo pannello (valori inventati). Nella cella 150 c'è `LOAD R2, [260]` e `MEM[260] = 18`.
+**Consegna.** Un debugger è un programma che mostra i registri mentre un altro programma è in esecuzione. Il restauratore osserva il pannello seguente (valori inventati). Nella cella 150 si trova l'istruzione `LOAD R2, [260]` e `MEM[260] = 18`.
 
 | | PC | MAR | MDR | IR | R2 |
 |---|:-:|:-:|:-:|:-:|:-:|
@@ -255,9 +255,9 @@ d) 18, perché il contenuto dell'MDR viene copiato in R2.
 
 ### 📜 Scena verosimile: la centralina della serra (inventata)
 
-Nel museo c'è la centralina di una vecchia serra: un piccolo computer che tiene d'occhio la temperatura. Ogni giorno fa lo stesso giro. Prende la prossima istruzione. Capisce che cosa chiede. La esegue. Poi passa alla successiva.
+Nel museo c'è la centralina di una vecchia serra: un piccolo computer che controlla la temperatura. Ripete sempre la stessa sequenza: preleva la prossima istruzione, la interpreta, la esegue e poi passa alla successiva.
 
-Prelevare, interpretare, eseguire: **fetch, decode, execute**. Se la centralina si blocca, il restauratore non può «sentire» che cosa non va. Deve seguire il programma passo dopo passo, come fa la CPU.
+Prelevare, interpretare, eseguire: **fetch, decode, execute**. Se la centralina si blocca, il restauratore non può capire il guasto «a orecchio»: deve seguire il programma passo dopo passo, come fa la CPU.
 
 🧠 <u>Una macchina a programma memorizzato fa sempre lo stesso giro: legge, capisce, esegue, passa alla prossima.</u>
 
@@ -285,7 +285,7 @@ Prelevare, interpretare, eseguire: **fetch, decode, execute**. Se la centralina 
 | `ADD R1, R1, R2` | 123 | 25 | 5 | 20 |
 | `STORE [300], R1` | 124 | 25 | 5 | 25 |
 
-📌 **Controllo.** A ogni riga cambia **una sola** cosa fra registri e memoria. Il PC avanza sempre di uno e non vale mai 300: 300 è l'indirizzo di un dato.
+📌 **Controllo.** A ogni istruzione, oltre al PC, cambia al massimo un registro dei dati oppure una cella di memoria. Il PC passa sempre all'istruzione successiva: non diventa mai 300, perché 300 è l'indirizzo di un dato.
 
 ⚠️ **Errore comune:** scrivere `MEM[300] = 25` già dopo l'`ADD`. L'`ADD` cambia solo R1: la memoria cambia soltanto con la `STORE`.
 
@@ -327,13 +327,13 @@ Prelevare, interpretare, eseguire: **fetch, decode, execute**. Se la centralina 
 
 ⚠️ **Errori comuni:** `ADD R2, R1, R1` letta come R2 = 1 o R2 = 6 (somma R1 con se stesso: 12). `STORE [310], R2` scambiata con una `LOAD` (R2 invariato) invece di modificare `MEM[310]`.
 
-📌 R3 = R2 + R1 = 12 + 6 = 18. La destinazione è sempre il **primo** registro dell'`ADD`.
+📌 `R3 = R2 + R1 = 12 + 6 = 18`. La destinazione è sempre il **primo** registro indicato nell'istruzione `ADD`.
 
 </details>
 
 ### 3.3 📖 Teoria · ✅ · 🎯 Da provare — Che cosa passa sui bus
 
-**Consegna.** Per il programma del 3.2 completa la tabella dei tre bus (indirizzi, controllo, dati). Nella terza riga, R3 vale 18.
+**Consegna.** Completa la tabella indicando che cosa passa sui tre bus durante le operazioni descritte. Usa il programma dell'esercizio 3.2; nella terza riga, considera `R3 = 18`.
 
 | Che cosa succede | Bus indirizzi | Bus di controllo | Bus dati |
 |---|---|---|---|
@@ -350,7 +350,7 @@ Prelevare, interpretare, eseguire: **fetch, decode, execute**. Se la centralina 
 | Lettura del dato | 310 | READ | 6, dalla memoria alla CPU |
 | Scrittura della `STORE` | 311 | WRITE | 18, dalla CPU alla memoria |
 
-🧠 <u>Indirizzi: dove. Dati: che cosa. Controllo: quale azione.</u> Il bus indirizzi va sempre dalla CPU alla memoria.
+🧠 <u>Indirizzi: dove. Dati: che cosa. Controllo: quale azione.</u> Nel modello semplificato di questi esercizi, la CPU invia l'indirizzo alla memoria.
 
 </details>
 
@@ -377,7 +377,7 @@ Prelevare, interpretare, eseguire: **fetch, decode, execute**. Se la centralina 
 | 4 | 142 | `ADD R3, R2, R1` | `ADD R3, R2, R1` | 142 |
 | 5 | 142 | `ADD R3, R2, R1` | `ADD R3, R2, R1` | 143 |
 
-Nel passo 2 non cambia nessun registro: la memoria sta cercando la cella.
+Nel passo 2 i registri non cambiano: la CU invia il segnale di lettura alla memoria.
 
 La **`ADD`** usa solo registri: la memoria non viene letta di nuovo. La **`LOAD R1, [310]`** invece legge la memoria **due volte**: prima con MAR = 140 (MDR = l'istruzione), poi con MAR = 310 (MDR = 6).
 
@@ -414,7 +414,7 @@ Il salto cambia **quale istruzione viene dopo**, non il valore dei registri.
 
 ### 📜 Caso vero: tre macchine, tre potenze di due
 
-Tre macchine, tre numeri che sembrano casuali e invece sono tutti **potenze di due**.
+Tre macchine, alcuni numeri che sembrano casuali e invece si collegano alle **potenze di due**.
 
 - **EDSAC** (1949): 512 parole di memoria. Sono 2⁹: bastano 9 bit per scrivere un indirizzo.
 - **Apollo Guidance Computer**, il computer di bordo delle missioni Apollo: 2 048 parole di RAM (2¹¹) e 36 864 parole di memoria a sola lettura. Girava a 2,048 MHz. Una parola era fatta di 16 bit: 15 di dato e 1 di controllo.
@@ -426,7 +426,7 @@ Tre macchine, tre numeri che sembrano casuali e invece sono tutti **potenze di d
 
 ### 4.1 ✏️ Pratica · ✅ · 🟢 Svolto — Da quante celle a quanti bit
 
-**Consegna.** Per ciascuna macchina trova il numero di bit dell'indirizzo, oppure il numero di locazioni.
+**Consegna.** Per ogni macchina, calcola il numero di bit dell'indirizzo oppure il numero di locazioni richiesto.
 
 | Macchina | Dato | Da trovare |
 |---|---|---|
@@ -446,12 +446,12 @@ Tre macchine, tre numeri che sembrano casuali e invece sono tutti **potenze di d
 
 ### 4.2 ✏️ Pratica · ✅ · 🎯 Da provare — La memoria della stazione meteo
 
-**Consegna.** Una stazione meteo registra una misura di temperatura ogni minuto, e ogni misura occupa 8 bit, cioè **1 byte**. Il museo conserva le misure in una memoria con indirizzi di **13 bit** (valori inventati).
+**Consegna.** Una stazione meteo registra una misura di temperatura ogni minuto. Ogni misura occupa 8 bit, cioè **1 byte**. Il museo la conserva in una memoria con indirizzi a **13 bit** (valori inventati).
 
 a) Quante locazioni ha questa memoria?
 b) Qual è l'ultimo indirizzo?
 c) Qual è la capacità, se ogni locazione è da 1 byte?
-d) Se ogni locazione diventasse da **2 byte**, che cosa cambierebbe: il numero di indirizzi o la capacità?
+d) Se ogni locazione contenesse **2 byte** invece di 1, che cosa cambierebbe: il numero di locazioni o la capacità totale?
 
 <details>
 <summary>🃏 <b>4.2 — Soluzione</b></summary>
@@ -464,7 +464,7 @@ a) 2¹³ = **8 192** locazioni. b) **8 191**. c) 8 192 × 1 byte = **8 192 byte*
 
 ### 4.3 ✏️ Pratica · 🔍 · 🎯 Da provare — Quanti bit servono
 
-**Consegna.** Il museo vuole indirizzare almeno **3 000 locazioni**. Quanti bit di indirizzo servono, al minimo? Quante locazioni distinguono davvero? E se invece ne servissero 36 864, come la ROM dell'Apollo, quanti bit servirebbero nel nostro modello?
+**Consegna.** Il museo vuole poter raggiungere almeno **3 000 locazioni**. Qual è il numero minimo di bit necessario per gli indirizzi? Quante locazioni si possono distinguere con quel numero di bit? E se dovesse raggiungerne 36 864, come la ROM dell'Apollo, quanti bit servirebbero nel nostro modello?
 
 <details>
 <summary>🃏 <b>4.3 — Soluzione</b></summary>
@@ -479,7 +479,7 @@ Per 36 864: con 15 bit sono 32 768, poche; con **16 bit** sono 65 536. Nel nostr
 
 ### 4.4 📖 Teoria · ✅ · 🎯 Da provare — Quale bus?
 
-**Consegna.** Per ognuna di queste frasi dì a quale bus (indirizzi, dati o controllo) si riferisce.
+**Consegna.** Per ciascuna frase, indica a quale bus si riferisce: indirizzi, dati o controllo.
 
 A. «Voglio la cella 305.»
 B. «Scrivi!»
@@ -498,14 +498,14 @@ A. **Indirizzi** (dove). B. **Controllo** (quale azione, qui WRITE). C. **Dati**
 
 ### 4.5 📖 Teoria · 🔍 · 🎯 Da provare — Perché 640 e non 1 024
 
-**Consegna.** L'IBM PC distingueva 1 MiB di indirizzi, ma la RAM disponibile per i programmi era di 640 KB. Spiega in due o tre frasi dove finivano gli altri 384 KB. Poi rispondi: se oggi leggi «16 GB di RAM» e «512 GB di SSD» nella scheda di un computer, che cosa non devi fare con quei due numeri?
+**Consegna.** L'IBM PC poteva indirizzare 1 MiB di spazio, ma solo 640 KB erano disponibili come RAM per i programmi. Spiega in due o tre frasi a che cosa era riservata la parte restante. Poi rispondi: se oggi la scheda tecnica di un computer indica «16 GB di RAM» e «512 GB di SSD», che cosa non devi fare con questi due valori?
 
 <details>
 <summary>🃏 <b>4.5 — Soluzione</b></summary>
 
 Gli altri 384 KB dello spazio di indirizzi erano **riservati** a ROM, memoria video e altre periferiche: non erano RAM per i programmi. Lo spazio di indirizzi dice quante posizioni si possono distinguere, non quanta RAM è installata.
 
-Non devi **sommarli**: RAM e SSD sono memorie con ruoli diversi (RAM per ciò che serve ora, SSD per conservare i dati anche a macchina spenta). «528 GB di RAM» sarebbe sbagliato.
+Non devi **sommarli**: RAM e SSD hanno funzioni diverse. La RAM contiene i programmi e i dati in uso; l'SSD conserva i file anche quando il computer è spento. Dire «528 GB di RAM» sarebbe quindi sbagliato.
 
 </details>
 
@@ -554,7 +554,7 @@ Nessuna memoria è insieme grande, veloce, economica e capace di tenere i dati s
 
 ### 5.2 ✏️ Pratica · ✅ · 🎯 Da provare — La scala delle memorie
 
-**Consegna.** Completa la tabella per i quattro livelli. Per «velocità» e «capacità» scrivi **più** o **meno** rispetto al livello successivo.
+**Consegna.** Completa la tabella per i quattro livelli. Per «velocità» e «capacità», indica se il valore è maggiore o minore rispetto al livello successivo. Per l'SSD, confronta i valori con quelli della RAM.
 
 | Livello | Volatile? | Velocità | Capacità |
 |---|:-:|:-:|:-:|
@@ -599,11 +599,11 @@ Nessuna memoria è insieme grande, veloce, economica e capace di tenere i dati s
 
 ### 5.4 ✏️ Pratica · 🔍 · 🎯 Da provare — Il loop che si ripete
 
-**Consegna.** Un programma ripete in loop la lettura di tre misure: legge, nell'ordine, gli indirizzi **90, 91, 92**, e poi ricomincia, per **100 volte**. I blocchi sono da 4 posizioni (88-91, 92-95). La cache è vuota all'inizio.
+**Consegna.** Un programma legge in sequenza tre misure agli indirizzi **90, 91 e 92**, poi ricomincia dall'indirizzo 90. Ripete questa sequenza **100 volte**. I blocchi della cache contengono 4 posizioni (88-91 e 92-95). All'inizio la cache è vuota.
 
 a) Se la cache ha spazio per più blocchi, quanti MISS ci sono in tutto?
 b) Quale tipo di località rende le ripetizioni più veloci?
-c) Ora il loop legge **90, 92, 90, 92, …** per 100 volte, ma la cache ha **una sola linea** (ogni MISS sostituisce l'unica linea). Quanti MISS ci sono?
+c) Ora il programma ripete per **100 volte** la coppia di letture **90, 92**. La cache ha **una sola linea**: ogni MISS sostituisce il blocco presente. Quanti MISS si verificano in tutto?
 
 <details>
 <summary>🃏 <b>5.4 — Soluzione</b></summary>
@@ -649,7 +649,7 @@ Ma il clock è solo un **ritmo**: dice quanto dura un ciclo, non quanto lavoro s
 
 ### 6.1 ✏️ Pratica · ✅ · 🟢 Svolto — Dal GHz al nanosecondo
 
-**Consegna.** Trova la durata di un ciclo di clock (il **periodo**) a 3,8 GHz e a 1,3 GHz.
+**Consegna.** Calcola la durata di un ciclo di clock (il **periodo**) per un processore con frequenza di 3,8 GHz e per uno con frequenza di 1,3 GHz.
 
 **Svolgimento.** Il periodo è l'inverso della frequenza: `T = 1 ÷ f`.
 
@@ -698,7 +698,7 @@ C. **Falso.** Frequenza e capacità della cache sono cose diverse.
 
 ### 6.4 ✏️ Pratica · 🔍 · 🎯 Da provare — Chi fa più lavoro?
 
-**Consegna.** Due processori (valori inventati). Il processore **A** ha un clock da 2 GHz e completa un'istruzione ogni 2 cicli. Il processore **B** ha un clock da 3 GHz e completa un'istruzione ogni 4 cicli. Quante istruzioni al secondo completa ciascuno? Quale ne fa di più?
+**Consegna.** Considera due processori (valori inventati). Il processore **A** ha una frequenza di 2 GHz e completa un'istruzione ogni 2 cicli. Il processore **B** ha una frequenza di 3 GHz e completa un'istruzione ogni 4 cicli. Quante istruzioni al secondo completa ciascun processore? Quale dei due ne completa di più?
 
 <details>
 <summary>🃏 <b>6.4 — Soluzione</b></summary>
@@ -714,9 +714,9 @@ Ne fa di più **A**, anche con meno GHz. Per confrontare due sistemi bisogna gua
 
 ### 6.5 🤓 · 🎯 Da provare — Più transistor, non per forza più veloce
 
-> Nel 1965 Gordon Moore descrisse una tendenza: il numero di componenti che si potevano mettere in un chip cresceva a ritmo regolare. Non è una legge della natura.
+> Nel 1965 Gordon Moore descrisse una tendenza: il numero di componenti inseribili in un chip aumentava nel tempo. Non si tratta di una legge della natura.
 >
-> **Consegna.** Se in un chip entrano più transistor, perché il tuo programma non diventa per forza più veloce? Fai un esempio con la cache.
+> **Consegna.** Perché un programma non diventa necessariamente più veloce quando un chip contiene più transistor? Fai un esempio che riguardi la cache.
 
 <details>
 <summary>🃏 <b>6.5 — Soluzione</b></summary>
@@ -731,11 +731,11 @@ Più transistor possono diventare più cache, più core o nuove funzioni. Il van
 
 *Livello finale. Si usa tutto S1–S6.*
 
-Il museo ha rimesso in funzione la sua macchina. Prima di riaprire la sala, vi chiedono il collaudo finale: tre prove, con tutto quello che avete imparato.
+Il museo ha rimesso in funzione la macchina. Prima di riaprire la sala, vi chiede di collaudarla con tre prove che mettono insieme gli argomenti studiati.
 
 ### 7.1 ✏️ Pratica · 🔍 · 🎯 Da provare — Somma tre misure
 
-**Consegna.** Usando solo `LOAD`, `ADD`, `STORE` e `HALT`, scrivi un programma che **somma le misure di tre sensori**, che stanno nelle celle `MEM[410]`, `MEM[411]` e `MEM[412]`, e scrive il risultato in `MEM[413]`. Una istruzione per cella, a partire dalla cella 500.
+**Consegna.** Usando solo le istruzioni `LOAD`, `ADD`, `STORE` e `HALT`, scrivi un programma che **sommi le misure di tre sensori**. Le misure si trovano nelle celle `MEM[410]`, `MEM[411]` e `MEM[412]`; il programma deve scrivere la somma in `MEM[413]`. Ogni istruzione occupa una cella. Inizia dalla cella 500.
 
 | Cella | Istruzione |
 |---:|---|
@@ -760,7 +760,13 @@ Il museo ha rimesso in funzione la sua macchina. Prima di riaprire la sala, vi c
 | 505 | `STORE [413], R1` |
 | 506 | `HALT` |
 
-Va bene qualsiasi programma che legga i tre valori con tre `LOAD` su registri, li sommi con due `ADD` (la destinazione sempre per prima) e li scriva con una `STORE` (l'indirizzo per primo). Si accettano registri e ordine diversi, purché la somma sia nel registro scritto dalla `STORE` e ci sia l'`HALT`.
+Sono corretti i programmi che:
+1. leggono i tre valori con tre istruzioni `LOAD`;
+2. li sommano con due istruzioni `ADD` (il registro di destinazione è il primo indicato);
+3. scrivono il risultato in `MEM[413]` con `STORE` (l'indirizzo è il primo argomento);
+4. terminano con `HALT`.
+
+Puoi scegliere registri e ordine diversi, purché il risultato scritto in memoria sia la somma dei tre valori.
 
 ⚠️ **Errori comuni:** `LOAD R1, 410` senza parentesi (il numero 410 al posto del contenuto); `STORE R1, [413]` con gli argomenti scambiati; una `ADD` prima di aver caricato i registri.
 
@@ -768,11 +774,11 @@ Va bene qualsiasi programma che legga i tre valori con tre `LOAD` su registri, l
 
 ### 7.2 ✏️ Pratica · 🔍 · 🎯 Da provare — Il collaudo del programma
 
-**Consegna.** Esegui il programma del 7.1 con `MEM[410] = 5`, `MEM[411] = 10`, `MEM[412] = 15`, `MEM[413] = 0`, `PC = 500` e registri a 0.
+**Consegna.** Esegui il programma dell'esercizio 7.1 con questi valori iniziali: `MEM[410] = 5`, `MEM[411] = 10`, `MEM[412] = 15`, `MEM[413] = 0`, `PC = 500` e tutti i registri a 0.
 
 a) Quanto valgono R1, R2 e R3 alla fine?
 b) Quanto vale `MEM[413]`?
-c) Durante la fase di execute della `STORE`, che cosa passa sul bus degli indirizzi, sul bus dati e sul bus di controllo?
+c) Durante l'esecuzione della `STORE`, che cosa passa sul bus degli indirizzi, sul bus dati e sul bus di controllo?
 d) In quel momento, quanto valgono MAR e MDR?
 
 <details>
@@ -787,14 +793,14 @@ d) **MAR = 413** e **MDR = 30**: il MAR tiene l'indirizzo, l'MDR il contenuto ch
 
 ### 7.3 📖 Teoria · 🔍 · 🎯 Da provare — «Basta più GHz»?
 
-**Consegna.** Un compagno vuole comprare un portatile per programmare e dice: «Basta il processore con più GHz». Rispondi in tre o quattro frasi. Chiama in causa almeno tre cose fra: clock, cache, RAM, SSD.
+**Consegna.** Un compagno vuole comprare un portatile per programmare e dice: «Basta scegliere il processore con più GHz». Rispondi in tre o quattro frasi. Cita almeno tre elementi fra questi: clock, cache, RAM e SSD.
 
 <details>
 <summary>🃏 <b>7.3 — Soluzione</b></summary>
 
 Una risposta buona dice **che cosa** (la tesi), **come** funziona (il meccanismo) e porta un **esempio**. Per esempio:
 
-«No, non basta. I GHz dicono quanti cicli di clock ci sono in un secondo, non quante istruzioni si completano. Se il programma aspetta i dati, un clock più veloce non aiuta: conta anche se i dati sono già in cache (hit) o vanno cercati nella RAM (miss). I programmi in uso stanno in RAM e si perdono se si spegne il computer, mentre l'SSD conserva i file. Per esempio, un portatile con meno GHz ma più RAM può reggere un progetto più grande senza fermarsi.»
+«No, i GHz da soli non bastano. Indicano quanti cicli di clock avvengono in un secondo, non quante istruzioni si completano. Se il processore deve aspettare i dati, una frequenza più alta può non essere sufficiente: conta anche se i dati sono già nella cache (hit) o devono essere letti dalla RAM (miss). I programmi in uso sono conservati nella RAM, che perde i dati quando il computer si spegne; l'SSD, invece, conserva i file. Per esempio, più RAM può aiutare a lavorare con progetti più grandi, ma non aumenta da sola la velocità di calcolo della CPU.»
 
 📌 Controlla: hai separato **clock**, **cache**, **RAM** e **SSD**? Hai evitato «è più veloce» senza dire perché?
 
@@ -804,7 +810,7 @@ Una risposta buona dice **che cosa** (la tesi), **come** funziona (il meccanismo
 
 ## 📚 Fonti e risorse
 
-I fatti dei casi 📜 vengono da queste pagine. Sono un buon punto di partenza: se un dato ti serve per un lavoro, controllalo anche su un'altra fonte.
+Le informazioni storiche contrassegnate con 📜 provengono dalle pagine seguenti. Sono un buon punto di partenza; se ti serve un dato per una ricerca, verificalo anche su un'altra fonte.
 
 - **EDSAC.** [EDSAC](https://en.wikipedia.org/wiki/EDSAC): 6 maggio 1949; 512 parole da 17 bit in linee di ritardo a mercurio.
 - **Apollo.** [Apollo Guidance Computer](https://en.wikipedia.org/wiki/Apollo_Guidance_Computer): 2 048 parole di RAM, 36 864 parole di ROM, 2,048 MHz, parola da 15 bit più 1 di controllo.

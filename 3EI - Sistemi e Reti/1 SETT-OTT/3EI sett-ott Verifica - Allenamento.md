@@ -79,6 +79,18 @@ Perché? (facoltativo) `______________________________`
 
 </details>
 
+<details>
+<summary>✅ <b>Parte 1 — Soluzioni</b></summary>
+
+| ID | Risposta | Spiegazione |
+|---|:-:|---|
+| 1.1 | B | In una macchina di Von Neumann il programma è fatto di istruzioni scritte in memoria: per cambiare programma si cambia la memoria, l'hardware resta uguale. |
+| 1.2 | D | `STORE` **copia** dal registro alla cella: la cella 30 diventa 5 e `R1` resta 5. B descriverebbe una `LOAD`. |
+| 1.3 | A | Il clock dà il ritmo: 4 GHz sono il doppio dei cicli al secondo. Ma quante istruzioni si completano dipende da quanti cicli ne servono ciascuna: più GHz non vuol dire per forza più veloce. |
+| 1.4 | C | La RAM è **volatile**: senza corrente perde i dati. Il testo non salvato era solo lì. |
+
+</details>
+
 ## Parte 2 · Seguire un programma ✅ (3 punti)
 
 💬 *Suggerimento: segui le istruzioni una alla volta e riscrivi tutti i valori a ogni riga. Attenzione a quale registro viene modificato e a quale cella viene letta o scritta.*
@@ -123,6 +135,24 @@ Nella memoria della macchina ci sono queste istruzioni, una per cella. In fondo 
 
 </details>
 
+<details>
+<summary>✅ <b>2.1 — Soluzione</b></summary>
+
+| Istruzione eseguita | PC | R1 | R2 | R3 | MEM[90] | MEM[91] |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| `LOAD R2, [90]` | 26 | 0 | 5 | 0 | 5 | 1 |
+| `ADD R2, R2, R2` | 27 | 0 | 10 | 0 | 5 | 1 |
+| `STORE [91], R2` | 28 | 0 | 10 | 0 | 5 | 10 |
+
+**Spiegazione:**
+- `LOAD R2, [90]`: copia in `R2` il contenuto della cella 90 (5). La cella resta 5. Il PC avanza di uno: 26.
+- `ADD R2, R2, R2`: `R2 = 5 + 5 = 10`. La destinazione è il primo registro.
+- `STORE [91], R2`: copia `R2` (10) nella cella 91, che passa da 1 a 10. `R2` resta 10.
+
+Gli altri valori non cambiano. In ogni riga il PC avanza di uno, perché non ci sono salti.
+
+</details>
+
 ## Parte 3 · Indirizzi e capacità ✅ (2 punti)
 
 💬 *Suggerimento: ogni bit in più raddoppia il numero di indirizzi. Per trovare quanti bit servono, raddoppia 1, 2, 4, ... finché arrivi al numero di locazioni.*
@@ -155,6 +185,17 @@ Risposta: `______________________`
 **3.2 — 64 byte**, cioè 32 locazioni × 2 byte. Criteri: 0,5 solo se il calcolo mostra la moltiplicazione; il numero senza unità non vale il punto.
 
 **3.3 — 64 locazioni e 128 byte**, perché un bit in più raddoppia le locazioni (2⁶) e ognuna resta da 2 byte. Criteri: 0,25 per le locazioni, 0,25 per i byte. Errore frequente: aggiungere 1 invece di raddoppiare.
+
+</details>
+
+<details>
+<summary>✅ <b>Parte 3 — Soluzioni</b></summary>
+
+**3.1 — 5 bit.** Con n bit si scrivono 2ⁿ indirizzi. Raddoppiando: 1, 2, 4, 8, 16, **32** → servono 5 raddoppi, quindi 2⁵ = 32. (Attenzione: 32 è il numero di locazioni, non di bit; 31 è solo l'ultimo indirizzo.)
+
+**3.2 — 64 byte.** 32 locazioni × 2 byte = 64 byte.
+
+**3.3 — 64 locazioni e 128 byte.** Un bit in più **raddoppia** le locazioni (2⁶ = 64, non 33). Ognuna resta da 2 byte: 64 × 2 = 128 byte.
 
 </details>
 
@@ -194,6 +235,28 @@ Criteri: 0,5 per riga, se tutti i valori sono giusti; 0,25 se un solo valore è 
 
 </details>
 
+<details>
+<summary>🔍 <b>4.1 — Soluzione</b></summary>
+
+**a)**
+
+| Istruzione eseguita | PC | R1 | R2 | R3 | MEM[90] | MEM[91] |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| `LOAD R1, [91]` | 29 | 10 | 10 | 0 | 5 | 10 |
+| `ADD R3, R1, R2` | 30 | 10 | 10 | 20 | 5 | 10 |
+| `STORE [90], R3` | 31 | 10 | 10 | 20 | 20 | 10 |
+
+**Spiegazione:**
+- `LOAD R1, [91]`: `R1` riceve il contenuto della cella 91, che è 10 (scritto dalla `STORE` di prima).
+- `ADD R3, R1, R2`: `R3 = 10 + 10 = 20`.
+- `STORE [90], R3`: la cella 90 passa da 5 a 20 (sovrascritta). La cella 91 non cambia.
+
+**b)** Nel *fetch* il MAR vale **28**: è il PC, copiato nel MAR prima che il PC avanzi a 29. Nell'*execute* il MAR vale **91** (l'indirizzo del dato) e l'MDR vale **10** (il contenuto di `MEM[91]`). L'IR contiene ancora **`LOAD R1, [91]`**: il dato passa dall'MDR a `R1` senza toccare l'IR.
+
+Regola: il MAR contiene sempre un **indirizzo**, l'MDR un **contenuto**.
+
+</details>
+
 ### 4.2 🔍 (1,5 punti)
 
 **Un programma elabora i valori di un vettore memorizzato in posizioni consecutive.** La cache conserva blocchi di **8 posizioni consecutive**: 0-7, 8-15, 16-23, ... Rispondi ai tre casi, spiegando il ragionamento.
@@ -218,6 +281,24 @@ Risposta: `______________________________________________`
 **b)** 2 MISS nella prima passata. Gli indirizzi 100-103 stanno nel blocco 96-103 (un MISS, poi tre HIT); 104 e 105 nel blocco 104-111 (un MISS, poi un HIT). La seconda passata è più veloce per la località temporale (gli stessi dati sono riusati) e, nella prima, la spaziale ha già evitato quattro MISS. Criteri: 0,25 per 2 MISS con i blocchi giusti; 0,25 per località temporale. Errore frequente: 6 MISS (ogni lettura trattata come nuova) o 1 MISS (blocchi di 8 allineati a 100).
 
 **c)** Il primo fa **4 MISS** (uno per ogni blocco: leggendo 0-3 il blocco resta caricato, poi si passa a 4-7, ...). Il secondo fa **16 MISS**: a ogni lettura serve un blocco diverso da quello presente e, tornando a 1, 2, 3, il blocco 0-3 è già stato sostituito. Criteri: 0,25 per i due numeri (4 e 16); 0,25 per la spiegazione che lega MISS, località spaziale e sostituzione della linea. Errore frequente: dire che i due fanno lo stesso numero di MISS perché leggono gli stessi 16 indirizzi.
+
+</details>
+
+<details>
+<summary>🔍 <b>4.2 — Soluzione</b></summary>
+
+**a)** I blocchi sono 32-39 e 40-47.
+- 35 → **MISS** (cache vuota): si carica tutto il blocco 32-39.
+- 38 → **HIT**: sta nel blocco 32-39, già in cache, anche se non era mai stato letto.
+- 40 → **MISS**: appartiene al blocco 40-47, mai caricato. Essere «vicino» al 38 non basta: conta il blocco.
+
+**b)** **2 MISS.** Il blocco di 100 è 96-103: un MISS per il 100, poi 101, 102, 103 sono HIT. Il 104 è nel blocco 104-111: un altro MISS, poi il 105 è HIT. Nella seconda passata gli stessi dati sono già in cache: è la **località temporale** (riuso degli stessi dati). La **località spaziale** (dati vicini nello stesso blocco) ha già evitato 4 MISS nella prima passata.
+
+**c)** Il primo fa **4 MISS**, il secondo **16 MISS**.
+- In ordine (0, 1, 2, 3, 4, ...): il MISS sullo 0 carica 0-3, quindi 1, 2, 3 sono HIT; poi si passa al blocco 4-7, e così via: 1 MISS per blocco, 4 blocchi.
+- A salti di quattro (0, 4, 8, 12, 1, ...): ogni lettura richiede un blocco diverso da quello nella linea, che è una sola e viene sostituita. Quando si torna a 1 il blocco 0-3 non c'è più: tutte le 16 letture sono MISS.
+
+Stessi indirizzi, ordine diverso, risultati molto diversi: leggere in modo consecutivo sfrutta la località spaziale.
 
 </details>
 
@@ -273,6 +354,27 @@ Criteri ⭐a e ⭐b: 0,25 per «eseguita sì/no» e 0,25 per il valore di MEM[42
 Criteri (1 punto): 0,25 per le due `LOAD` (registro prima, indirizzo fra parentesi quadre, registri diversi); 0,25 per l'`ADD` con la destinazione per prima e i due registri già caricati; 0,25 per la `STORE` con l'indirizzo per primo e un registro che contiene la somma; 0,25 per l'ordine corretto e per l'`HALT` finale. Si accettano registri diversi o un ordine diverso delle due `LOAD`.
 
 Errori frequenti: `STORE R3, [72]` (argomenti scambiati); `ADD` prima delle `LOAD`; `LOAD R1, 70` senza parentesi (numero al posto del contenuto); dimenticare l'`HALT`.
+
+</details>
+
+<details>
+<summary>⭐ <b>Extra — Soluzione</b></summary>
+
+**⭐a.** No, la `STORE` viene saltata. `R1 = R2 = 4`, quindi il `BEQ` salta a `fine` e `MEM[42]` resta **0**.
+
+**⭐b.** Sì, la `STORE` viene eseguita. `R1 = 4` e `R2 = 9` sono diversi: il `BEQ` non salta, si passa alla cella 53 e `MEM[42]` diventa **4** (il valore di `R1`).
+
+**⭐c.**
+
+| Cella | Istruzione |
+|---:|---|
+| 60 | `LOAD R1, [70]` |
+| 61 | `LOAD R2, [71]` |
+| 62 | `ADD R3, R1, R2` |
+| 63 | `STORE [72], R3` |
+| 64 | `HALT` |
+
+Prima si portano i due numeri nei registri (`LOAD`, registro per primo e indirizzo tra parentesi quadre), poi si somma (`ADD`, destinazione per prima), poi si scrive il risultato in memoria (`STORE`, indirizzo per primo), infine `HALT`. Sono valide anche soluzioni con altri registri o con le due `LOAD` scambiate, purché la somma avvenga dopo entrambe.
 
 </details>
 

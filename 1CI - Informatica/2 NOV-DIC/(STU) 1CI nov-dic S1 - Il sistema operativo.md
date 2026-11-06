@@ -22,7 +22,7 @@ Oggi il tuo telefono fa quello che allora sembrava magia: la musica va, arriva u
 ![[image.webp]]
 *Una scheda perforata*
 
-![[image-2.webp|7![[image-3.webp|279x186]]
+![[image-2.webp|7![[image-3.webp|411]]
 *Un computer che occupa un'intera stanza: un ENIAC del 1945-1946*
 
 ## 🧭 Che cos'è
@@ -89,6 +89,7 @@ Nascondere i dettagli complicati dietro un'operazione semplice, come «salva» c
 ## ⏱️ Il processore: chi lavora adesso
 
 ### ✅ Processi e scheduler
+#fatto👍 
 
 Un **programma** è un file con le istruzioni, fermo sul disco: come una ricetta nel libro. Un **processo** è un programma **in esecuzione**: la ricetta che stai cucinando adesso. Il telefono ha decine o centinaia di processi attivi.
 
@@ -122,6 +123,7 @@ Il tempo che un processo può usare un core prima di cedere il turno.
 ✏️ **Spiega a voce (1 min).** Perché non vediamo mai i turni dei processi? Spiegalo a un compagno usando il quanto di tempo.
 
 ### 🔍 Perché i processi vanno a turni
+#
 
 Il SO potrebbe far finire un processo e poi passare al successivo. Non lo fa per due motivi.
 
@@ -131,6 +133,7 @@ Il SO potrebbe far finire un processo e poi passare al successivo. Non lo fa per
 Con i turni è il SO a restare al comando. Se un programma non risponde, può fermarlo e liberare le risorse.
 
 ### 🔍 Un processo bloccato
+#fatto👍 
 
 Quando un'app non risponde puoi chiuderla in modo forzato: su Windows con **Termina attività**, su Android con **Forza arresto** (le voci cambiano da telefono a telefono). Il resto del sistema continua a funzionare perché lo scheduler non ha mai dato a quel processo il controllo di tutta la macchina.
 
@@ -142,6 +145,7 @@ Perché potrebbe aspettare senza fare nulla o bloccarsi, e terrebbe fermi tutti 
 ## 🧮 La memoria
 
 ### ✅ Un'area per ogni processo
+
 
 La **RAM** è la memoria veloce e temporanea dove stanno i programmi in esecuzione e i loro dati: si svuota quando spegni. Il SO la divide in **aree**: ne assegna una a ogni processo e la riprende quando il processo finisce.
 
