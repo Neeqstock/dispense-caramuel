@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="230" viewBox="0 0 1000 230" font-family="Arial, Helvetica, sans-serif">
+  <text x="20" y="28" font-size="18" font-weight="bold">Piano di tre sedi dentro 192.168.80.0/24 (valori inventati)</text>
+  <rect x="20" y="50" width="480" height="90" fill="#9ecae1" stroke="#333"/>
+  <text x="260" y="90" font-size="16" text-anchor="middle">Sede Alfa</text>
+  <text x="260" y="112" font-size="14" text-anchor="middle">/27 · 32 indirizzi</text>
+  <rect x="500" y="50" width="240" height="90" fill="#a1d99b" stroke="#333"/>
+  <text x="620" y="90" font-size="16" text-anchor="middle">Sede Beta</text>
+  <text x="620" y="112" font-size="14" text-anchor="middle">/28 · 16 indirizzi</text>
+  <rect x="740" y="50" width="120" height="90" fill="#fdd0a2" stroke="#333"/>
+  <text x="800" y="90" font-size="15" text-anchor="middle">Gamma</text>
+  <text x="800" y="112" font-size="13" text-anchor="middle">/29 · 8</text>
+  <rect x="860" y="50" width="60" height="90" fill="#dadaeb" stroke="#333"/>
+  <text x="890" y="90" font-size="13" text-anchor="middle">A-B</text>
+  <text x="890" y="110" font-size="12" text-anchor="middle">/30</text>
+  <rect x="920" y="50" width="60" height="90" fill="#dadaeb" stroke="#333"/>
+  <text x="950" y="90" font-size="13" text-anchor="middle">B-G</text>
+  <text x="950" y="110" font-size="12" text-anchor="middle">/30</text>
+  <text x="20" y="162" font-size="13">.0</text>
+  <text x="500" y="162" font-size="13">.32</text>
+  <text x="740" y="162" font-size="13">.48</text>
+  <text x="860" y="162" font-size="13">.56</text>
+  <text x="920" y="162" font-size="13">.60</text>
+  <text x="980" y="162" font-size="13" text-anchor="end">.63</text>
+  <text x="20" y="190" font-size="13">Ogni blocco inizia su un multiplo della sua dimensione. Le cifre sono l'ultimo ottetto di 192.168.80.x.</text>
+  <text x="20" y="214" font-size="13">Da 192.168.80.64 a 192.168.80.255: spazio libero di riserva.</text>
+</svg>

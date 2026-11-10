@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-659 -205 1340 411" width="1340" height="411" role="img" aria-label="🌐 IPv6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🌐 IPv6</title>
+<rect x="-659" y="-205" width="1340" height="411" rx="14" fill="#ffffff"/>
+<path d="M377.168 -111.40000000000002 C404.168 -111.40000000000002 404.168 -152.20000000000002 431.168 -152.20000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M377.168 -111.40000000000002 C404.168 -111.40000000000002 404.168 -111.40000000000002 431.168 -111.40000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M377.168 -111.40000000000002 C404.168 -111.40000000000002 404.168 -70.60000000000002 431.168 -70.60000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M352.20799999999997 70.19999999999999 C379.20799999999997 70.19999999999999 379.20799999999997 -11.800000000000017 406.20799999999997 -11.800000000000017" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M352.20799999999997 70.19999999999999 C379.20799999999997 70.19999999999999 379.20799999999997 28.99999999999998 406.20799999999997 28.99999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M352.20799999999997 70.19999999999999 C379.20799999999997 70.19999999999999 379.20799999999997 80.19999999999997 406.20799999999997 80.19999999999997" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M352.20799999999997 70.19999999999999 C379.20799999999997 70.19999999999999 379.20799999999997 141.79999999999998 406.20799999999997 141.79999999999998" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-312.272 -121.80000000000001 C-339.272 -121.80000000000001 -339.272 -152.6 -366.272 -152.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-312.272 -121.80000000000001 C-339.272 -121.80000000000001 -339.272 -91.00000000000001 -366.272 -91.00000000000001" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-342.224 70.6 C-369.224 70.6 -369.224 -11.400000000000016 -396.224 -11.400000000000016" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-342.224 70.6 C-369.224 70.6 -369.224 50.19999999999999 -396.224 50.19999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-342.224 70.6 C-369.224 70.6 -369.224 111.79999999999998 -396.224 111.79999999999998" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-342.224 70.6 C-369.224 70.6 -369.224 163 -396.224 163" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M49.2 -40.9 C91.60714729437498 -40.9 91.60714729437498 -111.40000000000002 134 -111.40000000000002" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M56.7 29.7 C95.34578100927047 29.7 95.34578100927047 70.19999999999999 134 70.19999999999999" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-47.4 -43.0 C-90.67968150541435 -43.0 -90.67968150541435 -121.80000000000001 -134 -121.80000000000001" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-56.6 29.8 C-95.31096430571147 29.8 -95.31096430571147 70.6 -134 70.6" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="64.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🌐 IPv6</tspan></text>
+<rect x="134" y="-129.8" width="243.16800000000003" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="255.584" y="-111.4">📜 Lo spazio di IPv4 finisce</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="439.168" y="-152.2">✅ 32 bit non bastano più</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="439.168" y="-111.4">🔍 Il NAT tiene in vita IPv4</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="439.168" y="-70.6">🤓 Dove nasce IPv6</tspan></text>
+<rect x="134" y="41.39999999999999" width="218.208" height="57.6" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="243.10399999999998" y="59.8">🔢 Scrivere un indirizzo</tspan><tspan x="243.10399999999998" y="80.6">IPv6</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="414.20799999999997" y="-11.8">✅ 128 bit in otto gruppi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="414.20799999999997" y="29.0">✅ Compressione con ::</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="414.20799999999997" y="69.8">🔍 Perché :: si usa una volta</tspan><tspan x="414.20799999999997" y="90.6">sola</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="414.20799999999997" y="131.4">🔍 Verifica l'IPv6 del tuo</tspan><tspan x="414.20799999999997" y="152.2">dispositivo</tspan></text>
+<rect x="-312.272" y="-140.20000000000002" width="178.272" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-223.136" y="-121.8">📐 Prefisso e rete</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-374.272" y="-163.0">✅ Il prefisso separa rete e</tspan><tspan x="-374.272" y="-142.2">host</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-374.272" y="-101.4">🔍 Perché /64 per la rete</tspan><tspan x="-374.272" y="-80.6">locale</tspan></text>
+<rect x="-342.224" y="52.199999999999996" width="208.224" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-238.112" y="70.6">🧭 Tre tipi di indirizzo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-404.224" y="-21.8">✅ Globale unicast:</tspan><tspan x="-404.224" y="-1.0">l'indirizzo pubblico</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-404.224" y="39.8">✅ Link-local fe80::/10: solo</tspan><tspan x="-404.224" y="60.6">sul cavo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-404.224" y="101.4">🔍 Multicast ff02::1: parla a</tspan><tspan x="-404.224" y="122.2">tutti</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-404.224" y="163.0">🤓 Loopback e unique local</tspan></text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="250" viewBox="0 0 800 250">
+  <rect width="800" height="250" fill="#ffffff"/>
+  <text x="400" y="30" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#222222">Un prefisso /20 su 32 bit</text>
+  <text x="488" y="62" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">confine: dopo 20 bit</text>
+  <rect x="48" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="70" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="92" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="114" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="136" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="158" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="180" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="202" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="224" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="246" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="268" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="290" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="312" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="334" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="356" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="378" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="400" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="422" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="444" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="466" y="72" width="22" height="40" fill="#4a90d9" stroke="#ffffff"/>
+  <rect x="488" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="510" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="532" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="554" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="576" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="598" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="620" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="642" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="664" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="686" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="708" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <rect x="730" y="72" width="22" height="40" fill="#7bc67b" stroke="#ffffff"/>
+  <line x1="488" y1="60" x2="488" y2="118" stroke="#222222" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="268" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#1f5fa8">rete: 20 bit</text>
+  <text x="620" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#2e7d32">host: 12 bit</text>
+  <text x="48" y="180" font-family="sans-serif" font-size="14" fill="#222222">Primo indirizzo del blocco: 10.20.0.0 (rete)</text>
+  <text x="48" y="202" font-family="sans-serif" font-size="14" fill="#222222">Ultimo indirizzo del blocco: 10.20.15.255 (broadcast)</text>
+  <text x="48" y="224" font-family="sans-serif" font-size="14" fill="#222222">Indirizzi nel blocco: 2 elevato a 12 = 4096</text>
+</svg>

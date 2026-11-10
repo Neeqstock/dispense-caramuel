@@ -89,6 +89,10 @@ Dentro il computer c'è un regista: il sistema operativo, che tiene in ordine pr
 - [ ] [S6 - Ripasso attivo](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20S6%20-%20Ripasso%20attivo.md) — Sistema operativo e circuiti, con esercizi a coppie e un assaggio di Flowgorithm.
 - [ ] **S7 - Verifica e recupero** — Verifica di teoria, lettura degli errori e recupero.
 
+### ✏️ Esercizi
+
+- [Eserciziario](2%20NOV-DIC/%28STU%29%201CI%20nov-dic%20-%20Eserciziario.md) — Cinque parti, ognuna con un caso reale: esercizi svolti passo per passo e esercizi da provare, con la soluzione nelle flashcard.
+
 ## Integrazioni e curiosità
 
 - [Terminologia base dell'informatica](Integrazioni%20e%20Curiosit%C3%A0/Approfondimenti%20didattici/Terminologia%20base%20dell%27informatica.md)

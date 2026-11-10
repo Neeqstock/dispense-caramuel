@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="430" viewBox="0 0 800 430" font-family="sans-serif">
+  <rect x="0" y="0" width="800" height="430" fill="#ffffff"/>
+  <text x="210" y="40" font-size="22" font-weight="bold" text-anchor="middle" fill="#111827">Tipo 1</text>
+  <text x="590" y="40" font-size="22" font-weight="bold" text-anchor="middle" fill="#111827">Tipo 2</text>
+  <rect x="60" y="60" width="300" height="60" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+  <text x="210" y="97" font-size="18" text-anchor="middle" fill="#111827">guest</text>
+  <rect x="60" y="130" width="300" height="60" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+  <text x="210" y="167" font-size="18" text-anchor="middle" fill="#111827">guest</text>
+  <rect x="60" y="200" width="300" height="60" rx="8" fill="#fde68a" stroke="#92400e" stroke-width="2"/>
+  <text x="210" y="237" font-size="18" text-anchor="middle" fill="#111827">hypervisor</text>
+  <rect x="60" y="270" width="300" height="60" rx="8" fill="#e5e7eb" stroke="#374151" stroke-width="2"/>
+  <text x="210" y="307" font-size="18" text-anchor="middle" fill="#111827">hardware</text>
+  <rect x="440" y="60" width="300" height="60" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+  <text x="590" y="97" font-size="18" text-anchor="middle" fill="#111827">guest</text>
+  <rect x="440" y="130" width="300" height="60" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+  <text x="590" y="167" font-size="18" text-anchor="middle" fill="#111827">guest</text>
+  <rect x="440" y="200" width="300" height="60" rx="8" fill="#fde68a" stroke="#92400e" stroke-width="2"/>
+  <text x="590" y="237" font-size="18" text-anchor="middle" fill="#111827">hypervisor</text>
+  <rect x="440" y="270" width="300" height="60" rx="8" fill="#fecaca" stroke="#991b1b" stroke-width="2"/>
+  <text x="590" y="307" font-size="18" text-anchor="middle" fill="#111827">sistema operativo dell'host</text>
+  <rect x="440" y="340" width="300" height="60" rx="8" fill="#e5e7eb" stroke="#374151" stroke-width="2"/>
+  <text x="590" y="377" font-size="18" text-anchor="middle" fill="#111827">hardware</text>
+</svg>

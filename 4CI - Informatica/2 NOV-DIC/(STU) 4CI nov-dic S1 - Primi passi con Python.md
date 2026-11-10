@@ -1,4 +1,4 @@
-🏠 [Indice](../README.md) · [S2 - Decisioni, cicli e funzioni](%28STU%29%204CI%20nov-dic%20S2%20-%20Decisioni%2C%20cicli%20e%20funzioni.md) ➡️
+🏠 [Indice](../README.md) · [S2 - Decisioni, cicli e funzioni](<(STU) 4CI nov-dic S2 - Decisioni, cicli e funzioni.md>) ➡️
 
 # 🐍 Primi passi con Python
 
@@ -679,4 +679,4 @@ Solo quando la riga viene eseguita: Python non controlla i tipi prima di partire
 
 ---
 
-🏠 [Indice](../README.md) · [S2 - Decisioni, cicli e funzioni](%28STU%29%204CI%20nov-dic%20S2%20-%20Decisioni%2C%20cicli%20e%20funzioni.md) ➡️
+🏠 [Indice](../README.md) · [S2 - Decisioni, cicli e funzioni](<(STU) 4CI nov-dic S2 - Decisioni, cicli e funzioni.md>) ➡️

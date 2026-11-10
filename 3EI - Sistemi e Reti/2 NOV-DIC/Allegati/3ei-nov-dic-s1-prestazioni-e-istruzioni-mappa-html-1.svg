@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-651 -147 1240 293" width="1240" height="293" role="img" aria-label="⚡ Prestazioni e istruzioni" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>⚡ Prestazioni e istruzioni</title>
+<rect x="-651" y="-147" width="1240" height="293" rx="14" fill="#ffffff"/>
+<path d="M361.8302917296545 0 C388.8302917296545 0 388.8302917296545 -61.199999999999996 415.8302917296545 -61.199999999999996" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M361.8302917296545 0 C388.8302917296545 0 388.8302917296545 -20.4 415.8302917296545 -20.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M361.8302917296545 0 C388.8302917296545 0 388.8302917296545 20.4 415.8302917296545 20.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M361.8302917296545 0 C388.8302917296545 0 388.8302917296545 61.199999999999996 415.8302917296545 61.199999999999996" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-421.7342917296545 0 C-448.7342917296545 0 -448.7342917296545 -40.800000000000004 -475.7342917296545 -40.800000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-421.7342917296545 0 C-448.7342917296545 0 -448.7342917296545 -5.329070518200751e-15 -475.7342917296545 -5.329070518200751e-15" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-421.7342917296545 0 C-448.7342917296545 0 -448.7342917296545 40.79999999999999 -475.7342917296545 40.79999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M118.6 0.0 C153.55029172965448 0.0 153.55029172965448 0 188.55029172965448 0" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-118.6 0.0 C-153.55029172965448 0.0 -153.55029172965448 0 -188.55029172965448 0" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="118.6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">⚡ Prestazioni e istruzioni</tspan></text>
+<rect x="188.55029172965448" y="-28.8" width="173.28" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="275.1902917296545" y="-10.4">⏱️ Quanto dura un</tspan><tspan x="275.1902917296545" y="10.4">programma</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="423.8302917296545" y="-61.2">✅ Frequenza</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="423.8302917296545" y="-20.4">✅ Periodo</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="423.8302917296545" y="20.4">✅ CPI</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="423.8302917296545" y="61.2">✅ Tempo di CPU</tspan></text>
+<rect x="-421.7342917296545" y="-28.8" width="233.18400000000003" height="57.6" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="-305.1422917296545" y="-10.4">🧩 Due modi di scrivere le</tspan><tspan x="-305.1422917296545" y="10.4">istruzioni</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-483.7342917296545" y="-40.8">✅ CISC</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-483.7342917296545" y="-0.0">✅ RISC</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-483.7342917296545" y="40.8">🔍 Compromesso</tspan></text>
+</svg>

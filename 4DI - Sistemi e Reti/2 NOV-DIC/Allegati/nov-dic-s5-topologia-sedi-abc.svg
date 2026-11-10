@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360" font-family="sans-serif">
+  <title>Topologia delle sedi A, B e C con router e collegamenti /30</title>
+  <rect x="5" y="30" width="210" height="105" rx="10" fill="#eef4fb" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="110" y="56" font-size="18" font-weight="bold" text-anchor="middle">Sede A</text>
+  <text x="110" y="76" font-size="15" text-anchor="middle">aula</text>
+  <text x="110" y="98" font-size="16" text-anchor="middle">192.168.80.0/27</text>
+  <text x="110" y="120" font-size="15" text-anchor="middle">da .0 a .31</text>
+  <rect x="295" y="30" width="210" height="105" rx="10" fill="#eef4fb" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="400" y="56" font-size="18" font-weight="bold" text-anchor="middle">Sede B</text>
+  <text x="400" y="76" font-size="15" text-anchor="middle">server</text>
+  <text x="400" y="98" font-size="16" text-anchor="middle">192.168.80.32/28</text>
+  <text x="400" y="120" font-size="15" text-anchor="middle">da .32 a .47</text>
+  <rect x="585" y="30" width="210" height="105" rx="10" fill="#eef4fb" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="690" y="56" font-size="18" font-weight="bold" text-anchor="middle">Sede C</text>
+  <text x="690" y="76" font-size="15" text-anchor="middle">segreteria</text>
+  <text x="690" y="98" font-size="16" text-anchor="middle">192.168.80.48/29</text>
+  <text x="690" y="120" font-size="15" text-anchor="middle">da .48 a .55</text>
+  <line x1="110" y1="135" x2="110" y2="190" stroke="#333" stroke-width="2"/>
+  <text x="100" y="166" font-size="15" text-anchor="end">router A: .1</text>
+  <line x1="400" y1="135" x2="400" y2="190" stroke="#333" stroke-width="2"/>
+  <text x="390" y="166" font-size="15" text-anchor="end">router B: .33</text>
+  <line x1="690" y1="135" x2="690" y2="190" stroke="#333" stroke-width="2"/>
+  <text x="680" y="166" font-size="15" text-anchor="end">router C: .49</text>
+  <rect x="55" y="190" width="110" height="40" rx="8" fill="#fff4e0" stroke="#c77700" stroke-width="2"/>
+  <text x="110" y="216" font-size="17" font-weight="bold" text-anchor="middle">Router A</text>
+  <rect x="345" y="190" width="110" height="40" rx="8" fill="#fff4e0" stroke="#c77700" stroke-width="2"/>
+  <text x="400" y="216" font-size="17" font-weight="bold" text-anchor="middle">Router B</text>
+  <rect x="635" y="190" width="110" height="40" rx="8" fill="#fff4e0" stroke="#c77700" stroke-width="2"/>
+  <text x="690" y="216" font-size="17" font-weight="bold" text-anchor="middle">Router C</text>
+  <line x1="165" y1="210" x2="345" y2="210" stroke="#333" stroke-width="3"/>
+  <text x="255" y="202" font-size="15" text-anchor="middle">192.168.80.56/30</text>
+  <text x="170" y="232" font-size="15">A: .57</text>
+  <text x="340" y="232" font-size="15" text-anchor="end">B: .58</text>
+  <line x1="455" y1="210" x2="635" y2="210" stroke="#333" stroke-width="3"/>
+  <text x="545" y="202" font-size="15" text-anchor="middle">192.168.80.60/30</text>
+  <text x="460" y="232" font-size="15">B: .61</text>
+  <text x="630" y="232" font-size="15" text-anchor="end">C: .62</text>
+  <line x1="110" y1="230" x2="110" y2="300" stroke="#333" stroke-width="2"/>
+  <text x="120" y="268" font-size="15">uscita verso Internet: .2</text>
+  <rect x="40" y="300" width="140" height="40" rx="20" fill="#f2f2f2" stroke="#888" stroke-width="2"/>
+  <text x="110" y="326" font-size="17" text-anchor="middle">Internet</text>
+</svg>

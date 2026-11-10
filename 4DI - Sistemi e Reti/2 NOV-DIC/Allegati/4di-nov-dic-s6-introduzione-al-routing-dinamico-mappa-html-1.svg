@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-534 -133 1146 266" width="1146" height="266" role="img" aria-label="🗺️ Routing dinamico" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🗺️ Routing dinamico</title>
+<rect x="-534" y="-133" width="1146" height="266" rx="14" fill="#ffffff"/>
+<path d="M283.1351066814676 -70.2 C310.1351066814676 -70.2 310.1351066814676 -90.6 337.1351066814676 -90.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M283.1351066814676 -70.2 C310.1351066814676 -70.2 310.1351066814676 -49.800000000000004 337.1351066814676 -49.800000000000004" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M321.4071066814676 49.8 C348.4071066814676 49.8 348.4071066814676 8.999999999999995 375.4071066814676 8.999999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M321.4071066814676 49.8 C348.4071066814676 49.8 348.4071066814676 49.79999999999999 375.4071066814676 49.79999999999999" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M321.4071066814676 49.8 C348.4071066814676 49.8 348.4071066814676 90.6 375.4071066814676 90.6" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-279.80710668146764 -49.8 C-306.80710668146764 -49.8 -306.80710668146764 -90.6 -333.80710668146764 -90.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-279.80710668146764 -49.8 C-306.80710668146764 -49.8 -306.80710668146764 -49.800000000000004 -333.80710668146764 -49.800000000000004" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-279.80710668146764 -49.8 C-306.80710668146764 -49.8 -306.80710668146764 -9.000000000000005 -333.80710668146764 -9.000000000000005" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-276.4791066814676 70.2 C-303.4791066814676 70.2 -303.4791066814676 49.800000000000004 -330.4791066814676 49.800000000000004" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-276.4791066814676 70.2 C-303.4791066814676 70.2 -303.4791066814676 90.60000000000001 -330.4791066814676 90.60000000000001" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M86.4 -37.0 C125.14306614102145 -37.0 125.14306614102145 -70.2 163.93510668146763 -70.2" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M89.9 27.3 C126.90730248120724 27.3 126.90730248120724 49.8 163.93510668146763 49.8" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-89.9 -27.3 C-126.90730248120724 -27.3 -126.90730248120724 -49.8 -163.93510668146763 -49.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-86.4 37.0 C-125.14306614102145 37.0 -125.14306614102145 70.2 -163.93510668146763 70.2" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="93.9" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🗺️ Routing dinamico</tspan></text>
+<rect x="163.93510668146763" y="-88.6" width="119.2" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="223.53510668146762" y="-70.2">Il problema</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="345.1351066814676" y="-90.6">✅ Tabella statica</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="345.1351066814676" y="-49.8">✅ Collegamento caduto</tspan></text>
+<rect x="163.93510668146763" y="31.4" width="157.47199999999998" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="242.67110668146762" y="49.8">Distance Vector</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="383.4071066814676" y="9.0">✅ Passaparola fra vicini</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="383.4071066814676" y="49.8">🔍 Notizie vecchie</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="383.4071066814676" y="90.6">🤓 RIP, in una riga</tspan></text>
+<rect x="-279.80710668146764" y="-68.19999999999999" width="115.872" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-221.87110668146764" y="-49.8">Link State</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-341.80710668146764" y="-90.6">✅ Mappa completa</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-341.80710668146764" y="-49.8">🔍 Calcolo locale</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-341.80710668146764" y="-9.0">🤓 OSPF, in una riga</tspan></text>
+<rect x="-276.4791066814676" y="51.800000000000004" width="112.544" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-220.20710668146762" y="70.2">Confronto</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-338.4791066814676" y="49.8">🔍 Triangolo A-B-C</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-338.4791066814676" y="90.6">🔍 Convergenza</tspan></text>
+</svg>

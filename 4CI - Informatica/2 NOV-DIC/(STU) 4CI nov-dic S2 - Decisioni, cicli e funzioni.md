@@ -85,12 +85,14 @@ Java apre una graffa <code>{</code>; Python mette i due punti <code>:</code>.
 
 Il ragionamento dell'`if` è quello di Java. Ti servono solo le nuove parole e i confini dei blocchi:
 
-| In Java | In Python |
-| --- | --- |
+| In Java            | In Python                      |
+| ------------------ | ------------------------------ |
 | `if (...) { ... }` | `if ...:` con blocco indentato |
-| `else if (...)` | `elif ...:` |
-| `else { ... }` | `else:` |
-| `&&`, `\|\|`, `!` | `and`, `or`, `not` |
+| `else if (...)`    | `elif ...:`                    |
+| `else { ... }`     | `else:`                        |
+| `&&`, `\|\|`, `!`  | `and`, `or`, `not`             |
+|                    |                                |
+|                    |                                |
 
 🧪 **Prevedi il ramo scelto, poi controlla.** Un 6 è critico, da 3 a 5 si colpisce, sotto il 3 si manca:
 
@@ -122,6 +124,7 @@ Solo il primo: Python si ferma alla prima condizione vera.
 ✏️ **Bug di progettazione (2 min).** Un compagno mette `if dado >= 3:` con la stampa `Colpito.`, seguito da `elif dado == 6:` con la stampa `Colpo critico!`. Quale risultato del dado rivela il bug? Spiega perché il problema esisterebbe anche in Java.
 
 ### 🔍 ` = ` dentro un `if`
+#fatto👍 
 
 Chi arriva da Java sbaglia spesso una lettera. In un `if` serve il confronto ` == `, non l'assegnazione ` = `.
 
@@ -148,6 +151,7 @@ SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
 ## 🔁 Cicli
 
 ### ✅ `while`: il combattimento in sei righe
+#fatto👍 
 
 `while` controlla la condizione prima di ogni giro, come in Java. `+=` e `-=` hanno lo stesso significato; manca `++`, che diventa `turno += 1`.
 
@@ -187,6 +191,7 @@ No: per Python è un intero valido; è il programma a dover far rispettare la re
 ✏️ **Distingui i guasti (2 min).** Confronta due modifiche al ciclo: togliere `turno += 1`, oppure togliere `vita_goblin -= 8`. Quale rende il ciclo infinito? Quale altera solo i messaggi? Non eseguire un ciclo che hai previsto infinito.
 
 ### ✅ `for` e `range`: ripeti un numero preciso di volte
+#fatto👍 
 
 Il `for` di Python non ha i tre pezzi del `for` classico di Java: prende gli elementi uno alla volta. **`range`** fornisce una sequenza di interi, così puoi usarlo per contare.
 
@@ -197,14 +202,16 @@ Il `for` di Python non ha i tre pezzi del `for` classico di Java: prende gli ele
 Turno 1
 Turno 2
 Turno 3
+
+schifo = range(1, 4)  
 ```
 
-| `range(...)` | Valori | In Java |
-| --- | --- | --- |
-| `range(5)` | 0, 1, 2, 3, 4 | `for (int i = 0; i < 5; i++)` |
-| `range(1, 7)` | 1, 2, 3, 4, 5, 6 | `for (int i = 1; i < 7; i++)` |
-| `range(0, 10, 2)` | 0, 2, 4, 6, 8 | `for (int i = 0; i < 10; i += 2)` |
-| `range(3, 0, -1)` | 3, 2, 1 | `for (int i = 3; i > 0; i--)` |
+| `range(...)`      | Valori           | In Java                           |
+| ----------------- | ---------------- | --------------------------------- |
+| `range(5)`        | 0, 1, 2, 3, 4    | `for (int i = 0; i < 5; i++)`     |
+| `range(1, 7)`     | 1, 2, 3, 4, 5, 6 | `for (int i = 1; i < 7; i++)`     |
+| `range(0, 10, 2)` | 0, 2, 4, 6, 8    | `for (int i = 0; i < 10; i += 2)` |
+| `range(3, 0, -1)` | 3, 2, 1          | `for (int i = 3; i > 0; i--)`     |
 
 <u>Il limite finale di `range` non è mai compreso</u>: `range(1, 7)` si ferma a 6. Nel conteggio crescente corrisponde al `<` del `for` Java; nel conteggio decrescente al `>`.
 
@@ -249,6 +256,7 @@ for tentativo in range(1, 8):
         print("La porta si apre.")
         break
     print("La porta resiste al tentativo", tentativo)
+print(cose)
 ```
 
 ```text
@@ -301,12 +309,12 @@ print("Danno:", danno)
 Danno: 11
 ```
 
-| Java | Python |
-| --- | --- |
-| `static int attacco(int forza, int tiro) { ... }` | `def attacco(forza, tiro):` |
-| tipo restituito e tipi dei parametri obbligatori | non obbligatori nella definizione |
-| `camelCase` | `snake_case`, parole separate da `_` (stile PEP 8) |
-| `return x;` | `return x` |
+| Java                                              | Python                                             |
+| ------------------------------------------------- | -------------------------------------------------- |
+| `static int attacco(int forza, int tiro) { ... }` | `def attacco(forza, tiro):`                        |
+| tipo restituito e tipi dei parametri obbligatori  | non obbligatori nella definizione                  |
+| `camelCase`                                       | `snake_case`, parole separate da `_` (stile PEP 8) |
+| `return x;`                                       | `return x`                                         |
 
 La riga `def` crea la funzione: **non esegue il suo corpo**. Il corpo parte con la chiamata. Quando la chiamata viene eseguita, Python deve aver già incontrato la definizione.
 
@@ -322,6 +330,7 @@ La riga `def` crea la funzione: **non esegue il suo corpo**. Il corpo parte con 
 ✏️ **Cambia la regola (2 min).** Scrivi `colpo_critico(forza, tiro)`, che restituisce il doppio della forza più il tiro. Scegli due chiamate che dimostrino che la funzione usa entrambi i parametri.
 
 ### ✅ `print` mostra, `return` consegna
+#fatto👍 
 
 In Java, stampare e restituire erano già due azioni diverse. La novità è che <u>Python ti lascia usare il risultato di una funzione senza `return`: il risultato è `None`</u>. `None` indica l'assenza di un valore, un po' come `null` in Java.
 
@@ -402,7 +411,6 @@ vita = 100
 def cura():
     vita = vita + 20
 
-
 cura()
 ```
 
@@ -469,6 +477,7 @@ Passarlo come parametro e usare il valore restituito con <code>return</code>, in
 ## 📚 Moduli
 
 ### ✅ `import`: usare il lavoro degli altri
+#fatto👍 
 
 Il dungeon deve tirare dadi, non ricevere sempre un tiro scritto a mano. Non serve inventare un generatore: un **modulo** è un'unità di codice importabile, spesso un file `.py`, con funzioni e valori pronti. La **libreria standard** è l'insieme dei moduli distribuiti con Python, fra cui `random` e `math`.
 
@@ -517,6 +526,7 @@ Quello finale: <code>randint(1, 6)</code> può dare 6; <code>range(1, 6)</code> 
 ✏️ **Leggibilità (1 min).** Per una funzione chiamata `scelta` in un modulo `dadi`, preferisci leggere `dadi.scelta()` o `scelta()`? Motiva in base a chi dovrà capire il programma, non al numero di caratteri.
 
 ### 🔍 Importare può far partire il gioco
+#fatto👍 
 
 **Problema.** Vuoi riusare un dado in un altro programma. Lo importi, e il file ti chiede il nome dell'eroe. Non hai chiamato nessuna funzione: perché?
 
@@ -529,7 +539,6 @@ Quello finale: <code>randint(1, 6)</code> può dare 6; <code>range(1, 6)</code> 
 ```python
 print("Regole del dungeon caricate")
 FACCIA_MAX = 6
-
 
 def facce():
     return FACCIA_MAX
@@ -587,6 +596,7 @@ Perché nel codice si vede da quale modulo arriva ogni nome.
 ✏️ **Un import invadente (2 min).** Immagina che `regole.py` contenga anche `nome = input("Eroe? ")` fuori dalle funzioni. Dove metteresti quella riga perché importare le regole non chieda il nome? Spiega la scelta senza avviare il gioco.
 
 ### 🤓 Le funzioni sono oggetti
+#fatto👍 
 
 > In Python una funzione è un valore come gli altri. Puoi darle un altro nome e chiamarla con quello:
 >
@@ -596,6 +606,7 @@ Perché nel codice si vede da quale modulo arriva ogni nome.
 >
 >
 > azione = attacco
+> azione = difesa
 > print(azione(7, 4))
 > ```
 >
@@ -632,7 +643,7 @@ Nel primo caso assegni la funzione; nel secondo il risultato della chiamata.
 Quando viene eseguito il <code>def</code>, non a ogni chiamata: le chiamate che omettono quel parametro condividono la lista.
 </details>
 
-## 🛠️ Il debugger
+## 🛠️ Il debuggery
 
 Un **debugger** ferma il programma e mostra i valori, così puoi confrontare la tua previsione con l'esecuzione. Un **breakpoint** è il punto di arresto scelto su una riga; il **passo-passo** esegue una riga alla volta.
 

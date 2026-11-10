@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-646 -244 1243 488" width="1243" height="488" role="img" aria-label="🏭 Pipelining" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🏭 Pipelining</title>
+<rect x="-646" y="-244" width="1243" height="488" rx="14" fill="#ffffff"/>
+<path d="M305.397631177923 -160.8 C332.397631177923 -160.8 332.397631177923 -201.6 359.397631177923 -201.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M305.397631177923 -160.8 C332.397631177923 -160.8 332.397631177923 -160.79999999999998 359.397631177923 -160.79999999999998" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M305.397631177923 -160.8 C332.397631177923 -160.8 332.397631177923 -119.99999999999997 359.397631177923 -119.99999999999997" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M335.349631177923 -20.39999999999999 C362.349631177923 -20.39999999999999 362.349631177923 -61.199999999999996 389.349631177923 -61.199999999999996" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M335.349631177923 -20.39999999999999 C362.349631177923 -20.39999999999999 362.349631177923 -20.4 389.349631177923 -20.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M335.349631177923 -20.39999999999999 C362.349631177923 -20.39999999999999 362.349631177923 20.4 389.349631177923 20.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M327.02963117792297 140.4 C354.02963117792297 140.4 354.02963117792297 79.20000000000002 381.02963117792297 79.20000000000002" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M327.02963117792297 140.4 C354.02963117792297 140.4 354.02963117792297 120.00000000000001 381.02963117792297 120.00000000000001" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M327.02963117792297 140.4 C354.02963117792297 140.4 354.02963117792297 160.8 381.02963117792297 160.8" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M327.02963117792297 140.4 C354.02963117792297 140.4 354.02963117792297 201.6 381.02963117792297 201.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-375.28563117792305 -33.39999999999999 C-402.28563117792305 -33.39999999999999 -402.28563117792305 -53.8 -429.28563117792305 -53.8" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-375.28563117792305 -33.39999999999999 C-402.28563117792305 -33.39999999999999 -402.28563117792305 -2.5999999999999925 -429.28563117792305 -2.5999999999999925" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-318.70963117792303 60.20000000000001 C-345.70963117792303 60.20000000000001 -345.70963117792303 60.20000000000001 -372.70963117792303 60.20000000000001" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M44.2 -51.6 C91.08917814638482 -51.6 91.08917814638482 -160.8 137.941631177923 -160.8" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M67.2 -9.9 C102.576127144201 -9.9 102.576127144201 -20.39999999999999 137.941631177923 -20.39999999999999" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M47.6 48.5 C92.7787228595198 48.5 92.7787228595198 140.4 137.941631177923 140.4" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-66.0 -16.0 C-101.98756888493519 -16.0 -101.98756888493519 -33.39999999999999 -137.941631177923 -33.39999999999999" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-62.3 27.2 C-100.1058027499366 27.2 -100.1058027499366 60.20000000000001 -137.941631177923 60.20000000000001" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="67.9" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">🏭 Pipelining</tspan></text>
+<rect x="137.941631177923" y="-179.20000000000002" width="167.456" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="221.669631177923" y="-160.8">Idea della pipeline</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="367.397631177923" y="-201.6">✅ Lavanderia a catena</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="367.397631177923" y="-160.8">✅ Le cinque fasi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="367.397631177923" y="-120.0">🔍 Griglia a stadi</tspan></text>
+<rect x="137.941631177923" y="-38.79999999999999" width="197.408" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="236.645631177923" y="-20.4">Latenza e throughput</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="397.349631177923" y="-61.2">✅ Latenza</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="397.349631177923" y="-20.4">✅ Throughput</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="397.349631177923" y="20.4">🔍 Contare i cicli</tspan></text>
+<rect x="137.941631177923" y="122" width="189.088" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="232.48563117792298" y="140.4">Hazard della pipeline</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="389.02963117792297" y="79.2">✅ Hazard strutturale</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="389.02963117792297" y="120.0">✅ Hazard di dati</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="389.02963117792297" y="160.8">✅ Hazard di controllo</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="389.02963117792297" y="201.6">🔍 Stalli e forwarding</tspan></text>
+<rect x="-375.28563117792305" y="-51.79999999999999" width="237.34400000000002" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-256.613631177923" y="-33.4">Modello e processore reale</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-437.28563117792305" y="-64.2">✅ Modello ideale e</tspan><tspan x="-437.28563117792305" y="-43.4">processore reale</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-437.28563117792305" y="-2.6">🤓 Predizione dei salti</tspan></text>
+<rect x="-318.70963117792303" y="41.80000000000001" width="180.768" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-228.32563117792301" y="60.2">Simulazione a mano</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-380.70963117792303" y="60.2">✅ Simulazione con carte</tspan></text>
+</svg>

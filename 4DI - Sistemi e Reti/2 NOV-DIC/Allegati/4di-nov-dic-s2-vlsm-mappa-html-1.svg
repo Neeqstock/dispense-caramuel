@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-751 -164 1400 328" width="1400" height="328" role="img" aria-label="🧩 VLSM: subnet di misura diversa" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>🧩 VLSM: subnet di misura diversa</title>
+<rect x="-751" y="-164" width="1400" height="328" rx="14" fill="#ffffff"/>
+<path d="M376.77503249552797 -70.2 C403.77503249552797 -70.2 403.77503249552797 -111 430.77503249552797 -111" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M376.77503249552797 -70.2 C403.77503249552797 -70.2 403.77503249552797 -70.2 430.77503249552797 -70.2" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M376.77503249552797 -70.2 C403.77503249552797 -70.2 403.77503249552797 -29.400000000000013 430.77503249552797 -29.400000000000013" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M395.07903249552794 70.2 C422.07903249552794 70.2 422.07903249552794 29.4 449.07903249552794 29.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M395.07903249552794 70.2 C422.07903249552794 70.2 422.07903249552794 70.2 449.07903249552794 70.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M395.07903249552794 70.2 C422.07903249552794 70.2 422.07903249552794 111 449.07903249552794 111" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-433.35103249552793 -70.6 C-460.35103249552793 -70.6 -460.35103249552793 -121.79999999999998 -487.35103249552793 -121.79999999999998" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-433.35103249552793 -70.6 C-460.35103249552793 -70.6 -460.35103249552793 -70.6 -487.35103249552793 -70.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-433.35103249552793 -70.6 C-460.35103249552793 -70.6 -460.35103249552793 -19.39999999999999 -487.35103249552793 -19.39999999999999" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-383.4310324955279 80.6 C-410.4310324955279 80.6 -410.4310324955279 49.8 -437.4310324955279 49.8" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-383.4310324955279 80.6 C-410.4310324955279 80.6 -410.4310324955279 111.39999999999999 -437.4310324955279 111.39999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M112.7 -41.6 C151.46521928462647 -41.6 151.46521928462647 -70.2 190.18303249552793 -70.2" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M112.7 41.6 C151.46521928462647 41.6 151.46521928462647 70.2 190.18303249552793 70.2" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-112.7 -41.8 C-151.42663180674435 -41.8 -151.42663180674435 -70.6 -190.18303249552793 -70.6" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-110.7 46.9 C-150.41942323529508 46.9 -150.41942323529508 80.6 -190.18303249552793 80.6" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="120.2" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="-10.4">🧩 VLSM: subnet di misura</tspan><tspan x="0" y="10.4">diversa</tspan></text>
+<rect x="190.18303249552793" y="-88.6" width="186.592" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="283.4790324955279" y="-70.2">📏 Misurare la rete</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="438.77503249552797" y="-111.0">✅ Bit host</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="438.77503249552797" y="-70.2">✅ Gateway</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="438.77503249552797" y="-29.4">🔍 Errore di conteggio</tspan></text>
+<rect x="190.18303249552793" y="51.800000000000004" width="204.89600000000002" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="292.63103249552796" y="70.2">🧱 Assegnare i blocchi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="457.07903249552794" y="29.4">✅ Ordine</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="457.07903249552794" y="70.2">🔍 Allineamento</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="457.07903249552794" y="111.0">🤓 Riserva</tspan></text>
+<rect x="-433.35103249552793" y="-89" width="243.168" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-311.7670324955279" y="-70.6">🔗 Collegamenti fra router</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.35103249552793" y="-121.8">✅ Il /30</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.35103249552793" y="-81.0">🔍 Perché il collegamento ha</tspan><tspan x="-495.35103249552793" y="-60.2">una rete propria</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-495.35103249552793" y="-19.4">🤓 /31 e /32</tspan></text>
+<rect x="-383.4310324955279" y="62.199999999999996" width="193.248" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-286.8070324955279" y="80.6">🗺️ Piano per più sedi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-445.4310324955279" y="39.4">✅ Piano completo di tre</tspan><tspan x="-445.4310324955279" y="60.2">sedi</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-445.4310324955279" y="101.0">🔍 Controllare la tabella con</tspan><tspan x="-445.4310324955279" y="121.8">quattro domande</tspan></text>
+</svg>

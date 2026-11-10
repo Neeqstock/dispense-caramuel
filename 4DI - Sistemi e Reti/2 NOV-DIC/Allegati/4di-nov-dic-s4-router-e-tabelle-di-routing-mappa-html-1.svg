@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-655 -215 1375 429" width="1375" height="429" role="img" aria-label="Router e tabelle di routing" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>Router e tabelle di routing</title>
+<rect x="-655" y="-215" width="1375" height="429" rx="14" fill="#ffffff"/>
+<path d="M355.68169012605364 -90.6 C382.68169012605364 -90.6 382.68169012605364 -172.2 409.68169012605364 -172.2" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M355.68169012605364 -90.6 C382.68169012605364 -90.6 382.68169012605364 -131.4 409.68169012605364 -131.4" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M355.68169012605364 -90.6 C382.68169012605364 -90.6 382.68169012605364 -90.60000000000001 409.68169012605364 -90.60000000000001" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M355.68169012605364 -90.6 C382.68169012605364 -90.6 382.68169012605364 -49.80000000000002 409.68169012605364 -49.80000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M355.68169012605364 -90.6 C382.68169012605364 -90.6 382.68169012605364 -9.00000000000002 409.68169012605364 -9.00000000000002" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.92969012605363 111 C435.92969012605363 111 435.92969012605363 49.800000000000004 462.92969012605363 49.800000000000004" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.92969012605363 111 C435.92969012605363 111 435.92969012605363 90.60000000000001 462.92969012605363 90.60000000000001" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.92969012605363 111 C435.92969012605363 111 435.92969012605363 131.4 462.92969012605363 131.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M408.92969012605363 111 C435.92969012605363 111 435.92969012605363 172.20000000000002 462.92969012605363 172.20000000000002" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-345.69769012605366 -101.4 C-372.69769012605366 -101.4 -372.69769012605366 -152.6 -399.69769012605366 -152.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-345.69769012605366 -101.4 C-372.69769012605366 -101.4 -372.69769012605366 -91.00000000000001 -399.69769012605366 -91.00000000000001" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-345.69769012605366 -101.4 C-372.69769012605366 -101.4 -372.69769012605366 -39.80000000000001 -399.69769012605366 -39.80000000000001" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-370.65769012605364 91 C-397.65769012605364 91 -397.65769012605364 29.399999999999995 -424.65769012605364 29.399999999999995" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-370.65769012605364 91 C-397.65769012605364 91 -397.65769012605364 90.99999999999999 -424.65769012605364 90.99999999999999" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-370.65769012605364 91 C-397.65769012605364 91 -397.65769012605364 152.6 -424.65769012605364 152.6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M104.9 -50.9 C145.70667200003123 -50.9 145.70667200003123 -90.6 186.56169012605363 -90.6" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M100.2 59.6 C143.3668971623984 59.6 143.3668971623984 111 186.56169012605363 111" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-102.4 -55.7 C-144.48692836440583 -55.7 -144.48692836440583 -101.4 -186.56169012605363 -101.4" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-104.8 51.1 C-145.6624604795243 51.1 -145.6624604795243 91 -186.56169012605363 91" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="116.6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">Router e tabelle di routing</tspan></text>
+<rect x="186.56169012605363" y="-109" width="169.12" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="271.12169012605364" y="-90.6">Router e gateway</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.68169012605364" y="-172.2">✅ Router fra reti diverse</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.68169012605364" y="-131.4">✅ Switch: una sola rete</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.68169012605364" y="-90.6">✅ Gateway: porta di uscita</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.68169012605364" y="-49.8">🔍 Interfacce del router</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="417.68169012605364" y="-9.0">🤓 Storia: gli IMP</tspan></text>
+<rect x="186.56169012605363" y="92.6" width="222.368" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="297.74569012605366" y="111.0">Tabella di instradamento</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.92969012605363" y="49.8">✅ Tabella a due colonne</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.92969012605363" y="90.6">✅ Rotta: una riga</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.92969012605363" y="131.4">🔍 Prossimo passo: il vicino</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="470.92969012605363" y="172.2">🤓 Tabelle delle reti vere</tspan></text>
+<rect x="-345.69769012605366" y="-119.80000000000001" width="159.136" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-266.1296901260537" y="-101.4">Scelta della riga</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-407.69769012605366" y="-163.0">✅ Prefisso: i bit che</tspan><tspan x="-407.69769012605366" y="-142.2">contano</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-407.69769012605366" y="-101.4">✅ Rotta predefinita</tspan><tspan x="-407.69769012605366" y="-80.6">0.0.0.0/0</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-407.69769012605366" y="-39.8">🔍 Prefisso più lungo</tspan></text>
+<rect x="-370.65769012605364" y="72.6" width="184.096" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-278.60969012605364" y="91.0">Idee da abbandonare</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-432.65769012605364" y="19.0">✅ Il router non conosce</tspan><tspan x="-432.65769012605364" y="39.8">tutta la rete</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-432.65769012605364" y="80.6">✅ Prossimo passo ≠</tspan><tspan x="-432.65769012605364" y="101.4">destinazione</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-432.65769012605364" y="142.2">✅ Rotta predefinita ≠</tspan><tspan x="-432.65769012605364" y="163.0">tutto Internet</tspan></text>
+</svg>

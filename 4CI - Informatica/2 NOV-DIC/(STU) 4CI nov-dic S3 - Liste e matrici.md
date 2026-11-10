@@ -1,4 +1,4 @@
-⬅️ [S2 - Decisioni, cicli e funzioni](%28STU%29%204CI%20nov-dic%20S2%20-%20Decisioni%2C%20cicli%20e%20funzioni.md) · 🏠 [Indice](../README.md) · [S4 - Dizionari](%28STU%29%204CI%20nov-dic%20S4%20-%20Dizionari.md) ➡️
+⬅️ [S2 - Decisioni, cicli e funzioni](<(STU) 4CI nov-dic S2 - Decisioni, cicli e funzioni.md>) · 🏠 [Indice](../README.md) · [S4 - Dizionari](<(STU) 4CI nov-dic S4 - Dizionari.md>) ➡️
 
 # 🎒 Liste e matrici
 
@@ -492,4 +492,4 @@ Il risultato delle celle eseguite in un ordine diverso da quello in cui sono scr
 
 ---
 
-⬅️ [S2 - Decisioni, cicli e funzioni](%28STU%29%204CI%20nov-dic%20S2%20-%20Decisioni%2C%20cicli%20e%20funzioni.md) · 🏠 [Indice](../README.md) · [S4 - Dizionari](%28STU%29%204CI%20nov-dic%20S4%20-%20Dizionari.md) ➡️
+⬅️ [S2 - Decisioni, cicli e funzioni](<(STU) 4CI nov-dic S2 - Decisioni, cicli e funzioni.md>) · 🏠 [Indice](../README.md) · [S4 - Dizionari](<(STU) 4CI nov-dic S4 - Dizionari.md>) ➡️

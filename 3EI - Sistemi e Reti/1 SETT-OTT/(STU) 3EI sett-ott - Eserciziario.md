@@ -1,819 +1,876 @@
 ⬅️ [S7 - Ricostruire la macchina](%28STU%29%203EI%20sett-ott%20S7%20-%20Ricostruire%20la%20macchina.md) · 🏠 [Indice](../README.md)
 
-# 🛠️ Eserciziario · 3EI sett-ott
+# 🛠️ Eserciziario · 3EI Settembre-Ottobre — Come una macchina esegue un programma
 
-**3EI · Settembre-Ottobre · Casi reali e situazioni verosimili · Teoria e pratica scritta**
-
-⏱️ **Ogni dossier richiede circa 10–20 minuti.** Il percorso ✅ essenziale dura circa 75 minuti; gli approfondimenti 🔍 richiedono circa altri 45 minuti. Gli esercizi 🤓 sono facoltativi. Non è un compito da svolgere tutto in una volta: scegli i dossier che ti servono e affrontane anche uno al giorno.
-
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 caso vero o verosimile · 🛠️ restauro · 📖 teoria · ✏️ pratica scritta · 🟢 svolto: guarda come si fa · 🎯 da provare: soluzione nascosta · 🧠 da ricordare · ⚠️ errore comune · 📌 controllo · 🃏 soluzione
-
-Un museo dell'informatica riceve in dono una stanza piena di macchine spente: un computer degli anni Quaranta, una scheda di bordo e un vecchio PC. Nessuno sa più come funzionano. Voi siete i tecnici del **laboratorio di restauro** (il museo è inventato). Per rimetterle in moto non servono martelli: bisogna capire **che cosa conserva ogni componente, chi coordina le operazioni e quanto tempo si perde ad aspettare**.
-
-Ogni dossier parte da una macchina reale o da una situazione verosimile. Potreste dover individuare un guasto o leggere una scheda tecnica. Alla fine, ricostruirete il funzionamento della macchina.
-
-<u>Un computer non è un mistero: è una catena di piccole regole.</u> Conoscerle è il modo per sapere dove guardare quando qualcosa non va.
-
-## Come si usa
-
-- 🟢 **Svolto.** Leggi i passaggi, poi copri la soluzione e rifai l'esercizio sul quaderno.
-- 🎯 **Da provare.** Prima svolgi l'esercizio sul quaderno. Poi apri la soluzione 🃏 e confrontala con la tua.
-- Ogni dossier contiene esercizi di teoria 📖 e di pratica scritta ✏️; alcuni includono anche un esempio svolto 🟢.
-- **Le regole del gioco.** La nostra macchina conosce le istruzioni `LOAD`, `ADD`, `STORE` e `HALT`: ogni istruzione occupa una cella. Dopo il fetch, il PC passa all'indirizzo successivo. Per ripassare la notazione, consulta il [foglio sul linguaggio assembly](%28STU%29%203EI%20-%20Linguaggio%20assembly%20base.md).
-- **Valori.** I nomi, gli indirizzi e i numeri degli esercizi sono inventati. Le informazioni storiche contrassegnate con 📜 sono accompagnate dalle fonti in fondo alla pagina.
-
-| Dossier | Tema | Settimana | Caso |
-| :-----: | ------------------------------- | :-------: | ------------------------------------ |
-| 1 | Il programma entra in memoria | S1–S2 | ENIAC e EDSAC |
-| 2 | Dentro la CPU | S1, S3 | Shannon e i relè; il debugger |
-| 3 | Il ciclo macchina | S4 | La centralina di una serra |
-| 4 | Indirizzi, bus e capacità | S5 | IBM PC, Apollo, EDSAC |
-| 5 | Gerarchia e cache | S5–S6 | La scheda tecnica di un portatile |
-| 6 | Il clock | S6 | La corsa ai GHz dei Pentium 4 |
-| 7 | Ricostruisci la macchina | S1–S6 | Il collaudo del museo |
+**Classe:** 3EI · **Materia:** Sistemi e Reti · **Periodo:** Settembre-Ottobre (Unità S1–S7)  
+**Strumenti consentiti:** solo carta e penna (nessuna calcolatrice: tutti i calcoli sono progettati per essere svolti a mente).
 
 ---
 
-## 🛠️ Dossier 1 · Il programma entra in memoria
+## 🧭 Come usare questo eserciziario
 
-*Si usa S1–S2: Von Neumann, indirizzo e contenuto, i cinque blocchi.*
+Ogni unità corrisponde a una settimana del percorso (S1–S6) più una scheda finale di riepilogo (S7) e segue sempre **quattro gradini**:
 
-### 📜 Caso vero: da ENIAC a EDSAC
+1. 🟢 **Modello svolto:** leggilo, copri la soluzione e prova a rifarlo.
+2. 🟡 **Guidato (a buchi):** completa solo le parti mancanti per prendere confidenza con il metodo.
+3. 🎯 **Autonomo (Coppia A / B):** due esercizi gemelli dello stesso livello. Usa **A** per allenarti subito, **B** a distanza di qualche giorno o per il recupero.
+4. 🔍 **Caccia all'errore e ragionamento:** trova lo sbaglio nella soluzione di un altro o rispondi seguendo la regola *Tesi + Meccanismo + Esempio*.
 
-Nel 1946 l'ENIAC, uno dei primi calcolatori elettronici, si programmava manualmente, ricollegando cavi e impostando interruttori. Cambiare calcolo poteva richiedere giorni. A programmarlo era un gruppo di matematiche, fra cui Kay McNulty, Jean Jennings e Betty Snyder.
+### 🗺️ Percorsi consigliati
 
-Il 6 maggio 1949 entra in funzione a Cambridge l'EDSAC. La sua memoria contiene **512 parole** e usa linee di ritardo a mercurio. La novità non è il materiale, ma l'idea di conservare **anche il programma in memoria**. Per cambiare compito non occorre più ricollegare i cavi: basta sostituire le istruzioni memorizzate.
+| Percorso | Obiettivo | Tempo stimato | Esercizi da svolgere |
+|---|---|---:|---|
+| ✅ **Percorso Base** | Consolidare i fondamentali (sufficienza piena) | ~50 min | Tutti i 🟢 e 🟡 + `1.3A`\*, `2.3A`, `3.3A`, `4.3A`, `5.3A`, `6.3A` |
+| 🔍 **Percorso Completo** | Padroneggiare i meccanismi e i casi limite (voto alto) | ~40 min in più | Aggiungi tutte le **Cacce all'errore** (`1.4`, `2.4`, `3.4`, `4.4`, `5.4`, `6.4`) e l'**Unità 7** |
+| ⚡ **Ripasso lampo pre-verifica** | Controllare di essere pronti il giorno prima | ~25 min | Svolgi la **Fila B** degli esercizi 🎯 (`1.3B`\*, `2.3B`, `3.3B`, `4.3B`, `5.3B`, `6.3B`) |
 
-🧠 <u>La macchina resta la stessa. Cambia ciò che sta in memoria.</u>
+\* 🕓 **Non svolto quest'anno:** la parte su logica e relè (interruttori in serie/parallelo, AND/OR) non è stata trattata in classe. Saltala: `1.3A` e `1.3B` non rientrano nei percorsi di quest'anno.
 
-### 1.1 📖 Teoria · ✅ · 🟢 Svolto — Che cosa c'è nelle celle
+---
 
-**Consegna.** Nel laboratorio c'è un computer con queste celle (valori inventati):
+## 🧰 Prontuario della macchina didattica (sempre valido)
 
-```text
-indirizzo:  60                61                 62      63    64
-contenuto:  LOAD R1, [63]     STORE [64], R1     HALT    9     0
-```
+Non serve imparare questi comandi a memoria: in verifica avrai sempre questa tabella.
 
-1. Quali celle contengono istruzioni e quali dati?
-2. Che differenza c'è fra `63` e `MEM[63]`?
-3. Che cosa cambia nella memoria dopo aver eseguito il programma?
-4. Per far fare alla macchina un altro lavoro, che cosa cambiamo?
+| Istruzione | Effetto | Esempio |
+|---|---|---|
+| `LOAD Rd, [ind]` | **Copia** nel registro `Rd` il contenuto della cella di memoria `MEM[ind]`. La cella resta invariata. | `LOAD R1, [50]` → `R1 ← MEM[50]` |
+| `STORE [ind], Rs` | **Copia** nella cella `MEM[ind]` il valore contenuto nel registro `Rs`. Il registro resta invariato. | `STORE [52], R3` → `MEM[52] ← R3` |
+| `ADD Rd, Rs1, Rs2` | Somma i valori dei registri `Rs1` e `Rs2` e scrive il risultato nel **primo** registro (`Rd`). | `ADD R3, R1, R2` → `R3 ← R1 + R2` |
+| `BEQ Rs1, Rs2, etichetta` | *(Facoltativo 🤓)* Se `Rs1` e `Rs2` sono uguali, salta all'istruzione indicata da `etichetta`. | `BEQ R1, R2, fine` |
+| `HALT` | Ferma l'esecuzione del programma. | `HALT` |
 
-**Svolgimento.**
+**Regole fisse del modello:**
+- Ogni istruzione occupa **1 cella** di memoria.
+- Durante la fase di **fetch**, il registro `PC` avanza automaticamente di `1` (`PC ← PC + 1`).
+- **Copiare non significa svuotare:** la sorgente conserva sempre il proprio valore finché non viene sovrascritta.
 
-1. Le istruzioni stanno nelle celle **60, 61 e 62**. I dati stanno nelle celle **63 e 64**.
-2. `63` è l'**indirizzo**: dice dove sta la cella. `MEM[63]` è il suo **contenuto**: qui vale 9.
-3. La `LOAD` copia 9 in R1. La `STORE` copia R1 nella cella 64. Alla fine `MEM[64] = 9`. La cella 63 resta 9, perché una copia non svuota la sorgente.
-4. Cambiamo le **istruzioni scritte in memoria**. I collegamenti e i circuiti restano gli stessi.
+**Potenze di 2 utili a mente:**
 
-📌 **Controllo.** Istruzioni e dati stanno nella stessa memoria, ma in celle diverse. La memoria non li distingue da sola: è la CPU a interpretarli in base al modo in cui li usa.
+| $2^0$ | $2^1$ | $2^2$ | $2^3$ | $2^4$ | $2^5$ | $2^6$ | $2^7$ | $2^8$ | $2^9$ | $2^{10}$ | $2^{11}$ | $2^{12}$ | $2^{13}$ | $2^{16}$ | $2^{20}$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | $1\,024$ (1 Ki) | $2\,048$ (2 Ki) | $4\,096$ (4 Ki) | $8\,192$ (8 Ki) | $65\,536$ (64 Ki) | $1\,048\,576$ (1 Mi) |
 
-🧠 <u>L'indirizzo dice dove. Il contenuto dice che cosa c'è.</u>
+---
 
-### 1.2 ✏️ Pratica · ✅ · 🎯 Da provare — Leggi la memoria
+## 🔌 Unità 1 (S1) · Dalle macchine dedicate alla CPU
 
-**Consegna.** Ecco la memoria di una macchina (valori inventati). Il PC parte da 200 e i registri valgono 0.
+*Obiettivi: distinguere parte operativa e parte di controllo. 🕓 **Non svolto quest'anno:** logica degli interruttori e relè (serie/parallelo, AND/OR).*
 
-| Indirizzo | 200 | 201 | 202 | 203 | 204 | 205 | 206 | 207 |
-|---|---|---|---|---|---|---|---|---|
-| Contenuto | `LOAD R1, [205]` | `LOAD R2, [206]` | `ADD R3, R1, R2` | `STORE [207], R3` | `HALT` | 14 | 6 | 0 |
+> 🕓 **Parte non svolta quest'anno.** Il riquadro storico qui sotto e gli esercizi su interruttori, AND e OR (punto 1 di `1.1` e tutto `1.3`) riguardano un argomento che non abbiamo trattato in classe: puoi saltarli. Gli esercizi su parte operativa e parte di controllo (punto 2 di `1.1`, `1.2`, `1.4`) fanno invece parte del programma.
 
-Sul quaderno rispondi:
+> 🕓 *(Non svolto quest'anno)* 📜 **Il contesto storico (1937).** Nella sua tesi al MIT, Claude Shannon dimostra che i circuiti elettrici fatti di interruttori (relè) realizzano l'algebra di Boole: due interruttori **in serie** corrispondono a un **AND** (devono essere entrambi chiusi), due **in parallelo** a un **OR** (basta che ne sia chiuso almeno uno). Dentro la CPU, i circuiti si dividono in **parte operativa** (conserva, sposta o trasforma i dati) e **parte di controllo** (decide quali operazioni attivare e quando).
 
-a) Quanto vale `MEM[205]`?
-b) A quale indirizzo sta l'istruzione `HALT`?
-c) Quali sono le celle che contengono dati?
-d) Quanto vale `MEM[207]` alla fine del programma?
-e) Dopo la `LOAD R1, [205]`, la cella 205 è ancora 14?
+### 1.1 🟢 Svolto · ✅ — Logica degli interruttori e ruoli nella CPU
+
+**Consegna.**
+1. 🕓 *(Non svolto quest'anno)* Una pressa industriale parte solo se l'operatore preme il **pedale** (`P`) **e** lo **sportello di sicurezza** (`S`) è chiuso, **oppure** se il tecnico attiva la **chiave di collaudo** (`C`). Scrivi la formula logica con `AND` / `OR` e stabilisci se la pressa parte quando `P = sì`, `S = no`, `C = sì`.
+2. Durante un'operazione, la CPU usa: **(a)** l'ALU che somma due numeri; **(b)** la CU che invia il segnale «attiva la somma». Quale appartiene alla parte operativa e quale alla parte di controllo?
+
+**Svolgimento passo-passo.**
+1. 🕓 *(Non svolto quest'anno)* Pedale e sportello servono **insieme** → sono in serie (`P AND S`). La chiave di collaudo basta **da sola** → è in parallelo (`OR C`).
+   - Formula: `(P AND S) OR C`.
+   - Con `P = sì`, `S = no`, il ramo `P AND S` è aperto (falso), ma `C = sì` chiude il ramo in parallelo: **la pressa parte**.
+2. Domanda-guida: *questo elemento tocca i dati o comanda chi li tocca?*
+   - **(a) ALU:** trasforma i dati → **parte operativa**.
+   - **(b) Segnale della CU:** dà un ordine senza contenere dati → **parte di controllo**.
+
+---
+
+### 1.2 🟡 Guidato (a buchi) · ✅ — Operativa o di controllo?
+
+**Consegna.** Completa la tabella scrivendo **Operativa** oppure **Controllo**, e aggiungi il verbo mancante nella motivazione (*conserva*, *trasforma*, *trasferisce*, *coordina*).
+
+| Elemento della CPU | Parte (Operativa / Controllo) | Perché? |
+|---|---|---|
+| 1. Il registro `R1` che tiene il numero `12` | `____________` | `____________` un dato durante il lavoro. |
+| 2. La CU che interpreta il comando contenuto nell'`IR` | `____________` | `____________` le operazioni senza calcolare il dato. |
+| 3. Il collegamento interno su cui viaggia il numero `12` da `R1` all'ALU | `____________` | `____________` fisicamente il dato da un blocco all'altro. |
+| 4. Il segnale elettrico che apre l'ingresso del registro `R3` | `____________` | `____________` quando `R3` deve salvare il risultato. |
+| 5. L'ALU che confronta due valori | `____________` | `____________` o confronta i dati ricevuti. |
 
 <details>
 <summary>🃏 <b>1.2 — Soluzione</b></summary>
 
-a) 14. b) 204. c) 205, 206 e 207. d) 20, perché R3 = 14 + 6 e la `STORE` lo copia nella cella 207. e) Sì: la `LOAD` copia, non sposta.
-
-⚠️ **Errore comune:** dire che `MEM[205]` è 205. Il numero 205 è l'indirizzo; il contenuto è 14.
+1. **Operativa** (*conserva*).
+2. **Controllo** (*coordina*).
+3. **Operativa** (*trasferisce*).
+4. **Controllo** (*coordina* / comanda).
+5. **Operativa** (*trasforma*).
 
 </details>
 
-### 1.3 📖 Teoria · 🔍 · 🎯 Da provare — Le frasi del restauratore
+---
 
-**Consegna.** Per ogni frase scrivi **vero** o **falso**. Se è falsa, correggila in una frase.
+### 1.3 🎯 Autonomo (Coppia A / B) · ✅ — Serie, parallelo e condizioni
 
-A. «Per fare un altro lavoro a un computer a programma memorizzato bisogna ricollegare i cavi, come per l'ENIAC.»
-B. «Se in una cella c'è scritto 70, quel 70 è per forza un indirizzo.»
-C. «In una macchina a programma memorizzato le istruzioni sono informazioni come i dati: si possono caricare e sostituire in memoria.»
-D. «Nel modello di Von Neumann i dati e le istruzioni stanno nella stessa memoria.»
+> 🕓 **Non svolto quest'anno:** logica e relè non sono stati trattati in classe. Salta questo esercizio.
+
+#### Fila A
+L'allarme di una sala server (`A`) suona se si verifica **almeno una** di queste due situazioni:
+- viene rilevato **fumo** (`F`);
+- la **porta è aperta** (`P`) **e** il **badge non è stato riconosciuto** (`N`).
+
+a) Scrivi l'espressione logica con `AND` e `OR`.  
+b) Disegna lo schema a interruttori (serie/parallelo).  
+c) Compila l'esito per questi tre casi:
+   - Caso 1: `F = no`, `P = sì`, `N = no`
+   - Caso 2: `F = no`, `P = sì`, `N = sì`
+   - Caso 3: `F = sì`, `P = no`, `N = no`
 
 <details>
-<summary>🃏 <b>1.3 — Soluzione</b></summary>
+<summary>🃏 <b>1.3 Fila A — Soluzione</b></summary>
 
-A. **Falso.** Basta sostituire le istruzioni in memoria. I cavi restano al loro posto.
-B. **Falso.** Un numero in una cella può essere un dato, o la parte di un'istruzione che indica un indirizzo. Dipende da come la macchina lo usa.
-C. **Vero.**
-D. **Vero.**
+a) `F OR (P AND N)`.  
+b) Un ramo con il solo interruttore `F`, in parallelo a un ramo che contiene `P` e `N` in serie.  
+c) Caso 1: **non suona** (`P` è sì, ma `N` è no). Caso 2: **suona** (`P` e `N` entrambi sì). Caso 3: **suona** (basta `F = sì`).
 
 </details>
 
-### 1.4 ✏️ Pratica · ✅ · 🎯 Da provare — I cinque blocchi di un computer
+#### Fila B
+Una pompa di raffreddamento (`R`) si accende se **il livello dell'acqua è sufficiente** (`L`) **e** contemporaneamente vale almeno una di queste condizioni: **la temperatura supera la soglia** (`T`) **oppure** è attivo il **pulsante manuale** (`M`).
 
-**Consegna.** Un vecchio computer del museo ha una tastiera, una RAM che contiene il programma, un altoparlante, il processore che esegue le istruzioni e i collegamenti fra i pezzi. Sul quaderno assegna ciascun elemento a uno dei **cinque blocchi** del modello (CPU, memoria principale, ingresso, uscita, collegamenti). Poi rispondi: una scheda di rete è ingresso o uscita?
+a) Scrivi l'espressione logica con `AND` e `OR` (attenzione alle parentesi).  
+b) Se `L = no`, `T = sì`, `M = sì`, la pompa parte? Spiega in una riga perché.
+
+<details>
+<summary>🃏 <b>1.3 Fila B — Soluzione</b></summary>
+
+a) `L AND (T OR M)`.  
+b) **No, non parte.** `L` è in serie con tutto il resto: se manca l'acqua (`L = no`), il circuito resta aperto anche se `T` e `M` sono chiusi.
+
+</details>
+
+---
+
+### 1.4 🔍 Caccia all'errore · Approfondimento
+
+**Consegna.** Uno studente scrive: *«Quando eseguo `R2 ← R1` non c'è nessuna somma, quindi l'ALU non lavora; di conseguenza questa operazione viene svolta interamente dalla parte di controllo (CU).»*  
+Individua l'errore e correggi l'affermazione distinguendo chi sposta il dato da chi dà il comando.
 
 <details>
 <summary>🃏 <b>1.4 — Soluzione</b></summary>
 
-Tastiera → **ingresso**. RAM con il programma → **memoria principale**. Altoparlante → **uscita**. Processore → **CPU**. Fili e piste di collegamento → **collegamenti**. Una scheda di rete è **entrambi**: porta dati nel sistema e li porta fuori.
+- **Tesi:** L'affermazione è sbagliata perché coinvolge **sia** la parte operativa **sia** la parte di controllo.
+- **Meccanismo:** Anche senza calcoli dell'ALU, i registri `R1` e `R2` e il collegamento su cui viaggia il numero appartengono alla **parte operativa** (toccano e conservano il dato). La **parte di controllo (CU)** si limita a inviare i segnali per aprire l'uscita di `R1` e l'ingresso di `R2`.
 
 </details>
 
 ---
 
-## 🛠️ Dossier 2 · Dentro la CPU
+## 🏛️ Unità 2 (S2) · La macchina di Von Neumann
 
-*Si usa S1 e S3: interruttori, parte operativa e di controllo, registri e notazione.*
+*Obiettivi: spiegare il programma memorizzato; distinguere i 5 blocchi funzionali; distinguere indirizzo `x` e contenuto `MEM[x]`.*
 
-### 📜 Caso vero: Shannon e i relè, 1937
+> 📜 **Il contesto storico (1945–1949).** Per cambiare calcolo sull'ENIAC (1945) le programmatrici dovevano spostare cavi e interruttori per giorni. Con il modello di Von Neumann e macchine come l'EDSAC (1949, 512 parole di memoria), **le istruzioni entrano nella stessa memoria dei dati**: la macchina cambia mestiere senza cambiare un solo filo.
 
-Nel 1937 Claude Shannon, giovane ricercatore al MIT, scrive una tesi su un'idea sorprendente: i circuiti formati da **relè** — interruttori comandati da un segnale elettrico — possono rappresentare le operazioni dell'algebra di Boole. Due interruttori in serie lasciano passare la corrente solo se sono entrambi chiusi: è un **AND**. Due interruttori in parallelo la lasciano passare se ne basta uno: è un **OR**. Un interruttore che apre quando riceve corrente dà un **NOT**.
+### 2.1 🟢 Svolto · ✅ — Indirizzo, contenuto, istruzioni e dati
 
-Da allora, i circuiti si possono **progettare** usando la logica, non solo per tentativi. Relè, valvole e transistor sono modi sempre più piccoli e veloci di costruire interruttori.
+**Consegna.** Osserva questo tratto di memoria (il programma inizia dalla cella `10`):
 
-🧠 <u>I circuiti della CPU combinano segnali elettrici per elaborare i dati.</u>
+| Indirizzo | 10 | 11 | 12 | 13 | 14 |
+|---|---|---|---|---|---|
+| **Contenuto** | `LOAD R1, [13]` | `STORE [14], R1` | `HALT` | `25` | `0` |
 
-### 2.1 📖 Teoria · ✅ · 🟢 Svolto — La porta del laboratorio
+1. Quali celle contengono istruzioni e quali contengono dati?
+2. Qual è la differenza tra scrivere `13` e scrivere `MEM[13]`?
+3. Quanto valgono `MEM[13]` e `MEM[14]` al termine del programma?
 
-**Consegna.** La porta del laboratorio (scena inventata) si apre se vengono presentati **il badge e il codice giusto**, oppure se si usa **la chiave di emergenza**. Scrivi la condizione usando AND e OR, poi disegna gli interruttori.
+**Svolgimento passo-passo.**
+1. Le celle **10, 11 e 12** contengono **istruzioni** (vengono raggiunte dal `PC`). Le celle **13 e 14** contengono **dati**.
+2. `13` è l'**indirizzo** (il numero della casella); `MEM[13]` è il **contenuto** conservato dentro la casella `13`, che qui vale `25`.
+3. `LOAD R1, [13]` copia `25` in `R1`. `STORE [14], R1` copia `25` nella cella `14`. Alla fine: **`MEM[13] = 25`** (la lettura non cancella la sorgente) e **`MEM[14] = 25`**.
 
-**Svolgimento.**
+---
 
-1. Badge e codice servono **insieme**: sono due interruttori **in serie**. È un AND.
-2. La chiave basta **da sola**: è un ramo **in parallelo**. È un OR.
-3. Condizione: `(badge AND codice) OR chiave`.
+### 2.2 🟡 Guidato (a buchi) · ✅ — Leggere la tabella della memoria
 
-```text
-            badge        codice
-      +-----/ -------/ ----------+
- ----+                           +----- serratura
-      +----------/ --------------+
-                chiave
-```
+**Consegna.** Guarda la memoria qui sotto (`PC` iniziale = `20`, registri a `0`) e riempi gli spazi vuoti.
 
-| Badge | Codice | Chiave | La porta si apre? |
-|:-:|:-:|:-:|:-:|
-| sì | sì | no | sì |
-| sì | no | no | no |
-| no | no | sì | sì |
-| sì | no | sì | sì |
+| Indirizzo | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
+|---|---|---|---|---|---|---|---|---|
+| **Contenuto** | `LOAD R1, [25]` | `LOAD R2, [26]` | `ADD R3, R1, R2` | `STORE [27], R3` | `HALT` | `14` | `6` | `0` |
 
-📌 **Controllo.** Un solo interruttore chiuso nella serie non basta. Un ramo in parallelo chiuso basta.
-
-⚠️ **Errore comune:** scambiare serie e parallelo. Serie = «tutti», AND. Parallelo = «almeno uno», OR.
-
-### 2.2 ✏️ Pratica · ✅ · 🎯 Da provare — Operativa o di controllo?
-
-**Consegna.** Per ciascun elemento della CPU, indica se appartiene alla **parte operativa** o alla **parte di controllo**. Per decidere, chiediti: *questo elemento elabora o trasferisce dati, oppure controlla le operazioni?*
-
-1. Il registro R1, che contiene 7.
-2. L'ALU, che trasforma 7 e 5 in 12.
-3. La CU, che decide «qui si fa una somma, non una sottrazione».
-4. Il collegamento che porta il contenuto di R1 verso l'ALU.
-5. Il segnale «apri il collegamento da R2».
-6. Il registro che conserva il risultato 12.
+- a) L'indirizzo dell'istruzione `HALT` è `____`.
+- b) Il valore di `MEM[25]` è `____`, mentre `25` è il suo `____________`.
+- c) Le tre celle che contengono dati sono `____`, `____` e `____`.
+- d) Alla fine del programma, `R3` vale `____` e `MEM[27]` vale `____`.
+- e) Alla fine del programma, `MEM[25]` vale ancora `____` perché l'istruzione `LOAD` esegue una `________`, non uno spostamento.
 
 <details>
 <summary>🃏 <b>2.2 — Soluzione</b></summary>
 
-1. **Operativa**: conserva un dato.
-2. **Operativa**: trasforma i dati.
-3. **Controllo**: decide, non tocca i dati.
-4. **Operativa**: sposta i dati; è aperto da un segnale di controllo.
-5. **Controllo**: è un ordine, non un dato.
-6. **Operativa**: conserva un dato.
-
-🧠 La CU **non calcola** e **non conserva** i dati: li comanda.
+- a) **`24`**
+- b) **`14`**; **indirizzo**
+- c) **`25`**, **`26`** e **`27`**
+- d) `R3 =` **`20`** (`14 + 6`); `MEM[27] =` **`20`**
+- e) **`14`**; **copia**
 
 </details>
 
-### 2.3 ✏️ Pratica · ✅ · 🎯 Da provare — La notazione dei registri
+---
 
-**Consegna.** Stato iniziale: `R1 = 3`, `R2 = 0`, `MAR = 0`, `MDR = 0`, `MEM[95] = 11`. Esegui i quattro passi **uno alla volta** e riempi la tabella dopo ciascuno.
+### 2.3 🎯 Autonomo (Coppia A / B) · ✅ — I cinque blocchi e il modello di Von Neumann
 
-| Passo | R1 | R2 | MAR | MDR | MEM[95] |
-|---|:-:|:-:|:-:|:-:|:-:|
-| `R2 <- 5` | `__` | `__` | `__` | `__` | `__` |
-| `MAR <- 95` | `__` | `__` | `__` | `__` | `__` |
-| `MDR <- MEM[95]` | `__` | `__` | `__` | `__` | `__` |
-| `R1 <- MDR` | `__` | `__` | `__` | `__` | `__` |
+#### Fila A
+1. Assegna ciascun componente a uno dei **cinque blocchi** della macchina di Von Neumann (*CPU, Memoria principale, Input, Output, Collegamenti/Bus*):
+   - Microfono · Modulo RAM con il programma in esecuzione · Piste della scheda madre · Monitor · Processore · SSD esterno quando invia un file alla RAM.
+2. In memoria ci sono le celle: `MEM[40] = 8`, `MEM[41] = 40`.
+   - Quanto vale `MEM[40]`?
+   - Che differenza c'è tra il `40` usato in `MEM[40]` e il `40` contenuto dentro `MEM[41]`?
 
 <details>
-<summary>🃏 <b>2.3 — Soluzione</b></summary>
+<summary>🃏 <b>2.3 Fila A — Soluzione</b></summary>
 
-| Passo | R1 | R2 | MAR | MDR | MEM[95] |
-|---|:-:|:-:|:-:|:-:|:-:|
-| `R2 <- 5` | 3 | 5 | 0 | 0 | 11 |
-| `MAR <- 95` | 3 | 5 | 95 | 0 | 11 |
-| `MDR <- MEM[95]` | 3 | 5 | 95 | 11 | 11 |
-| `R1 <- MDR` | 11 | 5 | 95 | 11 | 11 |
-
-📌 La freccia **copia**: la sorgente non cambia. `MEM[95]` vale 11 dall'inizio alla fine.
-
-⚠️ **Errore comune:** scrivere `MAR = 11`. Il MAR tiene l'**indirizzo** (95), l'MDR tiene il **contenuto** (11).
+1. Microfono → **Input** · RAM → **Memoria principale** · Piste della scheda madre → **Collegamenti/Bus** · Monitor → **Output** · Processore → **CPU** · SSD esterno (in lettura/scrittura) → **Input/Output** (periferica di memoria di massa).
+2. `MEM[40]` vale **`8`**. In `MEM[40]` il numero `40` è l'**indirizzo** della cella; in `MEM[41] = 40` il numero `40` è il **dato** contenuto nella cella `41` (che potrebbe anche rappresentare l'indirizzo di un'altra cella, ma resta un contenuto memorizzato lì).
 
 </details>
 
-### 2.4 📖 Teoria · 🔍 · 🎯 Da provare — Il pannello del debugger
+#### Fila B
+1. Spiega in due frasi qual è il vantaggio fondamentale del modello di **Von Neumann** rispetto a una macchina programmata a cavi come l'ENIAC.
+2. Una scheda di rete Wi-Fi appartiene al blocco di Input o al blocco di Output? Motiva in una riga.
+3. Se la cella di indirizzo `80` contiene il numero `5`, quale scrittura indica il numero `5` e quale indica la posizione della cella: `80` oppure `MEM[80]`?
 
-**Consegna.** Un debugger è un programma che mostra i registri mentre un altro programma è in esecuzione. Il restauratore osserva il pannello seguente (valori inventati). Nella cella 150 si trova l'istruzione `LOAD R2, [260]` e `MEM[260] = 18`.
+<details>
+<summary>🃏 <b>2.3 Fila B — Soluzione</b></summary>
 
-| | PC | MAR | MDR | IR | R2 |
-|---|:-:|:-:|:-:|:-:|:-:|
-| **Pannello A** · fetch finito | 151 | 150 | `LOAD R2, [260]` | `LOAD R2, [260]` | 0 |
-| **Pannello B** · dato arrivato | 151 | 260 | 18 | `LOAD R2, [260]` | 0 |
+1. Nel modello di Von Neumann **istruzioni e dati stanno nella stessa memoria**. Per cambiare compito alla macchina basta caricare in memoria un nuovo programma, senza modificare circuiti o cavi.
+2. Appartiene a **entrambi (Input/Output)**: riceve dati dalla rete (input) e invia dati verso la rete (output).
+3. `80` indica la **posizione (indirizzo)** della cella; `MEM[80]` indica il **contenuto**, cioè `5`.
 
-a) Quale registro dice dove prendere la **prossima istruzione**?
-b) Perché nel pannello A il MAR vale 150 e non 151?
-c) Perché nel pannello B il MAR vale 260 e l'IR è rimasto lo stesso?
-d) Quanto vale R2 alla fine dell'istruzione?
+</details>
+
+---
+
+### 2.4 🔍 Caccia all'errore · Approfondimento
+
+**Consegna.** Correggi queste due frasi sbagliate spiegando **perché** non funzionano:
+- **Frase 1:** *«Aprendo la RAM e guardando i bit di una cella, la memoria sa distinguere da sola se quel numero è un'istruzione oppure un dato.»*
+- **Frase 2:** *«Per far eseguire un programma diverso a un computer di Von Neumann, bisogna sostituire i registri della CPU perché il programma è salvato tutto lì dentro.»*
 
 <details>
 <summary>🃏 <b>2.4 — Soluzione</b></summary>
 
-a) Il **PC**.
-b) Il MAR riceve il valore del PC **prima** che il PC avanzi: per prelevare l'istruzione ha usato 150. Poi il PC passa a 151.
-c) Nel secondo accesso il MAR tiene l'indirizzo del **dato** (260). L'IR continua a tenere il comando finché l'istruzione non è finita: il dato arriva nell'MDR, non nell'IR.
-d) 18, perché il contenuto dell'MDR viene copiato in R2.
-
-⚠️ **Errore comune:** pensare che dopo la `LOAD` il PC salti a 260. Il PC continua con l'istruzione successiva; 260 è l'indirizzo di un dato.
+- **Frase 1 (Falsa):** In memoria sia i dati sia le istruzioni sono sequenze di bit indistinguibili. A distinguerli è il **modo in cui la CPU li preleva**: se l'indirizzo arriva dal `PC` nella fase di fetch, il contenuto viene portato nell'`IR` e interpretato come istruzione; se arriva durante una `LOAD`, viene trattato come dato.
+- **Frase 2 (Falsa):** Il programma in esecuzione risiede nella **memoria principale (RAM)**, non nei registri. I registri sono pochissimi e tengono soltanto l'istruzione corrente (`IR`) e i dati su cui la CPU sta lavorando in quell'istante.
 
 </details>
 
 ---
 
-## 🛠️ Dossier 3 · Il ciclo macchina
+## ⚙️ Unità 3 (S3) · Registri interni e percorsi dei dati
 
-*Si usa S4: fetch, decode, execute, tracce di programma, bus.*
+*Obiettivi: distinguere i ruoli di `PC`, `IR`, `MAR`, `MDR` e registri generali (`R1, R2...`); seguire micro-trasferimenti con `←`.*
 
-### 📜 Scena verosimile: la centralina della serra (inventata)
+> 📜 **Il contesto reale.** Quando un programmatore apre un **debugger** per capire perché un programma si è bloccato, vede una finestra con lo stato dei registri della CPU. Nel nostro modello didattico osserviamo quattro registri speciali: **`PC`** (indirizzo della prossima istruzione), **`IR`** (istruzione in corso), **`MAR`** (indirizzo della cella di memoria da leggere o scrivere), **`MDR`** (dato o istruzione appena transitato da/verso la memoria).
 
-Nel museo c'è la centralina di una vecchia serra: un piccolo computer che controlla la temperatura. Ripete sempre la stessa sequenza: preleva la prossima istruzione, la interpreta, la esegue e poi passa alla successiva.
+### 3.1 🟢 Svolto · ✅ — Seguire i passaggi tra `MAR`, `MDR` e registri
 
-Prelevare, interpretare, eseguire: **fetch, decode, execute**. Se la centralina si blocca, il restauratore non può capire il guasto «a orecchio»: deve seguire il programma passo dopo passo, come fa la CPU.
+**Consegna.** Stato iniziale: `R1 = 4`, `R2 = 0`, `MAR = 0`, `MDR = 0`, `MEM[70] = 15`.  
+Compila lo stato dopo ciascun micro-passo:
 
-🧠 <u>Una macchina a programma memorizzato fa sempre lo stesso giro: legge, capisce, esegue, passa alla prossima.</u>
+| Passo eseguito | R1 | R2 | MAR | MDR | MEM[70] |
+|---|:-:|:-:|:-:|:-:|:-:|
+| *(Stato iniziale)* | 4 | 0 | 0 | 0 | 15 |
+| 1. `MAR ← 70` | **4** | **0** | **70** | **0** | **15** |
+| 2. `MDR ← MEM[70]` | **4** | **0** | **70** | **15** | **15** |
+| 3. `R2 ← MDR` | **4** | **15** | **70** | **15** | **15** |
 
-### 3.1 ✏️ Pratica · ✅ · 🟢 Svolto — Alza la temperatura obiettivo
+**Osserva:**
+- Nel passo 1 nel `MAR` entra **`70`** (l'indirizzo), **non** `15`.
+- Nel passo 2 nell'`MDR` entra **`15`** (il contenuto della cella `70`).
+- Questa sequenza di tre passi è esattamente ciò che succede dentro la CPU durante la fase di esecuzione di `LOAD R2, [70]`.
 
-**Consegna.** In memoria c'è questo programma (valori inventati). La temperatura obiettivo della serra è in `MEM[300]` e il passo di aumento in `MEM[301]`.
+---
 
-| Cella | Istruzione |
-|---:|---|
-| 120 | `LOAD R1, [300]` |
-| 121 | `LOAD R2, [301]` |
-| 122 | `ADD R1, R1, R2` |
-| 123 | `STORE [300], R1` |
-| 124 | `HALT` |
+### 3.2 🟡 Guidato (a buchi) · ✅ — Chi fa cosa tra `PC`, `IR`, `MAR`, `MDR`
 
-**Stato iniziale:** `PC = 120`, `R1 = 0`, `R2 = 0`, `MEM[300] = 20`, `MEM[301] = 5`. Dopo il fetch il PC avanza di uno. Esegui le prime quattro istruzioni.
+**Consegna.** Nella cella `10` si trova l'istruzione `LOAD R1, [50]` e nella cella `50` c'è il numero `9`.  
+Osserva i due istanti fotografati dal debugger e completa le celle mancanti (`____`).
 
-**Svolgimento.**
-
-| Istruzione eseguita | PC | R1 | R2 | MEM[300] |
-|---|:-:|:-:|:-:|:-:|
-| (stato iniziale) | 120 | 0 | 0 | 20 |
-| `LOAD R1, [300]` | 121 | 20 | 0 | 20 |
-| `LOAD R2, [301]` | 122 | 20 | 5 | 20 |
-| `ADD R1, R1, R2` | 123 | 25 | 5 | 20 |
-| `STORE [300], R1` | 124 | 25 | 5 | 25 |
-
-📌 **Controllo.** A ogni istruzione, oltre al PC, cambia al massimo un registro dei dati oppure una cella di memoria. Il PC passa sempre all'istruzione successiva: non diventa mai 300, perché 300 è l'indirizzo di un dato.
-
-⚠️ **Errore comune:** scrivere `MEM[300] = 25` già dopo l'`ADD`. L'`ADD` cambia solo R1: la memoria cambia soltanto con la `STORE`.
-
-🧠 <u>Un'istruzione alla volta, un cambiamento alla volta.</u>
-
-### 3.2 ✏️ Pratica · ✅ · 🎯 Da provare — Tre volte la dose
-
-**Consegna.** Ecco un altro programma (valori inventati).
-
-| Cella | Istruzione |
-|---:|---|
-| 140 | `LOAD R1, [310]` |
-| 141 | `ADD R2, R1, R1` |
-| 142 | `ADD R3, R2, R1` |
-| 143 | `STORE [311], R3` |
-| 144 | `STORE [310], R2` |
-| 145 | `HALT` |
-
-**Stato iniziale:** `PC = 140`, `R1 = R2 = R3 = 0`, `MEM[310] = 6`, `MEM[311] = 0`. Esegui le prime cinque istruzioni, una alla volta, e riempi la tabella.
-
-| Istruzione eseguita | PC | R1 | R2 | R3 | MEM[310] | MEM[311] |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|
-| `LOAD R1, [310]` | `__` | `__` | `__` | `__` | `__` | `__` |
-| `ADD R2, R1, R1` | `__` | `__` | `__` | `__` | `__` | `__` |
-| `ADD R3, R2, R1` | `__` | `__` | `__` | `__` | `__` | `__` |
-| `STORE [311], R3` | `__` | `__` | `__` | `__` | `__` | `__` |
-| `STORE [310], R2` | `__` | `__` | `__` | `__` | `__` | `__` |
+| Istante | PC | MAR | MDR | IR | R1 |
+|---|:-:|:-:|:-:|:-:|:-:|
+| **Istante A** · Appena concluso il *fetch* dell'istruzione | `11` | `10` | `LOAD R1, [50]` | `______________` | `0` |
+| **Istante B** · Appena letto il dato dalla memoria (prima di copiarlo in `R1`) | `____` | `50` | `____` | `LOAD R1, [50]` | `0` |
+| **Istante C** · Fine dell'istruzione `LOAD R1, [50]` | `11` | `50` | `9` | `LOAD R1, [50]` | `____` |
 
 <details>
 <summary>🃏 <b>3.2 — Soluzione</b></summary>
 
-| Istruzione eseguita | PC | R1 | R2 | R3 | MEM[310] | MEM[311] |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|
-| `LOAD R1, [310]` | 141 | 6 | 0 | 0 | 6 | 0 |
-| `ADD R2, R1, R1` | 142 | 6 | 12 | 0 | 6 | 0 |
-| `ADD R3, R2, R1` | 143 | 6 | 12 | 18 | 6 | 0 |
-| `STORE [311], R3` | 144 | 6 | 12 | 18 | 6 | 18 |
-| `STORE [310], R2` | 145 | 6 | 12 | 18 | 12 | 18 |
-
-⚠️ **Errori comuni:** `ADD R2, R1, R1` letta come R2 = 1 o R2 = 6 (somma R1 con se stesso: 12). `STORE [310], R2` scambiata con una `LOAD` (R2 invariato) invece di modificare `MEM[310]`.
-
-📌 `R3 = R2 + R1 = 12 + 6 = 18`. La destinazione è sempre il **primo** registro indicato nell'istruzione `ADD`.
+- **Istante A:** `IR =` **`LOAD R1, [50]`** (l'istruzione prelevata dall'`MDR` viene copiata nell'`IR`).
+- **Istante B:** `PC =` **`11`** (non cambia durante la lettura del dato!); `MDR =` **`9`** (il contenuto di `MEM[50]`).
+- **Istante C:** `R1 =` **`9`** (copiato dall'`MDR`).
 
 </details>
 
-### 3.3 📖 Teoria · ✅ · 🎯 Da provare — Che cosa passa sui bus
+---
 
-**Consegna.** Completa la tabella indicando che cosa passa sui tre bus durante le operazioni descritte. Usa il programma dell'esercizio 3.2; nella terza riga, considera `R3 = 18`.
+### 3.3 🎯 Autonomo (Coppia A / B) · ✅ — Micro-passi e ruoli dei registri
 
-| Che cosa succede | Bus indirizzi | Bus di controllo | Bus dati |
-|---|---|---|---|
-| Fetch dell'istruzione della cella 140 | `__` | `__` | `__` |
-| Lettura del dato richiesto dalla `LOAD R1, [310]` | `__` | `__` | `__` |
-| Scrittura della `STORE [311], R3` | `__` | `__` | `__` |
+#### Fila A
+Stato iniziale: `R1 = 8`, `R2 = 3`, `MAR = 0`, `MDR = 0`, `MEM[60] = 20`.  
+Compila la tabella eseguendo i passi in ordine:
+
+| Passo | R1 | R2 | MAR | MDR | MEM[60] |
+|---|:-:|:-:|:-:|:-:|:-:|
+| *(Stato iniziale)* | 8 | 3 | 0 | 0 | 20 |
+| 1. `R1 ← R2` | `__` | `__` | `__` | `__` | `__` |
+| 2. `MAR ← 60` | `__` | `__` | `__` | `__` | `__` |
+| 3. `MDR ← R1` | `__` | `__` | `__` | `__` | `__` |
+| 4. `MEM[60] ← MDR` | `__` | `__` | `__` | `__` | `__` |
+
+Domanda: a quale istruzione del nostro linguaggio corrisponde la sequenza dei passi 2–3–4 (`LOAD` oppure `STORE`)?
 
 <details>
-<summary>🃏 <b>3.3 — Soluzione</b></summary>
+<summary>🃏 <b>3.3 Fila A — Soluzione</b></summary>
 
-| Che cosa succede | Bus indirizzi | Bus di controllo | Bus dati |
-|---|---|---|---|
-| Fetch della cella 140 | 140 | READ | `LOAD R1, [310]`, dalla memoria alla CPU |
-| Lettura del dato | 310 | READ | 6, dalla memoria alla CPU |
-| Scrittura della `STORE` | 311 | WRITE | 18, dalla CPU alla memoria |
+| Passo | R1 | R2 | MAR | MDR | MEM[60] |
+|---|:-:|:-:|:-:|:-:|:-:|
+| 1. `R1 ← R2` | **3** | 3 | 0 | 0 | 20 |
+| 2. `MAR ← 60` | 3 | 3 | **60** | 0 | 20 |
+| 3. `MDR ← R1` | 3 | 3 | 60 | **3** | 20 |
+| 4. `MEM[60] ← MDR` | 3 | 3 | 60 | 3 | **3** |
 
-🧠 <u>Indirizzi: dove. Dati: che cosa. Controllo: quale azione.</u> Nel modello semplificato di questi esercizi, la CPU invia l'indirizzo alla memoria.
+I passi 2–3–4 corrispondono all'esecuzione di **`STORE [60], R1`**.
 
 </details>
 
-### 3.4 📖 Teoria · 🔍 · 🎯 Da provare — Il fetch con MAR e MDR
+#### Fila B
+Stato iniziale: `R1 = 0`, `R2 = 10`, `MAR = 0`, `MDR = 0`, `MEM[80] = 7`.  
+Compila la tabella eseguendo i passi in ordine:
 
-**Consegna.** Prima del fetch dell'istruzione della cella 142, `ADD R3, R2, R1`, il PC vale 142 e `MAR = 0`, `MDR = 0`, l'IR è vuoto. Scrivi i valori di MAR, MDR, IR e PC **dopo ciascun passo**. Poi rispondi: la `ADD` ha bisogno di leggere la memoria nella fase di execute? E la `LOAD` della cella 140?
+| Passo | R1 | R2 | MAR | MDR | MEM[80] |
+|---|:-:|:-:|:-:|:-:|:-:|
+| *(Stato iniziale)* | 0 | 10 | 0 | 0 | 7 |
+| 1. `MAR ← 80` | `__` | `__` | `__` | `__` | `__` |
+| 2. `MDR ← MEM[80]` | `__` | `__` | `__` | `__` | `__` |
+| 3. `R1 ← MDR` | `__` | `__` | `__` | `__` | `__` |
+| 4. `R2 ← R1` | `__` | `__` | `__` | `__` | `__` |
 
-| Passo | Che cosa succede | MAR | MDR | IR | PC |
-|---:|---|:-:|:-:|:-:|:-:|
-| 1 | Il MAR riceve il valore del PC. | `__` | `__` | `__` | `__` |
-| 2 | La CU chiede **READ**. | `__` | `__` | `__` | `__` |
-| 3 | L'istruzione passa dalla memoria all'MDR. | `__` | `__` | `__` | `__` |
-| 4 | L'istruzione passa dall'MDR all'IR. | `__` | `__` | `__` | `__` |
-| 5 | Il PC avanza. | `__` | `__` | `__` | `__` |
+Domanda: a quale istruzione corrisponde la sequenza dei passi 1–2–3?
+
+<details>
+<summary>🃏 <b>3.3 Fila B — Soluzione</b></summary>
+
+| Passo | R1 | R2 | MAR | MDR | MEM[80] |
+|---|:-:|:-:|:-:|:-:|:-:|
+| 1. `MAR ← 80` | 0 | 10 | **80** | 0 | 7 |
+| 2. `MDR ← MEM[80]` | 0 | 10 | 80 | **7** | 7 |
+| 3. `R1 ← MDR` | **7** | 10 | 80 | 7 | 7 |
+| 4. `R2 ← R1` | 7 | **7** | 80 | 7 | 7 |
+
+I passi 1–2–3 corrispondono all'esecuzione di **`LOAD R1, [80]`**.
+
+</details>
+
+---
+
+### 3.4 🔍 Caccia all'errore · Approfondimento
+
+**Consegna.** Durante l'esecuzione dell'istruzione `LOAD R2, [90]` (che si trova nella cella `15`, mentre `MEM[90] = 42`), uno studente afferma:
+1. *«Alla fine della `LOAD R2, [90]`, il registro `PC` vale `90`.»*
+2. *«Quando il dato `42` arriva dalla memoria, entra nel registro `IR`.»*
+
+Spiega perché entrambe le frasi sono sbagliate e indica il registro corretto in ciascun caso.
 
 <details>
 <summary>🃏 <b>3.4 — Soluzione</b></summary>
 
-| Passo | MAR | MDR | IR | PC |
-|---:|:-:|:-:|:-:|:-:|
-| 1 | 142 | 0 | vuoto | 142 |
-| 2 | 142 | 0 | vuoto | 142 |
-| 3 | 142 | `ADD R3, R2, R1` | vuoto | 142 |
-| 4 | 142 | `ADD R3, R2, R1` | `ADD R3, R2, R1` | 142 |
-| 5 | 142 | `ADD R3, R2, R1` | `ADD R3, R2, R1` | 143 |
-
-Nel passo 2 i registri non cambiano: la CU invia il segnale di lettura alla memoria.
-
-La **`ADD`** usa solo registri: la memoria non viene letta di nuovo. La **`LOAD R1, [310]`** invece legge la memoria **due volte**: prima con MAR = 140 (MDR = l'istruzione), poi con MAR = 310 (MDR = 6).
-
-</details>
-
-### 3.5 🤓 · 🎯 Da provare — Non annaffiare
-
-> Un salto condizionato `BEQ R1, R2, fine` cambia il PC solo se `R1` e `R2` sono uguali. Qui R2 vale sempre 0.
->
-> | Cella | Istruzione |
-> |---:|---|
-> | 160 | `LOAD R1, [320]` |
-> | 161 | `BEQ R1, R2, fine` |
-> | 162 | `STORE [321], R1` |
-> | 163 | `fine: HALT` |
->
-> **Consegna.** Con `MEM[321] = 9` all'inizio, scrivi gli indirizzi delle istruzioni eseguite e il valore finale di `MEM[321]` in due casi: `MEM[320] = 0` e `MEM[320] = 4`.
-
-<details>
-<summary>🃏 <b>3.5 — Soluzione</b></summary>
-
-- `MEM[320] = 0`: R1 = 0 = R2, la `BEQ` salta. Indirizzi: **160 → 161 → 163**. `MEM[321]` resta 9.
-- `MEM[320] = 4`: R1 = 4 ≠ 0, la `BEQ` non salta. Indirizzi: **160 → 161 → 162 → 163**. `MEM[321]` diventa 4.
-
-Il salto cambia **quale istruzione viene dopo**, non il valore dei registri.
+1. **Errore sul `PC`:** Il `PC` tiene l'indirizzo della **prossima istruzione**, quindi dopo il fetch dalla cella `15` passa a **`16`**. L'indirizzo `90` è l'indirizzo di un **dato** e va nel **`MAR`**, mai nel `PC`.
+2. **Errore sull'`IR`:** L'`IR` conserva l'**istruzione in corso** (`LOAD R2, [90]`) fino al termine della sua esecuzione. Il dato `42` proveniente dalla memoria transita nell'**`MDR`** e da lì viene copiato in **`R2`**.
 
 </details>
 
 ---
 
-## 🛠️ Dossier 4 · Indirizzi, bus e capacità
+## 🔄 Unità 4 (S4) · Il ciclo macchina, i bus e le tracce di programma
 
-*Si usa S5: bit e indirizzi, byte e parole, bus.*
+*Obiettivi: tracciare programmi con `LOAD`, `ADD`, `STORE`, `HALT`; distinguere bus indirizzi, dati e controllo; contare gli accessi in memoria.*
 
-### 📜 Caso vero: tre macchine, tre potenze di due
+> 📜 **Il contesto reale.** Un microcontrollore dentro un termostato o una centralina ripete milioni di volte al secondo lo stesso ciclo a tre fasi: **Fetch** (preleva l'istruzione indicata dal `PC` e incrementa il `PC`), **Decode** (la CU interpreta l'istruzione nell'`IR`), **Execute** (esegue l'operazione usando ALU, registri o memoria). CPU e memoria comunicano attraverso tre **bus**: **indirizzi** (*dove*), **dati** (*che cosa*), **controllo** (*quale azione: `READ` o `WRITE`*).
 
-Tre macchine, alcuni numeri che sembrano casuali e invece si collegano alle **potenze di due**.
+### 4.1 🟢 Svolto · ✅ — Tracciare un programma e leggere i bus
 
-- **EDSAC** (1949): 512 parole di memoria. Sono 2⁹: bastano 9 bit per scrivere un indirizzo.
-- **Apollo Guidance Computer**, il computer di bordo delle missioni Apollo: 2 048 parole di RAM (2¹¹) e 36 864 parole di memoria a sola lettura. Girava a 2,048 MHz. Una parola era fatta di 16 bit: 15 di dato e 1 di controllo.
-- **IBM PC** (1981), con il processore Intel 8088: **20 linee di indirizzo**. Con 20 bit si distinguono 2²⁰ = 1 048 576 posizioni, cioè **1 MiB**. Ma la RAM arrivava a **640 KB**: i restanti 384 KB dello spazio erano riservati a ROM, memoria video e altre periferiche.
+**Consegna.** Segui le prime 4 istruzioni del programma qui sotto.
+- **Stato iniziale:** `PC = 10`, `R1 = 0`, `R2 = 0`, `MEM[50] = 20`, `MEM[51] = 5`.
 
-È la storia più famosa del «limite dei 640 KB». <u>Lo spazio degli indirizzi non è la RAM che hai montato</u>: dice quante posizioni si possono distinguere, non quante ne esistono.
+| Cella | Istruzione |
+|---:|---|
+| 10 | `LOAD R1, [50]` |
+| 11 | `LOAD R2, [51]` |
+| 12 | `ADD R1, R1, R2` |
+| 13 | `STORE [50], R1` |
+| 14 | `HALT` |
 
-🧠 <u>Con n bit si distinguono 2ⁿ posizioni. Ogni bit in più le raddoppia.</u>
+**Svolgimento della traccia:**
 
-### 4.1 ✏️ Pratica · ✅ · 🟢 Svolto — Da quante celle a quanti bit
+| Istruzione eseguita | PC | R1 | R2 | MEM[50] | Cosa è successo? |
+|---|:-:|:-:|:-:|:-:|---|
+| *(Stato iniziale)* | 10 | 0 | 0 | 20 | — |
+| `LOAD R1, [50]` | **11** | **20** | 0 | 20 | Fetch da `10` (`PC→11`), poi legge `MEM[50]` in `R1`. |
+| `LOAD R2, [51]` | **12** | 20 | **5** | 20 | Fetch da `11` (`PC→12`), poi legge `MEM[51]` in `R2`. |
+| `ADD R1, R1, R2` | **13** | **25** | 5 | 20 | Somma `R1 + R2` in `R1`. **`MEM[50]` non cambia ancora!** |
+| `STORE [50], R1` | **14** | 25 | 5 | **25** | Scrive il valore di `R1` (`25`) nella cella `MEM[50]`. |
 
-**Consegna.** Per ogni macchina, calcola il numero di bit dell'indirizzo oppure il numero di locazioni richiesto.
+**Che cosa transita sui tre bus durante la `STORE [50], R1` (cella 13)?**
+- **Fase di Fetch:** Bus indirizzi = `13` · Bus controllo = `READ` · Bus dati = istruzione `STORE [50], R1` (Memoria → CPU).
+- **Fase di Execute:** Bus indirizzi = `50` · Bus controllo = `WRITE` · Bus dati = `25` (CPU → Memoria).
 
-| Macchina | Dato | Da trovare |
-|---|---|---|
-| EDSAC | 512 locazioni | bit dell'indirizzo |
-| Apollo (RAM) | 2 048 locazioni | bit dell'indirizzo |
-| IBM PC | 20 bit di indirizzo, 1 byte per locazione | locazioni e capacità |
+---
 
-**Svolgimento.**
+### 4.2 🟡 Guidato (a buchi) · ✅ — Il fetch passo-passo e i tre bus
 
-1. **EDSAC.** Raddoppia: 1, 2, 4, 8, 16, 32, 64, 128, 256, **512**. Ci vogliono 9 raddoppi: **9 bit**. Indirizzi da 0 a 511.
-2. **Apollo.** Dopo 512 (2⁹) si raddoppia due volte: 1 024, **2 048**. Sono 2¹¹: **11 bit**. Indirizzi da 0 a 2 047.
-3. **IBM PC.** 2²⁰ = **1 048 576 locazioni**. Con 1 byte per locazione sono 1 048 576 byte, cioè **1 MiB**. L'ultimo indirizzo è 1 048 575.
+**Consegna.**
+1. Il `PC` vale `12` e nella cella `12` c'è `ADD R3, R1, R2`. Completa i 5 passi del **fetch**:
 
-📌 **Controllo.** Il numero di locazioni non è l'ultimo indirizzo: parte da 0, quindi l'ultimo è uno in meno.
+| Passo del Fetch | MAR | MDR | IR | PC |
+|---|:-:|:-:|:-:|:-:|
+| 1. `MAR ← PC` | `12` | `0` | *(vuoto)* | `12` |
+| 2. La CU invia `READ` sul bus di controllo | `12` | `0` | *(vuoto)* | `12` |
+| 3. La memoria invia l'istruzione all'`MDR` | `12` | `______________` | *(vuoto)* | `12` |
+| 4. `IR ← MDR` | `12` | `ADD R3, R1, R2` | `______________` | `12` |
+| 5. `PC ← PC + 1` | `12` | `ADD R3, R1, R2` | `ADD R3, R1, R2` | `____` |
 
-⚠️ **Errore comune:** pensare che 11 bit diano 11 locazioni, o 22. Il numero di locazioni cresce **per raddoppi**, non in proporzione.
-
-### 4.2 ✏️ Pratica · ✅ · 🎯 Da provare — La memoria della stazione meteo
-
-**Consegna.** Una stazione meteo registra una misura di temperatura ogni minuto. Ogni misura occupa 8 bit, cioè **1 byte**. Il museo la conserva in una memoria con indirizzi a **13 bit** (valori inventati).
-
-a) Quante locazioni ha questa memoria?
-b) Qual è l'ultimo indirizzo?
-c) Qual è la capacità, se ogni locazione è da 1 byte?
-d) Se ogni locazione contenesse **2 byte** invece di 1, che cosa cambierebbe: il numero di locazioni o la capacità totale?
+2. Durante la successiva fase di **execute**, l'istruzione `ADD R3, R1, R2` ha bisogno di usare di nuovo i bus verso la memoria? Perché?
 
 <details>
 <summary>🃏 <b>4.2 — Soluzione</b></summary>
 
-a) 2¹³ = **8 192** locazioni. b) **8 191**. c) 8 192 × 1 byte = **8 192 byte**, cioè 8 KiB. d) Cambia la **capacità**: 8 192 × 2 = 16 384 byte, cioè 16 KiB. Il numero di indirizzi resta 8 192.
-
-⚠️ **Errore comune:** dire che, raddoppiando i byte per locazione, servono più bit di indirizzo. Servirebbe un bit in più solo se raddoppiassero le **locazioni**.
+1. Passo 3: `MDR =` **`ADD R3, R1, R2`**. Passo 4: `IR =` **`ADD R3, R1, R2`**. Passo 5: `PC =` **`13`**.
+2. **No**, perché `ADD R3, R1, R2` opera solo sui registri interni alla CPU (`R1`, `R2`, `R3`). A differenza di `LOAD` e `STORE` (che accedono alla memoria **due volte**: una nel fetch e una nell'execute), la `ADD` accede alla memoria **una sola volta** (nel fetch).
 
 </details>
 
-### 4.3 ✏️ Pratica · 🔍 · 🎯 Da provare — Quanti bit servono
+---
 
-**Consegna.** Il museo vuole poter raggiungere almeno **3 000 locazioni**. Qual è il numero minimo di bit necessario per gli indirizzi? Quante locazioni si possono distinguere con quel numero di bit? E se dovesse raggiungerne 36 864, come la ROM dell'Apollo, quanti bit servirebbero nel nostro modello?
+### 4.3 🎯 Autonomo (Coppia A / B) · ✅ — Traccia completa e tabella dei bus
+
+#### Fila A
+**Programma in memoria:**
+
+| Cella | Istruzione |
+|---:|---|
+| 10 | `LOAD R1, [50]` |
+| 11 | `ADD R2, R1, R1` |
+| 12 | `ADD R3, R2, R1` |
+| 13 | `STORE [51], R3` |
+| 14 | `STORE [50], R2` |
+| 15 | `HALT` |
+
+**Stato iniziale:** `PC = 10`, `R1 = 0`, `R2 = 0`, `R3 = 0`, `MEM[50] = 6`, `MEM[51] = 0`.
+
+a) Compila la tabella di traccia per le 5 istruzioni (celle 10–14):
+
+| Istruzione eseguita | PC | R1 | R2 | R3 | MEM[50] | MEM[51] |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| *(Stato iniziale)* | 10 | 0 | 0 | 0 | 6 | 0 |
+| `LOAD R1, [50]` | `__` | `__` | `__` | `__` | `__` | `__` |
+| `ADD R2, R1, R1` | `__` | `__` | `__` | `__` | `__` | `__` |
+| `ADD R3, R2, R1` | `__` | `__` | `__` | `__` | `__` | `__` |
+| `STORE [51], R3` | `__` | `__` | `__` | `__` | `__` | `__` |
+| `STORE [50], R2` | `__` | `__` | `__` | `__` | `__` | `__` |
+
+b) Compila cosa transita sui tre bus in questi tre momenti:
+
+| Momento | Bus indirizzi | Bus controllo | Bus dati (e direzione) |
+|---|---|---|---|
+| Fetch della cella `10` | `____` | `____` | `____________________` |
+| Execute di `LOAD R1, [50]` | `____` | `____` | `____________________` |
+| Execute di `STORE [51], R3` | `____` | `____` | `____________________` |
 
 <details>
-<summary>🃏 <b>4.3 — Soluzione</b></summary>
+<summary>🃏 <b>4.3 Fila A — Soluzione</b></summary>
 
-Con 11 bit si distinguono 2 048 locazioni: poche. Con **12 bit** se ne distinguono **4 096**: bastano. Quindi servono **12 bit**, e le locazioni distinte sono 4 096 (ne avanzano 1 096).
+a) **Traccia:**
 
-Per 36 864: con 15 bit sono 32 768, poche; con **16 bit** sono 65 536. Nel nostro modello servono **16 bit**. Il vero computer dell'Apollo usava altri meccanismi che qui non studiamo.
+| Istruzione eseguita | PC | R1 | R2 | R3 | MEM[50] | MEM[51] |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| `LOAD R1, [50]` | **11** | **6** | 0 | 0 | 6 | 0 |
+| `ADD R2, R1, R1` | **12** | 6 | **12** | 0 | 6 | 0 |
+| `ADD R3, R2, R1` | **13** | 6 | 12 | **18** | 6 | 0 |
+| `STORE [51], R3` | **14** | 6 | 12 | 18 | 6 | **18** |
+| `STORE [50], R2` | **15** | 6 | 12 | 18 | **12** | 18 |
 
-📌 Si cerca la prima potenza di due **maggiore o uguale** al numero richiesto.
+b) **Bus:**
+- Fetch cella `10`: Indirizzi = **`10`** · Controllo = **`READ`** · Dati = **`LOAD R1, [50]`** (Memoria → CPU).
+- Execute `LOAD R1, [50]`: Indirizzi = **`50`** · Controllo = **`READ`** · Dati = **`6`** (Memoria → CPU).
+- Execute `STORE [51], R3`: Indirizzi = **`51`** · Controllo = **`WRITE`** · Dati = **`18`** (CPU → Memoria).
 
 </details>
 
-### 4.4 📖 Teoria · ✅ · 🎯 Da provare — Quale bus?
+#### Fila B
+**Programma in memoria:**
 
-**Consegna.** Per ciascuna frase, indica a quale bus si riferisce: indirizzi, dati o controllo.
+| Cella | Istruzione |
+|---:|---|
+| 20 | `LOAD R1, [60]` |
+| 21 | `LOAD R2, [61]` |
+| 22 | `ADD R3, R1, R2` |
+| 23 | `ADD R3, R3, R2` |
+| 24 | `STORE [62], R3` |
+| 25 | `HALT` |
 
-A. «Voglio la cella 305.»
-B. «Scrivi!»
-C. «Il valore da scrivere è 17.»
+**Stato iniziale:** `PC = 20`, `R1 = 0`, `R2 = 0`, `R3 = 0`, `MEM[60] = 9`, `MEM[61] = 4`, `MEM[62] = 0`.
 
-Poi spiega in una frase: un bus dati largo 16 bit dimostra che la memoria ha solo 2¹⁶ byte?
+a) Compila la tabella di traccia per le 5 istruzioni (celle 20–24):
+
+| Istruzione eseguita | PC | R1 | R2 | R3 | MEM[60] | MEM[62] |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| *(Stato iniziale)* | 20 | 0 | 0 | 0 | 9 | 0 |
+| `LOAD R1, [60]` | `__` | `__` | `__` | `__` | `__` | `__` |
+| `LOAD R2, [61]` | `__` | `__` | `__` | `__` | `__` | `__` |
+| `ADD R3, R1, R2` | `__` | `__` | `__` | `__` | `__` | `__` |
+| `ADD R3, R3, R2` | `__` | `__` | `__` | `__` | `__` | `__` |
+| `STORE [62], R3` | `__` | `__` | `__` | `__` | `__` | `__` |
+
+b) Quanti accessi alla memoria (letture + scritture, compreso il fetch) compie in tutto la CPU per eseguire le prime 3 istruzioni (celle 20, 21 e 22)?
+
+<details>
+<summary>🃏 <b>4.3 Fila B — Soluzione</b></summary>
+
+a) **Traccia:**
+
+| Istruzione eseguita | PC | R1 | R2 | R3 | MEM[60] | MEM[62] |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| `LOAD R1, [60]` | **21** | **9** | 0 | 0 | 9 | 0 |
+| `LOAD R2, [61]` | **22** | 9 | **4** | 0 | 9 | 0 |
+| `ADD R3, R1, R2` | **23** | 9 | 4 | **13** | 9 | 0 |
+| `ADD R3, R3, R2` | **24** | 9 | 4 | **17** | 9 | 0 |
+| `STORE [62], R3` | **25** | 9 | 4 | 17 | 9 | **17** |
+
+b) **5 accessi alla memoria in tutto:**
+- Cella 20 (`LOAD`): 2 accessi (1 fetch + 1 lettura dato).
+- Cella 21 (`LOAD`): 2 accessi (1 fetch + 1 lettura dato).
+- Cella 22 (`ADD`): 1 solo accesso (1 fetch; l'execute usa solo i registri).
+
+</details>
+
+---
+
+### 4.4 🔍 Caccia all'errore + 🤓 Salto condizionato `BEQ`
+
+**Consegna 1 (🔍 Caccia all'errore).** Guarda questa traccia compilata da uno studente per il programma `10: LOAD R1, [50]` / `11: ADD R1, R1, R1` (con `PC = 10`, `R1 = 0`, `MEM[50] = 7`):
+- Riga 1 (`LOAD R1, [50]`): `PC = 50`, `R1 = 7`, `MEM[50] = 0`
+- Riga 2 (`ADD R1, R1, R1`): `PC = 51`, `R1 = 14`, `MEM[50] = 14`
+
+Elenca i **tre errori concettuali** commessi dallo studente.
+
+**Consegna 2 (🤓 Facoltativo — `BEQ`).** Nel programma qui sotto `R2` vale `0` e `MEM[71] = 9`.
+
+| Cella | Istruzione |
+|---:|---|
+| 30 | `LOAD R1, [70]` |
+| 31 | `BEQ R1, R2, fine` |
+| 32 | `STORE [71], R1` |
+| 33 | `fine: HALT` |
+
+Quali celle vengono eseguite e quanto vale `MEM[71]` alla fine:
+- nel Caso 1 (`MEM[70] = 0`)?
+- nel Caso 2 (`MEM[70] = 5`)?
 
 <details>
 <summary>🃏 <b>4.4 — Soluzione</b></summary>
 
-A. **Indirizzi** (dove). B. **Controllo** (quale azione, qui WRITE). C. **Dati** (quale contenuto).
+**Consegna 1 (I tre errori):**
+1. **`PC = 50`:** ha messo nel `PC` l'indirizzo del dato (`50`) invece dell'istruzione successiva (`11`).
+2. **`MEM[50] = 0` dopo la `LOAD`:** ha pensato che `LOAD` sposti il dato svuotando la cella, invece di copiarlo (`MEM[50]` resta `7`).
+3. **`MEM[50] = 14` dopo la `ADD`:** ha pensato che `ADD` aggiorni automaticamente la memoria, mentre `ADD` modifica solo il registro `R1` (per scrivere in memoria serve una `STORE`).
 
-**No.** La larghezza del bus dati dice quanto si trasferisce in un colpo; è la larghezza del bus **indirizzi** a dire quante posizioni si distinguono.
-
-</details>
-
-### 4.5 📖 Teoria · 🔍 · 🎯 Da provare — Perché 640 e non 1 024
-
-**Consegna.** L'IBM PC poteva indirizzare 1 MiB di spazio, ma solo 640 KB erano disponibili come RAM per i programmi. Spiega in due o tre frasi a che cosa era riservata la parte restante. Poi rispondi: se oggi la scheda tecnica di un computer indica «16 GB di RAM» e «512 GB di SSD», che cosa non devi fare con questi due valori?
-
-<details>
-<summary>🃏 <b>4.5 — Soluzione</b></summary>
-
-Gli altri 384 KB dello spazio di indirizzi erano **riservati** a ROM, memoria video e altre periferiche: non erano RAM per i programmi. Lo spazio di indirizzi dice quante posizioni si possono distinguere, non quanta RAM è installata.
-
-Non devi **sommarli**: RAM e SSD hanno funzioni diverse. La RAM contiene i programmi e i dati in uso; l'SSD conserva i file anche quando il computer è spento. Dire «528 GB di RAM» sarebbe quindi sbagliato.
-
-</details>
-
-### 4.6 🤓 · 🎯 Da provare — Perché i PC a 32 bit «perdevano» RAM
-
-> Con 32 bit di indirizzo e 1 byte per locazione si distinguono 2³² = 4 294 967 296 posizioni, cioè **4 GiB**. Ma non tutti gli indirizzi corrispondono a RAM: una parte era riservata ai dispositivi. Per questo molti PC con sistemi a 32 bit «vedevano» meno RAM di quella montata.
->
-> **Consegna.** In una frase, che somiglianza c'è con il limite dei 640 KB?
-
-<details>
-<summary>🃏 <b>4.6 — Soluzione</b></summary>
-
-In entrambi i casi lo spazio degli indirizzi era più grande della RAM utilizzabile: una parte era riservata ad altro. <u>Una formula è affidabile quando le sue ipotesi sono scritte chiaramente.</u>
+**Consegna 2 (`BEQ`):**
+- **Caso 1 (`MEM[70] = 0`):** `R1 = 0`, che è uguale a `R2 = 0` → il salto avviene. Celle eseguite: **`30 → 31 → 33`** (la `32` viene saltata). `MEM[71]` resta **`9`**.
+- **Caso 2 (`MEM[70] = 5`):** `R1 = 5 ≠ 0` → il salto non avviene. Celle eseguite: **`30 → 31 → 32 → 33`**. `MEM[71]` diventa **`5`**.
 
 </details>
 
 ---
 
-## 🛠️ Dossier 5 · Gerarchia e cache
+## 📐 Unità 5 (S5) · Spazio di indirizzamento e gerarchia delle memorie
 
-*Si usa S5 e S6: livelli di memoria, volatilità, hit e miss, località.*
+*Obiettivi: calcolare locazioni ($2^n$), ultimo indirizzo ($2^n - 1$) e capacità totale; distinguere spazio indirizzabile e RAM installata; ordinare la gerarchia delle memorie.*
 
-### 📜 Scena verosimile: la scheda del portatile (inventata)
+> 📜 **Il contesto storico (1969 e 1981).** L'Apollo Guidance Computer aveva una RAM di $2\,048$ parole ($2^{11}$, quindi 11 bit di indirizzo), con parole da 16 bit (2 byte). L'IBM PC del 1981 (processore Intel 8088) aveva **20 bit di indirizzo**, pari a $2^{20} = 1\text{ MiB}$ di posizioni distinguibili, ma solo i primi $640\text{ KiB}$ erano usati per la RAM dei programmi: gli altri $384\text{ KiB}$ di indirizzi puntavano a ROM e periferiche. **Lo spazio di indirizzamento non coincide per forza con la RAM montata.**
 
-Chiara deve comprare un portatile per la scuola. Il negozio le mostra la scheda (valori inventati): *processore con 8 MB di cache, 8 GB di RAM, 256 GB di SSD.* Lei chiede: «Quindi ho 8 + 8 + 256 gigabyte di memoria, giusto?». Il tecnico sorride: «Sono tre cose diverse».
+### 5.1 🟢 Svolto · ✅ — Dai bit di indirizzo alla capacità (e viceversa)
 
-Nessuna memoria è insieme grande, veloce, economica e capace di tenere i dati senza corrente. Per questo i computer ne usano **più livelli**. I programmi e i file in uso vengono caricati in RAM; la cache, invece, la gestisce l'hardware da solo.
+**Consegna.**
+1. Una memoria ha un bus indirizzi di **12 bit** e ogni locazione contiene **2 byte**. Calcola: numero di locazioni, ultimo indirizzo (partendo da `0`) e capacità totale in byte e in KiB.
+2. Quanti bit di indirizzo servono **al minimo** per distinguere almeno **3 000 locazioni**?
 
-🧠 <u>«Grande» non vuol dire «veloce». E «veloce» non vuol dire «permanente».</u>
+**Svolgimento passo-passo.**
+1. **Con 12 bit di indirizzo:**
+   - **Numero di locazioni:** $2^{12} = 4\,096\text{ locazioni}$.
+   - **Ultimo indirizzo:** poiché si parte da `0`, l'ultimo indirizzo è $4\,096 - 1 =$ **`4 095`**.
+   - **Capacità totale:** $\text{locazioni} \times \text{byte per locazione} = 4\,096 \times 2\text{ byte} = 8\,192\text{ byte}$. Poiché $1\text{ KiB} = 1\,024\text{ byte}$, $8\,192 \div 1\,024 =$ **`8 KiB`**.
+2. **Per almeno 3 000 locazioni:**
+   - Cerco la prima potenza di 2 maggiore o uguale a $3\,000$: con 11 bit ho $2^{11} = 2\,048$ (non bastano); con **12 bit** ho $2^{12} = 4\,096$ (bastano). Servono **12 bit**.
 
-### 5.1 📖 Teoria · ✅ · 🟢 Svolto — Leggi la scheda
+---
 
-**Consegna.** Per la scheda di Chiara, dì per ogni riga **a che cosa serve** e **che cosa succede se si spegne la corrente**.
+### 5.2 🟡 Guidato (a buchi) · ✅ — Cosa cambia se raddoppio le celle o la larghezza?
 
-**Svolgimento.**
+**Consegna.** Una memoria ha **10 bit di indirizzo** e locazioni da **1 byte**. Completa la tabella:
 
-| Riga | A che cosa serve | Se si spegne la corrente |
-|---|---|---|
-| Cache 8 MB | Tiene **copie** di pezzi usati spesso, vicino alla CPU | Si perde (volatile) |
-| RAM 8 GB | Tiene i programmi e i dati **in uso ora** | Si perde (volatile) |
-| SSD 256 GB | Conserva i file e i progetti a lungo | Resta (non volatile) |
-
-📌 **Controllo.** I tre numeri non si sommano: sono memorie diverse, con ruoli diversi. Più RAM permette di tenere pronti più dati; non rende più veloce il calcolo della CPU.
-
-⚠️ **Errore comune:** pensare che la cache sia «un pezzo di RAM in più» dove il programma sceglie dove scrivere. È una **copia** gestita dall'hardware.
-
-### 5.2 ✏️ Pratica · ✅ · 🎯 Da provare — La scala delle memorie
-
-**Consegna.** Completa la tabella per i quattro livelli. Per «velocità» e «capacità», indica se il valore è maggiore o minore rispetto al livello successivo. Per l'SSD, confronta i valori con quelli della RAM.
-
-| Livello | Volatile? | Velocità | Capacità |
-|---|:-:|:-:|:-:|
-| Registri | `__` | `__` | `__` |
-| Cache | `__` | `__` | `__` |
-| RAM | `__` | `__` | `__` |
-| SSD | `__` | `__` | `__` |
+| Situazione | Bit di indirizzo | Numero di locazioni ($2^n$) | Ultimo indirizzo | Byte per locazione | Capacità totale |
+|---|:-:|:-:|:-:|:-:|:-:|
+| **1. Memoria di partenza** | 10 bit | $2^{10} = 1\,024$ | `1 023` | 1 byte | `1 024 byte` (`1 KiB`) |
+| **2. Raddoppio i byte per ogni locazione** (da 1 a 2 byte), lasciando 10 bit di indirizzo | `10 bit` | `________` | `________` | `2 byte` | `________________` |
+| **3. Aggiungo 1 bit al bus indirizzi** (da 10 a 11 bit), con locazioni da 1 byte | `11 bit` | `________` | `________` | `1 byte` | `________________` |
 
 <details>
 <summary>🃏 <b>5.2 — Soluzione</b></summary>
 
-| Livello | Volatile? | Velocità | Capacità |
-|---|:-:|:-:|:-:|
-| Registri | sì | più veloce di tutti | meno di tutti |
-| Cache | sì | più veloce della RAM | meno della RAM |
-| RAM | sì | più veloce dell'SSD | meno dell'SSD |
-| SSD | **no** | meno veloce | più capiente |
+- **Riga 2 (celle da 2 byte):** Locazioni = **`1 024`** (invariate!) · Ultimo indirizzo = **`1 023`** · Capacità = **`2 048 byte` (`2 KiB`)**.
+- **Riga 3 (11 bit di indirizzo):** Locazioni = **`2 048`** (raddoppiate!) · Ultimo indirizzo = **`2 047`** · Capacità = **`2 048 byte` (`2 KiB`)**.
 
-⚠️ **Errore comune:** pensare che la persistenza cresca un po' alla volta scendendo nella gerarchia. È una proprietà **separata**: o c'è o non c'è.
+📌 **Regola d'oro:** cambiare la dimensione della cella cambia la **capacità**, ma **non** il numero di indirizzi. Aggiungere **1 bit** all'indirizzo **raddoppia** il numero di locazioni.
 
 </details>
 
-### 5.3 ✏️ Pratica · ✅ · 🟢 Svolto — Hit e miss, blocchi da 4
+---
 
-**Consegna.** La cache conserva **blocchi di 4 posizioni consecutive** (… 48-51, 52-55, 56-59 …). Un programma legge, in ordine, gli indirizzi **52, 53, 54, 55, 56, 57, 58**. Cache vuota all'inizio; nessun blocco viene sostituito. Per ogni lettura scrivi HIT o MISS.
+### 5.3 🎯 Autonomo (Coppia A / B) · ✅ — Calcoli di indirizzamento e gerarchia
 
-**Svolgimento.**
+#### Fila A
+1. Una scheda di acquisizione dati usa indirizzi a **13 bit** e ogni locazione contiene **1 byte**.
+   - a) Quante locazioni possiede?
+   - b) Qual è l'indirizzo dell'ultima locazione?
+   - c) Qual è la capacità in byte e in KiB?
+   - d) Se ogni locazione passasse a **4 byte** mantenendo 13 bit di indirizzo, quante locazioni avrebbe e quale sarebbe la nuova capacità in KiB?
+2. Ordina i 4 livelli della gerarchia (*RAM, Registri, SSD, Cache*) dal **più veloce** al **più lento** e indica per ciascuno se è **volatile** oppure **non volatile**.
 
-| Lettura | Blocco | Esito | Perché |
-|---:|---|---|---|
-| 52 | 52-55 | **MISS** | Cache vuota: carica tutto il blocco |
-| 53 | 52-55 | HIT | Era già stato caricato |
-| 54 | 52-55 | HIT | Idem |
-| 55 | 52-55 | HIT | Idem |
-| 56 | 56-59 | **MISS** | Blocco nuovo |
-| 57 | 56-59 | HIT | Era già stato caricato |
-| 58 | 56-59 | HIT | Idem |
+<details>
+<summary>🃏 <b>5.3 Fila A — Soluzione</b></summary>
 
-📌 **Controllo.** 2 MISS e 5 HIT. I MISS sono uno per ogni blocco nuovo. Un hit può riguardare un indirizzo **mai chiesto prima**: basta che il suo blocco sia già in cache.
+1. a) $2^{13} =$ **`8 192` locazioni**.  
+   b) **`8 191`**.  
+   c) **`8 192 byte`**, cioè **`8 KiB`**.  
+   d) Le locazioni restano **`8 192`**; la capacità quadruplica: $8\text{ KiB} \times 4 =$ **`32 KiB`** ($32\,768\text{ byte}$).
+2. Dal più veloce al più lento: **Registri** (volatili) → **Cache** (volatile) → **RAM** (volatile) → **SSD** (non volatile).
 
-🧠 <u>Dopo un indirizzo possono servire i vicini: è la località spaziale.</u>
+</details>
 
-### 5.4 ✏️ Pratica · 🔍 · 🎯 Da provare — Il loop che si ripete
+#### Fila B
+1. Una memoria contiene **512 locazioni**, ciascuna da **2 byte**.
+   - a) Quanti bit servono per indirizzare le 512 locazioni?
+   - b) Qual è l'ultimo indirizzo?
+   - c) Qual è la capacità totale in byte e in KiB?
+   - d) Quanti bit di indirizzo servirebbero al minimo se le locazioni diventassero **1 500**?
+2. Nella scheda tecnica di un portatile leggi: *«Cache 16 MB · RAM 16 GB · SSD 512 GB»*. Spiega perché è sbagliato dire che quel computer ha «528 GB di RAM» e indica il ruolo specifico di ciascuno dei tre livelli.
 
-**Consegna.** Un programma legge in sequenza tre misure agli indirizzi **90, 91 e 92**, poi ricomincia dall'indirizzo 90. Ripete questa sequenza **100 volte**. I blocchi della cache contengono 4 posizioni (88-91 e 92-95). All'inizio la cache è vuota.
+<details>
+<summary>🃏 <b>5.3 Fila B — Soluzione</b></summary>
 
-a) Se la cache ha spazio per più blocchi, quanti MISS ci sono in tutto?
-b) Quale tipo di località rende le ripetizioni più veloci?
-c) Ora il programma ripete per **100 volte** la coppia di letture **90, 92**. La cache ha **una sola linea**: ogni MISS sostituisce il blocco presente. Quanti MISS si verificano in tutto?
+1. a) $512 = 2^9 \rightarrow$ **`9 bit`**.  
+   b) **`511`**.  
+   c) $512 \times 2\text{ byte} =$ **`1 024 byte`**, cioè **`1 KiB`**.  
+   d) Per $1\,500$ locazioni: $2^{10} = 1\,024$ (poche), $2^{11} = 2\,048$ (bastano) $\rightarrow$ **`11 bit`**.
+2. Non si sommano perché hanno ruoli e tecnologie diverse: la **Cache** (volatile, velocissima) tiene copie dei blocchi usati più di frequente vicino alla CPU; la **RAM** (volatile) contiene i programmi e i dati in uso in quel momento; l'**SSD** (non volatile, più lento) conserva file e programmi anche a computer spento.
+
+</details>
+
+---
+
+### 5.4 🔍 Caccia all'errore · Approfondimento
+
+**Consegna.** Esamina queste due affermazioni e correggile:
+- **Affermazione A:** *«Un microprocessore ha un bus dati da 16 bit; questo dimostra che può indirizzare al massimo $2^{16} = 65\,536$ locazioni di memoria.»*
+- **Affermazione B:** *«Scendendo lungo la gerarchia delle memorie (dai registri all'SSD), la capacità e la persistenza dei dati senza corrente aumentano un po' a ogni gradino.»*
 
 <details>
 <summary>🃏 <b>5.4 — Soluzione</b></summary>
 
-a) **2 MISS**: uno per il blocco 88-91 (con 90 e 91) e uno per il blocco 92-95. Le altre 298 letture sono HIT.
-b) La **località temporale**: si riusano gli stessi dati. (Il 91 è anche un caso di località spaziale: è nel blocco del 90.)
-c) **200 MISS**: 90 e 92 stanno in blocchi diversi. A ogni lettura il blocco giusto è appena stato sostituito dall'altro.
-
-⚠️ **Errore comune:** credere che rileggere un dato garantisca un HIT. Dipende dallo spazio: con una sola linea il blocco viene sostituito prima di tornare utile.
-
-</details>
-
-### 5.5 📖 Teoria · ✅ · 🎯 Da provare — Le frasi del tecnico
-
-**Consegna.** Correggi ciascuna frase in una riga.
-
-A. «Un miss significa che il programma è rotto.»
-B. «La cache da 8 MB è un pezzo di RAM in più.»
-C. «Se raddoppio la RAM, il processore calcola il doppio più in fretta.»
-
-<details>
-<summary>🃏 <b>5.5 — Soluzione</b></summary>
-
-A. **No.** Un miss è un evento previsto: il dato non è in cache e va preso dal livello successivo, con un'attesa in più.
-B. **No.** La cache è una **copia** di alcuni contenuti, tenuta vicino alla CPU: non è uno spazio in più in cui scegliere dove scrivere.
-C. **No.** Più RAM permette di tenere pronti più programmi e dati; non cambia la velocità con cui la CPU calcola.
+- **Affermazione A (Falsa):** Il numero di locazioni distinguibili dipende dalla larghezza del **bus indirizzi**, non dal bus dati. Il bus dati da 16 bit dice soltanto quanti bit viaggiano in un singolo trasferimento (2 byte alla volta).
+- **Affermazione B (Parzialmente falsa):** La capacità aumenta scendendo nella gerarchia, ma la **persistenza (non volatilità) non cresce per gradi**: registri, cache e RAM sono tutti **volatili** (perdono tutto senza corrente), mentre la memoria di massa (SSD) e la ROM sono **non volatili**.
 
 </details>
 
 ---
 
-## 🛠️ Dossier 6 · Il clock
+## ⚡ Unità 6 (S6) · Cache, località e clock
 
-*Si usa S6: clock, frequenza, periodo.*
+*Obiettivi: simulare hit e miss con blocchi consecutivi; distinguere località spaziale e temporale; calcolare periodo $T = 1/f$ a mente e confrontare prestazioni senza confondere GHz e velocità.*
 
-### 📜 Caso vero: la corsa ai GHz
+> 📜 **Il contesto storico (1965 e 2000).** Negli anni '60 Maurice Wilkes propone una piccola memoria veloce (*cache* in SRAM) accanto alla CPU per non aspettare ogni volta la RAM (DRAM): funziona perché i programmi mostrano **località temporale** (riusano da lì a poco gli stessi dati/istruzioni, es. nei cicli) e **località spaziale** (leggono indirizzi vicini, caricati insieme nello stesso **blocco**). Nel 2000 la «corsa ai GHz» dei Pentium 4 rese evidente che alzare la frequenza di clock non basta se la CPU passa il tempo ferma ad aspettare i dati dalla memoria.
 
-Nel novembre del 2000 Intel presenta il **Pentium 4**. La sua frequenza di clock sale, negli anni, da **1,3 GHz a 3,8 GHz**. Per un periodo, la scritta «GHz» sulla scatola diventa il numero con cui si confrontano i computer: più è alto, si pensa, meglio è.
+### 6.1 🟢 Svolto · ✅ — Simulare Hit/Miss a blocchi e calcolare il periodo del clock
 
-Ma il clock è solo un **ritmo**: dice quanto dura un ciclo, non quanto lavoro si fa in ciascuno. Un processore veloce può restare fermo ad aspettare i dati.
+**Consegna.**
+1. Una cache è **vuota** all'inizio e carica dalla RAM **blocchi di 4 indirizzi consecutivi** (`40–43`, `44–47`, `48–51`). Il programma legge in sequenza gli indirizzi: `40, 41, 42, 40, 44, 45`. Per ogni accesso indica **HIT** o **MISS** e il tipo di località sfruttato.
+2. Calcola a mente la durata di un ciclo di clock (**periodo $T$**) per una CPU a **2 GHz** e per una CPU a **500 MHz**.
 
-🧠 <u>Il clock dà il tempo. Quanto lavoro si fa in quel tempo è un'altra domanda.</u>
+**Svolgimento passo-passo.**
 
-### 6.1 ✏️ Pratica · ✅ · 🟢 Svolto — Dal GHz al nanosecondo
+**1. Tabella della cache:**
 
-**Consegna.** Calcola la durata di un ciclo di clock (il **periodo**) per un processore con frequenza di 3,8 GHz e per uno con frequenza di 1,3 GHz.
+| Accesso | Indirizzo richiesto | Blocco | Esito | Spiegazione e località |
+|:-:|---|---|:-:|---|
+| 1° | `40` | `40–43` | **MISS** | Cache vuota: la cache preleva dalla RAM **tutto il blocco `40–43`**. |
+| 2° | `41` | `40–43` | **HIT** | È già in cache grazie al 1° accesso (**località spaziale**: indirizzo vicino). |
+| 3° | `42` | `40–43` | **HIT** | Già nel blocco `40–43` (**località spaziale**). |
+| 4° | `40` | `40–43` | **HIT** | Stesso indirizzo già usato poco prima (**località temporale**). |
+| 5° | `44` | `44–47` | **MISS** | Blocco nuovo: la cache carica dalla RAM il blocco `44–47`. |
+| 6° | `45` | `44–47` | **HIT** | Già caricato insieme al `44` (**località spaziale**). |
 
-**Svolgimento.** Il periodo è l'inverso della frequenza: `T = 1 ÷ f`.
+Totale: **2 MISS** (uno per ogni blocco nuovo) e **4 HIT**.
 
-1. **3,8 GHz** = 3,8 × 10⁹ Hz. `T = 1 ÷ (3,8 × 10⁹) ≈ 0,263 ns`.
-2. **1,3 GHz** = 1,3 × 10⁹ Hz. `T = 1 ÷ (1,3 × 10⁹) ≈ 0,769 ns`.
+**2. Calcolo del periodo ($T = 1 / f$) a mente:**
+- Ricorda: a **$1\text{ GHz}$** ($10^9\text{ cicli/s}$), un ciclo dura esattamente **$1\text{ ns}$** ($10^{-9}\text{ s}$).
+- A **$2\text{ GHz}$** la frequenza è il doppio di $1\text{ GHz}$, quindi il ciclo dura la metà: $T = 1 \div 2 =$ **`0,5 ns`**.
+- **$500\text{ MHz}$** corrispondono a $0{,}5\text{ GHz}$ (la metà di $1\text{ GHz}$), quindi il ciclo dura il doppio: $T = 1 \div 0{,}5 =$ **`2 ns`**.
 
-📌 **Controllo.** Frequenza più alta, periodo più corto: 3,8 GHz ha un ciclo più breve di 1,3 GHz.
+---
 
-⚠️ **Errore comune:** dire che 3,8 GHz «completa 3,8 miliardi di istruzioni al secondo». Sono **cicli** al secondo.
+### 6.2 🟡 Guidato (a buchi) · ✅ — Hit, Miss e confronto tra due CPU
 
-### 6.2 ✏️ Pratica · ✅ · 🎯 Da provare — Quanto dura un ciclo
+**Consegna.**
+1. La cache è vuota e usa blocchi da 4 posizioni (`80–83`, `84–87`). Completa gli esiti per la sequenza `80, 81, 84, 85, 80` (la cache ha spazio per tenere entrambi i blocchi):
+   - `80`: **MISS** (carica il blocco `80–83`)
+   - `81`: `______` (per località `__________`, perché era nello stesso blocco di `80`)
+   - `84`: `______` (carica il blocco `______`)
+   - `85`: `______` (per località `__________`)
+   - `80`: `______` (per località `__________`, perché rilegge un indirizzo già usato)
+2. Completa la tabella del clock a mente (ricorda che a $1\text{ GHz}$ il periodo è $1\text{ ns}$):
 
-**Consegna.** Due processori (valori inventati): **A** ha un clock da 2,5 GHz, **B** da 500 MHz.
-
-a) Quanto dura un ciclo di A? E uno di B?
-b) Quale dei due ha il ciclo più corto?
-c) Quanti cicli compie ciascuno in **1 microsecondo** (1 µs = 10⁻⁶ s)?
+| Frequenza $f$ | Periodo $T$ (in nanosecondi) | Cicli compiuti in $1\text{ ns}$ |
+|:-:|:-:|:-:|
+| $1\text{ GHz}$ | `1 ns` | `1 ciclo` |
+| $4\text{ GHz}$ | `________` | `4 cicli` |
+| $2{,}5\text{ GHz}$ | `________` | `2,5 cicli` (5 cicli in 2 ns) |
 
 <details>
 <summary>🃏 <b>6.2 — Soluzione</b></summary>
 
-a) A: `1 ÷ (2,5 × 10⁹) = 0,4 ns`. B: `1 ÷ (5 × 10⁸) = 2 ns`.
-b) **A**: frequenza più alta, periodo più corto.
-c) A: 2,5 × 10⁹ × 10⁻⁶ = **2 500 cicli**. B: 5 × 10⁸ × 10⁻⁶ = **500 cicli**.
-
-📌 Frequenza e periodo sono **inversi**: se uno cresce, l'altro cala.
+1. `81`: **HIT** (località **spaziale**) · `84`: **MISS** (blocco **`84–87`**) · `85`: **HIT** (località **spaziale**) · `80`: **HIT** (località **temporale**).
+2. A $4\text{ GHz}$: $1 \div 4 =$ **`0,25 ns`**. A $2{,}5\text{ GHz}$: $1 \div 2{,}5 =$ **`0,4 ns`**.
 
 </details>
 
-### 6.3 📖 Teoria · ✅ · 🎯 Da provare — Vero o falso, GHz
+---
 
-**Consegna.** Scrivi vero o falso, e correggi se serve.
+### 6.3 🎯 Autonomo (Coppia A / B) · ✅ — Simulazione cache e calcoli sul clock
 
-A. «Un clock da 3 GHz significa tre miliardi di istruzioni al secondo.»
-B. «A 1 GHz un ciclo dura un nanosecondo.»
-C. «Più GHz significano una cache più grande.»
+#### Fila A
+1. **Cache.** La cache è vuota, ha spazio per più blocchi e usa blocchi da 4 indirizzi (`60–63`, `64–67`). Un programma esegue un ciclo che legge gli indirizzi **`60, 61, 62, 63`** e ripete questa stessa sequenza per **10 volte** (40 letture totali).
+   - a) Quanti **MISS** e quanti **HIT** avvengono nel **primo** giro (prime 4 letture)?
+   - b) Quanti **MISS** e quanti **HIT** avvengono nei **9 giri successivi**?
+   - c) Quale località spiega gli HIT del primo giro e quale località spiega gli HIT dei giri successivi?
+2. **Clock.** Il processore **A** lavora a **$2\text{ GHz}$** e completa in media 1 istruzione ogni **2 cicli**. Il processore **B** lavora a **$4\text{ GHz}$**, ma a causa delle attese completa 1 istruzione ogni **5 cicli**.
+   - a) Quanto dura un ciclo di clock di A e quanto dura un ciclo di B (in ns)?
+   - b) Quante istruzioni al secondo completa A e quante ne completa B? Quale dei due svolge più lavoro al secondo?
 
 <details>
-<summary>🃏 <b>6.3 — Soluzione</b></summary>
+<summary>🃏 <b>6.3 Fila A — Soluzione</b></summary>
 
-A. **Falso.** Sono tre miliardi di **cicli** al secondo. Quante istruzioni si completano dipende da quanti cicli ne servono.
-B. **Vero.** `T = 1 ÷ 10⁹ s = 1 ns`.
-C. **Falso.** Frequenza e capacità della cache sono cose diverse.
+1. a) Nel primo giro: **1 MISS** (su `60`, che carica tutto `60–63`) e **3 HIT** (su `61, 62, 63`).  
+   b) Nei 9 giri successivi (36 letture): **0 MISS** e **36 HIT** (il blocco `60–63` è già in cache). In totale su 40 letture: **1 MISS e 39 HIT**.  
+   c) Nel primo giro agisce la **località spaziale** (indirizzi consecutivi nello stesso blocco); nei giri successivi agisce la **località temporale** (riuso degli stessi indirizzi nel ciclo).
+2. a) Periodo di A: $1 \div 2 =$ **`0,5 ns`**. Periodo di B: $1 \div 4 =$ **`0,25 ns`**.  
+   b) Istruzioni al secondo di A: $2\text{ miliardi di cicli/s} \div 2 =$ **`1 miliardo di istruzioni/s`**.  
+      Istruzioni al secondo di B: $4\text{ miliardi di cicli/s} \div 5 =$ **`800 milioni di istruzioni/s` (`0,8 miliardi`)**.  
+      Completa più istruzioni **A**, pur avendo metà dei GHz di B.
 
 </details>
 
-### 6.4 ✏️ Pratica · 🔍 · 🎯 Da provare — Chi fa più lavoro?
+#### Fila B
+1. **Cache.** La cache è vuota e usa blocchi da 4 indirizzi (`90–93`, `94–97`). Un programma legge la sequenza **`90, 91, 94`** e la ripete identica per **20 volte** (60 letture totali).
+   - a) Se la cache può contenere **almeno 2 blocchi**, quanti MISS ci sono in tutte le 60 letture?
+   - b) Se invece la cache avesse **una sola linea** (può tenere **1 solo blocco** alla volta, quindi ogni nuovo blocco sostituisce quello precedente), cosa succederebbe ripetendo per 20 volte la coppia **`90, 94`** (40 letture)? Quanti MISS ci sarebbero?
+2. **Clock.** Una CPU ha frequenza di **$1\text{ GHz}$**, un'altra di **$5\text{ GHz}$**.
+   - a) Quanto dura il periodo $T$ di ciascuna (in ns)?
+   - b) Quanti cicli compie ciascuna CPU in **$1\text{ microsecondo}$** ($1\text{ \mu s} = 1\,000\text{ ns}$)?
 
-**Consegna.** Considera due processori (valori inventati). Il processore **A** ha una frequenza di 2 GHz e completa un'istruzione ogni 2 cicli. Il processore **B** ha una frequenza di 3 GHz e completa un'istruzione ogni 4 cicli. Quante istruzioni al secondo completa ciascun processore? Quale dei due ne completa di più?
+<details>
+<summary>🃏 <b>6.3 Fila B — Soluzione</b></summary>
+
+1. a) Con spazio per 2 blocchi: solo **2 MISS** in tutto (il primo accesso a `90` carica `90–93`; il primo accesso a `94` carica `94–97`). Tutte le altre **58 letture sono HIT**.  
+   b) Con una sola linea, `90` e `94` appartengono a blocchi diversi e si cacciano a vicenda a ogni lettura: ci sono **40 MISS su 40 letture** (0 HIT).
+2. a) A $1\text{ GHz}$: **`1 ns`**. A $5\text{ GHz}$: $1 \div 5 =$ **`0,2 ns`**.  
+   b) In $1\,000\text{ ns}$: la CPU a $1\text{ GHz}$ compie **`1 000 cicli`**; quella a $5\text{ GHz}$ compie **`5 000 cicli`**.
+
+</details>
+
+---
+
+### 6.4 🔍 Caccia all'errore e ragionamento tecnico
+
+**Consegna.**
+1. Correggi questa frase: *«Quando si verifica un cache miss significa che c'è stato un errore e la CPU deve andare a leggere il file direttamente sull'SSD.»*
+2. Un compagno dice: *«Ho comprato una CPU da 4 GHz invece che da 3 GHz, quindi qualunque programma girerà certamente più veloce, anche se il PC ha pochissima RAM e una cache minuscola.»* Rispondi in 3–4 frasi usando la struttura **Tesi + Meccanismo + Esempio** e citando **clock**, **cache (hit/miss)** e **RAM**.
 
 <details>
 <summary>🃏 <b>6.4 — Soluzione</b></summary>
 
-A: 2 × 10⁹ cicli al secondo ÷ 2 cicli per istruzione = **1 miliardo** di istruzioni al secondo.
-B: 3 × 10⁹ ÷ 4 = **750 milioni** di istruzioni al secondo.
-
-Ne fa di più **A**, anche con meno GHz. Per confrontare due sistemi bisogna guardare il lavoro svolto e il tempo impiegato, non solo i GHz sulla scatola.
-
-⚠️ È un modello semplificato: le CPU reali fanno più cose insieme. Lo vedremo a novembre-dicembre.
-
-</details>
-
-### 6.5 🤓 · 🎯 Da provare — Più transistor, non per forza più veloce
-
-> Nel 1965 Gordon Moore descrisse una tendenza: il numero di componenti inseribili in un chip aumentava nel tempo. Non si tratta di una legge della natura.
->
-> **Consegna.** Perché un programma non diventa necessariamente più veloce quando un chip contiene più transistor? Fai un esempio che riguardi la cache.
-
-<details>
-<summary>🃏 <b>6.5 — Soluzione</b></summary>
-
-Più transistor possono diventare più cache, più core o nuove funzioni. Il vantaggio dipende da come sistema e programma li usano: un calcolatore velocissimo può comunque restare fermo ad aspettare i dati. La domanda utile è: **quale risorsa limita questo lavoro?**
+1. **Correzione sul cache miss:** Un *miss* **non è un guasto**, ma un evento normale: significa solo che il dato cercato non è ancora copiato in cache. Inoltre la CPU non va sull'SSD, ma chiede il blocco al **livello successivo della gerarchia** (un altro livello di cache oppure la **RAM**), pagando un'attesa maggiore rispetto all'*hit*.
+2. **Risposta strutturata (Tesi + Meccanismo + Esempio):**
+   - **Tesi:** Non basta avere più GHz per garantire che un programma sia più veloce.
+   - **Meccanismo:** La frequenza di **clock** indica solo quanti cicli avvengono in un secondo, non quante istruzioni vengono completate. Se la **cache** è piccola e si verificano molti **miss**, la CPU deve aspettare i dati dalla **RAM** (molto più lenta); e se anche la RAM è insufficiente per i programmi aperti, il sistema rallenta ancora di più.
+   - **Esempio:** Una CPU a 3 GHz che trova quasi sempre i dati in cache (*hit*) completa un ciclo di calcoli in meno tempo di una CPU a 4 GHz costretta a restare ferma per decine di cicli in attesa della RAM.
 
 </details>
 
 ---
 
-## 🛠️ Dossier 7 · Ricostruisci la macchina
+## 🏆 Unità 7 (S7) · Ricostruire la macchina (Prova integrata)
 
-*Livello finale. Si usa tutto S1–S6.*
+*Obiettivi: collegare scrittura di un breve programma, tracciamento dei registri, bus, calcolo della memoria e ruolo della cache in un unico problema (stesso formato della Parte 4 della verifica).*
 
-Il museo ha rimesso in funzione la macchina. Prima di riaprire la sala, vi chiede di collaudarla con tre prove che mettono insieme gli argomenti studiati.
+### 7.1 🔍 Problema completo — Dal programma alla cache
 
-### 7.1 ✏️ Pratica · 🔍 · 🎯 Da provare — Somma tre misure
+Una centralina deve calcolare la somma di **tre sensori** memorizzati nelle celle `MEM[50]`, `MEM[51]` e `MEM[52]`, e salvare il totale nella cella `MEM[53]`.
 
-**Consegna.** Usando solo le istruzioni `LOAD`, `ADD`, `STORE` e `HALT`, scrivi un programma che **sommi le misure di tre sensori**. Le misure si trovano nelle celle `MEM[410]`, `MEM[411]` e `MEM[412]`; il programma deve scrivere la somma in `MEM[413]`. Ogni istruzione occupa una cella. Inizia dalla cella 500.
-
-| Cella | Istruzione |
-|---:|---|
-| 500 | `______________________` |
-| 501 | `______________________` |
-| 502 | `______________________` |
-| 503 | `______________________` |
-| 504 | `______________________` |
-| 505 | `______________________` |
-| 506 | `______________________` |
-
-<details>
-<summary>🃏 <b>7.1 — Soluzione</b></summary>
+#### Parte A · Scrivere il programma
+Usando solo le istruzioni `LOAD`, `ADD`, `STORE` e `HALT` (una per cella, partendo dalla cella `10`), scrivi il programma completo nella tabella:
 
 | Cella | Istruzione |
 |---:|---|
-| 500 | `LOAD R1, [410]` |
-| 501 | `LOAD R2, [411]` |
-| 502 | `LOAD R3, [412]` |
-| 503 | `ADD R1, R1, R2` |
-| 504 | `ADD R1, R1, R3` |
-| 505 | `STORE [413], R1` |
-| 506 | `HALT` |
+| 10 | `______________________` |
+| 11 | `______________________` |
+| 12 | `______________________` |
+| 13 | `______________________` |
+| 14 | `______________________` |
+| 15 | `______________________` |
+| 16 | `______________________` |
 
-Sono corretti i programmi che:
-1. leggono i tre valori con tre istruzioni `LOAD`;
-2. li sommano con due istruzioni `ADD` (il registro di destinazione è il primo indicato);
-3. scrivono il risultato in `MEM[413]` con `STORE` (l'indirizzo è il primo argomento);
-4. terminano con `HALT`.
+#### Parte B · Collaudo di registri e bus
+Supponi che all'inizio `PC = 10`, i registri valgano `0` e in memoria ci siano: `MEM[50] = 5`, `MEM[51] = 10`, `MEM[52] = 15`, `MEM[53] = 0`.
+1. Quanto vale `MEM[53]` al termine del programma? E quanto vale `MEM[50]`?
+2. Durante la fase di **execute** dell'istruzione `STORE` finale, quanto valgono `MAR` e `MDR`? Che cosa transita sui tre bus (indirizzi, dati, controllo)?
 
-Puoi scegliere registri e ordine diversi, purché il risultato scritto in memoria sia la somma dei tre valori.
+#### Parte C · Effetto della cache sul programma
+Supponi che la cache sia **vuota** all'inizio e carichi dalla RAM **blocchi di 4 celle consecutive**:
+- il blocco `10–13` contiene le prime quattro istruzioni;
+- il blocco `14–17` contiene le ultime tre istruzioni;
+- il blocco `50–53` contiene i tre dati dei sensori e la cella del risultato.
 
-⚠️ **Errori comuni:** `LOAD R1, 410` senza parentesi (il numero 410 al posto del contenuto); `STORE R1, [413]` con gli argomenti scambiati; una `ADD` prima di aver caricato i registri.
-
-</details>
-
-### 7.2 ✏️ Pratica · 🔍 · 🎯 Da provare — Il collaudo del programma
-
-**Consegna.** Esegui il programma dell'esercizio 7.1 con questi valori iniziali: `MEM[410] = 5`, `MEM[411] = 10`, `MEM[412] = 15`, `MEM[413] = 0`, `PC = 500` e tutti i registri a 0.
-
-a) Quanto valgono R1, R2 e R3 alla fine?
-b) Quanto vale `MEM[413]`?
-c) Durante l'esecuzione della `STORE`, che cosa passa sul bus degli indirizzi, sul bus dati e sul bus di controllo?
-d) In quel momento, quanto valgono MAR e MDR?
+1. Quando la CPU fa il fetch della prima istruzione nella cella `10` (che produce un **MISS**), perché i fetch delle istruzioni nelle celle `11`, `12` e `13` risultano tutti **HIT** anche se quelle istruzioni non erano mai state eseguite prima? Quale principio di località entra in gioco?
+2. Quando la prima `LOAD` legge `MEM[50]` (producendo un **MISS** sul blocco `50–53`), le due `LOAD` successive su `MEM[51]` e `MEM[52]` trovano il dato in cache (**HIT**) o devono tornare in RAM (**MISS**)?
 
 <details>
-<summary>🃏 <b>7.2 — Soluzione</b></summary>
+<summary>🃏 <b>7.1 — Soluzione completa</b></summary>
 
-a) **R1 = 30**, **R2 = 10**, **R3 = 15**. b) **`MEM[413] = 30`**.
+#### Parte A · Programma
+| Cella | Istruzione |
+|---:|---|
+| 10 | `LOAD R1, [50]` |
+| 11 | `LOAD R2, [51]` |
+| 12 | `LOAD R3, [52]` |
+| 13 | `ADD R1, R1, R2` |
+| 14 | `ADD R1, R1, R3` |
+| 15 | `STORE [53], R1` |
+| 16 | `HALT` |
 
-c) Bus indirizzi: **413**. Bus dati: **30**, dalla CPU alla memoria. Bus di controllo: **WRITE**.
-d) **MAR = 413** e **MDR = 30**: il MAR tiene l'indirizzo, l'MDR il contenuto che viene scritto.
+*(È corretta qualsiasi variante che carichi le tre celle con tre `LOAD`, esegua due `ADD` mettendo il registro di destinazione al primo posto, salvi la somma in `[53]` con `STORE [53], Rd` e termini con `HALT`.)*
+
+#### Parte B · Registri e bus
+1. `MEM[53] =` **`30`** ($5 + 10 + 15$). `MEM[50]` vale ancora **`5`** (la `LOAD` copia senza cancellare).
+2. Durante l'execute di `STORE [53], R1`:
+   - **`MAR = 53`**, **`MDR = 30`**.
+   - **Bus indirizzi:** `53` · **Bus dati:** `30` (dalla CPU alla memoria) · **Bus controllo:** `WRITE`.
+
+#### Parte C · Cache e località
+1. Il MISS sulla cella `10` porta in cache l'intero blocco `10–13`. Perciò le istruzioni `11`, `12` e `13` sono già presenti in cache e generano **3 HIT** grazie alla **località spaziale** (istruzioni memorizzate in celle consecutive).
+2. Trovano il dato già in cache (**2 HIT**), perché il MISS su `MEM[50]` ha caricato l'intero blocco `50–53`, che contiene anche `MEM[51]` e `MEM[52]` (ancora **località spaziale**, questa volta sui dati).
 
 </details>
 
-### 7.3 📖 Teoria · 🔍 · 🎯 Da provare — «Basta più GHz»?
-
-**Consegna.** Un compagno vuole comprare un portatile per programmare e dice: «Basta scegliere il processore con più GHz». Rispondi in tre o quattro frasi. Cita almeno tre elementi fra questi: clock, cache, RAM e SSD.
-
-<details>
-<summary>🃏 <b>7.3 — Soluzione</b></summary>
-
-Una risposta buona dice **che cosa** (la tesi), **come** funziona (il meccanismo) e porta un **esempio**. Per esempio:
-
-«No, i GHz da soli non bastano. Indicano quanti cicli di clock avvengono in un secondo, non quante istruzioni si completano. Se il processore deve aspettare i dati, una frequenza più alta può non essere sufficiente: conta anche se i dati sono già nella cache (hit) o devono essere letti dalla RAM (miss). I programmi in uso sono conservati nella RAM, che perde i dati quando il computer si spegne; l'SSD, invece, conserva i file. Per esempio, più RAM può aiutare a lavorare con progetti più grandi, ma non aumenta da sola la velocità di calcolo della CPU.»
-
-📌 Controlla: hai separato **clock**, **cache**, **RAM** e **SSD**? Hai evitato «è più veloce» senza dire perché?
-
-</details>
-
----
-
-## 📚 Fonti e risorse
-
-Le informazioni storiche contrassegnate con 📜 provengono dalle pagine seguenti. Sono un buon punto di partenza; se ti serve un dato per una ricerca, verificalo anche su un'altra fonte.
-
-- **EDSAC.** [EDSAC](https://en.wikipedia.org/wiki/EDSAC): 6 maggio 1949; 512 parole da 17 bit in linee di ritardo a mercurio.
-- **Apollo.** [Apollo Guidance Computer](https://en.wikipedia.org/wiki/Apollo_Guidance_Computer): 2 048 parole di RAM, 36 864 parole di ROM, 2,048 MHz, parola da 15 bit più 1 di controllo.
-- **IBM PC.** [Conventional memory](https://en.wikipedia.org/wiki/Conventional_memory): il processore 8088 aveva 20 linee di indirizzo (1 MB); i primi 640 KB erano la RAM, i restanti 384 KB riservati a sistema e periferiche.
-- **Pentium 4.** [Pentium 4](https://en.wikipedia.org/wiki/Pentium_4): lanciato il 20 novembre 2000; frequenze da 1,3 GHz a 3,8 GHz.
-- **ENIAC e Shannon.** Nelle dispense [S1](%28STU%29%203EI%20sett-ott%20S1%20-%20Dalle%20macchine%20alla%20CPU.md) e [S2](%28STU%29%203EI%20sett-ott%20S2%20-%20La%20macchina%20di%20Von%20Neumann.md).
