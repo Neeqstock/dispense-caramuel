@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-520 -154 1151 308" width="1151" height="308" role="img" aria-label="VPN e Tor" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>VPN e Tor</title>
+<rect x="-520" y="-154" width="1151" height="308" rx="14" fill="#ffffff"/>
+<path d="M316.432 -91 C343.432 -91 343.432 -111.39999999999999 370.432 -111.39999999999999" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M316.432 -91 C343.432 -91 343.432 -70.6 370.432 -70.6" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M199.952 49.8 C226.952 49.8 226.952 -1.4000000000000021 253.952 -1.4000000000000021" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M199.952 49.8 C226.952 49.8 226.952 60.2 253.952 60.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M199.952 49.8 C226.952 49.8 226.952 111.4 253.952 111.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-196.624 -49.8 C-223.624 -49.8 -223.624 -90.6 -250.624 -90.6" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-196.624 -49.8 C-223.624 -49.8 -223.624 -49.800000000000004 -250.624 -49.800000000000004" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-196.624 -49.8 C-223.624 -49.8 -223.624 -9.000000000000005 -250.624 -9.000000000000005" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-216.59199999999998 70.2 C-243.59199999999998 70.2 -243.59199999999998 49.800000000000004 -270.592 49.800000000000004" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-216.59199999999998 70.2 C-243.59199999999998 70.2 -243.59199999999998 90.60000000000001 -270.592 90.60000000000001" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M52.9 -36.0 C93.47266653376238 -36.0 93.47266653376238 -91 134 -91" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M60.0 22.3 C96.99552065041269 22.3 96.99552065041269 49.8 134 49.8" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-60.0 -22.3 C-96.99552065041269 -22.3 -96.99552065041269 -49.8 -134 -49.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-56.7 29.7 C-95.34578100927047 29.7 -95.34578100927047 70.2 -134 70.2" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="64.0" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="0.0">VPN e Tor</tspan></text>
+<rect x="134" y="-109.4" width="182.432" height="36.8" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="225.216" y="-91.0">Pacchetto in chiaro</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="378.432" y="-111.4">✅ Buste leggibili dai router</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="378.432" y="-70.6">🔍 Che cosa vede il provider</tspan></text>
+<rect x="134" y="31.4" width="65.952" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="166.976" y="49.8">VPN</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="261.952" y="-11.8">✅ Tunnel e pacchetto</tspan><tspan x="261.952" y="9.0">dentro pacchetto</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="261.952" y="49.8">✅ Indirizzo IP nascosto al</tspan><tspan x="261.952" y="70.6">sito</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="261.952" y="111.4">🔍 Fiducia spostata</tspan></text>
+<rect x="-196.624" y="-68.19999999999999" width="62.624" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-165.312" y="-49.8">Tor</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-258.624" y="-90.6">✅ Cipolla a tre strati</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-258.624" y="-49.8">🔍 Anonimato come folla</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-258.624" y="-9.0">🤓 Servizi onion</tspan></text>
+<rect x="-216.59199999999998" y="51.800000000000004" width="82.592" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-175.296" y="70.2">Limiti</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-278.592" y="49.8">🔍 Caso Harvard 2013</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-278.592" y="90.6">✅ Identificazione senza IP</tspan></text>
+</svg>
