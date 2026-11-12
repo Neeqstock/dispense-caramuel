@@ -6,7 +6,7 @@
 
 📌 **Ripassa prima:** [sett-ott S4 - Il ciclo macchina](../1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md), con fetch, decode ed execute.
 
-> **Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📌 ripasso · 📜 storia · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · ⚙️ nella pratica · 🃏 flashcard · ⏱️ tempo
+>**Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📌 ripasso · 📜 storia · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · ⚙️ nella pratica · 🃏 flashcard · ⏱️ tempo
 
 <img src="Allegati/3ei-nov-dic-s2-pipelining-mappa-html-1.svg" alt="Mappa mentale: 🏭 Pipelining" width="100%">
 

@@ -6,7 +6,7 @@
 
 ⏱️ **Tempo: ✅ circa 30 minuti · 🔍 circa 25 minuti in più** · nessun compito a casa obbligatorio.
 
-> **Legenda:** 📜 caso reale · 🟢 svolto: guarda come si fa · 🎯 da provare: prova da solo · ✅ base · 🔍 più impegnativo · 📖 teoria · ✏️ pratica scritta · 📌 controllo · ⚠️ errore comune · 🧠 da ricordare · 🃏 soluzione: prova prima, poi apri
+>**Legenda:** 📜 caso reale · 🟢 svolto: guarda come si fa · 🎯 da provare: prova da solo · ✅ base · 🔍 più impegnativo · 📖 teoria · ✏️ pratica scritta · 📌 controllo · ⚠️ errore comune · 🧠 da ricordare · 🃏 soluzione: prova prima, poi apri
 
 Ogni parte nasce da un caso: una scena, un problema da risolvere. Prima guarda il 📜, poi il 🟢 svolto, poi prova i 🎯 da solo.
 

@@ -6,7 +6,7 @@
 
 📚 **Prima di iniziare:** rivedi [la dispensa di ottobre sul modello della macchina](../1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20S7%20-%20Ricostruire%20la%20macchina.md). Qui il modello diventa uno strumento per leggere sintomi e scelte reali.
 
-> **Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🃏 flashcard · 🔧 rimando al laboratorio
+>**Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🃏 flashcard · 🔧 rimando al laboratorio
 
 <img src="Allegati/3ei-nov-dic-s7-ripasso-e-collegamenti-mappa-html-1.svg" alt="Mappa mentale: Ripasso e collegamenti" width="100%">
 

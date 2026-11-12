@@ -4,7 +4,7 @@
 
 **3EI · Novembre-Dicembre · S5 · Teoria · ⏱️ 35 minuti**
 
-> **Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🃏 flashcard: rispondi a voce, poi apri per controllare · 🛠️ strumento · 🔧 rimando al laboratorio
+>**Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📜 storia · ⚙️ tecnica · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🃏 flashcard: rispondi a voce, poi apri per controllare · 🛠️ strumento · 🔧 rimando al laboratorio
 
 Ripasso: CPU e ciclo macchina sono in [sett-ott S4 - Il ciclo macchina](../1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md). Qui la CPU lavora per più sistemi.
 

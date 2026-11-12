@@ -5,7 +5,7 @@
 **1CI · Novembre-Dicembre · S5 · Teoria**
 ⏱️ **Tempo di studio: circa 15 minuti per i soli ✅** · 🔍 altri 15 · 🤓 facoltativo · nessun compito a casa obbligatorio.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🛠️ strumento · 💭 da pensare · 🚪 uscita · 🃏 flashcard: rispondi a voce, poi apri per controllare
+>**Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🛠️ strumento · 💭 da pensare · 🚪 uscita · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 <img src="Allegati/1ci-nov-dic-s5-xor-e-la-somma-mappa-html-1.svg" alt="Mappa mentale: XOR e la somma" width="100%">
 

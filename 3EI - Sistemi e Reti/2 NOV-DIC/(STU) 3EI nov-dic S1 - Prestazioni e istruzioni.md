@@ -6,7 +6,7 @@
 
 ⏱️ **Tempo di studio stimato:** 35-45 minuti. Comprende lettura e ✏️; i 🤓 si possono saltare.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ⚙️ tecnica · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🚪 uscita · 🔁 ripasso · 🃏 flashcard: rispondi a voce, poi apri per controllare
+>**Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ⚙️ tecnica · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🚪 uscita · 🔁 ripasso · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 🔁 **Ripasso da ottobre:** [S4 - Il ciclo macchina](../1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) e [S6 - Cache localita e clock](../1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20S6%20-%20Cache%20localita%20e%20clock.md).
 

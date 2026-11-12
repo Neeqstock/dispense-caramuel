@@ -6,7 +6,7 @@
 
 ⏱️ **Tempo di studio dichiarato:** circa 1 ora e 40 minuti in totale (✅ circa 60 minuti, 🔍 circa 40 minuti). I 🤓 sono facoltativi. Carta, penna e calcolatrice sono ammesse.
 
-> **Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 🟢 esercizio svolto · ✏️ da fare · 📜 caso reale · 🧪 caso inventato (dati dichiarati) · 📌 controllo · ⚠️ errore comune · 🧠 da ricordare · 🔁 richiamo di ottobre · 🃏 soluzione
+>**Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 🟢 esercizio svolto · ✏️ da fare · 📜 caso reale · 🧪 caso inventato (dati dichiarati) · 📌 controllo · ⚠️ errore comune · 🧠 da ricordare · 🔁 richiamo di ottobre · 🃏 soluzione
 
 **Filo rosso.** Sei il tecnico del laboratorio di informatica della scuola. I docenti ti mandano richieste: un PC lento, un avvio che non finisce, una macchina virtuale che scatta. Ogni argomento è una richiesta. I nomi (LAB-3, PC-07) e i valori dei casi inventati sono inventati e dichiarati come tali.
 

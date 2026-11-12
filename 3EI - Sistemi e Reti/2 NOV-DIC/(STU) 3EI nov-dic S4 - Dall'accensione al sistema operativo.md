@@ -8,7 +8,7 @@
 
 📚 **Ripassa prima:** [il ciclo macchina (ottobre S4)](../1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20S4%20-%20Il%20ciclo%20macchina.md) e [le memorie (ottobre S5)](../1%20SETT-OTT/%28STU%29%203EI%20sett-ott%20S5%20-%20Indirizzi%20e%20gerarchia%20delle%20memorie.md).
 
-> **Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📜 storia · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🃏 flashcard · 🛠️ strumento per guardare · 🔧 rimando al laboratorio
+>**Legenda:** ✅ minimo per la sufficienza · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📜 storia · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🃏 flashcard · 🛠️ strumento per guardare · 🔧 rimando al laboratorio
 
 <img src="Allegati/3ei-nov-dic-s4-dall-accensione-al-sistema-operativo-mappa-html-1.svg" alt="Mappa mentale: Dall'accensione al sistema operativo" width="100%">
 

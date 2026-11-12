@@ -5,7 +5,7 @@
 **1CI · Novembre-Dicembre · S1 · Teoria**
 ⏱️ **Tempo di studio: circa 20 minuti per i soli ✅** · 🔍 altri 10 · 🤓 facoltativo · nessun compito a casa obbligatorio.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🛠️ strumento · 🔧 lo faremo in laboratorio · 💭 da pensare · 🚪 uscita · 🃏 flashcard: rispondi a voce, poi apri per controllare
+>**Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 📜 storia · 🧪 esempio · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🛠️ strumento · 🔧 lo faremo in laboratorio · 💭 da pensare · 🚪 uscita · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 <img src="Allegati/1ci-nov-dic-s1-il-sistema-operativo-mappa-html-1.svg" alt="Mappa mentale: Il sistema operativo" width="100%">
 
@@ -69,7 +69,35 @@ Il software di base che gestisce le risorse della macchina e offre servizi ai pr
 <summary>🃏 <b>Quali quattro lavori fa il sistema operativo?</b></summary>
 Gestisce il processore, la memoria, i file e le periferiche.
 </details>
-<details>
+
+## 🧱 Kernel e interfaccia
+
+✅ Il kernel
+
+**Il kernel** è il **nucleo** del sistema operativo: sta sempre in memoria e parla direttamente con l'hardware (RAM, processore, disco, tastiera, schermo). È la parte più importante ma anche la più "nascosta": tu non ci interagisci direttamente.
+
+Pensa al kernel come al **capo reparto** di una grande fabbrica:
+- Sta sempre al suo posto (in memoria)
+- Decide cosa può fare chi (quando un processo può usare il processore o la RAM)
+- È l'unico che può toccare le macchine vere (l'hardware)
+- Tutto il resto (le "parti che usi tu" come le impostazioni) gli chiede di fare qualcosa per conto tuo
+
+### Cosa fa davvero il kernel?
+
+Il kernel ha quattro lavori principali:
+
+1. **Gestisce la memoria:** decide quale processo può usare quanta RAM e quando. Se un programma chiede più memoria di quella disponibile, il kernel decide cosa tenere in RAM e cosa spostare sul disco (è la base della memoria virtuale di cui parlavamo prima!).
+
+2. **Gestisce il processore:** decide quale processo può usare il CPU e per quanto tempo (lo scheduler di cui parlavamo prima). Si assicura che tutti i processi girino in modo equo e veloce.
+
+3. **Gestisce i dispositivi (driver):** quando un programma vuole scrivere su un file o mostrare qualcosa sullo schermo, non può farlo direttamente. Deve chiedere al kernel, che chiama il driver giusto per quel dispositivo. È come se il kernel fosse il centralino di un'azienda: riceve le richieste e le inoltra alla persona giusta.
+
+4. **Protezione e sicurezza:** si assicura che un programma non possa rovinare i dati di un altro. Se un programma prova ad accedere a memoria che non gli spetta, il kernel lo ferma.
+
+⚠️ «Kernel» e «sistema operativo» non sono sinonimi: il kernel è un pezzo del SO.
+
+Il sistema operativo completo è come: **kernel** (il capo reparto) + **scheduler** (chi decide chi parla con chi) + **file system** (come organizzare i file) + **driver** (le istruzioni per ogni macchina specifica) + **interfaccia** (le impostazioni che vedi tu).
+
 <summary>🃏 <b>Un programma può comandare direttamente il disco?</b></summary>
 Di norma no: chiede al sistema operativo, che è l'unico a comandare l'hardware.
 </details>
@@ -123,7 +151,7 @@ Il tempo che un processo può usare un core prima di cedere il turno.
 ✏️ **Spiega a voce (1 min).** Perché non vediamo mai i turni dei processi? Spiegalo a un compagno usando il quanto di tempo.
 
 ### 🔍 Perché i processi vanno a turni
-#
+#fatto👍 
 
 Il SO potrebbe far finire un processo e poi passare al successivo. Non lo fa per due motivi.
 
@@ -176,12 +204,33 @@ Chiudere app in secondo piano o spostare dati sul disco, che è più lento.
 ### 🤓 Una bugia ben organizzata
 
 > Ogni processo vede una memoria tutta sua, con indirizzi che partono da zero, come se la macchina fosse libera. Non è vero: dietro le quinte il SO traduce gli indirizzi del processo in zone reali della RAM. Si chiama **memoria virtuale**. È una finzione condivisa che tutti i programmi accettano senza saperlo, e funziona proprio perché nessuno la mette in dubbio.
+>
+> **Come funziona davvero:**
+> - Il sistema operativo dà a ogni programma l'illusione di avere tutta la memoria per sé, con indirizzi che partono da zero
+> - Quando la memoria piena, il SO sposta temporaneamente alcune cose sul disco (più lento) per liberare spazio nella RAM
+> - Quando serve di nuovo, riporta tutto in RAM: è come avere uno spazio di archiviazione extra "nascosto" nel computer
+>
+> **Perché serve:**
+> - Permette di avere molti programmi aperti insieme anche se la RAM non basta per tutti
+> - Isola i programmi tra loro (un errore in uno non blocca gli altri)
+>
+> **Il sistema nasconde tutto?**
+> - **Sì, completamente!** Il programma non sa nemmeno che esiste la memoria virtuale. Per lui sembra di avere una RAM enorme e velocissima.
+> - Il sistema operativo traduce tutto automaticamente. Il programma usa indirizzi "virtuali" (che partono da zero) e il SO li trasforma in indirizzi reali della RAM o, se necessario, sul disco.
+> - Il programma non vede il "file di paging" e non può scegliere cosa mettere sul disco: decide tutto il SO.
+>
+> **Come funziona su Windows**
+> - Windows usa un file chiamato `pagefile.sys` (nascosto nella cartella di sistema) come spazio di memoria virtuale sul disco.
+> - Per impostazione predefinita Windows lo gestisce automatico: si trova solitamente su `C:\pagefile.sys`.
+> - Puoi vedere le dimensioni e modificarlo cliccando con il tasto destro su "Questo PC" → "Proprietà" → "Impostazioni di sistema" → "Prestazioni" → "Avanzate" → "Modifica" sotto "Memoria virtuale".
+> - Se disabiliti il file di paging, Windows ne crea uno automatico di dimensioni minime per motivi di stabilità, ma le prestazioni possono peggiorare se la RAM è piena.
+> - Su Windows, il file di paging è **invisibile ai programmi**: nessun software può scriverci direttamente o leggervi, il SO gestisce tutto trasparente.
 
 ## 📁 File e periferiche
 
 ### ✅ File system: dove finisce ogni dato
 
-Un disco è una lunga fila di byte senza nomi. Il SO aggiunge un **file system**: dà un nome a ogni file, lo mette in una cartella e ricorda in quale posizione del disco sta. Quando apri `Foto/vacanza.jpg`, il SO sa dove andare a prendere quei byte.
+Un disco è una lunga fila di byte senza nomi. Il SO aggiunge un **file system**: dà un nome a ogni file, lo mette in una cartella e ricorda in quale posizione del disco sta. Quando apri `C:/Foto/vacanza.jpg`, il SO sa dove andare a prendere quei byte.
 
 🔧 **In laboratorio** lavoriamo con file e cartelle sul PC: è il file system al lavoro.
 

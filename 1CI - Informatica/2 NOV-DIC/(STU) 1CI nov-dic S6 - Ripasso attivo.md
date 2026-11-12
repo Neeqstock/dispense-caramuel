@@ -5,7 +5,7 @@
 **1CI · Novembre-Dicembre · S6 · Ripasso**
 ⏱️ **Tempo di studio: circa 20 minuti in classe, più 15 minuti per l'assaggio di Flowgorithm** · a casa solo se vuoi: **3 giri da 10 minuti** in giorni diversi · nessun compito a casa obbligatorio.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🧠 da ricordare · 🧪 esempio · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🛠️ strumento · 💭 da pensare · 🚪 uscita · 🃏 flashcard: rispondi a voce, poi apri per controllare
+>**Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo, per curiosi · 🧠 da ricordare · 🧪 esempio · ✏️ da fare · ⚠️ errore comune · 🎮 gioco · 🛠️ strumento · 💭 da pensare · 🚪 uscita · 🃏 flashcard: rispondi a voce, poi apri per controllare
 
 <img src="Allegati/1ci-nov-dic-s6-ripasso-attivo-mappa-html-1.svg" alt="Mappa mentale: Ripasso del bimestre" width="100%">
 
