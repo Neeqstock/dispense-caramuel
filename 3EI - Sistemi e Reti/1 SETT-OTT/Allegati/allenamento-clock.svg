@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1070 400" width="1070" height="400" role="img" aria-label="Due processori a confronto in 5,5 nanosecondi: ogni rettangolo e un ciclo, i verdi sono istruzioni completate" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16">
+<rect x="0" y="0" width="1070" height="400" rx="14" fill="#ffffff"/>
+<text x="30" y="38" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Che cosa succede in 5,5 nanosecondi</text>
+<text x="30" y="62" font-size="14" font-weight="400" fill="#6b7280" text-anchor="start">Ogni rettangolo è un ciclo di clock. Un rettangolo verde con la spunta è un'istruzione completata.</text>
+<line x1="200" y1="98" x2="200" y2="316" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="350" y1="98" x2="350" y2="316" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="500" y1="98" x2="500" y2="316" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="650" y1="98" x2="650" y2="316" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="800" y1="98" x2="800" y2="316" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<line x1="950" y1="98" x2="950" y2="316" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6"/>
+<text x="30" y="144" font-size="18" font-weight="700" fill="#111827" text-anchor="start">A · 2 GHz</text>
+<text x="30" y="162" font-size="13" font-weight="400" fill="#6b7280" text-anchor="start">1 istruzione ogni 2 cicli</text>
+<rect x="200.0" y="120" width="75.0" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="275.0" y="120" width="75.0" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="306.2,150 310.7,155.4 319.7,144.6" fill="none" stroke="#ffffff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="350.0" y="120" width="75.0" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="425.0" y="120" width="75.0" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="456.2,150 460.7,155.4 469.7,144.6" fill="none" stroke="#ffffff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="500.0" y="120" width="75.0" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="575.0" y="120" width="75.0" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="606.2,150 610.7,155.4 619.7,144.6" fill="none" stroke="#ffffff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="650.0" y="120" width="75.0" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="725.0" y="120" width="75.0" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="756.2,150 760.7,155.4 769.7,144.6" fill="none" stroke="#ffffff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="800.0" y="120" width="75.0" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="875.0" y="120" width="75.0" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="906.2,150 910.7,155.4 919.7,144.6" fill="none" stroke="#ffffff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="950.0" y="120" width="75.0" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<text x="30" y="244" font-size="18" font-weight="700" fill="#111827" text-anchor="start">B · 4 GHz</text>
+<text x="30" y="262" font-size="13" font-weight="400" fill="#6b7280" text-anchor="start">1 istruzione ogni 5 cicli</text>
+<rect x="200.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="237.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="275.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="312.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="350.0" y="220" width="37.5" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="363.85,250 367.35,254.2 374.35,245.8" fill="none" stroke="#ffffff" stroke-width="2.0999999999999996" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="387.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="425.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="462.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="500.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="537.5" y="220" width="37.5" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="551.35,250 554.85,254.2 561.85,245.8" fill="none" stroke="#ffffff" stroke-width="2.0999999999999996" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="575.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="612.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="650.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="687.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="725.0" y="220" width="37.5" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="738.85,250 742.35,254.2 749.35,245.8" fill="none" stroke="#ffffff" stroke-width="2.0999999999999996" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="762.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="800.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="837.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="875.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="912.5" y="220" width="37.5" height="60" rx="3" fill="#22c55e" stroke="#ffffff" stroke-width="2"/>
+<polyline points="926.35,250 929.85,254.2 936.85,245.8" fill="none" stroke="#ffffff" stroke-width="2.0999999999999996" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="950.0" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<rect x="987.5" y="220" width="37.5" height="60" rx="3" fill="#dbeafe" stroke="#ffffff" stroke-width="2"/>
+<line x1="200" y1="330" x2="1025.0" y2="330" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="200" y1="324" x2="200" y2="336" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+<text x="200" y="358" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">0 ns</text>
+<line x1="350" y1="324" x2="350" y2="336" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+<text x="350" y="358" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">1 ns</text>
+<line x1="500" y1="324" x2="500" y2="336" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+<text x="500" y="358" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">2 ns</text>
+<line x1="650" y1="324" x2="650" y2="336" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+<text x="650" y="358" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">3 ns</text>
+<line x1="800" y1="324" x2="800" y2="336" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+<text x="800" y="358" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">4 ns</text>
+<line x1="950" y1="324" x2="950" y2="336" stroke="#374151" stroke-width="2.5" stroke-linecap="round"/>
+<text x="950" y="358" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">5 ns</text>
+<text x="1025.0" y="358" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">5,5</text>
+</svg>

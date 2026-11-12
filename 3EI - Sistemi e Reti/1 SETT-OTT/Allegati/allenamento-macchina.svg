@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 460" width="1040" height="460" role="img" aria-label="CPU e memoria collegate da tre frecce numerate mentre si esegue LOAD R2, [60]" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16">
+<rect x="0" y="0" width="1040" height="460" rx="14" fill="#ffffff"/>
+<text x="30" y="38" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Mentre la CPU esegue LOAD R2, [60]</text>
+<text x="30" y="62" font-size="14" font-weight="400" fill="#6b7280" text-anchor="start">Il fetch è già avvenuto: l'istruzione è nell'IR e la CPU sta per leggere il dato.</text>
+<rect x="30" y="80" width="380" height="340" rx="14" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+<text x="50" y="110" font-size="18" font-weight="700" fill="#111827" text-anchor="start">CPU</text>
+<rect x="50" y="126" width="170" height="46" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+<text x="62" y="155" font-size="15" font-weight="700" fill="#334155" text-anchor="start">PC</text>
+<text x="208" y="155" font-size="15" font-weight="600" fill="#111827" text-anchor="end">13</text>
+<rect x="230" y="126" width="170" height="46" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+<text x="242" y="155" font-size="15" font-weight="700" fill="#334155" text-anchor="start">IR</text>
+<text x="388" y="155" font-size="15" font-weight="600" fill="#111827" text-anchor="end">LOAD R2, [60]</text>
+<rect x="50" y="196" width="170" height="46" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="62" y="225" font-size="15" font-weight="700" fill="#334155" text-anchor="start">MAR</text>
+<text x="208" y="225" font-size="15" font-weight="600" fill="#111827" text-anchor="end">?</text>
+<rect x="230" y="196" width="170" height="46" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="242" y="225" font-size="15" font-weight="700" fill="#334155" text-anchor="start">MDR</text>
+<text x="388" y="225" font-size="15" font-weight="600" fill="#111827" text-anchor="end">?</text>
+<rect x="50" y="266" width="170" height="46" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="62" y="295" font-size="15" font-weight="700" fill="#334155" text-anchor="start">R2</text>
+<text x="208" y="295" font-size="15" font-weight="600" fill="#111827" text-anchor="end">0</text>
+<rect x="230" y="266" width="170" height="46" rx="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+<text x="315" y="295" font-size="15" font-weight="700" fill="#075985" text-anchor="middle">CU (controllo)</text>
+<rect x="50" y="336" width="170" height="46" rx="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+<text x="135" y="365" font-size="15" font-weight="700" fill="#075985" text-anchor="middle">ALU</text>
+<rect x="640" y="80" width="370" height="340" rx="14" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+<text x="660" y="110" font-size="18" font-weight="700" fill="#111827" text-anchor="start">Memoria (RAM)</text>
+<rect x="660" y="126" width="70" height="42" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+<text x="695" y="153" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">12</text>
+<rect x="736" y="126" width="254" height="42" rx="8" fill="#f3f4f6" stroke="#94a3b8" stroke-width="2"/>
+<text x="863" y="153" font-size="15" font-weight="600" fill="#111827" text-anchor="middle">LOAD R2, [60]</text>
+<rect x="660" y="180" width="70" height="42" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+<text x="695" y="207" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">13</text>
+<rect x="736" y="180" width="254" height="42" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="863" y="207" font-size="15" font-weight="600" fill="#111827" text-anchor="middle">ADD R3, R1, R2</text>
+<rect x="660" y="234" width="70" height="42" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+<text x="695" y="261" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">...</text>
+<rect x="736" y="234" width="254" height="42" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="863" y="261" font-size="15" font-weight="600" fill="#111827" text-anchor="middle">...</text>
+<rect x="660" y="288" width="70" height="42" rx="8" fill="#e2e8f0" stroke="#f97316" stroke-width="2"/>
+<text x="695" y="315" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">60</text>
+<rect x="736" y="288" width="254" height="42" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+<text x="863" y="315" font-size="15" font-weight="600" fill="#111827" text-anchor="middle">7</text>
+<rect x="660" y="342" width="70" height="42" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+<text x="695" y="369" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">61</text>
+<rect x="736" y="342" width="254" height="42" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="863" y="369" font-size="15" font-weight="600" fill="#111827" text-anchor="middle">0</text>
+<text x="660" y="410" font-size="12" font-weight="400" fill="#6b7280" text-anchor="start">indirizzo</text>
+<text x="736" y="410" font-size="12" font-weight="400" fill="#6b7280" text-anchor="start">contenuto</text>
+<line x1="420" y1="170" x2="616" y2="170" stroke="#3b82f6" stroke-width="5" stroke-linecap="round"/>
+<polygon points="630,170 616,161 616,179" fill="#3b82f6"/>
+<circle cx="525" cy="146" r="15" fill="#3b82f6"/>
+<text x="525" y="152" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<line x1="420" y1="262" x2="616" y2="262" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+<polygon points="630,262 616,253 616,271" fill="#f59e0b"/>
+<circle cx="525" cy="238" r="15" fill="#f59e0b"/>
+<text x="525" y="244" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<line x1="630" y1="354" x2="434" y2="354" stroke="#22c55e" stroke-width="5" stroke-linecap="round"/>
+<polygon points="420,354 434,345 434,363" fill="#22c55e"/>
+<circle cx="525" cy="330" r="15" fill="#22c55e"/>
+<text x="525" y="336" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="520.0" y="446" font-size="14" font-weight="400" fill="#6b7280" text-anchor="middle">Le tre frecce 1, 2 e 3 sono i collegamenti fra CPU e memoria.</text>
+</svg>
