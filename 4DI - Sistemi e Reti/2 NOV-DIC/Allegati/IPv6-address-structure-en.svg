@@ -127,7 +127,13 @@
      fit-margin-top="10"
      fit-margin-left="10"
      fit-margin-right="10"
-     fit-margin-bottom="10" /><g
+     fit-margin-bottom="10" /><rect
+     id="background-white"
+     x="0"
+     y="0"
+     width="646.29675"
+     height="126.03576"
+     style="fill:#ffffff;fill-opacity:1;stroke:none" /><g
      id="g10"
      inkscape:groupmode="layer"
      inkscape:label="New Microsoft PowerPoint Presentation"
