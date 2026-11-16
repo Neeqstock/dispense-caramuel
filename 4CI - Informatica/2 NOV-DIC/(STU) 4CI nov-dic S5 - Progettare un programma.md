@@ -372,11 +372,11 @@ Cambiare la forma del codice, per renderlo più chiaro, senza cambiarne il compo
 
 ### 🤓 37 secondi
 
-> Nel 1968 la NATO riunisce a Garmisch, in Germania, i migliori informatici del mondo. Il tema è la **crisi del software**: i programmi diventano enormi, arrivano in ritardo, costano il doppio e non funzionano. Lì si diffonde un'espressione nuova, *software engineering*: costruire programmi con il rigore con cui si costruiscono i ponti.
->
-> Ventotto anni dopo, il 4 giugno 1996, il razzo europeo **Ariane 5** decolla per il suo primo volo. Dopo circa 37 secondi devia, si spezza e si autodistrugge. La causa: un pezzo di software riusato dal vecchio Ariane 4 convertiva una velocità da un numero con la virgola a 64 bit in un intero a 16 bit. Il nuovo razzo era più veloce, il numero non ci stava più, e il programma è andato in errore. Su Ariane 4 quel caso non poteva capitare, quindi nessuno l'aveva provato con le traiettorie del nuovo razzo.
->
-> Un caso limite non provato, centinaia di milioni di dollari in fumo. Il tuo goblin a `-2` è lo stesso tipo di errore, in miniatura.
+Nel 1968 la NATO riunisce a Garmisch, in Germania, i migliori informatici del mondo. Il tema è la **crisi del software**: i programmi diventano enormi, arrivano in ritardo, costano il doppio e non funzionano. Lì si diffonde un'espressione nuova, *software engineering*: costruire programmi con il rigore con cui si costruiscono i ponti.
+
+Ventotto anni dopo, il 4 giugno 1996, il razzo europeo **Ariane 5** decolla per il suo primo volo. Dopo circa 37 secondi devia, si spezza e si autodistrugge. La causa: un pezzo di software riusato dal vecchio Ariane 4 convertiva una velocità da un numero con la virgola a 64 bit in un intero a 16 bit. Il nuovo razzo era più veloce, il numero non ci stava più, e il programma è andato in errore. Su Ariane 4 quel caso non poteva capitare, quindi nessuno l'aveva provato con le traiettorie del nuovo razzo.
+
+Un caso limite non provato, centinaia di milioni di dollari in fumo. Il tuo goblin a `-2` è lo stesso tipo di errore, in miniatura.
 
 ## 🚪 Il limite dei dizionari
 

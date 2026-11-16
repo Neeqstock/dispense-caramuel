@@ -116,7 +116,7 @@ No. Il firmware è il programma; le impostazioni sono dati che il programma legg
 
 ### 🤓 Secure Boot e firme digitali
 
-> La UEFI può controllare il programma di avvio prima di eseguirlo. Il **Secure Boot** fa partire solo programmi con una **firma digitale**, cioè un sigillo elettronico che dice chi ha prodotto il programma. Se il sigillo non torna, il programma non parte. È un cenno: non entra nella verifica.
+La UEFI può controllare il programma di avvio prima di eseguirlo. Il **Secure Boot** fa partire solo programmi con una **firma digitale**, cioè un sigillo elettronico che dice chi ha prodotto il programma. Se il sigillo non torna, il programma non parte. È un cenno: non entra nella verifica.
 
 <details>
 <summary>🃏 <b>Che cos'è il Secure Boot?</b></summary>
@@ -226,7 +226,7 @@ La lettura: l'SSD, senza parti in movimento, di solito è più rapido.
 
 ### 🤓 Avvio rapido di Windows
 
-> Windows ha un'opzione chiamata «avvio rapido». Quando spegni il PC, non chiude del tutto la sessione del sistema: salva parte del suo stato su disco, per riaccendersi più in fretta. Quindi «spento» non sempre vuol dire «tutto azzerato».
+Windows ha un'opzione chiamata «avvio rapido». Quando spegni il PC, non chiude del tutto la sessione del sistema: salva parte del suo stato su disco, per riaccendersi più in fretta. Quindi «spento» non sempre vuol dire «tutto azzerato».
 
 <details>
 <summary>🃏 <b>Lo spegnimento con avvio rapido azzera tutto?</b></summary>

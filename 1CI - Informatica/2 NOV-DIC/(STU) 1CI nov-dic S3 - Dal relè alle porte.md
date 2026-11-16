@@ -239,11 +239,11 @@ Immagina questa frase: «**Questa frase è falsa.**» È vera o è falsa? Se è 
 
 ### 🤓 Boole e i circuiti
 
-> Boole non progettava circuiti, ma regole per il pensiero. Quasi un secolo dopo, Shannon si accorge che l'algebra di Boole descrive perfettamente anche i circuiti di interruttori: AND per la serie, OR per il parallelo. Da quel momento ogni progettista di circuiti usa l'algebra di Boole come lingua comune.
+Boole non progettava circuiti, ma regole per il pensiero. Quasi un secolo dopo, Shannon si accorge che l'algebra di Boole descrive perfettamente anche i circuiti di interruttori: AND per la serie, OR per il parallelo. Da quel momento ogni progettista di circuiti usa l'algebra di Boole come lingua comune.
 
 ### 🤓 I computer a relè
 
-> Negli anni Quaranta alcuni grandi calcolatori erano fatti proprio di relè, come quello della foto. Facevano clic-clac a ogni calcolo. Una storia celebre, resa popolare da Grace Hopper, racconta che intorno al 1947, nel calcolatore a relè Harvard Mark II, i tecnici trovarono una falena incastrata in un relè e la incollarono sul quaderno di registro con la scritta «primo caso reale di bug trovato». La parola *bug* («insetto») per indicare un guasto era però già in uso: l'aneddoto è famoso perché è divertente, non perché sia l'origine del termine.
+Negli anni Quaranta alcuni grandi calcolatori erano fatti proprio di relè, come quello della foto. Facevano clic-clac a ogni calcolo. Una storia celebre, resa popolare da Grace Hopper, racconta che intorno al 1947, nel calcolatore a relè Harvard Mark II, i tecnici trovarono una falena incastrata in un relè e la incollarono sul quaderno di registro con la scritta «primo caso reale di bug trovato». La parola *bug* («insetto») per indicare un guasto era però già in uso: l'aneddoto è famoso perché è divertente, non perché sia l'origine del termine.
 
 ## ✏️ Metti alla prova
 

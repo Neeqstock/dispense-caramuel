@@ -127,7 +127,7 @@ Perché il sistema conta i GB in multipli di 1024, mentre il produttore li conta
 
 ### 🤓 Usura delle celle flash
 
-> Ogni cella flash regge un numero limitato di scritture. Il controllore dell'SSD distribuisce le scritture su celle diverse, tecnica chiamata *wear leveling*, per farle durare più a lungo.
+Ogni cella flash regge un numero limitato di scritture. Il controllore dell'SSD distribuisce le scritture su celle diverse, tecnica chiamata *wear leveling*, per farle durare più a lungo.
 
 > 🧠 <u>HDD: grande, economico per byte, ma lento e con parti che si muovono. SSD: veloce, silenzioso e senza parti mobili, ma più caro per GB.</u> Nessuno dei due è il migliore in assoluto: dipende dal lavoro.
 

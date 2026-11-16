@@ -53,7 +53,7 @@ Usa una parte della CPU, della RAM e del disco della macchina vera, che quindi n
 
 ### 🤓 Le prime macchine virtuali
 
-> Alla fine degli anni Sessanta, in IBM, il sistema **CP-67** permise a più utenti di lavorare come se ognuno avesse una macchina propria, sul calcolatore System/360 Model 67. Da qui nasce il **tempo condiviso**: la CPU serve più utenti a turno. Date e nomi da verificare sulle fonti in fondo.
+Alla fine degli anni Sessanta, in IBM, il sistema **CP-67** permise a più utenti di lavorare come se ognuno avesse una macchina propria, sul calcolatore System/360 Model 67. Da qui nasce il **tempo condiviso**: la CPU serve più utenti a turno. Date e nomi da verificare sulle fonti in fondo.
 
 <details><summary>🃏 <b>Quale sistema IBM della fine degli anni Sessanta è una delle prime macchine virtuali?</b></summary>
 Il CP-67, eseguito sul System/360 Model 67.
@@ -105,7 +105,7 @@ Il tipo 2, che gira sopra il sistema operativo del PC. *Esempio: VirtualBox.*
 
 ### 🤓 Aiuto della CPU alla virtualizzazione
 
-> Alcune CPU moderne hanno istruzioni dedicate alla virtualizzazione, per esempio Intel VT-x e AMD-V. Aiutano l'hypervisor a controllare i guest senza rallentarli troppo. È solo un cenno: il nome basta.
+Alcune CPU moderne hanno istruzioni dedicate alla virtualizzazione, per esempio Intel VT-x e AMD-V. Aiutano l'hypervisor a controllare i guest senza rallentarli troppo. È solo un cenno: il nome basta.
 
 <details><summary>🃏 <b>Che cosa sono VT-x e AMD-V?</b></summary>
 Nomi di istruzioni della CPU che aiutano la virtualizzazione. Basta sapere che esistono.

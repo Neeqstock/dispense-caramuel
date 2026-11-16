@@ -203,28 +203,28 @@ Chiudere app in secondo piano o spostare dati sul disco, che è più lento.
 
 ### 🤓 Una bugia ben organizzata
 
-> Ogni processo vede una memoria tutta sua, con indirizzi che partono da zero, come se la macchina fosse libera. Non è vero: dietro le quinte il SO traduce gli indirizzi del processo in zone reali della RAM. Si chiama **memoria virtuale**. È una finzione condivisa che tutti i programmi accettano senza saperlo, e funziona proprio perché nessuno la mette in dubbio.
->
-> **Come funziona davvero:**
-> - Il sistema operativo dà a ogni programma l'illusione di avere tutta la memoria per sé, con indirizzi che partono da zero
-> - Quando la memoria piena, il SO sposta temporaneamente alcune cose sul disco (più lento) per liberare spazio nella RAM
-> - Quando serve di nuovo, riporta tutto in RAM: è come avere uno spazio di archiviazione extra "nascosto" nel computer
->
-> **Perché serve:**
-> - Permette di avere molti programmi aperti insieme anche se la RAM non basta per tutti
-> - Isola i programmi tra loro (un errore in uno non blocca gli altri)
->
-> **Il sistema nasconde tutto?**
-> - **Sì, completamente!** Il programma non sa nemmeno che esiste la memoria virtuale. Per lui sembra di avere una RAM enorme e velocissima.
-> - Il sistema operativo traduce tutto automaticamente. Il programma usa indirizzi "virtuali" (che partono da zero) e il SO li trasforma in indirizzi reali della RAM o, se necessario, sul disco.
-> - Il programma non vede il "file di paging" e non può scegliere cosa mettere sul disco: decide tutto il SO.
->
-> **Come funziona su Windows**
-> - Windows usa un file chiamato `pagefile.sys` (nascosto nella cartella di sistema) come spazio di memoria virtuale sul disco.
-> - Per impostazione predefinita Windows lo gestisce automatico: si trova solitamente su `C:\pagefile.sys`.
-> - Puoi vedere le dimensioni e modificarlo cliccando con il tasto destro su "Questo PC" → "Proprietà" → "Impostazioni di sistema" → "Prestazioni" → "Avanzate" → "Modifica" sotto "Memoria virtuale".
-> - Se disabiliti il file di paging, Windows ne crea uno automatico di dimensioni minime per motivi di stabilità, ma le prestazioni possono peggiorare se la RAM è piena.
-> - Su Windows, il file di paging è **invisibile ai programmi**: nessun software può scriverci direttamente o leggervi, il SO gestisce tutto trasparente.
+Ogni processo vede una memoria tutta sua, con indirizzi che partono da zero, come se la macchina fosse libera. Non è vero: dietro le quinte il SO traduce gli indirizzi del processo in zone reali della RAM. Si chiama **memoria virtuale**. È una finzione condivisa che tutti i programmi accettano senza saperlo, e funziona proprio perché nessuno la mette in dubbio.
+
+**Come funziona davvero:**
+- Il sistema operativo dà a ogni programma l'illusione di avere tutta la memoria per sé, con indirizzi che partono da zero
+- Quando la memoria piena, il SO sposta temporaneamente alcune cose sul disco (più lento) per liberare spazio nella RAM
+- Quando serve di nuovo, riporta tutto in RAM: è come avere uno spazio di archiviazione extra "nascosto" nel computer
+
+**Perché serve:**
+- Permette di avere molti programmi aperti insieme anche se la RAM non basta per tutti
+- Isola i programmi tra loro (un errore in uno non blocca gli altri)
+
+**Il sistema nasconde tutto?**
+- **Sì, completamente!** Il programma non sa nemmeno che esiste la memoria virtuale. Per lui sembra di avere una RAM enorme e velocissima.
+- Il sistema operativo traduce tutto automaticamente. Il programma usa indirizzi "virtuali" (che partono da zero) e il SO li trasforma in indirizzi reali della RAM o, se necessario, sul disco.
+- Il programma non vede il "file di paging" e non può scegliere cosa mettere sul disco: decide tutto il SO.
+
+**Come funziona su Windows**
+- Windows usa un file chiamato `pagefile.sys` (nascosto nella cartella di sistema) come spazio di memoria virtuale sul disco.
+- Per impostazione predefinita Windows lo gestisce automatico: si trova solitamente su `C:\pagefile.sys`.
+- Puoi vedere le dimensioni e modificarlo cliccando con il tasto destro su "Questo PC" → "Proprietà" → "Impostazioni di sistema" → "Prestazioni" → "Avanzate" → "Modifica" sotto "Memoria virtuale".
+- Se disabiliti il file di paging, Windows ne crea uno automatico di dimensioni minime per motivi di stabilità, ma le prestazioni possono peggiorare se la RAM è piena.
+- Su Windows, il file di paging è **invisibile ai programmi**: nessun software può scriverci direttamente o leggervi, il SO gestisce tutto trasparente.
 
 ## 📁 File e periferiche
 
@@ -308,12 +308,12 @@ Perché è il sistema operativo a decidere che cosa può fare un'app; così prot
 ### 🤓 Operatore e time-sharing
 #saltato
 
-> Nei primi anni Sessanta nascono i primi sistemi a **divisione di tempo** (*time-sharing*): molte persone, ciascuna davanti al proprio terminale, usavano la stessa macchina a turni così rapidi che ognuna credeva di averla per sé. È la stessa idea dello scheduler di oggi, applicata alle persone invece che ai processi.
+Nei primi anni Sessanta nascono i primi sistemi a **divisione di tempo** (*time-sharing*): molte persone, ciascuna davanti al proprio terminale, usavano la stessa macchina a turni così rapidi che ognuna credeva di averla per sé. È la stessa idea dello scheduler di oggi, applicata alle persone invece che ai processi.
 
 ### 🤓 Linux dentro Android
 #fatto👍 
 
-> Nel 1991 uno studente finlandese, Linus Torvalds, pubblicò le prime versioni di un kernel nuovo, poi chiamato **Linux**. Oggi lo usano molti server e anche Android: due sistemi con aspetto diversissimo possono avere lo stesso kernel sotto. Per questo ricordati: il kernel non è il sistema operativo.
+Nel 1991 uno studente finlandese, Linus Torvalds, pubblicò le prime versioni di un kernel nuovo, poi chiamato **Linux**. Oggi lo usano molti server e anche Android: due sistemi con aspetto diversissimo possono avere lo stesso kernel sotto. Per questo ricordati: il kernel non è il sistema operativo.
 
 ## ✏️ Metti alla prova
 

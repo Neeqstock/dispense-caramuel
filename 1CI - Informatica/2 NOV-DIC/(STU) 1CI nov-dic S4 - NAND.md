@@ -166,15 +166,15 @@ Se tutto un computer si costruisce con un solo tipo di pezzo, che cosa lo rende 
 
 ### 🤓 Sheffer e la NAND
 
-> La NAND porta il nome del logico americano Henry Sheffer, che all'inizio del Novecento studiò come un solo connettivo basti a esprimere tutti gli altri (nei libri di logica la NAND si scrive con una barra verticale, il «tratto di Sheffer»). Pare che qualcuno ci fosse arrivato prima, ma senza pubblicarlo: il filosofo Charles Peirce, a fine Ottocento.
+La NAND porta il nome del logico americano Henry Sheffer, che all'inizio del Novecento studiò come un solo connettivo basti a esprimere tutti gli altri (nei libri di logica la NAND si scrive con una barra verticale, il «tratto di Sheffer»). Pare che qualcuno ci fosse arrivato prima, ma senza pubblicarlo: il filosofo Charles Peirce, a fine Ottocento.
 
 ### 🤓 La NOR, la sorella
 
-> Anche la **NOR** («NOT OR») è universale: vale 1 solo quando tutti gli ingressi sono 0. Con le NAND si ricostruisce tutto; lo stesso con le NOR, con un altro disegno.
+Anche la **NOR** («NOT OR») è universale: vale 1 solo quando tutti gli ingressi sono 0. Con le NAND si ricostruisce tutto; lo stesso con le NOR, con un altro disegno.
 
 ### 🤓 Il computer dell'Apollo
 
-> Il computer che guidò le missioni Apollo verso la Luna (nella versione chiamata Block II) era costruito con circuiti integrati che contenevano porte **NOR**: un solo tipo di mattone, ripetuto moltissime volte.
+Il computer che guidò le missioni Apollo verso la Luna (nella versione chiamata Block II) era costruito con circuiti integrati che contenevano porte **NOR**: un solo tipo di mattone, ripetuto moltissime volte.
 
 ## ✏️ Metti alla prova
 

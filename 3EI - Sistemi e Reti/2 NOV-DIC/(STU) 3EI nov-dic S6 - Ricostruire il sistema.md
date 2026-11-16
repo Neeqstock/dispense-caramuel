@@ -192,7 +192,7 @@ La percentuale di utilizzo della CPU nel momento del rallentamento.
 
 ### 🤓 Memoria virtuale (cenno)
 
-> Quando la RAM finisce, il sistema può spostare parti della memoria sul disco. Il disco è molto più lento della RAM, quindi l'attesa cresce. Questo spiega molti rallentamenti, ma non lo verifichiamo in questa dispensa.
+Quando la RAM finisce, il sistema può spostare parti della memoria sul disco. Il disco è molto più lento della RAM, quindi l'attesa cresce. Questo spiega molti rallentamenti, ma non lo verifichiamo in questa dispensa.
 
 ## ⏱️ Prestazioni
 
@@ -248,7 +248,7 @@ Nelle Informazioni di sistema o nella scheda tecnica del produttore. Il CPI, inv
 
 ### 🤓 Muro della memoria
 
-> 📜 Nel 1995 William Wulf e Sally McKee pubblicano un articolo breve, «Hitting the Memory Wall». L'idea: la CPU cresce più in fretta della memoria, e prima o poi il tempo se ne va ad aspettare la memoria. Il tema torna oggi nei data center, ma qui è solo un cenno, con la fonte in fondo.
+📜 Nel 1995 William Wulf e Sally McKee pubblicano un articolo breve, «Hitting the Memory Wall». L'idea: la CPU cresce più in fretta della memoria, e prima o poi il tempo se ne va ad aspettare la memoria. Il tema torna oggi nei data center, ma qui è solo un cenno, con la fonte in fondo.
 
 ## 🖥️ Macchine virtuali
 

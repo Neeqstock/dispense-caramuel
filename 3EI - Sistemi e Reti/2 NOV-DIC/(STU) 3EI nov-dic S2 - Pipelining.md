@@ -252,9 +252,9 @@ Perché un salto sbagliato fa buttare via più lavoro, e con più stadi ce n'è 
 
 ### 🤓 Predizione dei salti
 
-> La CPU non vuole aspettare l'esito di un salto. Prova quindi a **indovinare** dove andrà il programma: si chiama **predizione dei salti**. Se indovina, nessuna pausa. Se sbaglia, scarta il lavoro fatto.
->
-> Alcuni processori hanno anche più pipeline in parallelo, detti superscalari. È solo un cenno: non fa parte della verifica.
+La CPU non vuole aspettare l'esito di un salto. Prova quindi a **indovinare** dove andrà il programma: si chiama **predizione dei salti**. Se indovina, nessuna pausa. Se sbaglia, scarta il lavoro fatto.
+
+Alcuni processori hanno anche più pipeline in parallelo, detti superscalari. È solo un cenno: non fa parte della verifica.
 
 <details>
 <summary>🃏 <b>Che cos'è la predizione dei salti?</b></summary>

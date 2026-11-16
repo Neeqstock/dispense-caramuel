@@ -423,22 +423,22 @@ Un passo in alto è `riga - 1`, in basso `riga + 1`, a sinistra `colonna - 1`.
 
 ### 🤓 Comprehension e una matrice traditrice
 
-> Una **list comprehension** costruisce una lista in una riga: `[n * n for n in range(5)]` dà `[0, 1, 4, 9, 16]`. Si legge «n per n, per ogni n in range(5)».
->
-> Ecco la trappola più famosa delle matrici in Python:
->
-> ```text
-> >>> griglia = [[0] * 3] * 3
-> >>> griglia[0][0] = 9
-> >>> griglia
-> [[9, 0, 0], [9, 0, 0], [9, 0, 0]]
-> ```
->
-> `* 3` non ha creato tre righe: ha creato **tre frecce verso la stessa riga**. È l'aliasing, travestito. La forma sicura costruisce una riga nuova a ogni giro: `[[0] * 3 for r in range(3)]`, oppure un ciclo con `append`.
+Una **list comprehension** costruisce una lista in una riga: `[n * n for n in range(5)]` dà `[0, 1, 4, 9, 16]`. Si legge «n per n, per ogni n in range(5)».
+
+Ecco la trappola più famosa delle matrici in Python:
+
+```text
+>>> griglia = [[0] * 3] * 3
+>>> griglia[0][0] = 9
+>>> griglia
+[[9, 0, 0], [9, 0, 0], [9, 0, 0]]
+```
+
+`* 3` non ha creato tre righe: ha creato **tre frecce verso la stessa riga**. È l'aliasing, travestito. La forma sicura costruisce una riga nuova a ogni giro: `[[0] * 3 for r in range(3)]`, oppure un ciclo con `append`.
 
 ### 🤓 Perché si parte da zero?
 
-> Il Fortran (1957) contava gli elementi da 1. Il C (1972) e i suoi figli, Java compreso, partono da 0: l'indice dice quanti passi fare dall'inizio. Nel 1982 Dijkstra, sì, quello del `goto`, scrisse una nota di una pagina per spiegare perché lo zero è la scelta più elegante: [EWD831, «Why numbering should start at zero»](https://www.cs.utexas.edu/~EWD/transcriptions/EWD08xx/EWD831.html). Lua, MATLAB e R partono ancora da 1, e i programmatori ne discutono da decenni.
+Il Fortran (1957) contava gli elementi da 1. Il C (1972) e i suoi figli, Java compreso, partono da 0: l'indice dice quanti passi fare dall'inizio. Nel 1982 Dijkstra, sì, quello del `goto`, scrisse una nota di una pagina per spiegare perché lo zero è la scelta più elegante: [EWD831, «Why numbering should start at zero»](https://www.cs.utexas.edu/~EWD/transcriptions/EWD08xx/EWD831.html). Lua, MATLAB e R partono ancora da 1, e i programmatori ne discutono da decenni.
 
 ## 🛠️ Il notebook Jupyter
 

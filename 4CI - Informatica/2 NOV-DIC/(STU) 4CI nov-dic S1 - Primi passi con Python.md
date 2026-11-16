@@ -264,9 +264,9 @@ Un editor con strumenti in più per scrivere, eseguire e correggere il codice, c
 
 ### 🤓 `import this`
 
-> Scrivi `import this` nel REPL. Python stampa lo *Zen of Python* di Tim Peters, 19 massime sul modo di scrivere buon codice. Due esempi: *«Simple is better than complex»* (il semplice è meglio del complicato) e *«Readability counts»* (la leggibilità conta).
->
-> Provane un'altra: `import antigravity`. Si apre un fumetto: [XKCD n. 353](https://xkcd.com/353/). In Python anche le battute si importano.
+Scrivi `import this` nel REPL. Python stampa lo *Zen of Python* di Tim Peters, 19 massime sul modo di scrivere buon codice. Due esempi: *«Simple is better than complex»* (il semplice è meglio del complicato) e *«Readability counts»* (la leggibilità conta).
+
+Provane un'altra: `import antigravity`. Si apre un fumetto: [XKCD n. 353](https://xkcd.com/353/). In Python anche le battute si importano.
 
 ## 🏷️ Variabili e tipi
 

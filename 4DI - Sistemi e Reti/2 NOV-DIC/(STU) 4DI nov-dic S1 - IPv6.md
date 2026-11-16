@@ -4,9 +4,9 @@
 
 **4DI · Novembre-Dicembre · S1 · Teoria**
 
-⏱️ **Tempo di studio: circa 40 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 15 min. si può saltare. Nessun compito obbligatorio a casa.
+⏱️ **Tempo di studio: circa 40 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 15 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · facoltativo · 📜 storia · ⚙️ come si legge · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🔧 In laboratorio · 🃏 flashcard (rispondi a voce, poi apri)
+> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · ⚙️ come si legge · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🔧 In laboratorio · 🃏 flashcard (rispondi a voce, poi apri)
 
 <img src="Allegati/4di-nov-dic-s1-ipv6-mappa-1.svg" alt="Mappa mentale: 🌐 IPv6" width="100%">
 
@@ -58,10 +58,11 @@ Il router traduce gli indirizzi privati dei dispositivi in un indirizzo pubblico
 Non aumenta gli indirizzi: li condivide, e rende più difficile farsi raggiungere da fuori.
 </details>
 
-### Dove nasce IPv6
+### 🤓 Dove nasce IPv6
 
-> Nel 1995 l'IETF, il gruppo che scrive gli standard di Internet, pubblica la prima specifica di IPv6. La versione in uso oggi è l'**RFC 8200** del 2017. Il numero sale da 4 a 6 perché il 5 era già stato usato per un protocollo sperimentale.
-> Il 6 giugno 2012 avviene il *World IPv6 Launch*: grandi fornitori attivano IPv6 in modo permanente. Da allora il meme «IPv6 arriverà l'anno prossimo» fa sorridere, ma convive con IPv4: oggi vanno avanti insieme.
+Nel 1995 l'IETF, il gruppo che scrive gli standard di Internet, pubblica la prima specifica di IPv6. La versione in uso oggi è l'**RFC 8200** del 2017. Il numero sale da 4 a 6 perché il 5 era già stato usato per un protocollo sperimentale.
+
+Il 6 giugno 2012 avviene il *World IPv6 Launch*: grandi fornitori attivano IPv6 in modo permanente. Da allora il meme «IPv6 arriverà l'anno prossimo» fa sorridere, ma convive con IPv4: oggi vanno avanti insieme.
 
 <details>
 <summary>🃏 <b>Perché IPv6 si chiama così?</b></summary>
@@ -178,20 +179,20 @@ Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio 
 2^64, circa 18 miliardi di miliardi.
 </details>
 
-### Finire gli indirizzi IPv6: un limite umano, non fisico
+### 🤓 Finire gli indirizzi IPv6: un limite umano, non fisico
 
-> Viene spontaneo chiedersi: **è fisicamente possibile esaurire anche gli indirizzi IPv6?**
->
-> Se contiamo i dispositivi uno per uno, **fisicamente no**. La superficie dell'intera Terra (oceani compresi) misura circa $5{,}1 \times 10^{20}$ millimetri quadrati: dividendo $2^{128}$ indirizzi per quella superficie, restano circa **670 milioni di miliardi di indirizzi per ogni singolo millimetro quadrato del pianeta**. Anche accendendo un milione di miliardi di nuovi dispositivi al secondo, servirebbero oltre **10 milioni di miliardi di anni** per finirli: quasi un milione di volte l'età dell'universo.
->
-> Il vero punto debole non è la fisica, ma **come assegniamo i prefissi**. In IPv6 non si consegnano indirizzi sciolti, ma intere reti `/64`, quindi i bit che contano per dividere il mondo sono i primi 64. Oggi inoltre si usa solo **un ottavo** dello spazio totale (`2000::/3`). Eppure già questo solo ottavo contiene $2^{61}$ reti `/64`: circa **288 milioni di reti locali intere per ciascuno degli 8 miliardi di esseri umani**, mentre gli altri **sette ottavi** di IPv6 restano intatti in cassaforte. L'unico modo per rimanere a secco sarebbe uno spreco burocratico colossale nel distribuire prefissi giganti; e anche in quel caso basterebbe aprire uno dei sette ottavi di riserva. La vignetta **xkcd #865** (*Nanobots*) ci scherza su immaginando un futuro invaso da sciami di nanobot che riescono a bruciare pure i 128 bit.
+Viene spontaneo chiedersi: **è fisicamente possibile esaurire anche gli indirizzi IPv6?**
+
+Se contiamo i dispositivi uno per uno, **fisicamente no**. La superficie dell'intera Terra (oceani compresi) misura circa $5{,}1 \times 10^{20}$ millimetri quadrati: dividendo $2^{128}$ indirizzi per quella superficie, restano circa **670 milioni di miliardi di indirizzi per ogni singolo millimetro quadrato del pianeta**. Anche accendendo un milione di miliardi di nuovi dispositivi al secondo, servirebbero oltre **10 milioni di miliardi di anni** per finirli: quasi un milione di volte l'età dell'universo.
+
+Il vero punto debole non è la fisica, ma **come assegniamo i prefissi**. In IPv6 non si consegnano indirizzi sciolti, ma intere reti `/64`, quindi i bit che contano per dividere il mondo sono i primi 64. Oggi inoltre si usa solo **un ottavo** dello spazio totale (`2000::/3`). Eppure già questo solo ottavo contiene $2^{61}$ reti `/64`: circa **288 milioni di reti locali intere per ciascuno degli 8 miliardi di esseri umani**, mentre gli altri **sette ottavi** di IPv6 restano intatti in cassaforte. L'unico modo per rimanere a secco sarebbe uno spreco burocratico colossale nel distribuire prefissi giganti; e anche in quel caso basterebbe aprire uno dei sette ottavi di riserva. La vignetta **xkcd #865** (*Nanobots*) ci scherza su immaginando un futuro invaso da sciami di nanobot che riescono a bruciare pure i 128 bit.
 
 <img src="Allegati/xkcd-865-nanobots.png" width="740" height="251" alt="Vignetta xkcd #865 Nanobots: i nanobot hanno divorato il 40% della Terra e poi si sono fermati; il mistero si risolve quando si scopre che il volume di ogni nanobot è di pochi micron cubici, quindi il 1998 ha comprato un po' di tempo">
 
 *Vignetta **xkcd #865** (*Nanobots*), di Randall Munroe, licenza CC BY-NC 2.5: i nanobot si fermano perché a un certo punto finiscono lo spazio fisico, non gli indirizzi. In inglese, un minuto di lettura.*
 
 <details>
-> 🃏 <b>È fisicamente possibile finire i 2^128 indirizzi IPv6 collegando dispositivi?</b></summary>
+<summary>🃏 <b>🤓 È fisicamente possibile finire i 2^128 indirizzi IPv6 collegando dispositivi?</b></summary>
 No: ci sono circa 670 milioni di miliardi di indirizzi per ogni millimetro quadrato della Terra; solo uno spreco enorme di prefissi potrebbe consumare il blocco attuale, ma restano sette ottavi dello spazio in riserva.
 </details>
 
@@ -201,35 +202,44 @@ No: ci sono circa 670 milioni di miliardi di indirizzi per ogni millimetro quadr
 
 ## 🧭 Tre tipi di indirizzo
 
-Il tipo di un indirizzo IPv6 si riconosce dalle prime cifre. Tre tipi bastano per iniziare.
+Il tipo di un indirizzo IPv6 si riconosce subito dalle prime cifre. Nel mondo reale i tuoi dispositivi — smartphone, PC e router di casa — **usano tutti e tre questi indirizzi contemporaneamente**, spesso senza che tu te ne accorga, per svolgere tre compiti molto diversi.
 
 ### ✅ Globale unicast: l'indirizzo pubblico
 
-**Unicast** vuol dire: un indirizzo per una sola interfaccia. **Globale** vuol dire: valido su Internet. Gli indirizzi globali iniziano con `2` o `3` (il blocco è `2000::/3`).
+**Unicast** vuol dire: un indirizzo per una sola interfaccia. **Globale** vuol dire: valido su Internet. Gli indirizzi globali iniziano con `2` o `3` (il blocco è `2000::/3`). Funziona come l'indirizzo IPv4 pubblico, ma senza bisogno del NAT: <u>ogni dispositivo può avere il suo indirizzo pubblico personale</u>.
 
-🧪 `2001:db8::1` è un esempio. Il prefisso `2001:db8::/32` è riservato alla documentazione: nessuna rete reale lo usa, quindi l'esempio è sicuro.
-- [ ] #ai frase poco chiara
+**Che cosa ci fa davvero il tuo dispositivo:**
+- **Navigare e guardare video:** quando apri YouTube o Netflix dal telefono su una rete con IPv6 attivo, il telefono usa il proprio Globale Unicast per chiedere il video direttamente ai server di Google o Netflix.
+- **Gaming online e videochiamate dirette:** il traffico viaggia direttamente fra il tuo Globale Unicast e quello dell'altro giocatore o server, senza i blocchi tipici del NAT.
+- **Accesso da fuori casa:** se hai un piccolo server domestico (per esempio un NAS o Home Assistant), puoi raggiungerlo da fuori digitando il suo Globale Unicast (se il firewall del router lo permette).
 
-Come un numero di telefono internazionale: è unico nel mondo. Dove smette di funzionare: il numero da solo non dice dove si trova la persona, serve la rete che lo instrada.
+🧪 `2001:db8::1` è un esempio di Globale Unicast. Il blocco `2001:db8::/32` è riservato per legge ai libri di testo, ai manuali e agli esercizi (proprio come i numeri di telefono `555-...` nei film americani): nessun computer vero su Internet ha questo indirizzo, così possiamo usarlo negli esempi senza disturbare nessuno.
+
+Come un numero di telefono internazionale: è unico nel mondo, ma da solo non dice in quale città si trova la persona; servono i router per instradare la chiamata.
 
 <details>
 <summary>🃏 <b>Che cosa vuol dire globale unicast?</b></summary>
-Un indirizzo unico nel mondo, raggiungibile su Internet. *Es.: 2001:db8::1 (esempio di documentazione).*
+Un indirizzo unico nel mondo per un singolo dispositivo, raggiungibile direttamente su Internet senza NAT. *Es.: 2001:db8::1 (blocco riservato agli esempi).*
 </details>
 
 ### ✅ Link-local fe80::/10: solo sul cavo
 
-Un indirizzo **link-local** vale solo nel collegamento locale: fra dispositivi sullo stesso cavo o sullo stesso Wi-Fi. Il router non lo inoltra su Internet. Ogni dispositivo IPv6 ne ha uno.
+Un indirizzo **link-local** vale solo nel collegamento locale: fra dispositivi attaccati allo stesso cavo o allo stesso Wi-Fi. Il router non lo inoltra mai su Internet. Ogni dispositivo IPv6 se ne costruisce uno da solo appena si accende. Il prefisso `fe80::/10` copre tutti gli indirizzi da `fe80` a `febf`.
 
-Il prefisso `fe80::/10` copre tutti gli indirizzi da `fe80` a `febf`.
+Questo indirizzo non lo digiti quasi mai a mano: i dispositivi lo usano **dietro le quinte** ancora prima di avere Internet funzionante.
 
-🧪 `fe80::211:22ff:fe33:4455` è un esempio inventato. Come il nome che ti chiamano in aula: vale dentro l'aula. Dove smette di funzionare: fuori dall'aula quel nome non basta.
+**Che cosa ci fa davvero il tuo dispositivo:**
+- **Chiedere «chi è il router?» (Gateway predefinito):** appena ti colleghi al Wi-Fi, il PC non ha ancora il suo indirizzo globale. Usa il suo `fe80::...` per parlare con il router di casa (che ha anche lui un `fe80::...`). Se controlli `ipconfig` sul PC, vedrai che il **Gateway predefinito** IPv6 è quasi sempre un indirizzo `fe80::...`!
+- **Scambio di rotte tra router:** nelle reti aziendali e dei provider, due router collegati da un cavo in fibra usano i loro indirizzi Link-Local per scambiarsi le tabelle di instradamento.
+- **Due PC collegati da un solo cavo:** se unisci due computer con un cavo Ethernet senza router né Wi-Fi, entrambi si danno da soli un `fe80::...` e possono subito scambiarsi file o fare `ping`.
 
-⚠️ `fe80` non è un indirizzo «privato» come `192.168`: è valido solo nel collegamento.
+🧪 `fe80::211:22ff:fe33:4455` è un esempio inventato. È come chiamare un compagno solo per nome: funziona finché siete nella stessa aula, ma fuori dall'aula non basta più.
+
+⚠️ `fe80` non è un indirizzo «privato» come `192.168`: `192.168` può attraversare più router interni di un'azienda, mentre `fe80` non supera nemmeno il primo router.
 
 <details>
-<summary>🃏 <b>Dove vale un indirizzo link-local?</b></summary>
-Solo nel collegamento locale, cioè fra dispositivi vicini. *Es.: fe80::211:22ff:fe33:4455 (inventato).*
+<summary>🃏 <b>Dove vale un indirizzo link-local, e dove lo vedi spesso su un PC?</b></summary>
+Vale solo nel collegamento locale (stesso cavo o Wi-Fi); su un PC compare spesso in <code>ipconfig</code> anche come indirizzo del Gateway predefinito.
 </details>
 
 <details>
@@ -239,34 +249,36 @@ Quelli che iniziano con un valore da fe80 a febf.
 
 ### 🔍 Multicast ff02::1: parla a tutti
 
-**Multicast** è un pacchetto indirizzato a un gruppo. Il prefisso multicast è `ff00::/8`.
+**Multicast** è un pacchetto indirizzato a un **gruppo specifico di dispositivi interessati**, senza disturbare gli altri. Il prefisso multicast è `ff00::/8`. IPv4 usava il **broadcast** (urlare a chiunque sulla rete locale); <u>IPv6 abolisce il broadcast e usa al suo posto il multicast</u>.
 
-🧪 `ff02::1` è il gruppo di tutti i nodi del collegamento locale: raggiunge ogni dispositivo della rete locale. È come l'annuncio dall'altoparlante della scuola: lo sentono tutti in quel palazzo, non chi sta fuori.
-
-IPv4 aveva il **broadcast**, cioè il messaggio a tutti. IPv6 non lo ha: al suo posto usa il multicast.
+**Che cosa ci fa davvero il tuo dispositivo:**
+- **Trovare i vicini e il router (*Neighbor Discovery*):** `ff02::1` è il gruppo di *tutti i nodi* del collegamento locale (come un annuncio dall'altoparlante della scuola: lo sentono tutti nel palazzo, nessuno fuori). Quando invece il tuo telefono entra nel Wi-Fi e cerca solo il router, scrive a **`ff02::2`** (*tutti i router sul collegamento*): il router risponde dandogli i parametri per navigare, mentre TV e stampanti ignorano il messaggio.
+- **Stampanti Wi-Fi, Chromecast e AirDrop:** quando premi «Stampa» dal telefono o cerchi una TV su cui trasmettere lo schermo, il telefono manda un pacchetto multicast (per esempio a `ff02::fb`) per chiedere: *«C'è una stampante o un Chromecast qui intorno?»*.
+- **TV in diretta degli operatori (IPTV):** per trasmettere una partita in diretta, l'operatore invia un solo flusso multicast dalla centrale verso migliaia di decoder invece di spedire migliaia di copie identiche dello stesso video.
 
 <details>
-<summary>🃏 <b>Che cos'è ff02::1?</b></summary>
-Il gruppo multicast di tutti i nodi del collegamento locale.
+<summary>🃏 <b>Che cos'è ff02::1, e che differenza c'è con ff02::2?</b></summary>
+<code>ff02::1</code> è il gruppo multicast di tutti i dispositivi del collegamento locale; <code>ff02::2</code> raggiunge invece solo i router di quel collegamento.
 </details>
 
 <details>
 <summary>🃏 <b>Che cosa usa IPv6 al posto del broadcast?</b></summary>
-Il multicast, per esempio il gruppo ff02::1.
+Il multicast (blocco <code>ff00::/8</code>), che permette di parlare solo al gruppo interessato.
 </details>
 
-### Loopback e unique local
+> 🧠 **In sintesi — i tre indirizzi in un secondo di vita vera:** quando accendi il PC o entri nel Wi-Fi, il dispositivo usa **Link-Local** (`fe80::...`) e **Multicast** (`ff02::...`) per presentarsi al router di casa e ricevere la configurazione; un secondo dopo, usa il **Globale Unicast** (`2000::/3`) per aprire YouTube o Google.
 
-> `::1` è il **loopback**: il dispositivo parla con se stesso, come `127.0.0.1` in IPv4.
-> Gli **unique local** (`fd00::/8` in pratica) sono simili agli indirizzi privati: restano dentro la rete e non escono su Internet.
-> Esiste anche l'**anycast**, un indirizzo condiviso da più apparati: il pacchetto va al più vicino. Non si verifica.
+### 🤓 Loopback e unique local
 
+`::1` è il **loopback**: il dispositivo parla con se stesso, esattamente come `127.0.0.1` in IPv4 (utile per provare un programma di rete sul proprio PC anche senza Wi-Fi).
 
-- [ ] #ai ultima frase poco chiara
+Gli **unique local** (`fd00::/8` nella pratica) sono l'equivalente degli indirizzi privati di un'azienda: possono attraversare più router interni, ma non escono mai su Internet.
+
+Esiste infine l'**anycast**: lo stesso identico indirizzo viene assegnato a decine di server sparsi nel mondo (così funzionano i grandi DNS pubblici come `2001:4860:4860::8888` di Google), e i router consegnano automaticamente la tua richiesta al server più vicino a te.
 
 <details>
-<summary>🃏 <b>Che cosa indica ::1?</b></summary>
-Il loopback: il dispositivo verso se stesso, come 127.0.0.1 in IPv4.
+<summary>🃏 <b>🤓 Che cosa indica ::1?</b></summary>
+Il loopback: l'indirizzo con cui il dispositivo parla con se stesso, come 127.0.0.1 in IPv4.
 </details>
 
 ✏️ **Esercizio (2 min).** Per `2001:db8::1`, `fe80::1` e `ff02::1` scrivi il tipo: globale, link-local o multicast. Poi dì quale dei tre un router non inoltra su Internet.
@@ -283,7 +295,7 @@ Il loopback: il dispositivo verso se stesso, come 127.0.0.1 in IPv4.
 
 **Immagini:** *IPv6 address structure-en.svg*, di Michel Bakni, licenza CC BY-SA 4.0 (Wikimedia Commons), modificata solo aggiungendo uno sfondo bianco (l'originale è trasparente e non si legge in tema scuro): <https://commons.wikimedia.org/wiki/File:IPv6_address_stracture-en.svg>. *xkcd #865 - Nanobots*, di Randall Munroe, licenza CC BY-NC 2.5, non modificata: <https://xkcd.com/865/>.
 
-**Valori inventati:** tutti gli indirizzi degli esempi, tranne i prefissi `2001:db8::/32`, `fe80::/10`, `ff02::1` e `ff00::/8`, che sono reali.
+**Valori inventati:** tutti gli indirizzi degli esempi, tranne i prefissi e gli indirizzi standard `2000::/3`, `2001:db8::/32`, `fe80::/10`, `ff00::/8`, `ff02::1`, `ff02::2`, `ff02::fb`, `::1`, `fd00::/8` e `2001:4860:4860::8888`, che sono reali.
 
 ---
 

@@ -171,9 +171,9 @@ Il RISC: lo stesso lavoro richiede più istruzioni, ciascuna però semplice.
 
 ### 🤓 CISC e RISC oggi
 
-> Un processore x86 moderno traduce al volo le sue istruzioni complesse in passi interni più semplici, quasi come un RISC dentro un CISC. Anche la famiglia ARM, nata come RISC, ha oggi molte istruzioni: alcuni Mac recenti la usano. Quindi «telefono = RISC, PC = CISC» è una scorciatoia storica, con molte eccezioni.
->
-> Negli anni Ottanta i progetti universitari di Berkeley (RISC) e Stanford (MIPS) portarono l'idea RISC fuori dai laboratori. Il dibattito fra le due famiglie non si è chiuso con un vincitore: si è trasformato in una ricerca di equilibrio.
+Un processore x86 moderno traduce al volo le sue istruzioni complesse in passi interni più semplici, quasi come un RISC dentro un CISC. Anche la famiglia ARM, nata come RISC, ha oggi molte istruzioni: alcuni Mac recenti la usano. Quindi «telefono = RISC, PC = CISC» è una scorciatoia storica, con molte eccezioni.
+
+Negli anni Ottanta i progetti universitari di Berkeley (RISC) e Stanford (MIPS) portarono l'idea RISC fuori dai laboratori. Il dibattito fra le due famiglie non si è chiuso con un vincitore: si è trasformato in una ricerca di equilibrio.
 
 ## 🧠 In sintesi
 

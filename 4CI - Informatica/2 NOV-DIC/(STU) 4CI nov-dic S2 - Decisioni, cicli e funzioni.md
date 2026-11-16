@@ -598,19 +598,19 @@ Perché nel codice si vede da quale modulo arriva ogni nome.
 ### 🤓 Le funzioni sono oggetti
 #fatto👍 
 
-> In Python una funzione è un valore come gli altri. Puoi darle un altro nome e chiamarla con quello:
->
-> ```python
-> def attacco(forza, tiro):
->     return forza + tiro
->
->
-> azione = attacco
-> azione = difesa
-> print(azione(7, 4))
-> ```
->
-> Stampa `11`. `azione` è una seconda freccia verso la stessa funzione. Senza parentesi `attacco` indica la funzione; con le parentesi `attacco(7, 4)` la **chiama**. Puoi passare un'azione senza eseguirla subito.
+In Python una funzione è un valore come gli altri. Puoi darle un altro nome e chiamarla con quello:
+
+```python
+def attacco(forza, tiro):
+    return forza + tiro
+
+
+azione = attacco
+azione = difesa
+print(azione(7, 4))
+```
+
+Stampa `11`. `azione` è una seconda freccia verso la stessa funzione. Senza parentesi `attacco` indica la funzione; con le parentesi `attacco(7, 4)` la **chiama**. Puoi passare un'azione senza eseguirla subito.
 
 <details>
 <summary>🃏 <b>Che differenza c'è fra assegnare <code>attacco</code> e assegnare <code>attacco(7, 4)</code>?</b></summary>
@@ -619,24 +619,24 @@ Nel primo caso assegni la funzione; nel secondo il risultato della chiamata.
 
 ### 🤓 La trappola del valore predefinito
 
-> Un valore predefinito viene creato **una volta sola**, quando Python esegue il `def`. Con i numeri non si nota. Con le liste (le vediamo in S3) sì: `[]` è una lista vuota e `.append` aggiunge un elemento, come `add` di un `ArrayList` Java.
->
-> ```python
-> def aggiungi(oggetto, zaino=[]):
->     zaino.append(oggetto)
->     return zaino
->
->
-> print(aggiungi("spada"))
-> print(aggiungi("pozione"))
-> ```
->
-> ```text
-> ['spada']
-> ['spada', 'pozione']
-> ```
->
-> Lo zaino «vuoto» è sempre lo stesso oggetto, che si riempie a ogni chiamata. Il rimedio idiomatico è `zaino=None` e, dentro, `if zaino is None: zaino = []`.
+Un valore predefinito viene creato **una volta sola**, quando Python esegue il `def`. Con i numeri non si nota. Con le liste (le vediamo in S3) sì: `[]` è una lista vuota e `.append` aggiunge un elemento, come `add` di un `ArrayList` Java.
+
+```python
+def aggiungi(oggetto, zaino=[]):
+    zaino.append(oggetto)
+    return zaino
+
+
+print(aggiungi("spada"))
+print(aggiungi("pozione"))
+```
+
+```text
+['spada']
+['spada', 'pozione']
+```
+
+Lo zaino «vuoto» è sempre lo stesso oggetto, che si riempie a ogni chiamata. Il rimedio idiomatico è `zaino=None` e, dentro, `if zaino is None: zaino = []`.
 
 <details>
 <summary>🃏 <b>Quando viene creata la lista di un parametro predefinito?</b></summary>
@@ -666,7 +666,7 @@ Il primo esegue la riga intera, anche se contiene una chiamata; il secondo segue
 
 ### 🤓 Un `goto` per Python
 
-> Il 1° aprile 2004 il programmatore Richie Hindle pubblicò un modulo che aggiungeva `goto` a Python. Era un pesce d'aprile, ma funzionava davvero. Dijkstra non avrebbe riso. Se vuoi ridere tu, cerca la vignetta [XKCD n. 292](https://xkcd.com/292/): c'è un velociraptor.
+Il 1° aprile 2004 il programmatore Richie Hindle pubblicò un modulo che aggiungeva `goto` a Python. Era un pesce d'aprile, ma funzionava davvero. Dijkstra non avrebbe riso. Se vuoi ridere tu, cerca la vignetta [XKCD n. 292](https://xkcd.com/292/): c'è un velociraptor.
 
 ## ✏️ Esercizi
 

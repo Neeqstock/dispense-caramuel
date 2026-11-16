@@ -165,23 +165,23 @@ Con due semisommatori e un OR: somma tre bit e dà somma e riporto.
 
 ### 🤓 Il bit di parità
 
-> Fai XOR dei bit di un messaggio uno dopo l'altro: il risultato vale 1 se i bit a 1 sono in numero **dispari**. Per esempio per `1011` ottieni 1. Se aggiungi quel bit al messaggio, chi lo riceve rifà il calcolo e capisce se un bit è stato cambiato per strada. È il bit di parità, che hai visto a settembre-ottobre.
+Fai XOR dei bit di un messaggio uno dopo l'altro: il risultato vale 1 se i bit a 1 sono in numero **dispari**. Per esempio per `1011` ottieni 1. Se aggiungi quel bit al messaggio, chi lo riceve rifà il calcolo e capisce se un bit è stato cambiato per strada. È il bit di parità, che hai visto a settembre-ottobre.
 
 ### 🤓 XOR come interruttore che inverte
 
-> Con 1 come secondo ingresso, lo XOR **capovolge** il primo (`A XOR 1 = NOT A`); con 0 lo lascia com'è (`A XOR 0 = A`). Per questo lo XOR compare in tanti trucchi: è un interruttore che si può girare e rigirare.
+Con 1 come secondo ingresso, lo XOR **capovolge** il primo (`A XOR 1 = NOT A`); con 0 lo lascia com'è (`A XOR 0 = A`). Per questo lo XOR compare in tanti trucchi: è un interruttore che si può girare e rigirare.
 
 ### 🤓 Lo XOR con sole NAND
 
-> Quattro NAND bastano per un XOR. Prova: `N1 = NAND(A,B)`, `N2 = NAND(A,N1)`, `N3 = NAND(B,N1)`, `XOR = NAND(N2,N3)`. Controlla con la tabella a quattro righe: se torna, hai appena costruito uno XOR da un solo tipo di porta.
+Quattro NAND bastano per un XOR. Prova: `N1 = NAND(A,B)`, `N2 = NAND(A,N1)`, `N3 = NAND(B,N1)`, `XOR = NAND(N2,N3)`. Controlla con la tabella a quattro righe: se torna, hai appena costruito uno XOR da un solo tipo di porta.
 
 ### 🤓 Il sommatore di Stibitz
 
-> Nel novembre 1937, al Bell Labs, George Stibitz completò un sommatore binario a relè e lo chiamò Model K («kitchen»: secondo la storia, lo assemblò sul tavolo della sua cucina). Fu uno dei primi passi verso i calcolatori a relè che hai visto in foto in S3, e poi verso i computer elettronici.
+Nel novembre 1937, al Bell Labs, George Stibitz completò un sommatore binario a relè e lo chiamò Model K («kitchen»: secondo la storia, lo assemblò sul tavolo della sua cucina). Fu uno dei primi passi verso i calcolatori a relè che hai visto in foto in S3, e poi verso i computer elettronici.
 
 ### 🤓 Chi scrive le regole
 
-> Un sommatore non decide niente di importante: somma e basta. Ma la stessa idea, ripetuta, calcola punteggi, medie, probabilità. Quando una macchina trasforma una persona in un numero (un voto, un punteggio, un rischio), le regole del calcolo le hanno scritte esseri umani. 💭 Chi dovrebbe controllare quelle regole? Che cosa non si lascia ridurre a un numero?
+Un sommatore non decide niente di importante: somma e basta. Ma la stessa idea, ripetuta, calcola punteggi, medie, probabilità. Quando una macchina trasforma una persona in un numero (un voto, un punteggio, un rischio), le regole del calcolo le hanno scritte esseri umani. 💭 Chi dovrebbe controllare quelle regole? Che cosa non si lascia ridurre a un numero?
 
 ## 🎮 Nandgame
 

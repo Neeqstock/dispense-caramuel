@@ -134,17 +134,17 @@ L'avvio a freddo parte da spento; il riavvio chiude il sistema e lo rifà partir
 
 ### 🤓 Avvio rapido di Windows
 
-> Su molti PC Windows il comando «Arresta» non fa uno spegnimento completo se è attivo l'*avvio rapido*: salva lo stato del kernel sul disco per ripartire più in fretta. «Riavvia», invece, fa un avvio completo. Per questo, quando un PC fa i capricci, riavviare è spesso meglio che spegnere e riaccendere.
+Su molti PC Windows il comando «Arresta» non fa uno spegnimento completo se è attivo l'*avvio rapido*: salva lo stato del kernel sul disco per ripartire più in fretta. «Riavvia», invece, fa un avvio completo. Per questo, quando un PC fa i capricci, riavviare è spesso meglio che spegnere e riaccendere.
 
 ## 📜 Origine e protezione
 
 ### 🤓 Perché si chiama boot
 
-> *Boot* è l'abbreviazione di *bootstrap*, dall'espressione inglese *to pull oneself up by one's bootstraps*: sollevarsi tirandosi per i lacci degli stivali, un'impresa impossibile. Descrive bene il problema: far partire un computer con un programma che ancora non c'è. Il primo uso attestato della parola abbreviata è del 1975.
+*Boot* è l'abbreviazione di *bootstrap*, dall'espressione inglese *to pull oneself up by one's bootstraps*: sollevarsi tirandosi per i lacci degli stivali, un'impresa impossibile. Descrive bene il problema: far partire un computer con un programma che ancora non c'è. Il primo uso attestato della parola abbreviata è del 1975.
 
 ### 🤓 Avvio protetto
 
-> Molti PC moderni hanno il **Secure Boot** (avvio protetto): il firmware controlla la firma digitale del bootloader prima di eseguirlo, così un programma dannoso non può installarsi prima del sistema operativo.
+Molti PC moderni hanno il **Secure Boot** (avvio protetto): il firmware controlla la firma digitale del bootloader prima di eseguirlo, così un programma dannoso non può installarsi prima del sistema operativo.
 
 ## ✏️ Metti alla prova
 

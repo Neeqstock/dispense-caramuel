@@ -321,22 +321,22 @@ Un dizionario: ogni impostazione si cerca per nome, non per posizione.
 
 ### 🤓 Chiavi che non cambiano, insiemi e JSON
 
-> **Le chiavi devono essere immutabili.** Un testo, un numero o una tupla vanno bene; una lista no.
->
-> ```text
-> >>> zaino = {["spada"]: 1}
-> Traceback (most recent call last):
->   File "<stdin>", line 1, in <module>
-> TypeError: unhashable type: 'list'
-> ```
->
-> *Unhashable* vuol dire «non se ne può calcolare l'hash». L'**hash** è un numero calcolato dalla chiave, che dice al dizionario in quale cassetto guardare. Per questo cercare in un dizionario è velocissimo, anche con milioni di chiavi: non scorre tutto, va dritto al cassetto. Se la chiave cambiasse, cambierebbe il cassetto, e il dato andrebbe perso. L'idea dei «cassetti calcolati» è descritta da Hans Peter Luhn, un ricercatore IBM, nel 1953. In Java la stessa struttura si chiama `HashMap`.
->
-> **Insiemi.** Un `set` è come un dizionario con le sole chiavi: niente doppioni, niente ordine. `{"spada", "torcia", "spada"}` diventa `{'spada', 'torcia'}` (l'ordine stampato può cambiare).
->
-> **Ordine.** Da Python 3.7 un dizionario ricorda l'ordine in cui hai inserito le chiavi. Prima no.
->
-> **JSON.** Il formato con cui si scambiano dati sul web somiglia moltissimo a un dizionario Python: `{"nome": "Aria", "vita": 100}`. Lo useremo più avanti nell'anno.
+**Le chiavi devono essere immutabili.** Un testo, un numero o una tupla vanno bene; una lista no.
+
+```text
+>>> zaino = {["spada"]: 1}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+```
+
+*Unhashable* vuol dire «non se ne può calcolare l'hash». L'**hash** è un numero calcolato dalla chiave, che dice al dizionario in quale cassetto guardare. Per questo cercare in un dizionario è velocissimo, anche con milioni di chiavi: non scorre tutto, va dritto al cassetto. Se la chiave cambiasse, cambierebbe il cassetto, e il dato andrebbe perso. L'idea dei «cassetti calcolati» è descritta da Hans Peter Luhn, un ricercatore IBM, nel 1953. In Java la stessa struttura si chiama `HashMap`.
+
+**Insiemi.** Un `set` è come un dizionario con le sole chiavi: niente doppioni, niente ordine. `{"spada", "torcia", "spada"}` diventa `{'spada', 'torcia'}` (l'ordine stampato può cambiare).
+
+**Ordine.** Da Python 3.7 un dizionario ricorda l'ordine in cui hai inserito le chiavi. Prima no.
+
+**JSON.** Il formato con cui si scambiano dati sul web somiglia moltissimo a un dizionario Python: `{"nome": "Aria", "vita": 100}`. Lo useremo più avanti nell'anno.
 
 ## 🛠️ Vedere i dati: Python Tutor e `pprint`
 

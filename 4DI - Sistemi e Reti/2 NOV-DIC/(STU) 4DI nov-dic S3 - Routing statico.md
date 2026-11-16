@@ -6,7 +6,7 @@
 
 ⏱️ **Tempo di studio: circa 40 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 15 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · facoltativo · 📜 storia · ⚙️ come si legge · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard · 🔧 In laboratorio · 🗺️ mappa · 😄 umorismo
+> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard · 🔧 In laboratorio · 🗺️ mappa · 😄 umorismo
 
 > Ti servono: i prefissi di [S5 sett-ott](../1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md), la S1 (IPv6) e la S2 (la tabella di routing è fatta di righe, e il collegamento fra due router è una rete `/30`).
 
@@ -197,9 +197,9 @@ Un ping funziona solo se la strada c'è nei due sensi. Il messaggio va da A a C,
 
 🔧 **In laboratorio:** ping e traceroute si provano in Packet Tracer, sulla stessa topologia. Qui li leggiamo su carta, senza comandi.
 
-### Il routing statico non scala
+### 🤓 Il routing statico non scala
 
-> Con tre sedi, la tabella scritta a mano va bene. Con cento router, ogni cambiamento richiede di riscrivere righe in molti apparati, e un errore passa inosservato. Per questo esiste il **routing dinamico**: i router si scambiano le strade da soli. Lo vedremo nella S4.
+Con tre sedi, la tabella scritta a mano va bene. Con cento router, ogni cambiamento richiede di riscrivere righe in molti apparati, e un errore passa inosservato. Per questo esiste il **routing dinamico**: i router si scambiano le strade da soli. Lo vedremo nella S4.
 
 ## 📚 Fonti e risorse
 

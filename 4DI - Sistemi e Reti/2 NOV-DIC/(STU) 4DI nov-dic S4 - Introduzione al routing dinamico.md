@@ -87,11 +87,11 @@ Perché ogni informazione passa di vicino in vicino, e ci mette tempo ad arrivar
 
 ✏️ **Spiega in una frase (2 min).** Perché, con il passaparola, una strada caduta può restare nelle tabelle anche dopo che è caduta?
 
-### Dalla ARPANET al passaparola
+### 🤓 Dalla ARPANET al passaparola
 
-> 📜 **Scenario reale.** Nei primi anni della ARPANET i router usavano un metodo basato sulle distanze, simile al Distance Vector. Nel 1979 la rete passò a un nuovo algoritmo, descritto nel 1980 da McQuillan, Richer e Rosen. Il vecchio metodo reagiva lentamente ai guasti e a volte faceva girare i messaggi in tondo.
->
-> **RIP** (Routing Information Protocol, descritto nella RFC 1058) è il protocollo Distance Vector più noto nelle reti piccole. Lo nominiamo soltanto: non lo configuriamo.
+📜 **Scenario reale.** Nei primi anni della ARPANET i router usavano un metodo basato sulle distanze, simile al Distance Vector. Nel 1979 la rete passò a un nuovo algoritmo, descritto nel 1980 da McQuillan, Richer e Rosen. Il vecchio metodo reagiva lentamente ai guasti e a volte faceva girare i messaggi in tondo.
+
+**RIP** (Routing Information Protocol, descritto nella RFC 1058) è il protocollo Distance Vector più noto nelle reti piccole. Lo nominiamo soltanto: non lo configuriamo.
 
 ## 3. Link State: conoscere la mappa
 
@@ -129,9 +129,9 @@ Il momento in cui tutti i router hanno la stessa informazione aggiornata.
 
 ⚠️ Il navigatore è un'analogia, non un protocollo. Si ferma dove un router non c'è: il router non scarica una mappa da un server, ma riceve annunci dai vicini.
 
-### OSPF, in una riga
+### 🤓 OSPF, in una riga
 
-> **OSPF** (Open Shortest Path First, descritto nella RFC 2328) è il protocollo Link State molto usato nelle reti aziendali. Lo nominiamo soltanto. In laboratorio si vedrà solo la tabella che produce.
+**OSPF** (Open Shortest Path First, descritto nella RFC 2328) è il protocollo Link State molto usato nelle reti aziendali. Lo nominiamo soltanto. In laboratorio si vedrà solo la tabella che produce.
 
 <details>
 <summary>🃏 <b>Quale protocollo Link State compare in 🤓?</b></summary>

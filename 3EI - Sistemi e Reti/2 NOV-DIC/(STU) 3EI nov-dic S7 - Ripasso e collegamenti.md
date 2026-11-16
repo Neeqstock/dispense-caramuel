@@ -140,7 +140,7 @@ Diminuiscono i cicli per istruzione che si vedono; la frequenza del clock resta 
 
 ### 🤓 Processori moderni: pipeline multiple e predizione
 
-> Nei processori moderni ci sono più pipeline in parallelo. Quando un salto è incerto, la CPU prova a indovinare la strada: se indovina, non perde tempo; se sbaglia, butta via il lavoro fatto. Questo è un cenno: non fa parte della verifica.
+Nei processori moderni ci sono più pipeline in parallelo. Quando un salto è incerto, la CPU prova a indovinare la strada: se indovina, non perde tempo; se sbaglia, butta via il lavoro fatto. Questo è un cenno: non fa parte della verifica.
 
 ## 💾 Memorie e dischi
 
@@ -224,7 +224,7 @@ No: la partizione divide lo spazio del disco, il file system organizza i file de
 
 ### 🤓 Usura delle celle flash
 
-> Ogni cella flash sopporta un numero limitato di scritture. Per questo i controllori dell'SSD distribuiscono le scritture su più celle. Il tema è un cenno: non è richiesto in verifica.
+Ogni cella flash sopporta un numero limitato di scritture. Per questo i controllori dell'SSD distribuiscono le scritture su più celle. Il tema è un cenno: non è richiesto in verifica.
 
 ## 🚀 Dall'accensione al sistema operativo
 
@@ -294,7 +294,7 @@ No: le impostazioni sono dati salvati; il firmware è il programma.
 
 ### 🤓 Secure Boot e catena di fiducia
 
-> Secure Boot controlla che il codice d'avvio sia firmato da chi ne è autorizzato. Ogni anello della catena controlla il successivo. Questo è un cenno: non fa parte della verifica.
+Secure Boot controlla che il codice d'avvio sia firmato da chi ne è autorizzato. Ogni anello della catena controlla il successivo. Questo è un cenno: non fa parte della verifica.
 
 ## 🖥️ Macchine dentro macchine
 
@@ -360,7 +360,7 @@ Per avere più sistemi su un solo server, per provare un sistema nuovo o per sep
 
 ### 🤓 Istruzioni di virtualizzazione della CPU
 
-> Alcune CPU hanno istruzioni dedicate per aiutare l'hypervisor. Il tema è un cenno: non è richiesto in verifica.
+Alcune CPU hanno istruzioni dedicate per aiutare l'hypervisor. Il tema è un cenno: non è richiesto in verifica.
 
 ## 🧱 Ricostruire il sistema
 
@@ -404,7 +404,7 @@ No. Se il collo di bottiglia è il disco o la CPU, la RAM aiuta poco.
 
 ### 🤓 Memoria virtuale come riserva
 
-> Quando la RAM finisce, il sistema usa il disco come riserva. Il disco è molto più lento della RAM, quindi il sistema rallenta. Questo è un cenno, non verificato.
+Quando la RAM finisce, il sistema usa il disco come riserva. Il disco è molto più lento della RAM, quindi il sistema rallenta. Questo è un cenno, non verificato.
 
 ## 🔗 Collegamenti fra settimane
 
