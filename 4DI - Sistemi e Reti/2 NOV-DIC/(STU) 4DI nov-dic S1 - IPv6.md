@@ -10,7 +10,9 @@
 
 <img src="Allegati/4di-nov-dic-s1-ipv6-mappa-1.svg" alt="Mappa mentale: 🌐 IPv6" width="100%">
 
-> 📜 **Il quadro.** Nel 1981 un indirizzo di 32 bit sembra un numero enorme. Trent'anni dopo, ogni telefono, console e termostato ne vuole uno. I numeri a disposizione finiscono prima del previsto. IPv6 non è un capriccio tecnico: è il numero nuovo, più lungo, che la rete ha dovuto inventare per continuare a crescere.
+> 📜 **Il quadro — e che cosa te ne fai tu.** Nel 1981 un indirizzo di 32 bit sembra infinito. Trent'anni dopo, ogni telefono, console e termostato ne vuole uno, e nel 2011 la riserva centrale di IPv4 finisce. IPv6 non è teoria da museo: **circa metà del traffico Internet mondiale verso i grandi servizi viaggia già su IPv6**, molti operatori mobili lo usano ogni giorno sul tuo telefono, e i provider cloud fanno pagare gli IPv4 pubblici mentre gli IPv6 sono gratuiti.
+>
+> Saper leggere questi indirizzi ti serve per capire quello che vedi già oggi in `ipconfig`, per configurare un router o una partita online senza impazzire dietro al NAT, e perché qualsiasi rete moderna lavora in **dual-stack** (IPv4 e IPv6 insieme).
 >
 > 🧪 **Quanto spazio è, davvero?** La superficie totale della Terra (terre emerse più oceani) è di circa $5{,}1 \times 10^{14}$ metri quadrati, cioè $5{,}1 \times 10^{20}$ millimetri quadrati.
 >
