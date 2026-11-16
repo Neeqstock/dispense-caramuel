@@ -11,6 +11,10 @@
 <img src="Allegati/4di-nov-dic-s1-ipv6-mappa-1.svg" alt="Mappa mentale: 🌐 IPv6" width="100%">
 
 > 📜 **Il quadro.** Nel 1981 un indirizzo di 32 bit sembra un numero enorme. Trent'anni dopo, ogni telefono, console e termostato ne vuole uno. I numeri a disposizione finiscono prima del previsto. IPv6 non è un capriccio tecnico: è il numero nuovo, più lungo, che la rete ha dovuto inventare per continuare a crescere.
+>
+> 🧪 **Quanto spazio è, davvero?** La superficie totale della Terra (terre emerse più oceani) è di circa $5{,}1 \times 10^{14}$ metri quadrati, cioè $5{,}1 \times 10^{20}$ millimetri quadrati.
+>
+> - **Risultato:** con gli indirizzi IPv6 potremmo assegnare <u>oltre 660 milioni di miliardi ($6{,}6 \times 10^{17}$) di indirizzi a ogni singolo millimetro quadrato</u> della superficie terrestre.
 
 ## 📜 Lo spazio di IPv4 finisce
 
@@ -180,12 +184,18 @@ Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio 
 >
 > Il vero punto debole non è la fisica, ma **come assegniamo i prefissi**. In IPv6 non si consegnano indirizzi sciolti, ma intere reti `/64`, quindi i bit che contano per dividere il mondo sono i primi 64. Oggi inoltre si usa solo **un ottavo** dello spazio totale (`2000::/3`). Eppure già questo solo ottavo contiene $2^{61}$ reti `/64`: circa **288 milioni di reti locali intere per ciascuno degli 8 miliardi di esseri umani**, mentre gli altri **sette ottavi** di IPv6 restano intatti in cassaforte. L'unico modo per rimanere a secco sarebbe uno spreco burocratico colossale nel distribuire prefissi giganti; e anche in quel caso basterebbe aprire uno dei sette ottavi di riserva. La vignetta **xkcd #865** (*Nanobots*) ci scherza su immaginando un futuro invaso da sciami di nanobot che riescono a bruciare pure i 128 bit.
 
+<img src="Allegati/xkcd-865-nanobots.png" width="740" height="251" alt="Vignetta xkcd #865 Nanobots: i nanobot hanno divorato il 40% della Terra e poi si sono fermati; il mistero si risolve quando si scopre che il volume di ogni nanobot è di pochi micron cubici, quindi il 1998 ha comprato un po' di tempo">
+
+*Vignetta **xkcd #865** (*Nanobots*), di Randall Munroe, licenza CC BY-NC 2.5: i nanobot si fermano perché a un certo punto finiscono lo spazio fisico, non gli indirizzi. In inglese, un minuto di lettura.*
+
 <details>
 <summary>🃏 <b>🤓 È fisicamente possibile finire i 2^128 indirizzi IPv6 collegando dispositivi?</b></summary>
 No: ci sono circa 670 milioni di miliardi di indirizzi per ogni millimetro quadrato della Terra; solo uno spreco enorme di prefissi potrebbe consumare il blocco attuale, ma restano sette ottavi dello spazio in riserva.
 </details>
 
+✏️ **Esercizio (1 min).** Perché si dice "un ottavo", nel testo sopra?
 ✏️ **Esercizio (2 min).** Scrivi la rete di `2001:db8:4f2a:17:5c1e:9d3b:7a20:4e81/64`. Sottolinea i gruppi che fanno parte della rete e cerchia quelli che identificano l'interfaccia.
+
 
 ## 🧭 Tre tipi di indirizzo
 
@@ -265,7 +275,7 @@ Il loopback: il dispositivo verso se stesso, come 127.0.0.1 in IPv4.
 - [World IPv6 Launch](https://www.worldipv6launch.org/): il lancio del 6 giugno 2012, con gli aggiornamenti dei fornitori.
 - [xkcd #865 - Nanobots](https://xkcd.com/865/): una vignetta classica (in inglese, un minuto di lettura) sull'idea di riuscire un giorno a esaurire perfino $2^{128}$ indirizzi.
 
-**Immagine:** *IPv6 address structure-en.svg*, di Michel Bakni, licenza CC BY-SA 4.0 (Wikimedia Commons), non modificata: <https://commons.wikimedia.org/wiki/File:IPv6_address_stracture-en.svg>.
+**Immagini:** *IPv6 address structure-en.svg*, di Michel Bakni, licenza CC BY-SA 4.0 (Wikimedia Commons), modificata solo aggiungendo uno sfondo bianco (l'originale è trasparente e non si legge in tema scuro): <https://commons.wikimedia.org/wiki/File:IPv6_address_stracture-en.svg>. *xkcd #865 - Nanobots*, di Randall Munroe, licenza CC BY-NC 2.5, non modificata: <https://xkcd.com/865/>.
 
 **Valori inventati:** tutti gli indirizzi degli esempi, tranne i prefissi `2001:db8::/32`, `fe80::/10`, `ff02::1` e `ff00::/8`, che sono reali.
 

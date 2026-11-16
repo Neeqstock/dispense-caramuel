@@ -11,6 +11,7 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <rect id="background-white" x="0" y="0" width="800" height="500" fill="#ffffff" />
   <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
     <rect style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect2837" width="290" height="100" x="120" y="380"/>
     <rect style="fill:#ffccff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:10" id="rect8030" width="100.00005" height="99.550133" x="220.56619" y="260.58438"/>

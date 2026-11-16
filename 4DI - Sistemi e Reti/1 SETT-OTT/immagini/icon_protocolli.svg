@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <rect id="background-white" x="0" y="0" width="60" height="60" fill="#ffffff" />
   <rect x="10" y="8" width="40" height="8" fill="#A8DADC" stroke="#000" stroke-width="1"/>
   <text x="30" y="14" font-size="6" text-anchor="middle" font-weight="bold">L7</text>
   <rect x="10" y="18" width="40" height="8" fill="#A8DADC" stroke="#000" stroke-width="1"/>

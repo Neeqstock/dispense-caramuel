@@ -22,7 +22,8 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
-       id="clipPath18"><path
+       id="clipPath18">
+  <rect id="background-white" x="0" y="0" width="935.79627" height="427.02063" fill="#ffffff" /><path
          d="M 0,1.2207e-4 H 960 V 540.00012 H 0 Z"
          id="path16"
          inkscape:connector-curvature="0"

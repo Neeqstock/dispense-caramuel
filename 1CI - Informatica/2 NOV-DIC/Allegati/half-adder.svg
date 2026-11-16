@@ -4,6 +4,7 @@
   version="1.0" >
   <defs >
   </defs>
+  <rect id="background-white" x="0" y="0" width="180" height="100" fill="#ffffff" />
   <g>
     <g transform="translate(60,52)"
 	style="fill:none;stroke:#000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter">
