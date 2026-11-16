@@ -20,6 +20,8 @@ Le reti di computer hanno dovuto scegliere fra questi due modi. Il routing dinam
 
 Scena ricostruita, non un verbale: alla fine degli anni Settanta, in un laboratorio, un cavo si rompe e i messaggi continuano a girare su strade che non esistono più. È la ARPANET, la rete americana nata nel 1969 e antenata di Internet. Il fatto che la rete abbia cambiato metodo è documentato, e la sua storia torna nel 🤓.
 
+**Che cosa te ne fai tu oggi?** Ogni volta che una ruspa taglia una fibra ottica o un server di un operatore va giù, la tua videochiamata salta per un secondo e poi riprende senza che nessun tecnico abbia riscritto tabelle a mano. Succede grazie al routing dinamico: protocolli come **OSPF** (dentro grandi aziende e università) e **BGP** (tra i provider di tutta Internet) aggiornano le strade in tempo reale. Capire questa logica ti spiega perché Internet regge ai guasti — e perché un errore di configurazione su un solo router può isolare interi servizi.
+
 ## 1. Il problema: un collegamento cade
 
 Due parole prima di tutto.
@@ -85,7 +87,7 @@ Perché ogni informazione passa di vicino in vicino, e ci mette tempo ad arrivar
 
 ✏️ **Spiega in una frase (2 min).** Perché, con il passaparola, una strada caduta può restare nelle tabelle anche dopo che è caduta?
 
-### 🤓 Dalla ARPANET al passaparola
+### Dalla ARPANET al passaparola
 
 > 📜 **Scenario reale.** Nei primi anni della ARPANET i router usavano un metodo basato sulle distanze, simile al Distance Vector. Nel 1979 la rete passò a un nuovo algoritmo, descritto nel 1980 da McQuillan, Richer e Rosen. Il vecchio metodo reagiva lentamente ai guasti e a volte faceva girare i messaggi in tondo.
 >
@@ -127,7 +129,7 @@ Il momento in cui tutti i router hanno la stessa informazione aggiornata.
 
 ⚠️ Il navigatore è un'analogia, non un protocollo. Si ferma dove un router non c'è: il router non scarica una mappa da un server, ma riceve annunci dai vicini.
 
-### 🤓 OSPF, in una riga
+### OSPF, in una riga
 
 > **OSPF** (Open Shortest Path First, descritto nella RFC 2328) è il protocollo Link State molto usato nelle reti aziendali. Lo nominiamo soltanto. In laboratorio si vedrà solo la tabella che produce.
 

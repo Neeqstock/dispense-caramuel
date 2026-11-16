@@ -4,9 +4,9 @@
 
 **4DI · Novembre-Dicembre · S2 · Teoria**
 
-⏱️ **Tempo di studio: circa 45 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 20 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
+⏱️ **Tempo di studio: circa 45 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 20 min. si può saltare. Nessun compito obbligatorio a casa.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard · 🔧 In laboratorio
+> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🔧 In laboratorio · 🃏 flashcard · 🔧 In laboratorio
 
 *Valori inventati per l'esercizio, salvo quelli dichiarati reali: `0.0.0.0/0` (rotta predefinita), `8.8.8.8` (indirizzo pubblico reale), `203.0.113.0/24` (blocco riservato alla documentazione).*
 
@@ -19,6 +19,8 @@
 Per secoli le città si sono collegate con strade. A ogni incrocio c'è un cartello: «per il mare, dritto; per la montagna, a sinistra». Nessun viaggiatore conosce la mappa intera del paese: gli basta il cartello dell'incrocio in cui si trova. Su Internet succede lo stesso: i pacchetti sono i viaggiatori, i router sono i cartelli.
 
 Ore 8:05, segreteria di una scuola. La segretaria apre il registro elettronico sul suo PC. Il server che lo custodisce è in un'altra stanza, su un'altra rete. La richiesta esce dal PC, arriva al bordo della sua rete e si ferma davanti a un cartello: «dove vuoi andare? per quale strada?». Il cartello non conosce tutta la scuola. Conosce le sue poche righe, e da quelle decide.
+
+**E tu che cosa te ne fai?** Quando il Wi-Fi è connesso ma «Internet non va», quando configuri una VPN o un secondo router in casa e i siti smettono di aprirsi, il colpevole è quasi sempre una riga di questa tabella (il *gateway* predefinito o una rotta sbagliata). Saperla leggere ti permette di capire subito dove si ferma un pacchetto usando comandi reali come `route print` o `tracert`.
 
 Questa dispensa studia quel cartello: che cos'è un router, com'è fatta la sua tabella, come sceglie una riga.
 
@@ -126,7 +128,7 @@ Della rete a cui è collegata: il suo indirizzo sta dentro quel prefisso.
 
 ✏️ **Prevedi un indirizzo (2 min).** Un PC nuovo entra nella rete della segreteria. Scrivi un indirizzo plausibile per lui, poi controlla la tabella: il suo indirizzo deve stare in `172.20.3.0/24`.
 
-### 🤓 Storia: gli IMP di ARPANET
+### Storia: gli IMP di ARPANET
 
 > 📜 Nel 1969 la rete ARPANET, antenata di Internet, collega i primi nodi universitari. Ogni nodo ha un apparecchio che fa da portiere: gli **IMP** (*Interface Message Processor*), costruiti dalla società BBN su un minicomputer Honeywell. A dicembre 1969 i nodi attivi sono quattro (UCLA, SRI, UCSB e l'Università dello Utah). Gli IMP instradano i messaggi fra i nodi: sono gli antenati dei router di oggi.
 
@@ -201,7 +203,7 @@ No: è il vicino a cui il router consegna il pacchetto per il tratto successivo.
 Il router P, con la sua tabella.
 </details>
 
-### 🤓 Quante righe ha una tabella vera
+### Quante righe ha una tabella vera
 
 > 🤓 Le tabelle dei router dei grandi operatori di Internet contengono centinaia di migliaia di prefissi (ordine di grandezza, variabile nel tempo). Nessun router di casa le tiene: gli basta la rotta predefinita verso il provider.
 

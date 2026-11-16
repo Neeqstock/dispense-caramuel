@@ -18,6 +18,8 @@
 
 Quarant'anni dopo, il 3 febbraio 2011, la IANA assegna gli ultimi grandi blocchi liberi di IPv4; il 6 giugno 2012 il *World IPv6 Launch* accende in modo permanente lo spazio nuovo a 128 bit. Eppure un principio non è cambiato di una virgola: <u>nessun pacchetto conosce la rete intera; segue confini scritti nelle tabelle dei router.</u>
 
+**A che cosa ti serve mettere insieme questi quattro pezzi?** Oggi qualsiasi rete reale — dal tuo telefono in 5G fino a un'azienda con più sedi — mescola indirizzi IPv6, tabelle di routing, rotte statiche verso il provider o la VPN e routing dinamico per sopravvivere ai guasti. Questo ripasso ti allena a leggere una rete come fa un tecnico: capire *chi* parla, *quale riga* della tabella decide la strada e *perché* un pacchetto arriva oppure si ferma.
+
 ## 🌐 IPv6: lo spazio nuovo
 
 ### ✅ 128 bit, compressione e tre tipi
@@ -41,7 +43,7 @@ Tre tipi riconoscibili subito dalle prime cifre:
 
 Nelle reti locali la prassi comune usa il prefisso **`/64`**: 64 bit per la rete (i primi quattro gruppi) e 64 bit per l'interfaccia ($2^{64}$ indirizzi disponibili). ⚠️ `/64` indica 64 bit di rete, non «64 host».
 
-### 🤓 Perché IPv4 e IPv6 convivono
+### Perché IPv4 e IPv6 convivono
 
 > Il NAT (visto in sett-ott) ha permesso a miliardi di dispositivi privati di condividere pochi IPv4 pubblici. IPv6 risolve alla radice la scarsità di indirizzi, ma aggiornare tutta Internet richiede decenni: per questo oggi i due protocolli lavorano fianco a fianco.
 
@@ -131,7 +133,7 @@ Nel principio **Link State** ogni router annuncia a tutti quali collegamenti pos
 
 Il **costo** misura quanto è «caro» attraversare un collegamento (più è basso, più conviene): in un triangolo dove A–B costa 1, B–C costa 2 e A–C costa 5, da A verso C conviene passare da B ($1 + 2 = 3 < 5$). Quando un collegamento cade, il momento in cui tutti i router tornano ad avere tabelle coerenti e aggiornate si chiama **convergenza**. Nel Distance Vector il passaparola di vicino in vicino può far circolare temporaneamente **notizie vecchie**.
 
-### 🤓 Nomi reali
+### Nomi reali
 
 > **RIP** (RFC 1058) è un protocollo *Distance Vector*; **OSPF** (RFC 2328) è un protocollo *Link State* molto diffuso nelle reti aziendali. Li conosciamo per nome, senza comandi di configurazione.
 
@@ -222,7 +224,7 @@ Offre 2 indirizzi utili (su 4 totali, tolti rete e broadcast): esattamente uno p
 </details>
 
 <details>
-<summary>🃏 <b>🤓 Quali sono i nomi di un protocollo reale Distance Vector e di uno Link State?</b></summary>
+<summary>🃏 <b>Quali sono i nomi di un protocollo reale Distance Vector e di uno Link State?</b></summary>
 <i>RIP</i> per il principio Distance Vector e <i>OSPF</i> per il principio Link State.
 </details>
 

@@ -4,9 +4,9 @@
 
 **4DI · Novembre-Dicembre · S1 · Teoria**
 
-⏱️ **Tempo di studio: circa 40 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 15 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
+⏱️ **Tempo di studio: circa 40 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 15 min. si può saltare. Nessun compito obbligatorio a casa.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · ⚙️ come si legge · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🔧 In laboratorio · 🃏 flashcard (rispondi a voce, poi apri)
+> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · facoltativo · 📜 storia · ⚙️ come si legge · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🔧 In laboratorio · 🃏 flashcard (rispondi a voce, poi apri)
 
 <img src="Allegati/4di-nov-dic-s1-ipv6-mappa-1.svg" alt="Mappa mentale: 🌐 IPv6" width="100%">
 
@@ -58,7 +58,7 @@ Il router traduce gli indirizzi privati dei dispositivi in un indirizzo pubblico
 Non aumenta gli indirizzi: li condivide, e rende più difficile farsi raggiungere da fuori.
 </details>
 
-### 🤓 Dove nasce IPv6
+### Dove nasce IPv6
 
 > Nel 1995 l'IETF, il gruppo che scrive gli standard di Internet, pubblica la prima specifica di IPv6. La versione in uso oggi è l'**RFC 8200** del 2017. Il numero sale da 4 a 6 perché il 5 era già stato usato per un protocollo sperimentale.
 > Il 6 giugno 2012 avviene il *World IPv6 Launch*: grandi fornitori attivano IPv6 in modo permanente. Da allora il meme «IPv6 arriverà l'anno prossimo» fa sorridere, ma convive con IPv4: oggi vanno avanti insieme.
@@ -178,7 +178,7 @@ Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio 
 2^64, circa 18 miliardi di miliardi.
 </details>
 
-### 🤓 Finire gli indirizzi IPv6: un limite umano, non fisico
+### Finire gli indirizzi IPv6: un limite umano, non fisico
 
 > Viene spontaneo chiedersi: **è fisicamente possibile esaurire anche gli indirizzi IPv6?**
 >
@@ -191,7 +191,7 @@ Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio 
 *Vignetta **xkcd #865** (*Nanobots*), di Randall Munroe, licenza CC BY-NC 2.5: i nanobot si fermano perché a un certo punto finiscono lo spazio fisico, non gli indirizzi. In inglese, un minuto di lettura.*
 
 <details>
-<summary>🃏 <b>🤓 È fisicamente possibile finire i 2^128 indirizzi IPv6 collegando dispositivi?</b></summary>
+> 🃏 <b>È fisicamente possibile finire i 2^128 indirizzi IPv6 collegando dispositivi?</b></summary>
 No: ci sono circa 670 milioni di miliardi di indirizzi per ogni millimetro quadrato della Terra; solo uno spreco enorme di prefissi potrebbe consumare il blocco attuale, ma restano sette ottavi dello spazio in riserva.
 </details>
 
@@ -208,6 +208,7 @@ Il tipo di un indirizzo IPv6 si riconosce dalle prime cifre. Tre tipi bastano pe
 **Unicast** vuol dire: un indirizzo per una sola interfaccia. **Globale** vuol dire: valido su Internet. Gli indirizzi globali iniziano con `2` o `3` (il blocco è `2000::/3`).
 
 🧪 `2001:db8::1` è un esempio. Il prefisso `2001:db8::/32` è riservato alla documentazione: nessuna rete reale lo usa, quindi l'esempio è sicuro.
+- [ ] #ai frase poco chiara
 
 Come un numero di telefono internazionale: è unico nel mondo. Dove smette di funzionare: il numero da solo non dice dove si trova la persona, serve la rete che lo instrada.
 
@@ -254,11 +255,14 @@ Il gruppo multicast di tutti i nodi del collegamento locale.
 Il multicast, per esempio il gruppo ff02::1.
 </details>
 
-### 🤓 Loopback e unique local
+### Loopback e unique local
 
 > `::1` è il **loopback**: il dispositivo parla con se stesso, come `127.0.0.1` in IPv4.
 > Gli **unique local** (`fd00::/8` in pratica) sono simili agli indirizzi privati: restano dentro la rete e non escono su Internet.
 > Esiste anche l'**anycast**, un indirizzo condiviso da più apparati: il pacchetto va al più vicino. Non si verifica.
+
+
+- [ ] #ai ultima frase poco chiara
 
 <details>
 <summary>🃏 <b>Che cosa indica ::1?</b></summary>
