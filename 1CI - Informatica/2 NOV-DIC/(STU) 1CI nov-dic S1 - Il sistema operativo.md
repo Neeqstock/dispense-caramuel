@@ -229,6 +229,7 @@ Chiudere app in secondo piano o spostare dati sul disco, che è più lento.
 ## 📁 File e periferiche
 
 ### ✅ File system: dove finisce ogni dato
+#fatto👍 
 
 Un disco è una lunga fila di byte senza nomi. Il SO aggiunge un **file system**: dà un nome a ogni file, lo mette in una cartella e ricorda in quale posizione del disco sta. Quando apri `C:/Foto/vacanza.jpg`, il SO sa dove andare a prendere quei byte.
 
@@ -240,6 +241,7 @@ A dare nomi ai file, organizzarli in cartelle e ricordare dove stanno sul disco.
 </details>
 
 ### ✅ Driver: il traduttore
+#fatto👍 
 
 Ogni dispositivo ha il suo linguaggio: una stampante e una tastiera non parlano allo stesso modo. Il **driver** è un piccolo programma che traduce fra il SO e un dispositivo. Esempio: colleghi una stampante nuova; senza il suo driver il SO non sa come darle gli ordini.
 
@@ -256,7 +258,10 @@ Il **kernel** è il **nucleo** del sistema operativo: sta sempre in memoria e pa
 
 ⚠️ «Kernel» e «sistema operativo» non sono sinonimi: il kernel è un pezzo del SO.
 
-### ✅ L'interfaccia utente
+### ✅ L'interfaccia utente (o GUI)
+#fatto👍 
+
+GUI = Graphical User Interface
 
 L'**interfaccia utente** è la parte del SO che vedi e tocchi: schermo, icone, menu. Può anche essere un terminale dove scrivi comandi. Cambia l'aspetto, non il lavoro sotto.
 
@@ -270,6 +275,8 @@ No: il kernel è il nucleo; il sistema operativo comprende anche file system, dr
 </details>
 
 ### 🔍 La chiamata di sistema
+
+**O system call**
 
 Un programma che vuole aprire una foto non va a leggere il disco da solo. Segue questi passi:
 
@@ -299,10 +306,12 @@ Perché è il sistema operativo a decidere che cosa può fare un'app; così prot
 ## 📜 Dal turno dell'operatore ad Android
 
 ### 🤓 Operatore e time-sharing
+#saltato
 
 > Nei primi anni Sessanta nascono i primi sistemi a **divisione di tempo** (*time-sharing*): molte persone, ciascuna davanti al proprio terminale, usavano la stessa macchina a turni così rapidi che ognuna credeva di averla per sé. È la stessa idea dello scheduler di oggi, applicata alle persone invece che ai processi.
 
 ### 🤓 Linux dentro Android
+#fatto👍 
 
 > Nel 1991 uno studente finlandese, Linus Torvalds, pubblicò le prime versioni di un kernel nuovo, poi chiamato **Linux**. Oggi lo usano molti server e anche Android: due sistemi con aspetto diversissimo possono avere lo stesso kernel sotto. Per questo ricordati: il kernel non è il sistema operativo.
 

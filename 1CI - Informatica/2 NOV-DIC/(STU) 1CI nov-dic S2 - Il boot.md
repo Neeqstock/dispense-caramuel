@@ -31,13 +31,15 @@ I primi computer lo risolvevano a mano. Sull'IBM 701 (1952) l'operatore scegliev
 
 Il **boot** (avvio) è la sequenza di passaggi che porta dal pulsante di accensione al sistema pronto all'uso. È una **staffetta**: ogni programma ne avvia uno più grande e poi gli lascia il posto. (Il limite della metafora: in una staffetta i corridori sono alla pari; qui ogni stadio è più capace del precedente.)
 
-| Passo | Chi lavora | Che cosa fa |
-| --- | --- | --- |
-| 1 | **Accensione** | Il processore parte sempre da un punto fisso, dove sta il firmware. |
-| 2 | **Firmware** | Controlla che l'hardware risponda e cerca il bootloader. |
-| 3 | **Bootloader** | Trova il kernel sul disco e lo copia in RAM. |
-| 4 | **Kernel** | Parte e prepara memoria, scheduler e driver (come in S1). |
-| 5 | **Servizi e accesso** | Partono i programmi in secondo piano; compare la schermata di accesso. |
+Firm = fermo, fisso
+
+| Passo | Chi lavora            | Che cosa fa                                                            |
+| ----- | --------------------- | ---------------------------------------------------------------------- |
+| 1     | **Accensione**        | Il processore parte sempre da un punto fisso, dove sta il firmware.    |
+| 2     | **Firmware**          | Controlla che l'hardware risponda e cerca il bootloader.               |
+| 3     | **Bootloader**        | Trova il kernel sul disco e lo copia in RAM.                           |
+| 4     | **Kernel**            | Parte e prepara memoria, scheduler e driver (come in S1).              |
+| 5     | **Servizi e accesso** | Partono i programmi in secondo piano; compare la schermata di accesso. |
 
 *Didascalia: cinque passaggi, ognuno prepara il successivo.*
 

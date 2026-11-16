@@ -36,5 +36,5 @@
 <rect x="-229.5495280362482" y="51.80000000000002" width="82.592" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
 <text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-188.2535280362482" y="70.2">Limiti</tspan></text>
 <text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-291.5495280362482" y="18.6">🤓 Il routing statico non</tspan><tspan x="-291.5495280362482" y="39.4">scala</tspan></text>
-<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-291.5495280362482" y="80.2">🤓 Il routing dinamico: i</tspan><tspan x="-291.5495280362482" y="101.0">router si scambiano le</tspan><tspan x="-291.5495280362482" y="121.8">strade da soli (S6)</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-291.5495280362482" y="80.2">🤓 Il routing dinamico: i</tspan><tspan x="-291.5495280362482" y="101.0">router si scambiano le</tspan><tspan x="-291.5495280362482" y="121.8">strade da soli (S4)</tspan></text>
 </svg>

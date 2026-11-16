@@ -1,8 +1,8 @@
-⬅️ [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20IPv6.md) · 🏠 [Indice](../README.md) · [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Routing%20statico.md) ➡️
+⬅️ [S1](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md) · 🏠 [Indice](../README.md) · [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) ➡️
 
 # 🧭 Router e tabelle di routing
 
-**4DI · Novembre-Dicembre · S4 · Teoria**
+**4DI · Novembre-Dicembre · S2 · Teoria**
 
 ⏱️ **Tempo di studio: circa 45 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 20 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
 
@@ -12,7 +12,7 @@
 
 ## 🗺️ Mappa
 
-<img src="Allegati/4di-nov-dic-s4-router-e-tabelle-di-routing-mappa-html-1.svg" alt="Mappa mentale: Router e tabelle di routing" width="100%">
+<img src="Allegati/4di-nov-dic-s2-router-e-tabelle-di-routing-mappa-1.svg" alt="Mappa mentale: Router e tabelle di routing" width="100%">
 
 ## 🌍 Cornice: le strade e i cartelli
 
@@ -308,4 +308,4 @@ No: è la riga usata per ciò che non ha altra riga; il resto lo decidono i rout
 
 ---
 
-⬅️ [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20IPv6.md) · 🏠 [Indice](../README.md) · [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Routing%20statico.md) ➡️
+⬅️ [S1](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md) · 🏠 [Indice](../README.md) · [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) ➡️

@@ -1,8 +1,8 @@
-⬅️ [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Routing%20statico.md) · 🏠 [Indice](../README.md) · [S7](./%28STU%29%204DI%20nov-dic%20S7%20-%20Ripasso%20e%20recupero.md) ➡️
+⬅️ [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) · 🏠 [Indice](../README.md) · [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Ripasso%20e%20recupero.md) ➡️
 
 # Introduzione al routing dinamico
 
-**4DI · Novembre-Dicembre · S6 · Teoria**
+**4DI · Novembre-Dicembre · S4 · Teoria**
 
 ⏱️ **Tempo di studio: circa 35 minuti.** ✅ essenziale: 20 min. 🔍 per il voto alto: 10 min. 🤓 si può saltare. Nessun compito a casa obbligatorio.
 
@@ -10,7 +10,7 @@
 
 ## 🗺️ Mappa
 
-<img src="Allegati/4di-nov-dic-s6-introduzione-al-routing-dinamico-mappa-html-1.svg" alt="Mappa mentale: 🗺️ Routing dinamico" width="100%">
+<img src="Allegati/4di-nov-dic-s4-introduzione-al-routing-dinamico-mappa-1.svg" alt="Mappa mentale: 🗺️ Routing dinamico" width="100%">
 
 ## 🌍 Perché le reti imparano a passarsi le notizie
 
@@ -24,12 +24,12 @@ Scena ricostruita, non un verbale: alla fine degli anni Settanta, in un laborato
 
 Due parole prima di tutto.
 
-- **Router**: apparato che collega reti diverse e sceglie la strada per ogni pacchetto. Lo hai già visto in S4.
+- **Router**: apparato che collega reti diverse e sceglie la strada per ogni pacchetto. Lo hai già visto in S2.
 - **Collegamento**: il tratto fra due router, per esempio un cavo.
 
 ### ✅ La tabella statica non si accorge di nulla
 
-Nel routing statico la tabella è scritta a mano: rete di destinazione, prefisso, prossimo passo (S4 e S5). Se un collegamento cade, la tabella continua a indicare la strada rotta.
+Nel routing statico la tabella è scritta a mano: rete di destinazione, prefisso, prossimo passo (S2 e S3). Se un collegamento cade, la tabella continua a indicare la strada rotta.
 
 🧪 *Come una cartina di carta: se un ponte crolla, la cartina lo disegna ancora. Chi la segue si ferma davanti al fiume.*
 
@@ -181,4 +181,4 @@ Poi cade il collegamento B–C.
 
 ---
 
-⬅️ [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Routing%20statico.md) · 🏠 [Indice](../README.md) · [S7](./%28STU%29%204DI%20nov-dic%20S7%20-%20Ripasso%20e%20recupero.md) ➡️
+⬅️ [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) · 🏠 [Indice](../README.md) · [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Ripasso%20e%20recupero.md) ➡️

@@ -1,700 +1,517 @@
-⬅️ [S7 - Ripasso e recupero](%28STU%29%204DI%20nov-dic%20S7%20-%20Ripasso%20e%20recupero.md) · 🏠 [Indice](../README.md)
+⬅️ [S5 - Ripasso e recupero](./%28STU%29%204DI%20nov-dic%20S5%20-%20Ripasso%20e%20recupero.md) · 🏠 [Indice](../README.md)
 
-# 🧮 Eserciziario · 4DI nov-dic
+# 🕵️ Eserciziario · 4DI nov-dic
 
 **4DI · Novembre-Dicembre · Eserciziario con casi reali · Teoria e pratica scritta**
 
-⏱️ **Tempo: un dossier dura 10-25 minuti.** ✅ essenziale: circa 60 minuti in tutto. 🔍 per il voto alto: circa 75 minuti. 🤓 si può saltare. Non è un compito a casa: scegli i dossier che ti servono, anche uno al giorno.
+⏱️ **Tempo: un dossier dura 10-15 minuti.** ✅ essenziale: circa 35 minuti in tutto. 🔍 per il voto alto: circa 30 minuti. 🤓 si può saltare. Non è un compito a casa: scegli i dossier che ti servono per prepararti alla verifica, anche uno alla volta.
 
-> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 caso reale o inventato · 📖 teoria · ✏️ pratica scritta · 🟢 svolto: guarda come si fa · 🎯 da provare: soluzione nascosta · 🧠 da ricordare · ⚠️ errore comune · 📌 controllo · 🩹 recupero · 🔧 in laboratorio · 🃏 soluzione
+> **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 caso vero · 🕵️ come funziona il problema · 📖 teoria · ✏️ pratica scritta · 🟢 svolto: guarda come si fa · 🎯 da provare: soluzione nascosta · 🧠 da ricordare · ⚠️ errore comune · 📌 controllo · 🃏 flashcard o soluzione
 
-In ufficio nessuno ti dà un esercizietto. Ti dicono: «la sede Monte non si collega, guardaci tu». Sei il nuovo tecnico di rete di **Ponte Srl** (azienda inventata), con tre sedi: Mare, Monte e Valle. Ogni dossier parte da un caso e ti chiede i conti che servono per capire il problema.
+In azienda nessuno ti consegna l'esercizietto. Ti dicono: «c'è un traffico strano, capisci da dove passa». In queste pagine torni nel ruolo di tecnico di una squadra di sicurezza e risposta agli incidenti, **con autorizzazione scritta**. Ogni dossier apre con un caso reale, ti scalda con poche flashcard secche, ti mostra **un esercizio svolto per intero** e poi ti lascia **due prove mirate** con la soluzione nascosta.
 
-<u>Una rete è fatta di confini. Se un confine è sbagliato, il pacchetto non arriva dove deve.</u>
+<u>Ogni errore o attacco sul livello Rete nasce dalle stesse poche regole che usano i router ogni secondo.</u> Un prefisso più lungo attira il traffico. Un indirizzo `fe80` parla sul cavo anche se nessuno ha configurato IPv4. Due rotte predefinite che si guardano in faccia palleggiano i pacchetti fino a farli morire. Chi padroneggia queste regole non tira a indovinare: legge la tabella e vede subito dove non torna.
+
+> ⚖️ **Regola d'oro.** Si prova solo su reti **proprie** o con **autorizzazione scritta**. In Italia accedere abusivamente a un sistema informatico o telematico è reato (art. 615-ter del Codice penale). Qui studi il funzionamento delle reti per diagnosticarle e difenderle: non trovi comandi o istruzioni contro sistemi reali. Per mettersi alla prova in modo legale esistono i simulatori e le gare **CTF** (*Capture The Flag*), come raccontato nell'[Extra di sett-ott](../1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20SX%20-%20Extra%20-%20Giochiamo%20e%20smancciamo%20con%20le%20reti.md).
 
 ## Come si usa
 
-- 🟢 **Svolto.** Leggi i passaggi, poi copri la mano e rifai l'esercizio sul quaderno.
-- 🎯 **Da provare.** Prima prova tu, sul quaderno. Poi apri la soluzione 🃏 e confronta.
-- Ogni dossier ha almeno un esercizio svolto, uno di teoria 📖 e uno di pratica scritta ✏️.
-- **Valori.** Ponte Srl, le sue sedi, i nomi dei reparti e i numeri degli esercizi sono inventati. Gli indirizzi `172.18.x.x` sono privati (RFC 1918), `198.51.100.0/30` è riservato alla documentazione (RFC 5737), `2001:db8::/32` è il prefisso riservato alla documentazione IPv6. I casi reali sono segnalati con 📜 e hanno le fonti in fondo.
-- **Strumenti.** Puoi usare il metodo del salto e il metodo binario di S1, e una calcolatrice. Scrivi i passaggi: un risultato senza passaggi non si può controllare.
-- **Solo carta.** Nessun comando e nessuna configurazione: gli apparati si vedranno in laboratorio.
+- 🃏 **Flashcard iniziali.** Rispondi a voce prima di aprirle: ti servono per fissare le definizioni che userai subito dopo negli esercizi.
+- 🟢 **Svolto.** Leggi tutti i passaggi, poi copri lo svolgimento con la mano e rifallo sul quaderno.
+- 🎯 **Da provare.** Scrivi prima la tua risposta completa sul quaderno; apri la soluzione `🃏` solo alla fine per confrontare.
+- **Valori.** Aziende, nomi e numeri degli scenari sono inventati per la didattica. Gli indirizzi «pubblici» degli esercizi usano i blocchi riservati alla documentazione (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24` per IPv4, RFC 5737; `2001:db8::/32` per IPv6, RFC 3849): non appartengono a nessuna rete reale. I prefissi storici citati nei casi veri sono dichiarati come tali.
 
-| Dossier | Tema                                | Settimana | Caso                                    |
-| :-----: | ----------------------------------- | :-------: | --------------------------------------- |
-|    1    | Il confine del prefisso             |    S1     | RFC 1519, 1993                          |
-|    2    | VLSM e collegamenti /30             |    S2     | RFC 950, 1985; il piano di Ponte Srl    |
-|    3    | IPv6: lo spazio nuovo               |    S3     | IANA 2011; World IPv6 Launch 2012       |
-|    4    | Router e tabella                    |    S4     | YouTube, 2008                           |
-|    5    | Rotte statiche e default route      |    S5     | La sede Valle non risponde              |
-|    6    | Distance Vector e Link State        |    S6     | ARPANET, 1979                           |
-|    7    | Livello finale: ripasso mescolato   |    S7     | Lunedì mattina a Ponte Srl              |
+| Dossier | Tema | Settimana | Caso |
+| :---: | --- | :---: | --- |
+| 1 | L'indirizzo invisibile sul cavo | [S1](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md) | Esaurimento IANA (2011) e IPv6 «dimenticato acceso» |
+| 2 | Il prefisso che rubò YouTube | [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md) | Pakistan Telecom e YouTube, 24 febbraio 2008 |
+| 3 | Strade a senso unico e buchi neri | [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) | Loop di default route, `traceroute` e rotte blackhole |
+| 4 | Quando un vicino racconta bugie | [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md) | ARPANET 1979: dal passaparola alla mappa completa |
+| 5 | Collaudo finale | [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Ripasso%20e%20recupero.md) | Tre ticket al SOC e *Capture The Flag* su carta |
 
 ---
 
-## 🔢 Dossier 1 · Il confine del prefisso
+## 🌐 Dossier 1 · L'indirizzo invisibile sul cavo
 
-*Si usa S1: prefisso, rete, broadcast, salto.*
+*Si usa [S1](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md): 128 bit, compressione con `::`, prefisso `/64`, tipi di indirizzo.*
 
-### 📜 Caso reale: il 1993 e il prefisso
+### 📜 Caso vero: la rete ombra che nessuno guardava
 
-Fino al 1993 la taglia di una rete la decideva la **classe**, cioè il primo numero dell'indirizzo. Una rete di classe C dava 254 host ordinari anche a chi ne serviva 40: il resto dello spazio andava perso. Nel settembre 1993 le RFC 1518 e 1519 introducono **CIDR**: il confine si scrive con un prefisso, come `/26`, e può cadere in qualunque punto.
+Il 3 febbraio 2011 la **IANA** distribuisce gli ultimi grandi blocchi centrali di IPv4; il 6 giugno 2012 il *World IPv6 Launch* avvia su scala mondiale il passaggio ai **128 bit**. Per rendere la transizione indolore, da oltre quindici anni Windows, Linux, macOS, Android e iOS hanno **IPv6 attivo di fabbrica**. Appena colleghi un cavo o un Wi-Fi, la scheda si costruisce da sola un indirizzo *link-local* (`fe80::/10`) e ascolta gli annunci sul gruppo *multicast* `ff02::1`, anche se nessuno ha configurato un router IPv6.
 
-🧠 <u>Il prefisso sostituisce la classe: il numero dopo la barra dice dove passa il confine.</u>
+🕵️ **Come nasce il problema.** Durante i controlli di sicurezza capita spesso di trovare aziende che hanno blindato ogni indirizzo IPv4, convinte di «non usare IPv6». In realtà tutti i loro PC si parlano già in IPv6 sul cavo locale, fuori dai controlli pensati solo per IPv4. **Difesa:** un amministratore non ignora mai IPv6; sa leggere gli indirizzi nei log e applica le regole di sicurezza a entrambi i protocolli.
 
-### 1.1 📖 Teoria · ✅ · 🟢 Svolto — Dove finisce il blocco
+🧠 <u>Anche senza Internet IPv6, dentro una rete locale i dispositivi moderni hanno già un indirizzo `fe80::/10`.</u>
 
-**Consegna.** Il PC di Dalia, nella sede Mare, ha `172.18.40.200/21`. Trova: maschera, bit host, rete, broadcast, primo e ultimo host, host ordinari. Poi dì se `172.18.47.9` sta nello stesso blocco.
+### 🃏 Riscaldamento rapido
+
+<details>
+<summary>🃏 <b>Quanti bit ha un indirizzo IPv6, in quanti gruppi si scrive e quanti bit vale ogni cifra esadecimale?</b></summary>
+Ha 128 bit divisi in 8 gruppi da 16 bit; ogni cifra esadecimale (0-9, a-f) vale 4 bit.
+</details>
+
+<details>
+<summary>🃏 <b>Perché la scorciatoia <code>::</code> si può usare una sola volta nello stesso indirizzo?</b></summary>
+Perché con due <code>::</code> non si saprebbe quanti gruppi di zeri mettere a sinistra e quanti a destra, rendendo l'indirizzo ambiguo.
+</details>
+
+<details>
+<summary>🃏 <b>Che differenza c'è fra <code>2000::/3</code>, <code>fe80::/10</code> e <code>ff02::1</code>?</b></summary>
+<code>2000::/3</code> è globale unicast (viaggia su Internet), <code>fe80::/10</code> è link-local (resta sul collegamento locale) e <code>ff02::1</code> è multicast per tutti i nodi locali (sostituisce il broadcast).
+</details>
+
+### 1.1 ✏️ Pratica · ✅ · 🟢 Svolto — Comprimere e leggere una `/64`
+
+**Consegna.** Nei registri di un server di prova trovi scritto per esteso questo indirizzo con il suo prefisso (blocco di documentazione):
+
+```text
+2001:0db8:00c0:0000:0000:0000:0a00:0030/64
+```
+
+1. Scrivi l'indirizzo nella forma compressa più corta possibile.
+2. Scrivi l'indirizzo della sua rete nella forma `prefisso::/64`.
+3. Indica quanti gruppi appartengono alla rete e quanti indirizzi totali contiene una `/64`.
 
 **Svolgimento.**
 
-1. **Maschera.** `/21` diventa `255.255.248.0`: il confine cade nel terzo ottetto.
-2. **Bit host.** $32 - 21 = 11$. Indirizzi nel blocco: $2^{11} = 2048$.
-3. **Salto.** $256 - 248 = 8$. I blocchi del terzo ottetto partono da 0, 8, 16, …, 40, 48.
-4. **Rete.** 40 è multiplo di 8: la rete è `172.18.40.0/21`. Il `200` finale non conta.
-5. **Broadcast.** $40 + 8 - 1 = 47$: `172.18.47.255`.
-6. **Host.** Da `172.18.40.1` a `172.18.47.254`: $2048 - 2 = 2046$ host ordinari.
-7. **Verifica.** `172.18.47.9` ha terzo ottetto 47, dentro 40-47: **sì**, stesso blocco. `172.18.48.1` no.
+1. **Togli gli zeri iniziali** da ciascuno degli 8 gruppi: `2001:db8:c0:0:0:0:a00:30`. Poi sostituisci l'unica fila di gruppi tutti a zero (i tre `0` centrali) con `::` → **`2001:db8:c0::a00:30`**.
+2. Il prefisso `/64` prende i primi 64 bit, cioè i **primi 4 gruppi** (`2001`, `0db8`, `00c0`, `0000`), e mette a zero i 4 gruppi dell'interfaccia → `2001:db8:c0:0:0:0:0:0/64`, che compresso si scrive **`2001:db8:c0::/64`**.
+3. Alla rete appartengono **4 gruppi** ($4 \times 16 = 64$ bit). Restano 64 bit per le interfacce, quindi **$2^{64}$ indirizzi** (circa 18 miliardi di miliardi).
 
-📌 **Controllo binario.** $40 = 00101000$, $248 = 11111000$, AND $= 00101000 = 40$. Il metodo binario conferma il salto.
+📌 **Controllo.** Nella forma compressa `2001:db8:c0::a00:30` vedi **5 gruppi** scritti; quindi `::` vale $8 - 5 = 3$ gruppi di zeri. I conti tornano.
 
-⚠️ **Errore comune.** Cercare il salto nel quarto ottetto, cioè nel `200`. Il salto sta nell'ottetto dove la maschera smette di valere 255.
+⚠️ **Errore comune.** Cancellare anche gli zeri **finali** di un gruppo: `0a00` diventa `a00` (che vale 2560), **non** `a` (che vale 10!), e `0030` diventa `30`, **non** `3`. Altro errore tipico: leggere `/64` come «64 dispositivi».
 
-🧠 <u>Il salto sta nell'ottetto dove la maschera smette di valere 255.</u>
+🧠 <u>Si tolgono solo gli zeri a sinistra del gruppo; gli zeri a destra cambiano il numero.</u>
 
-### 1.2 ✏️ Pratica · ✅ · 🟢 Svolto — Sei reparti in una rete
+### 1.2 ✏️ Pratica · 🔍 · 🎯 Da provare — Quattro indirizzi nei log: veri o impossibili?
 
-**Consegna.** Ponte Srl ha il blocco `172.18.0.0/16` e vuole una sottorete uguale per ciascuno dei sei reparti. Quale prefisso? Scrivi i primi due blocchi.
+**Consegna.** In un verbale d'incidente compaiono quattro stringhe copiate a mano. Per ciascuna scrivi sul quaderno se è un indirizzo IPv6 **valido** o **non valido**:
+- se **non è valido**, spiega in una frase quale regola viola;
+- se **è valido**, riscrivilo per esteso con tutti gli 8 gruppi da 4 cifre.
 
-**Svolgimento.**
+- **A)** `2001:db8::1::5`
+- **B)** `2001:db8:0:0:0:0:0:0:9`
+- **C)** `fe80::21a:4bff:fe10:80`
+- **D)** `2001:db8:4g00::1`
 
-1. **Sottoreti necessarie:** 6. Con 2 bit ne avresti $2^2 = 4$, non bastano; con 3 bit sono $2^3 = 8$.
-2. **Prefisso:** $16 + 3 = 19$, cioè `/19`.
-3. **Indirizzi per blocco:** $2^{13} = 8192$. Salto nel terzo ottetto: $256 - 224 = 32$.
-4. **Primi due blocchi:** `172.18.0.0/19` (broadcast `172.18.31.255`) e `172.18.32.0/19` (broadcast `172.18.63.255`).
+<details>
+<summary>🃏 <b>1.2 — Soluzione</b></summary>
 
-📌 **Controllo.** Gli 8 blocchi di `/19` sono $8 \times 8192 = 65536$, cioè tutto il `/16`. Ne usi 6; gli altri 2 restano liberi.
+- **A) Non valido.** Usa `::` due volte: non è possibile sapere quanti gruppi di zeri stiano nel primo `::` e quanti nel secondo (per esempio 1+3, 2+2 o 3+1).
+- **B) Non valido.** Conta 9 gruppi separati dai due punti (`2001`, `db8`, sei `0` e `9`), mentre un indirizzo IPv6 ha esattamente 8 gruppi.
+- **C) Valido.** Ci sono 5 gruppi visibili (`fe80` a sinistra; `21a`, `4bff`, `fe10`, `80` a destra), quindi `::` sostituisce $8 - 5 = 3$ gruppi a zero. Esteso: **`fe80:0000:0000:0000:021a:4bff:fe10:0080`**.
+- **D) Non valido.** Contiene la lettera `g`: il sistema esadecimale usa soltanto le cifre `0–9` e le lettere `a–f`.
 
-⚠️ **Errore comune.** Confondere le sottoreti con gli indirizzi: sei reparti non sono sei host.
+</details>
 
-### 1.3 📖 Teoria · 🔍 · 🎯 Da provare — Vero o falso?
+### 1.3 📖 Teoria · ✅ · 🎯 Da provare — Chi può attraversare il router?
 
-**Consegna.** Per ciascuna frase scrivi **V** o **F**. Se è falsa, correggila in una frase.
+**Consegna.** Un sensore in laboratorio ha IPv6 attivo e nei suoi pacchetti compaiono tre indirizzi: `fe80::99`, `ff02::1` e `2001:db8:c0::99` (quest'ultimo rappresenta nel test un indirizzo pubblico).
 
-1. Un `/26` ha 64 host ordinari.
-2. Il primo indirizzo del blocco si può assegnare a un PC.
-3. Più il prefisso è lungo, più il blocco è grande.
-4. Un `/30` ha due host ordinari.
-5. Il broadcast è l'ultimo indirizzo del blocco.
+1. Associa ciascuno dei tre al suo tipo (**globale unicast**, **link-local**, **multicast**).
+2. Un attaccante esterno, da un'altra rete al di là del router, prova a spedire un pacchetto con destinazione `fe80::99`: può raggiungere il sensore? Spiega perché in una frase.
+3. Dato che in IPv6 il broadcast non esiste più, quale dei tre indirizzi viene usato per mandare un annuncio contemporaneamente a tutti i dispositivi collegati allo stesso cavo locale?
 
 <details>
 <summary>🃏 <b>1.3 — Soluzione</b></summary>
 
-1. **F.** Un `/26` ha 64 indirizzi, ma host ordinari sono 62: si tolgono rete e broadcast.
-2. **F.** Il primo indirizzo è quello di rete: non si assegna.
-3. **F.** Più il prefisso è lungo, più bit sono di rete e meno bit restano per gli host: il blocco è più piccolo. Un `/30` ha 4 indirizzi; un `/24` ne ha 256.
-4. **V.** $4 - 2 = 2$.
-5. **V.**
-
-⚠️ **Errore comune:** scrivere 64 al punto 1. Il conto giusto è $2^6 - 2 = 62$.
-
-</details>
-
-### 1.4 ✏️ Pratica · 🔍 · 🎯 Da provare — Il reparto Contabilità
-
-**Consegna.** Un PC della Contabilità ha `172.18.100.130/26`. Scrivi rete, broadcast, primo e ultimo host. Poi dì se `172.18.100.191` può essere assegnato a un PC.
-
-<details>
-<summary>🃏 <b>1.4 — Soluzione</b></summary>
-
-Salto nel quarto ottetto: $256 - 192 = 64$. Il `130` sta fra 128 e 191: la rete è `172.18.100.128/26`. Broadcast `172.18.100.191`; host da `172.18.100.129` a `172.18.100.190`.
-
-Quindi `172.18.100.191` **non** si assegna: è il broadcast.
-
-</details>
-
-### 1.5 ✏️ Pratica · 🔍 · 🎯 Da provare — Trecento dispositivi
-
-**Consegna.** Una sede ha 300 dispositivi. Quale prefisso scegli? Quanti host ordinari restano liberi nel blocco?
-
-<details>
-<summary>🃏 <b>1.5 — Soluzione</b></summary>
-
-Una `/24` ha 254 host ordinari: non basta. Servono 9 bit host, perché $2^9 - 2 = 510 \ge 300$. Il prefisso è $32 - 9 = 23$: `/23`.
-
-Host liberi nel blocco: $510 - 300 = 210$.
+1. `fe80::99` → **link-local** (`fe80::/10`); `ff02::1` → **multicast** (`ff00::/8`); `2001:db8:c0::99` → **globale unicast** (`2000::/3`, qui nel blocco riservato alla documentazione).
+2. **No.** Un indirizzo *link-local* vale esclusivamente sul collegamento locale (cavo o Wi-Fi diretto): per regola del protocollo il router non inoltra mai pacchetti `fe80::/10` verso altre reti.
+3. Si usa l'indirizzo multicast **`ff02::1`**, che identifica il gruppo di tutti i nodi del collegamento locale.
 
 </details>
 
 ---
 
-## 🧩 Dossier 2 · VLSM e collegamenti /30
+## 🧭 Dossier 2 · Il prefisso che rubò YouTube
 
-*Si usa S2: dimensionare, ordinare, allineare, controllare. Il collegamento fra due router è una `/30`.*
+*Si usa [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md): switch contro router, gateway, tabella di instradamento, rotta predefinita, prefisso più lungo.*
 
-### 📜 Caso reale: subnet tutte uguali
+### 📜 Caso vero: domenica 24 febbraio 2008, YouTube sparisce nel mondo
 
-Nel 1985 la RFC 950 descrive come dividere una rete in sottoreti. Erano tutte della stessa misura: una sede piccola e una grande ricevevano lo stesso blocco, e lo spazio si sprecava. Dal 1993, con CIDR (RFC 1519), le misure possono cambiare.
+Domenica 24 febbraio 2008 il governo del Pakistan ordina ai fornitori nazionali di bloccare l'accesso a YouTube dentro il Paese. Secondo lo studio pubblicato dal **RIPE NCC** (il registro europeo delle reti), YouTube trasmetteva dal blocco pubblico vero **`208.65.152.0/22`**. Per deviare le richieste interne verso un «buco nero», l'operatore *Pakistan Telecom* inserisce una rotta per **`208.65.153.0/24`** e, per errore, la annuncia anche ai router internazionali.
 
-Ponte Srl ha lo stesso problema, in versione inventata. Ha tre sedi: **Mare** (26 dispositivi), **Monte** (12) e **Valle** (5). Ogni sede ha un gateway, che conta come dispositivo. I collegamenti Mare–Monte e Monte–Valle sono `/30`. Il blocco disponibile è `172.18.20.0/24`.
+In pochi minuti i router di mezzo pianeta ricevono due indicazioni valide per gli stessi server di YouTube: la `/22` legittima in California e la `/24` pakistana. Nessun router controlla «chi ha ragione»: applica la regola della **riga più stretta** (*longest prefix match*). Poiché `/24` è più lungo di `/22`, vince la rotta pakistana e il traffico mondiale verso YouTube finisce in Pakistan, oscurando il sito per circa due ore.
 
-### 2.1 📖 Teoria · ✅ · 🟢 Svolto — Dimensionare una sede
+🕵️ **Difesa.** Oggi gli operatori filtrano quali prefissi un vicino ha il permesso di annunciare e firmano crittograficamente i blocchi autorizzati, proprio perché un router da solo premia sempre il prefisso più lungo.
 
-**Consegna.** La sede Monte ha 12 dispositivi. Quale prefisso minimo le serve? Il gateway conta.
+🧠 <u>Quando due righe contengono lo stesso indirizzo, il router sceglie sempre il prefisso più lungo, anche se porta nel posto sbagliato.</u>
+
+### 🃏 Riscaldamento rapido
+
+<details>
+<summary>🃏 <b>Qual è la differenza di confine fra uno switch e un router?</b></summary>
+Lo switch lavora dentro una sola rete locale; il router sta sul bordo fra reti diverse e sceglie la direzione leggendo la sua tabella.
+</details>
+
+<details>
+<summary>🃏 <b>Che cos'è il prossimo passo (next hop) scritto in una tabella di routing?</b></summary>
+È l'indirizzo del router vicino a cui consegnare il pacchetto per il tratto successivo, mai la destinazione finale.
+</details>
+
+<details>
+<summary>🃏 <b>Quando viene scelta la rotta predefinita <code>0.0.0.0/0</code>?</b></summary>
+Solo come ultima istanza, quando nessuna riga più specifica della tabella contiene l'indirizzo di destinazione.
+</details>
+
+<details>
+<summary>🃏 <b>Quali sono i tre passi ordinati con cui un router sceglie la riga nella tabella?</b></summary>
+1) Trova il prefisso (quali righe contengono l'indirizzo); 2) scegli la riga (la più stretta); 3) verifica il prossimo passo (vicino o rete collegata).
+</details>
+
+### Scenario del dossier: il router R-Clinica
+
+Il router **R-Clinica** della clinica veterinaria «San Rocco» (valori inventati) collega due reparti locali, la rete centrale del gruppo sanitario (tramite il collegamento `10.40.99.0/30`, dove R-Clinica ha `.1` e il router Centrale ha `.2`) e il provider Internet (tramite `198.51.100.8/30`, dove R-Clinica ha `.10` e il provider ha `.9`):
+
+| Rete di destinazione | Prefisso | Prossimo passo | Interfaccia / Uscita |
+| --- | :---: | --- | --- |
+| `10.40.10.0` | `/24` | — (collegata) | LAN Ambulatori (`10.40.10.1`) |
+| `10.40.20.0` | `/24` | — (collegata) | LAN Radiologia (`10.40.20.1`) |
+| `10.40.99.0` | `/30` | — (collegata) | cavo verso Centrale (`10.40.99.1`) |
+| `10.40.0.0` | `/16` | `10.40.99.2` | altre sedi del gruppo sanitario |
+| `198.51.100.8` | `/30` | — (collegata) | cavo verso provider (`198.51.100.10`) |
+| `0.0.0.0` | `/0` | `198.51.100.9` | uscita verso Internet |
+
+### 2.1 ✏️ Pratica · ✅ · 🟢 Svolto — Seguire tre pacchetti con i tre passi
+
+**Consegna.** Applica i tre passi (*trova il prefisso*, *scegli la riga*, *verifica il prossimo passo*) per tre pacchetti che arrivano a R-Clinica:
+- **A)** destinazione `10.40.20.45`;
+- **B)** destinazione `10.40.55.12`;
+- **C)** destinazione `192.0.2.80` (un server web esterno).
 
 **Svolgimento.**
 
-1. **Conta:** $12 + 1 = 13$ dispositivi, gateway incluso.
-2. **Bit host:** con 3 bit gli host utili sono $2^3 - 2 = 6$, troppi pochi. Con 4 bit sono $2^4 - 2 = 14 \ge 13$. Servono 4 bit.
-3. **Prefisso:** $32 - 4 = 28$, cioè `/28`. Indirizzi nel blocco: 16. Host utili: 14.
+| Pacchetto | 1. Righe che contengono la destinazione | 2. Riga scelta (più stretta) | 3. Prossimo passo / azione |
+| --- | --- | --- | --- |
+| **A** · `10.40.20.45` | `10.40.20.0/24`, `10.40.0.0/16`, `0.0.0.0/0` | **`10.40.20.0/24`** | Nessun vicino: consegna diretta sulla LAN Radiologia |
+| **B** · `10.40.55.12` | `10.40.0.0/16`, `0.0.0.0/0` | **`10.40.0.0/16`** | Consegna al router Centrale **`10.40.99.2`** |
+| **C** · `192.0.2.80` | solo `0.0.0.0/0` | **`0.0.0.0/0`** | Consegna al provider **`198.51.100.9`** |
 
-📌 **Controllo.** $14 \ge 13$: ci sta, con un posto libero.
+📌 **Controllo.** Nel pacchetto A i primi due numeri sono `10.40` (quindi entra nella `/16`) e i primi tre sono `10.40.20` (quindi entra anche nella `/24`): fra `/24`, `/16` e `/0` vince `/24` perché $24 > 16 > 0$. Nel pacchetto B il terzo numero è `55`, quindi né `.10.0/24` né `.20.0/24` corrispondono: vince `/16`.
 
-⚠️ **Errore comune.** Dimenticare il gateway. Una sede da 14 dispositivi sembra entrare in una `/28` (14 host utili), ma con il gateway sono 15: serve una `/27`.
+⚠️ **Errore comune.** Fermarsi alla prima riga dall'alto che sembra andare bene senza controllare tutta la tabella, oppure scrivere `192.0.2.80` nella colonna del prossimo passo.
 
-### 2.2 ✏️ Pratica · ✅ · 🟢 Svolto — Il piano in quattro controlli
+🧠 <u>Più il prefisso è lungo, più il recinto di indirizzi è piccolo e specifico: vince sempre lui.</u>
 
-**Consegna.** Dimensiona le tre sedi (Mare 26, Monte 12, Valle 5 dispositivi, gateway inclusi) e i due collegamenti `/30` dentro `172.18.20.0/24`. Ordina dal più grande, assegna dall'inizio senza buchi, poi controlla il piano con i quattro controlli.
+### 2.2 ✏️ Pratica · 🔍 · 🎯 Da provare — L'effetto YouTube dentro la clinica
 
-**Svolgimento.**
+**Consegna.** Rispondi alle due domande sul quaderno:
 
-1. **Dimensiona.** Mare: $26 + 1 = 27$ → `/27` (30 utili). Monte: $12 + 1 = 13$ → `/28` (14 utili). Valle: $5 + 1 = 6$ → `/29` (6 utili, esattamente). Collegamenti: due `/30`.
-2. **Ordina.** `/27` (32), `/28` (16), `/29` (8), `/30` (4), `/30` (4): in tutto 64 indirizzi.
-3. **Assegna.** Dall'inizio dello spazio, senza buchi:
+1. **Il caso vero del 2008:** il blocco di YouTube era `208.65.152.0/22` (ricorda da sett-ott: una `/22` ha salto 4 nel terzo ottetto, quindi $2^{10} = 1024$ indirizzi da `208.65.152.0` a `208.65.155.255`). Spiega perché l'annuncio `208.65.153.0/24` era contenuto lì dentro e perché batteva la `/22` sui router mondiali.
+2. **In clinica:** per un errore di copia-incolla, qualcuno aggiunge su R-Clinica una rotta statica `10.40.20.128/25` (da `.128` a `.255`) con prossimo passo `198.51.100.9` (il provider). Che cosa succede quando un medico in Ambulatori invia una lastra alla macchina RX `10.40.20.150`? E quando scrive invece alla stampante `10.40.20.30`?
 
-| Rete | Prefisso | Host utili | Broadcast | Gateway o router |
-| --- | --- | --- | --- | --- |
-| `172.18.20.0` (Mare) | `/27` | da `.1` a `.30` | `.31` | gateway Mare `.1` |
-| `172.18.20.32` (Monte) | `/28` | da `.33` a `.46` | `.47` | gateway Monte `.33` |
-| `172.18.20.48` (Valle) | `/29` | da `.49` a `.54` | `.55` | gateway Valle `.49` |
-| `172.18.20.56` (Mare–Monte) | `/30` | `.57` e `.58` | `.59` | Mare `.57`, Monte `.58` |
-| `172.18.20.60` (Monte–Valle) | `/30` | `.61` e `.62` | `.63` | Monte `.61`, Valle `.62` |
+<details>
+<summary>🃏 <b>2.2 — Soluzione</b></summary>
 
-4. **Controlli.**
-   - **Capienza:** 26 ≤ 30, 12 ≤ 14, 5 ≤ 6, 2 ≤ 2 per ogni collegamento.
-   - **Allineamento:** 0 è multiplo di 32; 32 di 16; 48 di 8; 56 e 60 di 4.
-   - **Non sovrapposizione:** 0-31, 32-47, 48-55, 56-59, 60-63: nessun intervallo entra in un altro.
-   - **Tracciabilità:** ogni riga ha rete, prefisso, intervallo, broadcast e gateway.
+1. Il terzo ottetto `153` cade fra `152` e `155`, quindi i 256 indirizzi di `208.65.153.0/24` sono un quarto esatto del blocco `/22` di YouTube. Per quegli indirizzi corrispondevano sia `/22` sia `/24`, e i router hanno scelto **`/24`** perché ha il prefisso più lungo ($24 > 22$).
+2.
+   - Verso **`10.40.20.150`**: l'indirizzo cade sia in `10.40.20.0/24` sia nella nuova `10.40.20.128/25` (che copre `.128`–`.255`). Vince **`/25`** ($25 > 24$): R-Clinica spedisce per errore il traffico interno verso il provider `198.51.100.9` invece di consegnarlo in Radiologia!
+   - Verso **`10.40.20.30`**: `.30` è minore di `.128`, quindi **non** entra nella `/25`. La riga più stretta resta `10.40.20.0/24` e la stampante continua a funzionare regolarmente: un guasto «a metà reparto» tipico dei prefissi sbagliati.
 
-📌 **Spazio libero.** Restano `172.18.20.64` - `172.18.20.255`.
+</details>
 
-⚠️ **Errore comune.** Sommare le dimensioni e pensare che il piano sia giusto. Un blocco non allineato lascia buchi che nessuno può usare.
+### 2.3 📖 Teoria · ✅ · 🎯 Da provare — Quattro frasi da verificare
 
-🧠 <u>Prima si dimensiona ogni rete; poi si assegnano gli indirizzi, dal più grande.</u>
+**Consegna.** Per ognuna di queste frasi dette durante il turno scrivi **V** (vera) o **F** (falsa). Correggi in una frase quelle false.
 
-### 2.3 ✏️ Pratica · 🔍 · 🎯 Da provare — Il collegamento sbagliato
-
-**Consegna.** Il collegamento Mare–Monte dovrebbe stare in `172.18.20.56/30`. Un tecnico propone `172.18.20.58/30`, con router Mare a `.59` e router Monte a `.60`. Trova gli errori: rete, host e broadcast del blocco, e chi occupa quali indirizzi.
+1. «Per far parlare un PC degli Ambulatori (`10.40.10.25`) con uno della Radiologia (`10.40.20.45`) basta uno switch, visto che sono sullo stesso piano.»
+2. «Il gateway configurato sui PC degli Ambulatori deve essere `10.40.10.1`, non `198.51.100.9`.»
+3. «Perché i medici possano navigare sul web, R-Clinica deve avere in tabella una riga per ogni sito di Internet.»
+4. «Se cade il cavo verso il provider e sparisce la riga `0.0.0.0/0`, Ambulatori e Radiologia continuano comunque a scambiarsi dati attraverso R-Clinica.»
 
 <details>
 <summary>🃏 <b>2.3 — Soluzione</b></summary>
 
-Il `58` sta nel blocco 56-59: la rete corretta è `172.18.20.56/30`, con host `.57` e `.58` e broadcast `.59`.
-
-- **Errore 1:** `.59` è il broadcast, non si assegna a un router.
-- **Errore 2:** `.60` è la rete del collegamento Monte–Valle, cioè un altro blocco.
-
-Il piano giusto: Mare `.57`, Monte `.58`.
-
-</details>
-
-### 2.4 📖 Teoria · 🔍 · 🎯 Da provare — Perché un /30
-
-**Consegna.** In una frase per ciascuna domanda:
-
-- (a) Perché un collegamento fra due router ha una `/30`?
-- (b) Quanti indirizzi si sprecherebbero se per il collegamento Mare–Monte usassi una `/27`?
-- (c) Perché il gateway si conta fra i dispositivi di una sede?
-
-<details>
-<summary>🃏 <b>2.4 — Soluzione</b></summary>
-
-- (a) Perché i due apparati sono due: servono due host, più la rete e il broadcast, cioè quattro indirizzi.
-- (b) Una `/27` ha 32 indirizzi; ne servono 2. Se ne sprecano 30.
-- (c) Il gateway è un dispositivo della sede: occupa un indirizzo host della sua rete.
-
-🧠 <u>Un collegamento fra router occupa spazio come una rete: 4 indirizzi, 2 usabili.</u>
+1. **F.** Non conta il piano dell'edificio ma il confine di rete: `10.40.10.0/24` e `10.40.20.0/24` sono due reti diverse, quindi lo switch non basta e serve il router R-Clinica.
+2. **V.** Il gateway di un PC deve appartenere alla **stessa rete locale** del PC (`10.40.10.0/24`), cioè l'interfaccia di R-Clinica verso gli Ambulatori (`.1`).
+3. **F.** A R-Clinica basta l'unica riga predefinita `0.0.0.0/0` verso il vicino del provider (`198.51.100.9`); saranno i router successivi a conoscere il resto della strada.
+4. **V.** Per andare fra `10.40.10.0/24` e `10.40.20.0/24` R-Clinica usa le sue due righe collegate `/24`, senza toccare la rotta predefinita.
 
 </details>
 
 ---
 
-## 🌐 Dossier 3 · IPv6: lo spazio nuovo
+## 🛣️ Dossier 3 · Strade a senso unico e buchi neri
 
-*Si usa S3: notazione, compressione, prefisso `/64`, tipi di indirizzo.*
+*Si usa [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md): rotta statica, collegamenti `/30`, controllo del prossimo passo, default route, `ping` e `traceroute`.*
 
-### 📜 Caso reale: lo spazio che finisce
+### 📜 Caso vero: palleggi infiniti e buchi neri voluti
 
-Il 3 febbraio 2011 la IANA, l'ente che distribuisce i grandi blocchi di indirizzi, assegna gli ultimi blocchi liberi di IPv4 ai registri regionali. Il 6 giugno 2012 il *World IPv6 Launch* porta IPv6 in modo permanente su grandi fornitori e siti. Il NAT ha tamponato per anni: IPv6 è la soluzione strutturale, ma IPv4 non è ancora sparito.
+Quando le tabelle sono scritte a mano, i router obbediscono alla lettera senza fare domande. Nella pratica quotidiana delle reti questo genera due fenomeni opposti e famosissimi:
+- **Il loop di routing (errore):** se il router R1 manda «tutto ciò che non conosco» (`0.0.0.0/0`) a R2 e R2 manda «tutto ciò che non conosco» a R1, un pacchetto per una rete inesistente rimbalza avanti e indietro fra R1 e R2 come una pallina da ping-pong. Non gira in eterno solo grazie al campo **TTL** (*Time To Live*, visto in S3 sett-ott), che cala di 1 a ogni salto finché arriva a zero e il router scarta il pacchetto.
+- **La rotta *blackhole* (difesa):** quando un indirizzo pubblico subisce un attacco che intasa i cavi, i difensori creano apposta una rotta statica `/32` che butta i pacchetti per quell'indirizzo direttamente nel cestino (*null route*) già sul bordo esterno, salvando il resto dell'azienda.
 
-### 3.1 📖 Teoria · ✅ · 🟢 Svolto — Comprimere un indirizzo
+🧠 <u>Una rotta statica fa esattamente ciò che hai scritto: controlla sempre il prossimo passo e la strada di ritorno.</u>
 
-**Consegna.** Comprimi `2001:0db8:0000:0000:0000:0a00:0005:0010`.
+### 🃏 Riscaldamento rapido
+
+<details>
+<summary>🃏 <b>Quale controllo devi fare sempre sull'indirizzo scelto come prossimo passo?</b></summary>
+Deve appartenere a una rete collegata direttamente al router su cui stai scrivendo la rotta (ed essere l'indirizzo del vicino, non il proprio).
+</details>
+
+<details>
+<summary>🃏 <b>Perché fra due router collegati da un cavo si usa spesso un prefisso <code>/30</code>?</b></summary>
+Perché un <code>/30</code> contiene 4 indirizzi totali e lascia esattamente 2 indirizzi utili (tolti rete e broadcast), uno per ciascun router.
+</details>
+
+<details>
+<summary>🃏 <b>Come si scrive la rotta predefinita in IPv6?</b></summary>
+Si scrive <code>::/0</code>: prefisso zero, quindi corrisponde a qualunque indirizzo IPv6 quando non c'è una riga più specifica.
+</details>
+
+<details>
+<summary>🃏 <b>Che cosa mostra in più <code>traceroute</code> rispetto a <code>ping</code> quando una comunicazione non riesce?</b></summary>
+<code>ping</code> dice solo se la risposta torna o no; <code>traceroute</code> elenca uno per uno i router raggiunti e mostra l'ultimo punto prima dell'interruzione.
+</details>
+
+### Topologia del dossier: la cooperativa marittima «Tre Fari»
+
+Tre sedi lungo la costa (valori inventati) sono unite in fila dai router **R1**, **R2** e **R3**, con due collegamenti `/30`:
+
+<img src="Allegati/nov-dic-eserciziario-topologia-faro.svg" width="780" alt="Topologia della cooperativa Tre Fari: sedi Rocca, Porto e Faro con router R1, R2, R3 e collegamenti /30">
+
+*Schema della rete «Tre Fari» (schema originale per questa dispensa): Rocca (`172.24.10.0/27`), Porto (`172.24.10.32/28`), Faro (`172.24.10.48/29`), collegamenti R1–R2 (`.64/30`) e R2–R3 (`.68/30`).*
+
+### 3.1 ✏️ Pratica · ✅ · 🟢 Svolto — Scrivere le rotte mancanti su R1 e R2
+
+**Consegna.** Osserva lo schema di «Tre Fari»:
+1. Scrivi la rotta statica che serve su **R1** per raggiungere la sede **Faro** (`172.24.10.48/29`), eseguendo il controllo sul prossimo passo.
+2. Completa le due righe statiche che mancano nella tabella del router centrale **R2** (verso **Rocca** e verso **Faro**).
 
 **Svolgimento.**
 
-1. **Gruppi.** `2001` · `0db8` · `0000` · `0000` · `0000` · `0a00` · `0005` · `0010`: sono 8.
-2. **Zeri iniziali.** Tolti da ogni gruppo: `2001` · `db8` · `0` · `0` · `0` · `a00` · `5` · `10`.
-3. **Sequenza di zeri.** I tre gruppi `0` consecutivi diventano `::`.
-4. **Risultato.** `2001:db8::a00:5:10`.
+1. **Su R1 verso Faro:**
+   - **Rete e prefisso:** `172.24.10.48/29`.
+   - **Prossimo passo:** per andare verso R3, R1 deve passare il pacchetto al vicino **R2** sul cavo che li unisce → **`172.24.10.66`**.
+   - **Controllo:** R1 è collegato a `172.24.10.64/30` (indirizzi utili `.65` e `.66`). `.66` sta su quella rete ed è l'indirizzo di R2 (non di R1). Controllo superato.
 
-📌 **Controllo.** Restano 5 gruppi visibili (`2001`, `db8`, `a00`, `5`, `10`) più i tre zeri: 8 in tutto.
+2. **Tabella completa delle sedi su R2:** R2 vede già direttamente Porto (`.32/28`), il cavo R1–R2 (`.64/30`) e il cavo R2–R3 (`.68/30`). Gli mancano le due sedi esterne:
 
-⚠️ **Errore comune.** Togliere zeri in mezzo a un gruppo: `0a00` diventa `a00`, non `a0`.
+| Rete di destinazione | Prefisso | Prossimo passo | Controllo del vicino |
+| --- | :---: | --- | --- |
+| `172.24.10.0` (Rocca) | `/27` | **`172.24.10.65`** | `.65` è R1 sul cavo `.64/30` collegato a R2 |
+| `172.24.10.48` (Faro) | `/29` | **`172.24.10.70`** | `.70` è R3 sul cavo `.68/30` collegato a R2 |
 
-🧠 <u>Si tolgono gli zeri iniziali di ogni gruppo; una sola sequenza di zeri diventa `::`.</u>
+📌 **Controllo.** Nessuna riga usa come prossimo passo un indirizzo proprio di R2 (`.33`, `.66`, `.69`).
 
-### 3.2 ✏️ Pratica · ✅ · 🟢 Svolto — Rete di un indirizzo
+⚠️ **Errore comune.** Scrivere su R1 `172.24.10.70` (R3) come prossimo passo per Faro: R1 non è collegato al cavo `.68/30`, quindi non sa come raggiungere direttamente `.70`!
 
-**Consegna.** Per `2001:db8:4f2a:17:5c1e:9d3b:7a20:4e81/64` scrivi: (a) la rete, nella forma `prefisso::/64`; (b) quanti gruppi appartengono alla rete; (c) quanti indirizzi contiene una rete così.
+🧠 <u>Su una catena di router, ogni router indica solo il vicino del primo salto: non salta mai al router in fondo.</u>
 
-**Svolgimento.**
+### 3.2 ✏️ Pratica · 🔍 · 🎯 Da provare — Due guasti diagnosticati su carta
 
-1. **Rete.** I primi 64 bit sono i primi 4 gruppi: `2001:db8:4f2a:17::/64`.
-2. **Gruppi di rete.** 4, cioè $4 \times 16 = 64$ bit.
-3. **Indirizzi.** $2^{64}$, circa 18 miliardi di miliardi.
+**Consegna.** Sulla rete «Tre Fari» ti segnalano due problemi distinti. Analizzali:
 
-📌 **Controllo.** Il `/64` non vuol dire 64 host: vuol dire 64 bit di rete.
+- **Incidente A (andata senza ritorno):** su R1 e R2 tutte le rotte sono perfette. Sul router **R3** del Faro, invece, ci sono soltanto le due reti collegate direttamente (`172.24.10.48/29` e `172.24.10.68/30`) e nessuna rotta statica. Un tecnico dalla sede Rocca (`172.24.10.10`) lancia un `ping` verso il sensore del Faro (`172.24.10.50`) e non riceve risposta.
+  1. Il pacchetto di andata arriva fino al sensore `.50` oppure si ferma prima? Dove si perde la comunicazione e perché?
+  2. Siccome dal Faro c'è un solo cavo per uscire verso tutto il resto della cooperativa e verso Internet, scrivi l'**unica riga** (`0.0.0.0/0`) da aggiungere su R3 per far funzionare tutto, indicando rete, prefisso e prossimo passo.
+- **Incidente B (la riga sbagliata):** su R1 un apprendista scrive la rotta verso Porto così: rete `172.24.10.32`, prefisso `/28`, prossimo passo `172.24.10.33`. Spiega quale controllo fallisce e correggi il prossimo passo.
 
-### 3.3 ✏️ Pratica · 🔍 · 🎯 Da provare — Trova l'errore
+<details>
+<summary>🃏 <b>3.2 — Soluzione</b></summary>
 
-**Consegna.** Un collega scrive tre indirizzi. Per ognuno dì se è valido; se non lo è, quale regola viola.
+- **Incidente A:**
+  1. Il pacchetto di **andata arriva** regolarmente fino al sensore `172.24.10.50` (R1 lo passa a R2 `.66`, R2 lo passa a R3 `.70`, R3 lo consegna sulla LAN Faro). Quando però il sensore risponde verso `172.24.10.10`, consegna la risposta al suo gateway **R3**, che cerca `172.24.10.10` nella propria tabella: non trovando nessuna riga per `.0/27` né una rotta predefinita, **R3 scarta il pacchetto di ritorno**.
+  2. Basta aggiungere su R3 la rotta predefinita **`0.0.0.0/0` con prossimo passo `172.24.10.69`** (l'interfaccia di R2 sul cavo `172.24.10.68/30`, collegato direttamente a R3).
+- **Incidente B:** `172.24.10.33` è l'interfaccia LAN di R2 dentro Porto (`.32/28`), una rete che **non** è collegata direttamente a R1. Il prossimo passo corretto su R1 è **`172.24.10.66`** (R2 sul cavo `.64/30`).
 
-a) `2001:db8::1::5`
-b) `2001:db8:0:0:0:0:0:0:1`
-c) `2001:db8::a00:5:10`
+</details>
+
+### 3.3 📖 Teoria · 🔍 · 🎯 Da provare — Il ping-pong fra R1 e R2
+
+**Consegna.** Normalmente R2 ha la rotta predefinita `0.0.0.0/0` verso R1 (`172.24.10.65`), e R1 ha `0.0.0.0/0` verso il provider (`203.0.113.13`). Immagina che per errore qualcuno modifichi la `0.0.0.0/0` di R1 mettendole come prossimo passo R2 (`172.24.10.66`).
+
+1. Che cosa succede passo dopo passo quando un PC di Rocca invia un pacchetto a `172.24.10.200` (un indirizzo che non appartiene a nessuna delle tre sedi)?
+2. Che cosa vedresti nell'elenco delle tappe di un `traceroute` lanciato verso `172.24.10.200`, e perché il pacchetto alla fine viene eliminato?
 
 <details>
 <summary>🃏 <b>3.3 — Soluzione</b></summary>
 
-- a) **Non valido.** Il `::` compare due volte: non si capisce quanti zeri stanno in ciascun punto.
-- b) **Non valido.** Contando i gruppi sono 9 (`2001`, `db8`, sei zeri, `1`): gli indirizzi IPv6 hanno 8 gruppi.
-- c) **Valido.** Un solo `::`, otto gruppi in tutto.
-
-</details>
-
-### 3.4 📖 Teoria · 🔍 · 🎯 Da provare — Vero o falso?
-
-1. Con 128 bit il prefisso non serve più. 
-2. Un `/64` significa 64 host.
-3. IPv4 ha circa 4,3 miliardi di indirizzi.
-4. In IPv6 il `::` si può usare più volte.
-5. Una rete locale tipica usa un `/64`.
-
-<details>
-<summary>🃏 <b>3.4 — Soluzione</b></summary>
-
-1. **F.** Il prefisso resta: dice dove finisce la rete. Cambia la lunghezza dell'indirizzo.
-2. **F.** `/64` sono 64 bit di rete; gli indirizzi possibili sono $2^{64}$.
-3. **V.** $2^{32} = 4\,294\,967\,296$.
-4. **F.** Una sola volta, per non creare ambiguità.
-5. **V.** È la prassi comune, non un obbligo del protocollo.
-
-</details>
-
-### 3.5 ✏️ Pratica · ✅ · 🎯 Da provare — Che tipo è?
-
-**Consegna.** Scrivi il tipo di ciascun indirizzo: globale, link-local o multicast.
-
-a) `2001:db8:a::7`
-b) `fe80::a1`
-c) `ff02::2`
-
-<details>
-<summary>🃏 <b>3.5 — Soluzione</b></summary>
-
-- a) **Globale.** Il prefisso `2001:db8::/32` è quello della documentazione: nel quaderno lo leggi come un indirizzo pubblico, che nelle reti reali sarebbe globale.
-- b) **Link-local.** Il prefisso `fe80::/10` vale solo sul tratto di rete locale.
-- c) **Multicast.** `ff02::2` è il gruppo di tutti i router del collegamento locale.
+1. Su R1 nessuna riga specifica contiene `172.24.10.200`, quindi R1 usa `0.0.0.0/0` e lo manda a **R2** (`.66`). Anche su R2 nessuna riga specifica corrisponde, quindi R2 usa la propria `0.0.0.0/0` e lo rimanda a **R1** (`.65`), che lo rimanda a R2, creando un **ciclo (loop) di instradamento**.
+2. Nel `traceroute` vedresti alternarsi ripetutamente gli indirizzi di R1 e R2 (`172.24.10.1`, `.66`, `.65`, `.66`, `.65`…). Il pacchetto non gira per sempre perché a ogni passaggio i router diminuiscono di 1 il campo **TTL** dell'header IP finché arriva a zero e il pacchetto viene scartato.
 
 </details>
 
 ---
 
-## 🧭 Dossier 4 · Router e tabella
+## 🔄 Dossier 4 · Quando un vicino racconta bugie
 
-*Si usa S4: router, gateway, tabella, prossimo passo, rotta predefinita, prefisso più lungo.*
+*Si usa [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md): limiti del routing statico, Distance Vector, Link State, costo e convergenza.*
 
-### 📜 Caso reale: il prefisso più lungo vince
+### 📜 Caso vero: maggio 1979, la ARPANET cambia cervello
 
-Il 24 febbraio 2008, secondo la ricostruzione del RIPE NCC, un provider pakistano annuncia nel mondo un prefisso `/24` (208.65.153.0/24) più specifico di quello legittimo di YouTube (208.65.152.0/22). Per la regola del prefisso più lungo, il traffico verso YouTube viene attirato dal provider sbagliato, per un tempo limitato.
+Per i suoi primi dieci anni la rete **ARPANET** aggiorna le tabelle con un meccanismo basato sul passaparola (*Distance Vector*): ogni nodo comunica periodicamente ai vicini la propria tabella di distanze. Con il crescere della rete emerge un difetto pesante: quando cade un collegamento, la brutta notizia viaggia una tappa alla volta, e nel frattempo un vicino non ancora aggiornato può convincere gli altri di avere ancora una strada valida, facendo rimbalzare i pacchetti nel vuoto.
 
-Il meccanismo è quello di S4: <u>il prefisso più lungo vince, anche quando è sbagliato.</u>
+Nel maggio 1979 gli ingegneri McQuillan, Richer e Rosen sostituiscono l'algoritmo con il modello **Link State**: ogni router spedisce subito a tutti lo stato dei propri collegamenti diretti, così tutti possiedono la **stessa mappa completa** e ciascuno ricalcola da solo le strade migliori.
 
-### Scenario: il router R della sede centrale
+🕵️ **Angolo sicurezza.** Il routing dinamico si basa sulla fiducia nei messaggi ricevuti: se un intruso collegasse un finto router annunciando «raggiungo tutte le reti a costo 1!», attirerebbe a sé i pacchetti. Per questo nelle reti professionali i router firmano e autenticano gli annunci di routing prima di accettarli.
 
-Il router R della sede centrale di Ponte Srl (inventato; diverso dalla topologia dei dossier 2 e 5) ha questa tabella:
+🧠 <u>Distance Vector si fida delle distanze raccontate dai vicini; Link State ricostruisce la mappa intera e calcola da sé.</u>
 
-| Rete di destinazione | Prefisso | Prossimo passo | Uscita |
-| --- | --- | --- | --- |
-| `172.18.100.0` | `/24` | collegata | Amministrazione |
-| `172.18.101.0` | `/24` | collegata | Server |
-| `172.18.102.0` | `/24` | collegata | Magazzino |
-| `198.51.100.0` | `/30` | collegata | verso il provider (`198.51.100.2`) |
-| `0.0.0.0` | `/0` | `198.51.100.1` | verso il provider |
+### 🃏 Riscaldamento rapido
 
-### 4.1 📖 Teoria · ✅ · 🟢 Svolto — Quale riga, quale direzione
+<details>
+<summary>🃏 <b>Che cosa si scambiano i router nel principio Distance Vector?</b></summary>
+Si scambiano con i soli vicini diretti la propria tabella di distanze («arrivo alla rete X con costo d»).
+</details>
 
-**Consegna.** Per ciascun pacchetto scrivi la riga scelta e il prossimo passo:
+<details>
+<summary>🃏 <b>Che cosa si scambiano invece i router nel principio Link State?</b></summary>
+Si scambiano gli annunci sui propri collegamenti attivi e i relativi costi, così tutti costruiscono la stessa mappa completa della rete.
+</details>
 
-- (a) destinazione `172.18.101.9` (Server);
-- (b) destinazione `172.18.103.5`;
-- (c) destinazione `8.8.8.8` (indirizzo pubblico reale, usato come destinazione esterna).
+<details>
+<summary>🃏 <b>Che cos'è la convergenza dopo un guasto?</b></summary>
+È il momento in cui tutti i router hanno terminato di scambiarsi gli aggiornamenti e hanno di nuovo tabelle coerenti sulla nuova topologia.
+</details>
+
+<details>
+<summary>🃏 <b>🤓 Quale principio usa il protocollo RIP e quale usa OSPF?</b></summary>
+<i>RIP</i> usa il principio Distance Vector; <i>OSPF</i> usa il principio Link State.
+</details>
+
+### 4.1 📖 Teoria · ✅ · 🟢 Svolto — Passaparola e mappa su un triangolo
+
+**Consegna.** Tre router **M**, **N** e **T** sono collegati a triangolo con questi costi inventati:
+- collegamento **M–N**: costo **2**;
+- collegamento **N–T**: costo **3**;
+- collegamento diretto **M–T**: costo **8**.
+
+1. Con **Distance Vector**, M non vede il tratto N–T, ma riceve dal vicino N il messaggio: *«Raggiungo T con costo 3»*. Quale calcolo fa M e quale prossimo passo sceglie per andare verso T?
+2. Con **Link State**, che cosa possiede M in memoria e come arriva a scegliere la strada verso T?
 
 **Svolgimento.**
 
-- (a) Corrisponde `172.18.101.0/24`: la rete Server è collegata direttamente. Nessun vicino.
-- (b) Nessuna riga più stretta contiene `172.18.103.5`. Resta solo `0.0.0.0/0`: prossimo passo `198.51.100.1`.
-- (c) Solo `0.0.0.0/0`: prossimo passo `198.51.100.1`.
+1. **Con Distance Vector:** M somma il costo per arrivare al vicino N (`2`) al costo annunciato da N (`3`), ottenendo $2 + 3 = 5$. Poi confronta `5` (via N) con `8` (cavo diretto M–T): poiché $5 < 8$, sceglie **prossimo passo N** con **costo totale 5**.
+2. **Con Link State:** M ha ricevuto gli annunci di tutti i router e possiede in memoria la **mappa completa** dei tre nodi e dei tre collegamenti (`M–N = 2`, `N–T = 3`, `M–T = 8`). Sulla mappa calcola da solo tutti i percorsi possibili da M a T (`M → N → T = 5` contro `M → T = 8`) e mette in tabella **prossimo passo N**, costo **5**.
 
-📌 **Controllo.** Un `/24` contiene 256 indirizzi: da `172.18.101.0` a `172.18.101.255`. Il `.9` ci sta.
+📌 **Controllo.** Con la rete integra i due principi arrivano alla **stessa tabella finale**; cambia il modo in cui ci arrivano e come reagiscono ai guasti.
 
-⚠️ **Errore comune.** Scrivere `8.8.8.8` come prossimo passo. Il prossimo passo è il vicino: per `8.8.8.8` è `198.51.100.1`.
+⚠️ **Errore comune.** Scrivere che il costo via N vale `3` dimenticando di sommare il `2` del primo tratto M–N, oppure pensare che costo `8` significhi «8 chilometri» o «più veloce di 5»: un costo più basso indica sempre un percorso migliore.
 
-🧠 <u>Il router decide solo il passo successivo; il resto lo decidono i router vicini.</u>
+🧠 <u>Il costo di un percorso è la somma dei costi di tutti i collegamenti attraversati; vince il costo minore.</u>
 
-### 4.2 ✏️ Pratica · ✅ · 🟢 Svolto — La riga più stretta
+### 4.2 ✏️ Pratica · 🔍 · 🎯 Da provare — Un cavo tranciato nella notte
 
-**Consegna.** Alla tabella di R viene aggiunta una riga inventata, `172.18.0.0/16` verso `198.51.100.1`. Per `172.18.101.9` e per `172.18.103.5` scrivi quali righe contengono l'indirizzo e quale vince.
+**Consegna.** Riprendi lo stesso triangolo (**M–N = 2**, **N–T = 3**, **M–T = 8**). Alle 02:00 uno scavo stradale trancia di netto il cavo **N–T**.
 
-**Svolgimento.**
+1. Se sulla rete ci fossero solo **rotte statiche** configurate sul percorso migliore di prima, dove continuerebbe M a mandare i pacchetti per T, e che fine farebbero?
+2. Con il **routing dinamico**, una volta raggiunta la **convergenza**, quale strada usa M per raggiungere T e con quale costo?
+3. Spiega in due frasi perché, nei primi istanti subito dopo il taglio, un protocollo *Distance Vector* rischia più di un *Link State* di prendere decisioni sbagliate usando «notizie vecchie».
 
-| Riga | Prefisso | Contiene `172.18.101.9`? | Contiene `172.18.103.5`? |
-| --- | --- | --- | --- |
-| `172.18.101.0` | `/24` | sì | no |
-| `172.18.0.0` | `/16` | sì | sì |
-| `0.0.0.0` | `/0` | sì | sì |
+<details>
+<summary>🃏 <b>4.2 — Soluzione</b></summary>
 
-1. Per `172.18.101.9` vince `/24`: è la riga con il prefisso più lungo.
-2. Per `172.18.103.5` vince `/16`, più stretta di `/0`.
-3. Il prossimo passo di `/16` è `198.51.100.1`, lo stesso della predefinita: la direzione non cambia.
+1. Con rotte statiche la tabella di M non si accorge del guasto: continua a mandare i pacchetti a **N**, e N non potendo più inoltrarli sul cavo N–T rotto li **scarta** (anche se il cavo diretto M–T è perfettamente funzionante!).
+2. Dopo la convergenza M usa l'unico percorso rimasto, cioè il collegamento diretto **M → T**, con **costo 8**.
+3. Nel *Distance Vector* nessuno vede la mappa intera e la notizia del cavo rotto deve propagarsi di tabella in tabella tra vicini, quindi per un po' un router può fidarsi di una distanza vecchia non più vera. Nel *Link State*, invece, l'annuncio che «il collegamento N–T è giù» viene diffuso a tutti e ciascun router lo cancella subito dalla propria mappa ricalcolando il percorso.
 
-📌 **Controllo.** Più il prefisso è lungo, più la riga è stretta e vince.
+</details>
 
-🧠 <u>Vince la riga più stretta; se due righe portano allo stesso vicino, la scelta non cambia la strada.</u>
+### 4.3 📖 Teoria · ✅ · 🎯 Da provare — Distance Vector, Link State o entrambi?
 
-### 4.3 ✏️ Pratica · 🔍 · 🎯 Da provare — Disegna il percorso
+**Consegna.** Per ciascuna delle quattro frasi scrivi sul quaderno se vale solo per **DV** (*Distance Vector*), solo per **LS** (*Link State*) oppure per **Entrambi**:
 
-**Consegna.** Un PC del Magazzino (`172.18.102.20`, gateway `172.18.102.1`) scrive a un PC dell'Amministrazione (`172.18.100.5`). Scrivi: (1) la riga che R sceglie per la destinazione; (2) il prossimo passo; (3) se il pacchetto esce verso il provider.
+1. Aggiorna da solo le tabelle dei router quando un collegamento cade, senza che un tecnico debba riscriverle a mano.
+2. Ogni router conosce soltanto i propri vicini diretti e i costi che loro dichiarano, senza sapere com'è fatta la rete più in là.
+3. Ogni router conserva la mappa completa dei collegamenti della rete e calcola localmente i percorsi migliori.
+4. Ha un prezzo rispetto al routing statico: consuma traffico per i messaggi tra router, lavoro di calcolo e un breve tempo di convergenza.
 
 <details>
 <summary>🃏 <b>4.3 — Soluzione</b></summary>
 
-1. La riga `172.18.100.0/24`, collegata direttamente.
-2. Nessun vicino: R consegna il pacchetto sulla rete Amministrazione.
-3. **No.** Il pacchetto passa da R, che è il gateway del Magazzino, ma non esce verso il provider.
-
-</details>
-
-### 4.4 📖 Teoria · 🔍 · 🎯 Da provare — Vero o falso?
-
-1. Lo switch sceglie la strada fra reti diverse.
-2. Il prossimo passo è sempre la destinazione finale.
-3. La rotta predefinita contiene tutta Internet.
-4. Un router conosce solo le righe della sua tabella.
-5. Se due righe corrispondono, vince quella con il prefisso più lungo.
-
-<details>
-<summary>🃏 <b>4.4 — Soluzione</b></summary>
-
-1. **F.** Lo switch lavora dentro una sola rete. Fra reti diverse decide il router.
-2. **F.** È il vicino a cui consegnare il pacchetto.
-3. **F.** La rotta predefinita è usata solo quando nessun'altra riga corrisponde.
-4. **V.**
-5. **V.**
-
-</details>
-
-### 4.5 ✏️ Pratica · 🔍 · 🎯 Da provare — La riga che manca
-
-**Consegna.** Il router Q della sede Valle ha solo due righe: `172.18.100.0/24` e `172.18.101.0/24`, e nessuna rotta predefinita. Q è collegato a R sulla rete `172.18.103.0/30` (Q ha `172.18.103.2`, R ha `172.18.103.1`). Un pacchetto per `8.8.8.8` non trova riga. Scrivi la riga che lo manda verso R, con prefisso e prossimo passo, poi fai il controllo.
-
-<details>
-<summary>🃏 <b>4.5 — Soluzione</b></summary>
-
-Riga: `0.0.0.0/0`, prossimo passo `172.18.103.1`.
-
-Controllo: `172.18.103.1` sta in `172.18.103.0/30`, rete collegata direttamente a Q. Il prossimo passo è raggiungibile.
-
-⚠️ **Errore comune:** scrivere `8.8.8.8/32`. Vale solo per quella destinazione: per tutto il resto il pacchetto si fermerebbe di nuovo.
+1. **Entrambi** (è lo scopo stesso del routing dinamico).
+2. **DV** (*Distance Vector*).
+3. **LS** (*Link State*).
+4. **Entrambi** (nessun protocollo dinamico è «gratis»: scambio di messaggi e convergenza sono il compromesso per adattarsi ai guasti).
 
 </details>
 
 ---
 
-## 🛣️ Dossier 5 · Rotte statiche e default route
+## 🏁 Dossier 5 · Collaudo finale: SOC e Capture The Flag
 
-*Si usa S5: rotta = rete + prefisso + prossimo passo; controllo a due passi; rotta predefinita.*
+*Si usa tutto il bimestre insieme ([S1](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md)–[S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md)), senza suggerire quale regola applicare.*
 
-Ponte Srl usa la topologia del dossier 2, con i valori del piano:
+### 📜 Caso vero: le gare Capture The Flag
 
-- sede Mare `172.18.20.0/27`, router M con LAN `.1` e collegamento `.57`;
-- sede Monte `172.18.20.32/28`, router N con LAN `.33`, collegamento verso M `.58` e verso V `.61`;
-- sede Valle `172.18.20.48/29`, router V con LAN `.49` e collegamento verso N `.62`;
-- collegamenti `172.18.20.56/30` (M–N) e `172.18.20.60/30` (N–V).
+Nelle competizioni **CTF** (*Capture The Flag*) studentesche e universitarie — come le italiane **OliCyber.IT** e **CyberChallenge.IT** — le squadre analizzano reti simulate, configurazioni rotte e tracce di traffico per ricostruire una stringa di verifica chiamata **flag**, scritta nella forma `FLAG{...}`. È il modo più vicino al lavoro vero per verificare se sai unire tutti i pezzi senza andare a memoria.
 
-### 📜 Caso inventato: la sede Valle non risponde
+### 5.1 ✏️ Pratica · 🔍 · 🟢 Svolto + 🎯 Da provare — Tre ticket di fine turno
 
-Lunedì mattina il PC di Valle, `172.18.20.50`, non raggiunge il server di Mare. Le tabelle sono scritte a mano: nessuno le ha aggiornate dopo l'ultima modifica. Valori inventati.
+**Consegna.** Al banco assistenza arrivano tre segnalazioni. Il **Ticket A** è svolto come modello; risolvi sul quaderno il **Ticket B** e il **Ticket C** indicando **che cosa non torna** (o chi sbaglia) e **perché**.
 
-### 5.1 📖 Teoria · ✅ · 🟢 Svolto — Scrivere una rotta
+- **Ticket A (🟢 Svolto).** Un tecnico assegna a una stampante di rete solo l'indirizzo IPv6 `fe80::50/64` e apre un ticket perché dai PC di un altro reparto, separato da un router, nessuno riesce a stamparci.
+- **Ticket B (🎯 Da provare).** Il router **Nord** vede la propria LAN `10.10.1.0/24` (interfaccia `.1`) e il collegamento `10.10.99.0/30` verso il router **Sud** (Nord ha `10.10.99.1`, Sud ha `10.10.99.2`). Per raggiungere la LAN di Sud (`10.10.2.0/24`) sul router Nord è stata scritta la riga: `10.10.2.0/24` → prossimo passo `10.10.99.1`. Nessun pacchetto arriva a Sud.
+- **Ticket C (🎯 Da provare).** Sul router **Est** ci sono tre righe valide: `172.30.0.0/16` → vicino A, `172.30.12.0/24` → vicino B, `0.0.0.0/0` → vicino C. Un pacchetto diretto a `172.30.12.90` esce regolarmente verso il **vicino B**. Un collega dice: *«Funziona grazie alla riga `172.30.0.0/16`!»*. Ha ragione o torto?
 
-**Consegna.** Sul router M scrivi la rotta verso la sede Valle (`172.18.20.48/29`). Il pacchetto passa per N. Scrivi rete, prefisso e prossimo passo, poi fai il controllo a due passi.
+**Svolgimento del Ticket A.**
 
-**Svolgimento.**
-
-1. **Rete e prefisso:** `172.18.20.48/29`.
-2. **Prossimo passo:** l'indirizzo di N sul collegamento che M vede, cioè `172.18.20.58`.
-3. **Controllo 1:** `172.18.20.58` sta in `172.18.20.56/30`, collegato a M. È raggiungibile.
-4. **Controllo 2:** la riga è scritta sul router che vede quel collegamento, cioè M.
-
-Rotta: `172.18.20.48/29` → `172.18.20.58`.
-
-📌 **Controllo.** Il prossimo passo è il vicino (N), non il PC di Valle.
-
-⚠️ **Errore comune.** Scrivere come prossimo passo l'indirizzo del proprio router (`172.18.20.57` per M).
-
-### 5.2 ✏️ Pratica · ✅ · 🟢 Svolto — Completare la tabella di N
-
-**Consegna.** La tabella di N ha tre righe già scritte: sede Monte e i due collegamenti (tutte collegate direttamente). Completa le due righe mancanti: sede Mare `172.18.20.0/27` e sede Valle `172.18.20.48/29`. Per ciascuna scrivi il prossimo passo e il controllo.
-
-**Svolgimento.**
-
-- `172.18.20.0/27` (Mare) → `172.18.20.57`, il router M. Controllo: `.57` sta in `172.18.20.56/30`, collegato a N.
-- `172.18.20.48/29` (Valle) → `172.18.20.62`, il router V. Controllo: `.62` sta in `172.18.20.60/30`, collegato a N.
-
-| Rete | Prefisso | Prossimo passo |
-| --- | --- | --- |
-| `172.18.20.32` (Monte) | `/28` | collegata |
-| `172.18.20.56` (M–N) | `/30` | collegata |
-| `172.18.20.60` (N–V) | `/30` | collegata |
-| `172.18.20.0` (Mare) | `/27` | `172.18.20.57` |
-| `172.18.20.48` (Valle) | `/29` | `172.18.20.62` |
-
-📌 **Controllo.** Il prossimo passo di ogni riga è raggiungibile da N.
-
-🧠 <u>Il prossimo passo sta sempre su una rete che il router vede già.</u>
-
-### 5.3 ✏️ Pratica · 🔍 · 🎯 Da provare — Trova l'errore
-
-**Consegna.** Sul router M il tecnico scrive: rete `172.18.20.48`, prefisso `/29`, prossimo passo `172.18.20.62`. Quale controllo fallisce, e perché?
+1. **Riconosci l'indirizzo:** `fe80::50` inizia con `fe80`, quindi appartiene al blocco `fe80::/10` (**link-local**).
+2. **Applica la regola di confine:** gli indirizzi *link-local* funzionano solo dentro lo stesso tratto locale (cavo/switch) e **non vengono mai inoltrati da un router**.
+3. **Correzione:** per essere raggiunta attraverso un router, la stampante deve avere un indirizzo instradabile fra reti (come un globale `2000::/3`, nei test `2001:db8:...`), oltre al giusto gateway.
 
 <details>
-<summary>🃏 <b>5.3 — Soluzione</b></summary>
+<summary>🃏 <b>5.1 — Soluzione dei Ticket B e C</b></summary>
 
-Fallisce il **controllo 1**. `172.18.20.62` sta in `172.18.20.60/30`, che M non vede: M conosce solo `172.18.20.0/27` e `172.18.20.56/30`.
-
-Correzione: prossimo passo `172.18.20.58`, il vicino N sul collegamento che M vede.
+- **Ticket B:** `10.10.99.1` è l'indirizzo del router **Nord stesso**, non del vicino! Il prossimo passo deve essere l'indirizzo dell'altro capo del cavo `/30`, cioè **`10.10.99.2`** (router Sud).
+- **Ticket C:** Il collega ha **torto sul motivo**. L'indirizzo `172.30.12.90` cade in tutte e tre le righe (`/16`, `/24` e `/0`), ma il router sceglie il vicino B perché vince **`172.30.12.0/24`**, che ha il prefisso più lungo ($24 > 16 > 0$). Se avesse usato la `/16`, il pacchetto sarebbe andato dal vicino A.
 
 </details>
 
-### 5.4 ✏️ Pratica · 🔍 · 🎯 Da provare — Prevedi la riga
+### 5.2 ✏️ Pratica · 🔍 · 🎯 Da provare — Capture The Flag su carta
 
-**Consegna.** Il router N ha, oltre alle sue righe, la rotta predefinita `0.0.0.0/0` verso `172.18.20.57` (M, che esce verso il provider). Per ciascun indirizzo scrivi prima la riga scelta da N e il prossimo passo: `172.18.20.40`, `172.18.20.50`, `8.8.8.8`.
+**Consegna.** Risolvi le quattro sfide qui sotto per ricostruire i cinque frammenti della flag dell'incidente:
+
+```text
+FLAG{frammento1-frammento2-frammento3-frammento4-frammento5}
+```
+
+- **Sfida 1 · Lo spazio compresso.** Nei log compare l'indirizzo IPv6 valido `2001:db8:90::42:1`. **Frammento 1:** il numero di gruppi da 16 bit tutti a zero nascosti dentro `::`.
+- **Sfida 2 · Vince la più stretta.** Un router ha quattro righe in tabella: `0.0.0.0/0`, `10.90.0.0/16`, `10.90.4.0/22` (che copre da `10.90.4.0` a `10.90.7.255`) e `10.90.8.0/24`. Arriva un pacchetto per `10.90.6.25`. **Frammento 2:** il numero del prefisso della riga scelta dal router (solo il numero, senza la barra `/`).
+- **Sfida 3 · Il salto vicino.** Il router **Alfa** vede la propria LAN `192.168.50.0/27` e il collegamento `192.168.50.80/30` (Alfa ha `.81`, il vicino **Beta** ha `.82`). Per scrivere su Alfa la rotta statica verso la LAN `192.168.50.64/28` che sta dietro Beta, quale prossimo passo devi indicare? **Frammento 3:** solo l'ultimo numero (dopo l'ultimo punto) di quell'indirizzo.
+- **Sfida 4 · Il guasto nel triangolo.** Tre router P, Q, R hanno questi costi: `P–Q = 3`, `Q–R = 4`, `P–R diretto = 9`. Si rompe il cavo `Q–R`.
+  - **Frammento 4:** il nuovo costo totale del percorso da P a R una volta raggiunta la convergenza.
+  - **Frammento 5:** le **due iniziali maiuscole** (senza spazi né punti) del principio di routing dinamico in cui ogni router possiede la mappa completa dei collegamenti.
+
+📌 **Autoverifica da gara.** Se vuoi controllare da solo prima di aprire la soluzione, calcola l'impronta SHA-256 della tua stringa esatta `FLAG{...}` (rispettando maiuscole e trattini, senza spazi): deve iniziare con **`c7a2ef20`**.
 
 <details>
-<summary>🃏 <b>5.4 — Soluzione</b></summary>
+<summary>🃏 <b>5.2 — Soluzione</b></summary>
 
-- `172.18.20.40` → `172.18.20.32/28`, collegata: consegna diretta sulla LAN di Monte.
-- `172.18.20.50` → `172.18.20.48/29`, prossimo passo `172.18.20.62`. È la riga più stretta: vince su `/0`.
-- `8.8.8.8` → solo `0.0.0.0/0`, prossimo passo `172.18.20.57`.
+1. **Frammento 1 → `3`:** in `2001:db8:90::42:1` i gruppi scritti sono 5 (`2001`, `db8`, `90`, `42`, `1`), quindi `::` nasconde $8 - 5 = 3$ gruppi di zeri.
+2. **Frammento 2 → `22`:** `10.90.6.25` cade in `/0`, in `10.90.0.0/16` e in `10.90.4.0/22` (perché `6` sta fra `4` e `7`), mentre **non** cade in `10.90.8.0/24`. Fra `/0`, `/16` e `/22` vince il prefisso più lungo: **`22`**.
+3. **Frammento 3 → `82`:** il vicino collegato direttamente ad Alfa sul cavo `192.168.50.80/30` è Beta, con indirizzo `192.168.50.82` → ultimo numero **`82`**.
+4. **Frammento 4 → `9`** e **Frammento 5 → `LS`:** caduto `Q–R`, il percorso `P → Q → R` (costo 7) sparisce e resta il collegamento diretto `P → R` di costo **`9`**; il principio basato sulla mappa completa è **Link State** (**`LS`**).
 
-⚠️ **Errore comune.** Scegliere la predefinita per `172.18.20.50` perché «è la riga generale». La rotta predefinita vince solo quando nessun'altra riga corrisponde.
+**Flag completa:** `FLAG{3-22-82-9-LS}` (impronta SHA-256: `c7a2ef20...`).
 
 </details>
 
-### 5.5 📖 Teoria · 🔍 · 🎯 Da provare — Perché una default route su Valle
+### 🩹 Dove riprendere se un dossier ti ha bloccato
 
-**Consegna.** In una frase: perché il router V può avere una sola rotta predefinita, `0.0.0.0/0` verso `172.18.20.61`, invece di una riga per ogni sede?
-
-<details>
-<summary>🃏 <b>5.5 — Soluzione</b></summary>
-
-V ha un solo collegamento verso il resto della rete, quello con N. Tutto ciò che non sta nella sua LAN va a N, che sa come proseguire: una riga sola basta. Il prossimo passo `172.18.20.61` sta in `172.18.20.60/30`, collegato a V.
-
-</details>
-
----
-
-## 🔁 Dossier 6 · Distance Vector e Link State
-
-*Si usa S6: passaparola contro mappa, costo, convergenza. Nessuna configurazione.*
-
-### 📜 Caso reale: la ARPANET cambia metodo
-
-Nei primi anni la ARPANET usa un metodo di tipo passaparola (**Distance Vector**): ogni nodo dice ai vicini quanto costa arrivare a ogni destinazione. Il metodo reagisce lentamente ai guasti e può far girare i messaggi per un po' in tondo. Nel 1979 la rete passa a un algoritmo basato sulla mappa dei collegamenti (**Link State**), descritto nel 1980 da McQuillan, Richer e Rosen.
-
-Per i dossier 6 usiamo un triangolo inventato con costi inventati: **A–B costa 2**, **B–C costa 3**, **A–C costa 7**. Il costo è un numero che misura quanto conviene un percorso, non una velocità.
-
-### 6.1 📖 Teoria · ✅ · 🟢 Svolto — Il passaparola di A
-
-**Consegna.** A riceve da B la frase «so andare a C con costo 3». Il collegamento A–B costa 2. A ha anche il collegamento diretto A–C, che costa 7. Quale strada sceglie A per C, e con quale costo?
-
-**Svolgimento.**
-
-1. **Via B:** costo di A–B più quello annunciato da B: $2 + 3 = 5$.
-2. **Diretta:** 7.
-3. **Scelta:** il costo minore, 5, passando da B.
-
-📌 **Controllo.** Il costo di un percorso è la somma dei costi dei collegamenti attraversati.
-
-⚠️ **Errore comune.** Sommare solo il costo di B–C, dimenticando quello di A–B.
-
-🧠 <u>Distance Vector: A non conosce la strada, conosce ciò che gli dicono i vicini.</u>
-
-### 6.2 ✏️ Pratica · ✅ · 🟢 Svolto — La mappa di A
-
-**Consegna.** Con Link State, A conosce la mappa: tre router e tre collegamenti (A–B 2, B–C 3, A–C 7). Calcola il percorso migliore da A a C.
-
-**Svolgimento.**
-
-1. **Percorsi possibili:** A → C diretto (7); A → B → C (5).
-2. **Migliore:** A → B → C, costo 5.
-
-📌 **Controllo.** Lo stesso calcolo, fatto da C verso A, dà C → B → A con costo 5: le strade sono coerenti perché la mappa è la stessa per tutti.
-
-🧠 <u>Link State: tutti hanno la stessa mappa; ognuno calcola da sé la propria strada.</u>
-
-### 6.3 ✏️ Pratica · 🔍 · 🎯 Da provare — Prevedi il guasto
-
-**Consegna.** Cade il collegamento A–B. Per ciascun principio scrivi quale percorso usa A per arrivare a C e con quale costo.
-
-<details>
-<summary>🃏 <b>6.3 — Soluzione</b></summary>
-
-- **Link State:** A riceve l'annuncio della caduta, toglie A–B dalla mappa e ricalcola. Resta solo il diretto A–C: costo 7.
-- **Distance Vector:** A non ha più la riga «C via B, costo 5». Usa quella diretta, che conosce dal proprio collegamento: costo 7.
-
-Il risultato finale coincide. Cambia il tempo: il Distance Vector può usare per un po' la notizia vecchia prima di correggerla.
-
-</details>
-
-### 6.4 📖 Teoria · 🔍 · 🎯 Da provare — Notizie vecchie
-
-**Consegna.** In due frasi: perché un router Distance Vector può usare una notizia vecchia? Perché un Link State ha meno questo problema?
-
-<details>
-<summary>🃏 <b>6.4 — Soluzione</b></summary>
-
-Il Distance Vector sa solo ciò che dicono i vicini: ogni notizia fa tappe di vicino in vicino, e nel frattempo qualcuno può non essere aggiornato.
-
-Il Link State riceve l'annuncio del collegamento caduto, che arriva a tutti, e ognuno ricalcola sulla mappa. Non elimina il ritardo: serve tempo per la convergenza.
-
-</details>
-
-### 6.5 📖 Teoria · ✅ · 🎯 Da provare — Vero o falso?
-
-1. Un Link State conosce solo i propri vicini.
-2. Un Distance Vector conosce la mappa completa.
-3. Nel routing la «distanza» è un costo, non una velocità.
-4. La convergenza è il momento in cui tutti i router hanno la stessa informazione aggiornata.
-
-<details>
-<summary>🃏 <b>6.5 — Soluzione</b></summary>
-
-1. **F.** Il Link State conosce la mappa completa.
-2. **F.** Il Distance Vector sa solo ciò che gli dicono i vicini.
-3. **V.** Un collegamento a costo basso non è necessariamente veloce.
-4. **V.**
-
-</details>
-
----
-
-## 🧠 Dossier 7 · Livello finale: ripasso mescolato
-
-*Si usa S7: tutti i temi insieme, senza indicare il metodo. Nessun argomento nuovo: è un ripasso, non una verifica.*
-
-### 📜 Caso inventato: lunedì a Ponte Srl
-
-Lunedì alle 8:00 la segreteria chiama. Ti trovi tre ticket sul tavolo. Nessuno ti dice quale metodo usare: prima guarda i dati, poi scegli. Valori inventati.
-
-### 7.1 ✏️ Base · ✅ · 🎯 Da provare — Ticket 1: l'indirizzo del PC
-
-**Consegna.** Un PC ha `172.18.122.77/23`. Scrivi rete, broadcast, primo e ultimo host, host ordinari.
-
-<details>
-<summary>🃏 <b>7.1 — Soluzione</b></summary>
-
-Salto nel terzo ottetto: $256 - 254 = 2$. Il `122` è multiplo di 2: rete `172.18.122.0/23`. Broadcast `172.18.123.255`. Host da `172.18.122.1` a `172.18.123.254`. Host ordinari: $2^9 - 2 = 510$.
-
-</details>
-
-### 7.2 ✏️ Medio · 🔍 · 🎯 Da provare — Ticket 2: la sede nuova
-
-**Consegna.** Ponte Srl apre una sede **Nuova** con 100 dispositivi, una sede con 50 e una con 20, gateway inclusi nel conteggio (quindi 101, 51 e 21). Dentro `172.18.60.0/24` assegna i blocchi, dal più grande. Aggiungi anche un collegamento `/30` fra la sede da 50 e quella da 20. Scrivi la tabella con rete, prefisso, intervallo, broadcast e gateway.
-
-<details>
-<summary>🃏 <b>7.2 — Soluzione</b></summary>
-
-- **Dimensiona:** 101 → `/25` (126 utili); 51 → `/26` (62 utili); 21 → `/27` (30 utili); collegamento → `/30`.
-- **Ordina:** 128, 64, 32, 4: in tutto 228 indirizzi, meno di 256.
-- **Assegna:**
-
-| Rete | Prefisso | Host utili | Broadcast | Gateway |
-| --- | --- | --- | --- | --- |
-| `172.18.60.0` (Nuova) | `/25` | da `.1` a `.126` | `.127` | `.1` |
-| `172.18.60.128` (sede da 50) | `/26` | da `.129` a `.190` | `.191` | `.129` |
-| `172.18.60.192` (sede da 20) | `/27` | da `.193` a `.222` | `.223` | `.193` |
-| `172.18.60.224` (collegamento) | `/30` | `.225` e `.226` | `.227` | sede da 50 `.225`, sede da 20 `.226` |
-
-📌 **Controllo.** Ogni blocco parte da un multiplo della sua dimensione (0, 128, 192, 224). Spazio libero: `172.18.60.228` - `172.18.60.255`.
-
-</details>
-
-### 7.3 ✏️ Avanzato · 🔍 · 🎯 Da provare — Ticket 3: il pacchetto che non arriva
-
-**Consegna.** Il router V (Valle) della topologia del dossier 5 ha queste righe: `172.18.20.48/29` collegata e `172.18.20.60/30` collegata. Nessuna rotta predefinita. Un PC di Valle (`172.18.20.50`) scrive a un PC di Mare (`172.18.20.20`).
-
-1. Quale riga sceglie V per `172.18.20.20`?
-2. Quale riga manca? Scrivila con prefisso e prossimo passo.
-3. Che cosa succede al pacchetto se la riga non c'è?
-
-<details>
-<summary>🃏 <b>7.3 — Soluzione</b></summary>
-
-1. Nessuna: `172.18.20.20` non sta né in `/29` (da `.48` a `.55`) né in `/30` (da `.60` a `.63`). V non sa dove mandarlo.
-2. Riga mancante: `172.18.20.0/27` con prossimo passo `172.18.20.61`, il router N. Controllo: `.61` sta in `172.18.20.60/30`, collegato a V.
-3. Il pacchetto viene scartato sul router V. Anche una rotta predefinita verso `172.18.20.61` sarebbe andata bene, come nel dossier 5.5.
-
-</details>
-
-### 🩹 Recupero: dove riprendere
-
-Il recupero non è un voto: è tornare al punto giusto. Quando un esercizio non torna, parti dall'errore.
-
-| Se ti trovi in questo punto | Riprendi |
+| Se hai avuto dubbi nel... | Riprendi subito |
 | --- | --- |
-| non sai quanti indirizzi ha un prefisso | [S1 nov-dic](%28STU%29%204DI%20nov-dic%20S1%20-%20CIDR%20e%20subnetting.md) e [S5 sett-ott](../1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md) |
-| due blocchi si sovrappongono, o un broadcast è sbagliato | [S2 nov-dic](%28STU%29%204DI%20nov-dic%20S2%20-%20VLSM.md) e [S6 sett-ott](../1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S6%20-%20VLSM%20e%20progettazione.md) |
-| un IPv6 che non si comprime | [S3 nov-dic](%28STU%29%204DI%20nov-dic%20S3%20-%20IPv6.md) |
-| il router sceglie la riga sbagliata | [S4 nov-dic](%28STU%29%204DI%20nov-dic%20S4%20-%20Router%20e%20tabelle%20di%20routing.md) |
-| il prossimo passo non sta nella rete collegata | [S5 nov-dic](%28STU%29%204DI%20nov-dic%20S5%20-%20Routing%20statico.md) |
-| confondi passaparola e mappa | [S6 nov-dic](%28STU%29%204DI%20nov-dic%20S6%20-%20Introduzione%20al%20routing%20dinamico.md) |
-
-🔧 **In laboratorio:** la topologia di Ponte Srl si ricostruisce sugli apparati. Qui solo carta e matita.
+| **Dossier 1** (`::`, gruppi da 16 bit, `/64`, `fe80::/10`, `ff02::1`) | [S1 - IPv6](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md) |
+| **Dossier 2** (switch vs router, gateway, prefisso più lungo) | [S2 - Router e tabelle di routing](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md) |
+| **Dossier 3** (rotte statiche, `/30`, prossimo passo, `0.0.0.0/0`, `traceroute`) | [S3 - Routing statico](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) |
+| **Dossier 4** (*Distance Vector* vs *Link State*, costi, convergenza) | [S4 - Introduzione al routing dinamico](./%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md) |
+| Ripasso trasversale di tutte le flashcard del bimestre | [S5 - Ripasso e recupero](./%28STU%29%204DI%20nov-dic%20S5%20-%20Ripasso%20e%20recupero.md) |
 
 ---
 
 ## 📚 Fonti e risorse
 
-- [RFC 950 - Internet Standard Subnetting Procedure](https://www.rfc-editor.org/rfc/rfc950) (1985): come dividere una rete in sottoreti. Basta l'introduzione.
-- [RFC 1519 - Classless Inter-Domain Routing (CIDR)](https://www.rfc-editor.org/rfc/rfc1519) (1993): la base del prefisso `/n`. Per il caso del dossier 1, leggi l'introduzione.
-- [RFC 1918 - Address Allocation for Private Internets](https://www.rfc-editor.org/rfc/rfc1918) e [RFC 5737 - IPv4 Address Blocks Reserved for Documentation](https://www.rfc-editor.org/rfc/rfc5737): perché `172.18.x.x` è privato e `198.51.100.0/30` è di documentazione.
-- [RFC 4291 - IPv6 Addressing Architecture](https://www.rfc-editor.org/rfc/rfc4291) e [RFC 5952 - Text Representation of IPv6 Addresses](https://www.rfc-editor.org/rfc/rfc5952): tipi di indirizzo e regole di compressione con `::`. La seconda si legge in pochi minuti.
-- [RFC 3849 - Documentation Prefix 2001:db8::/32](https://www.rfc-editor.org/rfc/rfc3849): perché gli esempi IPv6 usano `2001:db8`.
-- [IPv4 address exhaustion (Wikipedia)](https://en.wikipedia.org/wiki/IPv4_address_exhaustion): la storia degli ultimi blocchi IPv4 assegnati nel 2011, in inglese.
-- [World IPv6 Launch](https://www.worldipv6launch.org/): il lancio del 6 giugno 2012, con gli aggiornamenti dei fornitori.
-- [RIPE NCC - YouTube Hijacking: A RIPE NCC RIS case study](https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/): il caso del 2008 raccontato dal registro europeo, con i prefissi veri. Per il dossier 4, leggi la parte sul prefisso più specifico.
-- [ARPANET (Wikipedia)](https://en.wikipedia.org/wiki/ARPANET): il messaggio del 1969 e il passaggio al nuovo algoritmo di routing alla fine degli anni Settanta.
-- McQuillan, Richer, Rosen, *The New Routing Algorithm for the ARPANET*, IEEE Transactions on Communications, 1980: l'articolo originale sul passaggio al Link State. Per consultazione.
-- [RFC 1058 - RIP](https://www.rfc-editor.org/rfc/rfc1058) e [RFC 2328 - OSPF](https://www.rfc-editor.org/rfc/rfc2328): solo per i nomi dei protocolli, in 🤓.
-
-**Come usarle.** Per i casi reali leggi solo la parte che riguarda il prefisso o il metodo. Le RFC si consultano: non serve leggerle per intero.
-
-**Valori.** Ponte Srl, le sue sedi e tutti i numeri degli esercizi sono inventati. I casi reali sono descritti con le date e i fatti delle fonti.
+- [RIPE NCC - YouTube Hijacking: A RIPE NCC RIS case study](https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/): la ricostruzione tecnica dell'incidente del 24 febbraio 2008 con i prefissi veri `/22` e `/24`. Si legge in dieci minuti; osserva il grafico di come l'annuncio si propaga nei router.
+- [World IPv6 Launch](https://www.worldipv6launch.org/) e [IPv4 address exhaustion (Wikipedia)](https://en.wikipedia.org/wiki/IPv4_address_exhaustion): le tappe storiche del 2011 e del 2012 raccontate nel Dossier 1.
+- [RFC 4291 - IPv6 Addressing Architecture](https://www.rfc-editor.org/rfc/rfc4291) e [RFC 5952 - Text Representation of IPv6 Addresses](https://www.rfc-editor.org/rfc/rfc5952): tipi di indirizzo IPv6 e regole ufficiali di compressione con `::`. La RFC 5952 è breve e chiarissima per controllare i casi limite.
+- [RFC 3849](https://www.rfc-editor.org/rfc/rfc3849) (`2001:db8::/32`) e [RFC 5737](https://www.rfc-editor.org/rfc/rfc5737) (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`): i blocchi riservati agli esempi didattici e alla documentazione.
+- McQuillan, Richer, Rosen, *The New Routing Algorithm for the ARPANET*, IEEE Transactions on Communications, 1980: l'articolo storico sul passaggio del 1979 dal passaparola alla mappa completa (Dossier 4).
+- [OliCyber.IT](https://olicyber.it/) e [CyberChallenge.IT](https://cyberchallenge.it/): i programmi nazionali gratuiti per allenarsi alle gare CTF nelle scuole superiori.
+- Schema *Topologia della cooperativa Tre Fari* (`Allegati/nov-dic-eserciziario-topologia-faro.svg`): schema originale realizzato per questo eserciziario, con valori inventati.
 
 ---
 
-⬅️ [S7 - Ripasso e recupero](%28STU%29%204DI%20nov-dic%20S7%20-%20Ripasso%20e%20recupero.md) · 🏠 [Indice](../README.md)
+⬅️ [S5 - Ripasso e recupero](./%28STU%29%204DI%20nov-dic%20S5%20-%20Ripasso%20e%20recupero.md) · 🏠 [Indice](../README.md)

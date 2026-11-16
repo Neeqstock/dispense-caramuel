@@ -91,6 +91,18 @@ Python è un linguaggio diverso da Java: si scrive con meno parentesi e meno dic
 - [ ] [S6 - Ripasso in flashcard](2%20NOV-DIC/%28STU%29%204CI%20nov-dic%20S6%20-%20Ripasso%20in%20flashcard.md) — Flashcard, trappole e quiz su tutto il bimestre, con la lista di ciò che serve per la verifica.
 - [ ] **S7 - Verifica** — Mostrare che cosa hai capito: prevedere, correggere e scrivere programmi Python.
 
+### 🛠️ Officina Python (laboratorio)
+
+Il lavoro al computer delle due ore più una. Si parte dal [come si lavora](2%20NOV-DIC/Laboratorio/README.md) (semaforo, test, diario) e si segue la [bacheca delle missioni](2%20NOV-DIC/Laboratorio/Missioni%20-%20bacheca.md): una missione per settimana, ognuna con i suoi test che dicono quando è finita.
+
+- [ ] [Officina - come si lavora](2%20NOV-DIC/Laboratorio/README.md) — Semaforo, `pytest`, diario, demo, bug bounty.
+- [ ] [Bacheca delle missioni](2%20NOV-DIC/Laboratorio/Missioni%20-%20bacheca.md) — Le sei missioni, i test e il calendario delle sette settimane.
+- [ ] [S1 - L'eroe](2%20NOV-DIC/Laboratorio/S1%20-%20L%27eroe) — Il primo personaggio: input, tipi, f-string.
+- [ ] [S2 - Il dado e il combattimento](2%20NOV-DIC/Laboratorio/S2%20-%20Il%20dado%20e%20il%20combattimento/) — `random`, `while`, funzioni.
+- [ ] [S3 - Zaino e mappa](2%20NOV-DIC/Laboratorio/S3%20-%20Zaino%20e%20mappa/) — Liste, copie, matrici.
+- [ ] [S4 - Scheda e bestiario](2%20NOV-DIC/Laboratorio/S4%20-%20Scheda%20e%20bestiario/) — Dizionari e dati annidati.
+- [ ] [S5 - Il gioco intero](2%20NOV-DIC/Laboratorio/S5%20-%20Il%20gioco%20intero/) — Menu, ciclo principale, testabilità.
+
 ## Integrazioni
 
 - [Python: scope, cioè dove vive una variabile](../Integrazioni%20e%20curiosit%C3%A0/Approfondimenti%20didattici/Python%20-%20scope%20e%20regola%20LEGB.md) — Dove Python cerca un nome (regola LEGB) e come cambiarlo da dentro una funzione.

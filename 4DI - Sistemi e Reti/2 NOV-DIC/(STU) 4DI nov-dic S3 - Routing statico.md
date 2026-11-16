@@ -1,20 +1,20 @@
-⬅️ [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Router%20e%20tabelle%20di%20routing.md) · 🏠 [Indice](../README.md) · [S6](./%28STU%29%204DI%20nov-dic%20S6%20-%20Introduzione%20al%20routing%20dinamico.md) ➡️
+⬅️ [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md) · 🏠 [Indice](../README.md) · [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md) ➡️
 
 # 🧭 Routing statico
 
-**4DI · Novembre-Dicembre · S5 · Teoria**
+**4DI · Novembre-Dicembre · S3 · Teoria**
 
 ⏱️ **Tempo di studio: circa 40 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 15 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🃏 flashcard · 🔧 In laboratorio · 🗺️ mappa · 😄 umorismo
 
-> Ti servono: la S2 (il collegamento fra due router è una rete `/30`) e la S4 (la tabella di routing è fatta di righe).
+> Ti servono: i prefissi di [S5 sett-ott](../1%20SETT-OTT/%28STU%29%204DI%20sett-ott%20S5%20-%20CIDR%20e%20intervalli.md), la S1 (IPv6) e la S2 (la tabella di routing è fatta di righe, e il collegamento fra due router è una rete `/30`).
 
 > Tutti gli indirizzi di questa dispensa sono **inventati per l'esercizio**, tranne `8.8.8.8` (un DNS pubblico reale, usato solo come destinazione esterna) e le notazioni `0.0.0.0/0` e `::/0`, che sono standard.
 
 ## 🗺️ Mappa
 
-<img src="Allegati/4di-nov-dic-s5-routing-statico-mappa-html-1.svg" alt="Mappa mentale: Routing statico" width="100%">
+<img src="Allegati/4di-nov-dic-s3-routing-statico-mappa-1.svg" alt="Mappa mentale: Routing statico" width="100%">
 
 ## 📜 Strade disegnate a mano
 
@@ -38,11 +38,11 @@ Scena: un PC nella sede A vuole scrivere a un PC nella sede C. Il router A vede 
 - **Prossimo passo** (*next hop*): l'indirizzo del router vicino, collegato direttamente, a cui si consegna il pacchetto. **Non** è la destinazione finale.
 - **Rotta**: una riga della tabella, fatta di rete, prefisso e prossimo passo. La **tabella di routing** è l'elenco di tutte le rotte di un router.
 
-Richiamo di S2: un collegamento fra due router è una rete `/30`, con 4 indirizzi, di cui 2 usabili, uno per ciascun router.
+Richiamo di S2 (e di S5 sett-ott): un collegamento fra due router è una rete `/30`, con 4 indirizzi, di cui 2 usabili, uno per ciascun router.
 
 Schema della topologia: tre sedi in fila, valori inventati. Il percorso da A a C passa per il router A, poi il router B, poi il router C.
 
-<img src="Allegati/nov-dic-s5-topologia-sedi-abc.svg" width="800" alt="Topologia delle sedi A, B e C con router e collegamenti /30">
+<img src="Allegati/nov-dic-s3-topologia-sedi-abc.svg" width="800" alt="Topologia delle sedi A, B e C con router e collegamenti /30">
 
 *Schema 1. Le sedi A, B e C con i loro collegamenti. Ogni sede è una rete; ogni collegamento fra router è un `/30`.*
 
@@ -58,7 +58,7 @@ Schema della topologia: tre sedi in fila, valori inventati. Il percorso da A a C
 
 <u>Una rotta statica è una riga scritta da una persona: il router non la calcola da solo.</u>
 
-⚙️ **Dove agisce.** Il routing statico vive sul router, fra due reti diverse. Dentro una sede non serve: lì i PC si trovano già con lo switch, come nella S2.
+⚙️ **Dove agisce.** Il routing statico vive sul router, fra due reti diverse. Dentro una sede non serve: lì i PC si trovano già con lo switch, come visto nella S2 (e in S2 sett-ott).
 
 <details><summary>🃏 <b>Che cos'è una rotta statica?</b></summary>
 Una riga della tabella di routing scritta a mano, con rete di destinazione, prefisso e prossimo passo.
@@ -197,7 +197,7 @@ Un ping funziona solo se la strada c'è nei due sensi. Il messaggio va da A a C,
 
 ### 🤓 Il routing statico non scala
 
-> Con tre sedi, la tabella scritta a mano va bene. Con cento router, ogni cambiamento richiede di riscrivere righe in molti apparati, e un errore passa inosservato. Per questo esiste il **routing dinamico**: i router si scambiano le strade da soli. Lo vedremo nella S6.
+> Con tre sedi, la tabella scritta a mano va bene. Con cento router, ogni cambiamento richiede di riscrivere righe in molti apparati, e un errore passa inosservato. Per questo esiste il **routing dinamico**: i router si scambiano le strade da soli. Lo vedremo nella S4.
 
 ## 📚 Fonti e risorse
 
@@ -208,4 +208,4 @@ Un ping funziona solo se la strada c'è nei due sensi. Il messaggio va da A a C,
 - Libro di testo: Baldino, Rondano, Spano, Iacobelli, *Internetworking Sistemi e Reti*, Juvenilia Scuola.
 - Schema 1 (topologia e tabelle): opera propria, in SVG, con valori inventati.
 
-⬅️ [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Router%20e%20tabelle%20di%20routing.md) · 🏠 [Indice](../README.md) · [S6](./%28STU%29%204DI%20nov-dic%20S6%20-%20Introduzione%20al%20routing%20dinamico.md) ➡️
+⬅️ [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md) · 🏠 [Indice](../README.md) · [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md) ➡️

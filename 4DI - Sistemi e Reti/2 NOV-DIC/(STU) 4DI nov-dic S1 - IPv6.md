@@ -1,14 +1,14 @@
-⬅️ [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20VLSM.md) · 🏠 [Indice](../README.md) · [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Router%20e%20tabelle%20di%20routing.md) ➡️
+🏠 [Indice](../README.md) · [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md) ➡️
 
 # 🌐 IPv6
 
-**4DI · Novembre-Dicembre · S3 · Teoria**
+**4DI · Novembre-Dicembre · S1 · Teoria**
 
 ⏱️ **Tempo di studio: circa 40 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 15 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
 
 > **Legenda:** ✅ da sapere · 🔍 per capire fino in fondo · 🤓 facoltativo · 📜 storia · ⚙️ come si legge · 🧪 esempio · ⚠️ errore comune · 🧠 da ricordare · ✏️ da fare · 🔧 In laboratorio · 🃏 flashcard (rispondi a voce, poi apri)
 
-<img src="Allegati/4di-nov-dic-s3-ipv6-mappa-html-1.svg" alt="Mappa mentale: 🌐 IPv6" width="100%">
+<img src="Allegati/4di-nov-dic-s1-ipv6-mappa-1.svg" alt="Mappa mentale: 🌐 IPv6" width="100%">
 
 > 📜 **Il quadro.** Nel 1981 un indirizzo di 32 bit sembra un numero enorme. Trent'anni dopo, ogni telefono, console e termostato ne vuole uno. I numeri a disposizione finiscono prima del previsto. IPv6 non è un capriccio tecnico: è il numero nuovo, più lungo, che la rete ha dovuto inventare per continuare a crescere.
 
@@ -172,6 +172,19 @@ Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio 
 2^64, circa 18 miliardi di miliardi.
 </details>
 
+### 🤓 Finire gli indirizzi IPv6: un limite umano, non fisico
+
+> Viene spontaneo chiedersi: **è fisicamente possibile esaurire anche gli indirizzi IPv6?**
+>
+> Se contiamo i dispositivi uno per uno, **fisicamente no**. La superficie dell'intera Terra (oceani compresi) misura circa $5{,}1 \times 10^{20}$ millimetri quadrati: dividendo $2^{128}$ indirizzi per quella superficie, restano circa **670 milioni di miliardi di indirizzi per ogni singolo millimetro quadrato del pianeta**. Anche accendendo un milione di miliardi di nuovi dispositivi al secondo, servirebbero oltre **10 milioni di miliardi di anni** per finirli: quasi un milione di volte l'età dell'universo.
+>
+> Il vero punto debole non è la fisica, ma **come assegniamo i prefissi**. In IPv6 non si consegnano indirizzi sciolti, ma intere reti `/64`, quindi i bit che contano per dividere il mondo sono i primi 64. Oggi inoltre si usa solo **un ottavo** dello spazio totale (`2000::/3`). Eppure già questo solo ottavo contiene $2^{61}$ reti `/64`: circa **288 milioni di reti locali intere per ciascuno degli 8 miliardi di esseri umani**, mentre gli altri **sette ottavi** di IPv6 restano intatti in cassaforte. L'unico modo per rimanere a secco sarebbe uno spreco burocratico colossale nel distribuire prefissi giganti; e anche in quel caso basterebbe aprire uno dei sette ottavi di riserva. La vignetta **xkcd #865** (*Nanobots*) ci scherza su immaginando un futuro invaso da sciami di nanobot che riescono a bruciare pure i 128 bit.
+
+<details>
+<summary>🃏 <b>🤓 È fisicamente possibile finire i 2^128 indirizzi IPv6 collegando dispositivi?</b></summary>
+No: ci sono circa 670 milioni di miliardi di indirizzi per ogni millimetro quadrato della Terra; solo uno spreco enorme di prefissi potrebbe consumare il blocco attuale, ma restano sette ottavi dello spazio in riserva.
+</details>
+
 ✏️ **Esercizio (2 min).** Scrivi la rete di `2001:db8:4f2a:17:5c1e:9d3b:7a20:4e81/64`. Sottolinea i gruppi che fanno parte della rete e cerchia quelli che identificano l'interfaccia.
 
 ## 🧭 Tre tipi di indirizzo
@@ -250,6 +263,7 @@ Il loopback: il dispositivo verso se stesso, come 127.0.0.1 in IPv4.
 - [RFC 3849 - Prefisso di documentazione 2001:db8::/32](https://www.rfc-editor.org/rfc/rfc3849): perché gli esempi usano `2001:db8`.
 - [RFC 5737 - Indirizzi di documentazione IPv4](https://www.rfc-editor.org/rfc/rfc5737): perché l'esempio `203.0.113.7` è sicuro.
 - [World IPv6 Launch](https://www.worldipv6launch.org/): il lancio del 6 giugno 2012, con gli aggiornamenti dei fornitori.
+- [xkcd #865 - Nanobots](https://xkcd.com/865/): una vignetta classica (in inglese, un minuto di lettura) sull'idea di riuscire un giorno a esaurire perfino $2^{128}$ indirizzi.
 
 **Immagine:** *IPv6 address structure-en.svg*, di Michel Bakni, licenza CC BY-SA 4.0 (Wikimedia Commons), non modificata: <https://commons.wikimedia.org/wiki/File:IPv6_address_stracture-en.svg>.
 
@@ -257,4 +271,4 @@ Il loopback: il dispositivo verso se stesso, come 127.0.0.1 in IPv4.
 
 ---
 
-⬅️ [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20VLSM.md) · 🏠 [Indice](../README.md) · [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Router%20e%20tabelle%20di%20routing.md) ➡️
+🏠 [Indice](../README.md) · [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md) ➡️

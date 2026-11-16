@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="365" viewBox="0 0 820 365" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Topologia della cooperativa Tre Fari: sedi Rocca, Porto e Faro con router R1, R2, R3 e collegamenti /30</title>
+  <rect x="0" y="0" width="820" height="365" rx="12" fill="#ffffff"/>
+
+  <!-- LAN boxes -->
+  <rect x="15" y="24" width="215" height="104" rx="10" fill="#eef4fb" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="122" y="50" font-size="17" font-weight="bold" fill="#1e293b" text-anchor="middle">Sede Rocca</text>
+  <text x="122" y="71" font-size="14" fill="#334155" text-anchor="middle">uffici centrali</text>
+  <text x="122" y="94" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">172.24.10.0/27</text>
+  <text x="122" y="114" font-size="13" fill="#475569" text-anchor="middle">da .0 a .31 (30 host utili)</text>
+
+  <rect x="302" y="24" width="215" height="104" rx="10" fill="#eef4fb" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="410" y="50" font-size="17" font-weight="bold" fill="#1e293b" text-anchor="middle">Sede Porto</text>
+  <text x="410" y="71" font-size="14" fill="#334155" text-anchor="middle">magazzino molo</text>
+  <text x="410" y="94" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">172.24.10.32/28</text>
+  <text x="410" y="114" font-size="13" fill="#475569" text-anchor="middle">da .32 a .47 (14 host utili)</text>
+
+  <rect x="590" y="24" width="215" height="104" rx="10" fill="#eef4fb" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="698" y="50" font-size="17" font-weight="bold" fill="#1e293b" text-anchor="middle">Sede Faro</text>
+  <text x="698" y="71" font-size="14" fill="#334155" text-anchor="middle">sensori meteo</text>
+  <text x="698" y="94" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">172.24.10.48/29</text>
+  <text x="698" y="114" font-size="13" fill="#475569" text-anchor="middle">da .48 a .55 (6 host utili)</text>
+
+  <!-- Vertical links LAN to Routers -->
+  <line x1="122" y1="128" x2="122" y2="188" stroke="#334155" stroke-width="2"/>
+  <text x="112" y="162" font-size="14" fill="#1e293b" text-anchor="end">gw: .1</text>
+
+  <line x1="410" y1="128" x2="410" y2="188" stroke="#334155" stroke-width="2"/>
+  <text x="400" y="162" font-size="14" fill="#1e293b" text-anchor="end">gw: .33</text>
+
+  <line x1="698" y1="128" x2="698" y2="188" stroke="#334155" stroke-width="2"/>
+  <text x="688" y="162" font-size="14" fill="#1e293b" text-anchor="end">gw: .49</text>
+
+  <!-- Routers -->
+  <rect x="64" y="188" width="116" height="42" rx="8" fill="#fff4e0" stroke="#c77700" stroke-width="2"/>
+  <text x="122" y="215" font-size="17" font-weight="bold" fill="#7c2d12" text-anchor="middle">Router R1</text>
+
+  <rect x="352" y="188" width="116" height="42" rx="8" fill="#fff4e0" stroke="#c77700" stroke-width="2"/>
+  <text x="410" y="215" font-size="17" font-weight="bold" fill="#7c2d12" text-anchor="middle">Router R2</text>
+
+  <rect x="640" y="188" width="116" height="42" rx="8" fill="#fff4e0" stroke="#c77700" stroke-width="2"/>
+  <text x="698" y="215" font-size="17" font-weight="bold" fill="#7c2d12" text-anchor="middle">Router R3</text>
+
+  <!-- Point-to-point /30 links -->
+  <line x1="180" y1="209" x2="352" y2="209" stroke="#1e293b" stroke-width="3"/>
+  <text x="266" y="199" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">172.24.10.64/30</text>
+  <text x="186" y="229" font-size="14" fill="#334155">R1: .65</text>
+  <text x="346" y="229" font-size="14" fill="#334155" text-anchor="end">R2: .66</text>
+
+  <line x1="468" y1="209" x2="640" y2="209" stroke="#1e293b" stroke-width="3"/>
+  <text x="554" y="199" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">172.24.10.68/30</text>
+  <text x="474" y="229" font-size="14" fill="#334155">R2: .69</text>
+  <text x="634" y="229" font-size="14" fill="#334155" text-anchor="end">R3: .70</text>
+
+  <!-- Link R1 to ISP -->
+  <line x1="122" y1="230" x2="122" y2="302" stroke="#334155" stroke-width="2.5"/>
+  <text x="132" y="254" font-size="13" fill="#334155">R1: 203.0.113.14</text>
+  <text x="132" y="272" font-size="13" font-weight="600" fill="#0f172a">rete 203.0.113.12/30</text>
+  <text x="132" y="290" font-size="13" fill="#334155">ISP: 203.0.113.13</text>
+
+  <rect x="44" y="302" width="156" height="42" rx="21" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="122" y="328" font-size="16" font-weight="600" fill="#1e293b" text-anchor="middle">Provider (ISP)</text>
+</svg>
