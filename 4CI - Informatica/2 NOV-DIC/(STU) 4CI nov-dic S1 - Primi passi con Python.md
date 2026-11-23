@@ -343,13 +343,11 @@ NameError: Python non conosce quel nome. Si scrive <code>True</code>, con la mai
 
 Il tipo di un valore si controlla con `type()`.
 
-```text
->>> type(3)
-<class 'int'>
->>> type(3.0)
-<class 'float'>
->>> type(True)
-<class 'bool'>
+```python
+# Controlla il tipo di alcuni valori
+print(type(3))      # <class 'int'>   -> intero
+print(type(3.0))    # <class 'float'> -> numero con la virgola
+print(type(True))   # <class 'bool'>  -> booleano (vero/falso)
 ```
 
 ⚠️ `3` e `3.0` sono lo stesso numero ma tipi diversi: `int` e `float`. E `"3"` è un testo, non un numero.
@@ -367,13 +365,13 @@ Il primo è un numero (<code>int</code>), il secondo è un testo (<code>str</cod
 
 In Java il tipo era scritto sulla scatola: una variabile `int` conteneva solo interi. In Python il tipo è una proprietà del **valore**. La freccia può spostarsi su un valore di un altro tipo.
 
-```text
->>> x = 5
->>> type(x)
-<class 'int'>
->>> x = "cinque"
->>> type(x)
-<class 'str'>
+```python
+# La stessa variabile può puntare a valori di tipo diverso
+x = 5
+print(type(x))      # <class 'int'>
+
+x = "cinque"
+print(type(x))      # <class 'str'>
 ```
 
 Questo si chiama **tipizzazione dinamica**: il tipo si decide mentre il programma gira. Per Python i tipi esistono eccome: semplicemente non li dichiari.
@@ -389,9 +387,9 @@ Al valore. La variabile è una freccia che può puntare a valori di tipi diversi
 #fatto👍 
 In Java un `int` ha 32 bit e un `long` 64: se superi il limite, il numero «ricomincia da capo». In Python un `int` cresce quanto serve, finché c'è memoria.
 
-```text
->>> 2 ** 100
-1267650600228229401496703205376
+```python
+# Gli interi in Python non vanno in overflow: crescono finché c'è memoria
+print(2 ** 100)     # 1267650600228229401496703205376
 ```
 
 Il prezzo è che i calcoli con numeri enormi sono più lenti.
@@ -488,13 +486,13 @@ Un testo che inizia con <code>f</code> e contiene valori fra graffe, come <code>
 
 I confronti e i logici danno un `bool`.
 
-```text
->>> vita = 100
->>> forza = 7
->>> vita > 0 and forza >= 5
-True
->>> not vita > 0
-False
+```python
+vita = 100
+forza = 7
+
+# Confronti e operatori logici restituiscono True o False
+print(vita > 0 and forza >= 5)  # True (entrambe vere)
+print(not vita > 0)             # False (nego una condizione vera)
 ```
 
 `+` e `*` funzionano anche sui testi: `"3" + "4"` dà `'34'` (li incolla) e `"ciao" * 3` dà `'ciaociaociao'`.
@@ -536,13 +534,12 @@ Dà il resto della divisione: <code>7 % 2</code> vale 1.
 
 ` == ` chiede: «hanno lo stesso valore?». `is` chiede: «sono proprio lo stesso oggetto, cioè le frecce puntano allo stesso posto?». Due liste con gli stessi elementi (le vedremo in S3) sono uguali ma non identiche.
 
-```text
->>> a = [1, 2]
->>> b = [1, 2]
->>> a == b
-True
->>> a is b
-False
+```python
+a = [1, 2]
+b = [1, 2]
+
+print(a == b)   # True: hanno lo stesso contenuto
+print(a is b)   # False: sono due liste diverse in memoria
 ```
 
 Per confrontare valori usa quasi sempre ` == `.

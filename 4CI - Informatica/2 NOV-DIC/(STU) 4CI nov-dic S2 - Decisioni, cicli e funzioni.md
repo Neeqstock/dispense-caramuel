@@ -195,15 +195,16 @@ No: per Python è un intero valido; è il programma a dover far rispettare la re
 
 Il `for` di Python non ha i tre pezzi del `for` classico di Java: prende gli elementi uno alla volta. **`range`** fornisce una sequenza di interi, così puoi usarlo per contare.
 
+```python
+# range(1, 4) genera 1, 2, 3 (il 4 è escluso)
+for turno in range(1, 4):
+    print("Turno", turno)
+```
+
 ```text
->>> for turno in range(1, 4):
-...     print("Turno", turno)
-...
 Turno 1
 Turno 2
 Turno 3
-
-schifo = range(1, 4)  
 ```
 
 | `range(...)`      | Valori           | In Java                           |
@@ -334,26 +335,23 @@ La riga `def` crea la funzione: **non esegue il suo corpo**. Il corpo parte con 
 
 In Java, stampare e restituire erano già due azioni diverse. La novità è che <u>Python ti lascia usare il risultato di una funzione senza `return`: il risultato è `None`</u>. `None` indica l'assenza di un valore, un po' come `null` in Java.
 
-🧪 **Due funzioni, lo stesso 14 sullo schermo.** Prima prevedi quali valori verranno salvati in `x` e `y`, poi leggi la sessione REPL:
+🧪 **Due funzioni, lo stesso 14 sullo schermo.** Prima prevedi quali valori verranno salvati in `x` e `y`, poi prova il codice:
 
-```text
->>> def danno_stampato(forza):
-...     print(forza * 2)
-...
->>> def danno_restituito(forza):
-...     return forza * 2
-...
->>> x = danno_stampato(7)
-14
->>> y = danno_restituito(7)
->>> print(x)
-None
->>> y + 1
-15
->>> x + 1
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+```python
+def danno_stampato(forza):
+    print(forza * 2)        # Stampa e basta: restituisce None
+
+def danno_restituito(forza):
+    return forza * 2        # Restituisce il valore al chiamante
+
+x = danno_stampato(7)       # Stampa 14, ma in x finisce None
+y = danno_restituito(7)     # Non stampa nulla, ma in y finisce 14
+
+print("x vale:", x)         # None
+print("y + 1 =", y + 1)     # 15
+
+# Decommenta la riga sotto per vedere l'errore:
+# print(x + 1)              # TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
 ```
 
 La stampa di 14 non ha riempito `x`: `x` vale `None`. `y`, invece, vale 14 e si può usare in un altro calcolo. <u>Lo schermo non è una variabile.</u> In Java usare così un metodo `void` sarebbe un errore di compilazione; qui il problema emerge quando provi a sommare.
@@ -514,13 +512,14 @@ Quello finale: <code>randint(1, 6)</code> può dare 6; <code>range(1, 6)</code> 
 | `import math` | `math.sqrt(25)` | quasi sempre: si vede da dove viene il nome |
 | `from math import sqrt` | `sqrt(25)` | per pochi nomi usati spesso |
 
-```text
->>> import math
->>> math.sqrt(16)
-4.0
->>> from math import sqrt
->>> sqrt(25)
-5.0
+```python
+# Forma 1: importi l'intero modulo e usi il prefisso math.
+import math
+print(math.sqrt(16))    # 4.0
+
+# Forma 2: importi solo la funzione che ti serve
+from math import sqrt
+print(sqrt(25))         # 5.0
 ```
 
 ✏️ **Leggibilità (1 min).** Per una funzione chiamata `scelta` in un modulo `dadi`, preferisci leggere `dadi.scelta()` o `scelta()`? Motiva in base a chi dovrà capire il programma, non al numero di caratteri.

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 235" width="760" height="235">
+  <rect width="760" height="235" rx="16" fill="#f3f0ff" stroke="#b197fc" stroke-width="2"/>
+  <text x="380" y="28" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15.5" font-weight="700" fill="#3b2868">🗑️ Svuoti il Cestino: sparisce il nome o spariscono i byte?</text>
+
+  <g transform="translate(24, 46)">
+    <polygon points="0,0 218,0 218,150 194,174 0,174" fill="#fff9db" stroke="#e67700" stroke-width="2"/>
+    <polygon points="194,174 194,150 218,150" fill="#ffe066" stroke="#e67700" stroke-width="1.5"/>
+    <text x="109" y="26" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13" font-weight="700" fill="#9c5200">1. Prima (salvato)</text>
+    <text x="109" y="58" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11.5" fill="#495057">📖 Indice: foto.jpg → n.7</text>
+    <rect x="24" y="80" width="170" height="58" rx="8" fill="#d3f9d8" stroke="#2f9e44" stroke-width="1.6"/>
+    <text x="109" y="106" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12" font-weight="700" fill="#2b8a3e">🖼️ Blocco 7</text>
+    <text x="109" y="125" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#2b8a3e">contiene la foto!</text>
+  </g>
+
+  <g transform="translate(271, 46)">
+    <polygon points="0,0 218,0 218,150 194,174 0,174" fill="#ffe8cc" stroke="#d9480f" stroke-width="2"/>
+    <polygon points="194,174 194,150 218,150" fill="#ffc078" stroke="#d9480f" stroke-width="1.5"/>
+    <text x="109" y="26" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13" font-weight="700" fill="#9c2b0b">2. Cestino svuotato (HDD)</text>
+    <text x="109" y="58" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11.5" fill="#c92a2a" text-decoration="line-through">📖 Indice: foto.jpg → n.7</text>
+    <rect x="24" y="80" width="170" height="58" rx="8" fill="#fff3bf" stroke="#f08c00" stroke-width="1.6"/>
+    <text x="109" y="104" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12" font-weight="700" fill="#9c5200">👀 «Sono ancora qui!»</text>
+    <text x="109" y="124" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="10.5" fill="#7c4700">recuperabile finché non riscrivi</text>
+  </g>
+
+  <g transform="translate(518, 46)">
+    <polygon points="0,0 218,0 218,150 194,174 0,174" fill="#e6fcf5" stroke="#0ca678" stroke-width="2"/>
+    <polygon points="194,174 194,150 218,150" fill="#96f2d7" stroke="#0ca678" stroke-width="1.5"/>
+    <text x="109" y="26" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13" font-weight="700" fill="#087f5b">3. SSD con TRIM 🧹</text>
+    <text x="109" y="58" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11.5" fill="#087f5b">SO avvisa: «n.7 è inutile!»</text>
+    <rect x="24" y="80" width="170" height="58" rx="8" fill="#ffffff" stroke="#0ca678" stroke-width="1.6" stroke-dasharray="5 3"/>
+    <text x="109" y="104" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12" font-weight="700" fill="#087f5b">✨ Blocco 7 pulito</text>
+    <text x="109" y="124" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="10.5" fill="#495057">pronto per scrivere subito</text>
+  </g>
+</svg>

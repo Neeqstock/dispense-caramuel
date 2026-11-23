@@ -312,9 +312,13 @@ Perché così parte solo se il file è lanciato direttamente, e non quando un al
 
 Una **docstring** è il testo fra triple virgolette subito sotto il `def`. Dice che cosa fa la funzione. Python la conserva e la mostra con `help`:
 
+```python
+from dungeon import cura
+
+help(cura)      # Stampa la docstring di cura(vita, punti)
+```
+
 ```text
->>> from dungeon import cura
->>> help(cura)
 Help on function cura in module dungeon:
 
 cura(vita, punti)

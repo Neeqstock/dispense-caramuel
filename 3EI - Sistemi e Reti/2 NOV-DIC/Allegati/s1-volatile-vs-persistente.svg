@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="760" height="250">
+  <defs>
+    <pattern id="grid1" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#f1e8d6" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="760" height="250" rx="16" fill="#fffaf0" stroke="#d9cbb3" stroke-width="2"/>
+  <rect width="760" height="250" rx="16" fill="url(#grid1)"/>
+
+  <text x="380" y="30" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16" font-weight="700" fill="#2b2118">⚡ Click! Qualcuno stacca la spina…</text>
+
+  <!-- Spina centrale staccata con scintille -->
+  <path d="M 355 58 L 368 58 L 368 74 L 355 74 Z" fill="#ff922b" stroke="#2b2118" stroke-width="1.8"/>
+  <line x1="344" y1="62" x2="355" y2="62" stroke="#2b2118" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="344" y1="70" x2="355" y2="70" stroke="#2b2118" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 386 58 L 402 58 L 402 74 L 386 74 Z" fill="#adb5bd" stroke="#2b2118" stroke-width="1.8"/>
+  <path d="M 374 52 L 378 61 L 372 65 L 379 79" stroke="#f08c00" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <text x="380" y="94" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="10.5" font-weight="700" fill="#e8590c">CORRENTE OFF!</text>
+
+  <!-- Sinistra: RAM (amnesia!) -->
+  <g transform="translate(34, 48)">
+    <rect x="20" y="72" width="230" height="72" rx="10" fill="#ffe3e3" stroke="#c92a2a" stroke-width="2.4"/>
+    <rect x="38" y="88" width="38" height="26" rx="4" fill="#ffa8a8" stroke="#c92a2a" stroke-width="1.5"/>
+    <rect x="88" y="88" width="38" height="26" rx="4" fill="#ffa8a8" stroke="#c92a2a" stroke-width="1.5"/>
+    <rect x="138" y="88" width="38" height="26" rx="4" fill="#ffa8a8" stroke="#c92a2a" stroke-width="1.5"/>
+    <rect x="188" y="88" width="38" height="26" rx="4" fill="#ffa8a8" stroke="#c92a2a" stroke-width="1.5"/>
+    <path d="M 36 144 v 8 M 52 144 v 8 M 68 144 v 8 M 84 144 v 8 M 112 144 v 8 M 128 144 v 8 M 144 144 v 8 M 172 144 v 8 M 188 144 v 8 M 204 144 v 8 M 220 144 v 8" stroke="#e67700" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 62 12 C 62 2, 210 2, 210 12 L 210 48 C 210 58, 150 58, 140 58 L 126 68 L 128 58 L 62 58 Z" fill="#ffffff" stroke="#c92a2a" stroke-width="1.8"/>
+    <text x="136" y="28" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12.5" font-weight="700" fill="#c92a2a">«Eh? Chi ero?» 😵</text>
+    <text x="136" y="47" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#862e9c">(tutto svanito!)</text>
+    <text x="135" y="176" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13" font-weight="700" fill="#c92a2a">RAM · Volatile</text>
+    <text x="135" y="193" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#495057">Veloce come un razzo, ma dimentica tutto</text>
+  </g>
+
+  <!-- Destra: SSD/HDD (cassaforte che ricorda!) -->
+  <g transform="translate(446, 48)">
+    <rect x="65" y="64" width="145" height="86" rx="14" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="2.4"/>
+    <circle cx="115" cy="107" r="22" fill="#ffffff" stroke="#2b8a3e" stroke-width="2"/>
+    <circle cx="115" cy="107" r="6" fill="#2b8a3e"/>
+    <line x1="115" y1="85" x2="115" y2="95" stroke="#2b8a3e" stroke-width="2"/>
+    <line x1="137" y1="107" x2="127" y2="107" stroke="#2b8a3e" stroke-width="2"/>
+    <rect x="166" y="94" width="14" height="28" rx="4" fill="#69db7c" stroke="#2b8a3e" stroke-width="1.8"/>
+    <path d="M 48 12 C 48 2, 226 2, 226 12 L 226 48 C 226 58, 155 58, 145 58 L 136 64 L 135 58 L 48 58 Z" fill="#ffffff" stroke="#2b8a3e" stroke-width="1.8"/>
+    <text x="137" y="28" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12.5" font-weight="700" fill="#2b8a3e">«Foto al sicuro!» 🔒</text>
+    <text x="137" y="47" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#2b8a3e">(anche senza corrente)</text>
+    <text x="137" y="176" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13" font-weight="700" fill="#2b8a3e">SSD / HDD · Persistente</text>
+    <text x="137" y="193" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#495057">Più lenta, ma custodisce i dati nel tempo</text>
+  </g>
+</svg>

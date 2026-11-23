@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="760" height="250">
+  <rect width="760" height="250" rx="16" fill="#edf2ff" stroke="#748ffc" stroke-width="2"/>
+  <text x="380" y="28" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15.5" font-weight="700" fill="#1c2d5a">🏠 Un solo palazzo (il disco), due appartamenti (partizioni)</text>
+
+  <path d="M 45 78 L 380 38 L 715 78" fill="#dbe4ff" stroke="#364fc7" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="60" y="78" width="640" height="145" rx="6" fill="#ffffff" stroke="#364fc7" stroke-width="2.5"/>
+
+  <line x1="380" y1="78" x2="380" y2="223" stroke="#e03131" stroke-width="3" stroke-dasharray="8 5"/>
+  <rect x="308" y="210" width="144" height="22" rx="6" fill="#fff5f5" stroke="#e03131" stroke-width="1.5"/>
+  <text x="380" y="225" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="10.5" font-weight="700" fill="#c92a2a">Muro logico (partizione)</text>
+
+  <text x="220" y="101" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13.5" font-weight="700" fill="#1864ab">Stanza 1 · Disco C: (Windows)</text>
+  <rect x="85" y="138" width="38" height="85" rx="4" fill="#a5d8ff" stroke="#1864ab" stroke-width="1.8"/>
+  <circle cx="116" cy="182" r="3" fill="#1864ab"/>
+  <rect x="145" y="116" width="210" height="82" rx="8" fill="#f8f9fa" stroke="#339af0" stroke-width="1.8"/>
+  <line x1="145" y1="144" x2="355" y2="144" stroke="#339af0" stroke-width="1.4"/>
+  <line x1="145" y1="170" x2="355" y2="170" stroke="#339af0" stroke-width="1.4"/>
+  <text x="250" y="134" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12" font-weight="700" fill="#1971c2">📚 Catalogo: NTFS</text>
+  <text x="250" y="161" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#343a40">📄 Windows/ · 📄 Giochi/</text>
+  <text x="250" y="187" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#343a40">🖼️ foto_vacanze.jpg</text>
+
+  <text x="540" y="101" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13.5" font-weight="700" fill="#d9480f">Stanza 2 · Partizione Linux</text>
+  <rect x="637" y="138" width="38" height="85" rx="4" fill="#ffd8a8" stroke="#d9480f" stroke-width="1.8"/>
+  <circle cx="644" cy="182" r="3" fill="#d9480f"/>
+  <rect x="405" y="116" width="210" height="82" rx="8" fill="#fff9db" stroke="#f76707" stroke-width="1.8"/>
+  <line x1="405" y1="144" x2="615" y2="144" stroke="#f76707" stroke-width="1.4"/>
+  <line x1="405" y1="170" x2="615" y2="170" stroke="#f76707" stroke-width="1.4"/>
+  <text x="510" y="134" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12" font-weight="700" fill="#d9480f">📚 Catalogo: ext4</text>
+  <text x="510" y="161" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#343a40">📁 /home · 📁 /etc</text>
+  <text x="510" y="187" text-anchor="middle" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="11" fill="#343a40">🐍 progetto_scuola.py</text>
+</svg>

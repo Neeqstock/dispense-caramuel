@@ -28,14 +28,12 @@ Il segreto tecnico è semplice. Una mappa è una tabella di caselle; una tabella
 
 Una **lista** è <u>una fila di caselle numerate, che parte da zero</u>. Si scrive fra parentesi quadre, con gli elementi separati da virgole. Il numero di una casella si chiama **indice**.
 
-```text
->>> zaino = ["spada", "pozione", "torcia"]
->>> zaino[0]
-'spada'
->>> zaino[-1]
-'torcia'
->>> len(zaino)
-3
+```python
+zaino = ["spada", "pozione", "torcia"]
+
+print(zaino[0])     # 'spada'  -> primo elemento (indice 0)
+print(zaino[-1])    # 'torcia' -> ultimo elemento (indice -1)
+print(len(zaino))   # 3        -> numero di elementi
 ```
 
 ```text
@@ -63,23 +61,25 @@ L'ultimo elemento della lista: gli indici negativi contano dalla fine.
 
 ### ✅ Aggiungere, togliere, cercare
 
-```text
->>> zaino.append("corda")
->>> zaino
-['spada', 'pozione', 'torcia', 'corda']
->>> "pozione" in zaino
-True
->>> zaino.remove("pozione")
->>> zaino
-['spada', 'torcia', 'corda']
->>> zaino.insert(0, "scudo")
->>> zaino
-['scudo', 'spada', 'torcia', 'corda']
->>> zaino.pop()
-'corda'
->>> zaino[1] = "ascia"
->>> zaino
-['scudo', 'ascia', 'torcia']
+```python
+zaino = ["spada", "pozione", "torcia"]
+
+zaino.append("corda")           # Aggiunge in fondo
+print(zaino)                    # ['spada', 'pozione', 'torcia', 'corda']
+
+print("pozione" in zaino)       # True -> controlla se l'elemento è presente
+
+zaino.remove("pozione")         # Toglie la prima occorrenza di "pozione"
+print(zaino)                    # ['spada', 'torcia', 'corda']
+
+zaino.insert(0, "scudo")        # Inserisce in posizione 0 (all'inizio)
+print(zaino)                    # ['scudo', 'spada', 'torcia', 'corda']
+
+ultimo = zaino.pop()            # Toglie e restituisce l'ultimo elemento
+print("Tolto:", ultimo)         # Tolto: corda
+
+zaino[1] = "ascia"              # Sostituisce l'elemento all'indice 1
+print(zaino)                    # ['scudo', 'ascia', 'torcia']
 ```
 
 | Operazione | Che cosa fa | In Java (`ArrayList`) |
@@ -97,11 +97,11 @@ True
 
 ⚠️ Se chiedi una casella che non esiste, Python si ferma:
 
-```text
->>> zaino[5]
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-IndexError: list index out of range
+```python
+zaino = ["scudo", "ascia", "torcia"]
+
+# Decommenta la riga sotto per vedere l'errore:
+# print(zaino[5])   # IndexError: list index out of range
 ```
 
 *Index out of range*: «indice fuori dall'intervallo». Lo zaino ha 3 caselle, da 0 a 2.
@@ -165,18 +165,14 @@ A scorrere una lista avendo, a ogni giro, sia la posizione sia l'elemento.
 
 Le funzioni già pronte lavorano su tutta la lista in una riga. Ecco i danni di quattro turni:
 
-```text
->>> danni = [8, 12, 5, 9]
->>> sum(danni)
-34
->>> max(danni)
-12
->>> min(danni)
-5
->>> sorted(danni)
-[5, 8, 9, 12]
->>> danni
-[8, 12, 5, 9]
+```python
+danni = [8, 12, 5, 9]
+
+print("Somma:", sum(danni))             # 34
+print("Massimo:", max(danni))           # 12
+print("Minimo:", min(danni))            # 5
+print("Ordinata:", sorted(danni))       # [5, 8, 9, 12] -> crea una nuova lista
+print("Originale:", danni)              # [8, 12, 5, 9] -> resta intatta
 ```
 
 🔍 `sorted(danni)` crea una **nuova** lista ordinata e lascia intatta quella vecchia. `danni.sort()` invece ordina la lista stessa e restituisce `None`. È di nuovo la differenza fra *restituire* e *modificare*.
@@ -194,18 +190,14 @@ Le funzioni già pronte lavorano su tutta la lista in una riga. Ecco i danni di 
 
 Lo **slicing** (letteralmente «affettare») prende una parte della lista: `lista[inizio:fine]`. Come in `range`, <u>la fine non è compresa</u>.
 
-```text
->>> zaino = ["spada", "pozione", "torcia", "corda", "mappa"]
->>> zaino[1:3]
-['pozione', 'torcia']
->>> zaino[:2]
-['spada', 'pozione']
->>> zaino[3:]
-['corda', 'mappa']
->>> zaino[-2:]
-['corda', 'mappa']
->>> zaino[::-1]
-['mappa', 'corda', 'torcia', 'pozione', 'spada']
+```python
+zaino = ["spada", "pozione", "torcia", "corda", "mappa"]
+
+print(zaino[1:3])   # ['pozione', 'torcia'] -> indici 1 e 2 (3 escluso)
+print(zaino[:2])    # ['spada', 'pozione']  -> dall'inizio fino a 1
+print(zaino[3:])    # ['corda', 'mappa']    -> da 3 fino alla fine
+print(zaino[-2:])   # ['corda', 'mappa']    -> gli ultimi 2 elementi
+print(zaino[::-1])  # ['mappa', 'corda', 'torcia', 'pozione', 'spada'] -> al contrario
 ```
 
 Se manca l'inizio, si parte da 0; se manca la fine, si arriva in fondo. Il terzo numero è il **passo**: `-1` legge la lista al contrario. Lo slicing restituisce sempre una **nuova** lista.
@@ -219,16 +211,17 @@ I primi due elementi, con indice 0 e 1: la fine non è compresa.
 
 Un `str` si comporta come una lista di lettere: ha indici, `len` e slicing. Però <u>non si può modificare</u>.
 
-```text
->>> nome = "Aria"
->>> nome[0]
-'A'
->>> len(nome)
-4
->>> nome[0] = "I"
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'str' object does not support item assignment
+```python
+nome = "Aria"
+print(nome[0])      # 'A'
+print(len(nome))    # 4
+
+# Decommenta la riga sotto per vedere l'errore:
+# nome[0] = "I"     # TypeError: 'str' object does not support item assignment
+
+# Per cambiare una lettera si crea una nuova stringa
+nuovo_nome = "I" + nome[1:]
+print(nuovo_nome)   # 'Iria'
 ```
 
 Un oggetto che non si può modificare si dice **immutabile**. Per «cambiare» un testo se ne crea uno nuovo: `nome = "I" + nome[1:]`.
@@ -244,14 +237,13 @@ No: i testi sono immutabili. Si crea un testo nuovo.
 
 Ricordi le scatole e le frecce? <u>Una variabile è una freccia; `b = a` crea una seconda freccia verso la **stessa** lista.</u> Kofi entra nel dungeon e «copia» lo zaino di Aria:
 
-```text
->>> zaino_aria = ["spada", "pozione"]
->>> zaino_kofi = zaino_aria
->>> zaino_kofi.append("torcia")
->>> zaino_aria
-['spada', 'pozione', 'torcia']
->>> zaino_kofi is zaino_aria
-True
+```python
+zaino_aria = ["spada", "pozione"]
+zaino_kofi = zaino_aria         # Non copia: entrambi puntano alla stessa lista!
+
+zaino_kofi.append("torcia")
+print("Aria:", zaino_aria)      # ['spada', 'pozione', 'torcia']
+print("Stessa lista?", zaino_kofi is zaino_aria)  # True
 ```
 
 Kofi ha messo la torcia nel suo zaino, e la torcia è comparsa in quello di Aria. Perché lo zaino è uno solo:
@@ -264,13 +256,13 @@ zaino_kofi ──┘
 
 Lo stesso succedeva in Java con gli `ArrayList` e gli oggetti. Questo fenomeno si chiama **aliasing**: due nomi per lo stesso oggetto. Per avere due zaini distinti serve una **copia**:
 
-```text
->>> copia = zaino_aria.copy()
->>> copia.append("corda")
->>> zaino_aria
-['spada', 'pozione', 'torcia']
->>> copia
-['spada', 'pozione', 'torcia', 'corda']
+```python
+zaino_aria = ["spada", "pozione", "torcia"]
+copia = zaino_aria.copy()       # Crea una seconda lista indipendente
+
+copia.append("corda")
+print("Aria:", zaino_aria)      # ['spada', 'pozione', 'torcia']
+print("Copia:", copia)          # ['spada', 'pozione', 'torcia', 'corda']
 ```
 
 ```text
@@ -295,14 +287,12 @@ Con <code>a.copy()</code>, oppure <code>a[:]</code> o <code>list(a)</code>.
 
 Una **tupla** è una sequenza **immutabile**, scritta fra parentesi tonde. Serve per dati che vanno insieme e non devono cambiare, come le coordinate di una casella.
 
-```text
->>> posizione = (2, 1)
->>> posizione[0]
-2
->>> posizione[0] = 3
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'tuple' object does not support item assignment
+```python
+posizione = (2, 1)
+print(posizione[0])     # 2
+
+# Decommenta la riga sotto per vedere l'errore:
+# posizione[0] = 3      # TypeError: 'tuple' object does not support item assignment
 ```
 
 Le tuple permettono anche di assegnare più variabili in una riga: `riga, colonna = 1, 1`.
@@ -427,11 +417,16 @@ Una **list comprehension** costruisce una lista in una riga: `[n * n for n in ra
 
 Ecco la trappola più famosa delle matrici in Python:
 
-```text
->>> griglia = [[0] * 3] * 3
->>> griglia[0][0] = 9
->>> griglia
-[[9, 0, 0], [9, 0, 0], [9, 0, 0]]
+```python
+# TRAPPOLA: * 3 ripete il riferimento alla STESSA riga!
+griglia = [[0] * 3] * 3
+griglia[0][0] = 9
+print("Sbagliata:", griglia)    # [[9, 0, 0], [9, 0, 0], [9, 0, 0]]
+
+# FORMA SICURA: crea una riga nuova a ogni giro
+griglia_ok = [[0] * 3 for r in range(3)]
+griglia_ok[0][0] = 9
+print("Corretta: ", griglia_ok) # [[9, 0, 0], [0, 0, 0], [0, 0, 0]]
 ```
 
 `* 3` non ha creato tre righe: ha creato **tre frecce verso la stessa riga**. È l'aliasing, travestito. La forma sicura costruisce una riga nuova a ogni giro: `[[0] * 3 for r in range(3)]`, oppure un ciclo con `append`.

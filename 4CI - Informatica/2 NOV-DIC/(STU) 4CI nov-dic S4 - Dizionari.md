@@ -26,10 +26,9 @@ Il trucco del Mundaneum sta nell'intestazione. <u>Non cerchi «la scheda numero 
 
 Un **dizionario** è una raccolta di coppie **chiave → valore**. <u>Si cerca un dato dal suo nome (la chiave), non dalla sua posizione.</u> Si scrive fra graffe, con i due punti fra chiave e valore.
 
-```text
->>> scheda = {"nome": "Aria", "vita": 100, "forza": 7}
->>> scheda["vita"]
-100
+```python
+scheda = {"nome": "Aria", "vita": 100, "forza": 7}
+print(scheda["vita"])   # 100 -> cerca il valore associato alla chiave "vita"
 ```
 
 ```text
@@ -63,16 +62,16 @@ Una raccolta di coppie chiave → valore, in cui si cerca un dato dalla sua chia
 
 ### ✅ Modificare, aggiungere, togliere
 
-```text
->>> scheda["vita"] = 85
->>> scheda["livello"] = 2
->>> scheda
-{'nome': 'Aria', 'vita': 85, 'forza': 7, 'livello': 2}
->>> len(scheda)
-4
->>> del scheda["livello"]
->>> scheda
-{'nome': 'Aria', 'vita': 85, 'forza': 7}
+```python
+scheda = {"nome": "Aria", "vita": 100, "forza": 7}
+
+scheda["vita"] = 85         # Chiave già presente: modifica il valore
+scheda["livello"] = 2       # Chiave nuova: aggiunge la coppia
+print(scheda)               # {'nome': 'Aria', 'vita': 85, 'forza': 7, 'livello': 2}
+print(len(scheda))          # 4 -> numero di coppie nel dizionario
+
+del scheda["livello"]       # Rimuove la chiave "livello" e il suo valore
+print(scheda)               # {'nome': 'Aria', 'vita': 85, 'forza': 7}
 ```
 
 <u>La stessa scrittura `scheda[chiave] = valore` modifica una chiave che c'è e aggiunge una chiave che non c'è.</u> `del` toglie una coppia. `len` conta le coppie.
@@ -92,31 +91,30 @@ Con <code>del</code>: <code>del scheda["livello"]</code>.
 
 ⚠️ <u>Se chiedi una chiave che non esiste, Python non risponde «niente»: si ferma con un `KeyError`.</u>
 
-```text
->>> scheda["oro"]
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-KeyError: 'oro'
+```python
+scheda = {"nome": "Aria", "vita": 85, "forza": 7}
+
+# Decommenta la riga sotto per vedere l'errore:
+# print(scheda["oro"])      # KeyError: 'oro'
 ```
 
 Ci sono due modi per evitarlo. Il primo è **chiedere prima** con `in`. Il secondo è **`get`**, che restituisce `None`, oppure un valore di riserva, se la chiave manca.
 
-```text
->>> "oro" in scheda
-False
->>> print(scheda.get("oro"))
-None
->>> scheda.get("oro", 0)
-0
+```python
+scheda = {"nome": "Aria", "vita": 85, "forza": 7}
+
+print("oro" in scheda)          # False -> controlla se la chiave esiste
+print(scheda.get("oro"))        # None  -> se manca, non crasha
+print(scheda.get("oro", 0))     # 0     -> valore di riserva se la chiave manca
 ```
 
 ⚠️ Chi arriva dalle liste prova a scrivere `scheda[0]` per avere «il primo campo». Ma `0` non è una chiave della scheda:
 
-```text
->>> scheda[0]
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-KeyError: 0
+```python
+scheda = {"nome": "Aria", "vita": 85, "forza": 7}
+
+# Decommenta la riga sotto per vedere l'errore:
+# print(scheda[0])          # KeyError: 0 -> nei dizionari non ci sono indici numerici automatici
 ```
 
 <details>
@@ -174,14 +172,14 @@ Con <code>for chiave, valore in scheda.items():</code>.
 
 Un dizionario è perfetto per **contare**: la chiave è la cosa, il valore è quante ne hai.
 
-```text
->>> inventario = {"pozione": 3, "freccia": 20}
->>> inventario["pozione"] -= 1
->>> inventario["chiave"] = inventario.get("chiave", 0) + 1
->>> inventario
-{'pozione': 2, 'freccia': 20, 'chiave': 1}
->>> sum(inventario.values())
-23
+```python
+inventario = {"pozione": 3, "freccia": 20}
+
+inventario["pozione"] -= 1                                  # Usa una pozione
+inventario["chiave"] = inventario.get("chiave", 0) + 1      # Aggiunge 1 anche se "chiave" non c'era
+
+print(inventario)                   # {'pozione': 2, 'freccia': 20, 'chiave': 1}
+print(sum(inventario.values()))     # 23 -> somma totale degli oggetti
 ```
 
 La riga con `get` è un'espressione da ricordare: <u>«prendi quante ne ho, oppure 0 se non ne ho, e aggiungi 1»</u>. Funziona sia la prima volta sia le successive.
@@ -257,15 +255,18 @@ Una tabella: ogni dizionario è una riga (un record), ogni chiave è una colonna
 
 Un valore può essere una lista, una tupla o un altro dizionario. La scheda completa dell'eroe tiene insieme dati di tipo diverso:
 
-```text
->>> eroe = {"nome": "Aria", "vita": 100, "zaino": ["spada", "torcia"], "posizione": (1, 1)}
->>> eroe["zaino"][0]
-'spada'
->>> eroe["zaino"].append("pozione")
->>> eroe["zaino"]
-['spada', 'torcia', 'pozione']
->>> eroe["posizione"][0]
-1
+```python
+eroe = {
+    "nome": "Aria",
+    "vita": 100,
+    "zaino": ["spada", "torcia"],   # Una lista dentro il dizionario
+    "posizione": (1, 1),            # Una tupla dentro il dizionario
+}
+
+print(eroe["zaino"][0])             # 'spada' -> primo oggetto dello zaino
+eroe["zaino"].append("pozione")     # Modifica la lista dentro il dizionario
+print(eroe["zaino"])                # ['spada', 'torcia', 'pozione']
+print(eroe["posizione"][0])         # 1 -> riga della posizione
 ```
 
 Si legge da sinistra a destra, un passo alla volta: `eroe["zaino"]` è la lista; `[0]` è il suo primo elemento.
@@ -323,11 +324,13 @@ Un dizionario: ogni impostazione si cerca per nome, non per posizione.
 
 **Le chiavi devono essere immutabili.** Un testo, un numero o una tupla vanno bene; una lista no.
 
-```text
->>> zaino = {["spada"]: 1}
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: unhashable type: 'list'
+```python
+# Una tupla è immutabile, quindi può fare da chiave
+mappa_oggetti = {("spada",): 1}
+print(mappa_oggetti)
+
+# Decommenta la riga sotto per vedere l'errore con una lista come chiave:
+# zaino = {["spada"]: 1}    # TypeError: unhashable type: 'list'
 ```
 
 *Unhashable* vuol dire «non se ne può calcolare l'hash». L'**hash** è un numero calcolato dalla chiave, che dice al dizionario in quale cassetto guardare. Per questo cercare in un dizionario è velocissimo, anche con milioni di chiavi: non scorre tutto, va dritto al cassetto. Se la chiave cambiasse, cambierebbe il cassetto, e il dato andrebbe perso. L'idea dei «cassetti calcolati» è descritta da Hans Peter Luhn, un ricercatore IBM, nel 1953. In Java la stessa struttura si chiama `HashMap`.

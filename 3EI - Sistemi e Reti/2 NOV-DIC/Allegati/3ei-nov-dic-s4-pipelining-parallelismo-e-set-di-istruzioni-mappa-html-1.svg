@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-704 -296 1422 592" width="1422" height="592" role="img" aria-label="Pipelining, parallelismo e set di istruzioni" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji" font-size="16">
+<title>Pipelining, parallelismo e set di istruzioni</title>
+<rect x="-704" y="-296" width="1422" height="592" rx="14" fill="#ffffff"/>
+<path d="M422.07770007458475 -152.2 C449.07770007458475 -152.2 449.07770007458475 -234.2 476.07770007458475 -234.2" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M422.07770007458475 -152.2 C449.07770007458475 -152.2 449.07770007458475 -183 476.07770007458475 -183" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M422.07770007458475 -152.2 C449.07770007458475 -152.2 449.07770007458475 -131.8 476.07770007458475 -131.8" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M422.07770007458475 -152.2 C449.07770007458475 -152.2 449.07770007458475 -70.20000000000003 476.07770007458475 -70.20000000000003" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M312.25370007458474 121.79999999999998 C339.25370007458474 121.79999999999998 339.25370007458474 9.399999999999995 366.25370007458474 9.399999999999995" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M312.25370007458474 121.79999999999998 C339.25370007458474 121.79999999999998 339.25370007458474 60.599999999999994 366.25370007458474 60.599999999999994" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M312.25370007458474 121.79999999999998 C339.25370007458474 121.79999999999998 339.25370007458474 101.4 366.25370007458474 101.4" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M312.25370007458474 121.79999999999998 C339.25370007458474 121.79999999999998 339.25370007458474 142.2 366.25370007458474 142.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M312.25370007458474 121.79999999999998 C339.25370007458474 121.79999999999998 339.25370007458474 183 366.25370007458474 183" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M312.25370007458474 121.79999999999998 C339.25370007458474 121.79999999999998 339.25370007458474 234.2 366.25370007458474 234.2" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-387.1337000745848 -140.8 C-414.1337000745848 -140.8 -414.1337000745848 -243.2 -441.1337000745848 -243.2" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-387.1337000745848 -140.8 C-414.1337000745848 -140.8 -414.1337000745848 -192 -441.1337000745848 -192" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-387.1337000745848 -140.8 C-414.1337000745848 -140.8 -414.1337000745848 -140.8 -441.1337000745848 -140.8" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-387.1337000745848 -140.8 C-414.1337000745848 -140.8 -414.1337000745848 -79.20000000000003 -441.1337000745848 -79.20000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-387.1337000745848 -140.8 C-414.1337000745848 -140.8 -414.1337000745848 -28.00000000000003 -441.1337000745848 -28.00000000000003" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-408.76570007458474 92.39999999999998 C-435.76570007458474 92.39999999999998 -435.76570007458474 30.799999999999976 -462.76570007458474 30.799999999999976" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-408.76570007458474 92.39999999999998 C-435.76570007458474 92.39999999999998 -435.76570007458474 81.99999999999997 -462.76570007458474 81.99999999999997" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-408.76570007458474 92.39999999999998 C-435.76570007458474 92.39999999999998 -435.76570007458474 143.6 -462.76570007458474 143.6" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-333.88570007458475 233.2 C-360.88570007458475 233.2 -360.88570007458475 212.79999999999998 -387.88570007458475 212.79999999999998" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-333.88570007458475 233.2 C-360.88570007458475 233.2 -360.88570007458475 253.6 -387.88570007458475 253.6" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M108.1 -80.4 C156.3991514668236 -80.4 156.3991514668236 -152.2 204.70170007458478 -152.2" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M115.8 68.9 C160.23070309044112 68.9 160.23070309044112 121.79999999999998 204.70170007458478 121.79999999999998" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-111.0 -76.3 C-157.8422200442865 -76.3 -157.8422200442865 -140.8 -204.70170007458478 -140.8" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-122.8 55.4 C-163.73760006603746 55.4 -163.73760006603746 92.39999999999998 -204.70170007458478 92.39999999999998" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M-88.9 101.2 C-146.78175457740994 101.2 -146.78175457740994 233.2 -204.70170007458478 233.2" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="134.7" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#111827" font-weight="600"><tspan x="0" y="-10.4">Pipelining, parallelismo e set di</tspan><tspan x="0" y="10.4">istruzioni</tspan></text>
+<rect x="204.70170007458478" y="-181" width="217.376" height="57.6" rx="18" fill="#e4eefe" stroke="#3b82f6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#1b3b6f" font-weight="600"><tspan x="313.38970007458477" y="-162.6">Set di istruzioni: CISC e</tspan><tspan x="313.38970007458477" y="-141.8">RISC</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="484.07770007458475" y="-244.6">✅ Istruzioni potenti o</tspan><tspan x="484.07770007458475" y="-223.8">semplici</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="484.07770007458475" y="-183.0">🔍 Il prezzo di ogni scelta</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="484.07770007458475" y="-142.2">✅ Perché RISC apre al</tspan><tspan x="484.07770007458475" y="-121.4">parallelismo</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="484.07770007458475" y="-80.6">🤓 CISC e RISC nei</tspan><tspan x="484.07770007458475" y="-59.8">processori moderni</tspan></text>
+<rect x="204.70170007458478" y="103.39999999999998" width="107.55199999999998" height="36.8" rx="18" fill="#fef1dd" stroke="#f59e0b" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6e4705" font-weight="600"><tspan x="258.47770007458473" y="121.8">Pipelining</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="374.25370007458474" y="-1.0">✅ Lavanderia a catena e</tspan><tspan x="374.25370007458474" y="19.8">cinque stadi</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="374.25370007458474" y="60.6">✅ Latenza e throughput</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="374.25370007458474" y="101.4">🔍 Contare i cicli</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="374.25370007458474" y="142.2">✅ I tre hazard della pipeline</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="374.25370007458474" y="183.0">🔍 Stalli e forwarding</tspan></text>
+<text text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="374.25370007458474" y="223.8">🤓 Predizione dei salti e</tspan><tspan x="374.25370007458474" y="244.6">superscalari</tspan></text>
+<rect x="-387.1337000745848" y="-159.20000000000002" width="182.432" height="36.8" rx="18" fill="#e0f7e8" stroke="#22c55e" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#0f592a" font-weight="600"><tspan x="-295.9177000745848" y="-140.8">Basi di parallelismo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-449.1337000745848" y="-253.6">✅ Concorrenza e</tspan><tspan x="-449.1337000745848" y="-232.8">parallelismo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-449.1337000745848" y="-192.0">✅ Multi-core e thread</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-449.1337000745848" y="-151.2">✅ Dati e compiti in</tspan><tspan x="-449.1337000745848" y="-130.4">parallelo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-449.1337000745848" y="-89.6">✅ Perché più core non</tspan><tspan x="-449.1337000745848" y="-68.8">bastano sempre</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-449.1337000745848" y="-28.0">🔍 Race condition e lock</tspan></text>
+<rect x="-408.76570007458474" y="73.99999999999997" width="204.06399999999996" height="36.8" rx="18" fill="#fde5e5" stroke="#ef4444" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#6c1f1f" font-weight="600"><tspan x="-306.73370007458476" y="92.4">Parallelismo in Python</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-470.76570007458474" y="30.8">✅ Il GIL di Python</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-470.76570007458474" y="71.6">✅ Thread per l'attesa,</tspan><tspan x="-470.76570007458474" y="92.4">processi per il calcolo</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-470.76570007458474" y="133.2">🔍 Esempio eseguibile con</tspan><tspan x="-470.76570007458474" y="154.0">concurrent.futures</tspan></text>
+<rect x="-333.88570007458475" y="214.79999999999998" width="129.18399999999997" height="36.8" rx="18" fill="#efe8fe" stroke="#8b5cf6" stroke-width="2"/>
+<text text-anchor="middle" dominant-baseline="central" fill="#3f296f" font-weight="600"><tspan x="-269.29370007458476" y="233.2">Oltre la CPU</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-395.88570007458475" y="212.8">🤓 OpenMP in C e C++</tspan></text>
+<text text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="400"><tspan x="-395.88570007458475" y="253.6">🤓 GPU e calcolo parallelo</tspan></text>
+</svg>

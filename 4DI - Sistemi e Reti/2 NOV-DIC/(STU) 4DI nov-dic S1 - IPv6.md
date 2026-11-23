@@ -2,6 +2,8 @@
 
 # 🌐 IPv6
 
+**Libro:** Unità 4, pagina 158
+
 **4DI · Novembre-Dicembre · S1 · Teoria**
 
 ⏱️ **Tempo di studio: circa 40 minuti.** ✅ essenziale: 25 min. 🔍 per il voto alto: 15 min. 🤓 si può saltare. Nessun compito obbligatorio a casa.
@@ -16,11 +18,12 @@
 >
 > 🧪 **Quanto spazio è, davvero?** La superficie totale della Terra (terre emerse più oceani) è di circa $5{,}1 \times 10^{14}$ metri quadrati, cioè $5{,}1 \times 10^{20}$ millimetri quadrati.
 >
-> - **Risultato:** con gli indirizzi IPv6 potremmo assegnare <u>oltre 660 milioni di miliardi ($6{,}6 \times 10^{17}$) di indirizzi a ogni singolo millimetro quadrato</u> della superficie terrestre.
+- **Risultato:** con gli indirizzi IPv6 potremmo assegnare <u>oltre 660 milioni di miliardi $6{,}6 \times 10^{17}$ di indirizzi a ogni singolo millimetro quadrato</u> della superficie terrestre.
 
 ## 📜 Lo spazio di IPv4 finisce
 
 ### ✅ 32 bit non bastano più
+#fatto👍 
 
 Un indirizzo IPv4 ha 32 bit (lo abbiamo visto in S3 di sett-ott). Con 32 bit ci sono 2^32 = 4 294 967 296 indirizzi: circa **4,3 miliardi**.
 
@@ -34,13 +37,13 @@ Nel 1981 sembrano tantissimi. Oggi ogni persona ha più dispositivi connessi. Ne
 <summary>🃏 <b>Quanti indirizzi IPv4 esistono?</b></summary>
 Circa 4,3 miliardi, cioè 2^32.
 </details>
-
 <details>
 <summary>🃏 <b>Che cosa fa IANA?</b></summary>
 Distribuisce i grandi blocchi di indirizzi IP agli enti che li assegnano.
 </details>
 
 ### 🔍 Il NAT tiene in vita IPv4
+#fatto👍 
 
 **NAT** (*Network Address Translation*, traduzione degli indirizzi) è il trucco che salva IPv4. Il router di casa ha un solo indirizzo pubblico; i dispositivi dietro di lui hanno indirizzi privati.
 
@@ -52,13 +55,13 @@ Distribuisce i grandi blocchi di indirizzi IP agli enti che li assegnano.
 <summary>🃏 <b>Che cosa fa il NAT?</b></summary>
 Il router traduce gli indirizzi privati dei dispositivi in un indirizzo pubblico.
 </details>
-
 <details>
 <summary>🃏 <b>Perché il NAT è un rattoppo e non una cura?</b></summary>
 Non aumenta gli indirizzi: li condivide, e rende più difficile farsi raggiungere da fuori.
 </details>
 
 ### 🤓 Dove nasce IPv6
+#fatto👍 
 
 Nel 1995 l'IETF, il gruppo che scrive gli standard di Internet, pubblica la prima specifica di IPv6. La versione in uso oggi è l'**RFC 8200** del 2017. Il numero sale da 4 a 6 perché il 5 era già stato usato per un protocollo sperimentale.
 
@@ -74,6 +77,7 @@ Perché è la sesta versione di IP: il numero 5 era già usato per un protocollo
 ## 🔢 Scrivere un indirizzo IPv6
 
 ### ✅ 128 bit in otto gruppi
+#fatto👍 
 
 IPv6 usa **128 bit**. Il numero di indirizzi è 2^128: un numero con 39 cifre, circa 3,4 × 10^38.
 
@@ -87,13 +91,13 @@ Per scriverlo si usano **otto gruppi** di 16 bit. Ogni gruppo si scrive in **esa
 <summary>🃏 <b>Quanti bit ha un indirizzo IPv6?</b></summary>
 128 bit, scritti in otto gruppi.
 </details>
-
 <details>
 <summary>🃏 <b>Quanti bit copre una cifra esadecimale?</b></summary>
 4 bit: per esempio `f` vale 15, cioè `1111`.
 </details>
 
 ### ✅ Compressione con ::
+#fatto👍 
 
 Otto gruppi sono lunghi da scrivere. Due regole lo accorciano:
 
@@ -117,6 +121,7 @@ Una sola volta in tutto l'indirizzo.
 </details>
 
 ### 🔍 Perché :: si usa una sola volta
+#fatto👍 
 
 Immagina un indirizzo `2001:db8::1::5`. Ci sono quattro gruppi scritti e quattro gruppi di zeri da distribuire. Il primo `::` potrebbe avere 1 zero e il secondo 3; oppure 2 e 2; oppure 3 e 1. Non si sa quale sia giusto.
 
@@ -128,6 +133,7 @@ Perché non si capisce quanti zeri stanno in ciascun `::`: l'indirizzo sarebbe a
 </details>
 
 ### 🔍 Verifica l'IPv6 del tuo dispositivo
+#fatto👍 
 
 **Sul telefono:** apri le impostazioni del Wi-Fi, poi la rete a cui sei connesso. Cerca la voce «IPv6» o «indirizzo IP». Il percorso cambia con il modello e con il sistema. Se trovi solo un indirizzo a quattro gruppi di cifre decimali, come `192.168.1.25`, quella è la versione IPv4: la rete del tuo telefono può non avere IPv6.
 
@@ -147,6 +153,7 @@ Perché non si capisce quanti zeri stanno in ciascun `::`: l'indirizzo sarebbe a
 ## 📐 Prefisso e rete
 
 ### ✅ Il prefisso separa rete e host
+#fatto👍 
 
 Come in IPv4, il **prefisso** dice quanti bit sono di rete. In IPv6 la rete locale tipica ha prefisso **/64**: i primi 64 bit identificano la rete, gli altri 64 identificano l'interfaccia.
 
@@ -162,13 +169,13 @@ Un operatore di solito assegna un blocco più grande (per esempio un prefisso `/
 <summary>🃏 <b>Quanti bit ha il prefisso di una rete locale tipica?</b></summary>
 64, cioè /64.
 </details>
-
 <details>
 <summary>🃏 <b>Quali bit indicano la rete in 2001:db8:4f2a:17::/64?</b></summary>
 I primi 64 bit, cioè i primi quattro gruppi: 2001, db8, 4f2a e 17.
 </details>
 
 ### 🔍 Perché /64 per la rete locale
+#fatto👍 
 
 Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio a tantissimi dispositivi, e permette ai dispositivi di costruirsi da soli il proprio indirizzo partendo dal prefisso. È la prassi comune, non un obbligo dell'intero protocollo.
 
@@ -180,6 +187,7 @@ Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio 
 </details>
 
 ### 🤓 Finire gli indirizzi IPv6: un limite umano, non fisico
+#fatto👍 
 
 Viene spontaneo chiedersi: **è fisicamente possibile esaurire anche gli indirizzi IPv6?**
 
@@ -189,7 +197,7 @@ Il vero punto debole non è la fisica, ma **come assegniamo i prefissi**. In IPv
 
 <img src="Allegati/xkcd-865-nanobots.png" width="740" height="251" alt="Vignetta xkcd #865 Nanobots: i nanobot hanno divorato il 40% della Terra e poi si sono fermati; il mistero si risolve quando si scopre che il volume di ogni nanobot è di pochi micron cubici, quindi il 1998 ha comprato un po' di tempo">
 
-*Vignetta **xkcd #865** (*Nanobots*), di Randall Munroe, licenza CC BY-NC 2.5: i nanobot si fermano perché a un certo punto finiscono lo spazio fisico, non gli indirizzi. In inglese, un minuto di lettura.*
+*Vignetta **xkcd #865** (*Nanobots*), di Randall Munroe, licenza CC BY-NC 2.5: i nanobot si fermano perché a un certo punto finiscono lo spazio fisico, non gli indirizzi. In inglese, un minuto di lettura.
 
 <details>
 <summary>🃏 <b>🤓 È fisicamente possibile finire i 2^128 indirizzi IPv6 collegando dispositivi?</b></summary>
@@ -241,7 +249,6 @@ Questo indirizzo non lo digiti quasi mai a mano: i dispositivi lo usano **dietro
 <summary>🃏 <b>Dove vale un indirizzo link-local, e dove lo vedi spesso su un PC?</b></summary>
 Vale solo nel collegamento locale (stesso cavo o Wi-Fi); su un PC compare spesso in <code>ipconfig</code> anche come indirizzo del Gateway predefinito.
 </details>
-
 <details>
 <summary>🃏 <b>Quali indirizzi appartengono a fe80::/10?</b></summary>
 Quelli che iniziano con un valore da fe80 a febf.
@@ -249,7 +256,7 @@ Quelli che iniziano con un valore da fe80 a febf.
 
 ### 🔍 Multicast ff02::1: parla a tutti
 
-**Multicast** è un pacchetto indirizzato a un **gruppo specifico di dispositivi interessati**, senza disturbare gli altri. Il prefisso multicast è `ff00::/8`. IPv4 usava il **broadcast** (urlare a chiunque sulla rete locale); <u>IPv6 abolisce il broadcast e usa al suo posto il multicast</u>.
+**Multicast** è un pacchetto indirizzato a un **gruppo specifico di dispositivi interessati**, senza disturbare gli altri. Il prefisso multicast è `ff00::/8`. IPv4 usava il **broadcast** (urlare a chiunque sulla rete locale); <u>IPv6 abolisce il broadcast e usa al suo posto il multicast</u>. 
 
 **Che cosa ci fa davvero il tuo dispositivo:**
 - **Trovare i vicini e il router (*Neighbor Discovery*):** `ff02::1` è il gruppo di *tutti i nodi* del collegamento locale (come un annuncio dall'altoparlante della scuola: lo sentono tutti nel palazzo, nessuno fuori). Quando invece il tuo telefono entra nel Wi-Fi e cerca solo il router, scrive a **`ff02::2`** (*tutti i router sul collegamento*): il router risponde dandogli i parametri per navigare, mentre TV e stampanti ignorano il messaggio.
@@ -260,7 +267,6 @@ Quelli che iniziano con un valore da fe80 a febf.
 <summary>🃏 <b>Che cos'è ff02::1, e che differenza c'è con ff02::2?</b></summary>
 <code>ff02::1</code> è il gruppo multicast di tutti i dispositivi del collegamento locale; <code>ff02::2</code> raggiunge invece solo i router di quel collegamento.
 </details>
-
 <details>
 <summary>🃏 <b>Che cosa usa IPv6 al posto del broadcast?</b></summary>
 Il multicast (blocco <code>ff00::/8</code>), che permette di parlare solo al gruppo interessato.
