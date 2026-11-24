@@ -49,12 +49,10 @@ Il 3 febbraio 2011 la **IANA** distribuisce gli ultimi grandi blocchi centrali d
 <summary>🃏 <b>Quanti bit ha un indirizzo IPv6, in quanti gruppi si scrive e quanti bit vale ogni cifra esadecimale?</b></summary>
 Ha 128 bit divisi in 8 gruppi da 16 bit; ogni cifra esadecimale (0-9, a-f) vale 4 bit.
 </details>
-
 <details>
 <summary>🃏 <b>Perché la scorciatoia <code>::</code> si può usare una sola volta nello stesso indirizzo?</b></summary>
 Perché con due <code>::</code> non si saprebbe quanti gruppi di zeri mettere a sinistra e quanti a destra, rendendo l'indirizzo ambiguo.
 </details>
-
 <details>
 <summary>🃏 <b>Che differenza c'è fra <code>2000::/3</code>, <code>fe80::/10</code> e <code>ff02::1</code>?</b></summary>
 <code>2000::/3</code> è globale unicast (viaggia su Internet), <code>fe80::/10</code> è link-local (resta sul collegamento locale) e <code>ff02::1</code> è multicast per tutti i nodi locali (sostituisce il broadcast).
