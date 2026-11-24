@@ -163,7 +163,7 @@ Come in IPv4, il **prefisso** dice quanti bit sono di rete. In IPv6 la rete loca
 
 *Struttura generale di un indirizzo IPv6 unicast: prima il prefisso di rete, poi l'identificatore dell'interfaccia.*
 
-Un operatore di solito assegna un blocco più grande (per esempio un prefisso `/48` o `/56`), e la rete di casa ne prende un `/64`. Sono valori tipici, non regole fisse.
+Un operatore (ISP) di solito assegna un blocco più grande (per esempio un prefisso `/48` o `/56`), e la rete di casa ne prende un `/64`. Sono valori tipici, non regole fisse.
 
 <details>
 <summary>🃏 <b>Quanti bit ha il prefisso di una rete locale tipica?</b></summary>
@@ -175,7 +175,6 @@ I primi 64 bit, cioè i primi quattro gruppi: 2001, db8, 4f2a e 17.
 </details>
 
 ### 🔍 Perché /64 per la rete locale
-#fatto👍 
 
 Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio a tantissimi dispositivi, e permette ai dispositivi di costruirsi da soli il proprio indirizzo partendo dal prefisso. È la prassi comune, non un obbligo dell'intero protocollo.
 
@@ -187,7 +186,6 @@ Con /64 restano 64 bit per le interfacce. È una scelta standard: lascia spazio 
 </details>
 
 ### 🤓 Finire gli indirizzi IPv6: un limite umano, non fisico
-#fatto👍 
 
 Viene spontaneo chiedersi: **è fisicamente possibile esaurire anche gli indirizzi IPv6?**
 

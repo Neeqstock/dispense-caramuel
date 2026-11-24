@@ -58,12 +58,21 @@ Perché con due <code>::</code> non si saprebbe quanti gruppi di zeri mettere a 
 <code>2000::/3</code> è globale unicast (viaggia su Internet), <code>fe80::/10</code> è link-local (resta sul collegamento locale) e <code>ff02::1</code> è multicast per tutti i nodi locali (sostituisce il broadcast).
 </details>
 
+fe80/10 link local
+ff02::1 multicast
+2000::/3 global unicast
+`001|0`
+
 ### 1.1 ✏️ Pratica · ✅ · 🟢 Svolto — Comprimere e leggere una `/64`
 
 **Consegna.** Nei registri di un server di prova trovi scritto per esteso questo indirizzo con il suo prefisso (blocco di documentazione):
 
 ```text
 2001:0db8:00c0:0000:0000:0000:0a00:0030/64
+
+forma compressa: 2001:0db8:00c0::0a00:0030/64
+rete:            2001:0db8:00c0:   0000:0000:0000:0000:0000/48
+
 ```
 
 1. Scrivi l'indirizzo nella forma compressa più corta possibile.
@@ -90,7 +99,7 @@ Perché con due <code>::</code> non si saprebbe quanti gruppi di zeri mettere a 
 
 - **A)** `2001:db8::1::5`
 - **B)** `2001:db8:0:0:0:0:0:0:9`
-- **C)** `fe80::21a:4bff:fe10:80`
+- **C)** `fe80:0000:0000:0000:021a:4bff:fe10:0080`
 - **D)** `2001:db8:4g00::1`
 
 <details>
