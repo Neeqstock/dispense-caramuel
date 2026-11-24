@@ -445,6 +445,21 @@ Un **notebook** (quaderno) è un documento fatto di **celle**. Alcune celle cont
 
 🤓 Il nome *Jupyter* unisce tre linguaggi: **Ju**lia, **Pyt**hon e **R**.
 
+### 🛠️ Come iniziare a usare Jupyter
+
+Hai due modi comodi per partire:
+
+1. **In VS Code (consigliato in laboratorio).**
+   - Installa l'estensione **Jupyter** (Microsoft) dal pannello delle estensioni.
+   - Crea un nuovo file che finisce con `.ipynb` (per esempio `prove.ipynb`) oppure apri un notebook già pronto.
+   - Aggiungi una cella di codice (`+ Code`), scrivi qualche riga di Python e premi **Shift + Invio** (oppure il pulsante ▶️ a sinistra della cella) per eseguirla.
+   - La prima volta, in alto a destra ti chiederà **Select Kernel**: scegli il tuo Python. Se ti propone di installare il pacchetto `ipykernel`, accetta (oppure da terminale lancia `python -m pip install ipykernel`).
+2. **Nel browser, senza installare nulla.** Per una prova al volo da casa o se il PC non è configurato:
+   - [Google Colab](https://colab.research.google.com/): gratuito nel browser, richiede un account Google e salva i notebook su Drive.
+   - [JupyterLite](https://jupyter.org/try): gira direttamente nel browser senza nemmeno fare login.
+
+📖 Per scorciatoie, celle Markdown e risoluzione dei problemi comuni, guarda la guida completa: [Jupyter - istruzioni per l'uso](<../../Integrazioni e curiosità/Approfondimenti didattici/Jupyter - istruzioni per l'uso.md>).
+
 🔧 **In laboratorio:** lo zaino e la mappa del dungeon, e una prima prova con un notebook.
 
 <details>
