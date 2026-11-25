@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title description">
+  <title id="title">Schema semplificato degli IMP di ARPANET</title>
+  <desc id="description">Quattro computer universitari sono collegati ciascuno a un IMP. Gli IMP inoltrano i messaggi attraverso la rete ARPANET.</desc>
+  <rect width="900" height="420" rx="26" fill="#fffdf7"/>
+  <text x="450" y="42" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="700" fill="#39445e">ARPANET, 1969 · ogni nodo aveva il suo IMP</text>
+
+  <path d="M248 152 C330 78 570 78 652 152 M248 268 C330 342 570 342 652 268 M248 152 C286 180 286 240 248 268 M652 152 C614 180 614 240 652 268 M248 152 C370 220 530 220 652 268 M652 152 C530 220 370 220 248 268"
+        fill="none" stroke="#8c9bbb" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 13"/>
+
+  <g font-family="sans-serif" text-anchor="middle" fill="#39445e">
+    <g transform="translate(78 100)">
+      <rect x="0" y="0" width="138" height="60" rx="18" fill="#dcecff" stroke="#657da9" stroke-width="3"/>
+      <text x="69" y="25" font-size="15" font-weight="700">UCLA</text>
+      <text x="69" y="46" font-size="13">computer</text>
+      <path d="M69 62 L69 81" stroke="#657da9" stroke-width="3" stroke-linecap="round"/>
+      <rect x="14" y="82" width="110" height="54" rx="16" fill="#ffe5c7" stroke="#c37d47" stroke-width="3"/>
+      <text x="69" y="115" font-size="16" font-weight="700">IMP</text>
+    </g>
+    <g transform="translate(684 100)">
+      <rect x="0" y="0" width="138" height="60" rx="18" fill="#e5e0ff" stroke="#8073ad" stroke-width="3"/>
+      <text x="69" y="25" font-size="15" font-weight="700">SRI</text>
+      <text x="69" y="46" font-size="13">computer</text>
+      <path d="M69 62 L69 81" stroke="#8073ad" stroke-width="3" stroke-linecap="round"/>
+      <rect x="14" y="82" width="110" height="54" rx="16" fill="#ffe5c7" stroke="#c37d47" stroke-width="3"/>
+      <text x="69" y="115" font-size="16" font-weight="700">IMP</text>
+    </g>
+    <g transform="translate(78 260)">
+      <rect x="0" y="0" width="138" height="60" rx="18" fill="#def2df" stroke="#6b9b75" stroke-width="3"/>
+      <text x="69" y="25" font-size="15" font-weight="700">UCSB</text>
+      <text x="69" y="46" font-size="13">computer</text>
+      <path d="M69 62 L69 81" stroke="#6b9b75" stroke-width="3" stroke-linecap="round"/>
+      <rect x="14" y="82" width="110" height="54" rx="16" fill="#ffe5c7" stroke="#c37d47" stroke-width="3"/>
+      <text x="69" y="115" font-size="16" font-weight="700">IMP</text>
+    </g>
+    <g transform="translate(684 260)">
+      <rect x="0" y="0" width="138" height="60" rx="18" fill="#ffe0e4" stroke="#b87781" stroke-width="3"/>
+      <text x="69" y="25" font-size="15" font-weight="700">Utah</text>
+      <text x="69" y="46" font-size="13">computer</text>
+      <path d="M69 62 L69 81" stroke="#b87781" stroke-width="3" stroke-linecap="round"/>
+      <rect x="14" y="82" width="110" height="54" rx="16" fill="#ffe5c7" stroke="#c37d47" stroke-width="3"/>
+      <text x="69" y="115" font-size="16" font-weight="700">IMP</text>
+    </g>
+  </g>
+
+  <rect x="337" y="171" width="226" height="78" rx="24" fill="#fff0b8" stroke="#bc9a48" stroke-width="3"/>
+  <text x="450" y="203" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#514832">rete ARPANET</text>
+  <text x="450" y="228" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#514832">gli IMP inoltrano i messaggi</text>
+  <path d="M427 279 C442 263 457 295 474 277" fill="none" stroke="#d16f45" stroke-width="4" stroke-linecap="round"/>
+  <path d="M468 274 L477 276 L473 285" fill="none" stroke="#d16f45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="450" y="316" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#6b6470">Schema concettuale, non mappa geografica</text>
+</svg>

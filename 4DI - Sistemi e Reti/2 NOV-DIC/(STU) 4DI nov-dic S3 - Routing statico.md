@@ -114,6 +114,8 @@ Il tuo PC conosce solo la propria rete. Tutto il resto lo affida a un router. Qu
 
 Dove vederlo sul tuo dispositivo:
 - **Windows:** Impostazioni → Rete e Internet → Wi-Fi (o Ethernet) → Proprietà. La voce si chiama «Gateway predefinito».
+- **Linux:** esegui `ip route`; cerca la riga `default via`.
+- **macOS:** esegui `route -n get default`; cerca il valore `gateway`.
 - **Smartphone:** Impostazioni → Wi-Fi → tocca la rete a cui sei connesso. Cerca la voce «Gateway» o «Router».
 
 Esempio inventato: il gateway del PC dello studente è `192.168.1.1`, un valore tipico delle reti di casa. Il tuo può essere diverso.
@@ -180,6 +182,8 @@ Il **ping** manda un piccolo messaggio di prova a un indirizzo e aspetta la risp
 ### 🔍 Traceroute: dove si ferma la strada
 
 Il **traceroute** elenca i router uno dopo l'altro, dal primo fino al destinatario. Per ogni router mostra la risposta. Così si vede l'ultimo punto in cui la strada funziona.
+
+Il nome del comando dipende dal sistema: Windows usa `tracert`, Linux e macOS usano `traceroute`.
 
 🧪 **Esempio.** Un PC in sede A (`192.168.80.10`) fa traceroute verso un PC in sede C (`192.168.80.50`). Se la strada è completa, la lista è:
 1. `192.168.80.1`: router A

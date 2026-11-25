@@ -21,13 +21,13 @@ In azienda nessuno ti consegna l'esercizietto. Ti dicono: «c'è un traffico str
 - 🎯 **Da provare.** Scrivi prima la tua risposta completa sul quaderno; apri la soluzione `🃏` solo alla fine per confrontare.
 - **Valori.** Aziende, nomi e numeri degli scenari sono inventati per la didattica. Gli indirizzi «pubblici» degli esercizi usano i blocchi riservati alla documentazione (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24` per IPv4, RFC 5737; `2001:db8::/32` per IPv6, RFC 3849): non appartengono a nessuna rete reale. I prefissi storici citati nei casi veri sono dichiarati come tali.
 
-| Dossier | Tema | Settimana | Caso |
-| :---: | --- | :---: | --- |
-| 1 | L'indirizzo invisibile sul cavo | [S1](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md) | Esaurimento IANA (2011) e IPv6 «dimenticato acceso» |
-| 2 | Il prefisso che rubò YouTube | [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md) | Pakistan Telecom e YouTube, 24 febbraio 2008 |
-| 3 | Strade a senso unico e buchi neri | [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) | Loop di default route, `traceroute` e rotte blackhole |
-| 4 | Quando un vicino racconta bugie | [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md) | ARPANET 1979: dal passaparola alla mappa completa |
-| 5 | Collaudo finale | [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Ripasso%20e%20recupero.md) | Tre ticket al SOC e *Capture The Flag* su carta |
+| Dossier | Tema                              |                                       Settimana                                        | Caso                                                  |
+| :-----: | --------------------------------- | :------------------------------------------------------------------------------------: | ----------------------------------------------------- |
+|    1    | L'indirizzo invisibile sul cavo   |                  [S1](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md)                  | Esaurimento IANA (2011) e IPv6 «dimenticato acceso»   |
+|    2    | Il prefisso che rubò YouTube      |  [S2](./%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md)   | Pakistan Telecom e YouTube, 24 febbraio 2008          |
+|    3    | Strade a senso unico e buchi neri |           [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md)            | Loop di default route, `traceroute` e rotte blackhole |
+|    4    | Quando un vicino racconta bugie   | [S4](./%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md) | ARPANET 1979: dal passaparola alla mappa completa     |
+|    5    | Collaudo finale                   |         [S5](./%28STU%29%204DI%20nov-dic%20S5%20-%20Ripasso%20e%20recupero.md)         | Tre ticket al SOC e *Capture The Flag* su carta       |
 
 ---
 

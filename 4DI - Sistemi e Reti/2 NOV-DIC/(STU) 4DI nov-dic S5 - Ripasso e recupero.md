@@ -110,6 +110,7 @@ La **rotta predefinita** (`0.0.0.0/0` in IPv4, `::/0` in IPv6) ha prefisso zero:
 
 - **Ping** invia un messaggio di prova e attende risposta: funziona solo se esistono sia la rotta di **andata** sia quella di **ritorno** (e nessun firewall lo blocca).
 - **Traceroute** elenca i router attraversati uno per uno: mostra l'ultimo router raggiunto prima che la strada si interrompa.
+- Il comando si chiama `tracert` su Windows e `traceroute` su Linux e macOS.
 - **Limite:** su reti grandi o soggette a guasti, riscrivere le righe a mano su decine di router è lento e soggetto a errori.
 
 <details>

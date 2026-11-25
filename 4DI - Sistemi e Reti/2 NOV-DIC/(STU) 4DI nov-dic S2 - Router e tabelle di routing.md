@@ -20,7 +20,7 @@ Per secoli le città si sono collegate con strade. A ogni incrocio c'è un carte
 
 Ore 8:05, segreteria di una scuola. La segretaria apre il registro elettronico sul suo PC. Il server che lo custodisce è in un'altra stanza, su un'altra rete. La richiesta esce dal PC, arriva al bordo della sua rete e si ferma davanti a un cartello: «dove vuoi andare? per quale strada?». Il cartello non conosce tutta la scuola. Conosce le sue poche righe, e da quelle decide.
 
-**E tu che cosa te ne fai?** Quando il Wi-Fi è connesso ma «Internet non va», quando configuri una VPN o un secondo router in casa e i siti smettono di aprirsi, il colpevole è quasi sempre una riga di questa tabella (il *gateway* predefinito o una rotta sbagliata). Saperla leggere ti permette di capire subito dove si ferma un pacchetto usando comandi reali come `route print` o `tracert`.
+**E tu che cosa te ne fai?** Quando il Wi-Fi è connesso ma «Internet non va», quando configuri una VPN o un secondo router in casa e i siti smettono di aprirsi, il colpevole è spesso una riga di questa tabella (il *gateway* predefinito o una rotta sbagliata). Saperla leggere ti permette di capire dove si ferma un pacchetto: per esempio, Windows usa `route print` e `tracert`, Linux `ip route` e `traceroute`, macOS `netstat -rn` e `traceroute`.
 
 Questa dispensa studia quel cartello: che cos'è un router, com'è fatta la sua tabella, come sceglie una riga.
 
@@ -81,7 +81,10 @@ Sul suo bordo: collega due reti, non ne fa parte come un PC.
 
 🧪 **Esempio (valori inventati).** Un PC in aula ha indirizzo `172.20.1.23`. Il suo gateway è `172.20.1.1`: l'indirizzo che il router ha sulla rete dell'aula. Per uscire dall'aula, il PC consegna il pacchetto a `172.20.1.1`.
 
-🧪 **Verifica sul tuo PC.** Nelle impostazioni di rete (Windows: *Impostazioni → Rete e Internet*) cerca il gateway della connessione: è l'indirizzo del router di casa.
+🧪 **Verifica sul tuo PC.** Cerca il gateway predefinito: è l'indirizzo del router sulla tua rete.
+- **Windows:** apri *Impostazioni → Rete e Internet* oppure esegui `ipconfig` e cerca «Gateway predefinito».
+- **Linux:** esegui `ip route`; la riga che inizia con `default via` mostra il gateway.
+- **macOS:** esegui `route -n get default`; il valore accanto a `gateway` è il gateway predefinito.
 
 <u>Il gateway è il router visto dal PC: la porta per uscire.</u>
 
@@ -104,12 +107,12 @@ Il **prefisso** (il numero dopo la barra, come `/24`) dice quanti bit iniziali i
 
 🧪 **La scuola (valori inventati).** Un router R con quattro interfacce:
 
-| Rete | Prefisso | Indirizzo di R su quella rete | Chi ci sta |
-|---|---|---|---|
-| Aula | `172.20.1.0/24` | `172.20.1.1` | PC dell'aula |
-| Server | `172.20.2.0/24` | `172.20.2.1` | il server della scuola |
-| Segreteria | `172.20.3.0/24` | `172.20.3.1` | PC della segreteria |
-| Collegamento verso il provider | `203.0.113.0/30` | `203.0.113.2` | il router P del provider, che ha `203.0.113.1` |
+| Rete                           | Prefisso         | Indirizzo di R su quella rete | Chi ci sta                                     |
+| ------------------------------ | ---------------- | ----------------------------- | ---------------------------------------------- |
+| Aula                           | `172.20.1.0/24`  | `172.20.1.1`                  | PC dell'aula                                   |
+| Server                         | `172.20.2.0/24`  | `172.20.2.1`                  | il server della scuola                         |
+| Segreteria                     | `172.20.3.0/24`  | `172.20.3.1`                  | PC della segreteria                            |
+| Collegamento verso il provider | `203.0.113.0/30` | `203.0.113.2`                 | il router P del provider, che ha `203.0.113.1` |
 
 *Il collegamento verso il provider è un `/30`: quattro indirizzi, due utili. Bastano per collegare due apparati.*
 
@@ -132,6 +135,9 @@ Della rete a cui è collegata: il suo indirizzo sta dentro quel prefisso.
 
 📜 Nel 1969 la rete ARPANET, antenata di Internet, collega i primi nodi universitari. Ogni nodo ha un apparecchio che fa da portiere: gli **IMP** (*Interface Message Processor*), costruiti dalla società BBN su un minicomputer Honeywell. A dicembre 1969 i nodi attivi sono quattro (UCLA, SRI, UCSB e l'Università dello Utah). Gli IMP instradano i messaggi fra i nodi: sono gli antenati dei router di oggi.
 
+<img src="Allegati/imp-arpanet-schema.svg" width="640" alt="Schema semplificato: i computer dei quattro nodi ARPANET si collegano ciascuno a un IMP, che inoltra i messaggi verso gli altri nodi">
+
+*Schema semplificato: ogni computer raggiungeva la rete attraverso il proprio IMP, che inoltrava i messaggi verso un altro nodo.*
 ## 🗺️ La tabella di instradamento
 
 ### ✅ Il modello: confine → direzione
@@ -207,6 +213,14 @@ Il router P, con la sua tabella.
 
 Le tabelle dei router dei grandi operatori di Internet contengono centinaia di migliaia di prefissi (ordine di grandezza, variabile nel tempo). Nessun router di casa le tiene: gli basta la rotta predefinita verso il provider.
 
+🧪 **Una rotta osservata davvero.** Il collector RIPE RIS di Londra vede il prefisso pubblico `8.8.8.0/24` con prossimo passo `5.57.80.136` e percorso fra sistemi autonomi `15692 15169` (Google è l'origine). Un *collector* è un router che raccoglie annunci BGP per osservarli: la sua vista è reale, ma non è la tabella completa di ogni router su Internet, e può cambiare nel tempo.
+
+| Vista raccolta | Prefisso | Prossimo passo | Percorso AS |
+|---|---|---|---|
+| RIPE RIS, Londra (RRC01) | `8.8.8.0/24` | `5.57.80.136` | `15692 15169` |
+
+🔎 [Apri il prefisso su RIPEstat](https://stat.ripe.net/8.8.8.0/24) e osserva le rotte raccolte dai diversi punti di osservazione.
+
 ## 🎯 Scegliere la riga giusta
 
 ### ✅ Trovare la riga: tre passi
@@ -215,7 +229,7 @@ Per un indirizzo di destinazione, il router segue tre passi. Usa le stesse etich
 
 1. **trova il prefisso**: quali righe contengono l'indirizzo? (i bit del prefisso coincidono)
 2. **scegli la riga**: se ce n'è una, è quella; se ce ne sono più, vince la più stretta (vedi 🔍);
-3. **verifica il prossimo passo**: è il vicino giusto, oppure la rete è collegata direttamente?
+3. **controlla la direzione**: se la destinazione è su una rete collegata direttamente, il router la raggiunge dalla sua interfaccia; altrimenti consegna il pacchetto al prossimo passo, che deve essere un router vicino raggiungibile da una delle sue reti.
 
 🧪 **Tre pacchetti (valori inventati) sulla tabella di R:**
 
@@ -238,7 +252,7 @@ I primi bit, quelli indicati dal prefisso, devono coincidere con la rete.
 
 **Rotta predefinita** (*default route*): la riga `0.0.0.0/0`. Il prefisso `/0` non richiede nessun bit uguale: ogni indirizzo la contiene. Il router la usa quando nessuna riga più stretta corrisponde.
 
-🧠 Analogia: in una città, se non conosci la strada giusta prendi la statale per uscire. La statale non ti porta a casa: ti porta fuori.
+🧠 Analogia: in una città, se non conosci la strada giusta prendi la statale per uscire. La statale non ti porta a casa: ti porta fuori. Oppure, spesso c'é il cartello "Tutte le direzioni".
 
 ⚠️ La rotta predefinita non è «tutto Internet». È il prossimo passo per ciò che la tabella non sa. Se il vicino non sa nulla, il pacchetto si ferma lì.
 
@@ -301,7 +315,9 @@ No: è la riga usata per ciò che non ha altra riga; il resto lo decidono i rout
 
 ## 📚 Fonti e risorse
 
+- **Schema originale** degli IMP di ARPANET, realizzato per questa dispensa.
 - **Immagine** «Home LAN local area network example diagram» (schema di rete domestica con router): autore Own work (utente di Wikimedia Commons), licenza **CC0 1.0** (pubblico dominio), <https://commons.wikimedia.org/wiki/File:Home_LAN_local_area_network_example_diagram.png>.
+- **RIPE RIS / RIPEstat**, dati di instradamento osservati per il prefisso `8.8.8.0/24` (consultati il 24 novembre 2026): [vista web](https://stat.ripe.net/8.8.8.0/24) · [dati BGP grezzi](https://stat.ripe.net/data/looking-glass/data.json?resource=8.8.8.0/24). È una vista raccolta da più collector, non la tabella integrale di un router.
 - **RFC 791**, *Internet Protocol* (IPv4): <https://www.rfc-editor.org/rfc/rfc791>.
 - **RFC 1812**, *Requirements for IP Version 4 Routers*: <https://www.rfc-editor.org/rfc/rfc1812>. È il documento che descrive che cosa deve fare un router IPv4: leggilo solo se ti incuriosisce.
 - **RFC 5737**, indirizzi riservati alla documentazione (`203.0.113.0/24`): <https://www.rfc-editor.org/rfc/rfc5737>.

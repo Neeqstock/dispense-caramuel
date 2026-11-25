@@ -137,15 +137,18 @@ Perché non si capisce quanti zeri stanno in ciascun `::`: l'indirizzo sarebbe a
 
 **Sul telefono:** apri le impostazioni del Wi-Fi, poi la rete a cui sei connesso. Cerca la voce «IPv6» o «indirizzo IP». Il percorso cambia con il modello e con il sistema. Se trovi solo un indirizzo a quattro gruppi di cifre decimali, come `192.168.1.25`, quella è la versione IPv4: la rete del tuo telefono può non avere IPv6.
 
-**Sul PC Windows:** apri il prompt dei comandi e scrivi `ipconfig`. Cerca la riga «Indirizzo IPv6».
+**Sul PC:** il comando cambia con il sistema operativo:
+- **Windows:** `ipconfig`; cerca «Indirizzo IPv6».
+- **Linux:** `ip -6 address`; cerca gli indirizzi `inet6` dell'interfaccia di rete.
+- **macOS:** `ifconfig`; cerca gli indirizzi `inet6` dell'interfaccia Wi-Fi, spesso `en0`.
 
 🧪 Esempio inventato, con il prefisso di documentazione: `2001:db8:4f2a:17:5c1e:9d3b:7a20:4e81`. Il tuo indirizzo sarà diverso: questo è solo un modello di come si legge.
 
 🔧 **In laboratorio:** useremo lo stesso comando sui PC della classe. Nessuna consegna.
 
 <details>
-<summary>🃏 <b>Quale comando mostra l'IPv6 di un PC Windows?</b></summary>
-`ipconfig`, nel prompt dei comandi.
+<summary>🃏 <b>Quali comandi mostrano gli indirizzi IPv6 su Windows, Linux e macOS?</b></summary>
+Windows: `ipconfig`; Linux: `ip -6 address`; macOS: `ifconfig`.
 </details>
 
 ✏️ **Esercizio (3 min).** Comprimi `2001:0db8:0000:0000:0000:0000:0000:0042`. Poi trova l'errore in `2001:db8::1::5` e spiega in una frase perché è sbagliato.
