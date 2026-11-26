@@ -100,6 +100,13 @@ L'indirizzo del router sulla rete del PC: la porta per uscire verso le altre ret
 Sì: il gateway <code>172.20.1.1</code> sta nella rete <code>172.20.1.0/24</code> dell'aula.
 </details>
 
+172.20.1.1: gateway
+172.20.1.2: smartphone connesso alla wifi
+172.20.1.3: sono io con il mio computer
+172.20.1.4: smart tv
+
+61.65.83.8: l'indirizzo a cui devo inviare
+
 ### 🔍 Interfacce: un router, più indirizzi
 
 **Interfaccia**: il punto in cui un apparato si collega a una rete, con il suo indirizzo. Un router ha un'interfaccia per ogni rete a cui è collegato, e ogni interfaccia ha un indirizzo **dentro quella rete**.
@@ -170,15 +177,20 @@ I primi 24 bit identificano la rete: sono 256 indirizzi. <i>Esempio: 172.20.1.0 
 </details>
 
 ### ✅ La tabella in pratica
+#arrivati_qua \
 
 Il **prossimo passo** (*next hop*) è il router vicino a cui consegnare il pacchetto perché continui il viaggio. Nella colonna «Prossimo passo» il trattino vuol dire: la destinazione è direttamente su una rete collegata, non serve un vicino.
+172.20.2.5
+60.3.7.4
+172.20.1.18
 
-| Rete di destinazione | Prefisso | Prossimo passo | Interfaccia d'uscita |
-|---|---|---|---|
-| `172.20.1.0` | `/24` | — (collegata) | aula, `172.20.1.1` |
-| `172.20.2.0` | `/24` | — (collegata) | server, `172.20.2.1` |
-| `172.20.3.0` | `/24` | — (collegata) | segreteria, `172.20.3.1` |
-| `0.0.0.0` | `/0` | `203.0.113.1` | verso provider, `203.0.113.2` |
+| Rete di destinazione | Prefisso | Prossimo passo | Interfaccia d'uscita          |     |
+| -------------------- | -------- | -------------- | ----------------------------- | --- |
+| `172.20.1.0`         | `/24`    | — (collegata)  | aula, `172.20.1.1`            |     |
+| `172.20.2.0`         | `/24`    | — (collegata)  | server, `172.20.2.1`          |     |
+| `172.20.3.0`         | `/24`    | — (collegata)  | segreteria, `172.20.3.1`      |     |
+| `0.0.0.0`            | `/0`     | `203.0.113.1`  | verso provider, `203.0.113.2` |     |
+| `172.20.1.16`        | /28      |                |                               |     |
 
 🧠 Tutta la tabella di R sta in quattro righe: il router non sa altro.
 

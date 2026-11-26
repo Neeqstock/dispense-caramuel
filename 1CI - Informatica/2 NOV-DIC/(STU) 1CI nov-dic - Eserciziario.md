@@ -29,7 +29,10 @@ Luglio 1969, discesa dell'Apollo 11. Il computer di bordo inizia a segnalare all
 ### 🟢 1.1 · Chi lavora: sistema operativo o app? ✅
 
 **Consegna.** Per ogni voce scrivi **SO** (sistema operativo) o **App** (programma per l'utente):
-a) decidere quale programma usa il processore; b) correggere l'ortografia di un documento; c) dare a due programmi spazi di memoria separati; d) far parlare la tastiera con il programma che scrivi.
+a) decidere quale programma usa il processore; 
+b) correggere l'ortografia di un documento; 
+c) dare a due programmi spazi di memoria separati;
+d) far parlare la tastiera con il programma che scrivi.
 
 **Passaggi.**
 1. Chiediti: la voce parla di una **risorsa condivisa** (processore, memoria, periferiche) o di un **compito dell'utente**?
@@ -44,6 +47,16 @@ Risposte: a) SO · b) App · c) SO · d) SO (il driver della tastiera è di base
 ### 🟢 1.2 · Quattro turni per tre processi 🔍
 
 **Consegna.** Tre processi arrivano tutti a t = 0, nell'ordine A, B, C. Lavoro necessario: **A = 5 ms**, **B = 3 ms**, **C = 2 ms** (dati inventati). Il processore dà a ciascuno un turno di al massimo **2 ms** (quanto), poi passa al successivo in coda. Scrivi i turni e l'istante in cui finisce ognuno.
+
+```
+A, B, C
+A deve lavorare per 5ms per essere completato (3ms)
+B 3ms    (1ms)
+C 2ms
+
+|  A  |  B  |
+0ms   2ms  4ms
+```
 
 **Passaggi.**
 1. Coda iniziale: A, B, C.

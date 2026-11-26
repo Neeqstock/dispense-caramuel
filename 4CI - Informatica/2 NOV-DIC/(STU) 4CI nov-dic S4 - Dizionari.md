@@ -42,12 +42,12 @@ scheda ──▶ │ "nome"  │  "Aria"  │
 
 Come in una rubrica del telefono: cerchi «Mamma» e trovi il numero. Non ti chiedi in che posizione sia.
 
-| | Lista | Dizionario |
-| --- | --- | --- |
-| Si scrive | `["Aria", 100, 7]` | `{"nome": "Aria", "vita": 100, "forza": 7}` |
-| Si legge con | un indice: `scheda[1]` | una chiave: `scheda["vita"]` |
-| Ordine | conta: è il modo per trovare i dati | conta poco: si cerca per nome |
-| Esempio | lo zaino, i turni, la mappa | la scheda, la rubrica, l'inventario |
+|              | Lista                               | Dizionario                                  |
+| ------------ | ----------------------------------- | ------------------------------------------- |
+| Si scrive    | `["Aria", 100, 7]`                  | `{"nome": "Aria", "vita": 100, "forza": 7}` |
+| Si legge con | un indice: `scheda[1]`              | una chiave: `scheda["vita"]`                |
+| Ordine       | conta: è il modo per trovare i dati | conta poco: si cerca per nome               |
+| Esempio      | lo zaino, i turni, la mappa         | la scheda, la rubrica, l'inventario         |
 
 <details>
 <summary>🃏 <b>Che cos'è un dizionario?</b></summary>
