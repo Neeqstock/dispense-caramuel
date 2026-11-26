@@ -81,7 +81,7 @@ A settembre e ottobre abbiamo disegnato i confini delle reti IPv4 e scoperto che
 
 ### 📅 Dispense Novembre-Dicembre
 
-- [ ] [S1 - IPv6](2%20NOV-DIC/%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md) — Perché 32 bit non bastavano più, come si comprimono gli indirizzi a 128 bit e come riconoscere i tre tipi principali.
+- [x] [S1 - IPv6](2%20NOV-DIC/%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md) — Perché 32 bit non bastavano più, come si comprimono gli indirizzi a 128 bit e come riconoscere i tre tipi principali. ✅ 2026-11-25
 - [ ] [S2 - Router e tabelle di routing](2%20NOV-DIC/%28STU%29%204DI%20nov-dic%20S2%20-%20Router%20e%20tabelle%20di%20routing.md) — Chi lavora sul confine fra due reti, com'è fatta la tabella di un router e come si sceglie la riga giusta.
 - [ ] [S3 - Routing statico](2%20NOV-DIC/%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) — Scrivere le strade a mano su più sedi, controllare il prossimo passo, usare la rotta predefinita e leggere `ping` e `traceroute`.
 - [ ] [S4 - Introduzione al routing dinamico](2%20NOV-DIC/%28STU%29%204DI%20nov-dic%20S4%20-%20Introduzione%20al%20routing%20dinamico.md) — Come i router imparano da soli una strada nuova quando cade un collegamento: passaparola (*Distance Vector*) contro mappa completa (*Link State*).

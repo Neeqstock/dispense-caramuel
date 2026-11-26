@@ -261,7 +261,7 @@ Prima guarda i dati: ti stanno chiedendo di leggere un indirizzo IPv6, scegliere
 
 ✏️ **Avanzato (10 min).** Tre router X, Y, Z formano un triangolo: X–Y ha costo 2, Y–Z ha costo 2, X–Z diretto ha costo 7.
 1. Con la rete integra, quale prossimo passo mette X nella propria tabella per raggiungere la rete dietro Z, e con quale costo totale?
-2. Improvvisamente si taglia il cavo Y–Z. Confronta in tre righe che cosa succede subito dopo il taglio se la rete usa rotte statiche, se usa *Distance Vector* o se usa *Link State*.
+2. Improvvisamente si taglia il cavo Y–Z. Confronta in tre righe che cosa succede dopo il taglio se la rete usa rotte statiche, *Distance Vector* o *Link State*. Per i due protocolli dinamici distingui le informazioni usate e ricorda che entrambi impiegano un tempo per convergere.
 
 ## 🩹 Recupero: dove riprendere
 

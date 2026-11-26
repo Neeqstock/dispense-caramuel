@@ -37,11 +37,11 @@ In azienda nessuno ti consegna l'esercizietto. Ti dicono: «c'è un traffico str
 
 ### 📜 Caso vero: la rete ombra che nessuno guardava
 
-Il 3 febbraio 2011 la **IANA** distribuisce gli ultimi grandi blocchi centrali di IPv4; il 6 giugno 2012 il *World IPv6 Launch* avvia su scala mondiale il passaggio ai **128 bit**. Per rendere la transizione indolore, da oltre quindici anni Windows, Linux, macOS, Android e iOS hanno **IPv6 attivo di fabbrica**. Appena colleghi un cavo o un Wi-Fi, la scheda si costruisce da sola un indirizzo *link-local* (`fe80::/10`) e ascolta gli annunci sul gruppo *multicast* `ff02::1`, anche se nessuno ha configurato un router IPv6.
+Il 3 febbraio 2011 la **IANA** distribuisce gli ultimi grandi blocchi centrali di IPv4; il 6 giugno 2012 il *World IPv6 Launch* avvia su scala mondiale il passaggio ai **128 bit**. Nei sistemi operativi moderni IPv6 è spesso attivo per impostazione predefinita. Su un collegamento IPv6 attivo, un dispositivo configura normalmente un indirizzo *link-local* (`fe80::/10`) e può ricevere traffico multicast locale, anche senza un router IPv6.
 
-🕵️ **Come nasce il problema.** Durante i controlli di sicurezza capita spesso di trovare aziende che hanno blindato ogni indirizzo IPv4, convinte di «non usare IPv6». In realtà tutti i loro PC si parlano già in IPv6 sul cavo locale, fuori dai controlli pensati solo per IPv4. **Difesa:** un amministratore non ignora mai IPv6; sa leggere gli indirizzi nei log e applica le regole di sicurezza a entrambi i protocolli.
+🕵️ **Come nasce il problema.** Una rete può avere controlli applicati solo a IPv4: se IPv6 è attivo e le regole non lo coprono, il traffico IPv6 consentito sul collegamento potrebbe non essere filtrato come previsto. Questo non significa che tutti i dispositivi siano automaticamente raggiungibili: contano anche le regole del firewall e la configurazione della rete. **Difesa:** l'amministratore verifica e applica le regole di sicurezza a entrambi i protocolli.
 
-🧠 <u>Anche senza Internet IPv6, dentro una rete locale i dispositivi moderni hanno già un indirizzo `fe80::/10`.</u>
+🧠 <u>Un indirizzo link-local può esistere anche senza un router IPv6; da solo non rende un dispositivo raggiungibile da altre reti.</u>
 
 ### 🃏 Riscaldamento rapido
 
@@ -58,11 +58,6 @@ Perché con due <code>::</code> non si saprebbe quanti gruppi di zeri mettere a 
 <code>2000::/3</code> è globale unicast (viaggia su Internet), <code>fe80::/10</code> è link-local (resta sul collegamento locale) e <code>ff02::1</code> è multicast per tutti i nodi locali (sostituisce il broadcast).
 </details>
 
-fe80/10 link local
-ff02::1 multicast
-2000::/3 global unicast
-`001|0`
-
 ### 1.1 ✏️ Pratica · ✅ · 🟢 Svolto — Comprimere e leggere una `/64`
 
 **Consegna.** Nei registri di un server di prova trovi scritto per esteso questo indirizzo con il suo prefisso (blocco di documentazione):
@@ -71,7 +66,7 @@ ff02::1 multicast
 2001:0db8:00c0:0000:0000:0000:0a00:0030/64
 
 forma compressa: 2001:0db8:00c0::0a00:0030/64
-rete:            2001:0db8:00c0:   0000:0000:0000:0000:0000/48
+rete /64:        2001:0db8:00c0::/64
 
 ```
 
@@ -351,7 +346,7 @@ Tre sedi lungo la costa (valori inventati) sono unite in fila dai router **R1**,
 
 Per i suoi primi dieci anni la rete **ARPANET** aggiorna le tabelle con un meccanismo basato sul passaparola (*Distance Vector*): ogni nodo comunica periodicamente ai vicini la propria tabella di distanze. Con il crescere della rete emerge un difetto pesante: quando cade un collegamento, la brutta notizia viaggia una tappa alla volta, e nel frattempo un vicino non ancora aggiornato può convincere gli altri di avere ancora una strada valida, facendo rimbalzare i pacchetti nel vuoto.
 
-Nel maggio 1979 gli ingegneri McQuillan, Richer e Rosen sostituiscono l'algoritmo con il modello **Link State**: ogni router spedisce subito a tutti lo stato dei propri collegamenti diretti, così tutti possiedono la **stessa mappa completa** e ciascuno ricalcola da solo le strade migliori.
+Nel maggio 1979 gli ingegneri McQuillan, Richer e Rosen sostituiscono l'algoritmo con il modello **Link State**: ogni router diffonde ai vicini lo stato dei propri collegamenti diretti; gli annunci si propagano lungo la rete. Quando li ricevono, i router aggiornano la **mappa completa** e ricalcolano le strade migliori. La diffusione richiede tempo: la rete deve convergere.
 
 🕵️ **Angolo sicurezza.** Il routing dinamico si basa sulla fiducia nei messaggi ricevuti: se un intruso collegasse un finto router annunciando «raggiungo tutte le reti a costo 1!», attirerebbe a sé i pacchetti. Per questo nelle reti professionali i router firmano e autenticano gli annunci di routing prima di accettarli.
 
@@ -406,14 +401,14 @@ Si scambiano gli annunci sui propri collegamenti attivi e i relativi costi, cos�
 
 1. Se sulla rete ci fossero solo **rotte statiche** configurate sul percorso migliore di prima, dove continuerebbe M a mandare i pacchetti per T, e che fine farebbero?
 2. Con il **routing dinamico**, una volta raggiunta la **convergenza**, quale strada usa M per raggiungere T e con quale costo?
-3. Spiega in due frasi perché, nei primi istanti subito dopo il taglio, un protocollo *Distance Vector* rischia più di un *Link State* di prendere decisioni sbagliate usando «notizie vecchie».
+3. Confronta le informazioni disponibili nei due principi mentre la rete converge: perché un router *Distance Vector* può continuare temporaneamente a usare una distanza vecchia? Che cosa deve ricevere un router *Link State* prima di ricalcolare? Ricorda che nessuno dei due reagisce istantaneamente e che i tempi dipendono dal protocollo e dalla rete.
 
 <details>
 <summary>🃏 <b>4.2 — Soluzione</b></summary>
 
 1. Con rotte statiche la tabella di M non si accorge del guasto: continua a mandare i pacchetti a **N**, e N non potendo più inoltrarli sul cavo N–T rotto li **scarta** (anche se il cavo diretto M–T è perfettamente funzionante!).
 2. Dopo la convergenza M usa l'unico percorso rimasto, cioè il collegamento diretto **M → T**, con **costo 8**.
-3. Nel *Distance Vector* nessuno vede la mappa intera e la notizia del cavo rotto deve propagarsi di tabella in tabella tra vicini, quindi per un po' un router può fidarsi di una distanza vecchia non più vera. Nel *Link State*, invece, l'annuncio che «il collegamento N–T è giù» viene diffuso a tutti e ciascun router lo cancella subito dalla propria mappa ricalcolando il percorso.
+3. Nel *Distance Vector* l'informazione sul guasto si propaga attraverso gli aggiornamenti scambiati tra vicini; finché non riceve un aggiornamento, un router può conservare una distanza non più valida. Nel *Link State* i router diffondono un annuncio sul collegamento caduto e ricalcolano quando lo ricevono. Anche questa diffusione richiede tempo: entrambi i principi hanno una fase di convergenza, la cui durata dipende dal protocollo e dalla rete.
 
 </details>
 

@@ -87,7 +87,7 @@ Ogni dossier corrisponde a una settimana di lezione e segue lo stesso ordine: �
 <summary>🃏 <b>1.4 — Soluzione</b></summary>
 
 1. $1\,000\,000\,000\,000 \div 1\,073\,741\,824 \approx \mathbf{931{,}32\text{ GiB}}$ (circa **931 GiB**). Lo spazio fisico è lo stesso, cambia solo la base di conteggio (1000 contro 1024).
-2. Svuotando il Cestino il file system toglie solo la voce dal catalogo, lasciando i byte sul disco finché non vengono sovrascritti: su un HDD restano lì recuperabili. Su un SSD con **TRIM**, il sistema avvisa subito il controllore che quei blocchi sono liberi, e il controllore li azzera in fretta per preparare nuove scritture.
+2. Svuotando il Cestino il file system toglie la voce dal catalogo. Su un HDD i dati possono restare leggibili finché non vengono sovrascritti. Su un SSD con **TRIM**, il sistema segnala al controllore che quei blocchi non contengono più dati utili; la loro cancellazione fisica può avvenire in seguito, durante la gestione interna dell'SSD. Per questo il recupero dopo TRIM è molto meno affidabile, ma non è corretto dire che i blocchi vengano azzerati subito.
 
 </details>
 

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" role="img" aria-labelledby="titolo descrizione">
+  <title id="titolo">NTFS: prima il diario, poi il catalogo</title>
+  <desc id="descrizione">Le informazioni sono registrate prima della modifica; dopo un'interruzione NTFS usa il diario per ripetere o annullare le modifiche alla struttura.</desc>
+  <rect x="2" y="2" width="756" height="256" rx="20" fill="#f8f6ff" stroke="#b197fc" stroke-width="2"/>
+  <text x="380" y="32" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#3b2868">NTFS: prima il diario, poi il catalogo</text>
+  <g font-family="sans-serif" fill="#343a40">
+    <rect x="22" y="55" width="216" height="158" rx="16" fill="#fff3bf" stroke="#e9a23b" stroke-width="2"/>
+    <text x="130" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#8a5100">1 · Diario</text>
+    <path d="M75 100 l0 54 q0 6 6 6 h70 q6 0 6 -6 v-54 q0 -6 -6 -6 h-70 q-6 0 -6 6z" fill="#fffdf3" stroke="#d08a24" stroke-width="2"/>
+    <path d="M91 111 h50 M91 123 h50 M91 135 h39 M91 147 h46" stroke="#d08a24" stroke-width="2" stroke-linecap="round"/>
+    <text x="130" y="183" text-anchor="middle" font-size="13">$LogFile registra</text>
+    <text x="130" y="202" text-anchor="middle" font-size="13">prima della modifica</text>
+    <path d="M241 133 h28 m-8 -8 8 8 -8 8" fill="none" stroke="#7b6e93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="272" y="55" width="216" height="158" rx="16" fill="#e7f5ff" stroke="#74aee8" stroke-width="2"/>
+    <text x="380" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#1864ab">2 · Catalogo</text>
+    <rect x="332" y="98" width="96" height="62" rx="7" fill="#fff" stroke="#428ac8" stroke-width="2"/>
+    <path d="M345 112 h70 M345 124 h70 M345 136 h48 M345 148 h62" stroke="#428ac8" stroke-width="2" stroke-linecap="round"/>
+    <text x="380" y="183" text-anchor="middle" font-size="13">NTFS applica</text>
+    <text x="380" y="202" text-anchor="middle" font-size="13">le modifiche alla struttura</text>
+    <path d="M491 133 h28 m-8 -8 8 8 -8 8" fill="none" stroke="#7b6e93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="522" y="55" width="216" height="158" rx="16" fill="#e6fcf5" stroke="#63c6a5" stroke-width="2"/>
+    <text x="630" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#087f5b">3 · Dopo un guasto</text>
+    <path d="M615 96 l-11 27 h17 l-8 26 27 -34 h-17 l9 -19z" fill="#ffd43b" stroke="#c38a0d" stroke-width="2" stroke-linejoin="round"/>
+    <text x="630" y="183" text-anchor="middle" font-size="13">Dal diario: ripete o annulla</text>
+    <text x="630" y="202" text-anchor="middle" font-size="13">per ritrovare coerenza</text>
+    <text x="380" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#665178">Il diario non è una copia del file: serve comunque il backup.</text>
+  </g>
+</svg>

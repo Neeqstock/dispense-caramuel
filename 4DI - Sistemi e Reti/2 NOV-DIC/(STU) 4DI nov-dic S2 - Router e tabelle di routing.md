@@ -1,5 +1,6 @@
 ⬅️ [S1](./%28STU%29%204DI%20nov-dic%20S1%20-%20IPv6.md) · 🏠 [Indice](../README.md) · [S3](./%28STU%29%204DI%20nov-dic%20S3%20-%20Routing%20statico.md) ➡️
 
+**Libro: Unità 5 circa**
 # 🧭 Router e tabelle di routing
 
 **4DI · Novembre-Dicembre · S2 · Teoria**

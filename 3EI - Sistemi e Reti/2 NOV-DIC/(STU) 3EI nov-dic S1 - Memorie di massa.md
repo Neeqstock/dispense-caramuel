@@ -2,7 +2,7 @@
 
 # 💾 Memorie di massa
 
-**3EI · Novembre-Dicembre · S1 · Teoria · ⏱️ circa 40 minuti** (lettura e ✏️; i 🤓 sono facoltativi).
+**3EI · Novembre-Dicembre · S1 · Teoria · ⏱️ circa 45 minuti** (lettura e ✏️; i 🤓 sono facoltativi).
 
 > **Legenda:** ✅ minimo da sapere · 🔍 dettagli per il voto massimo · 🤓 approfondimento facoltativo · 📜 storia · 🧪 esempio · 🧠 da ricordare · ✏️ da fare · ⚠️ errore comune · 🛠️ strumento · 🃏 flashcard: rispondi a voce, poi apri per controllare · 🚪 uscita · 🔁 ripasso
 
@@ -197,9 +197,36 @@ Un disco nuovo è un'unica distesa di blocchi. Prima di metterci un sistema oper
 La partizione è una fetta logica del disco; il file system è il catalogo che organizza i file e le cartelle dentro quella partizione.
 </details>
 
-🤓 **Come funziona un file system e perché ne esistono tanti.** Il file system funziona come l'indice di un libro: tiene una tabella nascosta dove annota nome del file, dimensione, permessi e numeri dei blocchi in cui il file è salvato sul disco. Non esiste un solo file system perché ogni dispositivo ha bisogni diversi: **FAT32** (nato nel 1996) è semplicissimo e funziona ovunque (TV, autoradio, fotocamere), ma ha un limite rigido di **4 GB** per singolo file; **exFAT** nasce per chiavette e schede SD moderne e toglie quel limite; **NTFS** (Windows) aggiunge permessi utente e un registro per non perdere dati se manca la corrente; **ext4** (Linux) gestisce bene i permessi Unix e riduce la frammentazione. *(Trivia: se copi un file da 5 GB su una chiavetta nuova da 64 GB e Windows dice «file troppo grande», quasi sempre la chiavetta è formattata in FAT32!)*
+🤓 **Come funziona un file system e perché ne esistono tanti.** Il file system funziona come l'indice di un libro: tiene una tabella nascosta dove annota nome del file, dimensione, permessi e numeri dei blocchi in cui il file è salvato sul disco. Non esiste un solo file system perché ogni dispositivo ha bisogni diversi: **FAT32** (nato nel 1996) è semplicissimo e funziona ovunque (TV, autoradio, fotocamere), ma ha un limite rigido di **4 GB** per singolo file; **exFAT** nasce per chiavette e schede SD moderne e toglie quel limite; **NTFS** (Windows) aggiunge permessi utente e un registro che aiuta a ripristinare il file system se manca la corrente; **ext4** (Linux) gestisce bene i permessi Unix e riduce la frammentazione. *(Trivia: se copi un file da 5 GB su una chiavetta nuova da 64 GB e Windows dice «file troppo grande», quasi sempre la chiavetta è formattata in FAT32!)*
 
 🤓 **Stili di partizione (MBR e GPT).** Prima ancora del file system, serve decidere *come* scrivere la mappa delle partizioni all'inizio del disco: lo schema storico **MBR** (anni '80) si ferma a 4 partizioni primarie e ~2 TB, mentre lo schema moderno **GPT** (*GUID Partition Table*) usa identificatori univoci (GUID), tiene una copia di riserva alla fine del disco e, per non farsi sovrascrivere dai vecchi programmi che non lo capiscono, mette nel primo settore un falso MBR (*Protective MBR*) che dichiara il disco «tutto occupato». Li vedremo nel dettaglio in [S2 - Dall'accensione al sistema operativo](./%28STU%29%203EI%20nov-dic%20S2%20-%20Dall%27accensione%20al%20sistema%20operativo.md).
+
+### 🔍 Journaling: il diario del file system
+
+Stai spostando una cartella e salta la corrente. Il file system potrebbe aver aggiornato solo una parte del suo **catalogo**: per esempio, il nome e le informazioni su dove si trova il file potrebbero non essere più coerenti. Come fa a rimetterli d'accordo?
+
+Il **journaling** è un diario delle modifiche alla struttura del file system. Su un volume **NTFS**, Windows usa un file di sistema nascosto chiamato **`$LogFile`**:
+
+1. **Prima:** NTFS registra le informazioni necessarie per gestire la modifica del catalogo. Si chiama **write-ahead logging**, cioè «scrivere prima nel registro».
+2. **Poi:** applica le modifiche alla struttura del file system e ne registra il completamento.
+3. **Dopo un'interruzione:** quando il volume viene riaperto, NTFS consulta il registro: può **ripetere** modifiche completate ma non ancora riportate interamente sul disco, oppure **annullare** modifiche incomplete per ritrovare una struttura coerente.
+
+<img src="Allegati/s1-journaling-ntfs.svg" width="760" alt="Tre passi del journaling NTFS: registro preventivo, modifica del catalogo, ripristino dopo un'interruzione">
+
+*Prima il diario, poi il catalogo: dopo un'interruzione NTFS usa il registro per ripristinare la coerenza.*
+
+⚠️ **Limite importante:** il diario protegge soprattutto la **struttura** del file system, non garantisce il contenuto completo del file che stavi salvando. Un'interruzione può comunque perdere o lasciare incompleti i dati: <u>il journaling non sostituisce il backup.</u>
+
+✏️ **Prevedi.** Manca la corrente mentre salvi un documento. Il journaling garantisce che tutto il testo sia stato salvato? Spiega la differenza tra il catalogo e il contenuto del file.
+
+<details>
+<summary>🃏 <b>A che cosa serve il journal di NTFS?</b></summary>
+Aiuta a ripristinare la coerenza della struttura del file system dopo un'interruzione, ma non garantisce il contenuto dei file.
+</details>
+<details>
+<summary>🃏 <b>Che cosa significa write-ahead logging?</b></summary>
+Registrare le informazioni necessarie nel diario prima di applicare le modifiche alla struttura del file system.
+</details>
 
 ---
 
@@ -254,7 +281,11 @@ Al posto della deframmentazione, gli SSD usano un comando chiamato **TRIM**.
 
 Per capire a che cosa serve, bisogna sapere una regola fisica della memoria **flash**: su un HDD puoi sovrascrivere subito un vecchio blocco con dati nuovi; su un SSD, invece, una cella già scritta **non può essere riscritta al volo**. Prima deve essere **svuotata (azzerata)**, e la flash può svuotare solo un intero blocco grande alla volta — un'operazione molto più lenta della scrittura.
 
-Quando cancelli un file dal Cestino, il sistema operativo toglie solo il nome dal catalogo: l'SSD da solo non sa che quei blocchi sono ormai inutili. Senza TRIM, quando dovrai salvare un nuovo file l'SSD scoprirà solo all'ultimo momento che il blocco è ancora «sporco», dovrà svuotarlo al volo e poi scrivere: risultato, l'SSD rallenta. Con **TRIM**, invece, il sistema operativo avvisa subito il controllore dell'SSD: *«questi blocchi non servono più, puoi svuotarli in anticipo mentre il PC riposa»*. Così le celle sono già pulite e pronte per scrivere a piena velocità.
+Quando cancelli un file dal Cestino, il sistema operativo libera lo spazio nel catalogo; l'SSD da solo non sa necessariamente che quei dati non servono più. Con **TRIM**, il sistema operativo comunica al controllore dell'SSD quali indirizzi logici non sono più utilizzati. Il controllore può allora gestire quello spazio e cancellare i blocchi fisici durante la propria manutenzione, per prepararsi alle scritture future. <u>TRIM è un avviso, non una cancellazione fisica immediata.</u>
+
+<img src="Allegati/s1-trim-diario-ssd.svg" width="760" alt="TRIM in tre passi: file eliminato, sistema operativo avvisa l'SSD, il controllore può liberare i blocchi fisici in seguito">
+
+*Il sistema operativo segnala lo spazio libero; il controllore decide quando preparare la memoria flash.*
 
 🛠️ **Sul tuo dispositivo:** su Windows cerca nel menu Start **Deframmenta e ottimizza unità**. Vedrai i tuoi dischi: su un HDD il pulsante esegue la deframmentazione; su un SSD esegue l'**ottimizzazione**, cioè lancia il comando TRIM.
 
@@ -262,7 +293,7 @@ Quando cancelli un file dal Cestino, il sistema operativo toglie solo il nome da
 
 <details>
 <summary>🃏 <b>Che cosa fa il comando TRIM su un SSD?</b></summary>
-Informa il controllore dell'SSD quali blocchi sono stati cancellati dal sistema operativo, così può svuotarli in anticipo invece di farlo al momento di una nuova scrittura.
+Informa il controllore dell'SSD quali indirizzi logici non sono più utilizzati, così può gestire lo spazio per le scritture future.
 </details>
 
 ---
@@ -345,17 +376,17 @@ Se vuoi vedere con i tuoi occhi i valori SMART del tuo PC, esistono strumenti gr
 
 Quando sposti un file nel Cestino e lo svuoti, di solito il sistema operativo non cancella davvero tutti i byte dal disco: toglie soltanto la riga dal **catalogo** (il file system) e segna quei blocchi come «liberi». I dati restano lì finché un altro file non li sovrascrive.
 
-Per questo motivo, con programmi appositi di recupero dati, spesso si riescono a recuperare file cancellati per errore — a patto di non continuare a scrivere sul disco. Su un SSD con **TRIM** attivo, però, il recupero diventa molto più difficile, perché il controllore azzera i blocchi liberi in fretta.
+Per questo motivo, con programmi appositi di recupero dati, spesso si riescono a recuperare file cancellati per errore — a patto di non continuare a scrivere sul disco. Su un SSD con **TRIM** attivo, però, il recupero diventa molto meno affidabile: il controllore sa che lo spazio non è più in uso e può gestirlo o cancellarlo in seguito.
 
 <img src="Allegati/s1-cancellazione-trim.svg" width="680" alt="Schema a tre passi: file presente, svuotato su HDD e svuotato con TRIM su SSD">
 
-*Svuotare il Cestino toglie la riga dal catalogo: su HDD i byte restano sul piatto finché non riscrivi, su SSD con TRIM il controllore li azzera in anticipo.*
+*Svuotare il Cestino libera lo spazio nel catalogo: su HDD i byte possono restare, mentre TRIM avvisa l'SSD che non servono più.*
 
 ✏️ **Prevedi.** Cancelli per sbaglio una cartella di foto dal Cestino e non salvi più nulla sul disco. Hai più probabilità di recuperarla su un **HDD** o su un **SSD moderno con TRIM attivo**? Spiega il perché in due righe.
 
 <details>
 <summary>🃏 <b>Che cosa succede davvero ai dati quando svuoti il Cestino su un HDD rispetto a un SSD con TRIM?</b></summary>
-Il file system toglie la voce dal catalogo: su HDD i byte restano recuperabili finché non vengono sovrascritti, mentre su SSD il comando TRIM fa svuotare i blocchi in anticipo.
+Il file system toglie la voce dal catalogo: su HDD i byte possono restare finché non vengono sovrascritti; su SSD TRIM segnala lo spazio libero e rende il recupero meno affidabile.
 </details>
 
 > 🧠 <u>Tutto ha un compromesso:</u> l'HDD offre tanta capacità a basso prezzo, ma è lento, meccanico e soffre la frammentazione; l'SSD è veloce e silenzioso, ma costa di più per gigabyte e le sue celle si consumano con le scritture. Nessuno dei due è eterno: il backup serve sempre.
@@ -375,7 +406,7 @@ La RAM è volatile perché perde i dati senza corrente; l'SSD è persistente per
 </details>
 <details>
 <summary>🃏 <b>Verifica uscita 2 — SSD e TRIM</b></summary>
-Su un SSD non si deframmenta perché non ci sono testine mobili e le scritture inutili consumano le celle flash; invece il sistema usa TRIM per avvisare l'SSD di svuotare i blocchi cancellati in anticipo.
+Su un SSD non si deframmenta perché non ci sono testine mobili e le scritture inutili consumano le celle flash; invece il sistema usa TRIM per segnalare all'SSD lo spazio non più utilizzato.
 </details>
 <details>
 <summary>🃏 <b>Verifica uscita 3 — Formato, interfaccia e guasti</b></summary>
@@ -390,6 +421,8 @@ Un disco M.2 SATA usa il formato M.2 e l'interfaccia SATA; il ticchettio continu
 - [PC anatomy](https://pc-anatomy.com/) - Atlante di anatomia di un computer
 - [Frammentazione (informatica) — Wikipedia IT](https://it.wikipedia.org/wiki/Frammentazione_(informatica)) e [Deframmentazione — Wikipedia IT](https://it.wikipedia.org/wiki/Deframmentazione): perché i file si spezzano e come funziona la deframmentazione.
 - [TRIM — Wikipedia IT](https://it.wikipedia.org/wiki/TRIM): a cosa serve TRIM sugli SSD.
+- [NTFS overview — Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview): come il registro aiuta NTFS a ripristinare la coerenza del file system.
+- [How NTFS Works — Microsoft Learn, documentazione storica](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc781134(v=ws.10)): descrizione di `$LogFile` e delle informazioni usate nel ripristino.
 - [Bad sector — Wikipedia EN](https://en.wikipedia.org/wiki/Bad_sector): differenza fra danni fisici (*hard*) e logici (*soft*), e settori riallocati.
 - [S.M.A.R.T. — Wikipedia IT](https://it.wikipedia.org/wiki/S.M.A.R.T.): l'autodiagnosi dei dischi.
 - [Hard disk drive failure — Wikipedia EN](https://en.wikipedia.org/wiki/Hard_disk_drive_failure) e [Click of death — Wikipedia EN](https://en.wikipedia.org/wiki/Click_of_death): guasti tipici dei dischi meccanici.
@@ -403,6 +436,7 @@ Un disco M.2 SATA usa il formato M.2 e l'interfaccia SATA; il ticchettio continu
 - Immagine IBM 305 RAMAC: «BRL61-IBM 305 RAMAC», dominio pubblico, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:BRL61-IBM_305_RAMAC.jpeg).
 - Immagine moduli RAM: «Ddr3-vs-ddr4-cl-02» di Klavesakm, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ddr3-vs-ddr4-cl-02.jpg).
 - Schema cancellazione e TRIM: schema originale per questa dispensa (`Allegati/s1-cancellazione-trim.svg`).
+- Schemi journaling NTFS e TRIM: schemi originali per questa dispensa (`Allegati/s1-journaling-ntfs.svg`, `Allegati/s1-trim-diario-ssd.svg`).
 - Schema settori danneggiati e riallocati: schema originale per questa dispensa (`Allegati/s1-settori-riallocati.svg`).
 - Altri schemi originali in stile Excalidraw: `Allegati/s1-volatile-vs-persistente.svg`, `Allegati/s1-partizioni-filesystem.svg`, `Allegati/s1-frammentazione-hdd-ssd.svg`, `Allegati/s1-hard-vs-soft-bad-sector.svg`.
 - Immagine head crash HDD: «Hard disk failure» di Piksi, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hard_disk_failure.jpeg).

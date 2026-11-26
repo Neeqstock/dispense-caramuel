@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" role="img" aria-labelledby="titolo descrizione">
+  <title id="titolo">TRIM: un messaggio, non una gomma immediata</title>
+  <desc id="descrizione">Il file system libera lo spazio; TRIM segnala all'SSD gli indirizzi logici non più usati; il controllore gestisce i blocchi fisici in seguito.</desc>
+  <rect x="2" y="2" width="756" height="256" rx="20" fill="#f0fbf7" stroke="#83cbb0" stroke-width="2"/>
+  <text x="380" y="32" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#126449">TRIM: un messaggio, non una gomma immediata</text>
+  <g font-family="sans-serif" fill="#343a40">
+    <rect x="22" y="55" width="216" height="158" rx="16" fill="#fff3bf" stroke="#e9a23b" stroke-width="2"/>
+    <text x="130" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#8a5100">1 · File eliminato</text>
+    <rect x="94" y="94" width="72" height="58" rx="7" fill="#fffdf3" stroke="#d08a24" stroke-width="2"/>
+    <path d="M105 111 h50 M105 123 h50 M105 135 h37" stroke="#d08a24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M100 103 l60 40" stroke="#e05252" stroke-width="3" stroke-linecap="round"/>
+    <text x="130" y="183" text-anchor="middle" font-size="13">Il file system segna</text>
+    <text x="130" y="202" text-anchor="middle" font-size="13">lo spazio come libero</text>
+    <path d="M241 133 h28 m-8 -8 8 8 -8 8" fill="none" stroke="#61887a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="272" y="55" width="216" height="158" rx="16" fill="#e7f5ff" stroke="#74aee8" stroke-width="2"/>
+    <text x="380" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#1864ab">2 · Avviso TRIM</text>
+    <rect x="339" y="98" width="82" height="49" rx="5" fill="#fff" stroke="#428ac8" stroke-width="2"/>
+    <path d="M340 100 l40 27 40 -27" fill="none" stroke="#428ac8" stroke-width="2"/>
+    <text x="380" y="183" text-anchor="middle" font-size="13">Il SO comunica all'SSD</text>
+    <text x="380" y="202" text-anchor="middle" font-size="13">gli indirizzi non più usati</text>
+    <path d="M491 133 h28 m-8 -8 8 8 -8 8" fill="none" stroke="#61887a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="522" y="55" width="216" height="158" rx="16" fill="#e6fcf5" stroke="#63c6a5" stroke-width="2"/>
+    <text x="630" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#087f5b">3 · Manutenzione SSD</text>
+    <rect x="581" y="99" width="98" height="53" rx="7" fill="#fff" stroke="#219a75" stroke-width="2"/>
+    <path d="M598 109 v33 M615 109 v33 M632 109 v33 M649 109 v33 M666 109 v33" stroke="#219a75" stroke-width="2"/>
+    <text x="630" y="183" text-anchor="middle" font-size="13">Il controllore può liberare</text>
+    <text x="630" y="202" text-anchor="middle" font-size="13">i blocchi fisici in seguito</text>
+    <text x="380" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#27674f">L'avviso non garantisce una cancellazione fisica immediata.</text>
+  </g>
+</svg>

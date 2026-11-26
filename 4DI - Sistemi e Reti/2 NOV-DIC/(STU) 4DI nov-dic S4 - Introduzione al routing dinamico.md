@@ -170,7 +170,7 @@ Poi cade il collegamento B–C.
 
 ✏️ **Prevedi (3 min).** Stesso triangolo, ma cade il collegamento A–B invece di B–C. Quale percorso sceglie A, con ciascun principio? Scrivi la risposta prima di rileggere la sezione.
 
-✏️ **Confronta (3 min).** In due frasi: perché, dopo la caduta di B–C, il Distance Vector ha bisogno di più tempo per stabilizzarsi del Link State?
+✏️ **Confronta (3 min).** Dopo la caduta di B–C, confronta le informazioni che ricevono i router Distance Vector e Link State e spiega come possono restare temporaneamente dati non aggiornati. Entrambi devono convergere: da che cosa può dipendere il tempo necessario?
 
 ⚠️ Attenzione alla parola «distanza»: nel Distance Vector e nel Link State è un costo, non una velocità. Un collegamento a costo basso non è necessariamente un collegamento veloce.
 
